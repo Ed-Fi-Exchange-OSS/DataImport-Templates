@@ -1,13 +1,309 @@
 {
-    "id": 16,
-    "title": "Catapult Learning Assessment - API 2.5",
-    "description": "This template includes the Catapult Learning assessment.",
-    "apiVersion": "2.5+",
-    "dateTimePublished": "2020-02-18T20:07:14.6925122",
-    "template": "{\"Maps\":[{\"Name\":\"Catapult Learning\",\"ResourcePath\":\"/studentAssessments\",\"ColumnHeaders\":[\"student_id\",\"school_year\",\"month\",\"grade_level\",\"subject\",\"test_date\",\"score\",\"threshold\",\"birthdate\",\"last_name\",\"first_name\",\"school_code\",\"StudentUniqueId\"],\"Map\":{\"assessmentReference\":{\"identifier\":\"Catapult-V1\",\"namespace\":\"http://catapultlearning.com/Assessment\"},\"studentReference\":{\"studentUniqueId\":{\"Column\":\"StudentUniqueId\"}},\"administrationDate\":{\"Column\":\"test_date\"},\"identifier\":{\"Column\":\"test_date\"},\"whenAssessedGradeLevelDescriptor\":{\"Column\":\"grade_level\",\"Lookup\":\"Catapult-WhenAssessedGradeLevel\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Achievement/proficiency level\",\"performanceLevelDescriptor\":{\"Column\":\"threshold\",\"Lookup\":\"Catapult-Threshhold-Descriptors\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Percentile\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"score\"}},{\"assessmentReportingMethodType\":\"Month\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"month\"}},{\"assessmentReportingMethodType\":\"Subject\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"subject\"}}]}}],\"Bootstraps\":[{\"Name\":\"Catapult-PLD\",\"ResourcePath\":\"/performanceLevelDescriptors\",\"Data\":[{\"codeValue\":\"Exceeds\",\"description\":\"Exceeds\",\"namespace\":\"http://catapultlearning.com/PerformanceLevelDescriptor\",\"shortDescription\":\"Exceeds\"},{\"codeValue\":\"Meets\",\"description\":\"Meets\",\"namespace\":\"http://catapultlearning.com/PerformanceLevelDescriptor\",\"shortDescription\":\"Meets\"},{\"codeValue\":\"Approaches\",\"description\":\"Approaches\",\"namespace\":\"http://catapultlearning.com/PerformanceLevelDescriptor\",\"shortDescription\":\"Approaches\"},{\"codeValue\":\"Emergent-Developing\",\"description\":\"Emergent-Developing\",\"namespace\":\"http://catapultlearning.com/PerformanceLevelDescriptor\",\"shortDescription\":\"Emergent-Developing\"}]},{\"Name\":\"Catapult-Assessment\",\"ResourcePath\":\"/assessments\",\"Data\":{\"identifier\":\"Catapult-V1\",\"title\":\"Catapult Assessment\",\"revisionDate\":\"2020-02-03\",\"namespace\":\"http://catapultlearning.com/Assessment\",\"assessedGradeLevels\":[{\"gradeLevelDescriptor\":\"Kindergarten\"},{\"gradeLevelDescriptor\":\"First grade\"},{\"gradeLevelDescriptor\":\"Second grade\"},{\"gradeLevelDescriptor\":\"Third grade\"},{\"gradeLevelDescriptor\":\"Fourth grade\"},{\"gradeLevelDescriptor\":\"Fifth grade\"},{\"gradeLevelDescriptor\":\"Sixth grade\"},{\"gradeLevelDescriptor\":\"Seventh grade\"},{\"gradeLevelDescriptor\":\"Eighth grade\"},{\"gradeLevelDescriptor\":\"Ninth grade\"},{\"gradeLevelDescriptor\":\"Tenth grade\"},{\"gradeLevelDescriptor\":\"Eleventh grade\"},{\"gradeLevelDescriptor\":\"Twelfth grade\"},{\"gradeLevelDescriptor\":\"Ungraded\"}],\"categoryDescriptor\":\"Benchmark test\",\"academicSubjects\":[{\"academicSubjectDescriptor\":\"Reading\"},{\"academicSubjectDescriptor\":\"Mathematics\"}],\"scores\":[{\"assessmentReportingMethodType\":\"Percentile\",\"resultDatatypeType\":\"Integer\",\"maximumScore\":\"100\",\"minimumScore\":\"0\"},{\"assessmentReportingMethodType\":\"Month\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Subject\",\"resultDatatypeType\":\"Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Achievement/proficiency level\",\"performanceLevelDescriptor\":\"http://catapultlearning.com/PerformanceLevelDescriptor/Exceeds\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Achievement/proficiency level\",\"performanceLevelDescriptor\":\"http://catapultlearning.com/PerformanceLevelDescriptor/Meets\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Achievement/proficiency level\",\"performanceLevelDescriptor\":\"http://catapultlearning.com/PerformanceLevelDescriptor/Approaches\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Achievement/proficiency level\",\"performanceLevelDescriptor\":\"http://catapultlearning.com/PerformanceLevelDescriptor/Emergent-Developing\",\"resultDatatypeType\":\"Level\"}]}}],\"Lookups\":[{\"SourceTable\":\"Catapult-Threshhold-Descriptors\",\"Key\":\"Approaches\",\"Value\":\"http://catapultlearning.com/PerformanceLevelDescriptor/Approaches\"},{\"SourceTable\":\"Catapult-Threshhold-Descriptors\",\"Key\":\"Emergent/Developing\",\"Value\":\"http://catapultlearning.com/PerformanceLevelDescriptor/Emergent-Developing\"},{\"SourceTable\":\"Catapult-Threshhold-Descriptors\",\"Key\":\"Exceeds\",\"Value\":\"http://catapultlearning.com/PerformanceLevelDescriptor/Exceeds\"},{\"SourceTable\":\"Catapult-Threshhold-Descriptors\",\"Key\":\"Meets\",\"Value\":\"http://catapultlearning.com/PerformanceLevelDescriptor/Meets\"},{\"SourceTable\":\"Catapult-WhenAssessedGradeLevel\",\"Key\":\"Grade 1\",\"Value\":\"First grade\"},{\"SourceTable\":\"Catapult-WhenAssessedGradeLevel\",\"Key\":\"Grade 10\",\"Value\":\"Tenth grade\"},{\"SourceTable\":\"Catapult-WhenAssessedGradeLevel\",\"Key\":\"Grade 11\",\"Value\":\"Eleventh grade\"},{\"SourceTable\":\"Catapult-WhenAssessedGradeLevel\",\"Key\":\"Grade 12\",\"Value\":\"Twelfth grade\"},{\"SourceTable\":\"Catapult-WhenAssessedGradeLevel\",\"Key\":\"Grade 2\",\"Value\":\"Second grade\"},{\"SourceTable\":\"Catapult-WhenAssessedGradeLevel\",\"Key\":\"Grade 3\",\"Value\":\"Third grade\"},{\"SourceTable\":\"Catapult-WhenAssessedGradeLevel\",\"Key\":\"Grade 4\",\"Value\":\"Fourth grade\"},{\"SourceTable\":\"Catapult-WhenAssessedGradeLevel\",\"Key\":\"Grade 5\",\"Value\":\"Fifth grade\"},{\"SourceTable\":\"Catapult-WhenAssessedGradeLevel\",\"Key\":\"Grade 6\",\"Value\":\"Sixth grade\"},{\"SourceTable\":\"Catapult-WhenAssessedGradeLevel\",\"Key\":\"Grade 7\",\"Value\":\"Seventh grade\"},{\"SourceTable\":\"Catapult-WhenAssessedGradeLevel\",\"Key\":\"Grade 8\",\"Value\":\"Eighth grade\"},{\"SourceTable\":\"Catapult-WhenAssessedGradeLevel\",\"Key\":\"Grade 9\",\"Value\":\"Ninth grade\"},{\"SourceTable\":\"Catapult-WhenAssessedGradeLevel\",\"Key\":\"Grade k\",\"Value\":\"Kindergarten\"}]}",
-    "submitter": {
-        "name": "Emilio Baez",
-        "organization": "Developers.Net",
-        "email": "emilio@developers.net"
-    }
+  "id": 16,
+  "title": "Catapult Learning Assessment - API 2.5",
+  "description": "This template includes the Catapult Learning assessment.",
+  "apiVersion": "2.5+",
+  "dateTimePublished": "2020-02-18T20:07:14.6925122",
+  "template": {
+    "Maps": [
+      {
+        "Name": "Catapult Learning",
+        "ResourcePath": "/studentAssessments",
+        "ColumnHeaders": [
+          "student_id",
+          "school_year",
+          "month",
+          "grade_level",
+          "subject",
+          "test_date",
+          "score",
+          "threshold",
+          "birthdate",
+          "last_name",
+          "first_name",
+          "school_code",
+          "StudentUniqueId"
+        ],
+        "Map": {
+          "assessmentReference": {
+            "identifier": "Catapult-V1",
+            "namespace": "http://catapultlearning.com/Assessment"
+          },
+          "studentReference": {
+            "studentUniqueId": {
+              "Column": "StudentUniqueId"
+            }
+          },
+          "administrationDate": {
+            "Column": "test_date"
+          },
+          "identifier": {
+            "Column": "test_date"
+          },
+          "whenAssessedGradeLevelDescriptor": {
+            "Column": "grade_level",
+            "Lookup": "Catapult-WhenAssessedGradeLevel"
+          },
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodType": "Achievement/proficiency level",
+              "performanceLevelDescriptor": {
+                "Column": "threshold",
+                "Lookup": "Catapult-Threshhold-Descriptors"
+              },
+              "performanceLevelMet": true
+            }
+          ],
+          "scoreResults": [
+            {
+              "assessmentReportingMethodType": "Percentile",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "score"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Month",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "month"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Subject",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "subject"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "Bootstraps": [
+      {
+        "Name": "Catapult-PLD",
+        "ResourcePath": "/performanceLevelDescriptors",
+        "Data": [
+          {
+            "codeValue": "Exceeds",
+            "description": "Exceeds",
+            "namespace": "http://catapultlearning.com/PerformanceLevelDescriptor",
+            "shortDescription": "Exceeds"
+          },
+          {
+            "codeValue": "Meets",
+            "description": "Meets",
+            "namespace": "http://catapultlearning.com/PerformanceLevelDescriptor",
+            "shortDescription": "Meets"
+          },
+          {
+            "codeValue": "Approaches",
+            "description": "Approaches",
+            "namespace": "http://catapultlearning.com/PerformanceLevelDescriptor",
+            "shortDescription": "Approaches"
+          },
+          {
+            "codeValue": "Emergent-Developing",
+            "description": "Emergent-Developing",
+            "namespace": "http://catapultlearning.com/PerformanceLevelDescriptor",
+            "shortDescription": "Emergent-Developing"
+          }
+        ]
+      },
+      {
+        "Name": "Catapult-Assessment",
+        "ResourcePath": "/assessments",
+        "Data": {
+          "identifier": "Catapult-V1",
+          "title": "Catapult Assessment",
+          "revisionDate": "2020-02-03",
+          "namespace": "http://catapultlearning.com/Assessment",
+          "assessedGradeLevels": [
+            {
+              "gradeLevelDescriptor": "Kindergarten"
+            },
+            {
+              "gradeLevelDescriptor": "First grade"
+            },
+            {
+              "gradeLevelDescriptor": "Second grade"
+            },
+            {
+              "gradeLevelDescriptor": "Third grade"
+            },
+            {
+              "gradeLevelDescriptor": "Fourth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Fifth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Sixth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Seventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "Eighth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Ninth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Tenth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Eleventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "Twelfth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Ungraded"
+            }
+          ],
+          "categoryDescriptor": "Benchmark test",
+          "academicSubjects": [
+            {
+              "academicSubjectDescriptor": "Reading"
+            },
+            {
+              "academicSubjectDescriptor": "Mathematics"
+            }
+          ],
+          "scores": [
+            {
+              "assessmentReportingMethodType": "Percentile",
+              "resultDatatypeType": "Integer",
+              "maximumScore": "100",
+              "minimumScore": "0"
+            },
+            {
+              "assessmentReportingMethodType": "Month",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Subject",
+              "resultDatatypeType": "Level"
+            }
+          ],
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodType": "Achievement/proficiency level",
+              "performanceLevelDescriptor": "http://catapultlearning.com/PerformanceLevelDescriptor/Exceeds",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Achievement/proficiency level",
+              "performanceLevelDescriptor": "http://catapultlearning.com/PerformanceLevelDescriptor/Meets",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Achievement/proficiency level",
+              "performanceLevelDescriptor": "http://catapultlearning.com/PerformanceLevelDescriptor/Approaches",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Achievement/proficiency level",
+              "performanceLevelDescriptor": "http://catapultlearning.com/PerformanceLevelDescriptor/Emergent-Developing",
+              "resultDatatypeType": "Level"
+            }
+          ]
+        }
+      }
+    ],
+    "Lookups": [
+      {
+        "SourceTable": "Catapult-Threshhold-Descriptors",
+        "Key": "Approaches",
+        "Value": "http://catapultlearning.com/PerformanceLevelDescriptor/Approaches"
+      },
+      {
+        "SourceTable": "Catapult-Threshhold-Descriptors",
+        "Key": "Emergent/Developing",
+        "Value": "http://catapultlearning.com/PerformanceLevelDescriptor/Emergent-Developing"
+      },
+      {
+        "SourceTable": "Catapult-Threshhold-Descriptors",
+        "Key": "Exceeds",
+        "Value": "http://catapultlearning.com/PerformanceLevelDescriptor/Exceeds"
+      },
+      {
+        "SourceTable": "Catapult-Threshhold-Descriptors",
+        "Key": "Meets",
+        "Value": "http://catapultlearning.com/PerformanceLevelDescriptor/Meets"
+      },
+      {
+        "SourceTable": "Catapult-WhenAssessedGradeLevel",
+        "Key": "Grade 1",
+        "Value": "First grade"
+      },
+      {
+        "SourceTable": "Catapult-WhenAssessedGradeLevel",
+        "Key": "Grade 10",
+        "Value": "Tenth grade"
+      },
+      {
+        "SourceTable": "Catapult-WhenAssessedGradeLevel",
+        "Key": "Grade 11",
+        "Value": "Eleventh grade"
+      },
+      {
+        "SourceTable": "Catapult-WhenAssessedGradeLevel",
+        "Key": "Grade 12",
+        "Value": "Twelfth grade"
+      },
+      {
+        "SourceTable": "Catapult-WhenAssessedGradeLevel",
+        "Key": "Grade 2",
+        "Value": "Second grade"
+      },
+      {
+        "SourceTable": "Catapult-WhenAssessedGradeLevel",
+        "Key": "Grade 3",
+        "Value": "Third grade"
+      },
+      {
+        "SourceTable": "Catapult-WhenAssessedGradeLevel",
+        "Key": "Grade 4",
+        "Value": "Fourth grade"
+      },
+      {
+        "SourceTable": "Catapult-WhenAssessedGradeLevel",
+        "Key": "Grade 5",
+        "Value": "Fifth grade"
+      },
+      {
+        "SourceTable": "Catapult-WhenAssessedGradeLevel",
+        "Key": "Grade 6",
+        "Value": "Sixth grade"
+      },
+      {
+        "SourceTable": "Catapult-WhenAssessedGradeLevel",
+        "Key": "Grade 7",
+        "Value": "Seventh grade"
+      },
+      {
+        "SourceTable": "Catapult-WhenAssessedGradeLevel",
+        "Key": "Grade 8",
+        "Value": "Eighth grade"
+      },
+      {
+        "SourceTable": "Catapult-WhenAssessedGradeLevel",
+        "Key": "Grade 9",
+        "Value": "Ninth grade"
+      },
+      {
+        "SourceTable": "Catapult-WhenAssessedGradeLevel",
+        "Key": "Grade k",
+        "Value": "Kindergarten"
+      }
+    ]
+  },
+  "submitter": {
+    "name": "Emilio Baez",
+    "organization": "Developers.Net",
+    "email": "emilio@developers.net"
+  }
 }

@@ -1,13 +1,1044 @@
 {
-    "id": 17,
-    "title": "Curriculum Associates i-Ready Diagnostic Math and ELA Assessments",
-    "description": "This template includes the Curriculum Associates i-Ready Diagnostic Math and ELA Assessments",
-    "apiVersion": "2.5+",
-    "dateTimePublished": "2020-03-02T16:33:54.4443441",
-    "template": "{\"Maps\":[{\"Name\":\"CA-IREADY-DIAGNOSTIC-ELA-V1_StudentAssessments\",\"ResourcePath\":\"/studentAssessments\",\"ColumnHeaders\":[\"Last Name\",\"First Name\",\"Student ID\",\"Student Grade\",\"Academic Year\",\"School\",\"Start Date\",\"Completion Date\",\"Time on Task (minutes)\",\"Rush Flag\",\"Overall Scale Score\",\"Overall Placement\",\"Grouping\",\"Lexile Measure\",\"Lexile Range\",\"Phonological Awareness Scale Score\",\"Phonological Awareness Placement\",\"Phonics Scale Score\",\"Phonics Placement\",\"High-Frequency Words Scale Score\",\"High-Frequency Words Placement\",\"Vocabulary Scale Score\",\"Vocabulary Placement\",\"Reading Comprehension: Literature Scale Score\",\"Reading Comprehension: Literature Placement\",\"Reading Comprehension: Informational Text Scale Score\",\"Reading Comprehension: Informational Text Placement\",\"Annual Typical Growth Measure\",\"Annual Stretch Growth Measure\",\"Mid On Grade Level Scale Score\",\"Activity Id\",\"StudentUniqueId\"],\"Map\":{\"assessmentReference\":{\"identifier\":\"CA-IREADY-DIAGNOSTIC-ELA-V1\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/Assessment.xml\"},\"studentReference\":{\"studentUniqueId\":{\"Column\":\"StudentUniqueId\"}},\"administrationDate\":{\"Column\":\"Start Date\"},\"administrationEndDate\":{\"Column\":\"Completion Date\"},\"identifier\":{\"Column\":\"Activity Id\"},\"whenAssessedGradeLevelDescriptor\":{\"Column\":\"Student Grade\",\"Lookup\":\"GradeLevelNumber_to_Text\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Rush Flag\",\"performanceLevelDescriptor\":{\"Column\":\"Rush Flag\",\"Lookup\":\"CA-IREADY_RushFlags\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Overall Scale Score\"}},{\"assessmentReportingMethodType\":\"Proficiency level\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"Overall Placement\"}},{\"assessmentReportingMethodType\":\"Lexile Measure\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"Lexile Measure\"}},{\"assessmentReportingMethodType\":\"Lexile Range\",\"resultDatatypeType\":\"Range\",\"result\":{\"Column\":\"Lexile Range\"}},{\"assessmentReportingMethodType\":\"Annual Typical Growth Measure\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Annual Typical Growth Measure\"}},{\"assessmentReportingMethodType\":\"Annual Stretch Growth Measure\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Annual Stretch Growth Measure\"}},{\"assessmentReportingMethodType\":\"Mid On Grade Level Scale Score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Mid On Grade Level Scale Score\"}},{\"assessmentReportingMethodType\":\"Time on Task (minutes)\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Time on Task (minutes)\"}}],\"studentObjectiveAssessments\":[{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"CA-IREADY-DIAGNOSTIC-ELA-V1\",\"identificationCode\":\"CA-IREADY-DIAGNOSTIC-ELA-PHONOLOGICAL-AWARENESS\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/Assessment.xml\"},\"scoreResults\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Phonological Awareness Scale Score\"}},{\"assessmentReportingMethodType\":\"Proficiency level\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"Phonological Awareness Placement\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"CA-IREADY-DIAGNOSTIC-ELA-V1\",\"identificationCode\":\"CA-IREADY-DIAGNOSTIC-ELA-PHONICS\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/Assessment.xml\"},\"scoreResults\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Phonics Scale Score\"}},{\"assessmentReportingMethodType\":\"Proficiency level\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"Phonics Placement\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"CA-IREADY-DIAGNOSTIC-ELA-V1\",\"identificationCode\":\"CA-IREADY-DIAGNOSTIC-ELA-HIGH-FREQUENCY-WORDS\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/Assessment.xml\"},\"scoreResults\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"High-Frequency Words Scale Score\"}},{\"assessmentReportingMethodType\":\"Proficiency level\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"High-Frequency Words Placement\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"CA-IREADY-DIAGNOSTIC-ELA-V1\",\"identificationCode\":\"CA-IREADY-DIAGNOSTIC-ELA-VOCABULARY\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/Assessment.xml\"},\"scoreResults\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Vocabulary Scale Score\"}},{\"assessmentReportingMethodType\":\"Proficiency level\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"Vocabulary Placement\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"CA-IREADY-DIAGNOSTIC-ELA-V1\",\"identificationCode\":\"CA-IREADY-DIAGNOSTIC-ELA-READING-COMPREHENSION-LITERATURE\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/Assessment.xml\"},\"scoreResults\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Reading Comprehension: Literature Scale Score\"}},{\"assessmentReportingMethodType\":\"Proficiency level\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"Reading Comprehension: Literature Placement\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"CA-IREADY-DIAGNOSTIC-ELA-V1\",\"identificationCode\":\"CA-IREADY-DIAGNOSTIC-ELA-READING-COMPREHENSION-INFO-TEXT\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/Assessment.xml\"},\"scoreResults\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Reading Comprehension: Informational Text Scale Score\"}},{\"assessmentReportingMethodType\":\"Proficiency level\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"Reading Comprehension: Informational Text Placement\"}}]}]}},{\"Name\":\"CA-IREADY-DIAGNOSTIC-MATH-V1_StudentAssessments\",\"ResourcePath\":\"/studentAssessments\",\"ColumnHeaders\":[\"Last Name\",\"First Name\",\"Student ID\",\"Student Grade\",\"Academic Year\",\"School\",\"Start Date\",\"Completion Date\",\"Time on Task (minutes)\",\"Rush Flag\",\"Overall Scale Score\",\"Overall Placement\",\"Grouping\",\"Quantile Measure\",\"Quantile Range\",\"Number and Operations Scale Score\",\"Number and Operations Placement\",\"Algebra and Algebraic Thinking Scale Score\",\"Algebra and Algebraic Thinking Placement\",\"Measurement and Data Scale Score\",\"Measurement and Data Placement\",\"Geometry Scale Score\",\"Geometry Placement\",\"Annual Typical Growth Measure\",\"Annual Stretch Growth Measure\",\"Mid On Grade Level Scale Score\",\"Activity Id\",\"StudentUniqueId\"],\"Map\":{\"assessmentReference\":{\"identifier\":\"CA-IREADY-DIAGNOSTIC-MATH-V1\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/Assessment.xml\"},\"studentReference\":{\"studentUniqueId\":{\"Column\":\"StudentUniqueId\"}},\"administrationDate\":{\"Column\":\"Start Date\"},\"administrationEndDate\":{\"Column\":\"Completion Date\"},\"identifier\":{\"Column\":\"Activity Id\"},\"whenAssessedGradeLevelDescriptor\":{\"Column\":\"Student Grade\",\"Lookup\":\"GradeLevelNumber_to_Text\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Rush Flag\",\"performanceLevelDescriptor\":{\"Column\":\"Rush Flag\",\"Lookup\":\"CA-IREADY_RushFlags\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Overall Scale Score\"}},{\"assessmentReportingMethodType\":\"Proficiency level\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"Overall Placement\"}},{\"assessmentReportingMethodType\":\"Quantile Measure\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"Quantile Measure\"}},{\"assessmentReportingMethodType\":\"Quantile Range\",\"resultDatatypeType\":\"Range\",\"result\":{\"Column\":\"Quantile Range\"}},{\"assessmentReportingMethodType\":\"Annual Typical Growth Measure\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Annual Typical Growth Measure\"}},{\"assessmentReportingMethodType\":\"Annual Stretch Growth Measure\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Annual Stretch Growth Measure\"}},{\"assessmentReportingMethodType\":\"Mid On Grade Level Scale Score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Mid On Grade Level Scale Score\"}},{\"assessmentReportingMethodType\":\"Time on Task (minutes)\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Time on Task (minutes)\"}}],\"studentObjectiveAssessments\":[{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"CA-IREADY-DIAGNOSTIC-MATH-V1\",\"identificationCode\":\"CA-IREADY-DIAGNOSTIC-MATH-ALGEBRA\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/Assessment.xml\"},\"scoreResults\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Algebra and Algebraic Thinking Scale Score\"}},{\"assessmentReportingMethodType\":\"Proficiency level\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"Algebra and Algebraic Thinking Placement\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"CA-IREADY-DIAGNOSTIC-MATH-V1\",\"identificationCode\":\"CA-IREADY-DIAGNOSTIC-MATH-GEOMETRY\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/Assessment.xml\"},\"scoreResults\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Geometry Scale Score\"}},{\"assessmentReportingMethodType\":\"Proficiency level\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"Geometry Placement\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"CA-IREADY-DIAGNOSTIC-MATH-V1\",\"identificationCode\":\"CA-IREADY-DIAGNOSTIC-MATH-MEASUREMENT\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/Assessment.xml\"},\"scoreResults\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Measurement and Data Scale Score\"}},{\"assessmentReportingMethodType\":\"Proficiency level\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"Measurement and Data Placement\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"CA-IREADY-DIAGNOSTIC-MATH-V1\",\"identificationCode\":\"CA-IREADY-DIAGNOSTIC-MATH-NUMBER-AND-OPERATIONS\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/Assessment.xml\"},\"scoreResults\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Number and Operations Scale Score\"}},{\"assessmentReportingMethodType\":\"Proficiency level\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"Number and Operations Placement\"}}]}]}}],\"Bootstraps\":[{\"Name\":\"CA-IREADY-DIAGNOSTIC-PerformanceLevelDescriptors_RushFlags\",\"ResourcePath\":\"/performanceLevelDescriptors\",\"Data\":[{\"codeValue\":\"Yellow Rush Flag\",\"description\":\"Yellow Rush Flag\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/PerformanceLevelDescriptor.xml\",\"shortDescription\":\"Yellow Rush Flag\"},{\"codeValue\":\"Red Rush Flag\",\"description\":\"Red Rush Flag\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/PerformanceLevelDescriptor.xml\",\"shortDescription\":\"Red Rush Flag\"}]},{\"Name\":\"CA-IREADY-DIAGNOSTIC-MATH-V1_Assessments\",\"ResourcePath\":\"/assessments\",\"Data\":{\"adaptiveAssessment\":true,\"categoryDescriptor\":\"Diagnostic\",\"identifier\":\"CA-IREADY-DIAGNOSTIC-MATH-V1\",\"title\":\"Curriculum Associates i-Ready Math Diagnostic\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/Assessment.xml\",\"version\":1,\"academicSubjects\":[{\"academicSubjectDescriptor\":\"http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml/Mathematics\"}],\"assessedGradeLevels\":[{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/First grade\"},{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Second grade\"},{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Third grade\"},{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Fourth grade\"},{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Fifth grade\"},{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Sixth grade\"},{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Seventh grade\"},{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Eighth grade\"},{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Ninth grade\"},{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Tenth grade\"},{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Eleventh grade\"},{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Twelfth grade\"},{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Kindergarten\"}],\"identificationCodes\":[{\"assessmentIdentificationSystemDescriptor\":\"Test Contractor\",\"identificationCode\":\"CA-IREADY-DIAGNOSTIC\"}],\"languages\":[{\"languageDescriptor\":\"http://ed-fi.org/Descriptor/LanguageDescriptor.xml/English\"},{\"languageDescriptor\":\"http://ed-fi.org/Descriptor/LanguageDescriptor.xml/Spanish\"}],\"scores\":[{\"assessmentReportingMethodType\":\"Time on Task (minutes)\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Proficiency level\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Quantile Measure\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Quantile Range\",\"resultDatatypeType\":\"Range\"},{\"assessmentReportingMethodType\":\"Annual Typical Growth Measure\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Annual Stretch Growth Measure\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Mid On Grade Level Scale Score\",\"resultDatatypeType\":\"Integer\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Rush Flag\",\"performanceLevelDescriptor\":\"http://www.curriculumassociates.com/Descriptor/PerformanceLevelDescriptor.xml/Yellow Rush Flag\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Rush Flag\",\"performanceLevelDescriptor\":\"http://www.curriculumassociates.com/Descriptor/PerformanceLevelDescriptor.xml/Red Rush Flag\",\"resultDatatypeType\":\"Level\"}]}},{\"Name\":\"CA-IREADY-DIAGNOSTIC-MATH-ALGEBRA_ObjectiveAssessments\",\"ResourcePath\":\"/objectiveAssessments\",\"Data\":{\"assessmentReference\":{\"identifier\":\"CA-IREADY-DIAGNOSTIC-MATH-V1\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/Assessment.xml\"},\"description\":\"Algebra and Algebraic Thinking\",\"identificationCode\":\"CA-IREADY-DIAGNOSTIC-MATH-ALGEBRA\",\"scores\":[{\"assessmentReportingMethodType\":\"Proficiency level\"},{\"assessmentReportingMethodType\":\"Scale score\"}]}},{\"Name\":\"CA-IREADY-DIAGNOSTIC-MATH-GEOMETRY_ObjectiveAssessments\\t\",\"ResourcePath\":\"/objectiveAssessments\",\"Data\":{\"assessmentReference\":{\"identifier\":\"CA-IREADY-DIAGNOSTIC-MATH-V1\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/Assessment.xml\"},\"description\":\"Geometry\",\"identificationCode\":\"CA-IREADY-DIAGNOSTIC-MATH-GEOMETRY\",\"scores\":[{\"assessmentReportingMethodType\":\"Proficiency level\"},{\"assessmentReportingMethodType\":\"Scale score\"}]}},{\"Name\":\"CA-IREADY-DIAGNOSTIC-MATH-MEASUREMENT_ObjectiveAssessments\",\"ResourcePath\":\"/objectiveAssessments\",\"Data\":{\"assessmentReference\":{\"identifier\":\"CA-IREADY-DIAGNOSTIC-MATH-V1\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/Assessment.xml\"},\"description\":\"Measurement and Data Placement\",\"identificationCode\":\"CA-IREADY-DIAGNOSTIC-MATH-MEASUREMENT\",\"scores\":[{\"assessmentReportingMethodType\":\"Proficiency level\"},{\"assessmentReportingMethodType\":\"Scale score\"}]}},{\"Name\":\"CA-IREADY-DIAGNOSTIC-MATH-NUMBER-AND-OPERATIONS_ObjectiveAssessments\",\"ResourcePath\":\"/objectiveAssessments\",\"Data\":{\"assessmentReference\":{\"identifier\":\"CA-IREADY-DIAGNOSTIC-MATH-V1\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/Assessment.xml\"},\"description\":\"Number and Operations\",\"identificationCode\":\"CA-IREADY-DIAGNOSTIC-MATH-NUMBER-AND-OPERATIONS\",\"scores\":[{\"assessmentReportingMethodType\":\"Proficiency level\"},{\"assessmentReportingMethodType\":\"Scale score\"}]}},{\"Name\":\"CA-IREADY-DIAGNOSTIC-ELA-V1_Assessments\",\"ResourcePath\":\"/assessments\",\"Data\":{\"adaptiveAssessment\":true,\"categoryDescriptor\":\"Diagnostic\",\"identifier\":\"CA-IREADY-DIAGNOSTIC-ELA-V1\",\"title\":\"Curriculum Associates i-Ready ELA Diagnostic\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/Assessment.xml\",\"version\":1,\"academicSubjects\":[{\"academicSubjectDescriptor\":\"http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml/English Language Arts\"}],\"assessedGradeLevels\":[{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/First grade\"},{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Second grade\"},{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Third grade\"},{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Fourth grade\"},{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Fifth grade\"},{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Sixth grade\"},{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Seventh grade\"},{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Eighth grade\"},{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Ninth grade\"},{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Tenth grade\"},{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Eleventh grade\"},{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Twelfth grade\"},{\"gradeLevelDescriptor\":\"http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Kindergarten\"}],\"identificationCodes\":[{\"assessmentIdentificationSystemDescriptor\":\"Test Contractor\",\"identificationCode\":\"CA-IREADY-DIAGNOSTIC\"}],\"languages\":[{\"languageDescriptor\":\"http://ed-fi.org/Descriptor/LanguageDescriptor.xml/English\"},{\"languageDescriptor\":\"http://ed-fi.org/Descriptor/LanguageDescriptor.xml/Spanish\"}],\"scores\":[{\"assessmentReportingMethodType\":\"Time on Task (minutes)\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Proficiency level\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Lexile Measure\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Lexile Range\",\"resultDatatypeType\":\"Range\"},{\"assessmentReportingMethodType\":\"Annual Typical Growth Measure\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Annual Stretch Growth Measure\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Mid On Grade Level Scale Score\",\"resultDatatypeType\":\"Integer\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Rush Flag\",\"performanceLevelDescriptor\":\"http://www.curriculumassociates.com/Descriptor/PerformanceLevelDescriptor.xml/Yellow Rush Flag\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Rush Flag\",\"performanceLevelDescriptor\":\"http://www.curriculumassociates.com/Descriptor/PerformanceLevelDescriptor.xml/Red Rush Flag\",\"resultDatatypeType\":\"Level\"}]}},{\"Name\":\"CA-IREADY-DIAGNOSTIC-ELA-PHONOLOGICAL-AWARENESS_ObjectiveAssessments\",\"ResourcePath\":\"/objectiveAssessments\",\"Data\":{\"assessmentReference\":{\"identifier\":\"CA-IREADY-DIAGNOSTIC-ELA-V1\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/Assessment.xml\"},\"description\":\"Phonological Awareness\",\"identificationCode\":\"CA-IREADY-DIAGNOSTIC-ELA-PHONOLOGICAL-AWARENESS\",\"scores\":[{\"assessmentReportingMethodType\":\"Proficiency level\"},{\"assessmentReportingMethodType\":\"Scale score\"}]}},{\"Name\":\"CA-IREADY-DIAGNOSTIC-ELA-PHONICS_ObjectiveAssessments\",\"ResourcePath\":\"/objectiveAssessments\",\"Data\":{\"assessmentReference\":{\"identifier\":\"CA-IREADY-DIAGNOSTIC-ELA-V1\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/Assessment.xml\"},\"description\":\"Phonics\",\"identificationCode\":\"CA-IREADY-DIAGNOSTIC-ELA-PHONICS\",\"scores\":[{\"assessmentReportingMethodType\":\"Proficiency level\"},{\"assessmentReportingMethodType\":\"Scale score\"}]}},{\"Name\":\"CA-IREADY-DIAGNOSTIC-ELA-HIGH-FREQUENCY-WORDS_ObjectiveAssessments\",\"ResourcePath\":\"/objectiveAssessments\",\"Data\":{\"assessmentReference\":{\"identifier\":\"CA-IREADY-DIAGNOSTIC-ELA-V1\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/Assessment.xml\"},\"description\":\"High-Frequency Words\",\"identificationCode\":\"CA-IREADY-DIAGNOSTIC-ELA-HIGH-FREQUENCY-WORDS\",\"scores\":[{\"assessmentReportingMethodType\":\"Proficiency level\"},{\"assessmentReportingMethodType\":\"Scale score\"}]}},{\"Name\":\"CA-IREADY-DIAGNOSTIC-ELA-VOCABULARY_ObjectiveAssessments\\t\",\"ResourcePath\":\"/objectiveAssessments\",\"Data\":{\"assessmentReference\":{\"identifier\":\"CA-IREADY-DIAGNOSTIC-ELA-V1\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/Assessment.xml\"},\"description\":\"Vocabulary\",\"identificationCode\":\"CA-IREADY-DIAGNOSTIC-ELA-VOCABULARY\",\"scores\":[{\"assessmentReportingMethodType\":\"Proficiency level\"},{\"assessmentReportingMethodType\":\"Scale score\"}]}},{\"Name\":\"CA-IREADY-DIAGNOSTIC-ELA-READING-COMPREHENSION-LITERATURE_ObjectiveAssessments\\t\",\"ResourcePath\":\"/objectiveAssessments\",\"Data\":{\"assessmentReference\":{\"identifier\":\"CA-IREADY-DIAGNOSTIC-ELA-V1\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/Assessment.xml\"},\"description\":\"Reading Comprehension: Literature\",\"identificationCode\":\"CA-IREADY-DIAGNOSTIC-ELA-READING-COMPREHENSION-LITERATURE\",\"scores\":[{\"assessmentReportingMethodType\":\"Proficiency level\"},{\"assessmentReportingMethodType\":\"Scale score\"}]}},{\"Name\":\"CA-IREADY-DIAGNOSTIC-ELA-READING-COMPREHENSION-INFO-TEXT_ObjectiveAssessments\\t\",\"ResourcePath\":\"/objectiveAssessments\",\"Data\":{\"assessmentReference\":{\"identifier\":\"CA-IREADY-DIAGNOSTIC-ELA-V1\",\"namespace\":\"http://www.curriculumassociates.com/Descriptor/Assessment.xml\"},\"description\":\"Reading Comprehension: Informational Text\",\"identificationCode\":\"CA-IREADY-DIAGNOSTIC-ELA-READING-COMPREHENSION-INFO-TEXT\",\"scores\":[{\"assessmentReportingMethodType\":\"Proficiency level\"},{\"assessmentReportingMethodType\":\"Scale score\"}]}}],\"Lookups\":[{\"SourceTable\":\"CA-IREADY_RushFlags\",\"Key\":\"Red Rush Flag\",\"Value\":\"http://www.curriculumassociates.com/Descriptor/PerformanceLevelDescriptor.xml/Red Rush Flag\"},{\"SourceTable\":\"CA-IREADY_RushFlags\",\"Key\":\"Yellow Rush Flag\",\"Value\":\"http://www.curriculumassociates.com/Descriptor/PerformanceLevelDescriptor.xml/Yellow Rush Flag\"},{\"SourceTable\":\"GradeLevelNumber_to_Text\",\"Key\":\"1\",\"Value\":\"First grade\"},{\"SourceTable\":\"GradeLevelNumber_to_Text\",\"Key\":\"10\",\"Value\":\"Tenth grade\"},{\"SourceTable\":\"GradeLevelNumber_to_Text\",\"Key\":\"11\",\"Value\":\"Eleventh grade\"},{\"SourceTable\":\"GradeLevelNumber_to_Text\",\"Key\":\"12\",\"Value\":\"Twelfth grade\"},{\"SourceTable\":\"GradeLevelNumber_to_Text\",\"Key\":\"2\",\"Value\":\"Second grade\"},{\"SourceTable\":\"GradeLevelNumber_to_Text\",\"Key\":\"3\",\"Value\":\"Third grade\"},{\"SourceTable\":\"GradeLevelNumber_to_Text\",\"Key\":\"4\",\"Value\":\"Fourth grade\"},{\"SourceTable\":\"GradeLevelNumber_to_Text\",\"Key\":\"5\",\"Value\":\"Fifth grade\"},{\"SourceTable\":\"GradeLevelNumber_to_Text\",\"Key\":\"6\",\"Value\":\"Sixth grade\"},{\"SourceTable\":\"GradeLevelNumber_to_Text\",\"Key\":\"7\",\"Value\":\"Seventh grade\"},{\"SourceTable\":\"GradeLevelNumber_to_Text\",\"Key\":\"8\",\"Value\":\"Eighth grade\"},{\"SourceTable\":\"GradeLevelNumber_to_Text\",\"Key\":\"9\",\"Value\":\"Ninth grade\"},{\"SourceTable\":\"GradeLevelNumber_to_Text\",\"Key\":\"K\",\"Value\":\"Kindergarten\"},{\"SourceTable\":\"GradeLevelNumber_to_Text\",\"Key\":\"PK\",\"Value\":\"Preschool/Prekindergarten\"}]}",
-    "submitter": {
-        "name": "Sherod Keen",
-        "organization": "FLCODE",
-        "email": "KeenS@nefec.org"
-    }
+  "id": 17,
+  "title": "Curriculum Associates i-Ready Diagnostic Math and ELA Assessments",
+  "description": "This template includes the Curriculum Associates i-Ready Diagnostic Math and ELA Assessments",
+  "apiVersion": "2.5+",
+  "dateTimePublished": "2020-03-02T16:33:54.4443441",
+  "template": {
+    "Maps": [
+      {
+        "Name": "CA-IREADY-DIAGNOSTIC-ELA-V1_StudentAssessments",
+        "ResourcePath": "/studentAssessments",
+        "ColumnHeaders": [
+          "Last Name",
+          "First Name",
+          "Student ID",
+          "Student Grade",
+          "Academic Year",
+          "School",
+          "Start Date",
+          "Completion Date",
+          "Time on Task (minutes)",
+          "Rush Flag",
+          "Overall Scale Score",
+          "Overall Placement",
+          "Grouping",
+          "Lexile Measure",
+          "Lexile Range",
+          "Phonological Awareness Scale Score",
+          "Phonological Awareness Placement",
+          "Phonics Scale Score",
+          "Phonics Placement",
+          "High-Frequency Words Scale Score",
+          "High-Frequency Words Placement",
+          "Vocabulary Scale Score",
+          "Vocabulary Placement",
+          "Reading Comprehension: Literature Scale Score",
+          "Reading Comprehension: Literature Placement",
+          "Reading Comprehension: Informational Text Scale Score",
+          "Reading Comprehension: Informational Text Placement",
+          "Annual Typical Growth Measure",
+          "Annual Stretch Growth Measure",
+          "Mid On Grade Level Scale Score",
+          "Activity Id",
+          "StudentUniqueId"
+        ],
+        "Map": {
+          "assessmentReference": {
+            "identifier": "CA-IREADY-DIAGNOSTIC-ELA-V1",
+            "namespace": "http://www.curriculumassociates.com/Descriptor/Assessment.xml"
+          },
+          "studentReference": {
+            "studentUniqueId": {
+              "Column": "StudentUniqueId"
+            }
+          },
+          "administrationDate": {
+            "Column": "Start Date"
+          },
+          "administrationEndDate": {
+            "Column": "Completion Date"
+          },
+          "identifier": {
+            "Column": "Activity Id"
+          },
+          "whenAssessedGradeLevelDescriptor": {
+            "Column": "Student Grade",
+            "Lookup": "GradeLevelNumber_to_Text"
+          },
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodType": "Rush Flag",
+              "performanceLevelDescriptor": {
+                "Column": "Rush Flag",
+                "Lookup": "CA-IREADY_RushFlags"
+              },
+              "performanceLevelMet": true
+            }
+          ],
+          "scoreResults": [
+            {
+              "assessmentReportingMethodType": "Scale score",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "Overall Scale Score"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Proficiency level",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "Overall Placement"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Lexile Measure",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "Lexile Measure"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Lexile Range",
+              "resultDatatypeType": "Range",
+              "result": {
+                "Column": "Lexile Range"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Annual Typical Growth Measure",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "Annual Typical Growth Measure"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Annual Stretch Growth Measure",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "Annual Stretch Growth Measure"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Mid On Grade Level Scale Score",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "Mid On Grade Level Scale Score"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Time on Task (minutes)",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "Time on Task (minutes)"
+              }
+            }
+          ],
+          "studentObjectiveAssessments": [
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "CA-IREADY-DIAGNOSTIC-ELA-V1",
+                "identificationCode": "CA-IREADY-DIAGNOSTIC-ELA-PHONOLOGICAL-AWARENESS",
+                "namespace": "http://www.curriculumassociates.com/Descriptor/Assessment.xml"
+              },
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Scale score",
+                  "resultDatatypeType": "Integer",
+                  "result": {
+                    "Column": "Phonological Awareness Scale Score"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Proficiency level",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "Phonological Awareness Placement"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "CA-IREADY-DIAGNOSTIC-ELA-V1",
+                "identificationCode": "CA-IREADY-DIAGNOSTIC-ELA-PHONICS",
+                "namespace": "http://www.curriculumassociates.com/Descriptor/Assessment.xml"
+              },
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Scale score",
+                  "resultDatatypeType": "Integer",
+                  "result": {
+                    "Column": "Phonics Scale Score"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Proficiency level",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "Phonics Placement"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "CA-IREADY-DIAGNOSTIC-ELA-V1",
+                "identificationCode": "CA-IREADY-DIAGNOSTIC-ELA-HIGH-FREQUENCY-WORDS",
+                "namespace": "http://www.curriculumassociates.com/Descriptor/Assessment.xml"
+              },
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Scale score",
+                  "resultDatatypeType": "Integer",
+                  "result": {
+                    "Column": "High-Frequency Words Scale Score"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Proficiency level",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "High-Frequency Words Placement"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "CA-IREADY-DIAGNOSTIC-ELA-V1",
+                "identificationCode": "CA-IREADY-DIAGNOSTIC-ELA-VOCABULARY",
+                "namespace": "http://www.curriculumassociates.com/Descriptor/Assessment.xml"
+              },
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Scale score",
+                  "resultDatatypeType": "Integer",
+                  "result": {
+                    "Column": "Vocabulary Scale Score"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Proficiency level",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "Vocabulary Placement"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "CA-IREADY-DIAGNOSTIC-ELA-V1",
+                "identificationCode": "CA-IREADY-DIAGNOSTIC-ELA-READING-COMPREHENSION-LITERATURE",
+                "namespace": "http://www.curriculumassociates.com/Descriptor/Assessment.xml"
+              },
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Scale score",
+                  "resultDatatypeType": "Integer",
+                  "result": {
+                    "Column": "Reading Comprehension: Literature Scale Score"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Proficiency level",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "Reading Comprehension: Literature Placement"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "CA-IREADY-DIAGNOSTIC-ELA-V1",
+                "identificationCode": "CA-IREADY-DIAGNOSTIC-ELA-READING-COMPREHENSION-INFO-TEXT",
+                "namespace": "http://www.curriculumassociates.com/Descriptor/Assessment.xml"
+              },
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Scale score",
+                  "resultDatatypeType": "Integer",
+                  "result": {
+                    "Column": "Reading Comprehension: Informational Text Scale Score"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Proficiency level",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "Reading Comprehension: Informational Text Placement"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Name": "CA-IREADY-DIAGNOSTIC-MATH-V1_StudentAssessments",
+        "ResourcePath": "/studentAssessments",
+        "ColumnHeaders": [
+          "Last Name",
+          "First Name",
+          "Student ID",
+          "Student Grade",
+          "Academic Year",
+          "School",
+          "Start Date",
+          "Completion Date",
+          "Time on Task (minutes)",
+          "Rush Flag",
+          "Overall Scale Score",
+          "Overall Placement",
+          "Grouping",
+          "Quantile Measure",
+          "Quantile Range",
+          "Number and Operations Scale Score",
+          "Number and Operations Placement",
+          "Algebra and Algebraic Thinking Scale Score",
+          "Algebra and Algebraic Thinking Placement",
+          "Measurement and Data Scale Score",
+          "Measurement and Data Placement",
+          "Geometry Scale Score",
+          "Geometry Placement",
+          "Annual Typical Growth Measure",
+          "Annual Stretch Growth Measure",
+          "Mid On Grade Level Scale Score",
+          "Activity Id",
+          "StudentUniqueId"
+        ],
+        "Map": {
+          "assessmentReference": {
+            "identifier": "CA-IREADY-DIAGNOSTIC-MATH-V1",
+            "namespace": "http://www.curriculumassociates.com/Descriptor/Assessment.xml"
+          },
+          "studentReference": {
+            "studentUniqueId": {
+              "Column": "StudentUniqueId"
+            }
+          },
+          "administrationDate": {
+            "Column": "Start Date"
+          },
+          "administrationEndDate": {
+            "Column": "Completion Date"
+          },
+          "identifier": {
+            "Column": "Activity Id"
+          },
+          "whenAssessedGradeLevelDescriptor": {
+            "Column": "Student Grade",
+            "Lookup": "GradeLevelNumber_to_Text"
+          },
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodType": "Rush Flag",
+              "performanceLevelDescriptor": {
+                "Column": "Rush Flag",
+                "Lookup": "CA-IREADY_RushFlags"
+              },
+              "performanceLevelMet": true
+            }
+          ],
+          "scoreResults": [
+            {
+              "assessmentReportingMethodType": "Scale score",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "Overall Scale Score"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Proficiency level",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "Overall Placement"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Quantile Measure",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "Quantile Measure"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Quantile Range",
+              "resultDatatypeType": "Range",
+              "result": {
+                "Column": "Quantile Range"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Annual Typical Growth Measure",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "Annual Typical Growth Measure"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Annual Stretch Growth Measure",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "Annual Stretch Growth Measure"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Mid On Grade Level Scale Score",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "Mid On Grade Level Scale Score"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Time on Task (minutes)",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "Time on Task (minutes)"
+              }
+            }
+          ],
+          "studentObjectiveAssessments": [
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "CA-IREADY-DIAGNOSTIC-MATH-V1",
+                "identificationCode": "CA-IREADY-DIAGNOSTIC-MATH-ALGEBRA",
+                "namespace": "http://www.curriculumassociates.com/Descriptor/Assessment.xml"
+              },
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Scale score",
+                  "resultDatatypeType": "Integer",
+                  "result": {
+                    "Column": "Algebra and Algebraic Thinking Scale Score"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Proficiency level",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "Algebra and Algebraic Thinking Placement"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "CA-IREADY-DIAGNOSTIC-MATH-V1",
+                "identificationCode": "CA-IREADY-DIAGNOSTIC-MATH-GEOMETRY",
+                "namespace": "http://www.curriculumassociates.com/Descriptor/Assessment.xml"
+              },
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Scale score",
+                  "resultDatatypeType": "Integer",
+                  "result": {
+                    "Column": "Geometry Scale Score"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Proficiency level",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "Geometry Placement"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "CA-IREADY-DIAGNOSTIC-MATH-V1",
+                "identificationCode": "CA-IREADY-DIAGNOSTIC-MATH-MEASUREMENT",
+                "namespace": "http://www.curriculumassociates.com/Descriptor/Assessment.xml"
+              },
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Scale score",
+                  "resultDatatypeType": "Integer",
+                  "result": {
+                    "Column": "Measurement and Data Scale Score"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Proficiency level",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "Measurement and Data Placement"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "CA-IREADY-DIAGNOSTIC-MATH-V1",
+                "identificationCode": "CA-IREADY-DIAGNOSTIC-MATH-NUMBER-AND-OPERATIONS",
+                "namespace": "http://www.curriculumassociates.com/Descriptor/Assessment.xml"
+              },
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Scale score",
+                  "resultDatatypeType": "Integer",
+                  "result": {
+                    "Column": "Number and Operations Scale Score"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Proficiency level",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "Number and Operations Placement"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "Bootstraps": [
+      {
+        "Name": "CA-IREADY-DIAGNOSTIC-PerformanceLevelDescriptors_RushFlags",
+        "ResourcePath": "/performanceLevelDescriptors",
+        "Data": [
+          {
+            "codeValue": "Yellow Rush Flag",
+            "description": "Yellow Rush Flag",
+            "namespace": "http://www.curriculumassociates.com/Descriptor/PerformanceLevelDescriptor.xml",
+            "shortDescription": "Yellow Rush Flag"
+          },
+          {
+            "codeValue": "Red Rush Flag",
+            "description": "Red Rush Flag",
+            "namespace": "http://www.curriculumassociates.com/Descriptor/PerformanceLevelDescriptor.xml",
+            "shortDescription": "Red Rush Flag"
+          }
+        ]
+      },
+      {
+        "Name": "CA-IREADY-DIAGNOSTIC-MATH-V1_Assessments",
+        "ResourcePath": "/assessments",
+        "Data": {
+          "adaptiveAssessment": true,
+          "categoryDescriptor": "Diagnostic",
+          "identifier": "CA-IREADY-DIAGNOSTIC-MATH-V1",
+          "title": "Curriculum Associates i-Ready Math Diagnostic",
+          "namespace": "http://www.curriculumassociates.com/Descriptor/Assessment.xml",
+          "version": 1,
+          "academicSubjects": [
+            {
+              "academicSubjectDescriptor": "http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml/Mathematics"
+            }
+          ],
+          "assessedGradeLevels": [
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/First grade"
+            },
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Second grade"
+            },
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Third grade"
+            },
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Fourth grade"
+            },
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Fifth grade"
+            },
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Sixth grade"
+            },
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Seventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Eighth grade"
+            },
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Ninth grade"
+            },
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Tenth grade"
+            },
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Eleventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Twelfth grade"
+            },
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Kindergarten"
+            }
+          ],
+          "identificationCodes": [
+            {
+              "assessmentIdentificationSystemDescriptor": "Test Contractor",
+              "identificationCode": "CA-IREADY-DIAGNOSTIC"
+            }
+          ],
+          "languages": [
+            {
+              "languageDescriptor": "http://ed-fi.org/Descriptor/LanguageDescriptor.xml/English"
+            },
+            {
+              "languageDescriptor": "http://ed-fi.org/Descriptor/LanguageDescriptor.xml/Spanish"
+            }
+          ],
+          "scores": [
+            {
+              "assessmentReportingMethodType": "Time on Task (minutes)",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Scale score",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Proficiency level",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Quantile Measure",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Quantile Range",
+              "resultDatatypeType": "Range"
+            },
+            {
+              "assessmentReportingMethodType": "Annual Typical Growth Measure",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Annual Stretch Growth Measure",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Mid On Grade Level Scale Score",
+              "resultDatatypeType": "Integer"
+            }
+          ],
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodType": "Rush Flag",
+              "performanceLevelDescriptor": "http://www.curriculumassociates.com/Descriptor/PerformanceLevelDescriptor.xml/Yellow Rush Flag",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Rush Flag",
+              "performanceLevelDescriptor": "http://www.curriculumassociates.com/Descriptor/PerformanceLevelDescriptor.xml/Red Rush Flag",
+              "resultDatatypeType": "Level"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "CA-IREADY-DIAGNOSTIC-MATH-ALGEBRA_ObjectiveAssessments",
+        "ResourcePath": "/objectiveAssessments",
+        "Data": {
+          "assessmentReference": {
+            "identifier": "CA-IREADY-DIAGNOSTIC-MATH-V1",
+            "namespace": "http://www.curriculumassociates.com/Descriptor/Assessment.xml"
+          },
+          "description": "Algebra and Algebraic Thinking",
+          "identificationCode": "CA-IREADY-DIAGNOSTIC-MATH-ALGEBRA",
+          "scores": [
+            {
+              "assessmentReportingMethodType": "Proficiency level"
+            },
+            {
+              "assessmentReportingMethodType": "Scale score"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "CA-IREADY-DIAGNOSTIC-MATH-GEOMETRY_ObjectiveAssessments\t",
+        "ResourcePath": "/objectiveAssessments",
+        "Data": {
+          "assessmentReference": {
+            "identifier": "CA-IREADY-DIAGNOSTIC-MATH-V1",
+            "namespace": "http://www.curriculumassociates.com/Descriptor/Assessment.xml"
+          },
+          "description": "Geometry",
+          "identificationCode": "CA-IREADY-DIAGNOSTIC-MATH-GEOMETRY",
+          "scores": [
+            {
+              "assessmentReportingMethodType": "Proficiency level"
+            },
+            {
+              "assessmentReportingMethodType": "Scale score"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "CA-IREADY-DIAGNOSTIC-MATH-MEASUREMENT_ObjectiveAssessments",
+        "ResourcePath": "/objectiveAssessments",
+        "Data": {
+          "assessmentReference": {
+            "identifier": "CA-IREADY-DIAGNOSTIC-MATH-V1",
+            "namespace": "http://www.curriculumassociates.com/Descriptor/Assessment.xml"
+          },
+          "description": "Measurement and Data Placement",
+          "identificationCode": "CA-IREADY-DIAGNOSTIC-MATH-MEASUREMENT",
+          "scores": [
+            {
+              "assessmentReportingMethodType": "Proficiency level"
+            },
+            {
+              "assessmentReportingMethodType": "Scale score"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "CA-IREADY-DIAGNOSTIC-MATH-NUMBER-AND-OPERATIONS_ObjectiveAssessments",
+        "ResourcePath": "/objectiveAssessments",
+        "Data": {
+          "assessmentReference": {
+            "identifier": "CA-IREADY-DIAGNOSTIC-MATH-V1",
+            "namespace": "http://www.curriculumassociates.com/Descriptor/Assessment.xml"
+          },
+          "description": "Number and Operations",
+          "identificationCode": "CA-IREADY-DIAGNOSTIC-MATH-NUMBER-AND-OPERATIONS",
+          "scores": [
+            {
+              "assessmentReportingMethodType": "Proficiency level"
+            },
+            {
+              "assessmentReportingMethodType": "Scale score"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "CA-IREADY-DIAGNOSTIC-ELA-V1_Assessments",
+        "ResourcePath": "/assessments",
+        "Data": {
+          "adaptiveAssessment": true,
+          "categoryDescriptor": "Diagnostic",
+          "identifier": "CA-IREADY-DIAGNOSTIC-ELA-V1",
+          "title": "Curriculum Associates i-Ready ELA Diagnostic",
+          "namespace": "http://www.curriculumassociates.com/Descriptor/Assessment.xml",
+          "version": 1,
+          "academicSubjects": [
+            {
+              "academicSubjectDescriptor": "http://ed-fi.org/Descriptor/AcademicSubjectDescriptor.xml/English Language Arts"
+            }
+          ],
+          "assessedGradeLevels": [
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/First grade"
+            },
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Second grade"
+            },
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Third grade"
+            },
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Fourth grade"
+            },
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Fifth grade"
+            },
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Sixth grade"
+            },
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Seventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Eighth grade"
+            },
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Ninth grade"
+            },
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Tenth grade"
+            },
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Eleventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Twelfth grade"
+            },
+            {
+              "gradeLevelDescriptor": "http://ed-fi.org/Descriptor/GradeLevelDescriptor.xml/Kindergarten"
+            }
+          ],
+          "identificationCodes": [
+            {
+              "assessmentIdentificationSystemDescriptor": "Test Contractor",
+              "identificationCode": "CA-IREADY-DIAGNOSTIC"
+            }
+          ],
+          "languages": [
+            {
+              "languageDescriptor": "http://ed-fi.org/Descriptor/LanguageDescriptor.xml/English"
+            },
+            {
+              "languageDescriptor": "http://ed-fi.org/Descriptor/LanguageDescriptor.xml/Spanish"
+            }
+          ],
+          "scores": [
+            {
+              "assessmentReportingMethodType": "Time on Task (minutes)",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Scale score",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Proficiency level",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Lexile Measure",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Lexile Range",
+              "resultDatatypeType": "Range"
+            },
+            {
+              "assessmentReportingMethodType": "Annual Typical Growth Measure",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Annual Stretch Growth Measure",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Mid On Grade Level Scale Score",
+              "resultDatatypeType": "Integer"
+            }
+          ],
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodType": "Rush Flag",
+              "performanceLevelDescriptor": "http://www.curriculumassociates.com/Descriptor/PerformanceLevelDescriptor.xml/Yellow Rush Flag",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Rush Flag",
+              "performanceLevelDescriptor": "http://www.curriculumassociates.com/Descriptor/PerformanceLevelDescriptor.xml/Red Rush Flag",
+              "resultDatatypeType": "Level"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "CA-IREADY-DIAGNOSTIC-ELA-PHONOLOGICAL-AWARENESS_ObjectiveAssessments",
+        "ResourcePath": "/objectiveAssessments",
+        "Data": {
+          "assessmentReference": {
+            "identifier": "CA-IREADY-DIAGNOSTIC-ELA-V1",
+            "namespace": "http://www.curriculumassociates.com/Descriptor/Assessment.xml"
+          },
+          "description": "Phonological Awareness",
+          "identificationCode": "CA-IREADY-DIAGNOSTIC-ELA-PHONOLOGICAL-AWARENESS",
+          "scores": [
+            {
+              "assessmentReportingMethodType": "Proficiency level"
+            },
+            {
+              "assessmentReportingMethodType": "Scale score"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "CA-IREADY-DIAGNOSTIC-ELA-PHONICS_ObjectiveAssessments",
+        "ResourcePath": "/objectiveAssessments",
+        "Data": {
+          "assessmentReference": {
+            "identifier": "CA-IREADY-DIAGNOSTIC-ELA-V1",
+            "namespace": "http://www.curriculumassociates.com/Descriptor/Assessment.xml"
+          },
+          "description": "Phonics",
+          "identificationCode": "CA-IREADY-DIAGNOSTIC-ELA-PHONICS",
+          "scores": [
+            {
+              "assessmentReportingMethodType": "Proficiency level"
+            },
+            {
+              "assessmentReportingMethodType": "Scale score"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "CA-IREADY-DIAGNOSTIC-ELA-HIGH-FREQUENCY-WORDS_ObjectiveAssessments",
+        "ResourcePath": "/objectiveAssessments",
+        "Data": {
+          "assessmentReference": {
+            "identifier": "CA-IREADY-DIAGNOSTIC-ELA-V1",
+            "namespace": "http://www.curriculumassociates.com/Descriptor/Assessment.xml"
+          },
+          "description": "High-Frequency Words",
+          "identificationCode": "CA-IREADY-DIAGNOSTIC-ELA-HIGH-FREQUENCY-WORDS",
+          "scores": [
+            {
+              "assessmentReportingMethodType": "Proficiency level"
+            },
+            {
+              "assessmentReportingMethodType": "Scale score"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "CA-IREADY-DIAGNOSTIC-ELA-VOCABULARY_ObjectiveAssessments\t",
+        "ResourcePath": "/objectiveAssessments",
+        "Data": {
+          "assessmentReference": {
+            "identifier": "CA-IREADY-DIAGNOSTIC-ELA-V1",
+            "namespace": "http://www.curriculumassociates.com/Descriptor/Assessment.xml"
+          },
+          "description": "Vocabulary",
+          "identificationCode": "CA-IREADY-DIAGNOSTIC-ELA-VOCABULARY",
+          "scores": [
+            {
+              "assessmentReportingMethodType": "Proficiency level"
+            },
+            {
+              "assessmentReportingMethodType": "Scale score"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "CA-IREADY-DIAGNOSTIC-ELA-READING-COMPREHENSION-LITERATURE_ObjectiveAssessments\t",
+        "ResourcePath": "/objectiveAssessments",
+        "Data": {
+          "assessmentReference": {
+            "identifier": "CA-IREADY-DIAGNOSTIC-ELA-V1",
+            "namespace": "http://www.curriculumassociates.com/Descriptor/Assessment.xml"
+          },
+          "description": "Reading Comprehension: Literature",
+          "identificationCode": "CA-IREADY-DIAGNOSTIC-ELA-READING-COMPREHENSION-LITERATURE",
+          "scores": [
+            {
+              "assessmentReportingMethodType": "Proficiency level"
+            },
+            {
+              "assessmentReportingMethodType": "Scale score"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "CA-IREADY-DIAGNOSTIC-ELA-READING-COMPREHENSION-INFO-TEXT_ObjectiveAssessments\t",
+        "ResourcePath": "/objectiveAssessments",
+        "Data": {
+          "assessmentReference": {
+            "identifier": "CA-IREADY-DIAGNOSTIC-ELA-V1",
+            "namespace": "http://www.curriculumassociates.com/Descriptor/Assessment.xml"
+          },
+          "description": "Reading Comprehension: Informational Text",
+          "identificationCode": "CA-IREADY-DIAGNOSTIC-ELA-READING-COMPREHENSION-INFO-TEXT",
+          "scores": [
+            {
+              "assessmentReportingMethodType": "Proficiency level"
+            },
+            {
+              "assessmentReportingMethodType": "Scale score"
+            }
+          ]
+        }
+      }
+    ],
+    "Lookups": [
+      {
+        "SourceTable": "CA-IREADY_RushFlags",
+        "Key": "Red Rush Flag",
+        "Value": "http://www.curriculumassociates.com/Descriptor/PerformanceLevelDescriptor.xml/Red Rush Flag"
+      },
+      {
+        "SourceTable": "CA-IREADY_RushFlags",
+        "Key": "Yellow Rush Flag",
+        "Value": "http://www.curriculumassociates.com/Descriptor/PerformanceLevelDescriptor.xml/Yellow Rush Flag"
+      },
+      {
+        "SourceTable": "GradeLevelNumber_to_Text",
+        "Key": "1",
+        "Value": "First grade"
+      },
+      {
+        "SourceTable": "GradeLevelNumber_to_Text",
+        "Key": "10",
+        "Value": "Tenth grade"
+      },
+      {
+        "SourceTable": "GradeLevelNumber_to_Text",
+        "Key": "11",
+        "Value": "Eleventh grade"
+      },
+      {
+        "SourceTable": "GradeLevelNumber_to_Text",
+        "Key": "12",
+        "Value": "Twelfth grade"
+      },
+      {
+        "SourceTable": "GradeLevelNumber_to_Text",
+        "Key": "2",
+        "Value": "Second grade"
+      },
+      {
+        "SourceTable": "GradeLevelNumber_to_Text",
+        "Key": "3",
+        "Value": "Third grade"
+      },
+      {
+        "SourceTable": "GradeLevelNumber_to_Text",
+        "Key": "4",
+        "Value": "Fourth grade"
+      },
+      {
+        "SourceTable": "GradeLevelNumber_to_Text",
+        "Key": "5",
+        "Value": "Fifth grade"
+      },
+      {
+        "SourceTable": "GradeLevelNumber_to_Text",
+        "Key": "6",
+        "Value": "Sixth grade"
+      },
+      {
+        "SourceTable": "GradeLevelNumber_to_Text",
+        "Key": "7",
+        "Value": "Seventh grade"
+      },
+      {
+        "SourceTable": "GradeLevelNumber_to_Text",
+        "Key": "8",
+        "Value": "Eighth grade"
+      },
+      {
+        "SourceTable": "GradeLevelNumber_to_Text",
+        "Key": "9",
+        "Value": "Ninth grade"
+      },
+      {
+        "SourceTable": "GradeLevelNumber_to_Text",
+        "Key": "K",
+        "Value": "Kindergarten"
+      },
+      {
+        "SourceTable": "GradeLevelNumber_to_Text",
+        "Key": "PK",
+        "Value": "Preschool/Prekindergarten"
+      }
+    ]
+  },
+  "submitter": {
+    "name": "Sherod Keen",
+    "organization": "FLCODE",
+    "email": "KeenS@nefec.org"
+  }
 }

@@ -1,13 +1,259 @@
 {
-    "id": 1035,
-    "title": "Farmington Interim Local Assessment - API 3.X",
-    "description": "This templates includes the NM Farmington School District Interim Local Assessment",
-    "apiVersion": "3.2.0",
-    "dateTimePublished": "2020-10-01T15:58:29.0702227",
-    "template": "{\"Maps\":[{\"Name\":\"DataMap_FarmingtonInterim_FARMINGTON-INTERIM-V1\",\"ResourcePath\":\"/ed-fi/studentAssessments\",\"ColumnHeaders\":[\"DI_StudentId\",\"DI_SchoolYear\",\"DI_AssessedGradeLevel\",\"DI_AssessmentStudentIdentifier\",\"DI_AdministrationDate\",\"percent_correct\",\"points_achived\",\"points_possible\",\"TestName\",\"DI_LevelDescriptor\"],\"Map\":{\"studentAssessmentIdentifier\":{\"Column\":\"DI_AssessmentStudentIdentifier\"},\"assessmentReference\":{\"assessmentIdentifier\":\"FARMINGTON-INTERIM-V1\",\"namespace\":\"uri://district.fms.k12.nm.us/Assessment\"},\"schoolYearTypeReference\":{\"schoolYear\":{\"Column\":\"DI_SchoolYear\"}},\"studentReference\":{\"studentUniqueId\":{\"Column\":\"DI_StudentId\"}},\"administrationDate\":{\"Column\":\"DI_AdministrationDate\"},\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://district.fms.k12.nm.us/AssessmentReportingMethodDescriptor#Test Name\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"TestName\"}},{\"assessmentReportingMethodDescriptor\":\"uri://district.fms.k12.nm.us/AssessmentReportingMethodDescriptor#Points Achieved\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"points_achived\"}},{\"assessmentReportingMethodDescriptor\":\"uri://district.fms.k12.nm.us/AssessmentReportingMethodDescriptor#Points Possible\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"points_possible\"}},{\"assessmentReportingMethodDescriptor\":\"uri://district.fms.k12.nm.us/AssessmentReportingMethodDescriptor#Percent Correct\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\",\"result\":{\"Column\":\"percent_correct\"}}],\"studentObjectiveAssessments\":[]}}],\"Bootstraps\":[{\"Name\":\"FarmingtonInterim_ARMD\",\"ResourcePath\":\"/ed-fi/assessmentReportingMethodDescriptors\",\"Data\":[{\"codeValue\":\"Percent Correct\",\"description\":\"Percent Correct\",\"namespace\":\"uri://district.fms.k12.nm.us/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Percent Correct\"},{\"codeValue\":\"Points Achieved\",\"description\":\"Points Achieved\",\"namespace\":\"uri://district.fms.k12.nm.us/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Points Achieved\"},{\"codeValue\":\"Points Possible\",\"description\":\"Points Possible\",\"namespace\":\"uri://district.fms.k12.nm.us/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Points Possible\"},{\"codeValue\":\"Test Name\",\"description\":\"Test Name\",\"namespace\":\"uri://district.fms.k12.nm.us/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Test Name\"}]},{\"Name\":\"FarmingtonInterim_PLD\",\"ResourcePath\":\"/ed-fi/performanceLevelDescriptors\",\"Data\":[{\"codeValue\":\"Advanced\",\"description\":\"Advanced\",\"namespace\":\"uri://district.fms.k12.nm.us/PerformanceLevelDescriptor\",\"shortDescription\":\"Advanced\"},{\"codeValue\":\"Beginning Step\",\"description\":\"Beginning Step\",\"namespace\":\"uri://district.fms.k12.nm.us/PerformanceLevelDescriptor\",\"shortDescription\":\"Beginning Step\"},{\"codeValue\":\"Nearing Proficiency\",\"description\":\"Nearing Proficiency\",\"namespace\":\"uri://district.fms.k12.nm.us/PerformanceLevelDescriptor\",\"shortDescription\":\"Nearing Proficiency\"},{\"codeValue\":\"Proficient\",\"description\":\"Proficient\",\"namespace\":\"uri://district.fms.k12.nm.us/PerformanceLevelDescriptor\",\"shortDescription\":\"Proficient\"}]},{\"Name\":\"FarmingtonInterim_Assessment_FARMINGTON-INTERIM-V1\",\"ResourcePath\":\"/ed-fi/assessments\",\"Data\":{\"assessmentIdentifier\":\"FARMINGTON-INTERIM-V1\",\"assessmentTitle\":\"Farmington Interim Local Assessment.\",\"namespace\":\"uri://district.fms.k12.nm.us/Assessment\",\"assessedGradeLevels\":[{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#First grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Second grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Third grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Fourth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Fifth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Sixth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Seventh grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Eighth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Ninth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Tenth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#No grade level\"}],\"assessmentCategoryDescriptor\":\"uri://ed-fi.org/AssessmentCategoryDescriptor#Interim\",\"academicSubjects\":[{\"academicSubjectDescriptor\":\"uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics\"},{\"academicSubjectDescriptor\":\"uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts\"},{\"academicSubjectDescriptor\":\"uri://ed-fi.org/AcademicSubjectDescriptor#Social Sciences and History\"}],\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://district.fms.k12.nm.us/AssessmentReportingMethodDescriptor#Test Name\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://district.fms.k12.nm.us/AssessmentReportingMethodDescriptor#Points Achieved\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://district.fms.k12.nm.us/AssessmentReportingMethodDescriptor#Points Possible\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://district.fms.k12.nm.us/AssessmentReportingMethodDescriptor#Percent Correct\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://district.fms.k12.nm.us/PerformanceLevelDescriptor#Advanced\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://district.fms.k12.nm.us/PerformanceLevelDescriptor#Beginning Step\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://district.fms.k12.nm.us/PerformanceLevelDescriptor#Nearing Proficiency\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://district.fms.k12.nm.us/PerformanceLevelDescriptor#Proficient\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]}}],\"Lookups\":[]}",
-    "submitter": {
-        "name": "Emilio Baez",
-        "organization": "Developers.Net",
-        "email": "emilio@developers.net"
-    }
+  "id": 1035,
+  "title": "Farmington Interim Local Assessment - API 3.X",
+  "description": "This templates includes the NM Farmington School District Interim Local Assessment",
+  "apiVersion": "3.2.0",
+  "dateTimePublished": "2020-10-01T15:58:29.0702227",
+  "template": {
+    "Maps": [
+      {
+        "Name": "DataMap_FarmingtonInterim_FARMINGTON-INTERIM-V1",
+        "ResourcePath": "/ed-fi/studentAssessments",
+        "ColumnHeaders": [
+          "DI_StudentId",
+          "DI_SchoolYear",
+          "DI_AssessedGradeLevel",
+          "DI_AssessmentStudentIdentifier",
+          "DI_AdministrationDate",
+          "percent_correct",
+          "points_achived",
+          "points_possible",
+          "TestName",
+          "DI_LevelDescriptor"
+        ],
+        "Map": {
+          "studentAssessmentIdentifier": {
+            "Column": "DI_AssessmentStudentIdentifier"
+          },
+          "assessmentReference": {
+            "assessmentIdentifier": "FARMINGTON-INTERIM-V1",
+            "namespace": "uri://district.fms.k12.nm.us/Assessment"
+          },
+          "schoolYearTypeReference": {
+            "schoolYear": {
+              "Column": "DI_SchoolYear"
+            }
+          },
+          "studentReference": {
+            "studentUniqueId": {
+              "Column": "DI_StudentId"
+            }
+          },
+          "administrationDate": {
+            "Column": "DI_AdministrationDate"
+          },
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+              "performanceLevelDescriptor": {
+                "Column": "DI_LevelDescriptor"
+              },
+              "performanceLevelMet": true
+            }
+          ],
+          "scoreResults": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://district.fms.k12.nm.us/AssessmentReportingMethodDescriptor#Test Name",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "TestName"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://district.fms.k12.nm.us/AssessmentReportingMethodDescriptor#Points Achieved",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "points_achived"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://district.fms.k12.nm.us/AssessmentReportingMethodDescriptor#Points Possible",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "points_possible"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://district.fms.k12.nm.us/AssessmentReportingMethodDescriptor#Percent Correct",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+              "result": {
+                "Column": "percent_correct"
+              }
+            }
+          ],
+          "studentObjectiveAssessments": []
+        }
+      }
+    ],
+    "Bootstraps": [
+      {
+        "Name": "FarmingtonInterim_ARMD",
+        "ResourcePath": "/ed-fi/assessmentReportingMethodDescriptors",
+        "Data": [
+          {
+            "codeValue": "Percent Correct",
+            "description": "Percent Correct",
+            "namespace": "uri://district.fms.k12.nm.us/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Percent Correct"
+          },
+          {
+            "codeValue": "Points Achieved",
+            "description": "Points Achieved",
+            "namespace": "uri://district.fms.k12.nm.us/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Points Achieved"
+          },
+          {
+            "codeValue": "Points Possible",
+            "description": "Points Possible",
+            "namespace": "uri://district.fms.k12.nm.us/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Points Possible"
+          },
+          {
+            "codeValue": "Test Name",
+            "description": "Test Name",
+            "namespace": "uri://district.fms.k12.nm.us/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Test Name"
+          }
+        ]
+      },
+      {
+        "Name": "FarmingtonInterim_PLD",
+        "ResourcePath": "/ed-fi/performanceLevelDescriptors",
+        "Data": [
+          {
+            "codeValue": "Advanced",
+            "description": "Advanced",
+            "namespace": "uri://district.fms.k12.nm.us/PerformanceLevelDescriptor",
+            "shortDescription": "Advanced"
+          },
+          {
+            "codeValue": "Beginning Step",
+            "description": "Beginning Step",
+            "namespace": "uri://district.fms.k12.nm.us/PerformanceLevelDescriptor",
+            "shortDescription": "Beginning Step"
+          },
+          {
+            "codeValue": "Nearing Proficiency",
+            "description": "Nearing Proficiency",
+            "namespace": "uri://district.fms.k12.nm.us/PerformanceLevelDescriptor",
+            "shortDescription": "Nearing Proficiency"
+          },
+          {
+            "codeValue": "Proficient",
+            "description": "Proficient",
+            "namespace": "uri://district.fms.k12.nm.us/PerformanceLevelDescriptor",
+            "shortDescription": "Proficient"
+          }
+        ]
+      },
+      {
+        "Name": "FarmingtonInterim_Assessment_FARMINGTON-INTERIM-V1",
+        "ResourcePath": "/ed-fi/assessments",
+        "Data": {
+          "assessmentIdentifier": "FARMINGTON-INTERIM-V1",
+          "assessmentTitle": "Farmington Interim Local Assessment.",
+          "namespace": "uri://district.fms.k12.nm.us/Assessment",
+          "assessedGradeLevels": [
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#First grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Second grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fourth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fifth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Sixth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Seventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eighth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Ninth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Tenth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#No grade level"
+            }
+          ],
+          "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#Interim",
+          "academicSubjects": [
+            {
+              "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics"
+            },
+            {
+              "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts"
+            },
+            {
+              "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Social Sciences and History"
+            }
+          ],
+          "scores": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://district.fms.k12.nm.us/AssessmentReportingMethodDescriptor#Test Name",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://district.fms.k12.nm.us/AssessmentReportingMethodDescriptor#Points Achieved",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://district.fms.k12.nm.us/AssessmentReportingMethodDescriptor#Points Possible",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://district.fms.k12.nm.us/AssessmentReportingMethodDescriptor#Percent Correct",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+            }
+          ],
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+              "performanceLevelDescriptor": "uri://district.fms.k12.nm.us/PerformanceLevelDescriptor#Advanced",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+              "performanceLevelDescriptor": "uri://district.fms.k12.nm.us/PerformanceLevelDescriptor#Beginning Step",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+              "performanceLevelDescriptor": "uri://district.fms.k12.nm.us/PerformanceLevelDescriptor#Nearing Proficiency",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+              "performanceLevelDescriptor": "uri://district.fms.k12.nm.us/PerformanceLevelDescriptor#Proficient",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            }
+          ]
+        }
+      }
+    ],
+    "Lookups": []
+  },
+  "submitter": {
+    "name": "Emilio Baez",
+    "organization": "Developers.Net",
+    "email": "emilio@developers.net"
+  }
 }

@@ -1,13 +1,316 @@
 {
-    "id": 1053,
-    "title": "Florida's (FSA) Adaptive Progress Monitoring (APM)  - API 3.X",
-    "description": "This template includes the Florida's (FSA) Adaptive Progress Monitoring (APM) Assessment",
-    "apiVersion": "3.2.0",
-    "dateTimePublished": "2021-05-25T16:06:55.4834394",
-    "template": "{\"Maps\":[{\"Name\":\"FSA-APM_Map\",\"ResourcePath\":\"/ed-fi/studentAssessments\",\"ColumnHeaders\":[\"DI_AssessmentStudentIdentifier\",\"DI_AssessmentIdentifier\",\"DI_SchoolYear\",\"DI_StudentId\",\"DI_AdministrationDate\",\"DI_Performance\",\"DI_AssessedGradeLevel\",\"DI_Scale Score\",\"DI_Scale Score Standard Error\",\"Test Group\",\"Test Subject\",\"Test Grade\",\"Test Name\",\"Student Name\",\"Student ID\",\"Student DOB\",\"Ethnicity\",\"Enrolled Grade\",\"Section 504\",\"Gender\",\"Primary Exceptionality\",\"English Language Learner (ELL) Status\",\"Enrolled School\",\"Enrolled District\",\"Date Taken\",\"Test OppNumber\",\"Test Reason\",\"Scale Score\",\"Scale Score Standard Error\",\"Performance\"],\"Map\":{\"studentAssessmentIdentifier\":{\"Column\":\"DI_AssessmentStudentIdentifier\"},\"assessmentReference\":{\"assessmentIdentifier\":{\"Column\":\"DI_AssessmentIdentifier\"},\"namespace\":\"uri://fsassessments.org/apm/Assessments\"},\"schoolYearTypeReference\":{\"schoolYear\":{\"Column\":\"DI_SchoolYear\"}},\"studentReference\":{\"studentUniqueId\":{\"Column\":\"DI_StudentId\"}},\"administrationDate\":{\"Column\":\"DI_AdministrationDate\"},\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_Performance\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"DI_Scale Score\"}},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"DI_Scale Score Standard Error\"}}],\"whenAssessedGradeLevelDescriptor\":{\"Column\":\"DI_AssessedGradeLevel\"}}}],\"Bootstraps\":[{\"Name\":\"FSA-APM_Assessment-MA\",\"ResourcePath\":\"/ed-fi/assessments\",\"Data\":{\"assessmentIdentifier\":\"FSA-APM-MA-V1\",\"assessmentTitle\":\"FSA Adaptive Progress Monitoring (APM) - Mathematics\",\"namespace\":\"uri://fsassessments.org/apm/Assessments\",\"assessedGradeLevels\":[{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Third grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Fourth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Fifth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Sixth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Seventh grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Eighth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#No grade level\"}],\"assessmentCategoryDescriptor\":\"uri://ed-fi.org/AssessmentCategoryDescriptor#State assessment\",\"academicSubjects\":[{\"academicSubjectDescriptor\":\"uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics\"}],\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://fsassessments.org/apm/PerformanceLevelDescriptor#Below Satisfactory\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://fsassessments.org/apm/PerformanceLevelDescriptor#Satisfactory\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://fsassessments.org/apm/PerformanceLevelDescriptor#Proficient\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://fsassessments.org/apm/PerformanceLevelDescriptor#Inadequate\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://fsassessments.org/apm/PerformanceLevelDescriptor#Mastery\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://fsassessments.org/apm/PerformanceLevelDescriptor#N/A\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]}},{\"Name\":\"FSA-APM_Assessment-RD\",\"ResourcePath\":\"/ed-fi/assessments\",\"Data\":{\"assessmentIdentifier\":\"FSA-APM-RD-V1\",\"assessmentTitle\":\"FSA Adaptive Progress Monitoring (APM) - Reading\",\"namespace\":\"uri://fsassessments.org/apm/Assessments\",\"assessedGradeLevels\":[{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Third grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Fourth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Fifth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Sixth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Seventh grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Eighth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Ninth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Tenth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#No grade level\"}],\"assessmentCategoryDescriptor\":\"uri://ed-fi.org/AssessmentCategoryDescriptor#State assessment\",\"academicSubjects\":[{\"academicSubjectDescriptor\":\"uri://ed-fi.org/AcademicSubjectDescriptor#Reading\"}],\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://fsassessments.org/apm/PerformanceLevelDescriptor#Below Satisfactory\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://fsassessments.org/apm/PerformanceLevelDescriptor#Satisfactory\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://fsassessments.org/apm/PerformanceLevelDescriptor#Proficient\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://fsassessments.org/apm/PerformanceLevelDescriptor#Inadequate\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://fsassessments.org/apm/PerformanceLevelDescriptor#Mastery\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://fsassessments.org/apm/PerformanceLevelDescriptor#N/A\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]}},{\"Name\":\"FSA-APM_PLD\",\"ResourcePath\":\"/ed-fi/performanceLevelDescriptors\",\"Data\":[{\"codeValue\":\"Below Satisfactory\",\"description\":\"Below Satisfactory\",\"namespace\":\"uri://fsassessments.org/apm/PerformanceLevelDescriptor\",\"shortDescription\":\"Below Satisfactory\"},{\"codeValue\":\"Satisfactory\",\"description\":\"Satisfactory\",\"namespace\":\"uri://fsassessments.org/apm/PerformanceLevelDescriptor\",\"shortDescription\":\"Satisfactory\"},{\"codeValue\":\"Proficient\",\"description\":\"Proficient\",\"namespace\":\"uri://fsassessments.org/apm/PerformanceLevelDescriptor\",\"shortDescription\":\"Proficient\"},{\"codeValue\":\"Inadequate\",\"description\":\"Inadequate\",\"namespace\":\"uri://fsassessments.org/apm/PerformanceLevelDescriptor\",\"shortDescription\":\"Inadequate\"},{\"codeValue\":\"Mastery\",\"description\":\"Mastery\",\"namespace\":\"uri://fsassessments.org/apm/PerformanceLevelDescriptor\",\"shortDescription\":\"Mastery\"},{\"codeValue\":\"N/A\",\"description\":\"N/A\",\"namespace\":\"uri://fsassessments.org/apm/PerformanceLevelDescriptor\",\"shortDescription\":\"N/A\"}]}],\"Lookups\":[],\"SupplementalInformation\":null}",
-    "submitter": {
-        "name": "Emilio Baez",
-        "organization": "Developers.Net",
-        "email": "emilio@developers.net"
-    }
+  "id": 1053,
+  "title": "Florida's (FSA) Adaptive Progress Monitoring (APM)  - API 3.X",
+  "description": "This template includes the Florida's (FSA) Adaptive Progress Monitoring (APM) Assessment",
+  "apiVersion": "3.2.0",
+  "dateTimePublished": "2021-05-25T16:06:55.4834394",
+  "template": {
+    "Maps": [
+      {
+        "Name": "FSA-APM_Map",
+        "ResourcePath": "/ed-fi/studentAssessments",
+        "ColumnHeaders": [
+          "DI_AssessmentStudentIdentifier",
+          "DI_AssessmentIdentifier",
+          "DI_SchoolYear",
+          "DI_StudentId",
+          "DI_AdministrationDate",
+          "DI_Performance",
+          "DI_AssessedGradeLevel",
+          "DI_Scale Score",
+          "DI_Scale Score Standard Error",
+          "Test Group",
+          "Test Subject",
+          "Test Grade",
+          "Test Name",
+          "Student Name",
+          "Student ID",
+          "Student DOB",
+          "Ethnicity",
+          "Enrolled Grade",
+          "Section 504",
+          "Gender",
+          "Primary Exceptionality",
+          "English Language Learner (ELL) Status",
+          "Enrolled School",
+          "Enrolled District",
+          "Date Taken",
+          "Test OppNumber",
+          "Test Reason",
+          "Scale Score",
+          "Scale Score Standard Error",
+          "Performance"
+        ],
+        "Map": {
+          "studentAssessmentIdentifier": {
+            "Column": "DI_AssessmentStudentIdentifier"
+          },
+          "assessmentReference": {
+            "assessmentIdentifier": {
+              "Column": "DI_AssessmentIdentifier"
+            },
+            "namespace": "uri://fsassessments.org/apm/Assessments"
+          },
+          "schoolYearTypeReference": {
+            "schoolYear": {
+              "Column": "DI_SchoolYear"
+            }
+          },
+          "studentReference": {
+            "studentUniqueId": {
+              "Column": "DI_StudentId"
+            }
+          },
+          "administrationDate": {
+            "Column": "DI_AdministrationDate"
+          },
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+              "performanceLevelDescriptor": {
+                "Column": "DI_Performance"
+              },
+              "performanceLevelMet": true
+            }
+          ],
+          "scoreResults": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "DI_Scale Score"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "DI_Scale Score Standard Error"
+              }
+            }
+          ],
+          "whenAssessedGradeLevelDescriptor": {
+            "Column": "DI_AssessedGradeLevel"
+          }
+        }
+      }
+    ],
+    "Bootstraps": [
+      {
+        "Name": "FSA-APM_Assessment-MA",
+        "ResourcePath": "/ed-fi/assessments",
+        "Data": {
+          "assessmentIdentifier": "FSA-APM-MA-V1",
+          "assessmentTitle": "FSA Adaptive Progress Monitoring (APM) - Mathematics",
+          "namespace": "uri://fsassessments.org/apm/Assessments",
+          "assessedGradeLevels": [
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fourth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fifth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Sixth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Seventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eighth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#No grade level"
+            }
+          ],
+          "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#State assessment",
+          "academicSubjects": [
+            {
+              "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics"
+            }
+          ],
+          "scores": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            }
+          ],
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+              "performanceLevelDescriptor": "uri://fsassessments.org/apm/PerformanceLevelDescriptor#Below Satisfactory",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+              "performanceLevelDescriptor": "uri://fsassessments.org/apm/PerformanceLevelDescriptor#Satisfactory",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+              "performanceLevelDescriptor": "uri://fsassessments.org/apm/PerformanceLevelDescriptor#Proficient",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+              "performanceLevelDescriptor": "uri://fsassessments.org/apm/PerformanceLevelDescriptor#Inadequate",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+              "performanceLevelDescriptor": "uri://fsassessments.org/apm/PerformanceLevelDescriptor#Mastery",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+              "performanceLevelDescriptor": "uri://fsassessments.org/apm/PerformanceLevelDescriptor#N/A",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "FSA-APM_Assessment-RD",
+        "ResourcePath": "/ed-fi/assessments",
+        "Data": {
+          "assessmentIdentifier": "FSA-APM-RD-V1",
+          "assessmentTitle": "FSA Adaptive Progress Monitoring (APM) - Reading",
+          "namespace": "uri://fsassessments.org/apm/Assessments",
+          "assessedGradeLevels": [
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fourth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fifth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Sixth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Seventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eighth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Ninth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Tenth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#No grade level"
+            }
+          ],
+          "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#State assessment",
+          "academicSubjects": [
+            {
+              "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Reading"
+            }
+          ],
+          "scores": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            }
+          ],
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+              "performanceLevelDescriptor": "uri://fsassessments.org/apm/PerformanceLevelDescriptor#Below Satisfactory",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+              "performanceLevelDescriptor": "uri://fsassessments.org/apm/PerformanceLevelDescriptor#Satisfactory",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+              "performanceLevelDescriptor": "uri://fsassessments.org/apm/PerformanceLevelDescriptor#Proficient",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+              "performanceLevelDescriptor": "uri://fsassessments.org/apm/PerformanceLevelDescriptor#Inadequate",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+              "performanceLevelDescriptor": "uri://fsassessments.org/apm/PerformanceLevelDescriptor#Mastery",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+              "performanceLevelDescriptor": "uri://fsassessments.org/apm/PerformanceLevelDescriptor#N/A",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "FSA-APM_PLD",
+        "ResourcePath": "/ed-fi/performanceLevelDescriptors",
+        "Data": [
+          {
+            "codeValue": "Below Satisfactory",
+            "description": "Below Satisfactory",
+            "namespace": "uri://fsassessments.org/apm/PerformanceLevelDescriptor",
+            "shortDescription": "Below Satisfactory"
+          },
+          {
+            "codeValue": "Satisfactory",
+            "description": "Satisfactory",
+            "namespace": "uri://fsassessments.org/apm/PerformanceLevelDescriptor",
+            "shortDescription": "Satisfactory"
+          },
+          {
+            "codeValue": "Proficient",
+            "description": "Proficient",
+            "namespace": "uri://fsassessments.org/apm/PerformanceLevelDescriptor",
+            "shortDescription": "Proficient"
+          },
+          {
+            "codeValue": "Inadequate",
+            "description": "Inadequate",
+            "namespace": "uri://fsassessments.org/apm/PerformanceLevelDescriptor",
+            "shortDescription": "Inadequate"
+          },
+          {
+            "codeValue": "Mastery",
+            "description": "Mastery",
+            "namespace": "uri://fsassessments.org/apm/PerformanceLevelDescriptor",
+            "shortDescription": "Mastery"
+          },
+          {
+            "codeValue": "N/A",
+            "description": "N/A",
+            "namespace": "uri://fsassessments.org/apm/PerformanceLevelDescriptor",
+            "shortDescription": "N/A"
+          }
+        ]
+      }
+    ],
+    "Lookups": [],
+    "SupplementalInformation": null
+  },
+  "submitter": {
+    "name": "Emilio Baez",
+    "organization": "Developers.Net",
+    "email": "emilio@developers.net"
+  }
 }

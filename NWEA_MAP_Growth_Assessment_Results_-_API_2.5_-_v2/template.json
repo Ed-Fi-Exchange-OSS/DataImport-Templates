@@ -1,13 +1,1916 @@
 {
-    "id": 1032,
-    "title": "NWEA MAP Growth Assessment Results - API 2.5 - v2",
-    "description": "This template includes the NWEA MAP Growth Math and Reading Assessments specifically targeting vendor file export changes made as of July 1st, 2020",
-    "apiVersion": "2.5+",
-    "dateTimePublished": "2020-08-10T19:20:30.8009116",
-    "template": "{\"Maps\":[{\"Name\":\"NWEA-Map_v2\",\"ResourcePath\":\"/studentAssessments\",\"ColumnHeaders\":[\"TermName\",\"StudentID\",\"SchoolName\",\"Course\",\"Subject\",\"GrowthMeasureYN\",\"NormsReferenceData\",\"WISelectedAYFall\",\"WISelectedAYWinter\",\"WISelectedAYSpring\",\"WIPreviousAYFall\",\"WIPreviousAYWinter\",\"WIPreviousAYSpring\",\"TestType\",\"TestName\",\"TestID\",\"TestStartDate\",\"TestDurationMinutes\",\"TestRITScore\",\"TestStandardError\",\"TestPercentile\",\"FallToFallProjectedGrowth\",\"FallToFallObservedGrowth\",\"FallToFallObservedGrowthSE\",\"FallToFallMetProjectedGrowth\",\"FallToFallConditionalGrowthIndex\",\"FallToFallConditionalGrowthPercentile\",\"FallToWinterProjectedGrowth\",\"FallToWinterObservedGrowth\",\"FallToWinterObservedGrowthSE\",\"FallToWinterMetProjectedGrowth\",\"FallToWinterConditionalGrowthIndex\",\"FallToWinterConditionalGrowthPercentile\",\"FallToSpringProjectedGrowth\",\"FallToSpringObservedGrowth\",\"FallToSpringObservedGrowthSE\",\"FallToSpringMetProjectedGrowth\",\"FallToSpringConditionalGrowthIndex\",\"FallToSpringConditionalGrowthPercentile\",\"WinterToWinterProjectedGrowth\",\"WinterToWinterObservedGrowth\",\"WinterToWinterObservedGrowthSE\",\"WinterToWinterMetProjectedGrowth\",\"WinterToWinterConditionalGrowthIndex\",\"WinterToWinterConditionalGrowthPercentile\",\"WinterToSpringProjectedGrowth\",\"WinterToSpringObservedGrowth\",\"WinterToSpringObservedGrowthSE\",\"WinterToSpringMetProjectedGrowth\",\"WinterToSpringConditionalGrowthIndex\",\"WinterToSpringConditionalGrowthPercentile\",\"SpringToSpringProjectedGrowth\",\"SpringToSpringObservedGrowth\",\"SpringToSpringObservedGrowthSE\",\"SpringToSpringMetProjectedGrowth\",\"SpringToSpringConditionalGrowthIndex\",\"SpringToSpringConditionalGrowthPercentile\",\"LexileScore\",\"LexileMin\",\"LexileMax\",\"Goal1Name\",\"Goal1RitScore\",\"Goal1StdErr\",\"Goal1Range\",\"Goal1Adjective\",\"Goal2Name\",\"Goal2RitScore\",\"Goal2StdErr\",\"Goal2Range\",\"Goal2Adjective\",\"Goal3Name\",\"Goal3RitScore\",\"Goal3StdErr\",\"Goal3Range\",\"Goal3Adjective\",\"Goal4Name\",\"Goal4RitScore\",\"Goal4StdErr\",\"Goal4Range\",\"Goal4Adjective\",\"Goal5Name\",\"Goal5RitScore\",\"Goal5StdErr\",\"Goal5Range\",\"Goal5Adjective\",\"Goal6Name\",\"Goal6RitScore\",\"Goal6StdErr\",\"Goal6Range\",\"Goal6Adjective\",\"Goal7Name\",\"Goal7RitScore\",\"Goal7StdErr\",\"Goal7Range\",\"Goal7Adjective\",\"Goal8Name\",\"Goal8RitScore\",\"Goal8StdErr\",\"Goal8Range\",\"Goal8Adjective\",\"TestStartTime\",\"PercentCorrect\",\"ProjectedProficiencyStudy1\",\"ProjectedProficiencyLevel1\",\"ProjectedProficiencyStudy2\",\"ProjectedProficiencyLevel2\",\"ProjectedProficiencyStudy3\",\"ProjectedProficiencyLevel3\",\"TypicalFallToFallGrowth\",\"TypicalFallToWinterGrowth\",\"TypicalFallToSpringGrowth\",\"TypicalWinterToWinterGrowth\",\"TypicalWinterToSpringGrowth\",\"TypicalSpringToSpringGrowth\",\"ProjectedProficiencyStudy4\",\"ProjectedProficiencyLevel4\",\"ProjectedProficiencyStudy5\",\"ProjectedProficiencyLevel5\",\"ProjectedProficiencyStudy6\",\"ProjectedProficiencyLevel6\",\"ProjectedProficiencyStudy7\",\"ProjectedProficiencyLevel7\",\"ProjectedProficiencyStudy8\",\"ProjectedProficiencyLevel8\",\"ProjectedProficiencyStudy9\",\"ProjectedProficiencyLevel9\",\"ProjectedProficiencyStudy10\",\"ProjectedProficiencyLevel10\"],\"Map\":{\"assessmentReference\":{\"identifier\":\"NWEA-MAP-V1\",\"namespace\":\"http://www.nwea.org/map/Assessment\"},\"studentReference\":{\"studentUniqueId\":{\"Column\":\"StudentID\"}},\"administrationDate\":{\"Column\":\"TestStartDate\"},\"identifier\":{\"Column\":\"TestID\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Growth Measure YN\",\"performanceLevelDescriptor\":{\"Column\":\"DI_GrowthMeasureYN\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodType\":\"Fall-To-Fall Met Projected Growth\",\"performanceLevelDescriptor\":{\"Column\":\"DI_FallToFallMetProjectedGrowth\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodType\":\"Fall-To-Winter Met Projected Growth\",\"performanceLevelDescriptor\":{\"Column\":\"DI_FallToWinterMetProjectedGrowth\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodType\":\"Fall-To-Spring Met Projected Growth\",\"performanceLevelDescriptor\":{\"Column\":\"DI_FallToSpringMetProjectedGrowth\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodType\":\"Winter-To-Winter Met Projected Growth\",\"performanceLevelDescriptor\":{\"Column\":\"DI_WinterToWinterMetProjectedGrowth\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodType\":\"Winter-To-Spring Met Projected Growth\",\"performanceLevelDescriptor\":{\"Column\":\"DI_WinterToSpringMetProjectedGrowth\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodType\":\"Spring-To-Spring Met Projected Growth\",\"performanceLevelDescriptor\":{\"Column\":\"DI_SpringToSpringMetProjectedGrowth\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Term Name\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"TermName\"}},{\"assessmentReportingMethodType\":\"Measurement Scale\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"Course\"}},{\"assessmentReportingMethodType\":\"Test Name\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"TestName\"}},{\"assessmentReportingMethodType\":\"RIT scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"TestRITScore\"}},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"TestStandardError\"}},{\"assessmentReportingMethodType\":\"Percentile\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"TestPercentile\"}},{\"assessmentReportingMethodType\":\"Fall-To-Fall Projected Growth\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"FallToFallProjectedGrowth\"}},{\"assessmentReportingMethodType\":\"Fall-To-Fall Observed Growth\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"FallToFallObservedGrowth\"}},{\"assessmentReportingMethodType\":\"Fall-To-Fall Observed Growth SE\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"FallToFallObservedGrowthSE\"}},{\"assessmentReportingMethodType\":\"Fall-To-Fall Conditional Growth Index\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"FallToFallConditionalGrowthIndex\"}},{\"assessmentReportingMethodType\":\"Fall-To-Fall Conditional Growth Percentile\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"FallToFallConditionalGrowthPercentile\"}},{\"assessmentReportingMethodType\":\"Fall-To-Winter Projected Growth\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"FallToWinterProjectedGrowth\"}},{\"assessmentReportingMethodType\":\"Fall-To-Winter Observed Growth\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"FallToWinterObservedGrowth\"}},{\"assessmentReportingMethodType\":\"Fall-To-Winter Observed Growth SE\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"FallToWinterObservedGrowthSE\"}},{\"assessmentReportingMethodType\":\"Fall-To-Winter Conditional Growth Index\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"FallToWinterConditionalGrowthIndex\"}},{\"assessmentReportingMethodType\":\"Fall-To-Winter Conditional Growth Percentile\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"FallToWinterConditionalGrowthPercentile\"}},{\"assessmentReportingMethodType\":\"Fall-To-Spring Projected Growth\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"FallToSpringProjectedGrowth\"}},{\"assessmentReportingMethodType\":\"Fall-To-Spring Observed Growth\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"FallToSpringObservedGrowth\"}},{\"assessmentReportingMethodType\":\"Fall-To-Spring Observed Growth SE\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"FallToSpringObservedGrowthSE\"}},{\"assessmentReportingMethodType\":\"Fall-To-Spring Conditional Growth Index\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"FallToSpringConditionalGrowthIndex\"}},{\"assessmentReportingMethodType\":\"Fall-To-Spring Conditional Growth Percentile\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"FallToSpringConditionalGrowthPercentile\"}},{\"assessmentReportingMethodType\":\"Winter-To-Winter Projected Growth\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"WinterToWinterProjectedGrowth\"}},{\"assessmentReportingMethodType\":\"Winter-To-Winter Observed Growth\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"WinterToWinterObservedGrowth\"}},{\"assessmentReportingMethodType\":\"Winter-To-Winter Observed Growth SE\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"WinterToWinterObservedGrowthSE\"}},{\"assessmentReportingMethodType\":\"Winter-To-Winter Conditional Growth Index\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"WinterToWinterConditionalGrowthIndex\"}},{\"assessmentReportingMethodType\":\"Winter-To-Winter Conditional Growth Percentile\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"WinterToWinterConditionalGrowthPercentile\"}},{\"assessmentReportingMethodType\":\"Winter-To-Spring Projected Growth\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"WinterToSpringProjectedGrowth\"}},{\"assessmentReportingMethodType\":\"Winter-To-Spring Observed Growth\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"WinterToSpringObservedGrowth\"}},{\"assessmentReportingMethodType\":\"Winter-To-Spring Observed Growth SE\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"WinterToSpringObservedGrowthSE\"}},{\"assessmentReportingMethodType\":\"Winter-To-Spring Conditional Growth Index\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"WinterToSpringConditionalGrowthIndex\"}},{\"assessmentReportingMethodType\":\"Winter-To-Spring Conditional Growth Percentile\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"WinterToSpringConditionalGrowthPercentile\"}},{\"assessmentReportingMethodType\":\"Spring-To-Spring Projected Growth\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"SpringToSpringProjectedGrowth\"}},{\"assessmentReportingMethodType\":\"Spring-To-Spring Observed Growth\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"SpringToSpringObservedGrowth\"}},{\"assessmentReportingMethodType\":\"Spring-To-Spring Observed Growth SE\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"SpringToSpringObservedGrowthSE\"}},{\"assessmentReportingMethodType\":\"Spring-To-Spring Conditional Growth Index\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"SpringToSpringConditionalGrowthIndex\"}},{\"assessmentReportingMethodType\":\"Spring-To-Spring Conditional Growth Percentile\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"SpringToSpringConditionalGrowthPercentile\"}},{\"assessmentReportingMethodType\":\"RIT to Reading Score\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"LexileScore\"}},{\"assessmentReportingMethodType\":\"RIT to Reading Min\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"LexileMin\"}},{\"assessmentReportingMethodType\":\"RIT to Reading Max\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"LexileMax\"}},{\"assessmentReportingMethodType\":\"Projected Proficiency Level-1\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"ProjectedProficiencyLevel1\"}},{\"assessmentReportingMethodType\":\"Projected Proficiency Level-2\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"ProjectedProficiencyLevel2\"}},{\"assessmentReportingMethodType\":\"Projected Proficiency Level-3\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"ProjectedProficiencyLevel3\"}},{\"assessmentReportingMethodType\":\"Projected Proficiency Level-4\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"ProjectedProficiencyLevel4\"}},{\"assessmentReportingMethodType\":\"Projected Proficiency Level-5\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"ProjectedProficiencyLevel5\"}},{\"assessmentReportingMethodType\":\"Projected Proficiency Level-6\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"ProjectedProficiencyLevel6\"}},{\"assessmentReportingMethodType\":\"Projected Proficiency Level-7\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"ProjectedProficiencyLevel7\"}},{\"assessmentReportingMethodType\":\"Projected Proficiency Level-8\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"ProjectedProficiencyLevel8\"}},{\"assessmentReportingMethodType\":\"Projected Proficiency Level-9\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"ProjectedProficiencyLevel9\"}},{\"assessmentReportingMethodType\":\"Projected Proficiency Level-10\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"ProjectedProficiencyLevel10\"}}],\"studentObjectiveAssessments\":[{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"NWEA-MAP-V1\",\"identificationCode\":\"NWEA-MAP-V1-GOAL-1\",\"namespace\":\"http://www.nwea.org/map/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":{\"Column\":\"DI_Goal1Adjective\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Goal Name\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"DI_Goal1Name\"}},{\"assessmentReportingMethodType\":\"RIT scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Goal1RitScore\"}},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"Goal1StdErr\"}},{\"assessmentReportingMethodType\":\"Goal Range\",\"resultDatatypeType\":\"Range\",\"result\":{\"Column\":\"Goal1Range\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"NWEA-MAP-V1\",\"identificationCode\":\"NWEA-MAP-V1-GOAL-2\",\"namespace\":\"http://www.nwea.org/map/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":{\"Column\":\"DI_Goal2Adjective\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Goal Name\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"DI_Goal2Name\"}},{\"assessmentReportingMethodType\":\"RIT scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Goal2RitScore\"}},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"Goal2StdErr\"}},{\"assessmentReportingMethodType\":\"Goal Range\",\"resultDatatypeType\":\"Range\",\"result\":{\"Column\":\"Goal2Range\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"NWEA-MAP-V1\",\"identificationCode\":\"NWEA-MAP-V1-GOAL-3\",\"namespace\":\"http://www.nwea.org/map/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":{\"Column\":\"DI_Goal3Adjective\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Goal Name\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"DI_Goal3Name\"}},{\"assessmentReportingMethodType\":\"RIT scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Goal3RitScore\"}},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"Goal3StdErr\"}},{\"assessmentReportingMethodType\":\"Goal Range\",\"resultDatatypeType\":\"Range\",\"result\":{\"Column\":\"Goal3Range\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"NWEA-MAP-V1\",\"identificationCode\":\"NWEA-MAP-V1-GOAL-4\",\"namespace\":\"http://www.nwea.org/map/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":{\"Column\":\"DI_Goal4Adjective\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Goal Name\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"DI_Goal4Name\"}},{\"assessmentReportingMethodType\":\"RIT scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Goal4RitScore\"}},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"Goal4StdErr\"}},{\"assessmentReportingMethodType\":\"Goal Range\",\"resultDatatypeType\":\"Range\",\"result\":{\"Column\":\"Goal4Range\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"NWEA-MAP-V1\",\"identificationCode\":\"NWEA-MAP-V1-GOAL-5\",\"namespace\":\"http://www.nwea.org/map/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":{\"Column\":\"DI_Goal5Adjective\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Goal Name\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"DI_Goal5Name\"}},{\"assessmentReportingMethodType\":\"RIT scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Goal5RitScore\"}},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"Goal5StdErr\"}},{\"assessmentReportingMethodType\":\"Goal Range\",\"resultDatatypeType\":\"Range\",\"result\":{\"Column\":\"Goal5Range\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"NWEA-MAP-V1\",\"identificationCode\":\"NWEA-MAP-V1-GOAL-6\",\"namespace\":\"http://www.nwea.org/map/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":{\"Column\":\"DI_Goal6Adjective\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Goal Name\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"DI_Goal6Name\"}},{\"assessmentReportingMethodType\":\"RIT scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Goal6RitScore\"}},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"Goal6StdErr\"}},{\"assessmentReportingMethodType\":\"Goal Range\",\"resultDatatypeType\":\"Range\",\"result\":{\"Column\":\"Goal6Range\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"NWEA-MAP-V1\",\"identificationCode\":\"NWEA-MAP-V1-GOAL-7\",\"namespace\":\"http://www.nwea.org/map/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":{\"Column\":\"DI_Goal7Adjective\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Goal Name\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"DI_Goal7Name\"}},{\"assessmentReportingMethodType\":\"RIT scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Goal7RitScore\"}},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"Goal7StdErr\"}},{\"assessmentReportingMethodType\":\"Goal Range\",\"resultDatatypeType\":\"Range\",\"result\":{\"Column\":\"Goal7Range\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"NWEA-MAP-V1\",\"identificationCode\":\"NWEA-MAP-V1-GOAL-8\",\"namespace\":\"http://www.nwea.org/map/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":{\"Column\":\"DI_Goal8Adjective\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Goal Name\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"DI_Goal8Name\"}},{\"assessmentReportingMethodType\":\"RIT scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Goal8RitScore\"}},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"Goal8StdErr\"}},{\"assessmentReportingMethodType\":\"Goal Range\",\"resultDatatypeType\":\"Range\",\"result\":{\"Column\":\"Goal8Range\"}}]}]}}],\"Bootstraps\":[{\"Name\":\"NWEA-PLD_v2\",\"ResourcePath\":\"/performanceLevelDescriptors\",\"Data\":[{\"codeValue\":\"TRUE\",\"description\":\"TRUE\",\"namespace\":\"http://www.nwea.org/map/PerformanceLevelDescriptor\",\"shortDescription\":\"TRUE\"},{\"codeValue\":\"FALSE\",\"description\":\"FALSE\",\"namespace\":\"http://www.nwea.org/map/PerformanceLevelDescriptor\",\"shortDescription\":\"FALSE\"},{\"codeValue\":\"Yes\",\"description\":\"Student met growth projection.\",\"namespace\":\"http://www.nwea.org/map/PerformanceLevelDescriptor\",\"shortDescription\":\"Yes\"},{\"codeValue\":\"No\",\"description\":\"Growth projection not met. Asterisk means Observed Growth Standard Error (SE) could be large enough to put the outcome in question, so evaluate in combination with other points of data.\",\"namespace\":\"http://www.nwea.org/map/PerformanceLevelDescriptor\",\"shortDescription\":\"No\"},{\"codeValue\":\"Yes*\",\"description\":\"Student met growth projection.\",\"namespace\":\"http://www.nwea.org/map/PerformanceLevelDescriptor\",\"shortDescription\":\"Yes*\"},{\"codeValue\":\"No*\",\"description\":\"Growth projection not met. Asterisk means Observed Growth Standard Error (SE) could be large enough to put the outcome in question, so evaluate in combination with other points of data.\",\"namespace\":\"http://www.nwea.org/map/PerformanceLevelDescriptor\",\"shortDescription\":\"No*\"},{\"codeValue\":\"Low\",\"description\":\"Low (percentile <= 20)\",\"namespace\":\"http://www.nwea.org/map/PerformanceLevelDescriptor\",\"shortDescription\":\"Low\"},{\"codeValue\":\"LoAvg\",\"description\":\"LoAvg (percentile > 20 to <= 40)\",\"namespace\":\"http://www.nwea.org/map/PerformanceLevelDescriptor\",\"shortDescription\":\"LoAvg\"},{\"codeValue\":\"Avg\",\"description\":\"Avg (percentile > 40 to <= 60)\",\"namespace\":\"http://www.nwea.org/map/PerformanceLevelDescriptor\",\"shortDescription\":\"Avg\"},{\"codeValue\":\"HiAvg\",\"description\":\"HiAvg (percentile > 60 to <= 80)\",\"namespace\":\"http://www.nwea.org/map/PerformanceLevelDescriptor\",\"shortDescription\":\"HiAvg\"},{\"codeValue\":\"High\",\"description\":\"High (percentile > 80\",\"namespace\":\"http://www.nwea.org/map/PerformanceLevelDescriptor\",\"shortDescription\":\"High\"},{\"codeValue\":\"*\",\"description\":\"* goal adjective could not be computed)\",\"namespace\":\"http://www.nwea.org/map/PerformanceLevelDescriptor\",\"shortDescription\":\"*\"}]},{\"Name\":\"NWEA-Assessment_v2\",\"ResourcePath\":\"/assessments\",\"Data\":{\"identifier\":\"NWEA-MAP-V1\",\"title\":\"NWEA-MAP-V1\",\"namespace\":\"http://www.nwea.org/map/Assessment\",\"assessedGradeLevels\":[{\"gradeLevelDescriptor\":\"Kindergarten\"},{\"gradeLevelDescriptor\":\"First grade\"},{\"gradeLevelDescriptor\":\"Second grade\"},{\"gradeLevelDescriptor\":\"Third grade\"},{\"gradeLevelDescriptor\":\"Fourth grade\"},{\"gradeLevelDescriptor\":\"Fifth grade\"},{\"gradeLevelDescriptor\":\"Sixth grade\"},{\"gradeLevelDescriptor\":\"Seventh grade\"},{\"gradeLevelDescriptor\":\"Eighth grade\"},{\"gradeLevelDescriptor\":\"Ninth grade\"},{\"gradeLevelDescriptor\":\"Tenth grade\"},{\"gradeLevelDescriptor\":\"Eleventh grade\"},{\"gradeLevelDescriptor\":\"Twelfth grade\"},{\"gradeLevelDescriptor\":\"Ungraded\"}],\"categoryDescriptor\":\"Other\",\"academicSubjects\":[{\"academicSubjectDescriptor\":\"Mathematics\"},{\"academicSubjectDescriptor\":\"Reading\"}],\"scores\":[{\"assessmentReportingMethodType\":\"Term Name\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Measurement Scale\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Test Name\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"RIT scale score\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Percentile\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Fall-To-Fall Projected Growth\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Fall-To-Fall Observed Growth\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Fall-To-Fall Observed Growth SE\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Fall-To-Fall Conditional Growth Index\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Fall-To-Fall Conditional Growth Percentile\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Fall-To-Winter Projected Growth\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Fall-To-Winter Observed Growth\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Fall-To-Winter Observed Growth SE\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Fall-To-Winter Conditional Growth Index\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Fall-To-Winter Conditional Growth Percentile\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Fall-To-Spring Projected Growth\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Fall-To-Spring Observed Growth\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Fall-To-Spring Observed Growth SE\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Fall-To-Spring Conditional Growth Index\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Fall-To-Spring Conditional Growth Percentile\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Winter-To-Winter Projected Growth\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Winter-To-Winter Observed Growth\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Winter-To-Winter Observed Growth SE\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Winter-To-Winter Conditional Growth Index\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Winter-To-Winter Conditional Growth Percentile\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Winter-To-Spring Projected Growth\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Winter-To-Spring Observed Growth\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Winter-To-Spring Observed Growth SE\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Winter-To-Spring Conditional Growth Index\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Winter-To-Spring Conditional Growth Percentile\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Spring-To-Spring Projected Growth\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Spring-To-Spring Observed Growth\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Spring-To-Spring Observed Growth SE\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Spring-To-Spring Conditional Growth Index\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Spring-To-Spring Conditional Growth Percentile\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"RIT to Reading Score\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"RIT to Reading Min\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"RIT to Reading Max\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Projected Proficiency Study-1\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Projected Proficiency Level-1\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Projected Proficiency Study-2\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Projected Proficiency Level-2\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Projected Proficiency Study-3\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Projected Proficiency Level-3\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Projected Proficiency Study-4\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Projected Proficiency Level-4\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Projected Proficiency Study-5\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Projected Proficiency Level-5\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Projected Proficiency Study-6\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Projected Proficiency Level-6\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Projected Proficiency Study-7\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Projected Proficiency Level-7\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Projected Proficiency Study-8\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Projected Proficiency Level-8\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Projected Proficiency Study-9\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Projected Proficiency Level-9\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Projected Proficiency Study-10\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Projected Proficiency Level-10\",\"resultDatatypeType\":\"Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Growth Measure YN\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/TRUE\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Growth Measure YN\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/FALSE\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Fall-To-Fall Met Projected Growth\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Yes\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Fall-To-Fall Met Projected Growth\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/No\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Fall-To-Fall Met Projected Growth\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Yes*\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Fall-To-Fall Met Projected Growth\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/No*\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Fall-To-Winter Met Projected Growth\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Yes\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Fall-To-Winter Met Projected Growth\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/No\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Fall-To-Winter Met Projected Growth\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Yes*\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Fall-To-Winter Met Projected Growth\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/No*\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Fall-To-Spring Met Projected Growth\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Yes\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Fall-To-Spring Met Projected Growth\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/No\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Fall-To-Spring Met Projected Growth\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Yes*\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Fall-To-Spring Met Projected Growth\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/No*\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Winter-To-Winter Met Projected Growth\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Yes\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Winter-To-Winter Met Projected Growth\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/No\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Winter-To-Winter Met Projected Growth\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Yes*\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Winter-To-Winter Met Projected Growth\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/No*\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Winter-To-Spring Met Projected Growth\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Yes\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Winter-To-Spring Met Projected Growth\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/No\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Winter-To-Spring Met Projected Growth\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Yes*\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Winter-To-Spring Met Projected Growth\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/No*\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Spring-To-Spring Met Projected Growth\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Yes\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Spring-To-Spring Met Projected Growth\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/No\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Spring-To-Spring Met Projected Growth\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Yes*\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Spring-To-Spring Met Projected Growth\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/No*\",\"resultDatatypeType\":\"Level\"}]}},{\"Name\":\"NWEA-ObjectiveAssessment_v2\",\"ResourcePath\":\"/objectiveAssessments\",\"Data\":[{\"identificationCode\":\"NWEA-MAP-V1-GOAL-1\",\"assessmentReference\":{\"identifier\":\"NWEA-MAP-V1\",\"namespace\":\"http://www.nwea.org/map/Assessment\"},\"description\":\"Goal-1\",\"scores\":[{\"assessmentReportingMethodType\":\"Goal Name\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"RIT scale score\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Goal Range\",\"resultDatatypeType\":\"Range\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Low\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/LoAvg\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Avg\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/HiAvg\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/High\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/*\",\"resultDatatypeType\":\"Level\"}]},{\"identificationCode\":\"NWEA-MAP-V1-GOAL-2\",\"assessmentReference\":{\"identifier\":\"NWEA-MAP-V1\",\"namespace\":\"http://www.nwea.org/map/Assessment\"},\"description\":\"Goal-2\",\"scores\":[{\"assessmentReportingMethodType\":\"Goal Name\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"RIT scale score\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Goal Range\",\"resultDatatypeType\":\"Range\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Low\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/LoAvg\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Avg\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/HiAvg\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/High\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/*\",\"resultDatatypeType\":\"Level\"}]},{\"identificationCode\":\"NWEA-MAP-V1-GOAL-3\",\"assessmentReference\":{\"identifier\":\"NWEA-MAP-V1\",\"namespace\":\"http://www.nwea.org/map/Assessment\"},\"description\":\"Goal-3\",\"scores\":[{\"assessmentReportingMethodType\":\"Goal Name\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"RIT scale score\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Goal Range\",\"resultDatatypeType\":\"Range\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Low\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/LoAvg\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Avg\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/HiAvg\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/High\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/*\",\"resultDatatypeType\":\"Level\"}]},{\"identificationCode\":\"NWEA-MAP-V1-GOAL-4\",\"assessmentReference\":{\"identifier\":\"NWEA-MAP-V1\",\"namespace\":\"http://www.nwea.org/map/Assessment\"},\"description\":\"Goal-4\",\"scores\":[{\"assessmentReportingMethodType\":\"Goal Name\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"RIT scale score\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Goal Range\",\"resultDatatypeType\":\"Range\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Low\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/LoAvg\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Avg\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/HiAvg\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/High\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/*\",\"resultDatatypeType\":\"Level\"}]},{\"identificationCode\":\"NWEA-MAP-V1-GOAL-5\",\"assessmentReference\":{\"identifier\":\"NWEA-MAP-V1\",\"namespace\":\"http://www.nwea.org/map/Assessment\"},\"description\":\"Goal-5\",\"scores\":[{\"assessmentReportingMethodType\":\"Goal Name\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"RIT scale score\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Goal Range\",\"resultDatatypeType\":\"Range\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Low\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/LoAvg\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Avg\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/HiAvg\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/High\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/*\",\"resultDatatypeType\":\"Level\"}]},{\"identificationCode\":\"NWEA-MAP-V1-GOAL-6\",\"assessmentReference\":{\"identifier\":\"NWEA-MAP-V1\",\"namespace\":\"http://www.nwea.org/map/Assessment\"},\"description\":\"Goal-6\",\"scores\":[{\"assessmentReportingMethodType\":\"Goal Name\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"RIT scale score\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Goal Range\",\"resultDatatypeType\":\"Range\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Low\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/LoAvg\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Avg\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/HiAvg\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/High\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/*\",\"resultDatatypeType\":\"Level\"}]},{\"identificationCode\":\"NWEA-MAP-V1-GOAL-7\",\"assessmentReference\":{\"identifier\":\"NWEA-MAP-V1\",\"namespace\":\"http://www.nwea.org/map/Assessment\"},\"description\":\"Goal-7\",\"scores\":[{\"assessmentReportingMethodType\":\"Goal Name\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"RIT scale score\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Goal Range\",\"resultDatatypeType\":\"Range\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Low\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/LoAvg\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Avg\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/HiAvg\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/High\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/*\",\"resultDatatypeType\":\"Level\"}]},{\"identificationCode\":\"NWEA-MAP-V1-GOAL-8\",\"assessmentReference\":{\"identifier\":\"NWEA-MAP-V1\",\"namespace\":\"http://www.nwea.org/map/Assessment\"},\"description\":\"Goal-8\",\"scores\":[{\"assessmentReportingMethodType\":\"Goal Name\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"RIT scale score\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Goal Range\",\"resultDatatypeType\":\"Range\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Low\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/LoAvg\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/Avg\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/HiAvg\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/High\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Goal Adjective\",\"performanceLevelDescriptor\":\"http://www.nwea.org/map/PerformanceLevelDescriptor/*\",\"resultDatatypeType\":\"Level\"}]}]}],\"Lookups\":[]}",
-    "submitter": {
-        "name": "Emilio Baez",
-        "organization": "Developers.Net",
-        "email": "emilio@developers.net"
-    }
+  "id": 1032,
+  "title": "NWEA MAP Growth Assessment Results - API 2.5 - v2",
+  "description": "This template includes the NWEA MAP Growth Math and Reading Assessments specifically targeting vendor file export changes made as of July 1st, 2020",
+  "apiVersion": "2.5+",
+  "dateTimePublished": "2020-08-10T19:20:30.8009116",
+  "template": {
+    "Maps": [
+      {
+        "Name": "NWEA-Map_v2",
+        "ResourcePath": "/studentAssessments",
+        "ColumnHeaders": [
+          "TermName",
+          "StudentID",
+          "SchoolName",
+          "Course",
+          "Subject",
+          "GrowthMeasureYN",
+          "NormsReferenceData",
+          "WISelectedAYFall",
+          "WISelectedAYWinter",
+          "WISelectedAYSpring",
+          "WIPreviousAYFall",
+          "WIPreviousAYWinter",
+          "WIPreviousAYSpring",
+          "TestType",
+          "TestName",
+          "TestID",
+          "TestStartDate",
+          "TestDurationMinutes",
+          "TestRITScore",
+          "TestStandardError",
+          "TestPercentile",
+          "FallToFallProjectedGrowth",
+          "FallToFallObservedGrowth",
+          "FallToFallObservedGrowthSE",
+          "FallToFallMetProjectedGrowth",
+          "FallToFallConditionalGrowthIndex",
+          "FallToFallConditionalGrowthPercentile",
+          "FallToWinterProjectedGrowth",
+          "FallToWinterObservedGrowth",
+          "FallToWinterObservedGrowthSE",
+          "FallToWinterMetProjectedGrowth",
+          "FallToWinterConditionalGrowthIndex",
+          "FallToWinterConditionalGrowthPercentile",
+          "FallToSpringProjectedGrowth",
+          "FallToSpringObservedGrowth",
+          "FallToSpringObservedGrowthSE",
+          "FallToSpringMetProjectedGrowth",
+          "FallToSpringConditionalGrowthIndex",
+          "FallToSpringConditionalGrowthPercentile",
+          "WinterToWinterProjectedGrowth",
+          "WinterToWinterObservedGrowth",
+          "WinterToWinterObservedGrowthSE",
+          "WinterToWinterMetProjectedGrowth",
+          "WinterToWinterConditionalGrowthIndex",
+          "WinterToWinterConditionalGrowthPercentile",
+          "WinterToSpringProjectedGrowth",
+          "WinterToSpringObservedGrowth",
+          "WinterToSpringObservedGrowthSE",
+          "WinterToSpringMetProjectedGrowth",
+          "WinterToSpringConditionalGrowthIndex",
+          "WinterToSpringConditionalGrowthPercentile",
+          "SpringToSpringProjectedGrowth",
+          "SpringToSpringObservedGrowth",
+          "SpringToSpringObservedGrowthSE",
+          "SpringToSpringMetProjectedGrowth",
+          "SpringToSpringConditionalGrowthIndex",
+          "SpringToSpringConditionalGrowthPercentile",
+          "LexileScore",
+          "LexileMin",
+          "LexileMax",
+          "Goal1Name",
+          "Goal1RitScore",
+          "Goal1StdErr",
+          "Goal1Range",
+          "Goal1Adjective",
+          "Goal2Name",
+          "Goal2RitScore",
+          "Goal2StdErr",
+          "Goal2Range",
+          "Goal2Adjective",
+          "Goal3Name",
+          "Goal3RitScore",
+          "Goal3StdErr",
+          "Goal3Range",
+          "Goal3Adjective",
+          "Goal4Name",
+          "Goal4RitScore",
+          "Goal4StdErr",
+          "Goal4Range",
+          "Goal4Adjective",
+          "Goal5Name",
+          "Goal5RitScore",
+          "Goal5StdErr",
+          "Goal5Range",
+          "Goal5Adjective",
+          "Goal6Name",
+          "Goal6RitScore",
+          "Goal6StdErr",
+          "Goal6Range",
+          "Goal6Adjective",
+          "Goal7Name",
+          "Goal7RitScore",
+          "Goal7StdErr",
+          "Goal7Range",
+          "Goal7Adjective",
+          "Goal8Name",
+          "Goal8RitScore",
+          "Goal8StdErr",
+          "Goal8Range",
+          "Goal8Adjective",
+          "TestStartTime",
+          "PercentCorrect",
+          "ProjectedProficiencyStudy1",
+          "ProjectedProficiencyLevel1",
+          "ProjectedProficiencyStudy2",
+          "ProjectedProficiencyLevel2",
+          "ProjectedProficiencyStudy3",
+          "ProjectedProficiencyLevel3",
+          "TypicalFallToFallGrowth",
+          "TypicalFallToWinterGrowth",
+          "TypicalFallToSpringGrowth",
+          "TypicalWinterToWinterGrowth",
+          "TypicalWinterToSpringGrowth",
+          "TypicalSpringToSpringGrowth",
+          "ProjectedProficiencyStudy4",
+          "ProjectedProficiencyLevel4",
+          "ProjectedProficiencyStudy5",
+          "ProjectedProficiencyLevel5",
+          "ProjectedProficiencyStudy6",
+          "ProjectedProficiencyLevel6",
+          "ProjectedProficiencyStudy7",
+          "ProjectedProficiencyLevel7",
+          "ProjectedProficiencyStudy8",
+          "ProjectedProficiencyLevel8",
+          "ProjectedProficiencyStudy9",
+          "ProjectedProficiencyLevel9",
+          "ProjectedProficiencyStudy10",
+          "ProjectedProficiencyLevel10"
+        ],
+        "Map": {
+          "assessmentReference": {
+            "identifier": "NWEA-MAP-V1",
+            "namespace": "http://www.nwea.org/map/Assessment"
+          },
+          "studentReference": {
+            "studentUniqueId": {
+              "Column": "StudentID"
+            }
+          },
+          "administrationDate": {
+            "Column": "TestStartDate"
+          },
+          "identifier": {
+            "Column": "TestID"
+          },
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodType": "Growth Measure YN",
+              "performanceLevelDescriptor": {
+                "Column": "DI_GrowthMeasureYN"
+              },
+              "performanceLevelMet": true
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Fall Met Projected Growth",
+              "performanceLevelDescriptor": {
+                "Column": "DI_FallToFallMetProjectedGrowth"
+              },
+              "performanceLevelMet": true
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Winter Met Projected Growth",
+              "performanceLevelDescriptor": {
+                "Column": "DI_FallToWinterMetProjectedGrowth"
+              },
+              "performanceLevelMet": true
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Spring Met Projected Growth",
+              "performanceLevelDescriptor": {
+                "Column": "DI_FallToSpringMetProjectedGrowth"
+              },
+              "performanceLevelMet": true
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Winter Met Projected Growth",
+              "performanceLevelDescriptor": {
+                "Column": "DI_WinterToWinterMetProjectedGrowth"
+              },
+              "performanceLevelMet": true
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Spring Met Projected Growth",
+              "performanceLevelDescriptor": {
+                "Column": "DI_WinterToSpringMetProjectedGrowth"
+              },
+              "performanceLevelMet": true
+            },
+            {
+              "assessmentReportingMethodType": "Spring-To-Spring Met Projected Growth",
+              "performanceLevelDescriptor": {
+                "Column": "DI_SpringToSpringMetProjectedGrowth"
+              },
+              "performanceLevelMet": true
+            }
+          ],
+          "scoreResults": [
+            {
+              "assessmentReportingMethodType": "Term Name",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "TermName"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Measurement Scale",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "Course"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Test Name",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "TestName"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "RIT scale score",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "TestRITScore"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Standard error measurement",
+              "resultDatatypeType": "Decimal",
+              "result": {
+                "Column": "TestStandardError"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Percentile",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "TestPercentile"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Fall Projected Growth",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "FallToFallProjectedGrowth"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Fall Observed Growth",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "FallToFallObservedGrowth"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Fall Observed Growth SE",
+              "resultDatatypeType": "Decimal",
+              "result": {
+                "Column": "FallToFallObservedGrowthSE"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Fall Conditional Growth Index",
+              "resultDatatypeType": "Decimal",
+              "result": {
+                "Column": "FallToFallConditionalGrowthIndex"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Fall Conditional Growth Percentile",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "FallToFallConditionalGrowthPercentile"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Winter Projected Growth",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "FallToWinterProjectedGrowth"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Winter Observed Growth",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "FallToWinterObservedGrowth"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Winter Observed Growth SE",
+              "resultDatatypeType": "Decimal",
+              "result": {
+                "Column": "FallToWinterObservedGrowthSE"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Winter Conditional Growth Index",
+              "resultDatatypeType": "Decimal",
+              "result": {
+                "Column": "FallToWinterConditionalGrowthIndex"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Winter Conditional Growth Percentile",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "FallToWinterConditionalGrowthPercentile"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Spring Projected Growth",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "FallToSpringProjectedGrowth"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Spring Observed Growth",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "FallToSpringObservedGrowth"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Spring Observed Growth SE",
+              "resultDatatypeType": "Decimal",
+              "result": {
+                "Column": "FallToSpringObservedGrowthSE"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Spring Conditional Growth Index",
+              "resultDatatypeType": "Decimal",
+              "result": {
+                "Column": "FallToSpringConditionalGrowthIndex"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Spring Conditional Growth Percentile",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "FallToSpringConditionalGrowthPercentile"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Winter Projected Growth",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "WinterToWinterProjectedGrowth"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Winter Observed Growth",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "WinterToWinterObservedGrowth"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Winter Observed Growth SE",
+              "resultDatatypeType": "Decimal",
+              "result": {
+                "Column": "WinterToWinterObservedGrowthSE"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Winter Conditional Growth Index",
+              "resultDatatypeType": "Decimal",
+              "result": {
+                "Column": "WinterToWinterConditionalGrowthIndex"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Winter Conditional Growth Percentile",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "WinterToWinterConditionalGrowthPercentile"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Spring Projected Growth",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "WinterToSpringProjectedGrowth"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Spring Observed Growth",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "WinterToSpringObservedGrowth"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Spring Observed Growth SE",
+              "resultDatatypeType": "Decimal",
+              "result": {
+                "Column": "WinterToSpringObservedGrowthSE"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Spring Conditional Growth Index",
+              "resultDatatypeType": "Decimal",
+              "result": {
+                "Column": "WinterToSpringConditionalGrowthIndex"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Spring Conditional Growth Percentile",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "WinterToSpringConditionalGrowthPercentile"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Spring-To-Spring Projected Growth",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "SpringToSpringProjectedGrowth"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Spring-To-Spring Observed Growth",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "SpringToSpringObservedGrowth"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Spring-To-Spring Observed Growth SE",
+              "resultDatatypeType": "Decimal",
+              "result": {
+                "Column": "SpringToSpringObservedGrowthSE"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Spring-To-Spring Conditional Growth Index",
+              "resultDatatypeType": "Decimal",
+              "result": {
+                "Column": "SpringToSpringConditionalGrowthIndex"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Spring-To-Spring Conditional Growth Percentile",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "SpringToSpringConditionalGrowthPercentile"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "RIT to Reading Score",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "LexileScore"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "RIT to Reading Min",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "LexileMin"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "RIT to Reading Max",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "LexileMax"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Level-1",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "ProjectedProficiencyLevel1"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Level-2",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "ProjectedProficiencyLevel2"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Level-3",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "ProjectedProficiencyLevel3"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Level-4",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "ProjectedProficiencyLevel4"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Level-5",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "ProjectedProficiencyLevel5"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Level-6",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "ProjectedProficiencyLevel6"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Level-7",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "ProjectedProficiencyLevel7"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Level-8",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "ProjectedProficiencyLevel8"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Level-9",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "ProjectedProficiencyLevel9"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Level-10",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "ProjectedProficiencyLevel10"
+              }
+            }
+          ],
+          "studentObjectiveAssessments": [
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "NWEA-MAP-V1",
+                "identificationCode": "NWEA-MAP-V1-GOAL-1",
+                "namespace": "http://www.nwea.org/map/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodType": "Goal Adjective",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_Goal1Adjective"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Goal Name",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "DI_Goal1Name"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "RIT scale score",
+                  "resultDatatypeType": "Integer",
+                  "result": {
+                    "Column": "Goal1RitScore"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Standard error measurement",
+                  "resultDatatypeType": "Decimal",
+                  "result": {
+                    "Column": "Goal1StdErr"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Goal Range",
+                  "resultDatatypeType": "Range",
+                  "result": {
+                    "Column": "Goal1Range"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "NWEA-MAP-V1",
+                "identificationCode": "NWEA-MAP-V1-GOAL-2",
+                "namespace": "http://www.nwea.org/map/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodType": "Goal Adjective",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_Goal2Adjective"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Goal Name",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "DI_Goal2Name"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "RIT scale score",
+                  "resultDatatypeType": "Integer",
+                  "result": {
+                    "Column": "Goal2RitScore"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Standard error measurement",
+                  "resultDatatypeType": "Decimal",
+                  "result": {
+                    "Column": "Goal2StdErr"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Goal Range",
+                  "resultDatatypeType": "Range",
+                  "result": {
+                    "Column": "Goal2Range"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "NWEA-MAP-V1",
+                "identificationCode": "NWEA-MAP-V1-GOAL-3",
+                "namespace": "http://www.nwea.org/map/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodType": "Goal Adjective",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_Goal3Adjective"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Goal Name",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "DI_Goal3Name"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "RIT scale score",
+                  "resultDatatypeType": "Integer",
+                  "result": {
+                    "Column": "Goal3RitScore"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Standard error measurement",
+                  "resultDatatypeType": "Decimal",
+                  "result": {
+                    "Column": "Goal3StdErr"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Goal Range",
+                  "resultDatatypeType": "Range",
+                  "result": {
+                    "Column": "Goal3Range"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "NWEA-MAP-V1",
+                "identificationCode": "NWEA-MAP-V1-GOAL-4",
+                "namespace": "http://www.nwea.org/map/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodType": "Goal Adjective",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_Goal4Adjective"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Goal Name",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "DI_Goal4Name"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "RIT scale score",
+                  "resultDatatypeType": "Integer",
+                  "result": {
+                    "Column": "Goal4RitScore"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Standard error measurement",
+                  "resultDatatypeType": "Decimal",
+                  "result": {
+                    "Column": "Goal4StdErr"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Goal Range",
+                  "resultDatatypeType": "Range",
+                  "result": {
+                    "Column": "Goal4Range"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "NWEA-MAP-V1",
+                "identificationCode": "NWEA-MAP-V1-GOAL-5",
+                "namespace": "http://www.nwea.org/map/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodType": "Goal Adjective",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_Goal5Adjective"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Goal Name",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "DI_Goal5Name"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "RIT scale score",
+                  "resultDatatypeType": "Integer",
+                  "result": {
+                    "Column": "Goal5RitScore"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Standard error measurement",
+                  "resultDatatypeType": "Decimal",
+                  "result": {
+                    "Column": "Goal5StdErr"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Goal Range",
+                  "resultDatatypeType": "Range",
+                  "result": {
+                    "Column": "Goal5Range"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "NWEA-MAP-V1",
+                "identificationCode": "NWEA-MAP-V1-GOAL-6",
+                "namespace": "http://www.nwea.org/map/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodType": "Goal Adjective",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_Goal6Adjective"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Goal Name",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "DI_Goal6Name"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "RIT scale score",
+                  "resultDatatypeType": "Integer",
+                  "result": {
+                    "Column": "Goal6RitScore"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Standard error measurement",
+                  "resultDatatypeType": "Decimal",
+                  "result": {
+                    "Column": "Goal6StdErr"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Goal Range",
+                  "resultDatatypeType": "Range",
+                  "result": {
+                    "Column": "Goal6Range"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "NWEA-MAP-V1",
+                "identificationCode": "NWEA-MAP-V1-GOAL-7",
+                "namespace": "http://www.nwea.org/map/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodType": "Goal Adjective",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_Goal7Adjective"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Goal Name",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "DI_Goal7Name"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "RIT scale score",
+                  "resultDatatypeType": "Integer",
+                  "result": {
+                    "Column": "Goal7RitScore"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Standard error measurement",
+                  "resultDatatypeType": "Decimal",
+                  "result": {
+                    "Column": "Goal7StdErr"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Goal Range",
+                  "resultDatatypeType": "Range",
+                  "result": {
+                    "Column": "Goal7Range"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "NWEA-MAP-V1",
+                "identificationCode": "NWEA-MAP-V1-GOAL-8",
+                "namespace": "http://www.nwea.org/map/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodType": "Goal Adjective",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_Goal8Adjective"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Goal Name",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "DI_Goal8Name"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "RIT scale score",
+                  "resultDatatypeType": "Integer",
+                  "result": {
+                    "Column": "Goal8RitScore"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Standard error measurement",
+                  "resultDatatypeType": "Decimal",
+                  "result": {
+                    "Column": "Goal8StdErr"
+                  }
+                },
+                {
+                  "assessmentReportingMethodType": "Goal Range",
+                  "resultDatatypeType": "Range",
+                  "result": {
+                    "Column": "Goal8Range"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "Bootstraps": [
+      {
+        "Name": "NWEA-PLD_v2",
+        "ResourcePath": "/performanceLevelDescriptors",
+        "Data": [
+          {
+            "codeValue": "TRUE",
+            "description": "TRUE",
+            "namespace": "http://www.nwea.org/map/PerformanceLevelDescriptor",
+            "shortDescription": "TRUE"
+          },
+          {
+            "codeValue": "FALSE",
+            "description": "FALSE",
+            "namespace": "http://www.nwea.org/map/PerformanceLevelDescriptor",
+            "shortDescription": "FALSE"
+          },
+          {
+            "codeValue": "Yes",
+            "description": "Student met growth projection.",
+            "namespace": "http://www.nwea.org/map/PerformanceLevelDescriptor",
+            "shortDescription": "Yes"
+          },
+          {
+            "codeValue": "No",
+            "description": "Growth projection not met. Asterisk means Observed Growth Standard Error (SE) could be large enough to put the outcome in question, so evaluate in combination with other points of data.",
+            "namespace": "http://www.nwea.org/map/PerformanceLevelDescriptor",
+            "shortDescription": "No"
+          },
+          {
+            "codeValue": "Yes*",
+            "description": "Student met growth projection.",
+            "namespace": "http://www.nwea.org/map/PerformanceLevelDescriptor",
+            "shortDescription": "Yes*"
+          },
+          {
+            "codeValue": "No*",
+            "description": "Growth projection not met. Asterisk means Observed Growth Standard Error (SE) could be large enough to put the outcome in question, so evaluate in combination with other points of data.",
+            "namespace": "http://www.nwea.org/map/PerformanceLevelDescriptor",
+            "shortDescription": "No*"
+          },
+          {
+            "codeValue": "Low",
+            "description": "Low (percentile <= 20)",
+            "namespace": "http://www.nwea.org/map/PerformanceLevelDescriptor",
+            "shortDescription": "Low"
+          },
+          {
+            "codeValue": "LoAvg",
+            "description": "LoAvg (percentile > 20 to <= 40)",
+            "namespace": "http://www.nwea.org/map/PerformanceLevelDescriptor",
+            "shortDescription": "LoAvg"
+          },
+          {
+            "codeValue": "Avg",
+            "description": "Avg (percentile > 40 to <= 60)",
+            "namespace": "http://www.nwea.org/map/PerformanceLevelDescriptor",
+            "shortDescription": "Avg"
+          },
+          {
+            "codeValue": "HiAvg",
+            "description": "HiAvg (percentile > 60 to <= 80)",
+            "namespace": "http://www.nwea.org/map/PerformanceLevelDescriptor",
+            "shortDescription": "HiAvg"
+          },
+          {
+            "codeValue": "High",
+            "description": "High (percentile > 80",
+            "namespace": "http://www.nwea.org/map/PerformanceLevelDescriptor",
+            "shortDescription": "High"
+          },
+          {
+            "codeValue": "*",
+            "description": "* goal adjective could not be computed)",
+            "namespace": "http://www.nwea.org/map/PerformanceLevelDescriptor",
+            "shortDescription": "*"
+          }
+        ]
+      },
+      {
+        "Name": "NWEA-Assessment_v2",
+        "ResourcePath": "/assessments",
+        "Data": {
+          "identifier": "NWEA-MAP-V1",
+          "title": "NWEA-MAP-V1",
+          "namespace": "http://www.nwea.org/map/Assessment",
+          "assessedGradeLevels": [
+            {
+              "gradeLevelDescriptor": "Kindergarten"
+            },
+            {
+              "gradeLevelDescriptor": "First grade"
+            },
+            {
+              "gradeLevelDescriptor": "Second grade"
+            },
+            {
+              "gradeLevelDescriptor": "Third grade"
+            },
+            {
+              "gradeLevelDescriptor": "Fourth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Fifth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Sixth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Seventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "Eighth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Ninth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Tenth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Eleventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "Twelfth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Ungraded"
+            }
+          ],
+          "categoryDescriptor": "Other",
+          "academicSubjects": [
+            {
+              "academicSubjectDescriptor": "Mathematics"
+            },
+            {
+              "academicSubjectDescriptor": "Reading"
+            }
+          ],
+          "scores": [
+            {
+              "assessmentReportingMethodType": "Term Name",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Measurement Scale",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Test Name",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "RIT scale score",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Standard error measurement",
+              "resultDatatypeType": "Decimal"
+            },
+            {
+              "assessmentReportingMethodType": "Percentile",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Fall Projected Growth",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Fall Observed Growth",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Fall Observed Growth SE",
+              "resultDatatypeType": "Decimal"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Fall Conditional Growth Index",
+              "resultDatatypeType": "Decimal"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Fall Conditional Growth Percentile",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Winter Projected Growth",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Winter Observed Growth",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Winter Observed Growth SE",
+              "resultDatatypeType": "Decimal"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Winter Conditional Growth Index",
+              "resultDatatypeType": "Decimal"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Winter Conditional Growth Percentile",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Spring Projected Growth",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Spring Observed Growth",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Spring Observed Growth SE",
+              "resultDatatypeType": "Decimal"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Spring Conditional Growth Index",
+              "resultDatatypeType": "Decimal"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Spring Conditional Growth Percentile",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Winter Projected Growth",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Winter Observed Growth",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Winter Observed Growth SE",
+              "resultDatatypeType": "Decimal"
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Winter Conditional Growth Index",
+              "resultDatatypeType": "Decimal"
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Winter Conditional Growth Percentile",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Spring Projected Growth",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Spring Observed Growth",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Spring Observed Growth SE",
+              "resultDatatypeType": "Decimal"
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Spring Conditional Growth Index",
+              "resultDatatypeType": "Decimal"
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Spring Conditional Growth Percentile",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Spring-To-Spring Projected Growth",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Spring-To-Spring Observed Growth",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Spring-To-Spring Observed Growth SE",
+              "resultDatatypeType": "Decimal"
+            },
+            {
+              "assessmentReportingMethodType": "Spring-To-Spring Conditional Growth Index",
+              "resultDatatypeType": "Decimal"
+            },
+            {
+              "assessmentReportingMethodType": "Spring-To-Spring Conditional Growth Percentile",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "RIT to Reading Score",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "RIT to Reading Min",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "RIT to Reading Max",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Study-1",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Level-1",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Study-2",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Level-2",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Study-3",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Level-3",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Study-4",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Level-4",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Study-5",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Level-5",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Study-6",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Level-6",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Study-7",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Level-7",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Study-8",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Level-8",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Study-9",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Level-9",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Study-10",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Projected Proficiency Level-10",
+              "resultDatatypeType": "Level"
+            }
+          ],
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodType": "Growth Measure YN",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/TRUE",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Growth Measure YN",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/FALSE",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Fall Met Projected Growth",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Yes",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Fall Met Projected Growth",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/No",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Fall Met Projected Growth",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Yes*",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Fall Met Projected Growth",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/No*",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Winter Met Projected Growth",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Yes",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Winter Met Projected Growth",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/No",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Winter Met Projected Growth",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Yes*",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Winter Met Projected Growth",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/No*",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Spring Met Projected Growth",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Yes",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Spring Met Projected Growth",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/No",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Spring Met Projected Growth",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Yes*",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Fall-To-Spring Met Projected Growth",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/No*",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Winter Met Projected Growth",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Yes",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Winter Met Projected Growth",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/No",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Winter Met Projected Growth",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Yes*",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Winter Met Projected Growth",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/No*",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Spring Met Projected Growth",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Yes",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Spring Met Projected Growth",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/No",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Spring Met Projected Growth",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Yes*",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Winter-To-Spring Met Projected Growth",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/No*",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Spring-To-Spring Met Projected Growth",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Yes",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Spring-To-Spring Met Projected Growth",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/No",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Spring-To-Spring Met Projected Growth",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Yes*",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Spring-To-Spring Met Projected Growth",
+              "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/No*",
+              "resultDatatypeType": "Level"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "NWEA-ObjectiveAssessment_v2",
+        "ResourcePath": "/objectiveAssessments",
+        "Data": [
+          {
+            "identificationCode": "NWEA-MAP-V1-GOAL-1",
+            "assessmentReference": {
+              "identifier": "NWEA-MAP-V1",
+              "namespace": "http://www.nwea.org/map/Assessment"
+            },
+            "description": "Goal-1",
+            "scores": [
+              {
+                "assessmentReportingMethodType": "Goal Name",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "RIT scale score",
+                "resultDatatypeType": "Integer"
+              },
+              {
+                "assessmentReportingMethodType": "Standard error measurement",
+                "resultDatatypeType": "Decimal"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Range",
+                "resultDatatypeType": "Range"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Low",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/LoAvg",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Avg",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/HiAvg",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/High",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/*",
+                "resultDatatypeType": "Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "NWEA-MAP-V1-GOAL-2",
+            "assessmentReference": {
+              "identifier": "NWEA-MAP-V1",
+              "namespace": "http://www.nwea.org/map/Assessment"
+            },
+            "description": "Goal-2",
+            "scores": [
+              {
+                "assessmentReportingMethodType": "Goal Name",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "RIT scale score",
+                "resultDatatypeType": "Integer"
+              },
+              {
+                "assessmentReportingMethodType": "Standard error measurement",
+                "resultDatatypeType": "Decimal"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Range",
+                "resultDatatypeType": "Range"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Low",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/LoAvg",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Avg",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/HiAvg",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/High",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/*",
+                "resultDatatypeType": "Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "NWEA-MAP-V1-GOAL-3",
+            "assessmentReference": {
+              "identifier": "NWEA-MAP-V1",
+              "namespace": "http://www.nwea.org/map/Assessment"
+            },
+            "description": "Goal-3",
+            "scores": [
+              {
+                "assessmentReportingMethodType": "Goal Name",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "RIT scale score",
+                "resultDatatypeType": "Integer"
+              },
+              {
+                "assessmentReportingMethodType": "Standard error measurement",
+                "resultDatatypeType": "Decimal"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Range",
+                "resultDatatypeType": "Range"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Low",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/LoAvg",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Avg",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/HiAvg",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/High",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/*",
+                "resultDatatypeType": "Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "NWEA-MAP-V1-GOAL-4",
+            "assessmentReference": {
+              "identifier": "NWEA-MAP-V1",
+              "namespace": "http://www.nwea.org/map/Assessment"
+            },
+            "description": "Goal-4",
+            "scores": [
+              {
+                "assessmentReportingMethodType": "Goal Name",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "RIT scale score",
+                "resultDatatypeType": "Integer"
+              },
+              {
+                "assessmentReportingMethodType": "Standard error measurement",
+                "resultDatatypeType": "Decimal"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Range",
+                "resultDatatypeType": "Range"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Low",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/LoAvg",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Avg",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/HiAvg",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/High",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/*",
+                "resultDatatypeType": "Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "NWEA-MAP-V1-GOAL-5",
+            "assessmentReference": {
+              "identifier": "NWEA-MAP-V1",
+              "namespace": "http://www.nwea.org/map/Assessment"
+            },
+            "description": "Goal-5",
+            "scores": [
+              {
+                "assessmentReportingMethodType": "Goal Name",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "RIT scale score",
+                "resultDatatypeType": "Integer"
+              },
+              {
+                "assessmentReportingMethodType": "Standard error measurement",
+                "resultDatatypeType": "Decimal"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Range",
+                "resultDatatypeType": "Range"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Low",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/LoAvg",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Avg",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/HiAvg",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/High",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/*",
+                "resultDatatypeType": "Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "NWEA-MAP-V1-GOAL-6",
+            "assessmentReference": {
+              "identifier": "NWEA-MAP-V1",
+              "namespace": "http://www.nwea.org/map/Assessment"
+            },
+            "description": "Goal-6",
+            "scores": [
+              {
+                "assessmentReportingMethodType": "Goal Name",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "RIT scale score",
+                "resultDatatypeType": "Integer"
+              },
+              {
+                "assessmentReportingMethodType": "Standard error measurement",
+                "resultDatatypeType": "Decimal"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Range",
+                "resultDatatypeType": "Range"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Low",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/LoAvg",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Avg",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/HiAvg",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/High",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/*",
+                "resultDatatypeType": "Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "NWEA-MAP-V1-GOAL-7",
+            "assessmentReference": {
+              "identifier": "NWEA-MAP-V1",
+              "namespace": "http://www.nwea.org/map/Assessment"
+            },
+            "description": "Goal-7",
+            "scores": [
+              {
+                "assessmentReportingMethodType": "Goal Name",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "RIT scale score",
+                "resultDatatypeType": "Integer"
+              },
+              {
+                "assessmentReportingMethodType": "Standard error measurement",
+                "resultDatatypeType": "Decimal"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Range",
+                "resultDatatypeType": "Range"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Low",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/LoAvg",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Avg",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/HiAvg",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/High",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/*",
+                "resultDatatypeType": "Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "NWEA-MAP-V1-GOAL-8",
+            "assessmentReference": {
+              "identifier": "NWEA-MAP-V1",
+              "namespace": "http://www.nwea.org/map/Assessment"
+            },
+            "description": "Goal-8",
+            "scores": [
+              {
+                "assessmentReportingMethodType": "Goal Name",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "RIT scale score",
+                "resultDatatypeType": "Integer"
+              },
+              {
+                "assessmentReportingMethodType": "Standard error measurement",
+                "resultDatatypeType": "Decimal"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Range",
+                "resultDatatypeType": "Range"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Low",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/LoAvg",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/Avg",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/HiAvg",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/High",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Goal Adjective",
+                "performanceLevelDescriptor": "http://www.nwea.org/map/PerformanceLevelDescriptor/*",
+                "resultDatatypeType": "Level"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Lookups": []
+  },
+  "submitter": {
+    "name": "Emilio Baez",
+    "organization": "Developers.Net",
+    "email": "emilio@developers.net"
+  }
 }

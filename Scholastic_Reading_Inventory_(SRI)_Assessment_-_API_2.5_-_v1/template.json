@@ -1,13 +1,430 @@
 {
-    "id": 1049,
-    "title": "Scholastic Reading Inventory (SRI) Assessment - API 2.5 - v1",
-    "description": "This template includes the Scholastic Reading Inventory (SRI) Assessment for API Version 2.5",
-    "apiVersion": "2.5+",
-    "dateTimePublished": "2021-02-16T17:38:42.3731766",
-    "template": "{\"Maps\":[{\"Name\":\"SRI-DataMap\",\"ResourcePath\":\"/studentAssessments\",\"ColumnHeaders\":[\"DI_StudentId\",\"DI_SchoolYear\",\"USER_NAME\",\"USER_ID\",\"SIS_ID\",\"FIRST_NAME\",\"LAST_NAME\",\"MIDDLE_NAME\",\"BIRTH_DATE\",\"GRADE\",\"SCHOOL_ID\",\"SCHOOL_NUMBER\",\"SCHOOL_NAME\",\"CLASS_NAME\",\"CLASS_ID\",\"LEXILE_SCORE\",\"LEXILE_MOD_DATE\",\"IS_ENABLED\",\"EXTERNAL_ID\",\"AYP_ECON_DISADVANTAGED\",\"AYP_GIFTED_TALENTED\",\"AYP_LTD_ENGLISH_PROFICIENCY\",\"AYP_MIGRANT\",\"AYP_WITH_DISABILITIES\",\"GENDER_FEMALE\",\"GENDER_MALE\",\"ETHNIC_AM_IND_AK_NATIVE\",\"ETHNIC_ASIAN\",\"ETHNIC_AFRICAN_AM\",\"ETHNIC_HISPANIC\",\"ETHNIC_PACIFIC_ISL\",\"ETHNIC_CAUCASIAN\",\"ETHNIC_TWO_OR_MORE_RACES\",\"CUSTOMDEMOGRAPHIC1\",\"CUSTOMDEMOGRAPHIC2\",\"CUSTOMDEMOGRAPHIC3\",\"CDX_ENROLLED\",\"DTM_ENROLLED\",\"FAD_ENROLLED\",\"FM_ENROLLED\",\"FMNG_ENROLLED\",\"M180_ENROLLED\",\"M180Y2_ENROLLED\",\"R180NG_ENROLLED\",\"R180_ENROLLED\",\"RT_ENROLLED\",\"RTNG_ENROLLED\",\"S44_ENROLLED\",\"S44JR_ENROLLED\",\"S44NG_ENROLLED\",\"SMI_ENROLLED\",\"SPI_ENROLLED\",\"SRC_ENROLLED\",\"SRI_ENROLLED\",\"XT_ENROLLED\",\"EXPORT_START_DATE\",\"EXPORT_END_DATE\",\"SAM_CFN\",\"SRI_CLASS\",\"SRI_CLASS_ID\",\"SRI_FRA_TEST_DATE_1\",\"SRI_FRA_TOTAL_ITEMS_RECEIVED_1\",\"SRI_FRA_TOTAL_ACCURACY_SCORE_1\",\"SRI_FRA_TOTAL_FLUENCY_SCORE_1\",\"SRI_FRA_TOTAL_TIME_PER_TEST_1\",\"SRI_FRA_TEST_DATE_2\",\"SRI_FRA_TOTAL_ITEMS_RECEIVED_2\",\"SRI_FRA_TOTAL_ACCURACY_SCORE_2\",\"SRI_FRA_TOTAL_FLUENCY_SCORE_2\",\"SRI_FRA_TOTAL_TIME_PER_TEST_2\",\"SRI_FRA_TEST_DATE_3\",\"SRI_FRA_TOTAL_ITEMS_RECEIVED_3\",\"SRI_FRA_TOTAL_ACCURACY_SCORE_3\",\"SRI_FRA_TOTAL_FLUENCY_SCORE_3\",\"SRI_FRA_TOTAL_TIME_PER_TEST_3\",\"SRI_FRA_TEST_DATE_4\",\"SRI_FRA_TOTAL_ITEMS_RECEIVED_4\",\"SRI_FRA_TOTAL_ACCURACY_SCORE_4\",\"SRI_FRA_TOTAL_FLUENCY_SCORE_4\",\"SRI_FRA_TOTAL_TIME_PER_TEST_4\",\"SRI_FRA_TEST_DATE_5\",\"SRI_FRA_TOTAL_ITEMS_RECEIVED_5\",\"SRI_FRA_TOTAL_ACCURACY_SCORE_5\",\"SRI_FRA_TOTAL_FLUENCY_SCORE_5\",\"SRI_FRA_TOTAL_TIME_PER_TEST_5\",\"SRI_FRA_TEST_DATE_6\",\"SRI_FRA_TOTAL_ITEMS_RECEIVED_6\",\"SRI_FRA_TOTAL_ACCURACY_SCORE_6\",\"SRI_FRA_TOTAL_FLUENCY_SCORE_6\",\"SRI_FRA_TOTAL_TIME_PER_TEST_6\",\"SRI_FRA_TEST_DATE_7\",\"SRI_FRA_TOTAL_ITEMS_RECEIVED_7\",\"SRI_FRA_TOTAL_ACCURACY_SCORE_7\",\"SRI_FRA_TOTAL_FLUENCY_SCORE_7\",\"SRI_FRA_TOTAL_TIME_PER_TEST_7\",\"SRI_FRA_TEST_DATE_8\",\"SRI_FRA_TOTAL_ITEMS_RECEIVED_8\",\"SRI_FRA_TOTAL_ACCURACY_SCORE_8\",\"SRI_FRA_TOTAL_FLUENCY_SCORE_8\",\"SRI_FRA_TOTAL_TIME_PER_TEST_8\",\"SRI_FRA_TEST_DATE_9\",\"SRI_FRA_TOTAL_ITEMS_RECEIVED_9\",\"SRI_FRA_TOTAL_ACCURACY_SCORE_9\",\"SRI_FRA_TOTAL_FLUENCY_SCORE_9\",\"SRI_FRA_TOTAL_TIME_PER_TEST_9\",\"SRI_LAST_LEXILE_DATE\",\"SRI_LAST_LEXILE_SCORE\",\"SRI_PERCENTILE\",\"SRI_NCE\",\"SRI_TEST_TAKEN\",\"SRI_TEST_DATE_1\",\"SRI_LEXILE_SCORES_1\",\"SRI_TOTAL_TIME_PER_TEST_1\",\"SRI_TEST_NAMES_1\",\"SRI_GRADE_LEVEL_1\",\"SRI_PERFORMANCE_LEVEL_1\",\"SRI_TEST_DATE_2\",\"SRI_LEXILE_SCORES_2\",\"SRI_TOTAL_TIME_PER_TEST_2\",\"SRI_TEST_NAMES_2\",\"SRI_GRADE_LEVEL_2\",\"SRI_PERFORMANCE_LEVEL_2\",\"SRI_TEST_DATE_3\",\"SRI_LEXILE_SCORES_3\",\"SRI_TOTAL_TIME_PER_TEST_3\",\"SRI_TEST_NAMES_3\",\"SRI_GRADE_LEVEL_3\",\"SRI_PERFORMANCE_LEVEL_3\",\"SRI_TEST_DATE_4\",\"SRI_LEXILE_SCORES_4\",\"SRI_TOTAL_TIME_PER_TEST_4\",\"SRI_TEST_NAMES_4\",\"SRI_GRADE_LEVEL_4\",\"SRI_PERFORMANCE_LEVEL_4\",\"SRI_TEST_DATE_5\",\"SRI_LEXILE_SCORES_5\",\"SRI_TOTAL_TIME_PER_TEST_5\",\"SRI_TEST_NAMES_5\",\"SRI_GRADE_LEVEL_5\",\"SRI_PERFORMANCE_LEVEL_5\",\"SRI_TEST_DATE_6\",\"SRI_LEXILE_SCORES_6\",\"SRI_TOTAL_TIME_PER_TEST_6\",\"SRI_TEST_NAMES_6\",\"SRI_GRADE_LEVEL_6\",\"SRI_PERFORMANCE_LEVEL_6\",\"SRI_TEST_DATE_7\",\"SRI_LEXILE_SCORES_7\",\"SRI_TOTAL_TIME_PER_TEST_7\",\"SRI_TEST_NAMES_7\",\"SRI_GRADE_LEVEL_7\",\"SRI_PERFORMANCE_LEVEL_7\",\"SRI_TEST_DATE_8\",\"SRI_LEXILE_SCORES_8\",\"SRI_TOTAL_TIME_PER_TEST_8\",\"SRI_TEST_NAMES_8\",\"SRI_GRADE_LEVEL_8\",\"SRI_PERFORMANCE_LEVEL_8\",\"SRI_TEST_DATE_9\",\"SRI_LEXILE_SCORES_9\",\"SRI_TOTAL_TIME_PER_TEST_9\",\"SRI_TEST_NAMES_9\",\"SRI_GRADE_LEVEL_9\",\"SRI_PERFORMANCE_LEVEL_9\",\"SRI_TEST_DATE_10\",\"SRI_LEXILE_SCORES_10\",\"SRI_TOTAL_TIME_PER_TEST_10\",\"SRI_TEST_NAMES_10\",\"SRI_GRADE_LEVEL_10\",\"SRI_PERFORMANCE_LEVEL_10\",\"SRI_TEST_DATE_11\",\"SRI_LEXILE_SCORES_11\",\"SRI_TOTAL_TIME_PER_TEST_11\",\"SRI_TEST_NAMES_11\",\"SRI_GRADE_LEVEL_11\",\"SRI_PERFORMANCE_LEVEL_11\",\"SRI_TEST_DATE_12\",\"SRI_LEXILE_SCORES_12\",\"SRI_TOTAL_TIME_PER_TEST_12\",\"SRI_TEST_NAMES_12\",\"SRI_GRADE_LEVEL_12\",\"SRI_PERFORMANCE_LEVEL_12\",\"SRI_TEST_DATE_13\",\"SRI_LEXILE_SCORES_13\",\"SRI_TOTAL_TIME_PER_TEST_13\",\"SRI_TEST_NAMES_13\",\"SRI_GRADE_LEVEL_13\",\"SRI_PERFORMANCE_LEVEL_13\",\"SRI_TEST_DATE_14\",\"SRI_LEXILE_SCORES_14\",\"SRI_TOTAL_TIME_PER_TEST_14\",\"SRI_TEST_NAMES_14\",\"SRI_GRADE_LEVEL_14\",\"SRI_PERFORMANCE_LEVEL_14\",\"SRI_TEST_DATE_15\",\"SRI_LEXILE_SCORES_15\",\"SRI_TOTAL_TIME_PER_TEST_15\",\"SRI_TEST_NAMES_15\",\"SRI_GRADE_LEVEL_15\",\"SRI_PERFORMANCE_LEVEL_15\",\"SRI_TEST_DATE_16\",\"SRI_LEXILE_SCORES_16\",\"SRI_TOTAL_TIME_PER_TEST_16\",\"SRI_TEST_NAMES_16\",\"SRI_GRADE_LEVEL_16\",\"SRI_PERFORMANCE_LEVEL_16\",\"SRI_TEST_DATE_17\",\"SRI_LEXILE_SCORES_17\",\"SRI_TOTAL_TIME_PER_TEST_17\",\"SRI_TEST_NAMES_17\",\"SRI_GRADE_LEVEL_17\",\"SRI_PERFORMANCE_LEVEL_17\",\"SRI_TEST_DATE_18\",\"SRI_LEXILE_SCORES_18\",\"SRI_TOTAL_TIME_PER_TEST_18\",\"SRI_TEST_NAMES_18\",\"SRI_GRADE_LEVEL_18\",\"SRI_PERFORMANCE_LEVEL_18\",\"SRI_TEST_DATE_19\",\"SRI_LEXILE_SCORES_19\",\"SRI_TOTAL_TIME_PER_TEST_19\",\"SRI_TEST_NAMES_19\",\"SRI_GRADE_LEVEL_19\",\"SRI_PERFORMANCE_LEVEL_19\",\"SRI_TEST_DATE_20\",\"SRI_LEXILE_SCORES_20\",\"SRI_TOTAL_TIME_PER_TEST_20\",\"SRI_TEST_NAMES_20\",\"SRI_GRADE_LEVEL_20\",\"SRI_PERFORMANCE_LEVEL_20\",\"SRI_TEST_DATE_21\",\"SRI_LEXILE_SCORES_21\",\"SRI_TOTAL_TIME_PER_TEST_21\",\"SRI_TEST_NAMES_21\",\"SRI_GRADE_LEVEL_21\",\"SRI_PERFORMANCE_LEVEL_21\",\"SRI_TEST_DATE_22\",\"SRI_LEXILE_SCORES_22\",\"SRI_TOTAL_TIME_PER_TEST_22\",\"SRI_TEST_NAMES_22\",\"SRI_GRADE_LEVEL_22\",\"SRI_PERFORMANCE_LEVEL_22\",\"SRI_TEST_DATE_23\",\"SRI_LEXILE_SCORES_23\",\"SRI_TOTAL_TIME_PER_TEST_23\",\"SRI_TEST_NAMES_23\",\"SRI_GRADE_LEVEL_23\",\"SRI_PERFORMANCE_LEVEL_23\",\"SRI_TEST_DATE_24\",\"SRI_LEXILE_SCORES_24\",\"SRI_TOTAL_TIME_PER_TEST_24\",\"SRI_TEST_NAMES_24\",\"SRI_GRADE_LEVEL_24\",\"SRI_PERFORMANCE_LEVEL_24\",\"SRI_TEST_DATE_25\",\"SRI_LEXILE_SCORES_25\",\"SRI_TOTAL_TIME_PER_TEST_25\",\"SRI_TEST_NAMES_25\",\"SRI_GRADE_LEVEL_25\",\"SRI_PERFORMANCE_LEVEL_25\",\"SRI_TEST_DATE_26\",\"SRI_LEXILE_SCORES_26\",\"SRI_TOTAL_TIME_PER_TEST_26\",\"SRI_TEST_NAMES_26\",\"SRI_GRADE_LEVEL_26\",\"SRI_PERFORMANCE_LEVEL_26\",\"SRI_TEST_DATE_27\",\"SRI_LEXILE_SCORES_27\",\"SRI_TOTAL_TIME_PER_TEST_27\",\"SRI_TEST_NAMES_27\",\"SRI_GRADE_LEVEL_27\",\"SRI_PERFORMANCE_LEVEL_27\",\"SRI_TEST_DATE_28\",\"SRI_LEXILE_SCORES_28\",\"SRI_TOTAL_TIME_PER_TEST_28\",\"SRI_TEST_NAMES_28\",\"SRI_GRADE_LEVEL_28\",\"SRI_PERFORMANCE_LEVEL_28\",\"SRI_TEST_DATE_29\",\"SRI_LEXILE_SCORES_29\",\"SRI_TOTAL_TIME_PER_TEST_29\",\"SRI_TEST_NAMES_29\",\"SRI_GRADE_LEVEL_29\",\"SRI_PERFORMANCE_LEVEL_29\",\"SRI_TEST_DATE_30\",\"SRI_LEXILE_SCORES_30\",\"SRI_TOTAL_TIME_PER_TEST_30\",\"SRI_TEST_NAMES_30\",\"SRI_GRADE_LEVEL_30\",\"SRI_PERFORMANCE_LEVEL_30\"],\"Map\":{\"assessmentReference\":{\"identifier\":\"SRI-V1\",\"namespace\":\"http://scholastic.com/sri/Assessment\"},\"studentReference\":{\"studentUniqueId\":{\"Column\":\"DI_StudentId\"}},\"administrationDate\":{\"Column\":\"LEXILE_MOD_DATE\"},\"identifier\":{\"Column\":\"LEXILE_MOD_DATE\"},\"scoreResults\":[{\"assessmentReportingMethodType\":\"Lexile Measure\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"SRI_LAST_LEXILE_SCORE\"}},{\"assessmentReportingMethodType\":\"Percentile\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"SRI_PERCENTILE\"}},{\"assessmentReportingMethodType\":\"Normal curve equivalent\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"SRI_NCE\"}}]}}],\"Bootstraps\":[{\"Name\":\"SRI_Assessment-v2.5\",\"ResourcePath\":\"/assessments\",\"Data\":{\"identifier\":\"SRI-V1\",\"title\":\"SRI-V1\",\"namespace\":\"http://scholastic.com/sri/Assessment\",\"assessedGradeLevels\":[{\"gradeLevelDescriptor\":\"Kindergarten\"},{\"gradeLevelDescriptor\":\"First grade\"},{\"gradeLevelDescriptor\":\"Second grade\"},{\"gradeLevelDescriptor\":\"Third grade\"},{\"gradeLevelDescriptor\":\"Fourth grade\"},{\"gradeLevelDescriptor\":\"Fifth grade\"},{\"gradeLevelDescriptor\":\"Sixth grade\"},{\"gradeLevelDescriptor\":\"Seventh grade\"},{\"gradeLevelDescriptor\":\"Eighth grade\"},{\"gradeLevelDescriptor\":\"Ninth grade\"},{\"gradeLevelDescriptor\":\"Tenth grade\"},{\"gradeLevelDescriptor\":\"Eleventh grade\"},{\"gradeLevelDescriptor\":\"Twelfth grade\"},{\"gradeLevelDescriptor\":\"Ungraded\"}],\"categoryDescriptor\":\"Other\",\"academicSubjects\":[{\"academicSubjectDescriptor\":\"Reading\"}],\"scores\":[{\"assessmentReportingMethodType\":\"Lexile Measure\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Percentile\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Normal curve equivalent\",\"resultDatatypeType\":\"Integer\"}],\"performanceLevels\":[]}}],\"Lookups\":[],\"SupplementalInformation\":null}",
-    "submitter": {
-        "name": "Emilio Baez",
-        "organization": "Developers.Net",
-        "email": "emilio@developers.net"
-    }
+  "id": 1049,
+  "title": "Scholastic Reading Inventory (SRI) Assessment - API 2.5 - v1",
+  "description": "This template includes the Scholastic Reading Inventory (SRI) Assessment for API Version 2.5",
+  "apiVersion": "2.5+",
+  "dateTimePublished": "2021-02-16T17:38:42.3731766",
+  "template": {
+    "Maps": [
+      {
+        "Name": "SRI-DataMap",
+        "ResourcePath": "/studentAssessments",
+        "ColumnHeaders": [
+          "DI_StudentId",
+          "DI_SchoolYear",
+          "USER_NAME",
+          "USER_ID",
+          "SIS_ID",
+          "FIRST_NAME",
+          "LAST_NAME",
+          "MIDDLE_NAME",
+          "BIRTH_DATE",
+          "GRADE",
+          "SCHOOL_ID",
+          "SCHOOL_NUMBER",
+          "SCHOOL_NAME",
+          "CLASS_NAME",
+          "CLASS_ID",
+          "LEXILE_SCORE",
+          "LEXILE_MOD_DATE",
+          "IS_ENABLED",
+          "EXTERNAL_ID",
+          "AYP_ECON_DISADVANTAGED",
+          "AYP_GIFTED_TALENTED",
+          "AYP_LTD_ENGLISH_PROFICIENCY",
+          "AYP_MIGRANT",
+          "AYP_WITH_DISABILITIES",
+          "GENDER_FEMALE",
+          "GENDER_MALE",
+          "ETHNIC_AM_IND_AK_NATIVE",
+          "ETHNIC_ASIAN",
+          "ETHNIC_AFRICAN_AM",
+          "ETHNIC_HISPANIC",
+          "ETHNIC_PACIFIC_ISL",
+          "ETHNIC_CAUCASIAN",
+          "ETHNIC_TWO_OR_MORE_RACES",
+          "CUSTOMDEMOGRAPHIC1",
+          "CUSTOMDEMOGRAPHIC2",
+          "CUSTOMDEMOGRAPHIC3",
+          "CDX_ENROLLED",
+          "DTM_ENROLLED",
+          "FAD_ENROLLED",
+          "FM_ENROLLED",
+          "FMNG_ENROLLED",
+          "M180_ENROLLED",
+          "M180Y2_ENROLLED",
+          "R180NG_ENROLLED",
+          "R180_ENROLLED",
+          "RT_ENROLLED",
+          "RTNG_ENROLLED",
+          "S44_ENROLLED",
+          "S44JR_ENROLLED",
+          "S44NG_ENROLLED",
+          "SMI_ENROLLED",
+          "SPI_ENROLLED",
+          "SRC_ENROLLED",
+          "SRI_ENROLLED",
+          "XT_ENROLLED",
+          "EXPORT_START_DATE",
+          "EXPORT_END_DATE",
+          "SAM_CFN",
+          "SRI_CLASS",
+          "SRI_CLASS_ID",
+          "SRI_FRA_TEST_DATE_1",
+          "SRI_FRA_TOTAL_ITEMS_RECEIVED_1",
+          "SRI_FRA_TOTAL_ACCURACY_SCORE_1",
+          "SRI_FRA_TOTAL_FLUENCY_SCORE_1",
+          "SRI_FRA_TOTAL_TIME_PER_TEST_1",
+          "SRI_FRA_TEST_DATE_2",
+          "SRI_FRA_TOTAL_ITEMS_RECEIVED_2",
+          "SRI_FRA_TOTAL_ACCURACY_SCORE_2",
+          "SRI_FRA_TOTAL_FLUENCY_SCORE_2",
+          "SRI_FRA_TOTAL_TIME_PER_TEST_2",
+          "SRI_FRA_TEST_DATE_3",
+          "SRI_FRA_TOTAL_ITEMS_RECEIVED_3",
+          "SRI_FRA_TOTAL_ACCURACY_SCORE_3",
+          "SRI_FRA_TOTAL_FLUENCY_SCORE_3",
+          "SRI_FRA_TOTAL_TIME_PER_TEST_3",
+          "SRI_FRA_TEST_DATE_4",
+          "SRI_FRA_TOTAL_ITEMS_RECEIVED_4",
+          "SRI_FRA_TOTAL_ACCURACY_SCORE_4",
+          "SRI_FRA_TOTAL_FLUENCY_SCORE_4",
+          "SRI_FRA_TOTAL_TIME_PER_TEST_4",
+          "SRI_FRA_TEST_DATE_5",
+          "SRI_FRA_TOTAL_ITEMS_RECEIVED_5",
+          "SRI_FRA_TOTAL_ACCURACY_SCORE_5",
+          "SRI_FRA_TOTAL_FLUENCY_SCORE_5",
+          "SRI_FRA_TOTAL_TIME_PER_TEST_5",
+          "SRI_FRA_TEST_DATE_6",
+          "SRI_FRA_TOTAL_ITEMS_RECEIVED_6",
+          "SRI_FRA_TOTAL_ACCURACY_SCORE_6",
+          "SRI_FRA_TOTAL_FLUENCY_SCORE_6",
+          "SRI_FRA_TOTAL_TIME_PER_TEST_6",
+          "SRI_FRA_TEST_DATE_7",
+          "SRI_FRA_TOTAL_ITEMS_RECEIVED_7",
+          "SRI_FRA_TOTAL_ACCURACY_SCORE_7",
+          "SRI_FRA_TOTAL_FLUENCY_SCORE_7",
+          "SRI_FRA_TOTAL_TIME_PER_TEST_7",
+          "SRI_FRA_TEST_DATE_8",
+          "SRI_FRA_TOTAL_ITEMS_RECEIVED_8",
+          "SRI_FRA_TOTAL_ACCURACY_SCORE_8",
+          "SRI_FRA_TOTAL_FLUENCY_SCORE_8",
+          "SRI_FRA_TOTAL_TIME_PER_TEST_8",
+          "SRI_FRA_TEST_DATE_9",
+          "SRI_FRA_TOTAL_ITEMS_RECEIVED_9",
+          "SRI_FRA_TOTAL_ACCURACY_SCORE_9",
+          "SRI_FRA_TOTAL_FLUENCY_SCORE_9",
+          "SRI_FRA_TOTAL_TIME_PER_TEST_9",
+          "SRI_LAST_LEXILE_DATE",
+          "SRI_LAST_LEXILE_SCORE",
+          "SRI_PERCENTILE",
+          "SRI_NCE",
+          "SRI_TEST_TAKEN",
+          "SRI_TEST_DATE_1",
+          "SRI_LEXILE_SCORES_1",
+          "SRI_TOTAL_TIME_PER_TEST_1",
+          "SRI_TEST_NAMES_1",
+          "SRI_GRADE_LEVEL_1",
+          "SRI_PERFORMANCE_LEVEL_1",
+          "SRI_TEST_DATE_2",
+          "SRI_LEXILE_SCORES_2",
+          "SRI_TOTAL_TIME_PER_TEST_2",
+          "SRI_TEST_NAMES_2",
+          "SRI_GRADE_LEVEL_2",
+          "SRI_PERFORMANCE_LEVEL_2",
+          "SRI_TEST_DATE_3",
+          "SRI_LEXILE_SCORES_3",
+          "SRI_TOTAL_TIME_PER_TEST_3",
+          "SRI_TEST_NAMES_3",
+          "SRI_GRADE_LEVEL_3",
+          "SRI_PERFORMANCE_LEVEL_3",
+          "SRI_TEST_DATE_4",
+          "SRI_LEXILE_SCORES_4",
+          "SRI_TOTAL_TIME_PER_TEST_4",
+          "SRI_TEST_NAMES_4",
+          "SRI_GRADE_LEVEL_4",
+          "SRI_PERFORMANCE_LEVEL_4",
+          "SRI_TEST_DATE_5",
+          "SRI_LEXILE_SCORES_5",
+          "SRI_TOTAL_TIME_PER_TEST_5",
+          "SRI_TEST_NAMES_5",
+          "SRI_GRADE_LEVEL_5",
+          "SRI_PERFORMANCE_LEVEL_5",
+          "SRI_TEST_DATE_6",
+          "SRI_LEXILE_SCORES_6",
+          "SRI_TOTAL_TIME_PER_TEST_6",
+          "SRI_TEST_NAMES_6",
+          "SRI_GRADE_LEVEL_6",
+          "SRI_PERFORMANCE_LEVEL_6",
+          "SRI_TEST_DATE_7",
+          "SRI_LEXILE_SCORES_7",
+          "SRI_TOTAL_TIME_PER_TEST_7",
+          "SRI_TEST_NAMES_7",
+          "SRI_GRADE_LEVEL_7",
+          "SRI_PERFORMANCE_LEVEL_7",
+          "SRI_TEST_DATE_8",
+          "SRI_LEXILE_SCORES_8",
+          "SRI_TOTAL_TIME_PER_TEST_8",
+          "SRI_TEST_NAMES_8",
+          "SRI_GRADE_LEVEL_8",
+          "SRI_PERFORMANCE_LEVEL_8",
+          "SRI_TEST_DATE_9",
+          "SRI_LEXILE_SCORES_9",
+          "SRI_TOTAL_TIME_PER_TEST_9",
+          "SRI_TEST_NAMES_9",
+          "SRI_GRADE_LEVEL_9",
+          "SRI_PERFORMANCE_LEVEL_9",
+          "SRI_TEST_DATE_10",
+          "SRI_LEXILE_SCORES_10",
+          "SRI_TOTAL_TIME_PER_TEST_10",
+          "SRI_TEST_NAMES_10",
+          "SRI_GRADE_LEVEL_10",
+          "SRI_PERFORMANCE_LEVEL_10",
+          "SRI_TEST_DATE_11",
+          "SRI_LEXILE_SCORES_11",
+          "SRI_TOTAL_TIME_PER_TEST_11",
+          "SRI_TEST_NAMES_11",
+          "SRI_GRADE_LEVEL_11",
+          "SRI_PERFORMANCE_LEVEL_11",
+          "SRI_TEST_DATE_12",
+          "SRI_LEXILE_SCORES_12",
+          "SRI_TOTAL_TIME_PER_TEST_12",
+          "SRI_TEST_NAMES_12",
+          "SRI_GRADE_LEVEL_12",
+          "SRI_PERFORMANCE_LEVEL_12",
+          "SRI_TEST_DATE_13",
+          "SRI_LEXILE_SCORES_13",
+          "SRI_TOTAL_TIME_PER_TEST_13",
+          "SRI_TEST_NAMES_13",
+          "SRI_GRADE_LEVEL_13",
+          "SRI_PERFORMANCE_LEVEL_13",
+          "SRI_TEST_DATE_14",
+          "SRI_LEXILE_SCORES_14",
+          "SRI_TOTAL_TIME_PER_TEST_14",
+          "SRI_TEST_NAMES_14",
+          "SRI_GRADE_LEVEL_14",
+          "SRI_PERFORMANCE_LEVEL_14",
+          "SRI_TEST_DATE_15",
+          "SRI_LEXILE_SCORES_15",
+          "SRI_TOTAL_TIME_PER_TEST_15",
+          "SRI_TEST_NAMES_15",
+          "SRI_GRADE_LEVEL_15",
+          "SRI_PERFORMANCE_LEVEL_15",
+          "SRI_TEST_DATE_16",
+          "SRI_LEXILE_SCORES_16",
+          "SRI_TOTAL_TIME_PER_TEST_16",
+          "SRI_TEST_NAMES_16",
+          "SRI_GRADE_LEVEL_16",
+          "SRI_PERFORMANCE_LEVEL_16",
+          "SRI_TEST_DATE_17",
+          "SRI_LEXILE_SCORES_17",
+          "SRI_TOTAL_TIME_PER_TEST_17",
+          "SRI_TEST_NAMES_17",
+          "SRI_GRADE_LEVEL_17",
+          "SRI_PERFORMANCE_LEVEL_17",
+          "SRI_TEST_DATE_18",
+          "SRI_LEXILE_SCORES_18",
+          "SRI_TOTAL_TIME_PER_TEST_18",
+          "SRI_TEST_NAMES_18",
+          "SRI_GRADE_LEVEL_18",
+          "SRI_PERFORMANCE_LEVEL_18",
+          "SRI_TEST_DATE_19",
+          "SRI_LEXILE_SCORES_19",
+          "SRI_TOTAL_TIME_PER_TEST_19",
+          "SRI_TEST_NAMES_19",
+          "SRI_GRADE_LEVEL_19",
+          "SRI_PERFORMANCE_LEVEL_19",
+          "SRI_TEST_DATE_20",
+          "SRI_LEXILE_SCORES_20",
+          "SRI_TOTAL_TIME_PER_TEST_20",
+          "SRI_TEST_NAMES_20",
+          "SRI_GRADE_LEVEL_20",
+          "SRI_PERFORMANCE_LEVEL_20",
+          "SRI_TEST_DATE_21",
+          "SRI_LEXILE_SCORES_21",
+          "SRI_TOTAL_TIME_PER_TEST_21",
+          "SRI_TEST_NAMES_21",
+          "SRI_GRADE_LEVEL_21",
+          "SRI_PERFORMANCE_LEVEL_21",
+          "SRI_TEST_DATE_22",
+          "SRI_LEXILE_SCORES_22",
+          "SRI_TOTAL_TIME_PER_TEST_22",
+          "SRI_TEST_NAMES_22",
+          "SRI_GRADE_LEVEL_22",
+          "SRI_PERFORMANCE_LEVEL_22",
+          "SRI_TEST_DATE_23",
+          "SRI_LEXILE_SCORES_23",
+          "SRI_TOTAL_TIME_PER_TEST_23",
+          "SRI_TEST_NAMES_23",
+          "SRI_GRADE_LEVEL_23",
+          "SRI_PERFORMANCE_LEVEL_23",
+          "SRI_TEST_DATE_24",
+          "SRI_LEXILE_SCORES_24",
+          "SRI_TOTAL_TIME_PER_TEST_24",
+          "SRI_TEST_NAMES_24",
+          "SRI_GRADE_LEVEL_24",
+          "SRI_PERFORMANCE_LEVEL_24",
+          "SRI_TEST_DATE_25",
+          "SRI_LEXILE_SCORES_25",
+          "SRI_TOTAL_TIME_PER_TEST_25",
+          "SRI_TEST_NAMES_25",
+          "SRI_GRADE_LEVEL_25",
+          "SRI_PERFORMANCE_LEVEL_25",
+          "SRI_TEST_DATE_26",
+          "SRI_LEXILE_SCORES_26",
+          "SRI_TOTAL_TIME_PER_TEST_26",
+          "SRI_TEST_NAMES_26",
+          "SRI_GRADE_LEVEL_26",
+          "SRI_PERFORMANCE_LEVEL_26",
+          "SRI_TEST_DATE_27",
+          "SRI_LEXILE_SCORES_27",
+          "SRI_TOTAL_TIME_PER_TEST_27",
+          "SRI_TEST_NAMES_27",
+          "SRI_GRADE_LEVEL_27",
+          "SRI_PERFORMANCE_LEVEL_27",
+          "SRI_TEST_DATE_28",
+          "SRI_LEXILE_SCORES_28",
+          "SRI_TOTAL_TIME_PER_TEST_28",
+          "SRI_TEST_NAMES_28",
+          "SRI_GRADE_LEVEL_28",
+          "SRI_PERFORMANCE_LEVEL_28",
+          "SRI_TEST_DATE_29",
+          "SRI_LEXILE_SCORES_29",
+          "SRI_TOTAL_TIME_PER_TEST_29",
+          "SRI_TEST_NAMES_29",
+          "SRI_GRADE_LEVEL_29",
+          "SRI_PERFORMANCE_LEVEL_29",
+          "SRI_TEST_DATE_30",
+          "SRI_LEXILE_SCORES_30",
+          "SRI_TOTAL_TIME_PER_TEST_30",
+          "SRI_TEST_NAMES_30",
+          "SRI_GRADE_LEVEL_30",
+          "SRI_PERFORMANCE_LEVEL_30"
+        ],
+        "Map": {
+          "assessmentReference": {
+            "identifier": "SRI-V1",
+            "namespace": "http://scholastic.com/sri/Assessment"
+          },
+          "studentReference": {
+            "studentUniqueId": {
+              "Column": "DI_StudentId"
+            }
+          },
+          "administrationDate": {
+            "Column": "LEXILE_MOD_DATE"
+          },
+          "identifier": {
+            "Column": "LEXILE_MOD_DATE"
+          },
+          "scoreResults": [
+            {
+              "assessmentReportingMethodType": "Lexile Measure",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "SRI_LAST_LEXILE_SCORE"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Percentile",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "SRI_PERCENTILE"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Normal curve equivalent",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "SRI_NCE"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "Bootstraps": [
+      {
+        "Name": "SRI_Assessment-v2.5",
+        "ResourcePath": "/assessments",
+        "Data": {
+          "identifier": "SRI-V1",
+          "title": "SRI-V1",
+          "namespace": "http://scholastic.com/sri/Assessment",
+          "assessedGradeLevels": [
+            {
+              "gradeLevelDescriptor": "Kindergarten"
+            },
+            {
+              "gradeLevelDescriptor": "First grade"
+            },
+            {
+              "gradeLevelDescriptor": "Second grade"
+            },
+            {
+              "gradeLevelDescriptor": "Third grade"
+            },
+            {
+              "gradeLevelDescriptor": "Fourth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Fifth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Sixth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Seventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "Eighth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Ninth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Tenth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Eleventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "Twelfth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Ungraded"
+            }
+          ],
+          "categoryDescriptor": "Other",
+          "academicSubjects": [
+            {
+              "academicSubjectDescriptor": "Reading"
+            }
+          ],
+          "scores": [
+            {
+              "assessmentReportingMethodType": "Lexile Measure",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Percentile",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Normal curve equivalent",
+              "resultDatatypeType": "Integer"
+            }
+          ],
+          "performanceLevels": []
+        }
+      }
+    ],
+    "Lookups": [],
+    "SupplementalInformation": null
+  },
+  "submitter": {
+    "name": "Emilio Baez",
+    "organization": "Developers.Net",
+    "email": "emilio@developers.net"
+  }
 }

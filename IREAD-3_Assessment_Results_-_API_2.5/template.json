@@ -1,13 +1,272 @@
 {
-    "id": 11,
-    "title": "IREAD-3 Assessment Results - API 2.5",
-    "description": "This template includes the Indiana Reading Evaluation and Determination (IREAD-3) assessment.",
-    "apiVersion": "2.5+",
-    "dateTimePublished": "2020-01-28T22:06:56.8799727",
-    "template": "{\"Maps\":[{\"Name\":\"IREAD-3_Map\",\"ResourcePath\":\"/studentAssessments\",\"ColumnHeaders\":[\"Test Date\",\"Student First Name\",\"Student Last Name\",\"STN\",\"Student DOB\",\"Gender\",\"Ethnicity\",\"Special Education Status\",\"Identified English Learner Status\",\"Section 504 Status\",\"Enrolled Grade\",\"Enrolled School\",\"Enrolled School ID\",\"Enrolled Corporation\",\"Enrolled Corporation ID\",\"Reading OppNumber\",\"Reading Scale Score\",\"Reading Passing Status\",\"Reading: Foundations and Vocabulary Percent Correct\",\"Reading: Nonfiction Percent Correct\",\"Reading: Literature Percent Correct\"],\"Map\":{\"assessmentReference\":{\"identifier\":\"IREAD-3-V1\",\"namespace\":\"https://www.doe.in.gov/assessment/iread-3/assessment\"},\"studentReference\":{\"studentUniqueId\":{\"Column\":\"STN\"}},\"administrationDate\":{\"Column\":\"Test Date\"},\"identifier\":{\"Column\":\"Test Date\"},\"whenAssessedGradeLevelDescriptor\":{\"Column\":\"Enrolled Grade\",\"Lookup\":\"IREAD-3_WhenAssessedGradeLevels\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Passing Status\",\"performanceLevelDescriptor\":{\"Column\":\"Reading Passing Status\",\"Lookup\":\"IREAD-3_Reading Passing Status\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Reading Scale Score\"}},{\"assessmentReportingMethodType\":\"Fdn. Vocab. Perc. Correct\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Reading: Foundations and Vocabulary Percent Correct\"}},{\"assessmentReportingMethodType\":\"Nonfiction Perc. Correct\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Reading: Nonfiction Percent Correct\"}},{\"assessmentReportingMethodType\":\"Literature Perc. Correct\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Reading: Literature Percent Correct\"}}]}}],\"Bootstraps\":[{\"Name\":\"IREAD-3_PLD\",\"ResourcePath\":\"/performanceLevelDescriptors\",\"Data\":[{\"codeValue\":\"Fail\",\"description\":\"Fail\",\"namespace\":\"https://www.doe.in.gov/assessment/iread-3/PerformanceLevelDescriptor\",\"shortDescription\":\"Fail\"},{\"codeValue\":\"Pass\",\"description\":\"Pass\",\"namespace\":\"https://www.doe.in.gov/assessment/iread-3/PerformanceLevelDescriptor\",\"shortDescription\":\"Pass\"},{\"codeValue\":\"Undetermined\",\"description\":\"Undetermined\",\"namespace\":\"https://www.doe.in.gov/assessment/iread-3/PerformanceLevelDescriptor\",\"shortDescription\":\"Undetermined\"}]},{\"Name\":\"IREAD-3_Assessment\",\"ResourcePath\":\"/assessments\",\"Data\":{\"identifier\":\"IREAD-3-V1\",\"title\":\"The Indiana Reading Evaluation and Determination (IREAD-3) assessment.\",\"revisionDate\":\"2020-01-28\",\"namespace\":\"https://www.doe.in.gov/assessment/iread-3/assessment\",\"assessedGradeLevels\":[{\"gradeLevelDescriptor\":\"Kindergarten\"},{\"gradeLevelDescriptor\":\"First grade\"},{\"gradeLevelDescriptor\":\"Second grade\"},{\"gradeLevelDescriptor\":\"Third grade\"},{\"gradeLevelDescriptor\":\"Fourth grade\"},{\"gradeLevelDescriptor\":\"Fifth grade\"},{\"gradeLevelDescriptor\":\"Sixth grade\"},{\"gradeLevelDescriptor\":\"Seventh grade\"},{\"gradeLevelDescriptor\":\"Eighth grade\"}],\"categoryDescriptor\":\"Reading readiness test\",\"academicSubjects\":[{\"academicSubjectDescriptor\":\"Reading\"}],\"scores\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Fdn. Vocab. Perc. Correct\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Nonfiction Perc. Correct\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Literature Perc. Correct\",\"resultDatatypeType\":\"Integer\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Passing Status\",\"performanceLevelDescriptor\":\"https://www.doe.in.gov/assessment/iread-3/PerformanceLevelDescriptor/Fail\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Passing Status\",\"performanceLevelDescriptor\":\"https://www.doe.in.gov/assessment/iread-3/PerformanceLevelDescriptor/Pass\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Passing Status\",\"performanceLevelDescriptor\":\"https://www.doe.in.gov/assessment/iread-3/PerformanceLevelDescriptor/Undetermined\",\"resultDatatypeType\":\"Level\"}]}}],\"Lookups\":[{\"SourceTable\":\"IREAD-3_Reading Passing Status\",\"Key\":\"Fail\",\"Value\":\"https://www.doe.in.gov/assessment/iread-3/PerformanceLevelDescriptor/Fail\"},{\"SourceTable\":\"IREAD-3_Reading Passing Status\",\"Key\":\"Pass\",\"Value\":\"https://www.doe.in.gov/assessment/iread-3/PerformanceLevelDescriptor/Pass\"},{\"SourceTable\":\"IREAD-3_Reading Passing Status\",\"Key\":\"Undetermined\",\"Value\":\"https://www.doe.in.gov/assessment/iread-3/PerformanceLevelDescriptor/Undetermined\"},{\"SourceTable\":\"IREAD-3_WhenAssessedGradeLevels\",\"Key\":\"1\",\"Value\":\"First grade \"},{\"SourceTable\":\"IREAD-3_WhenAssessedGradeLevels\",\"Key\":\"2\",\"Value\":\"Second grade \"},{\"SourceTable\":\"IREAD-3_WhenAssessedGradeLevels\",\"Key\":\"3\",\"Value\":\"Third grade \"},{\"SourceTable\":\"IREAD-3_WhenAssessedGradeLevels\",\"Key\":\"4\",\"Value\":\"Fourth grade \"},{\"SourceTable\":\"IREAD-3_WhenAssessedGradeLevels\",\"Key\":\"5\",\"Value\":\"Fifth grade \"},{\"SourceTable\":\"IREAD-3_WhenAssessedGradeLevels\",\"Key\":\"6\",\"Value\":\"Sixth grade\"},{\"SourceTable\":\"IREAD-3_WhenAssessedGradeLevels\",\"Key\":\"7\",\"Value\":\"Seventh grade\"},{\"SourceTable\":\"IREAD-3_WhenAssessedGradeLevels\",\"Key\":\"8\",\"Value\":\"Eighth grade\"},{\"SourceTable\":\"IREAD-3_WhenAssessedGradeLevels\",\"Key\":\"K\",\"Value\":\"Kindergarten\"}]}",
-    "submitter": {
-        "name": "Emilio Baez",
-        "organization": "Developers.Net",
-        "email": "emilio@developers.net"
-    }
+  "id": 11,
+  "title": "IREAD-3 Assessment Results - API 2.5",
+  "description": "This template includes the Indiana Reading Evaluation and Determination (IREAD-3) assessment.",
+  "apiVersion": "2.5+",
+  "dateTimePublished": "2020-01-28T22:06:56.8799727",
+  "template": {
+    "Maps": [
+      {
+        "Name": "IREAD-3_Map",
+        "ResourcePath": "/studentAssessments",
+        "ColumnHeaders": [
+          "Test Date",
+          "Student First Name",
+          "Student Last Name",
+          "STN",
+          "Student DOB",
+          "Gender",
+          "Ethnicity",
+          "Special Education Status",
+          "Identified English Learner Status",
+          "Section 504 Status",
+          "Enrolled Grade",
+          "Enrolled School",
+          "Enrolled School ID",
+          "Enrolled Corporation",
+          "Enrolled Corporation ID",
+          "Reading OppNumber",
+          "Reading Scale Score",
+          "Reading Passing Status",
+          "Reading: Foundations and Vocabulary Percent Correct",
+          "Reading: Nonfiction Percent Correct",
+          "Reading: Literature Percent Correct"
+        ],
+        "Map": {
+          "assessmentReference": {
+            "identifier": "IREAD-3-V1",
+            "namespace": "https://www.doe.in.gov/assessment/iread-3/assessment"
+          },
+          "studentReference": {
+            "studentUniqueId": {
+              "Column": "STN"
+            }
+          },
+          "administrationDate": {
+            "Column": "Test Date"
+          },
+          "identifier": {
+            "Column": "Test Date"
+          },
+          "whenAssessedGradeLevelDescriptor": {
+            "Column": "Enrolled Grade",
+            "Lookup": "IREAD-3_WhenAssessedGradeLevels"
+          },
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodType": "Passing Status",
+              "performanceLevelDescriptor": {
+                "Column": "Reading Passing Status",
+                "Lookup": "IREAD-3_Reading Passing Status"
+              },
+              "performanceLevelMet": true
+            }
+          ],
+          "scoreResults": [
+            {
+              "assessmentReportingMethodType": "Scale score",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "Reading Scale Score"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Fdn. Vocab. Perc. Correct",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "Reading: Foundations and Vocabulary Percent Correct"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Nonfiction Perc. Correct",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "Reading: Nonfiction Percent Correct"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Literature Perc. Correct",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "Reading: Literature Percent Correct"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "Bootstraps": [
+      {
+        "Name": "IREAD-3_PLD",
+        "ResourcePath": "/performanceLevelDescriptors",
+        "Data": [
+          {
+            "codeValue": "Fail",
+            "description": "Fail",
+            "namespace": "https://www.doe.in.gov/assessment/iread-3/PerformanceLevelDescriptor",
+            "shortDescription": "Fail"
+          },
+          {
+            "codeValue": "Pass",
+            "description": "Pass",
+            "namespace": "https://www.doe.in.gov/assessment/iread-3/PerformanceLevelDescriptor",
+            "shortDescription": "Pass"
+          },
+          {
+            "codeValue": "Undetermined",
+            "description": "Undetermined",
+            "namespace": "https://www.doe.in.gov/assessment/iread-3/PerformanceLevelDescriptor",
+            "shortDescription": "Undetermined"
+          }
+        ]
+      },
+      {
+        "Name": "IREAD-3_Assessment",
+        "ResourcePath": "/assessments",
+        "Data": {
+          "identifier": "IREAD-3-V1",
+          "title": "The Indiana Reading Evaluation and Determination (IREAD-3) assessment.",
+          "revisionDate": "2020-01-28",
+          "namespace": "https://www.doe.in.gov/assessment/iread-3/assessment",
+          "assessedGradeLevels": [
+            {
+              "gradeLevelDescriptor": "Kindergarten"
+            },
+            {
+              "gradeLevelDescriptor": "First grade"
+            },
+            {
+              "gradeLevelDescriptor": "Second grade"
+            },
+            {
+              "gradeLevelDescriptor": "Third grade"
+            },
+            {
+              "gradeLevelDescriptor": "Fourth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Fifth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Sixth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Seventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "Eighth grade"
+            }
+          ],
+          "categoryDescriptor": "Reading readiness test",
+          "academicSubjects": [
+            {
+              "academicSubjectDescriptor": "Reading"
+            }
+          ],
+          "scores": [
+            {
+              "assessmentReportingMethodType": "Scale score",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Fdn. Vocab. Perc. Correct",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Nonfiction Perc. Correct",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Literature Perc. Correct",
+              "resultDatatypeType": "Integer"
+            }
+          ],
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodType": "Passing Status",
+              "performanceLevelDescriptor": "https://www.doe.in.gov/assessment/iread-3/PerformanceLevelDescriptor/Fail",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Passing Status",
+              "performanceLevelDescriptor": "https://www.doe.in.gov/assessment/iread-3/PerformanceLevelDescriptor/Pass",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Passing Status",
+              "performanceLevelDescriptor": "https://www.doe.in.gov/assessment/iread-3/PerformanceLevelDescriptor/Undetermined",
+              "resultDatatypeType": "Level"
+            }
+          ]
+        }
+      }
+    ],
+    "Lookups": [
+      {
+        "SourceTable": "IREAD-3_Reading Passing Status",
+        "Key": "Fail",
+        "Value": "https://www.doe.in.gov/assessment/iread-3/PerformanceLevelDescriptor/Fail"
+      },
+      {
+        "SourceTable": "IREAD-3_Reading Passing Status",
+        "Key": "Pass",
+        "Value": "https://www.doe.in.gov/assessment/iread-3/PerformanceLevelDescriptor/Pass"
+      },
+      {
+        "SourceTable": "IREAD-3_Reading Passing Status",
+        "Key": "Undetermined",
+        "Value": "https://www.doe.in.gov/assessment/iread-3/PerformanceLevelDescriptor/Undetermined"
+      },
+      {
+        "SourceTable": "IREAD-3_WhenAssessedGradeLevels",
+        "Key": "1",
+        "Value": "First grade "
+      },
+      {
+        "SourceTable": "IREAD-3_WhenAssessedGradeLevels",
+        "Key": "2",
+        "Value": "Second grade "
+      },
+      {
+        "SourceTable": "IREAD-3_WhenAssessedGradeLevels",
+        "Key": "3",
+        "Value": "Third grade "
+      },
+      {
+        "SourceTable": "IREAD-3_WhenAssessedGradeLevels",
+        "Key": "4",
+        "Value": "Fourth grade "
+      },
+      {
+        "SourceTable": "IREAD-3_WhenAssessedGradeLevels",
+        "Key": "5",
+        "Value": "Fifth grade "
+      },
+      {
+        "SourceTable": "IREAD-3_WhenAssessedGradeLevels",
+        "Key": "6",
+        "Value": "Sixth grade"
+      },
+      {
+        "SourceTable": "IREAD-3_WhenAssessedGradeLevels",
+        "Key": "7",
+        "Value": "Seventh grade"
+      },
+      {
+        "SourceTable": "IREAD-3_WhenAssessedGradeLevels",
+        "Key": "8",
+        "Value": "Eighth grade"
+      },
+      {
+        "SourceTable": "IREAD-3_WhenAssessedGradeLevels",
+        "Key": "K",
+        "Value": "Kindergarten"
+      }
+    ]
+  },
+  "submitter": {
+    "name": "Emilio Baez",
+    "organization": "Developers.Net",
+    "email": "emilio@developers.net"
+  }
 }

@@ -1,13 +1,1496 @@
 {
-    "id": 1051,
-    "title": "STAR Reading, STAR Early Literacy and STAR Math Assessments - API 3.X - v1",
-    "description": "This template includes the STAR Reading, STAR Early Literacy and STAR Math assessments",
-    "apiVersion": "3.2.0",
-    "dateTimePublished": "2021-03-04T17:21:46.7521454",
-    "template": "{\"Maps\":[{\"Name\":\"DataMap_STAR_STAR-EARLY-LIT-V1\",\"ResourcePath\":\"/ed-fi/studentAssessments\",\"ColumnHeaders\":[\"DI_StudentId\",\"DI_SchoolYear\",\"DI_AssessedGradeLevel\",\"DI_AssessmentStudentIdentifier\",\"DI_AdministrationDate\",\"DistrictBenchmarkCategoryLevel\",\"DistrictBenchmarkCategoryName\",\"DistrictBenchmarkProficient\",\"EstimatedOralReadingFluency\",\"GradeEquivalent\",\"LiteracyClassification\",\"NormalCurveEquivalent\",\"OpenGrowthScore\",\"PercentileRank\",\"RaschScore\",\"RenaissanceBenchmarkCategoryLevel\",\"ScaledScore\",\"ScreeningPeriodWindowName\",\"StandardErrorOfMeasurement\",\"StateBenchmarkCategoryLevel\",\"StateBenchmarkCategoryName\",\"StateBenchmarkProficient\",\"StudentGrowthPercentileFallFall\",\"StudentGrowthPercentileFallSpring\",\"StudentGrowthPercentileFallWinter\",\"StudentGrowthPercentileSpringFall\",\"StudentGrowthPercentileSpringSpring\",\"StudentGrowthPercentileWinterSpring\",\"TotalCorrect\",\"TotalPossible\",\"UnifiedScore\",\"DI_RenaissanceBenchmarkCategoryName\"],\"Map\":{\"studentAssessmentIdentifier\":{\"Column\":\"DI_AssessmentStudentIdentifier\"},\"assessmentReference\":{\"assessmentIdentifier\":\"STAR-EARLY-LIT-V1\",\"namespace\":\"uri://renaissance.com/Assessment\"},\"schoolYearTypeReference\":{\"schoolYear\":{\"Column\":\"DI_SchoolYear\"}},\"studentReference\":{\"studentUniqueId\":{\"Column\":\"DI_StudentId\"}},\"administrationDate\":{\"Column\":\"DI_AdministrationDate\"},\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark\",\"performanceLevelDescriptor\":{\"Column\":\"DI_RenaissanceBenchmarkCategoryName\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"ScaledScore\"}},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"StandardErrorOfMeasurement\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Rasch Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\",\"result\":{\"Column\":\"RaschScore\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Unified Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"UnifiedScore\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Open Growth Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"OpenGrowthScore\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Grade Equivalent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\",\"result\":{\"Column\":\"GradeEquivalent\"}},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Normal curve equivalent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\",\"result\":{\"Column\":\"NormalCurveEquivalent\"}},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile rank\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"PercentileRank\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Fall\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileFallFall\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Spring\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileFallSpring\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Winter\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileFallWinter\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Spring-to-Fall\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileSpringFall\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Spring-to-Spring\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileSpringSpring\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Winter-to-Spring\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileWinterSpring\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Total Correct\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"TotalCorrect\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Total Possible\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"TotalPossible\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Screening Period Window Name\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"ScreeningPeriodWindowName\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark Level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"RenaissanceBenchmarkCategoryLevel\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Cat. Name\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"StateBenchmarkCategoryName\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"StateBenchmarkCategoryLevel\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Proficient\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"StateBenchmarkProficient\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Cat. Name\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"DistrictBenchmarkCategoryName\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"DistrictBenchmarkCategoryLevel\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Proficient\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"DistrictBenchmarkProficient\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Estimated Oral Reading Fluency\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"EstimatedOralReadingFluency\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Literacy Classification\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"LiteracyClassification\"}}],\"studentObjectiveAssessments\":[],\"whenAssessedGradeLevelDescriptor\":{\"Column\":\"DI_AssessedGradeLevel\"}}},{\"Name\":\"DataMap_STAR_STAR-MA-V1\",\"ResourcePath\":\"/ed-fi/studentAssessments\",\"ColumnHeaders\":[\"DI_StudentId\",\"DI_SchoolYear\",\"DI_AssessedGradeLevel\",\"DI_AssessmentStudentIdentifier\",\"DI_AdministrationDate\",\"DistrictBenchmarkCategoryLevel\",\"DistrictBenchmarkCategoryName\",\"DistrictBenchmarkProficient\",\"GradeEquivalent\",\"NormalCurveEquivalent\",\"OpenGrowthScore\",\"PercentileRank\",\"Quantile\",\"RaschScore\",\"RenaissanceBenchmarkCategoryLevel\",\"ScaledScore\",\"ScreeningPeriodWindowName\",\"StandardErrorOfMeasurement\",\"StateBenchmarkCategoryLevel\",\"StateBenchmarkCategoryName\",\"StateBenchmarkProficient\",\"StudentGrowthPercentileFallFall\",\"StudentGrowthPercentileFallSpring\",\"StudentGrowthPercentileFallWinter\",\"StudentGrowthPercentileSpringFall\",\"StudentGrowthPercentileSpringSpring\",\"StudentGrowthPercentileWinterSpring\",\"TotalCorrect\",\"TotalPossible\",\"UnifiedScore\",\"DI_RenaissanceBenchmarkCategoryName\"],\"Map\":{\"studentAssessmentIdentifier\":{\"Column\":\"DI_AssessmentStudentIdentifier\"},\"assessmentReference\":{\"assessmentIdentifier\":\"STAR-MA-V1\",\"namespace\":\"uri://renaissance.com/Assessment\"},\"schoolYearTypeReference\":{\"schoolYear\":{\"Column\":\"DI_SchoolYear\"}},\"studentReference\":{\"studentUniqueId\":{\"Column\":\"DI_StudentId\"}},\"administrationDate\":{\"Column\":\"DI_AdministrationDate\"},\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark\",\"performanceLevelDescriptor\":{\"Column\":\"DI_RenaissanceBenchmarkCategoryName\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"ScaledScore\"}},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"StandardErrorOfMeasurement\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Rasch Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\",\"result\":{\"Column\":\"RaschScore\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Unified Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"UnifiedScore\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Open Growth Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"OpenGrowthScore\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Grade Equivalent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\",\"result\":{\"Column\":\"GradeEquivalent\"}},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Normal curve equivalent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\",\"result\":{\"Column\":\"NormalCurveEquivalent\"}},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile rank\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"PercentileRank\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Fall\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileFallFall\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Spring\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileFallSpring\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Winter\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileFallWinter\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Spring-to-Fall\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileSpringFall\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Spring-to-Spring\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileSpringSpring\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Winter-to-Spring\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileWinterSpring\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Total Correct\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"TotalCorrect\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Total Possible\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"TotalPossible\"}},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Quantile Measure\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Quantile\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Screening Period Window Name\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"ScreeningPeriodWindowName\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark Level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"RenaissanceBenchmarkCategoryLevel\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Cat. Name\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"StateBenchmarkCategoryName\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"StateBenchmarkCategoryLevel\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Proficient\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"StateBenchmarkProficient\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Cat. Name\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"DistrictBenchmarkCategoryName\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"DistrictBenchmarkCategoryLevel\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Proficient\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"DistrictBenchmarkProficient\"}}],\"studentObjectiveAssessments\":[],\"whenAssessedGradeLevelDescriptor\":{\"Column\":\"DI_AssessedGradeLevel\"}}},{\"Name\":\"DataMap_STAR_STAR-RD-V1\",\"ResourcePath\":\"/ed-fi/studentAssessments\",\"ColumnHeaders\":[\"DI_StudentId\",\"DI_SchoolYear\",\"DI_AssessedGradeLevel\",\"DI_AssessmentStudentIdentifier\",\"DI_AdministrationDate\",\"DistrictBenchmarkCategoryLevel\",\"DistrictBenchmarkCategoryName\",\"DistrictBenchmarkProficient\",\"GradeEquivalent\",\"Lexile\",\"NormalCurveEquivalent\",\"OpenGrowthScore\",\"PercentileRank\",\"RaschScore\",\"RenaissanceBenchmarkCategoryLevel\",\"ScaledScore\",\"ScreeningPeriodWindowName\",\"StandardErrorOfMeasurement\",\"StateBenchmarkCategoryLevel\",\"StateBenchmarkCategoryName\",\"StateBenchmarkProficient\",\"StudentGrowthPercentileFallFall\",\"StudentGrowthPercentileFallSpring\",\"StudentGrowthPercentileFallWinter\",\"StudentGrowthPercentileSpringFall\",\"StudentGrowthPercentileSpringSpring\",\"StudentGrowthPercentileWinterSpring\",\"TotalCorrect\",\"TotalPossible\",\"UnifiedScore\",\"DI_RenaissanceBenchmarkCategoryName\"],\"Map\":{\"studentAssessmentIdentifier\":{\"Column\":\"DI_AssessmentStudentIdentifier\"},\"assessmentReference\":{\"assessmentIdentifier\":\"STAR-RD-V1\",\"namespace\":\"uri://renaissance.com/Assessment\"},\"schoolYearTypeReference\":{\"schoolYear\":{\"Column\":\"DI_SchoolYear\"}},\"studentReference\":{\"studentUniqueId\":{\"Column\":\"DI_StudentId\"}},\"administrationDate\":{\"Column\":\"DI_AdministrationDate\"},\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark\",\"performanceLevelDescriptor\":{\"Column\":\"DI_RenaissanceBenchmarkCategoryName\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"ScaledScore\"}},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"StandardErrorOfMeasurement\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Rasch Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\",\"result\":{\"Column\":\"RaschScore\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Unified Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"UnifiedScore\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Open Growth Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"OpenGrowthScore\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Grade Equivalent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\",\"result\":{\"Column\":\"GradeEquivalent\"}},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Normal curve equivalent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\",\"result\":{\"Column\":\"NormalCurveEquivalent\"}},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile rank\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"PercentileRank\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Fall\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileFallFall\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Spring\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileFallSpring\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Winter\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileFallWinter\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Spring-to-Fall\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileSpringFall\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Spring-to-Spring\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileSpringSpring\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Winter-to-Spring\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileWinterSpring\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Total Correct\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"TotalCorrect\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Total Possible\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"TotalPossible\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Screening Period Window Name\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"ScreeningPeriodWindowName\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark Level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"RenaissanceBenchmarkCategoryLevel\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Cat. Name\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"StateBenchmarkCategoryName\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"StateBenchmarkCategoryLevel\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Proficient\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"StateBenchmarkProficient\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Cat. Name\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"DistrictBenchmarkCategoryName\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"DistrictBenchmarkCategoryLevel\"}},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Proficient\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"DistrictBenchmarkProficient\"}},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Lexile Measure\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Lexile\"}}],\"studentObjectiveAssessments\":[],\"whenAssessedGradeLevelDescriptor\":{\"Column\":\"DI_AssessedGradeLevel\"}}}],\"Bootstraps\":[{\"Name\":\"STAR_ARMD\",\"ResourcePath\":\"/ed-fi/assessmentReportingMethodDescriptors\",\"Data\":[{\"codeValue\":\"District Benchmark Cat. Name\",\"description\":\"District Benchmark Cat. Name\",\"namespace\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"District Benchmark Cat. Name\"},{\"codeValue\":\"District Benchmark Level\",\"description\":\"District Benchmark Level\",\"namespace\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"District Benchmark Level\"},{\"codeValue\":\"District Benchmark Proficient\",\"description\":\"District Benchmark Proficient\",\"namespace\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"District Benchmark Proficient\"},{\"codeValue\":\"Estimated Oral Reading Fluency\",\"description\":\"Estimated Oral Reading Fluency\",\"namespace\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Estimated Oral Reading Fluency\"},{\"codeValue\":\"Grade Equivalent\",\"description\":\"Grade Equivalent\",\"namespace\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Grade Equivalent\"},{\"codeValue\":\"Growth Percentile Fall-to-Fall\",\"description\":\"Growth Percentile Fall-to-Fall\",\"namespace\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Growth Percentile Fall-to-Fall\"},{\"codeValue\":\"Growth Percentile Fall-to-Spring\",\"description\":\"Growth Percentile Fall-to-Spring\",\"namespace\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Growth Percentile Fall-to-Spring\"},{\"codeValue\":\"Growth Percentile Fall-to-Winter\",\"description\":\"Growth Percentile Fall-to-Winter\",\"namespace\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Growth Percentile Fall-to-Winter\"},{\"codeValue\":\"Growth Percentile Spring-to-Fall\",\"description\":\"Growth Percentile Spring-to-Fall\",\"namespace\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Growth Percentile Spring-to-Fall\"},{\"codeValue\":\"Growth Percentile Spring-to-Spring\",\"description\":\"Growth Percentile Spring-to-Spring\",\"namespace\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Growth Percentile Spring-to-Spring\"},{\"codeValue\":\"Growth Percentile Winter-to-Spring\",\"description\":\"Growth Percentile Winter-to-Spring\",\"namespace\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Growth Percentile Winter-to-Spring\"},{\"codeValue\":\"Literacy Classification\",\"description\":\"Literacy Classification\",\"namespace\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Literacy Classification\"},{\"codeValue\":\"Open Growth Score\",\"description\":\"Open Growth Score\",\"namespace\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Open Growth Score\"},{\"codeValue\":\"Rasch Score\",\"description\":\"Rasch Score\",\"namespace\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Rasch Score\"},{\"codeValue\":\"Renaissance Benchmark Level\",\"description\":\"Renaissance Benchmark Level\",\"namespace\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Renaissance Benchmark Level\"},{\"codeValue\":\"Screening Period Window Name\",\"description\":\"Screening Period Window Name\",\"namespace\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Screening Period Window Name\"},{\"codeValue\":\"State Benchmark Cat. Name\",\"description\":\"State Benchmark Cat. Name\",\"namespace\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"State Benchmark Cat. Name\"},{\"codeValue\":\"State Benchmark Level\",\"description\":\"State Benchmark Level\",\"namespace\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"State Benchmark Level\"},{\"codeValue\":\"State Benchmark Proficient\",\"description\":\"State Benchmark Proficient\",\"namespace\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"State Benchmark Proficient\"},{\"codeValue\":\"Total Correct\",\"description\":\"Total Correct\",\"namespace\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Total Correct\"},{\"codeValue\":\"Total Possible\",\"description\":\"Total Possible\",\"namespace\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Total Possible\"},{\"codeValue\":\"Unified Score\",\"description\":\"Unified Score\",\"namespace\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Unified Score\"},{\"codeValue\":\"Renaissance Benchmark\",\"description\":\"Renaissance Benchmark\",\"namespace\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Renaissance Benchmark\"}]},{\"Name\":\"STAR_Assessment_STAR-EARLY-LIT-V1\",\"ResourcePath\":\"/ed-fi/assessments\",\"Data\":{\"assessmentIdentifier\":\"STAR-EARLY-LIT-V1\",\"assessmentTitle\":\"Renaissance Star Reading\",\"namespace\":\"uri://renaissance.com/Assessment\",\"assessedGradeLevels\":[{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Kindergarten\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#First grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Second grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Third grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Fourth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Fifth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Sixth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Seventh grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Eighth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Ninth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Tenth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#No grade level\"}],\"assessmentCategoryDescriptor\":\"uri://ed-fi.org/AssessmentCategoryDescriptor#Other\",\"academicSubjects\":[{\"academicSubjectDescriptor\":\"uri://ed-fi.org/AcademicSubjectDescriptor#Reading\"}],\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Rasch Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Unified Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Open Growth Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Grade Equivalent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Normal curve equivalent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile rank\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Fall\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Spring\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Winter\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Spring-to-Fall\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Spring-to-Spring\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Winter-to-Spring\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Total Correct\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Total Possible\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Screening Period Window Name\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark Level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Cat. Name\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Proficient\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Cat. Name\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Proficient\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Estimated Oral Reading Fluency\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Literacy Classification\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark\",\"performanceLevelDescriptor\":\"uri://renaissance.com/PerformanceLevelDescriptor#At/Above Benchmark\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark\",\"performanceLevelDescriptor\":\"uri://renaissance.com/PerformanceLevelDescriptor#Intervention\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark\",\"performanceLevelDescriptor\":\"uri://renaissance.com/PerformanceLevelDescriptor#On Watch\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark\",\"performanceLevelDescriptor\":\"uri://renaissance.com/PerformanceLevelDescriptor#Urgent Intervention\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]}},{\"Name\":\"STAR_Assessment_STAR-MA-V1\",\"ResourcePath\":\"/ed-fi/assessments\",\"Data\":{\"assessmentIdentifier\":\"STAR-MA-V1\",\"assessmentTitle\":\"Renaissance Star Math\",\"namespace\":\"uri://renaissance.com/Assessment\",\"assessedGradeLevels\":[{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#First grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Second grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Third grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Fourth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Fifth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Sixth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Seventh grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Eighth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Ninth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Tenth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#No grade level\"}],\"assessmentCategoryDescriptor\":\"uri://ed-fi.org/AssessmentCategoryDescriptor#Other\",\"academicSubjects\":[{\"academicSubjectDescriptor\":\"uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics\"}],\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Rasch Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Unified Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Open Growth Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Grade Equivalent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Normal curve equivalent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile rank\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Fall\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Spring\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Winter\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Spring-to-Fall\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Spring-to-Spring\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Winter-to-Spring\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Total Correct\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Total Possible\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Quantile Measure\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Screening Period Window Name\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark Level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Cat. Name\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Proficient\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Cat. Name\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Proficient\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark\",\"performanceLevelDescriptor\":\"uri://renaissance.com/PerformanceLevelDescriptor#At/Above Benchmark\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark\",\"performanceLevelDescriptor\":\"uri://renaissance.com/PerformanceLevelDescriptor#Intervention\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark\",\"performanceLevelDescriptor\":\"uri://renaissance.com/PerformanceLevelDescriptor#On Watch\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark\",\"performanceLevelDescriptor\":\"uri://renaissance.com/PerformanceLevelDescriptor#Urgent Intervention\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]}},{\"Name\":\"STAR_Assessment_STAR-RD-V1\",\"ResourcePath\":\"/ed-fi/assessments\",\"Data\":{\"assessmentIdentifier\":\"STAR-RD-V1\",\"assessmentTitle\":\"Renaissance Star Reading\",\"namespace\":\"uri://renaissance.com/Assessment\",\"assessedGradeLevels\":[{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#First grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Second grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Third grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Fourth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Fifth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Sixth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Seventh grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Eighth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Ninth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Tenth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#No grade level\"}],\"assessmentCategoryDescriptor\":\"uri://ed-fi.org/AssessmentCategoryDescriptor#Other\",\"academicSubjects\":[{\"academicSubjectDescriptor\":\"uri://ed-fi.org/AcademicSubjectDescriptor#Reading\"}],\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Rasch Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Unified Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Open Growth Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Grade Equivalent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Normal curve equivalent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile rank\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Fall\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Spring\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Winter\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Spring-to-Fall\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Spring-to-Spring\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Winter-to-Spring\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Total Correct\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Total Possible\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Screening Period Window Name\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark Level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Cat. Name\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Proficient\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Cat. Name\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Proficient\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Lexile Measure\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark\",\"performanceLevelDescriptor\":\"uri://renaissance.com/PerformanceLevelDescriptor#At/Above Benchmark\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark\",\"performanceLevelDescriptor\":\"uri://renaissance.com/PerformanceLevelDescriptor#Intervention\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark\",\"performanceLevelDescriptor\":\"uri://renaissance.com/PerformanceLevelDescriptor#On Watch\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark\",\"performanceLevelDescriptor\":\"uri://renaissance.com/PerformanceLevelDescriptor#Urgent Intervention\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]}},{\"Name\":\"STAR_PLD\",\"ResourcePath\":\"/ed-fi/performanceLevelDescriptors\",\"Data\":[{\"codeValue\":\"At/Above Benchmark\",\"description\":\"At/Above Benchmark\",\"namespace\":\"uri://renaissance.com/PerformanceLevelDescriptor\",\"shortDescription\":\"At/Above Benchmark\"},{\"codeValue\":\"Intervention\",\"description\":\"Intervention\",\"namespace\":\"uri://renaissance.com/PerformanceLevelDescriptor\",\"shortDescription\":\"Intervention\"},{\"codeValue\":\"On Watch\",\"description\":\"On Watch\",\"namespace\":\"uri://renaissance.com/PerformanceLevelDescriptor\",\"shortDescription\":\"On Watch\"},{\"codeValue\":\"Urgent Intervention\",\"description\":\"Urgent Intervention\",\"namespace\":\"uri://renaissance.com/PerformanceLevelDescriptor\",\"shortDescription\":\"Urgent Intervention\"}]}],\"Lookups\":[],\"SupplementalInformation\":null}",
-    "submitter": {
-        "name": "Emilio Baez",
-        "organization": "Developers.Net",
-        "email": "emilio@developers.net"
-    }
+  "id": 1051,
+  "title": "STAR Reading, STAR Early Literacy and STAR Math Assessments - API 3.X - v1",
+  "description": "This template includes the STAR Reading, STAR Early Literacy and STAR Math assessments",
+  "apiVersion": "3.2.0",
+  "dateTimePublished": "2021-03-04T17:21:46.7521454",
+  "template": {
+    "Maps": [
+      {
+        "Name": "DataMap_STAR_STAR-EARLY-LIT-V1",
+        "ResourcePath": "/ed-fi/studentAssessments",
+        "ColumnHeaders": [
+          "DI_StudentId",
+          "DI_SchoolYear",
+          "DI_AssessedGradeLevel",
+          "DI_AssessmentStudentIdentifier",
+          "DI_AdministrationDate",
+          "DistrictBenchmarkCategoryLevel",
+          "DistrictBenchmarkCategoryName",
+          "DistrictBenchmarkProficient",
+          "EstimatedOralReadingFluency",
+          "GradeEquivalent",
+          "LiteracyClassification",
+          "NormalCurveEquivalent",
+          "OpenGrowthScore",
+          "PercentileRank",
+          "RaschScore",
+          "RenaissanceBenchmarkCategoryLevel",
+          "ScaledScore",
+          "ScreeningPeriodWindowName",
+          "StandardErrorOfMeasurement",
+          "StateBenchmarkCategoryLevel",
+          "StateBenchmarkCategoryName",
+          "StateBenchmarkProficient",
+          "StudentGrowthPercentileFallFall",
+          "StudentGrowthPercentileFallSpring",
+          "StudentGrowthPercentileFallWinter",
+          "StudentGrowthPercentileSpringFall",
+          "StudentGrowthPercentileSpringSpring",
+          "StudentGrowthPercentileWinterSpring",
+          "TotalCorrect",
+          "TotalPossible",
+          "UnifiedScore",
+          "DI_RenaissanceBenchmarkCategoryName"
+        ],
+        "Map": {
+          "studentAssessmentIdentifier": {
+            "Column": "DI_AssessmentStudentIdentifier"
+          },
+          "assessmentReference": {
+            "assessmentIdentifier": "STAR-EARLY-LIT-V1",
+            "namespace": "uri://renaissance.com/Assessment"
+          },
+          "schoolYearTypeReference": {
+            "schoolYear": {
+              "Column": "DI_SchoolYear"
+            }
+          },
+          "studentReference": {
+            "studentUniqueId": {
+              "Column": "DI_StudentId"
+            }
+          },
+          "administrationDate": {
+            "Column": "DI_AdministrationDate"
+          },
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark",
+              "performanceLevelDescriptor": {
+                "Column": "DI_RenaissanceBenchmarkCategoryName"
+              },
+              "performanceLevelMet": true
+            }
+          ],
+          "scoreResults": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "ScaledScore"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "StandardErrorOfMeasurement"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Rasch Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+              "result": {
+                "Column": "RaschScore"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Unified Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "UnifiedScore"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Open Growth Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "OpenGrowthScore"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Grade Equivalent",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+              "result": {
+                "Column": "GradeEquivalent"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Normal curve equivalent",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+              "result": {
+                "Column": "NormalCurveEquivalent"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile rank",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "PercentileRank"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Fall",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileFallFall"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Spring",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileFallSpring"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Winter",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileFallWinter"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Spring-to-Fall",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileSpringFall"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Spring-to-Spring",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileSpringSpring"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Winter-to-Spring",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileWinterSpring"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Total Correct",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "TotalCorrect"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Total Possible",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "TotalPossible"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Screening Period Window Name",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "ScreeningPeriodWindowName"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark Level",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "RenaissanceBenchmarkCategoryLevel"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Cat. Name",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "StateBenchmarkCategoryName"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Level",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "StateBenchmarkCategoryLevel"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Proficient",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "StateBenchmarkProficient"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Cat. Name",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "DistrictBenchmarkCategoryName"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Level",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "DistrictBenchmarkCategoryLevel"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Proficient",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "DistrictBenchmarkProficient"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Estimated Oral Reading Fluency",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "EstimatedOralReadingFluency"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Literacy Classification",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "LiteracyClassification"
+              }
+            }
+          ],
+          "studentObjectiveAssessments": [],
+          "whenAssessedGradeLevelDescriptor": {
+            "Column": "DI_AssessedGradeLevel"
+          }
+        }
+      },
+      {
+        "Name": "DataMap_STAR_STAR-MA-V1",
+        "ResourcePath": "/ed-fi/studentAssessments",
+        "ColumnHeaders": [
+          "DI_StudentId",
+          "DI_SchoolYear",
+          "DI_AssessedGradeLevel",
+          "DI_AssessmentStudentIdentifier",
+          "DI_AdministrationDate",
+          "DistrictBenchmarkCategoryLevel",
+          "DistrictBenchmarkCategoryName",
+          "DistrictBenchmarkProficient",
+          "GradeEquivalent",
+          "NormalCurveEquivalent",
+          "OpenGrowthScore",
+          "PercentileRank",
+          "Quantile",
+          "RaschScore",
+          "RenaissanceBenchmarkCategoryLevel",
+          "ScaledScore",
+          "ScreeningPeriodWindowName",
+          "StandardErrorOfMeasurement",
+          "StateBenchmarkCategoryLevel",
+          "StateBenchmarkCategoryName",
+          "StateBenchmarkProficient",
+          "StudentGrowthPercentileFallFall",
+          "StudentGrowthPercentileFallSpring",
+          "StudentGrowthPercentileFallWinter",
+          "StudentGrowthPercentileSpringFall",
+          "StudentGrowthPercentileSpringSpring",
+          "StudentGrowthPercentileWinterSpring",
+          "TotalCorrect",
+          "TotalPossible",
+          "UnifiedScore",
+          "DI_RenaissanceBenchmarkCategoryName"
+        ],
+        "Map": {
+          "studentAssessmentIdentifier": {
+            "Column": "DI_AssessmentStudentIdentifier"
+          },
+          "assessmentReference": {
+            "assessmentIdentifier": "STAR-MA-V1",
+            "namespace": "uri://renaissance.com/Assessment"
+          },
+          "schoolYearTypeReference": {
+            "schoolYear": {
+              "Column": "DI_SchoolYear"
+            }
+          },
+          "studentReference": {
+            "studentUniqueId": {
+              "Column": "DI_StudentId"
+            }
+          },
+          "administrationDate": {
+            "Column": "DI_AdministrationDate"
+          },
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark",
+              "performanceLevelDescriptor": {
+                "Column": "DI_RenaissanceBenchmarkCategoryName"
+              },
+              "performanceLevelMet": true
+            }
+          ],
+          "scoreResults": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "ScaledScore"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "StandardErrorOfMeasurement"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Rasch Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+              "result": {
+                "Column": "RaschScore"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Unified Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "UnifiedScore"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Open Growth Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "OpenGrowthScore"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Grade Equivalent",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+              "result": {
+                "Column": "GradeEquivalent"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Normal curve equivalent",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+              "result": {
+                "Column": "NormalCurveEquivalent"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile rank",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "PercentileRank"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Fall",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileFallFall"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Spring",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileFallSpring"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Winter",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileFallWinter"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Spring-to-Fall",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileSpringFall"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Spring-to-Spring",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileSpringSpring"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Winter-to-Spring",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileWinterSpring"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Total Correct",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "TotalCorrect"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Total Possible",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "TotalPossible"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Quantile Measure",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Quantile"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Screening Period Window Name",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "ScreeningPeriodWindowName"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark Level",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "RenaissanceBenchmarkCategoryLevel"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Cat. Name",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "StateBenchmarkCategoryName"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Level",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "StateBenchmarkCategoryLevel"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Proficient",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "StateBenchmarkProficient"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Cat. Name",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "DistrictBenchmarkCategoryName"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Level",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "DistrictBenchmarkCategoryLevel"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Proficient",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "DistrictBenchmarkProficient"
+              }
+            }
+          ],
+          "studentObjectiveAssessments": [],
+          "whenAssessedGradeLevelDescriptor": {
+            "Column": "DI_AssessedGradeLevel"
+          }
+        }
+      },
+      {
+        "Name": "DataMap_STAR_STAR-RD-V1",
+        "ResourcePath": "/ed-fi/studentAssessments",
+        "ColumnHeaders": [
+          "DI_StudentId",
+          "DI_SchoolYear",
+          "DI_AssessedGradeLevel",
+          "DI_AssessmentStudentIdentifier",
+          "DI_AdministrationDate",
+          "DistrictBenchmarkCategoryLevel",
+          "DistrictBenchmarkCategoryName",
+          "DistrictBenchmarkProficient",
+          "GradeEquivalent",
+          "Lexile",
+          "NormalCurveEquivalent",
+          "OpenGrowthScore",
+          "PercentileRank",
+          "RaschScore",
+          "RenaissanceBenchmarkCategoryLevel",
+          "ScaledScore",
+          "ScreeningPeriodWindowName",
+          "StandardErrorOfMeasurement",
+          "StateBenchmarkCategoryLevel",
+          "StateBenchmarkCategoryName",
+          "StateBenchmarkProficient",
+          "StudentGrowthPercentileFallFall",
+          "StudentGrowthPercentileFallSpring",
+          "StudentGrowthPercentileFallWinter",
+          "StudentGrowthPercentileSpringFall",
+          "StudentGrowthPercentileSpringSpring",
+          "StudentGrowthPercentileWinterSpring",
+          "TotalCorrect",
+          "TotalPossible",
+          "UnifiedScore",
+          "DI_RenaissanceBenchmarkCategoryName"
+        ],
+        "Map": {
+          "studentAssessmentIdentifier": {
+            "Column": "DI_AssessmentStudentIdentifier"
+          },
+          "assessmentReference": {
+            "assessmentIdentifier": "STAR-RD-V1",
+            "namespace": "uri://renaissance.com/Assessment"
+          },
+          "schoolYearTypeReference": {
+            "schoolYear": {
+              "Column": "DI_SchoolYear"
+            }
+          },
+          "studentReference": {
+            "studentUniqueId": {
+              "Column": "DI_StudentId"
+            }
+          },
+          "administrationDate": {
+            "Column": "DI_AdministrationDate"
+          },
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark",
+              "performanceLevelDescriptor": {
+                "Column": "DI_RenaissanceBenchmarkCategoryName"
+              },
+              "performanceLevelMet": true
+            }
+          ],
+          "scoreResults": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "ScaledScore"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "StandardErrorOfMeasurement"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Rasch Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+              "result": {
+                "Column": "RaschScore"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Unified Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "UnifiedScore"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Open Growth Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "OpenGrowthScore"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Grade Equivalent",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+              "result": {
+                "Column": "GradeEquivalent"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Normal curve equivalent",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+              "result": {
+                "Column": "NormalCurveEquivalent"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile rank",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "PercentileRank"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Fall",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileFallFall"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Spring",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileFallSpring"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Winter",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileFallWinter"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Spring-to-Fall",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileSpringFall"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Spring-to-Spring",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileSpringSpring"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Winter-to-Spring",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileWinterSpring"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Total Correct",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "TotalCorrect"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Total Possible",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "TotalPossible"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Screening Period Window Name",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "ScreeningPeriodWindowName"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark Level",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "RenaissanceBenchmarkCategoryLevel"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Cat. Name",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "StateBenchmarkCategoryName"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Level",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "StateBenchmarkCategoryLevel"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Proficient",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "StateBenchmarkProficient"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Cat. Name",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "DistrictBenchmarkCategoryName"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Level",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "DistrictBenchmarkCategoryLevel"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Proficient",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "DistrictBenchmarkProficient"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Lexile Measure",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Lexile"
+              }
+            }
+          ],
+          "studentObjectiveAssessments": [],
+          "whenAssessedGradeLevelDescriptor": {
+            "Column": "DI_AssessedGradeLevel"
+          }
+        }
+      }
+    ],
+    "Bootstraps": [
+      {
+        "Name": "STAR_ARMD",
+        "ResourcePath": "/ed-fi/assessmentReportingMethodDescriptors",
+        "Data": [
+          {
+            "codeValue": "District Benchmark Cat. Name",
+            "description": "District Benchmark Cat. Name",
+            "namespace": "uri://renaissance.com/AssessmentReportingMethodDescriptor",
+            "shortDescription": "District Benchmark Cat. Name"
+          },
+          {
+            "codeValue": "District Benchmark Level",
+            "description": "District Benchmark Level",
+            "namespace": "uri://renaissance.com/AssessmentReportingMethodDescriptor",
+            "shortDescription": "District Benchmark Level"
+          },
+          {
+            "codeValue": "District Benchmark Proficient",
+            "description": "District Benchmark Proficient",
+            "namespace": "uri://renaissance.com/AssessmentReportingMethodDescriptor",
+            "shortDescription": "District Benchmark Proficient"
+          },
+          {
+            "codeValue": "Estimated Oral Reading Fluency",
+            "description": "Estimated Oral Reading Fluency",
+            "namespace": "uri://renaissance.com/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Estimated Oral Reading Fluency"
+          },
+          {
+            "codeValue": "Grade Equivalent",
+            "description": "Grade Equivalent",
+            "namespace": "uri://renaissance.com/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Grade Equivalent"
+          },
+          {
+            "codeValue": "Growth Percentile Fall-to-Fall",
+            "description": "Growth Percentile Fall-to-Fall",
+            "namespace": "uri://renaissance.com/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Growth Percentile Fall-to-Fall"
+          },
+          {
+            "codeValue": "Growth Percentile Fall-to-Spring",
+            "description": "Growth Percentile Fall-to-Spring",
+            "namespace": "uri://renaissance.com/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Growth Percentile Fall-to-Spring"
+          },
+          {
+            "codeValue": "Growth Percentile Fall-to-Winter",
+            "description": "Growth Percentile Fall-to-Winter",
+            "namespace": "uri://renaissance.com/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Growth Percentile Fall-to-Winter"
+          },
+          {
+            "codeValue": "Growth Percentile Spring-to-Fall",
+            "description": "Growth Percentile Spring-to-Fall",
+            "namespace": "uri://renaissance.com/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Growth Percentile Spring-to-Fall"
+          },
+          {
+            "codeValue": "Growth Percentile Spring-to-Spring",
+            "description": "Growth Percentile Spring-to-Spring",
+            "namespace": "uri://renaissance.com/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Growth Percentile Spring-to-Spring"
+          },
+          {
+            "codeValue": "Growth Percentile Winter-to-Spring",
+            "description": "Growth Percentile Winter-to-Spring",
+            "namespace": "uri://renaissance.com/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Growth Percentile Winter-to-Spring"
+          },
+          {
+            "codeValue": "Literacy Classification",
+            "description": "Literacy Classification",
+            "namespace": "uri://renaissance.com/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Literacy Classification"
+          },
+          {
+            "codeValue": "Open Growth Score",
+            "description": "Open Growth Score",
+            "namespace": "uri://renaissance.com/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Open Growth Score"
+          },
+          {
+            "codeValue": "Rasch Score",
+            "description": "Rasch Score",
+            "namespace": "uri://renaissance.com/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Rasch Score"
+          },
+          {
+            "codeValue": "Renaissance Benchmark Level",
+            "description": "Renaissance Benchmark Level",
+            "namespace": "uri://renaissance.com/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Renaissance Benchmark Level"
+          },
+          {
+            "codeValue": "Screening Period Window Name",
+            "description": "Screening Period Window Name",
+            "namespace": "uri://renaissance.com/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Screening Period Window Name"
+          },
+          {
+            "codeValue": "State Benchmark Cat. Name",
+            "description": "State Benchmark Cat. Name",
+            "namespace": "uri://renaissance.com/AssessmentReportingMethodDescriptor",
+            "shortDescription": "State Benchmark Cat. Name"
+          },
+          {
+            "codeValue": "State Benchmark Level",
+            "description": "State Benchmark Level",
+            "namespace": "uri://renaissance.com/AssessmentReportingMethodDescriptor",
+            "shortDescription": "State Benchmark Level"
+          },
+          {
+            "codeValue": "State Benchmark Proficient",
+            "description": "State Benchmark Proficient",
+            "namespace": "uri://renaissance.com/AssessmentReportingMethodDescriptor",
+            "shortDescription": "State Benchmark Proficient"
+          },
+          {
+            "codeValue": "Total Correct",
+            "description": "Total Correct",
+            "namespace": "uri://renaissance.com/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Total Correct"
+          },
+          {
+            "codeValue": "Total Possible",
+            "description": "Total Possible",
+            "namespace": "uri://renaissance.com/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Total Possible"
+          },
+          {
+            "codeValue": "Unified Score",
+            "description": "Unified Score",
+            "namespace": "uri://renaissance.com/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Unified Score"
+          },
+          {
+            "codeValue": "Renaissance Benchmark",
+            "description": "Renaissance Benchmark",
+            "namespace": "uri://renaissance.com/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Renaissance Benchmark"
+          }
+        ]
+      },
+      {
+        "Name": "STAR_Assessment_STAR-EARLY-LIT-V1",
+        "ResourcePath": "/ed-fi/assessments",
+        "Data": {
+          "assessmentIdentifier": "STAR-EARLY-LIT-V1",
+          "assessmentTitle": "Renaissance Star Reading",
+          "namespace": "uri://renaissance.com/Assessment",
+          "assessedGradeLevels": [
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Kindergarten"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#First grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Second grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fourth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fifth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Sixth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Seventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eighth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Ninth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Tenth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#No grade level"
+            }
+          ],
+          "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#Other",
+          "academicSubjects": [
+            {
+              "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Reading"
+            }
+          ],
+          "scores": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Rasch Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Unified Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Open Growth Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Grade Equivalent",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Normal curve equivalent",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile rank",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Fall",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Spring",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Winter",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Spring-to-Fall",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Spring-to-Spring",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Winter-to-Spring",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Total Correct",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Total Possible",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Screening Period Window Name",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark Level",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Cat. Name",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Level",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Proficient",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Cat. Name",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Level",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Proficient",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Estimated Oral Reading Fluency",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Literacy Classification",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            }
+          ],
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark",
+              "performanceLevelDescriptor": "uri://renaissance.com/PerformanceLevelDescriptor#At/Above Benchmark",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark",
+              "performanceLevelDescriptor": "uri://renaissance.com/PerformanceLevelDescriptor#Intervention",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark",
+              "performanceLevelDescriptor": "uri://renaissance.com/PerformanceLevelDescriptor#On Watch",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark",
+              "performanceLevelDescriptor": "uri://renaissance.com/PerformanceLevelDescriptor#Urgent Intervention",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "STAR_Assessment_STAR-MA-V1",
+        "ResourcePath": "/ed-fi/assessments",
+        "Data": {
+          "assessmentIdentifier": "STAR-MA-V1",
+          "assessmentTitle": "Renaissance Star Math",
+          "namespace": "uri://renaissance.com/Assessment",
+          "assessedGradeLevels": [
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#First grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Second grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fourth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fifth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Sixth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Seventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eighth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Ninth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Tenth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#No grade level"
+            }
+          ],
+          "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#Other",
+          "academicSubjects": [
+            {
+              "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics"
+            }
+          ],
+          "scores": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Rasch Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Unified Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Open Growth Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Grade Equivalent",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Normal curve equivalent",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile rank",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Fall",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Spring",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Winter",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Spring-to-Fall",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Spring-to-Spring",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Winter-to-Spring",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Total Correct",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Total Possible",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Quantile Measure",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Screening Period Window Name",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark Level",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Cat. Name",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Level",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Proficient",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Cat. Name",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Level",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Proficient",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            }
+          ],
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark",
+              "performanceLevelDescriptor": "uri://renaissance.com/PerformanceLevelDescriptor#At/Above Benchmark",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark",
+              "performanceLevelDescriptor": "uri://renaissance.com/PerformanceLevelDescriptor#Intervention",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark",
+              "performanceLevelDescriptor": "uri://renaissance.com/PerformanceLevelDescriptor#On Watch",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark",
+              "performanceLevelDescriptor": "uri://renaissance.com/PerformanceLevelDescriptor#Urgent Intervention",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "STAR_Assessment_STAR-RD-V1",
+        "ResourcePath": "/ed-fi/assessments",
+        "Data": {
+          "assessmentIdentifier": "STAR-RD-V1",
+          "assessmentTitle": "Renaissance Star Reading",
+          "namespace": "uri://renaissance.com/Assessment",
+          "assessedGradeLevels": [
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#First grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Second grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fourth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fifth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Sixth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Seventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eighth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Ninth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Tenth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#No grade level"
+            }
+          ],
+          "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#Other",
+          "academicSubjects": [
+            {
+              "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Reading"
+            }
+          ],
+          "scores": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Rasch Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Unified Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Open Growth Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Grade Equivalent",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Normal curve equivalent",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile rank",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Fall",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Spring",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Fall-to-Winter",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Spring-to-Fall",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Spring-to-Spring",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Growth Percentile Winter-to-Spring",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Total Correct",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Total Possible",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Screening Period Window Name",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark Level",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Cat. Name",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Level",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#State Benchmark Proficient",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Cat. Name",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Level",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#District Benchmark Proficient",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Lexile Measure",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            }
+          ],
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark",
+              "performanceLevelDescriptor": "uri://renaissance.com/PerformanceLevelDescriptor#At/Above Benchmark",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark",
+              "performanceLevelDescriptor": "uri://renaissance.com/PerformanceLevelDescriptor#Intervention",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark",
+              "performanceLevelDescriptor": "uri://renaissance.com/PerformanceLevelDescriptor#On Watch",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://renaissance.com/AssessmentReportingMethodDescriptor#Renaissance Benchmark",
+              "performanceLevelDescriptor": "uri://renaissance.com/PerformanceLevelDescriptor#Urgent Intervention",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "STAR_PLD",
+        "ResourcePath": "/ed-fi/performanceLevelDescriptors",
+        "Data": [
+          {
+            "codeValue": "At/Above Benchmark",
+            "description": "At/Above Benchmark",
+            "namespace": "uri://renaissance.com/PerformanceLevelDescriptor",
+            "shortDescription": "At/Above Benchmark"
+          },
+          {
+            "codeValue": "Intervention",
+            "description": "Intervention",
+            "namespace": "uri://renaissance.com/PerformanceLevelDescriptor",
+            "shortDescription": "Intervention"
+          },
+          {
+            "codeValue": "On Watch",
+            "description": "On Watch",
+            "namespace": "uri://renaissance.com/PerformanceLevelDescriptor",
+            "shortDescription": "On Watch"
+          },
+          {
+            "codeValue": "Urgent Intervention",
+            "description": "Urgent Intervention",
+            "namespace": "uri://renaissance.com/PerformanceLevelDescriptor",
+            "shortDescription": "Urgent Intervention"
+          }
+        ]
+      }
+    ],
+    "Lookups": [],
+    "SupplementalInformation": null
+  },
+  "submitter": {
+    "name": "Emilio Baez",
+    "organization": "Developers.Net",
+    "email": "emilio@developers.net"
+  }
 }

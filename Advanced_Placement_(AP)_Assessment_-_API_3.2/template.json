@@ -1,13 +1,226 @@
 {
-    "id": 19,
-    "title": "Advanced Placement (AP) Assessment - API 3.2",
-    "description": "This template includes the Advanced Placement (AP) Assessment",
-    "apiVersion": "3.2.0",
-    "dateTimePublished": "2020-03-16T18:07:04.5112745",
-    "template": "{\"Maps\":[{\"Name\":\"AP-DataMap\",\"ResourcePath\":\"/ed-fi/studentAssessments\",\"ColumnHeaders\":[\"Student Identifier\",\"AP Number\",\"Admin Year\",\"Exam Code\",\"Exam Grade\",\"Irregularity Code #1\",\"Irregularity Code #2\",\"Class Section Code\",\"DI_AdministrationDate\",\"DI_SchoolYear\",\"DI_StudentAssessmentIdentifier\",\"DI_ExamCodeDescription\",\"Attributes\",\"File\",\"IsFilter\",\"IsConfiguration\",\"Module\",\"StartPosition\",\"DebuggerHidden\",\"Id\",\"Ast\"],\"Map\":{\"studentAssessmentIdentifier\":{\"Column\":\"DI_StudentAssessmentIdentifier\"},\"assessmentReference\":{\"assessmentIdentifier\":\"AdvancedPlacement(AP)-V1\",\"namespace\":\"uri://collegeboard.org/ap/Assessment\"},\"schoolYearTypeReference\":{\"schoolYear\":{\"Column\":\"DI_SchoolYear\"}},\"studentReference\":{\"studentUniqueId\":{\"Column\":\"Student Identifier\"}},\"administrationDate\":{\"Column\":\"DI_AdministrationDate\"},\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Admin Year\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Admin Year\"}},{\"assessmentReportingMethodDescriptor\":\"uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Exam Code\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Exam Code\"}},{\"assessmentReportingMethodDescriptor\":\"uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Exam Grade\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Exam Grade\"}},{\"assessmentReportingMethodDescriptor\":\"uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Irregularity Code #1\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Irregularity Code #1\"}},{\"assessmentReportingMethodDescriptor\":\"uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Irregularity Code #2\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Irregularity Code #2\"}},{\"assessmentReportingMethodDescriptor\":\"uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Class Section Code\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Class Section Code\"}},{\"assessmentReportingMethodDescriptor\":\"uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Exam Code Description\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"DI_ExamCodeDescription\"}}]}}],\"Bootstraps\":[{\"Name\":\"AP-ARMD\",\"ResourcePath\":\"/ed-fi/assessmentReportingMethodDescriptors\",\"Data\":[{\"codeValue\":\"Admin Year\",\"description\":\"Admin Year\",\"namespace\":\"uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Admin Year\"},{\"codeValue\":\"Exam Code\",\"description\":\"Exam Code\",\"namespace\":\"uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Exam Code\"},{\"codeValue\":\"Exam Code Description\",\"description\":\"The exam code description. This column is derived from the Exam Code.\",\"namespace\":\"uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Exam Code Description\"},{\"codeValue\":\"Exam Grade\",\"description\":\"The converted score (1-5) of the student\u2019s most recent exam.\",\"namespace\":\"uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Exam Grade\"},{\"codeValue\":\"Irregularity Code #1\",\"description\":\"Code indicating the type of irregularity or event related to the student\u2019s most recent AP Exam, if any.\",\"namespace\":\"uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Irregularity Code #1\"},{\"codeValue\":\"Irregularity Code #2\",\"description\":\"Code indicating the type of irregularity or event related to the student\u2019s most recent AP Exam, if there is more than one.\",\"namespace\":\"uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Irregularity Code #2\"},{\"codeValue\":\"Class Section Code\",\"description\":\"Always blank starting in 2020. Reports generated for administration years prior to 2020 may contain values when a school had multiple classes and/or teachers for an AP Exam. \",\"namespace\":\"uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Class Section Code\"}]},{\"Name\":\"AP-Assessment\",\"ResourcePath\":\"/ed-fi/assessments\",\"Data\":{\"assessmentIdentifier\":\"AdvancedPlacement(AP)-V1\",\"assessmentTitle\":\"Advanced Placement (AP)\",\"namespace\":\"uri://collegeboard.org/ap/Assessment\",\"assessedGradeLevels\":[{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Ninth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Tenth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade\"}],\"assessmentCategoryDescriptor\":\"uri://ed-fi.org/AssessmentCategoryDescriptor#College entrance exam\",\"academicSubjects\":[{\"academicSubjectDescriptor\":\"uri://ed-fi.org/AcademicSubjectDescriptor#Other\"}],\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Admin Year\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Exam Code\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Exam Grade\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Irregularity Code #1\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Irregularity Code #2\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Class Section Code\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Exam Code Description\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]}}],\"Lookups\":[]}",
-    "submitter": {
-        "name": "Emilio Baez",
-        "organization": "Developers.Net",
-        "email": "emilio@developers.net"
-    }
+  "id": 19,
+  "title": "Advanced Placement (AP) Assessment - API 3.2",
+  "description": "This template includes the Advanced Placement (AP) Assessment",
+  "apiVersion": "3.2.0",
+  "dateTimePublished": "2020-03-16T18:07:04.5112745",
+  "template": {
+    "Maps": [
+      {
+        "Name": "AP-DataMap",
+        "ResourcePath": "/ed-fi/studentAssessments",
+        "ColumnHeaders": [
+          "Student Identifier",
+          "AP Number",
+          "Admin Year",
+          "Exam Code",
+          "Exam Grade",
+          "Irregularity Code #1",
+          "Irregularity Code #2",
+          "Class Section Code",
+          "DI_AdministrationDate",
+          "DI_SchoolYear",
+          "DI_StudentAssessmentIdentifier",
+          "DI_ExamCodeDescription",
+          "Attributes",
+          "File",
+          "IsFilter",
+          "IsConfiguration",
+          "Module",
+          "StartPosition",
+          "DebuggerHidden",
+          "Id",
+          "Ast"
+        ],
+        "Map": {
+          "studentAssessmentIdentifier": {
+            "Column": "DI_StudentAssessmentIdentifier"
+          },
+          "assessmentReference": {
+            "assessmentIdentifier": "AdvancedPlacement(AP)-V1",
+            "namespace": "uri://collegeboard.org/ap/Assessment"
+          },
+          "schoolYearTypeReference": {
+            "schoolYear": {
+              "Column": "DI_SchoolYear"
+            }
+          },
+          "studentReference": {
+            "studentUniqueId": {
+              "Column": "Student Identifier"
+            }
+          },
+          "administrationDate": {
+            "Column": "DI_AdministrationDate"
+          },
+          "scoreResults": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Admin Year",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Admin Year"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Exam Code",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Exam Code"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Exam Grade",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Exam Grade"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Irregularity Code #1",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Irregularity Code #1"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Irregularity Code #2",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Irregularity Code #2"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Class Section Code",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Class Section Code"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Exam Code Description",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "DI_ExamCodeDescription"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "Bootstraps": [
+      {
+        "Name": "AP-ARMD",
+        "ResourcePath": "/ed-fi/assessmentReportingMethodDescriptors",
+        "Data": [
+          {
+            "codeValue": "Admin Year",
+            "description": "Admin Year",
+            "namespace": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Admin Year"
+          },
+          {
+            "codeValue": "Exam Code",
+            "description": "Exam Code",
+            "namespace": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Exam Code"
+          },
+          {
+            "codeValue": "Exam Code Description",
+            "description": "The exam code description. This column is derived from the Exam Code.",
+            "namespace": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Exam Code Description"
+          },
+          {
+            "codeValue": "Exam Grade",
+            "description": "The converted score (1-5) of the student’s most recent exam.",
+            "namespace": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Exam Grade"
+          },
+          {
+            "codeValue": "Irregularity Code #1",
+            "description": "Code indicating the type of irregularity or event related to the student’s most recent AP Exam, if any.",
+            "namespace": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Irregularity Code #1"
+          },
+          {
+            "codeValue": "Irregularity Code #2",
+            "description": "Code indicating the type of irregularity or event related to the student’s most recent AP Exam, if there is more than one.",
+            "namespace": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Irregularity Code #2"
+          },
+          {
+            "codeValue": "Class Section Code",
+            "description": "Always blank starting in 2020. Reports generated for administration years prior to 2020 may contain values when a school had multiple classes and/or teachers for an AP Exam. ",
+            "namespace": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Class Section Code"
+          }
+        ]
+      },
+      {
+        "Name": "AP-Assessment",
+        "ResourcePath": "/ed-fi/assessments",
+        "Data": {
+          "assessmentIdentifier": "AdvancedPlacement(AP)-V1",
+          "assessmentTitle": "Advanced Placement (AP)",
+          "namespace": "uri://collegeboard.org/ap/Assessment",
+          "assessedGradeLevels": [
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Ninth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Tenth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade"
+            }
+          ],
+          "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#College entrance exam",
+          "academicSubjects": [
+            {
+              "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Other"
+            }
+          ],
+          "scores": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Admin Year",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Exam Code",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Exam Grade",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Irregularity Code #1",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Irregularity Code #2",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Class Section Code",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Exam Code Description",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            }
+          ]
+        }
+      }
+    ],
+    "Lookups": []
+  },
+  "submitter": {
+    "name": "Emilio Baez",
+    "organization": "Developers.Net",
+    "email": "emilio@developers.net"
+  }
 }

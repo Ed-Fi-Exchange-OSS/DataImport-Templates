@@ -1,13 +1,1117 @@
 {
-    "id": 29,
-    "title": "New Mexico Standards Based Transition Assessment of Math and English Language Arts (TAMELA) - API 3.2",
-    "description": "This template includes the New Mexico Standards Based Transition Assessment of Math and English Language Arts (TAMELA)",
-    "apiVersion": "3.2.0",
-    "dateTimePublished": "2020-06-25T19:09:18.4851186",
-    "template": "{\"Maps\":[{\"Name\":\"TAMELA_Map\",\"ResourcePath\":\"/ed-fi/studentAssessments\",\"ColumnHeaders\":[\"DI_StudentId\",\"DI_SchoolYear\",\"DI_PerfLvlDescription\",\"DI_ObjAssess_PL_Subclaim1Category\",\"DI_ObjAssess_PL_Subclaim2Category\",\"DI_ObjAssess_PL_Subclaim3Category\",\"DI_ObjAssess_PL_Subclaim4Category\",\"DI_ObjAssess_PL_Subclaim5Category\",\"DI_ObjAssess_Id_Subclaim1Category\",\"DI_ObjAssess_Id_Subclaim2Category\",\"DI_ObjAssess_Id_Subclaim3Category\",\"DI_ObjAssess_Id_Subclaim4Category\",\"DI_ObjAssess_Id_Subclaim5Category\",\"StateAbbreviation\",\"TestingDistrictCode\",\"TestingSchoolCode\",\"ResponsibleAccountableDistrictCode\",\"ResponsibleAccountableSchoolCode\",\"StateStudentIdentifier\",\"LocalStudentIdentifier\",\"UniquePearsonStudentID\",\"LastOrSurname\",\"FirstName\",\"MiddleName\",\"BirthDate\",\"Sex\",\"SchoolName\",\"GradeLevelWhenAssessed\",\"HispanicOrLatinoEthnicity\",\"AmericanIndianOrAlaskaNative\",\"Asian\",\"BlackOrAfricanAmerican\",\"NativeHawaiianOrOtherPacificIslander\",\"White\",\"Filler1\",\"TwoOrMoreRaces\",\"EnglishLearnerEL\",\"TitleIIILimitedEnglishProficientParticipationStatus\",\"GiftedandTalented\",\"MigrantStatus\",\"EconomicDisadvantageStatus\",\"StudentWithDisabilities\",\"PrimaryDisabilityType\",\"StateField2\",\"StateField3\",\"StateField4\",\"StateField5\",\"StateField6\",\"StateField7\",\"StateField8\",\"StateField9\",\"StateField10\",\"StateField11\",\"StateField12\",\"StateField13\",\"StateField14\",\"StateField15\",\"Filler2\",\"ClassName\",\"TestAdministrator\",\"StaffMemberIdentifier\",\"TestCode\",\"Retest\",\"FrequentBreaks\",\"SeparateAlternateLocation\",\"SmallGroupTesting\",\"SpecializedEquipmentOrFurniture\",\"SpecifiedAreaOrSetting\",\"TimeOfDay\",\"AnswerMasking\",\"StudentReadsAssessmentAloudtoSelf\",\"ColorContrast\",\"ASLVideo\",\"AssistiveTechnologyScreenReader\",\"AssistiveTechnologyNonScreenReader\",\"ClosedCaptioningForELAL\",\"RefreshableBrailleDisplayForELAL\",\"AlternateRepresentationPaperTest\",\"LargePrint\",\"BrailleWithTactileGraphics\",\"Filler3\",\"HumanSignerForTestDirections\",\"AnswersRecordedInTestBook\",\"BrailleResponse\",\"CalculationDeviceAndMathematicsTools\",\"ELALConstructedResponse\",\"ELALSelectedResponseOrTechnologyEnhancedItems\",\"MathematicsResponse\",\"MonitorTestResponse\",\"WordPredictionForELAL\",\"AdministrationDirectionsClarifiedinStudentsNativeLanguage\",\"AdministrationDirectionsReadAloudinStudentsNativeLanguage\",\"MathematicsResponseEL\",\"SpanishTransadaptationOfTheMathematicsAssessment\",\"WordtoWordDictionaryEnglishNativeLanguage\",\"TextToSpeech\",\"HumanReaderOrHumanSigner\",\"UniqueAccommodation\",\"EmergencyAccommodation\",\"ExtendedTime\",\"StudentTestUUID\",\"PaperFormID\",\"OnlineFormID\",\"TestStatus\",\"TotalTestItems\",\"TestAttemptednessFlag\",\"TotalTestItemsAttempted\",\"PaperSection1TotalTestItems\",\"PaperSection1NumberofAttemptedItems\",\"PaperSection2TotalTestItems\",\"PaperSection2NumberofAttemptedItems\",\"PaperSection3TotalTestItems\",\"PaperSection3NumberofAttemptedItems\",\"PaperSection4TotalTestItems\",\"PaperSection4NumberofAttemptedItems\",\"StudentUnit1TestUUID\",\"Unit1FormID\",\"Unit1TotalTestItems\",\"Unit1NumberofAttemptedItems\",\"StudentUnit2TestUUID\",\"Unit2FormID\",\"Unit2TotalTestItems\",\"Unit2NumberOfAttemptedItems\",\"StudentUnit3TestUUID\",\"Unit3FormID\",\"Unit3TotalTestItems\",\"Unit3NumberOfAttemptedItems\",\"Filler4\",\"Filler5\",\"Filler6\",\"Filler7\",\"NotTestedCode\",\"NotTestedReason\",\"VoidScoreCode\",\"VoidScoreReason\",\"ShipReportDistrictCode\",\"ShipReportSchoolCode\",\"SummativeFlag\",\"MultipleTestRegistration\",\"RosterFlag\",\"ReportSuppressionCode\",\"ReportSuppressionAction\",\"PaperAttemptCreateDate\",\"Unit1OnlineTestStartDateTime\",\"Unit1OnlineTestEndDateTime\",\"Unit2OnlineTestStartDateTime\",\"Unit2OnlineTestEndDateTime\",\"Unit3OnlineTestStartDateTime\",\"Unit3OnlineTestEndDateTime\",\"Filler8\",\"Filler9\",\"AssessmentYear\",\"AssessmentGrade\",\"Subject\",\"FederalRaceEthnicity\",\"Period\",\"TestingOrganizationalType\",\"TestingDistrictName\",\"TestingSchoolName\",\"ResponsibleOrganizationalType\",\"ResponsibleDistrictName\",\"ResponsibleSchoolName\",\"Filler10\",\"TestScaleScore\",\"TestCSEMProbableRange\",\"TestPerformanceLevel\",\"TestReadingScaleScore\",\"TestReadingCSEM\",\"TestWritingScaleScore\",\"TestWritingCSEM\",\"Subclaim1Category\",\"Subclaim2Category\",\"Subclaim3Category\",\"Subclaim4Category\",\"Subclaim5Category\",\"Filler11\",\"TestScoreComplete\",\"Filler12\",\"Filler13\",\"Filler14\",\"Filler15\",\"Filler16\",\"Filler17\",\"Filler18\",\"Filler19\",\"Filler20\",\"Filler21\",\"Filler22\",\"Filler23\",\"Filler24\",\"Filler25\",\"StudentUUID\"],\"Map\":{\"studentAssessmentIdentifier\":{\"Column\":\"StateStudentIdentifier\"},\"assessmentReference\":{\"assessmentIdentifier\":\"TAMELA-V1\",\"namespace\":\"uri://newmexico.gov/TAMELA/Assessment\"},\"schoolYearTypeReference\":{\"schoolYear\":{\"Column\":\"DI_SchoolYear\"}},\"studentReference\":{\"studentUniqueId\":{\"Column\":\"DI_StudentId\"}},\"administrationDate\":{\"Column\":\"Unit1OnlineTestStartDateTime\"},\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_PerfLvlDescription\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"TestScaleScore\"}},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"TestPerformanceLevel\"}},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#CSEM Probable Range\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\",\"result\":{\"Column\":\"TestCSEMProbableRange\"}},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Reading Scale Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"TestReadingScaleScore\"}},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Reading CSEM\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\",\"result\":{\"Column\":\"TestReadingCSEM\"}},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Writing Scale Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"TestWritingScaleScore\"}},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Writing CSEM\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\",\"result\":{\"Column\":\"TestWritingCSEM\"}},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Total Test Items\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"TotalTestItems\"}},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Total Test Items Attempted\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"TotalTestItemsAttempted\"}},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Unit1 Total Test Items\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Unit1TotalTestItems\"}},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Unit1 Number Of Attempted Items\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Unit1NumberofAttemptedItems\"}},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Unit2 Total Test Items\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Unit2TotalTestItems\"}},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Unit2 Number Of Attempted Items\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Unit2NumberOfAttemptedItems\"}},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Unit3 Total Test Items\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Unit3TotalTestItems\"}},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Unit3 Number Of Attempted Items\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Unit3NumberOfAttemptedItems\"}},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Subject\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Subject\"}},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Test Code\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"TestCode\"}},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Period\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Period\"}}],\"studentObjectiveAssessments\":[{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"TAMELA-V1\",\"identificationCode\":{\"Column\":\"DI_ObjAssess_Id_Subclaim1Category\"},\"namespace\":\"uri://newmexico.gov/TAMELA/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_ObjAssess_PL_Subclaim1Category\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Subclaim1Category\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"TAMELA-V1\",\"identificationCode\":{\"Column\":\"DI_ObjAssess_Id_Subclaim2Category\"},\"namespace\":\"uri://newmexico.gov/TAMELA/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_ObjAssess_PL_Subclaim2Category\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Subclaim2Category\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"TAMELA-V1\",\"identificationCode\":{\"Column\":\"DI_ObjAssess_Id_Subclaim3Category\"},\"namespace\":\"uri://newmexico.gov/TAMELA/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_ObjAssess_PL_Subclaim3Category\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Subclaim3Category\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"TAMELA-V1\",\"identificationCode\":{\"Column\":\"DI_ObjAssess_Id_Subclaim4Category\"},\"namespace\":\"uri://newmexico.gov/TAMELA/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_ObjAssess_PL_Subclaim4Category\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Subclaim4Category\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"TAMELA-V1\",\"identificationCode\":{\"Column\":\"DI_ObjAssess_Id_Subclaim5Category\"},\"namespace\":\"uri://newmexico.gov/TAMELA/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_ObjAssess_PL_Subclaim5Category\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Subclaim5Category\"}}]}]}}],\"Bootstraps\":[{\"Name\":\"TAMELA_ARMD\",\"ResourcePath\":\"/ed-fi/assessmentReportingMethodDescriptors\",\"Data\":[{\"codeValue\":\"Reading Scale Score\",\"description\":\"Reading Scale Score\",\"namespace\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Reading Scale Score\"},{\"codeValue\":\"Reading CSEM\",\"description\":\"Reading CSEM\",\"namespace\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Reading CSEM\"},{\"codeValue\":\"Writing Scale Score\",\"description\":\"Writing Scale Score\",\"namespace\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Writing Scale Score\"},{\"codeValue\":\"Writing CSEM\",\"description\":\"Writing CSEM\",\"namespace\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Writing CSEM\"},{\"codeValue\":\"CSEM Probable Range\",\"description\":\"CSEM Probable Range\",\"namespace\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"CSEM Probable Range\"},{\"codeValue\":\"Total Test Items\",\"description\":\"Total Test Items\",\"namespace\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Total Test Items\"},{\"codeValue\":\"Total Test Items Attempted\",\"description\":\"Total Test Items Attempted\",\"namespace\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Total Test Items Attempted\"},{\"codeValue\":\"Unit1 Total Test Items\",\"description\":\"Unit1 Total Test Items\",\"namespace\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Unit1 Total Test Items\"},{\"codeValue\":\"Unit1 Number Of Attempted Items\",\"description\":\"CSEM Probable Range\",\"namespace\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"CSEM Probable Range\"},{\"codeValue\":\"Unit2 Total Test Items\",\"description\":\"Unit2 Total Test Items\",\"namespace\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Unit2 Total Test Items\"},{\"codeValue\":\"Unit2 Number Of Attempted Items\",\"description\":\"Unit2 Number Of Attempted Items\",\"namespace\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Unit2 Number Of Attempted Items\"},{\"codeValue\":\"Unit3 Total Test Items\",\"description\":\"Unit3 Total Test Items\",\"namespace\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Unit3 Total Test Items\"},{\"codeValue\":\"Unit3 Number Of Attempted Items\",\"description\":\"Unit3 Number Of Attempted Items\",\"namespace\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Unit3 Number Of Attempted Items\"},{\"codeValue\":\"Subject\",\"description\":\"Subject\",\"namespace\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Subject\"},{\"codeValue\":\"Test Code\",\"description\":\"Test Code\",\"namespace\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Test Code\"},{\"codeValue\":\"Period\",\"description\":\"Period\",\"namespace\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Period\"}]},{\"Name\":\"TAMELA_PLD\",\"ResourcePath\":\"/ed-fi/performanceLevelDescriptors\",\"Data\":[{\"codeValue\":\"Did not meet expectations\",\"description\":\"Did not meet expectations\",\"namespace\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor\",\"shortDescription\":\"Did not meet expectations\"},{\"codeValue\":\"Partially met expectations\",\"description\":\"Partially met expectations\",\"namespace\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor\",\"shortDescription\":\"Partially met expectations\"},{\"codeValue\":\"Approached expectations\",\"description\":\"Approached expectations\",\"namespace\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor\",\"shortDescription\":\"Approached expectations\"},{\"codeValue\":\"Met expectations\",\"description\":\"Met expectations\",\"namespace\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor\",\"shortDescription\":\"Met expectations\"},{\"codeValue\":\"Exceeded expectations\",\"description\":\"Exceeded expectations\",\"namespace\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor\",\"shortDescription\":\"Exceeded expectations\"},{\"codeValue\":\"Meets-Exceeds Students at level 4\",\"description\":\"Meets/Exceeds Students at level 4\",\"namespace\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor\",\"shortDescription\":\"Meets/Exceeds Students at level 4\"},{\"codeValue\":\"Nearly Students at level 3\",\"description\":\"Nearly Students at level 3\",\"namespace\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor\",\"shortDescription\":\"Nearly Students at level 3\"},{\"codeValue\":\"Below Students at level 3\",\"description\":\"Below Students at level 3\",\"namespace\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor\",\"shortDescription\":\"Below Students at level 3\"}]},{\"Name\":\"TAMELA_Assessment\",\"ResourcePath\":\"/ed-fi/assessments\",\"Data\":{\"assessmentIdentifier\":\"TAMELA-V1\",\"assessmentTitle\":\"Transition Assessment of Math and English Language Arts (TAMELA)\",\"namespace\":\"uri://newmexico.gov/TAMELA/Assessment\",\"assessedGradeLevels\":[{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Kindergarten\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#First grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Second grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Third grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Fourth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Fifth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Sixth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Seventh grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Eighth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Ninth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Tenth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#No grade level\"}],\"assessmentCategoryDescriptor\":\"uri://ed-fi.org/AssessmentCategoryDescriptor#Other\",\"academicSubjects\":[{\"academicSubjectDescriptor\":\"uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts\"},{\"academicSubjectDescriptor\":\"uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics\"}],\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#CSEM Probable Range\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\"},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Reading Scale Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Reading CSEM\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\"},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Writing Scale Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Writing CSEM\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\"},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Total Test Items\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Total Test Items Attempted\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Unit1 Total Test Items\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Unit1 Number Of Attempted Items\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Unit2 Total Test Items\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Unit2 Number Of Attempted Items\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Unit3 Total Test Items\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Unit3 Number Of Attempted Items\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Subject\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Test Code\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Period\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Did not meet expectations\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Partially met expectations\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Approached expectations\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Met expectations\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Exceeded expectations\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]}},{\"Name\":\"TAMELA_OA\",\"ResourcePath\":\"/ed-fi/objectiveAssessments\",\"Data\":[{\"identificationCode\":\"TAMELA-V1-ELA-READING-RL\",\"assessmentReference\":{\"assessmentIdentifier\":\"TAMELA-V1\",\"namespace\":\"uri://newmexico.gov/TAMELA/Assessment\"},\"description\":\"Literary Text (Reading-RL)\",\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Meets-Exceeds Students at level 4\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Nearly Students at level 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Below Students at level 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]},{\"identificationCode\":\"TAMELA-V1-ELA-READING-R\",\"assessmentReference\":{\"assessmentIdentifier\":\"TAMELA-V1\",\"namespace\":\"uri://newmexico.gov/TAMELA/Assessment\"},\"description\":\"Informational Text(Reading-R)\",\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Meets-Exceeds Students at level 4\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Nearly Students at level 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Below Students at level 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]},{\"identificationCode\":\"TAMELA-V1-ELA-READING-RV\",\"assessmentReference\":{\"assessmentIdentifier\":\"TAMELA-V1\",\"namespace\":\"uri://newmexico.gov/TAMELA/Assessment\"},\"description\":\"Vocabulary(Reading-RV)\",\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Meets-Exceeds Students at level 4\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Nearly Students at level 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Below Students at level 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]},{\"identificationCode\":\"TAMELA-V1-ELA-WRITING-WE\",\"assessmentReference\":{\"assessmentIdentifier\":\"TAMELA-V1\",\"namespace\":\"uri://newmexico.gov/TAMELA/Assessment\"},\"description\":\"Writing Expression(Writing-WE)\",\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Meets-Exceeds Students at level 4\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Nearly Students at level 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Below Students at level 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]},{\"identificationCode\":\"TAMELA-V1-ELA-WRITING-WKL\",\"assessmentReference\":{\"assessmentIdentifier\":\"TAMELA-V1\",\"namespace\":\"uri://newmexico.gov/TAMELA/Assessment\"},\"description\":\"Knowledge and use of Language Conventions(Writing-WKL)\",\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Meets-Exceeds Students at level 4\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Nearly Students at level 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Below Students at level 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]},{\"identificationCode\":\"TAMELA-V1-MATH-MAJOR-CONTENT\",\"assessmentReference\":{\"assessmentIdentifier\":\"TAMELA-V1\",\"namespace\":\"uri://newmexico.gov/TAMELA/Assessment\"},\"description\":\"Major Content\",\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Meets-Exceeds Students at level 4\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Nearly Students at level 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Below Students at level 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]},{\"identificationCode\":\"TAMELA-V1-MATH-EXP-MATHEM-REASONING\",\"assessmentReference\":{\"assessmentIdentifier\":\"TAMELA-V1\",\"namespace\":\"uri://newmexico.gov/TAMELA/Assessment\"},\"description\":\"Expressing Mathematical Reasoning\",\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Meets-Exceeds Students at level 4\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Nearly Students at level 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Below Students at level 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]},{\"identificationCode\":\"TAMELA-V1-MATH-MODELING-APPLICATION\",\"assessmentReference\":{\"assessmentIdentifier\":\"TAMELA-V1\",\"namespace\":\"uri://newmexico.gov/TAMELA/Assessment\"},\"description\":\"Modeling & Application\",\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Meets-Exceeds Students at level 4\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Nearly Students at level 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Below Students at level 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]},{\"identificationCode\":\"TAMELA-V1-MATH-ADDITIONAL-SUPP-CONTENT\",\"assessmentReference\":{\"assessmentIdentifier\":\"TAMELA-V1\",\"namespace\":\"uri://newmexico.gov/TAMELA/Assessment\"},\"description\":\"Additional & Supporting Content\",\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Meets-Exceeds Students at level 4\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Nearly Students at level 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level\",\"performanceLevelDescriptor\":\"uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Below Students at level 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]}]}],\"Lookups\":[]}",
-    "submitter": {
-        "name": "Emilio Baez",
-        "organization": "Developers.Net",
-        "email": "emilio@developers.net"
-    }
+  "id": 29,
+  "title": "New Mexico Standards Based Transition Assessment of Math and English Language Arts (TAMELA) - API 3.2",
+  "description": "This template includes the New Mexico Standards Based Transition Assessment of Math and English Language Arts (TAMELA)",
+  "apiVersion": "3.2.0",
+  "dateTimePublished": "2020-06-25T19:09:18.4851186",
+  "template": {
+    "Maps": [
+      {
+        "Name": "TAMELA_Map",
+        "ResourcePath": "/ed-fi/studentAssessments",
+        "ColumnHeaders": [
+          "DI_StudentId",
+          "DI_SchoolYear",
+          "DI_PerfLvlDescription",
+          "DI_ObjAssess_PL_Subclaim1Category",
+          "DI_ObjAssess_PL_Subclaim2Category",
+          "DI_ObjAssess_PL_Subclaim3Category",
+          "DI_ObjAssess_PL_Subclaim4Category",
+          "DI_ObjAssess_PL_Subclaim5Category",
+          "DI_ObjAssess_Id_Subclaim1Category",
+          "DI_ObjAssess_Id_Subclaim2Category",
+          "DI_ObjAssess_Id_Subclaim3Category",
+          "DI_ObjAssess_Id_Subclaim4Category",
+          "DI_ObjAssess_Id_Subclaim5Category",
+          "StateAbbreviation",
+          "TestingDistrictCode",
+          "TestingSchoolCode",
+          "ResponsibleAccountableDistrictCode",
+          "ResponsibleAccountableSchoolCode",
+          "StateStudentIdentifier",
+          "LocalStudentIdentifier",
+          "UniquePearsonStudentID",
+          "LastOrSurname",
+          "FirstName",
+          "MiddleName",
+          "BirthDate",
+          "Sex",
+          "SchoolName",
+          "GradeLevelWhenAssessed",
+          "HispanicOrLatinoEthnicity",
+          "AmericanIndianOrAlaskaNative",
+          "Asian",
+          "BlackOrAfricanAmerican",
+          "NativeHawaiianOrOtherPacificIslander",
+          "White",
+          "Filler1",
+          "TwoOrMoreRaces",
+          "EnglishLearnerEL",
+          "TitleIIILimitedEnglishProficientParticipationStatus",
+          "GiftedandTalented",
+          "MigrantStatus",
+          "EconomicDisadvantageStatus",
+          "StudentWithDisabilities",
+          "PrimaryDisabilityType",
+          "StateField2",
+          "StateField3",
+          "StateField4",
+          "StateField5",
+          "StateField6",
+          "StateField7",
+          "StateField8",
+          "StateField9",
+          "StateField10",
+          "StateField11",
+          "StateField12",
+          "StateField13",
+          "StateField14",
+          "StateField15",
+          "Filler2",
+          "ClassName",
+          "TestAdministrator",
+          "StaffMemberIdentifier",
+          "TestCode",
+          "Retest",
+          "FrequentBreaks",
+          "SeparateAlternateLocation",
+          "SmallGroupTesting",
+          "SpecializedEquipmentOrFurniture",
+          "SpecifiedAreaOrSetting",
+          "TimeOfDay",
+          "AnswerMasking",
+          "StudentReadsAssessmentAloudtoSelf",
+          "ColorContrast",
+          "ASLVideo",
+          "AssistiveTechnologyScreenReader",
+          "AssistiveTechnologyNonScreenReader",
+          "ClosedCaptioningForELAL",
+          "RefreshableBrailleDisplayForELAL",
+          "AlternateRepresentationPaperTest",
+          "LargePrint",
+          "BrailleWithTactileGraphics",
+          "Filler3",
+          "HumanSignerForTestDirections",
+          "AnswersRecordedInTestBook",
+          "BrailleResponse",
+          "CalculationDeviceAndMathematicsTools",
+          "ELALConstructedResponse",
+          "ELALSelectedResponseOrTechnologyEnhancedItems",
+          "MathematicsResponse",
+          "MonitorTestResponse",
+          "WordPredictionForELAL",
+          "AdministrationDirectionsClarifiedinStudentsNativeLanguage",
+          "AdministrationDirectionsReadAloudinStudentsNativeLanguage",
+          "MathematicsResponseEL",
+          "SpanishTransadaptationOfTheMathematicsAssessment",
+          "WordtoWordDictionaryEnglishNativeLanguage",
+          "TextToSpeech",
+          "HumanReaderOrHumanSigner",
+          "UniqueAccommodation",
+          "EmergencyAccommodation",
+          "ExtendedTime",
+          "StudentTestUUID",
+          "PaperFormID",
+          "OnlineFormID",
+          "TestStatus",
+          "TotalTestItems",
+          "TestAttemptednessFlag",
+          "TotalTestItemsAttempted",
+          "PaperSection1TotalTestItems",
+          "PaperSection1NumberofAttemptedItems",
+          "PaperSection2TotalTestItems",
+          "PaperSection2NumberofAttemptedItems",
+          "PaperSection3TotalTestItems",
+          "PaperSection3NumberofAttemptedItems",
+          "PaperSection4TotalTestItems",
+          "PaperSection4NumberofAttemptedItems",
+          "StudentUnit1TestUUID",
+          "Unit1FormID",
+          "Unit1TotalTestItems",
+          "Unit1NumberofAttemptedItems",
+          "StudentUnit2TestUUID",
+          "Unit2FormID",
+          "Unit2TotalTestItems",
+          "Unit2NumberOfAttemptedItems",
+          "StudentUnit3TestUUID",
+          "Unit3FormID",
+          "Unit3TotalTestItems",
+          "Unit3NumberOfAttemptedItems",
+          "Filler4",
+          "Filler5",
+          "Filler6",
+          "Filler7",
+          "NotTestedCode",
+          "NotTestedReason",
+          "VoidScoreCode",
+          "VoidScoreReason",
+          "ShipReportDistrictCode",
+          "ShipReportSchoolCode",
+          "SummativeFlag",
+          "MultipleTestRegistration",
+          "RosterFlag",
+          "ReportSuppressionCode",
+          "ReportSuppressionAction",
+          "PaperAttemptCreateDate",
+          "Unit1OnlineTestStartDateTime",
+          "Unit1OnlineTestEndDateTime",
+          "Unit2OnlineTestStartDateTime",
+          "Unit2OnlineTestEndDateTime",
+          "Unit3OnlineTestStartDateTime",
+          "Unit3OnlineTestEndDateTime",
+          "Filler8",
+          "Filler9",
+          "AssessmentYear",
+          "AssessmentGrade",
+          "Subject",
+          "FederalRaceEthnicity",
+          "Period",
+          "TestingOrganizationalType",
+          "TestingDistrictName",
+          "TestingSchoolName",
+          "ResponsibleOrganizationalType",
+          "ResponsibleDistrictName",
+          "ResponsibleSchoolName",
+          "Filler10",
+          "TestScaleScore",
+          "TestCSEMProbableRange",
+          "TestPerformanceLevel",
+          "TestReadingScaleScore",
+          "TestReadingCSEM",
+          "TestWritingScaleScore",
+          "TestWritingCSEM",
+          "Subclaim1Category",
+          "Subclaim2Category",
+          "Subclaim3Category",
+          "Subclaim4Category",
+          "Subclaim5Category",
+          "Filler11",
+          "TestScoreComplete",
+          "Filler12",
+          "Filler13",
+          "Filler14",
+          "Filler15",
+          "Filler16",
+          "Filler17",
+          "Filler18",
+          "Filler19",
+          "Filler20",
+          "Filler21",
+          "Filler22",
+          "Filler23",
+          "Filler24",
+          "Filler25",
+          "StudentUUID"
+        ],
+        "Map": {
+          "studentAssessmentIdentifier": {
+            "Column": "StateStudentIdentifier"
+          },
+          "assessmentReference": {
+            "assessmentIdentifier": "TAMELA-V1",
+            "namespace": "uri://newmexico.gov/TAMELA/Assessment"
+          },
+          "schoolYearTypeReference": {
+            "schoolYear": {
+              "Column": "DI_SchoolYear"
+            }
+          },
+          "studentReference": {
+            "studentUniqueId": {
+              "Column": "DI_StudentId"
+            }
+          },
+          "administrationDate": {
+            "Column": "Unit1OnlineTestStartDateTime"
+          },
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+              "performanceLevelDescriptor": {
+                "Column": "DI_PerfLvlDescription"
+              },
+              "performanceLevelMet": true
+            }
+          ],
+          "scoreResults": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "TestScaleScore"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "TestPerformanceLevel"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#CSEM Probable Range",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+              "result": {
+                "Column": "TestCSEMProbableRange"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Reading Scale Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "TestReadingScaleScore"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Reading CSEM",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+              "result": {
+                "Column": "TestReadingCSEM"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Writing Scale Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "TestWritingScaleScore"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Writing CSEM",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+              "result": {
+                "Column": "TestWritingCSEM"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Total Test Items",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "TotalTestItems"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Total Test Items Attempted",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "TotalTestItemsAttempted"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Unit1 Total Test Items",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Unit1TotalTestItems"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Unit1 Number Of Attempted Items",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Unit1NumberofAttemptedItems"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Unit2 Total Test Items",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Unit2TotalTestItems"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Unit2 Number Of Attempted Items",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Unit2NumberOfAttemptedItems"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Unit3 Total Test Items",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Unit3TotalTestItems"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Unit3 Number Of Attempted Items",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Unit3NumberOfAttemptedItems"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Subject",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Subject"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Test Code",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "TestCode"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Period",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Period"
+              }
+            }
+          ],
+          "studentObjectiveAssessments": [
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "TAMELA-V1",
+                "identificationCode": {
+                  "Column": "DI_ObjAssess_Id_Subclaim1Category"
+                },
+                "namespace": "uri://newmexico.gov/TAMELA/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_ObjAssess_PL_Subclaim1Category"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                  "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                  "result": {
+                    "Column": "Subclaim1Category"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "TAMELA-V1",
+                "identificationCode": {
+                  "Column": "DI_ObjAssess_Id_Subclaim2Category"
+                },
+                "namespace": "uri://newmexico.gov/TAMELA/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_ObjAssess_PL_Subclaim2Category"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                  "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                  "result": {
+                    "Column": "Subclaim2Category"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "TAMELA-V1",
+                "identificationCode": {
+                  "Column": "DI_ObjAssess_Id_Subclaim3Category"
+                },
+                "namespace": "uri://newmexico.gov/TAMELA/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_ObjAssess_PL_Subclaim3Category"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                  "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                  "result": {
+                    "Column": "Subclaim3Category"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "TAMELA-V1",
+                "identificationCode": {
+                  "Column": "DI_ObjAssess_Id_Subclaim4Category"
+                },
+                "namespace": "uri://newmexico.gov/TAMELA/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_ObjAssess_PL_Subclaim4Category"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                  "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                  "result": {
+                    "Column": "Subclaim4Category"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "TAMELA-V1",
+                "identificationCode": {
+                  "Column": "DI_ObjAssess_Id_Subclaim5Category"
+                },
+                "namespace": "uri://newmexico.gov/TAMELA/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_ObjAssess_PL_Subclaim5Category"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                  "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                  "result": {
+                    "Column": "Subclaim5Category"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "Bootstraps": [
+      {
+        "Name": "TAMELA_ARMD",
+        "ResourcePath": "/ed-fi/assessmentReportingMethodDescriptors",
+        "Data": [
+          {
+            "codeValue": "Reading Scale Score",
+            "description": "Reading Scale Score",
+            "namespace": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Reading Scale Score"
+          },
+          {
+            "codeValue": "Reading CSEM",
+            "description": "Reading CSEM",
+            "namespace": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Reading CSEM"
+          },
+          {
+            "codeValue": "Writing Scale Score",
+            "description": "Writing Scale Score",
+            "namespace": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Writing Scale Score"
+          },
+          {
+            "codeValue": "Writing CSEM",
+            "description": "Writing CSEM",
+            "namespace": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Writing CSEM"
+          },
+          {
+            "codeValue": "CSEM Probable Range",
+            "description": "CSEM Probable Range",
+            "namespace": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "CSEM Probable Range"
+          },
+          {
+            "codeValue": "Total Test Items",
+            "description": "Total Test Items",
+            "namespace": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Total Test Items"
+          },
+          {
+            "codeValue": "Total Test Items Attempted",
+            "description": "Total Test Items Attempted",
+            "namespace": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Total Test Items Attempted"
+          },
+          {
+            "codeValue": "Unit1 Total Test Items",
+            "description": "Unit1 Total Test Items",
+            "namespace": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Unit1 Total Test Items"
+          },
+          {
+            "codeValue": "Unit1 Number Of Attempted Items",
+            "description": "CSEM Probable Range",
+            "namespace": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "CSEM Probable Range"
+          },
+          {
+            "codeValue": "Unit2 Total Test Items",
+            "description": "Unit2 Total Test Items",
+            "namespace": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Unit2 Total Test Items"
+          },
+          {
+            "codeValue": "Unit2 Number Of Attempted Items",
+            "description": "Unit2 Number Of Attempted Items",
+            "namespace": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Unit2 Number Of Attempted Items"
+          },
+          {
+            "codeValue": "Unit3 Total Test Items",
+            "description": "Unit3 Total Test Items",
+            "namespace": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Unit3 Total Test Items"
+          },
+          {
+            "codeValue": "Unit3 Number Of Attempted Items",
+            "description": "Unit3 Number Of Attempted Items",
+            "namespace": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Unit3 Number Of Attempted Items"
+          },
+          {
+            "codeValue": "Subject",
+            "description": "Subject",
+            "namespace": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Subject"
+          },
+          {
+            "codeValue": "Test Code",
+            "description": "Test Code",
+            "namespace": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Test Code"
+          },
+          {
+            "codeValue": "Period",
+            "description": "Period",
+            "namespace": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Period"
+          }
+        ]
+      },
+      {
+        "Name": "TAMELA_PLD",
+        "ResourcePath": "/ed-fi/performanceLevelDescriptors",
+        "Data": [
+          {
+            "codeValue": "Did not meet expectations",
+            "description": "Did not meet expectations",
+            "namespace": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor",
+            "shortDescription": "Did not meet expectations"
+          },
+          {
+            "codeValue": "Partially met expectations",
+            "description": "Partially met expectations",
+            "namespace": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor",
+            "shortDescription": "Partially met expectations"
+          },
+          {
+            "codeValue": "Approached expectations",
+            "description": "Approached expectations",
+            "namespace": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor",
+            "shortDescription": "Approached expectations"
+          },
+          {
+            "codeValue": "Met expectations",
+            "description": "Met expectations",
+            "namespace": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor",
+            "shortDescription": "Met expectations"
+          },
+          {
+            "codeValue": "Exceeded expectations",
+            "description": "Exceeded expectations",
+            "namespace": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor",
+            "shortDescription": "Exceeded expectations"
+          },
+          {
+            "codeValue": "Meets-Exceeds Students at level 4",
+            "description": "Meets/Exceeds Students at level 4",
+            "namespace": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor",
+            "shortDescription": "Meets/Exceeds Students at level 4"
+          },
+          {
+            "codeValue": "Nearly Students at level 3",
+            "description": "Nearly Students at level 3",
+            "namespace": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor",
+            "shortDescription": "Nearly Students at level 3"
+          },
+          {
+            "codeValue": "Below Students at level 3",
+            "description": "Below Students at level 3",
+            "namespace": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor",
+            "shortDescription": "Below Students at level 3"
+          }
+        ]
+      },
+      {
+        "Name": "TAMELA_Assessment",
+        "ResourcePath": "/ed-fi/assessments",
+        "Data": {
+          "assessmentIdentifier": "TAMELA-V1",
+          "assessmentTitle": "Transition Assessment of Math and English Language Arts (TAMELA)",
+          "namespace": "uri://newmexico.gov/TAMELA/Assessment",
+          "assessedGradeLevels": [
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Kindergarten"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#First grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Second grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fourth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fifth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Sixth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Seventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eighth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Ninth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Tenth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#No grade level"
+            }
+          ],
+          "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#Other",
+          "academicSubjects": [
+            {
+              "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts"
+            },
+            {
+              "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics"
+            }
+          ],
+          "scores": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#CSEM Probable Range",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Reading Scale Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Reading CSEM",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Writing Scale Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Writing CSEM",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Total Test Items",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Total Test Items Attempted",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Unit1 Total Test Items",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Unit1 Number Of Attempted Items",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Unit2 Total Test Items",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Unit2 Number Of Attempted Items",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Unit3 Total Test Items",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Unit3 Number Of Attempted Items",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Subject",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Test Code",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://newmexico.gov/TAMELA/AssessmentReportingMethodDescriptor#Period",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            }
+          ],
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+              "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Did not meet expectations",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+              "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Partially met expectations",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+              "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Approached expectations",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+              "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Met expectations",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+              "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Exceeded expectations",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "TAMELA_OA",
+        "ResourcePath": "/ed-fi/objectiveAssessments",
+        "Data": [
+          {
+            "identificationCode": "TAMELA-V1-ELA-READING-RL",
+            "assessmentReference": {
+              "assessmentIdentifier": "TAMELA-V1",
+              "namespace": "uri://newmexico.gov/TAMELA/Assessment"
+            },
+            "description": "Literary Text (Reading-RL)",
+            "scores": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Meets-Exceeds Students at level 4",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Nearly Students at level 3",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Below Students at level 3",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "TAMELA-V1-ELA-READING-R",
+            "assessmentReference": {
+              "assessmentIdentifier": "TAMELA-V1",
+              "namespace": "uri://newmexico.gov/TAMELA/Assessment"
+            },
+            "description": "Informational Text(Reading-R)",
+            "scores": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Meets-Exceeds Students at level 4",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Nearly Students at level 3",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Below Students at level 3",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "TAMELA-V1-ELA-READING-RV",
+            "assessmentReference": {
+              "assessmentIdentifier": "TAMELA-V1",
+              "namespace": "uri://newmexico.gov/TAMELA/Assessment"
+            },
+            "description": "Vocabulary(Reading-RV)",
+            "scores": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Meets-Exceeds Students at level 4",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Nearly Students at level 3",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Below Students at level 3",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "TAMELA-V1-ELA-WRITING-WE",
+            "assessmentReference": {
+              "assessmentIdentifier": "TAMELA-V1",
+              "namespace": "uri://newmexico.gov/TAMELA/Assessment"
+            },
+            "description": "Writing Expression(Writing-WE)",
+            "scores": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Meets-Exceeds Students at level 4",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Nearly Students at level 3",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Below Students at level 3",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "TAMELA-V1-ELA-WRITING-WKL",
+            "assessmentReference": {
+              "assessmentIdentifier": "TAMELA-V1",
+              "namespace": "uri://newmexico.gov/TAMELA/Assessment"
+            },
+            "description": "Knowledge and use of Language Conventions(Writing-WKL)",
+            "scores": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Meets-Exceeds Students at level 4",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Nearly Students at level 3",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Below Students at level 3",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "TAMELA-V1-MATH-MAJOR-CONTENT",
+            "assessmentReference": {
+              "assessmentIdentifier": "TAMELA-V1",
+              "namespace": "uri://newmexico.gov/TAMELA/Assessment"
+            },
+            "description": "Major Content",
+            "scores": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Meets-Exceeds Students at level 4",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Nearly Students at level 3",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Below Students at level 3",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "TAMELA-V1-MATH-EXP-MATHEM-REASONING",
+            "assessmentReference": {
+              "assessmentIdentifier": "TAMELA-V1",
+              "namespace": "uri://newmexico.gov/TAMELA/Assessment"
+            },
+            "description": "Expressing Mathematical Reasoning",
+            "scores": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Meets-Exceeds Students at level 4",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Nearly Students at level 3",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Below Students at level 3",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "TAMELA-V1-MATH-MODELING-APPLICATION",
+            "assessmentReference": {
+              "assessmentIdentifier": "TAMELA-V1",
+              "namespace": "uri://newmexico.gov/TAMELA/Assessment"
+            },
+            "description": "Modeling & Application",
+            "scores": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Meets-Exceeds Students at level 4",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Nearly Students at level 3",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Below Students at level 3",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "TAMELA-V1-MATH-ADDITIONAL-SUPP-CONTENT",
+            "assessmentReference": {
+              "assessmentIdentifier": "TAMELA-V1",
+              "namespace": "uri://newmexico.gov/TAMELA/Assessment"
+            },
+            "description": "Additional & Supporting Content",
+            "scores": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Meets-Exceeds Students at level 4",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Nearly Students at level 3",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                "performanceLevelDescriptor": "uri://newmexico.gov/TAMELA/PerformanceLevelDescriptor#Below Students at level 3",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Lookups": []
+  },
+  "submitter": {
+    "name": "Emilio Baez",
+    "organization": "Developers.Net",
+    "email": "emilio@developers.net"
+  }
 }

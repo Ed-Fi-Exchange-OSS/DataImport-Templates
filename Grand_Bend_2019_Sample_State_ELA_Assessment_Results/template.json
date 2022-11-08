@@ -1,13 +1,373 @@
 {
-    "id": 2,
-    "title": "Grand Bend 2019 Sample State ELA Assessment Results",
-    "description": "This is a sample Data Import template for the Ed-Fi Technology Suite 2.x with sample assessment and objective assessments",
-    "apiVersion": "2.5+",
-    "dateTimePublished": "2019-09-26T16:24:12.2273224",
-    "template": "{\"Maps\":[{\"Name\":\"Grand Bend 2019 Sample State ELA Assessment Results\",\"ResourcePath\":\"/studentAssessments\",\"ColumnHeaders\":[\"YEAR\",\"DISTRICT_NO\",\"DISTRICT_NAME\",\"SCHOOL_ID\",\"SCHOOL_NAME\",\"STUDENT_ID\",\"GRADE_LEVEL\",\"OVERALL_SCORE\",\"READING_SCORE\",\"WRITING_SCORE\",\"ASSESS_UNIQUE_ID\"],\"Map\":{\"assessmentReference\":{\"identifier\":\"GBES-2019-STATE-ASSESSMENT\",\"namespace\":\"http://ed-fi.org/Assessment/Assessment.xml\"},\"studentReference\":{\"studentUniqueId\":{\"Column\":\"STUDENT_ID\"}},\"administrationDate\":\"09-01-2019\",\"identifier\":\"GBES-2019-STATE-ASSESSMENT\",\"scoreResults\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"OVERALL_SCORE\"}}],\"studentObjectiveAssessments\":[{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"GBES-2019-STATE-ASSESSMENT\",\"identificationCode\":\"GBES-2019-STATE-ASSESSMENT-READING\",\"namespace\":\"http://ed-fi.org/Assessment/Assessment.xml\"},\"scoreResults\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"READING_SCORE\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"GBES-2019-STATE-ASSESSMENT\",\"identificationCode\":\"GBES-2019-STATE-ASSESSMENT-MATHEMATICS\",\"namespace\":\"http://ed-fi.org/Assessment/Assessment.xml\"},\"scoreResults\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"WRITING_SCORE\"}}]}]}}],\"Bootstraps\":[{\"Name\":\"Grand Bend 2019 State Assessment\",\"ResourcePath\":\"/assessments\",\"Data\":{\"educationOrganizationReference\":{\"educationOrganizationId\":255901},\"identifier\":\"GBES-2019-STATE-ASSESSMENT\",\"title\":\"State Assessment Results for Grand Bend 2019\",\"version\":2019,\"namespace\":\"http://ed-fi.org/Assessment/Assessment.xml\",\"assessedGradeLevels\":[{\"gradeLevelDescriptor\":\"First grade\"},{\"gradeLevelDescriptor\":\"Second grade\"},{\"gradeLevelDescriptor\":\"Third grade\"},{\"gradeLevelDescriptor\":\"Fourth grade\"},{\"gradeLevelDescriptor\":\"Fifth grade\"},{\"gradeLevelDescriptor\":\"Sixth grade\"},{\"gradeLevelDescriptor\":\"Seventh grade\"},{\"gradeLevelDescriptor\":\"Eighth grade\"},{\"gradeLevelDescriptor\":\"Ninth grade\"},{\"gradeLevelDescriptor\":\"Tenth grade\"},{\"gradeLevelDescriptor\":\"Eleventh grade\"},{\"gradeLevelDescriptor\":\"Twelfth grade\"},{\"gradeLevelDescriptor\":\"Ungraded\"}],\"academicSubjects\":[{\"academicSubjectDescriptor\":\"Reading\"},{\"academicSubjectDescriptor\":\"Mathematics\"}]}},{\"Name\":\"Grand Bend 2019 State Objective Assessments\",\"ResourcePath\":\"/objectiveAssessments\",\"Data\":[{\"identificationCode\":\"GBES-2019-STATE-ASSESSMENT-READING\",\"assessmentReference\":{\"identifier\":\"GBES-2019-STATE-ASSESSMENT\",\"namespace\":\"http://ed-fi.org/Assessment/Assessment.xml\"},\"description\":\"State Assessment Results for Grand Bend 2019 - Reading Score\"},{\"identificationCode\":\"GBES-2019-STATE-ASSESSMENT-MATHEMATICS\",\"assessmentReference\":{\"identifier\":\"GBES-2019-STATE-ASSESSMENT\",\"namespace\":\"http://ed-fi.org/Assessment/Assessment.xml\"},\"description\":\"State Assessment Results for Grand Bend 2019 - Mathematics Score\"}]},{\"Name\":\"Grand Bend 2019 Student School Associations\",\"ResourcePath\":\"/studentSchoolAssociations\",\"Data\":[{\"schoolReference\":{\"schoolId\":255901107},\"studentReference\":{\"studentUniqueId\":\"604825\"},\"entryDate\":\"2010-08-23\",\"entryGradeLevelDescriptor\":\"Fourth grade\"},{\"schoolReference\":{\"schoolId\":255901107},\"studentReference\":{\"studentUniqueId\":\"604826\"},\"entryDate\":\"2010-08-23\",\"entryGradeLevelDescriptor\":\"Fourth grade\"},{\"schoolReference\":{\"schoolId\":255901107},\"studentReference\":{\"studentUniqueId\":\"604835\"},\"entryDate\":\"2010-08-23\",\"entryGradeLevelDescriptor\":\"Fourth grade\"},{\"schoolReference\":{\"schoolId\":255901107},\"studentReference\":{\"studentUniqueId\":\"604864\"},\"entryDate\":\"2010-08-23\",\"entryGradeLevelDescriptor\":\"Fourth grade\"},{\"schoolReference\":{\"schoolId\":255901107},\"studentReference\":{\"studentUniqueId\":\"604870\"},\"entryDate\":\"2010-08-23\",\"entryGradeLevelDescriptor\":\"Fourth grade\"},{\"schoolReference\":{\"schoolId\":255901107},\"studentReference\":{\"studentUniqueId\":\"604888\"},\"entryDate\":\"2010-08-23\",\"entryGradeLevelDescriptor\":\"Fourth grade\"},{\"schoolReference\":{\"schoolId\":255901107},\"studentReference\":{\"studentUniqueId\":\"604890\"},\"entryDate\":\"2010-08-23\",\"entryGradeLevelDescriptor\":\"Fourth grade\"},{\"schoolReference\":{\"schoolId\":255901107},\"studentReference\":{\"studentUniqueId\":\"604904\"},\"entryDate\":\"2010-08-23\",\"entryGradeLevelDescriptor\":\"Fourth grade\"},{\"schoolReference\":{\"schoolId\":255901107},\"studentReference\":{\"studentUniqueId\":\"604902\"},\"entryDate\":\"2010-08-23\",\"entryGradeLevelDescriptor\":\"Fourth grade\"},{\"schoolReference\":{\"schoolId\":255901107},\"studentReference\":{\"studentUniqueId\":\"604876\"},\"entryDate\":\"2010-08-23\",\"entryGradeLevelDescriptor\":\"Fourth grade\"}]},{\"Name\":\"Grand Bend 2019 Students\",\"ResourcePath\":\"/students\",\"Data\":[{\"studentUniqueId\":\"604825\",\"birthDate\":\"2005-08-15\",\"firstName\":\"Dale\",\"lastSurname\":\"Jimenez\",\"personalTitlePrefix\":\"Mr\",\"sexType\":\"Male\"},{\"studentUniqueId\":\"604826\",\"birthDate\":\"2005-05-05\",\"firstName\":\"Jeremy\",\"lastSurname\":\"Coleman\",\"middleName\":\"Alexander\",\"personalTitlePrefix\":\"Mr\",\"sexType\":\"Male\"},{\"studentUniqueId\":\"604835\",\"birthDate\":\"2005-09-29\",\"firstName\":\"Diana\",\"lastSurname\":\"Holt\",\"middleName\":\"Emily\",\"personalTitlePrefix\":\"Ms\",\"sexType\":\"Female\"},{\"studentUniqueId\":\"604864\",\"birthDate\":\"2005-09-12\",\"firstName\":\"Justin\",\"lastSurname\":\"Zimmerman\",\"personalTitlePrefix\":\"Mr\",\"sexType\":\"Male\"},{\"studentUniqueId\":\"604870\",\"birthDate\":\"2005-12-30\",\"firstName\":\"Gwendolyn\",\"lastSurname\":\"Hickman\",\"personalTitlePrefix\":\"Mrs\",\"sexType\":\"Female\"},{\"studentUniqueId\":\"604888\",\"birthDate\":\"2005-12-16\",\"firstName\":\"Gilbert\",\"generationCodeSuffix\":\"Jr\",\"lastSurname\":\"Fritz\",\"middleName\":\"Jesse\",\"personalTitlePrefix\":\"Mr\",\"sexType\":\"Male\"},{\"studentUniqueId\":\"604890\",\"birthDate\":\"2005-03-07\",\"firstName\":\"Jeanine\",\"lastSurname\":\"Werner\",\"middleName\":\"Natasha\",\"personalTitlePrefix\":\"Ms\",\"sexType\":\"Male\"},{\"studentUniqueId\":\"604904\",\"birthDate\":\"2004-12-22\",\"firstName\":\"Cody\",\"lastSurname\":\"Stafford\",\"personalTitlePrefix\":\"Mr\",\"sexType\":\"Male\"},{\"studentUniqueId\":\"604902\",\"birthDate\":\"2003-05-25\",\"firstName\":\"Brandon\",\"lastSurname\":\"Stout\",\"personalTitlePrefix\":\"Mr\",\"sexType\":\"Male\"},{\"studentUniqueId\":\"604876\",\"birthDate\":\"2002-10-09\",\"firstName\":\"Danielle\",\"lastSurname\":\"Stewart\",\"personalTitlePrefix\":\"Mrs\",\"sexType\":\"Female\"}]}],\"Lookups\":[]}",
-    "submitter": {
-        "name": "Template Sharing Service",
-        "organization": "Ed-Fi Alliance",
-        "email": "info@ed-fi.org"
-    }
+  "id": 2,
+  "title": "Grand Bend 2019 Sample State ELA Assessment Results",
+  "description": "This is a sample Data Import template for the Ed-Fi Technology Suite 2.x with sample assessment and objective assessments",
+  "apiVersion": "2.5+",
+  "dateTimePublished": "2019-09-26T16:24:12.2273224",
+  "template": {
+    "Maps": [
+      {
+        "Name": "Grand Bend 2019 Sample State ELA Assessment Results",
+        "ResourcePath": "/studentAssessments",
+        "ColumnHeaders": [
+          "YEAR",
+          "DISTRICT_NO",
+          "DISTRICT_NAME",
+          "SCHOOL_ID",
+          "SCHOOL_NAME",
+          "STUDENT_ID",
+          "GRADE_LEVEL",
+          "OVERALL_SCORE",
+          "READING_SCORE",
+          "WRITING_SCORE",
+          "ASSESS_UNIQUE_ID"
+        ],
+        "Map": {
+          "assessmentReference": {
+            "identifier": "GBES-2019-STATE-ASSESSMENT",
+            "namespace": "http://ed-fi.org/Assessment/Assessment.xml"
+          },
+          "studentReference": {
+            "studentUniqueId": {
+              "Column": "STUDENT_ID"
+            }
+          },
+          "administrationDate": "09-01-2019",
+          "identifier": "GBES-2019-STATE-ASSESSMENT",
+          "scoreResults": [
+            {
+              "assessmentReportingMethodType": "Scale score",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "OVERALL_SCORE"
+              }
+            }
+          ],
+          "studentObjectiveAssessments": [
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "GBES-2019-STATE-ASSESSMENT",
+                "identificationCode": "GBES-2019-STATE-ASSESSMENT-READING",
+                "namespace": "http://ed-fi.org/Assessment/Assessment.xml"
+              },
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Scale score",
+                  "resultDatatypeType": "Integer",
+                  "result": {
+                    "Column": "READING_SCORE"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "GBES-2019-STATE-ASSESSMENT",
+                "identificationCode": "GBES-2019-STATE-ASSESSMENT-MATHEMATICS",
+                "namespace": "http://ed-fi.org/Assessment/Assessment.xml"
+              },
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Scale score",
+                  "resultDatatypeType": "Integer",
+                  "result": {
+                    "Column": "WRITING_SCORE"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "Bootstraps": [
+      {
+        "Name": "Grand Bend 2019 State Assessment",
+        "ResourcePath": "/assessments",
+        "Data": {
+          "educationOrganizationReference": {
+            "educationOrganizationId": 255901
+          },
+          "identifier": "GBES-2019-STATE-ASSESSMENT",
+          "title": "State Assessment Results for Grand Bend 2019",
+          "version": 2019,
+          "namespace": "http://ed-fi.org/Assessment/Assessment.xml",
+          "assessedGradeLevels": [
+            {
+              "gradeLevelDescriptor": "First grade"
+            },
+            {
+              "gradeLevelDescriptor": "Second grade"
+            },
+            {
+              "gradeLevelDescriptor": "Third grade"
+            },
+            {
+              "gradeLevelDescriptor": "Fourth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Fifth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Sixth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Seventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "Eighth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Ninth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Tenth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Eleventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "Twelfth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Ungraded"
+            }
+          ],
+          "academicSubjects": [
+            {
+              "academicSubjectDescriptor": "Reading"
+            },
+            {
+              "academicSubjectDescriptor": "Mathematics"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "Grand Bend 2019 State Objective Assessments",
+        "ResourcePath": "/objectiveAssessments",
+        "Data": [
+          {
+            "identificationCode": "GBES-2019-STATE-ASSESSMENT-READING",
+            "assessmentReference": {
+              "identifier": "GBES-2019-STATE-ASSESSMENT",
+              "namespace": "http://ed-fi.org/Assessment/Assessment.xml"
+            },
+            "description": "State Assessment Results for Grand Bend 2019 - Reading Score"
+          },
+          {
+            "identificationCode": "GBES-2019-STATE-ASSESSMENT-MATHEMATICS",
+            "assessmentReference": {
+              "identifier": "GBES-2019-STATE-ASSESSMENT",
+              "namespace": "http://ed-fi.org/Assessment/Assessment.xml"
+            },
+            "description": "State Assessment Results for Grand Bend 2019 - Mathematics Score"
+          }
+        ]
+      },
+      {
+        "Name": "Grand Bend 2019 Student School Associations",
+        "ResourcePath": "/studentSchoolAssociations",
+        "Data": [
+          {
+            "schoolReference": {
+              "schoolId": 255901107
+            },
+            "studentReference": {
+              "studentUniqueId": "604825"
+            },
+            "entryDate": "2010-08-23",
+            "entryGradeLevelDescriptor": "Fourth grade"
+          },
+          {
+            "schoolReference": {
+              "schoolId": 255901107
+            },
+            "studentReference": {
+              "studentUniqueId": "604826"
+            },
+            "entryDate": "2010-08-23",
+            "entryGradeLevelDescriptor": "Fourth grade"
+          },
+          {
+            "schoolReference": {
+              "schoolId": 255901107
+            },
+            "studentReference": {
+              "studentUniqueId": "604835"
+            },
+            "entryDate": "2010-08-23",
+            "entryGradeLevelDescriptor": "Fourth grade"
+          },
+          {
+            "schoolReference": {
+              "schoolId": 255901107
+            },
+            "studentReference": {
+              "studentUniqueId": "604864"
+            },
+            "entryDate": "2010-08-23",
+            "entryGradeLevelDescriptor": "Fourth grade"
+          },
+          {
+            "schoolReference": {
+              "schoolId": 255901107
+            },
+            "studentReference": {
+              "studentUniqueId": "604870"
+            },
+            "entryDate": "2010-08-23",
+            "entryGradeLevelDescriptor": "Fourth grade"
+          },
+          {
+            "schoolReference": {
+              "schoolId": 255901107
+            },
+            "studentReference": {
+              "studentUniqueId": "604888"
+            },
+            "entryDate": "2010-08-23",
+            "entryGradeLevelDescriptor": "Fourth grade"
+          },
+          {
+            "schoolReference": {
+              "schoolId": 255901107
+            },
+            "studentReference": {
+              "studentUniqueId": "604890"
+            },
+            "entryDate": "2010-08-23",
+            "entryGradeLevelDescriptor": "Fourth grade"
+          },
+          {
+            "schoolReference": {
+              "schoolId": 255901107
+            },
+            "studentReference": {
+              "studentUniqueId": "604904"
+            },
+            "entryDate": "2010-08-23",
+            "entryGradeLevelDescriptor": "Fourth grade"
+          },
+          {
+            "schoolReference": {
+              "schoolId": 255901107
+            },
+            "studentReference": {
+              "studentUniqueId": "604902"
+            },
+            "entryDate": "2010-08-23",
+            "entryGradeLevelDescriptor": "Fourth grade"
+          },
+          {
+            "schoolReference": {
+              "schoolId": 255901107
+            },
+            "studentReference": {
+              "studentUniqueId": "604876"
+            },
+            "entryDate": "2010-08-23",
+            "entryGradeLevelDescriptor": "Fourth grade"
+          }
+        ]
+      },
+      {
+        "Name": "Grand Bend 2019 Students",
+        "ResourcePath": "/students",
+        "Data": [
+          {
+            "studentUniqueId": "604825",
+            "birthDate": "2005-08-15",
+            "firstName": "Dale",
+            "lastSurname": "Jimenez",
+            "personalTitlePrefix": "Mr",
+            "sexType": "Male"
+          },
+          {
+            "studentUniqueId": "604826",
+            "birthDate": "2005-05-05",
+            "firstName": "Jeremy",
+            "lastSurname": "Coleman",
+            "middleName": "Alexander",
+            "personalTitlePrefix": "Mr",
+            "sexType": "Male"
+          },
+          {
+            "studentUniqueId": "604835",
+            "birthDate": "2005-09-29",
+            "firstName": "Diana",
+            "lastSurname": "Holt",
+            "middleName": "Emily",
+            "personalTitlePrefix": "Ms",
+            "sexType": "Female"
+          },
+          {
+            "studentUniqueId": "604864",
+            "birthDate": "2005-09-12",
+            "firstName": "Justin",
+            "lastSurname": "Zimmerman",
+            "personalTitlePrefix": "Mr",
+            "sexType": "Male"
+          },
+          {
+            "studentUniqueId": "604870",
+            "birthDate": "2005-12-30",
+            "firstName": "Gwendolyn",
+            "lastSurname": "Hickman",
+            "personalTitlePrefix": "Mrs",
+            "sexType": "Female"
+          },
+          {
+            "studentUniqueId": "604888",
+            "birthDate": "2005-12-16",
+            "firstName": "Gilbert",
+            "generationCodeSuffix": "Jr",
+            "lastSurname": "Fritz",
+            "middleName": "Jesse",
+            "personalTitlePrefix": "Mr",
+            "sexType": "Male"
+          },
+          {
+            "studentUniqueId": "604890",
+            "birthDate": "2005-03-07",
+            "firstName": "Jeanine",
+            "lastSurname": "Werner",
+            "middleName": "Natasha",
+            "personalTitlePrefix": "Ms",
+            "sexType": "Male"
+          },
+          {
+            "studentUniqueId": "604904",
+            "birthDate": "2004-12-22",
+            "firstName": "Cody",
+            "lastSurname": "Stafford",
+            "personalTitlePrefix": "Mr",
+            "sexType": "Male"
+          },
+          {
+            "studentUniqueId": "604902",
+            "birthDate": "2003-05-25",
+            "firstName": "Brandon",
+            "lastSurname": "Stout",
+            "personalTitlePrefix": "Mr",
+            "sexType": "Male"
+          },
+          {
+            "studentUniqueId": "604876",
+            "birthDate": "2002-10-09",
+            "firstName": "Danielle",
+            "lastSurname": "Stewart",
+            "personalTitlePrefix": "Mrs",
+            "sexType": "Female"
+          }
+        ]
+      }
+    ],
+    "Lookups": []
+  },
+  "submitter": {
+    "name": "Template Sharing Service",
+    "organization": "Ed-Fi Alliance",
+    "email": "info@ed-fi.org"
+  }
 }

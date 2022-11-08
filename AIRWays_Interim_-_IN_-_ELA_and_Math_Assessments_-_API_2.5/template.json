@@ -1,13 +1,1315 @@
 {
-    "id": 28,
-    "title": "AIRWays Interim - IN - ELA and Math Assessments - API 2.5",
-    "description": "This template includes the Indiana AIRWays Interim ELA and Math Assessments",
-    "apiVersion": "2.5+",
-    "dateTimePublished": "2020-06-09T20:58:55.569722",
-    "template": "{\"Maps\":[{\"Name\":\"AIRWays-ELA_DataMap\",\"ResourcePath\":\"/studentAssessments\",\"ColumnHeaders\":[\"DI_studentUniqueId\",\"DI_SchoolYear\",\"DI_ScaleScore\",\"DI_StdError\",\"DI_PerfLevel\",\"DI_TestId\",\"DI_relativePL_Language  PerformanceRelativetoProf\",\"DI_relativePL_Listening Comprehension PerformanceRelativetoProf\",\"DI_relativePL_Reading Informational Text PerformanceRelativetoProf\",\"DI_relativePL_Reading Literature PerformanceRelativetoProf\",\"DI_relativePL_Writing PerformanceRelativetoProf\",\"Student ID\",\"Student DOB\",\"Enrolled District\",\"Enrolled School\",\"Test Reason\",\"Test OppNumber\",\"Date Taken\",\"Interim: ELA Grade 3 ScaleScore\",\"Interim: ELA Grade 3 Standard Error\",\"Interim: ELA Grade 3 PerformanceLevel\",\"Language  PerformanceRelativetoProf\",\"Listening Comprehension PerformanceRelativetoProf\",\"Reading Informational Text PerformanceRelativetoProf\",\"Reading Literature PerformanceRelativetoProf\",\"Writing PerformanceRelativetoProf\",\"Informative-Explanatory: Conventions of Standard English\",\"Informative-Explanatory: Evidence and Elaboration\",\"Informative-Explanatory: Purpose, Focus, and Organization\",\"Opinion: Conventions of Standard English\",\"Opinion: Evidence and Elaboration\",\"Opinion: Purpose, Focus, and Organization\"],\"Map\":{\"assessmentReference\":{\"identifier\":\"AIRWAYS-INTERIM-ELA-V1\",\"namespace\":\"http://air.org/Assessment\"},\"studentReference\":{\"studentUniqueId\":{\"Column\":\"DI_studentUniqueId\"}},\"administrationDate\":{\"Column\":\"Date Taken\"},\"identifier\":{\"Column\":\"DI_TestId\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Proficiency level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_PerfLevel\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"DI_ScaleScore\"}},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"DI_StdError\"}}],\"studentObjectiveAssessments\":[{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"AIRWAYS-INTERIM-ELA-V1\",\"identificationCode\":\"AIRWAYS-INTERIM-ELA-V1-LANGUAGE\",\"namespace\":\"http://air.org/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":{\"Column\":\"DI_relativePL_Language  PerformanceRelativetoProf\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"Language  PerformanceRelativetoProf\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"AIRWAYS-INTERIM-ELA-V1\",\"identificationCode\":\"AIRWAYS-INTERIM-ELA-V1-LISTEN-COMP\",\"namespace\":\"http://air.org/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":{\"Column\":\"DI_relativePL_Listening Comprehension PerformanceRelativetoProf\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"Listening Comprehension PerformanceRelativetoProf\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"AIRWAYS-INTERIM-ELA-V1\",\"identificationCode\":\"AIRWAYS-INTERIM-ELA-V1-READ-INF-TEXT\",\"namespace\":\"http://air.org/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":{\"Column\":\"DI_relativePL_Reading Informational Text PerformanceRelativetoProf\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"Reading Informational Text PerformanceRelativetoProf\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"AIRWAYS-INTERIM-ELA-V1\",\"identificationCode\":\"AIRWAYS-INTERIM-ELA-V1-READ-LIT\",\"namespace\":\"http://air.org/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":{\"Column\":\"DI_relativePL_Reading Literature PerformanceRelativetoProf\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"Reading Literature PerformanceRelativetoProf\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"AIRWAYS-INTERIM-ELA-V1\",\"identificationCode\":\"AIRWAYS-INTERIM-ELA-V1-WRITING\",\"namespace\":\"http://air.org/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":{\"Column\":\"DI_relativePL_Writing PerformanceRelativetoProf\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"Writing PerformanceRelativetoProf\"}}]}]}},{\"Name\":\"AIRWays-Math_DataMap\",\"ResourcePath\":\"/studentAssessments\",\"ColumnHeaders\":[\"DI_studentUniqueId\",\"DI_SchoolYear\",\"DI_ScaleScore\",\"DI_StdError\",\"DI_PerfLevel\",\"DI_TestId\",\"DI_relativePL_Geometry PerformanceRelativetoProf\",\"DI_relativePL_Measurement and Data PerformanceRelativetoProf\",\"DI_relativePL_Number and Operations - Fractions PerformanceRelativetoProf\",\"DI_relativePL_Number and Operations in Base 10 PerformanceRelativetoProf\",\"DI_relativePL_Operations and Algebraic Thinking PerformanceRelativetoProf\",\"Student ID\",\"Student DOB\",\"Enrolled District\",\"Enrolled School\",\"Test Reason\",\"Test OppNumber\",\"Date Taken\",\"Interim: Math Grade 3 ScaleScore\",\"Interim: Math Grade 3 Standard Error\",\"Interim: Math Grade 3 PerformanceLevel\",\"Geometry PerformanceRelativetoProf\",\"Measurement and Data PerformanceRelativetoProf\",\"Number and Operations - Fractions PerformanceRelativetoProf\",\"Number and Operations in Base 10 PerformanceRelativetoProf\",\"Operations and Algebraic Thinking PerformanceRelativetoProf\",\"Expressions and Equations PerformanceRelativetoProf\",\"Ratios and Proportional Relationships PerformanceRelativetoProf\",\"Statistics and Probability PerformanceRelativetoProf\",\"The Number System  PerformanceRelativetoProf\",\"Functions PerformanceRelativetoProf\",\"DI_relativePL_Expressions and Equations PerformanceRelativetoProf\",\"DI_relativePL_Ratios and Proportional Relationships PerformanceRelativetoProf\",\"DI_relativePL_Statistics and Probability PerformanceRelativetoProf\",\"DI_relativePL_The Number System  PerformanceRelativetoProf\",\"DI_relativePL_Functions PerformanceRelativetoProf\",\"DI_relativePL_rawValue_Expressions and Equations PerformanceRelativetoProf\",\"DI_relativePL_rawValue_Ratios and Proportional Relationships PerformanceRelativetoProf\",\"DI_relativePL_rawValue_Statistics and Probability PerformanceRelativetoProf\",\"DI_relativePL_rawValue_The Number System  PerformanceRelativetoProf\",\"DI_relativePL_rawValue_Functions PerformanceRelativetoProf\",\"DI_relativePL_rawValue_Geometry PerformanceRelativetoProf\",\"DI_relativePL_rawValue_Measurement and Data PerformanceRelativetoProf\",\"DI_relativePL_rawValue_Number and Operations - Fractions PerformanceRelativetoProf\",\"DI_relativePL_rawValue_Number and Operations in Base 10 PerformanceRelativetoProf\",\"DI_relativePL_rawValue_Operations and Algebraic Thinking PerformanceRelativetoProf\"],\"Map\":{\"assessmentReference\":{\"identifier\":\"AIRWAYS-INTERIM-MATH-V1\",\"namespace\":\"http://air.org/Assessment\"},\"studentReference\":{\"studentUniqueId\":{\"Column\":\"DI_studentUniqueId\"}},\"administrationDate\":{\"Column\":\"Date Taken\"},\"identifier\":{\"Column\":\"DI_TestId\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Proficiency level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_PerfLevel\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"DI_ScaleScore\"}},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"DI_StdError\"}}],\"studentObjectiveAssessments\":[{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"AIRWAYS-INTERIM-MATH-V1\",\"identificationCode\":\"AIRWAYS-INTERIM-MATH-V1-GEO\",\"namespace\":\"http://air.org/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":{\"Column\":\"DI_relativePL_Geometry PerformanceRelativetoProf\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"DI_relativePL_rawValue_Geometry PerformanceRelativetoProf\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"AIRWAYS-INTERIM-MATH-V1\",\"identificationCode\":\"AIRWAYS-INTERIM-MATH-V1-MEA-DATA\",\"namespace\":\"http://air.org/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":{\"Column\":\"DI_relativePL_Measurement and Data PerformanceRelativetoProf\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"DI_relativePL_rawValue_Measurement and Data PerformanceRelativetoProf\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"AIRWAYS-INTERIM-MATH-V1\",\"identificationCode\":\"AIRWAYS-INTERIM-MATH-V1-NUMOP-FRACT\",\"namespace\":\"http://air.org/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":{\"Column\":\"DI_relativePL_Number and Operations - Fractions PerformanceRelativetoProf\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"DI_relativePL_rawValue_Number and Operations - Fractions PerformanceRelativetoProf\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"AIRWAYS-INTERIM-MATH-V1\",\"identificationCode\":\"AIRWAYS-INTERIM-MATH-V1-NUMOP-B10\",\"namespace\":\"http://air.org/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":{\"Column\":\"DI_relativePL_Number and Operations in Base 10 PerformanceRelativetoProf\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"DI_relativePL_rawValue_Number and Operations in Base 10 PerformanceRelativetoProf\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"AIRWAYS-INTERIM-MATH-V1\",\"identificationCode\":\"AIRWAYS-INTERIM-MATH-V1-OPE-ALG\",\"namespace\":\"http://air.org/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":{\"Column\":\"DI_relativePL_Operations and Algebraic Thinking PerformanceRelativetoProf\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"DI_relativePL_rawValue_Operations and Algebraic Thinking PerformanceRelativetoProf\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"AIRWAYS-INTERIM-MATH-V1\",\"identificationCode\":\"AIRWAYS-INTERIM-MATH-V1-EXP-EQA\",\"namespace\":\"http://air.org/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":{\"Column\":\"DI_relativePL_Expressions and Equations PerformanceRelativetoProf\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"DI_relativePL_rawValue_Expressions and Equations PerformanceRelativetoProf\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"AIRWAYS-INTERIM-MATH-V1\",\"identificationCode\":\"AIRWAYS-INTERIM-MATH-V1-RATIO-PROP\",\"namespace\":\"http://air.org/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":{\"Column\":\"DI_relativePL_Ratios and Proportional Relationships PerformanceRelativetoProf\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"DI_relativePL_rawValue_Ratios and Proportional Relationships PerformanceRelativetoProf\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"AIRWAYS-INTERIM-MATH-V1\",\"identificationCode\":\"AIRWAYS-INTERIM-MATH-V1-STAT-PROB\",\"namespace\":\"http://air.org/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":{\"Column\":\"DI_relativePL_Statistics and Probability PerformanceRelativetoProf\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"DI_relativePL_rawValue_Statistics and Probability PerformanceRelativetoProf\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"AIRWAYS-INTERIM-MATH-V1\",\"identificationCode\":\"AIRWAYS-INTERIM-MATH-V1-NUMBER-SYST\",\"namespace\":\"http://air.org/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":{\"Column\":\"DI_relativePL_The Number System  PerformanceRelativetoProf\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"DI_relativePL_rawValue_The Number System  PerformanceRelativetoProf\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"AIRWAYS-INTERIM-MATH-V1\",\"identificationCode\":\"AIRWAYS-INTERIM-MATH-V1-FUNCTIONS\",\"namespace\":\"http://air.org/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":{\"Column\":\"DI_relativePL_Functions PerformanceRelativetoProf\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"DI_relativePL_rawValue_Functions PerformanceRelativetoProf\"}}]}]}}],\"Bootstraps\":[{\"Name\":\"AIRWays_PLD\",\"ResourcePath\":\"/performanceLevelDescriptors\",\"Data\":[{\"codeValue\":\"Below Proficient\",\"description\":\"Below Proficient\",\"namespace\":\"http://air.org/PerformanceLevelDescriptor\",\"shortDescription\":\"Below Proficient\"},{\"codeValue\":\"Approaching Proficient\",\"description\":\"Approaching Proficient\",\"namespace\":\"http://air.org/PerformanceLevelDescriptor\",\"shortDescription\":\"Approaching Proficient\"},{\"codeValue\":\"Proficient\",\"description\":\"Proficient\",\"namespace\":\"http://air.org/PerformanceLevelDescriptor\",\"shortDescription\":\"Proficient\"},{\"codeValue\":\"Highly Proficient\",\"description\":\"Highly Proficient\",\"namespace\":\"http://air.org/PerformanceLevelDescriptor\",\"shortDescription\":\"Highly Proficient\"},{\"codeValue\":\"Below Standard\",\"description\":\"Below Standard\",\"namespace\":\"http://air.org/PerformanceLevelDescriptor\",\"shortDescription\":\"Below Standard\"},{\"codeValue\":\"At-Near Standard\",\"description\":\"At-Near Standard\",\"namespace\":\"http://air.org/PerformanceLevelDescriptor\",\"shortDescription\":\"At-Near Standard\"},{\"codeValue\":\"Above Standard\",\"description\":\"Above Standard\",\"namespace\":\"http://air.org/PerformanceLevelDescriptor\",\"shortDescription\":\"Above Standard\"},{\"codeValue\":\"n-a\",\"description\":\"n-a\",\"namespace\":\"http://air.org/PerformanceLevelDescriptor\",\"shortDescription\":\"n-a\"}]},{\"Name\":\"AIRWays_Assessment-ELA\",\"ResourcePath\":\"/assessments\",\"Data\":{\"identifier\":\"AIRWAYS-INTERIM-ELA-V1\",\"title\":\"AIRWays Iterim ELA\",\"namespace\":\"http://air.org/Assessment\",\"assessedGradeLevels\":[{\"gradeLevelDescriptor\":\"Third grade\"},{\"gradeLevelDescriptor\":\"Fourth grade\"},{\"gradeLevelDescriptor\":\"Fifth grade\"},{\"gradeLevelDescriptor\":\"Sixth grade\"},{\"gradeLevelDescriptor\":\"Seventh grade\"},{\"gradeLevelDescriptor\":\"Eighth grade\"},{\"gradeLevelDescriptor\":\"Ungraded\"}],\"categoryDescriptor\":\"Interim\",\"academicSubjects\":[{\"academicSubjectDescriptor\":\"English Language Arts\"}],\"scores\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Integer\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Proficiency level\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Below Proficient\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Proficiency level\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Approaching Proficient\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Proficiency level\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Proficient\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Proficiency level\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Highly Proficient\",\"resultDatatypeType\":\"Level\"}]}},{\"Name\":\"AIRWays_ObjectiveAssessment-ELA\",\"ResourcePath\":\"/objectiveAssessments\",\"Data\":[{\"identificationCode\":\"AIRWAYS-INTERIM-ELA-V1-LANGUAGE\",\"assessmentReference\":{\"identifier\":\"AIRWAYS-INTERIM-ELA-V1\",\"namespace\":\"http://air.org/Assessment\"},\"description\":\"Language\",\"scores\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Below Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/At-Near Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Above Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/n-a\",\"resultDatatypeType\":\"Level\"}]},{\"identificationCode\":\"AIRWAYS-INTERIM-ELA-V1-LISTEN-COMP\",\"assessmentReference\":{\"identifier\":\"AIRWAYS-INTERIM-ELA-V1\",\"namespace\":\"http://air.org/Assessment\"},\"description\":\"Listening Comprehension\",\"scores\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Below Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/At-Near Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Above Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/n-a\",\"resultDatatypeType\":\"Level\"}]},{\"identificationCode\":\"AIRWAYS-INTERIM-ELA-V1-READ-INF-TEXT\",\"assessmentReference\":{\"identifier\":\"AIRWAYS-INTERIM-ELA-V1\",\"namespace\":\"http://air.org/Assessment\"},\"description\":\"Reading Informational Text\",\"scores\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Below Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/At-Near Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Above Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/n-a\",\"resultDatatypeType\":\"Level\"}]},{\"identificationCode\":\"AIRWAYS-INTERIM-ELA-V1-READ-LIT\",\"assessmentReference\":{\"identifier\":\"AIRWAYS-INTERIM-ELA-V1\",\"namespace\":\"http://air.org/Assessment\"},\"description\":\"Reading Literature\",\"scores\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Below Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/At-Near Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Above Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/n-a\",\"resultDatatypeType\":\"Level\"}]},{\"identificationCode\":\"AIRWAYS-INTERIM-ELA-V1-WRITING\",\"assessmentReference\":{\"identifier\":\"AIRWAYS-INTERIM-ELA-V1\",\"namespace\":\"http://air.org/Assessment\"},\"description\":\"Writing\",\"scores\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Below Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/At-Near Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Above Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/n-a\",\"resultDatatypeType\":\"Level\"}]}]},{\"Name\":\"AIRWays_Assessment-Math\",\"ResourcePath\":\"/assessments\",\"Data\":{\"identifier\":\"AIRWAYS-INTERIM-MATH-V1\",\"title\":\"AIRWays Iterim Math\",\"namespace\":\"http://air.org/Assessment\",\"assessedGradeLevels\":[{\"gradeLevelDescriptor\":\"Third grade\"},{\"gradeLevelDescriptor\":\"Fourth grade\"},{\"gradeLevelDescriptor\":\"Fifth grade\"},{\"gradeLevelDescriptor\":\"Sixth grade\"},{\"gradeLevelDescriptor\":\"Seventh grade\"},{\"gradeLevelDescriptor\":\"Eighth grade\"}],\"categoryDescriptor\":\"Interim\",\"academicSubjects\":[{\"academicSubjectDescriptor\":\"Mathematics\"}],\"scores\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Integer\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Proficiency level\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Below Proficient\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Proficiency level\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Approaching Proficient\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Proficiency level\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Proficient\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Proficiency level\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Highly Proficient\",\"resultDatatypeType\":\"Level\"}]}},{\"Name\":\"AIRWays_ObjectiveAssessment-Math\",\"ResourcePath\":\"/objectiveAssessments\",\"Data\":[{\"identificationCode\":\"AIRWAYS-INTERIM-MATH-V1-GEO\",\"assessmentReference\":{\"identifier\":\"AIRWAYS-INTERIM-MATH-V1\",\"namespace\":\"http://air.org/Assessment\"},\"description\":\"Geometry\",\"scores\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Below Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/At-Near Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Above Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/n-a\",\"resultDatatypeType\":\"Level\"}]},{\"identificationCode\":\"AIRWAYS-INTERIM-MATH-V1-MEA-DATA\",\"assessmentReference\":{\"identifier\":\"AIRWAYS-INTERIM-MATH-V1\",\"namespace\":\"http://air.org/Assessment\"},\"description\":\"Measurement and Data\",\"scores\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Below Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/At-Near Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Above Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/n-a\",\"resultDatatypeType\":\"Level\"}]},{\"identificationCode\":\"AIRWAYS-INTERIM-MATH-V1-NUMOP-FRACT\",\"assessmentReference\":{\"identifier\":\"AIRWAYS-INTERIM-MATH-V1\",\"namespace\":\"http://air.org/Assessment\"},\"description\":\"Number and Operations - Fractions\",\"scores\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Below Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/At-Near Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Above Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/n-a\",\"resultDatatypeType\":\"Level\"}]},{\"identificationCode\":\"AIRWAYS-INTERIM-MATH-V1-NUMOP-B10\",\"assessmentReference\":{\"identifier\":\"AIRWAYS-INTERIM-MATH-V1\",\"namespace\":\"http://air.org/Assessment\"},\"description\":\"Number and Operations in Base 10\",\"scores\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Below Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/At-Near Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Above Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/n-a\",\"resultDatatypeType\":\"Level\"}]},{\"identificationCode\":\"AIRWAYS-INTERIM-MATH-V1-OPE-ALG\",\"assessmentReference\":{\"identifier\":\"AIRWAYS-INTERIM-MATH-V1\",\"namespace\":\"http://air.org/Assessment\"},\"description\":\"Operations and Algebraic Thinking\",\"scores\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Below Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/At-Near Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Above Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/n-a\",\"resultDatatypeType\":\"Level\"}]},{\"identificationCode\":\"AIRWAYS-INTERIM-MATH-V1-EXP-EQA\",\"assessmentReference\":{\"identifier\":\"AIRWAYS-INTERIM-MATH-V1\",\"namespace\":\"http://air.org/Assessment\"},\"description\":\"Expressions and Equations PerformanceRelativetoProf\",\"scores\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Below Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/At-Near Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Above Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/n-a\",\"resultDatatypeType\":\"Level\"}]},{\"identificationCode\":\"AIRWAYS-INTERIM-MATH-V1-RATIO-PROP\",\"assessmentReference\":{\"identifier\":\"AIRWAYS-INTERIM-MATH-V1\",\"namespace\":\"http://air.org/Assessment\"},\"description\":\"Ratios and Proportional Relationships PerformanceRelativetoProf\",\"scores\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Below Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/At-Near Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Above Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/n-a\",\"resultDatatypeType\":\"Level\"}]},{\"identificationCode\":\"AIRWAYS-INTERIM-MATH-V1-STAT-PROB\",\"assessmentReference\":{\"identifier\":\"AIRWAYS-INTERIM-MATH-V1\",\"namespace\":\"http://air.org/Assessment\"},\"description\":\"Statistics and Probability PerformanceRelativetoProf\",\"scores\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Below Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/At-Near Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Above Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/n-a\",\"resultDatatypeType\":\"Level\"}]},{\"identificationCode\":\"AIRWAYS-INTERIM-MATH-V1-NUMBER-SYST\",\"assessmentReference\":{\"identifier\":\"AIRWAYS-INTERIM-MATH-V1\",\"namespace\":\"http://air.org/Assessment\"},\"description\":\"The Number System  PerformanceRelativetoProf\",\"scores\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Below Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/At-Near Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Above Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/n-a\",\"resultDatatypeType\":\"Level\"}]},{\"identificationCode\":\"AIRWAYS-INTERIM-MATH-V1-FUNCTIONS\",\"assessmentReference\":{\"identifier\":\"AIRWAYS-INTERIM-MATH-V1\",\"namespace\":\"http://air.org/Assessment\"},\"description\":\"Functions PerformanceRelativetoProf\",\"scores\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"resultDatatypeType\":\"Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Below Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/At-Near Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/Above Standard\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Performance Relative to Prof\",\"performanceLevelDescriptor\":\"http://air.org/PerformanceLevelDescriptor/n-a\",\"resultDatatypeType\":\"Level\"}]}]}],\"Lookups\":[]}",
-    "submitter": {
-        "name": "Emilio Baez",
-        "organization": "Developers.Net",
-        "email": "emilio@developers.net"
-    }
+  "id": 28,
+  "title": "AIRWays Interim - IN - ELA and Math Assessments - API 2.5",
+  "description": "This template includes the Indiana AIRWays Interim ELA and Math Assessments",
+  "apiVersion": "2.5+",
+  "dateTimePublished": "2020-06-09T20:58:55.569722",
+  "template": {
+    "Maps": [
+      {
+        "Name": "AIRWays-ELA_DataMap",
+        "ResourcePath": "/studentAssessments",
+        "ColumnHeaders": [
+          "DI_studentUniqueId",
+          "DI_SchoolYear",
+          "DI_ScaleScore",
+          "DI_StdError",
+          "DI_PerfLevel",
+          "DI_TestId",
+          "DI_relativePL_Language  PerformanceRelativetoProf",
+          "DI_relativePL_Listening Comprehension PerformanceRelativetoProf",
+          "DI_relativePL_Reading Informational Text PerformanceRelativetoProf",
+          "DI_relativePL_Reading Literature PerformanceRelativetoProf",
+          "DI_relativePL_Writing PerformanceRelativetoProf",
+          "Student ID",
+          "Student DOB",
+          "Enrolled District",
+          "Enrolled School",
+          "Test Reason",
+          "Test OppNumber",
+          "Date Taken",
+          "Interim: ELA Grade 3 ScaleScore",
+          "Interim: ELA Grade 3 Standard Error",
+          "Interim: ELA Grade 3 PerformanceLevel",
+          "Language  PerformanceRelativetoProf",
+          "Listening Comprehension PerformanceRelativetoProf",
+          "Reading Informational Text PerformanceRelativetoProf",
+          "Reading Literature PerformanceRelativetoProf",
+          "Writing PerformanceRelativetoProf",
+          "Informative-Explanatory: Conventions of Standard English",
+          "Informative-Explanatory: Evidence and Elaboration",
+          "Informative-Explanatory: Purpose, Focus, and Organization",
+          "Opinion: Conventions of Standard English",
+          "Opinion: Evidence and Elaboration",
+          "Opinion: Purpose, Focus, and Organization"
+        ],
+        "Map": {
+          "assessmentReference": {
+            "identifier": "AIRWAYS-INTERIM-ELA-V1",
+            "namespace": "http://air.org/Assessment"
+          },
+          "studentReference": {
+            "studentUniqueId": {
+              "Column": "DI_studentUniqueId"
+            }
+          },
+          "administrationDate": {
+            "Column": "Date Taken"
+          },
+          "identifier": {
+            "Column": "DI_TestId"
+          },
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodType": "Proficiency level",
+              "performanceLevelDescriptor": {
+                "Column": "DI_PerfLevel"
+              },
+              "performanceLevelMet": true
+            }
+          ],
+          "scoreResults": [
+            {
+              "assessmentReportingMethodType": "Scale score",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "DI_ScaleScore"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Standard error measurement",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "DI_StdError"
+              }
+            }
+          ],
+          "studentObjectiveAssessments": [
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "AIRWAYS-INTERIM-ELA-V1",
+                "identificationCode": "AIRWAYS-INTERIM-ELA-V1-LANGUAGE",
+                "namespace": "http://air.org/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_relativePL_Language  PerformanceRelativetoProf"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "Language  PerformanceRelativetoProf"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "AIRWAYS-INTERIM-ELA-V1",
+                "identificationCode": "AIRWAYS-INTERIM-ELA-V1-LISTEN-COMP",
+                "namespace": "http://air.org/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_relativePL_Listening Comprehension PerformanceRelativetoProf"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "Listening Comprehension PerformanceRelativetoProf"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "AIRWAYS-INTERIM-ELA-V1",
+                "identificationCode": "AIRWAYS-INTERIM-ELA-V1-READ-INF-TEXT",
+                "namespace": "http://air.org/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_relativePL_Reading Informational Text PerformanceRelativetoProf"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "Reading Informational Text PerformanceRelativetoProf"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "AIRWAYS-INTERIM-ELA-V1",
+                "identificationCode": "AIRWAYS-INTERIM-ELA-V1-READ-LIT",
+                "namespace": "http://air.org/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_relativePL_Reading Literature PerformanceRelativetoProf"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "Reading Literature PerformanceRelativetoProf"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "AIRWAYS-INTERIM-ELA-V1",
+                "identificationCode": "AIRWAYS-INTERIM-ELA-V1-WRITING",
+                "namespace": "http://air.org/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_relativePL_Writing PerformanceRelativetoProf"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "Writing PerformanceRelativetoProf"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Name": "AIRWays-Math_DataMap",
+        "ResourcePath": "/studentAssessments",
+        "ColumnHeaders": [
+          "DI_studentUniqueId",
+          "DI_SchoolYear",
+          "DI_ScaleScore",
+          "DI_StdError",
+          "DI_PerfLevel",
+          "DI_TestId",
+          "DI_relativePL_Geometry PerformanceRelativetoProf",
+          "DI_relativePL_Measurement and Data PerformanceRelativetoProf",
+          "DI_relativePL_Number and Operations - Fractions PerformanceRelativetoProf",
+          "DI_relativePL_Number and Operations in Base 10 PerformanceRelativetoProf",
+          "DI_relativePL_Operations and Algebraic Thinking PerformanceRelativetoProf",
+          "Student ID",
+          "Student DOB",
+          "Enrolled District",
+          "Enrolled School",
+          "Test Reason",
+          "Test OppNumber",
+          "Date Taken",
+          "Interim: Math Grade 3 ScaleScore",
+          "Interim: Math Grade 3 Standard Error",
+          "Interim: Math Grade 3 PerformanceLevel",
+          "Geometry PerformanceRelativetoProf",
+          "Measurement and Data PerformanceRelativetoProf",
+          "Number and Operations - Fractions PerformanceRelativetoProf",
+          "Number and Operations in Base 10 PerformanceRelativetoProf",
+          "Operations and Algebraic Thinking PerformanceRelativetoProf",
+          "Expressions and Equations PerformanceRelativetoProf",
+          "Ratios and Proportional Relationships PerformanceRelativetoProf",
+          "Statistics and Probability PerformanceRelativetoProf",
+          "The Number System  PerformanceRelativetoProf",
+          "Functions PerformanceRelativetoProf",
+          "DI_relativePL_Expressions and Equations PerformanceRelativetoProf",
+          "DI_relativePL_Ratios and Proportional Relationships PerformanceRelativetoProf",
+          "DI_relativePL_Statistics and Probability PerformanceRelativetoProf",
+          "DI_relativePL_The Number System  PerformanceRelativetoProf",
+          "DI_relativePL_Functions PerformanceRelativetoProf",
+          "DI_relativePL_rawValue_Expressions and Equations PerformanceRelativetoProf",
+          "DI_relativePL_rawValue_Ratios and Proportional Relationships PerformanceRelativetoProf",
+          "DI_relativePL_rawValue_Statistics and Probability PerformanceRelativetoProf",
+          "DI_relativePL_rawValue_The Number System  PerformanceRelativetoProf",
+          "DI_relativePL_rawValue_Functions PerformanceRelativetoProf",
+          "DI_relativePL_rawValue_Geometry PerformanceRelativetoProf",
+          "DI_relativePL_rawValue_Measurement and Data PerformanceRelativetoProf",
+          "DI_relativePL_rawValue_Number and Operations - Fractions PerformanceRelativetoProf",
+          "DI_relativePL_rawValue_Number and Operations in Base 10 PerformanceRelativetoProf",
+          "DI_relativePL_rawValue_Operations and Algebraic Thinking PerformanceRelativetoProf"
+        ],
+        "Map": {
+          "assessmentReference": {
+            "identifier": "AIRWAYS-INTERIM-MATH-V1",
+            "namespace": "http://air.org/Assessment"
+          },
+          "studentReference": {
+            "studentUniqueId": {
+              "Column": "DI_studentUniqueId"
+            }
+          },
+          "administrationDate": {
+            "Column": "Date Taken"
+          },
+          "identifier": {
+            "Column": "DI_TestId"
+          },
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodType": "Proficiency level",
+              "performanceLevelDescriptor": {
+                "Column": "DI_PerfLevel"
+              },
+              "performanceLevelMet": true
+            }
+          ],
+          "scoreResults": [
+            {
+              "assessmentReportingMethodType": "Scale score",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "DI_ScaleScore"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Standard error measurement",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "DI_StdError"
+              }
+            }
+          ],
+          "studentObjectiveAssessments": [
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "AIRWAYS-INTERIM-MATH-V1",
+                "identificationCode": "AIRWAYS-INTERIM-MATH-V1-GEO",
+                "namespace": "http://air.org/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_relativePL_Geometry PerformanceRelativetoProf"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "DI_relativePL_rawValue_Geometry PerformanceRelativetoProf"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "AIRWAYS-INTERIM-MATH-V1",
+                "identificationCode": "AIRWAYS-INTERIM-MATH-V1-MEA-DATA",
+                "namespace": "http://air.org/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_relativePL_Measurement and Data PerformanceRelativetoProf"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "DI_relativePL_rawValue_Measurement and Data PerformanceRelativetoProf"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "AIRWAYS-INTERIM-MATH-V1",
+                "identificationCode": "AIRWAYS-INTERIM-MATH-V1-NUMOP-FRACT",
+                "namespace": "http://air.org/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_relativePL_Number and Operations - Fractions PerformanceRelativetoProf"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "DI_relativePL_rawValue_Number and Operations - Fractions PerformanceRelativetoProf"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "AIRWAYS-INTERIM-MATH-V1",
+                "identificationCode": "AIRWAYS-INTERIM-MATH-V1-NUMOP-B10",
+                "namespace": "http://air.org/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_relativePL_Number and Operations in Base 10 PerformanceRelativetoProf"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "DI_relativePL_rawValue_Number and Operations in Base 10 PerformanceRelativetoProf"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "AIRWAYS-INTERIM-MATH-V1",
+                "identificationCode": "AIRWAYS-INTERIM-MATH-V1-OPE-ALG",
+                "namespace": "http://air.org/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_relativePL_Operations and Algebraic Thinking PerformanceRelativetoProf"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "DI_relativePL_rawValue_Operations and Algebraic Thinking PerformanceRelativetoProf"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "AIRWAYS-INTERIM-MATH-V1",
+                "identificationCode": "AIRWAYS-INTERIM-MATH-V1-EXP-EQA",
+                "namespace": "http://air.org/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_relativePL_Expressions and Equations PerformanceRelativetoProf"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "DI_relativePL_rawValue_Expressions and Equations PerformanceRelativetoProf"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "AIRWAYS-INTERIM-MATH-V1",
+                "identificationCode": "AIRWAYS-INTERIM-MATH-V1-RATIO-PROP",
+                "namespace": "http://air.org/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_relativePL_Ratios and Proportional Relationships PerformanceRelativetoProf"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "DI_relativePL_rawValue_Ratios and Proportional Relationships PerformanceRelativetoProf"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "AIRWAYS-INTERIM-MATH-V1",
+                "identificationCode": "AIRWAYS-INTERIM-MATH-V1-STAT-PROB",
+                "namespace": "http://air.org/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_relativePL_Statistics and Probability PerformanceRelativetoProf"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "DI_relativePL_rawValue_Statistics and Probability PerformanceRelativetoProf"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "AIRWAYS-INTERIM-MATH-V1",
+                "identificationCode": "AIRWAYS-INTERIM-MATH-V1-NUMBER-SYST",
+                "namespace": "http://air.org/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_relativePL_The Number System  PerformanceRelativetoProf"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "DI_relativePL_rawValue_The Number System  PerformanceRelativetoProf"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "AIRWAYS-INTERIM-MATH-V1",
+                "identificationCode": "AIRWAYS-INTERIM-MATH-V1-FUNCTIONS",
+                "namespace": "http://air.org/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_relativePL_Functions PerformanceRelativetoProf"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodType": "Performance Relative to Prof",
+                  "resultDatatypeType": "Level",
+                  "result": {
+                    "Column": "DI_relativePL_rawValue_Functions PerformanceRelativetoProf"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "Bootstraps": [
+      {
+        "Name": "AIRWays_PLD",
+        "ResourcePath": "/performanceLevelDescriptors",
+        "Data": [
+          {
+            "codeValue": "Below Proficient",
+            "description": "Below Proficient",
+            "namespace": "http://air.org/PerformanceLevelDescriptor",
+            "shortDescription": "Below Proficient"
+          },
+          {
+            "codeValue": "Approaching Proficient",
+            "description": "Approaching Proficient",
+            "namespace": "http://air.org/PerformanceLevelDescriptor",
+            "shortDescription": "Approaching Proficient"
+          },
+          {
+            "codeValue": "Proficient",
+            "description": "Proficient",
+            "namespace": "http://air.org/PerformanceLevelDescriptor",
+            "shortDescription": "Proficient"
+          },
+          {
+            "codeValue": "Highly Proficient",
+            "description": "Highly Proficient",
+            "namespace": "http://air.org/PerformanceLevelDescriptor",
+            "shortDescription": "Highly Proficient"
+          },
+          {
+            "codeValue": "Below Standard",
+            "description": "Below Standard",
+            "namespace": "http://air.org/PerformanceLevelDescriptor",
+            "shortDescription": "Below Standard"
+          },
+          {
+            "codeValue": "At-Near Standard",
+            "description": "At-Near Standard",
+            "namespace": "http://air.org/PerformanceLevelDescriptor",
+            "shortDescription": "At-Near Standard"
+          },
+          {
+            "codeValue": "Above Standard",
+            "description": "Above Standard",
+            "namespace": "http://air.org/PerformanceLevelDescriptor",
+            "shortDescription": "Above Standard"
+          },
+          {
+            "codeValue": "n-a",
+            "description": "n-a",
+            "namespace": "http://air.org/PerformanceLevelDescriptor",
+            "shortDescription": "n-a"
+          }
+        ]
+      },
+      {
+        "Name": "AIRWays_Assessment-ELA",
+        "ResourcePath": "/assessments",
+        "Data": {
+          "identifier": "AIRWAYS-INTERIM-ELA-V1",
+          "title": "AIRWays Iterim ELA",
+          "namespace": "http://air.org/Assessment",
+          "assessedGradeLevels": [
+            {
+              "gradeLevelDescriptor": "Third grade"
+            },
+            {
+              "gradeLevelDescriptor": "Fourth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Fifth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Sixth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Seventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "Eighth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Ungraded"
+            }
+          ],
+          "categoryDescriptor": "Interim",
+          "academicSubjects": [
+            {
+              "academicSubjectDescriptor": "English Language Arts"
+            }
+          ],
+          "scores": [
+            {
+              "assessmentReportingMethodType": "Scale score",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Standard error measurement",
+              "resultDatatypeType": "Integer"
+            }
+          ],
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodType": "Proficiency level",
+              "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Below Proficient",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Proficiency level",
+              "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Approaching Proficient",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Proficiency level",
+              "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Proficient",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Proficiency level",
+              "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Highly Proficient",
+              "resultDatatypeType": "Level"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "AIRWays_ObjectiveAssessment-ELA",
+        "ResourcePath": "/objectiveAssessments",
+        "Data": [
+          {
+            "identificationCode": "AIRWAYS-INTERIM-ELA-V1-LANGUAGE",
+            "assessmentReference": {
+              "identifier": "AIRWAYS-INTERIM-ELA-V1",
+              "namespace": "http://air.org/Assessment"
+            },
+            "description": "Language",
+            "scores": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "resultDatatypeType": "Level"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Below Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/At-Near Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Above Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/n-a",
+                "resultDatatypeType": "Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "AIRWAYS-INTERIM-ELA-V1-LISTEN-COMP",
+            "assessmentReference": {
+              "identifier": "AIRWAYS-INTERIM-ELA-V1",
+              "namespace": "http://air.org/Assessment"
+            },
+            "description": "Listening Comprehension",
+            "scores": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "resultDatatypeType": "Level"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Below Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/At-Near Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Above Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/n-a",
+                "resultDatatypeType": "Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "AIRWAYS-INTERIM-ELA-V1-READ-INF-TEXT",
+            "assessmentReference": {
+              "identifier": "AIRWAYS-INTERIM-ELA-V1",
+              "namespace": "http://air.org/Assessment"
+            },
+            "description": "Reading Informational Text",
+            "scores": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "resultDatatypeType": "Level"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Below Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/At-Near Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Above Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/n-a",
+                "resultDatatypeType": "Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "AIRWAYS-INTERIM-ELA-V1-READ-LIT",
+            "assessmentReference": {
+              "identifier": "AIRWAYS-INTERIM-ELA-V1",
+              "namespace": "http://air.org/Assessment"
+            },
+            "description": "Reading Literature",
+            "scores": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "resultDatatypeType": "Level"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Below Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/At-Near Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Above Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/n-a",
+                "resultDatatypeType": "Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "AIRWAYS-INTERIM-ELA-V1-WRITING",
+            "assessmentReference": {
+              "identifier": "AIRWAYS-INTERIM-ELA-V1",
+              "namespace": "http://air.org/Assessment"
+            },
+            "description": "Writing",
+            "scores": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "resultDatatypeType": "Level"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Below Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/At-Near Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Above Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/n-a",
+                "resultDatatypeType": "Level"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "Name": "AIRWays_Assessment-Math",
+        "ResourcePath": "/assessments",
+        "Data": {
+          "identifier": "AIRWAYS-INTERIM-MATH-V1",
+          "title": "AIRWays Iterim Math",
+          "namespace": "http://air.org/Assessment",
+          "assessedGradeLevels": [
+            {
+              "gradeLevelDescriptor": "Third grade"
+            },
+            {
+              "gradeLevelDescriptor": "Fourth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Fifth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Sixth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Seventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "Eighth grade"
+            }
+          ],
+          "categoryDescriptor": "Interim",
+          "academicSubjects": [
+            {
+              "academicSubjectDescriptor": "Mathematics"
+            }
+          ],
+          "scores": [
+            {
+              "assessmentReportingMethodType": "Scale score",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Standard error measurement",
+              "resultDatatypeType": "Integer"
+            }
+          ],
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodType": "Proficiency level",
+              "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Below Proficient",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Proficiency level",
+              "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Approaching Proficient",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Proficiency level",
+              "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Proficient",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Proficiency level",
+              "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Highly Proficient",
+              "resultDatatypeType": "Level"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "AIRWays_ObjectiveAssessment-Math",
+        "ResourcePath": "/objectiveAssessments",
+        "Data": [
+          {
+            "identificationCode": "AIRWAYS-INTERIM-MATH-V1-GEO",
+            "assessmentReference": {
+              "identifier": "AIRWAYS-INTERIM-MATH-V1",
+              "namespace": "http://air.org/Assessment"
+            },
+            "description": "Geometry",
+            "scores": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "resultDatatypeType": "Level"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Below Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/At-Near Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Above Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/n-a",
+                "resultDatatypeType": "Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "AIRWAYS-INTERIM-MATH-V1-MEA-DATA",
+            "assessmentReference": {
+              "identifier": "AIRWAYS-INTERIM-MATH-V1",
+              "namespace": "http://air.org/Assessment"
+            },
+            "description": "Measurement and Data",
+            "scores": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "resultDatatypeType": "Level"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Below Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/At-Near Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Above Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/n-a",
+                "resultDatatypeType": "Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "AIRWAYS-INTERIM-MATH-V1-NUMOP-FRACT",
+            "assessmentReference": {
+              "identifier": "AIRWAYS-INTERIM-MATH-V1",
+              "namespace": "http://air.org/Assessment"
+            },
+            "description": "Number and Operations - Fractions",
+            "scores": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "resultDatatypeType": "Level"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Below Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/At-Near Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Above Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/n-a",
+                "resultDatatypeType": "Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "AIRWAYS-INTERIM-MATH-V1-NUMOP-B10",
+            "assessmentReference": {
+              "identifier": "AIRWAYS-INTERIM-MATH-V1",
+              "namespace": "http://air.org/Assessment"
+            },
+            "description": "Number and Operations in Base 10",
+            "scores": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "resultDatatypeType": "Level"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Below Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/At-Near Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Above Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/n-a",
+                "resultDatatypeType": "Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "AIRWAYS-INTERIM-MATH-V1-OPE-ALG",
+            "assessmentReference": {
+              "identifier": "AIRWAYS-INTERIM-MATH-V1",
+              "namespace": "http://air.org/Assessment"
+            },
+            "description": "Operations and Algebraic Thinking",
+            "scores": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "resultDatatypeType": "Level"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Below Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/At-Near Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Above Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/n-a",
+                "resultDatatypeType": "Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "AIRWAYS-INTERIM-MATH-V1-EXP-EQA",
+            "assessmentReference": {
+              "identifier": "AIRWAYS-INTERIM-MATH-V1",
+              "namespace": "http://air.org/Assessment"
+            },
+            "description": "Expressions and Equations PerformanceRelativetoProf",
+            "scores": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "resultDatatypeType": "Level"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Below Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/At-Near Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Above Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/n-a",
+                "resultDatatypeType": "Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "AIRWAYS-INTERIM-MATH-V1-RATIO-PROP",
+            "assessmentReference": {
+              "identifier": "AIRWAYS-INTERIM-MATH-V1",
+              "namespace": "http://air.org/Assessment"
+            },
+            "description": "Ratios and Proportional Relationships PerformanceRelativetoProf",
+            "scores": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "resultDatatypeType": "Level"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Below Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/At-Near Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Above Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/n-a",
+                "resultDatatypeType": "Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "AIRWAYS-INTERIM-MATH-V1-STAT-PROB",
+            "assessmentReference": {
+              "identifier": "AIRWAYS-INTERIM-MATH-V1",
+              "namespace": "http://air.org/Assessment"
+            },
+            "description": "Statistics and Probability PerformanceRelativetoProf",
+            "scores": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "resultDatatypeType": "Level"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Below Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/At-Near Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Above Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/n-a",
+                "resultDatatypeType": "Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "AIRWAYS-INTERIM-MATH-V1-NUMBER-SYST",
+            "assessmentReference": {
+              "identifier": "AIRWAYS-INTERIM-MATH-V1",
+              "namespace": "http://air.org/Assessment"
+            },
+            "description": "The Number System  PerformanceRelativetoProf",
+            "scores": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "resultDatatypeType": "Level"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Below Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/At-Near Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Above Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/n-a",
+                "resultDatatypeType": "Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "AIRWAYS-INTERIM-MATH-V1-FUNCTIONS",
+            "assessmentReference": {
+              "identifier": "AIRWAYS-INTERIM-MATH-V1",
+              "namespace": "http://air.org/Assessment"
+            },
+            "description": "Functions PerformanceRelativetoProf",
+            "scores": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "resultDatatypeType": "Level"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Below Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/At-Near Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/Above Standard",
+                "resultDatatypeType": "Level"
+              },
+              {
+                "assessmentReportingMethodType": "Performance Relative to Prof",
+                "performanceLevelDescriptor": "http://air.org/PerformanceLevelDescriptor/n-a",
+                "resultDatatypeType": "Level"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Lookups": []
+  },
+  "submitter": {
+    "name": "Emilio Baez",
+    "organization": "Developers.Net",
+    "email": "emilio@developers.net"
+  }
 }

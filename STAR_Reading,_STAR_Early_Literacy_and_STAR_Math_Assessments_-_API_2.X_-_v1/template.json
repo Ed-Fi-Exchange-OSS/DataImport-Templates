@@ -1,13 +1,1616 @@
 {
-    "id": 1052,
-    "title": "STAR Reading, STAR Early Literacy and STAR Math Assessments - API 2.X - v1",
-    "description": "This template includes the STAR Reading, STAR Early Literacy and STAR Math assessments.",
-    "apiVersion": "2.5+",
-    "dateTimePublished": "2021-04-15T15:02:30.3557221",
-    "template": "{\"Maps\":[{\"Name\":\"DataMap_ODS2.5_STAR_STAR-EARLY-LIT-V1\",\"ResourcePath\":\"/studentAssessments\",\"ColumnHeaders\":[\"DI_StudentId\",\"DI_SchoolYear\",\"DI_AssessedGradeLevel\",\"DI_AssessmentStudentIdentifier\",\"DI_AdministrationDate\",\"DI_RenaissanceBenchmarkCategoryName\",\"RenaissanceClientID\",\"SchoolYear\",\"SchoolYearStartDate\",\"SchoolYearEndDate\",\"StudentRenaissanceID\",\"StudentSourcedID\",\"StudentIdentifier\",\"StudentUserID\",\"StudentStateID\",\"StudentEmail\",\"StudentFirstName\",\"StudentMiddleName\",\"StudentLastName\",\"Gender\",\"BirthDate\",\"MultiRace\",\"HispanicOrLatino\",\"AmericanIndianOrAlaskaNative\",\"Asian\",\"BlackOrAfricanAmerican\",\"NativeHawaiianOrOtherPacificIslander\",\"White\",\"CurrentGrade\",\"EnrollmentStatus\",\"DistrictRenaissanceID\",\"DistrictSourcedID\",\"DistrictIdentifier\",\"DistrictStateID\",\"DistrictName\",\"SchoolRenaissanceID\",\"SchoolSourcedID\",\"SchoolIdentifier\",\"SchoolStateID\",\"SchoolName\",\"CourseRenaissanceID\",\"CourseSourcedID\",\"CourseCode\",\"CourseName\",\"ClassRenaissanceID\",\"ClassSourcedID\",\"ClassCode\",\"GroupID\",\"GroupOrClassName\",\"TeacherRenaissanceID\",\"TeacherSourcedID\",\"TeacherIdentifier\",\"TeacherUserID\",\"TeacherStateID\",\"TeacherEmail\",\"TeacherFirstName\",\"TeacherMiddleName\",\"TeacherLastName\",\"AssessmentID\",\"LaunchDate\",\"CompletedDate\",\"CompletedDateLocal\",\"AssessmentNumber\",\"AssessmentType\",\"AssessmentStatus\",\"DeactivationReason\",\"GradePlacement\",\"Grade\",\"ExtraTime\",\"ScaledScore\",\"StandardErrorOfMeasurement\",\"RaschScore\",\"UnifiedScore\",\"PartnershipForAssessmentOfReadinessForCollegeAndCareers\",\"SmarterBalancedAssessmentConsortium\",\"OpenGrowthScore\",\"GradeEquivalent\",\"PercentileRank\",\"NormalCurveEquivalent\",\"EstimatedOralReadingFluency\",\"LiteracyClassification\",\"TotalTimeInSeconds\",\"TotalCorrect\",\"TotalPossible\",\"StudentGrowthPercentileFallFall\",\"StudentGrowthPercentileFallSpring\",\"StudentGrowthPercentileFallWinter\",\"StudentGrowthPercentileSpringFall\",\"StudentGrowthPercentileSpringSpring\",\"StudentGrowthPercentileWinterSpring\",\"ScreeningPeriodWindowName\",\"ScreeningWindowStartDate\",\"ScreeningWindowEndDate\",\"RenaissanceBenchmarkCategoryName\",\"RenaissanceBenchmarkCategoryLevel\",\"RenaissanceBenchmarkCategoryNumberOfLevels\",\"RenaissanceBenchmarkCategoryMinPercentileRank\",\"RenaissanceBenchmarkCategoryMaxPercentileRank\",\"StateBenchmarkAssessmentName\",\"StateBenchmarkCategoryName\",\"StateBenchmarkProficient\",\"StateBenchmarkCategoryLevel\",\"StateBenchmarkNumberOfCategoryLevels\",\"StateBenchmarkMinScaledScore\",\"StateBenchmarkMaxScaledScore\",\"DistrictBenchmarkCategoryName\",\"DistrictBenchmarkProficient\",\"DistrictBenchmarkCategoryLevel\",\"DistrictBenchmarkNumberOfCategoryLevels\",\"DistrictBenchmarkMinPercentileRank\",\"DistrictBenchmarkMaxPercentileRank\",\"SchoolBenchmarkCategoryName\",\"SchoolBenchmarkProficient\",\"SchoolBenchmarkCategoryLevel\",\"SchoolBenchmarkNumberOfCategoryLevels\",\"SchoolBenchmarkMinPercentileRank\",\"SchoolBenchmarkMaxPercentileRank\",\"CurrentSGP\",\"TakenAt\"],\"Map\":{\"assessmentReference\":{\"identifier\":\"STAR-EARLY-LIT-V1\",\"namespace\":\"http://renaissance.com/Assessment\"},\"studentReference\":{\"studentUniqueId\":{\"Column\":\"DI_StudentId\"}},\"administrationDate\":{\"Column\":\"DI_AdministrationDate\"},\"identifier\":{\"Column\":\"DI_AssessmentStudentIdentifier\"},\"whenAssessedGradeLevelDescriptor\":{\"Column\":\"DI_AssessedGradeLevel\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Renaissance Benchmark\",\"performanceLevelDescriptor\":{\"Column\":\"DI_RenaissanceBenchmarkCategoryName\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"ScaledScore\"}},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"StandardErrorOfMeasurement\"}},{\"assessmentReportingMethodType\":\"Rasch Score\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"RaschScore\"}},{\"assessmentReportingMethodType\":\"Unified Score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"UnifiedScore\"}},{\"assessmentReportingMethodType\":\"Open Growth Score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"OpenGrowthScore\"}},{\"assessmentReportingMethodType\":\"Grade Equivalent\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"GradeEquivalent\"}},{\"assessmentReportingMethodType\":\"Normal curve equivalent\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"NormalCurveEquivalent\"}},{\"assessmentReportingMethodType\":\"Percentile rank\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"PercentileRank\"}},{\"assessmentReportingMethodType\":\"Growth Percentile Fall-to-Fall\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileFallFall\"}},{\"assessmentReportingMethodType\":\"Growth Percentile Fall-to-Spring\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileFallSpring\"}},{\"assessmentReportingMethodType\":\"Growth Percentile Fall-to-Winter\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileFallWinter\"}},{\"assessmentReportingMethodType\":\"Growth Percentile Spring-to-Fall\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileSpringFall\"}},{\"assessmentReportingMethodType\":\"Growth Percentile Spring-to-Spring\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileSpringSpring\"}},{\"assessmentReportingMethodType\":\"Growth Percentile Winter-to-Spring\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileWinterSpring\"}},{\"assessmentReportingMethodType\":\"Total Correct\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"TotalCorrect\"}},{\"assessmentReportingMethodType\":\"Total Possible\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"TotalPossible\"}},{\"assessmentReportingMethodType\":\"Screening Period Window Name\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"ScreeningPeriodWindowName\"}},{\"assessmentReportingMethodType\":\"Renaissance Benchmark Level\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"RenaissanceBenchmarkCategoryLevel\"}},{\"assessmentReportingMethodType\":\"State Benchmark Cat. Name\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"StateBenchmarkCategoryName\"}},{\"assessmentReportingMethodType\":\"State Benchmark Level\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"StateBenchmarkCategoryLevel\"}},{\"assessmentReportingMethodType\":\"State Benchmark Proficient\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"StateBenchmarkProficient\"}},{\"assessmentReportingMethodType\":\"District Benchmark Cat. Name\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"DistrictBenchmarkCategoryName\"}},{\"assessmentReportingMethodType\":\"District Benchmark Level\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"DistrictBenchmarkCategoryLevel\"}},{\"assessmentReportingMethodType\":\"District Benchmark Proficient\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"DistrictBenchmarkProficient\"}},{\"assessmentReportingMethodType\":\"Estimated Oral Reading Fluency\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"EstimatedOralReadingFluency\"}},{\"assessmentReportingMethodType\":\"Literacy Classification\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"LiteracyClassification\"}}]}},{\"Name\":\"DataMap_ODS2.5_STAR_STAR-MA-V1\",\"ResourcePath\":\"/studentAssessments\",\"ColumnHeaders\":[\"DI_StudentId\",\"DI_SchoolYear\",\"DI_AssessedGradeLevel\",\"DI_AssessmentStudentIdentifier\",\"DI_AdministrationDate\",\"DI_RenaissanceBenchmarkCategoryName\",\"RenaissanceClientID\",\"SchoolYear\",\"SchoolYearStartDate\",\"SchoolYearEndDate\",\"StudentRenaissanceID\",\"StudentSourcedID\",\"StudentIdentifier\",\"StudentUserID\",\"StudentStateID\",\"StudentEmail\",\"StudentFirstName\",\"StudentMiddleName\",\"StudentLastName\",\"Gender\",\"BirthDate\",\"MultiRace\",\"HispanicOrLatino\",\"AmericanIndianOrAlaskaNative\",\"Asian\",\"BlackOrAfricanAmerican\",\"NativeHawaiianOrOtherPacificIslander\",\"White\",\"CurrentGrade\",\"EnrollmentStatus\",\"DistrictRenaissanceID\",\"DistrictSourcedID\",\"DistrictIdentifier\",\"DistrictStateID\",\"DistrictName\",\"SchoolRenaissanceID\",\"SchoolSourcedID\",\"SchoolIdentifier\",\"SchoolStateID\",\"SchoolName\",\"CourseRenaissanceID\",\"CourseSourcedID\",\"CourseCode\",\"CourseName\",\"ClassRenaissanceID\",\"ClassSourcedID\",\"ClassCode\",\"GroupID\",\"GroupOrClassName\",\"TeacherRenaissanceID\",\"TeacherSourcedID\",\"TeacherIdentifier\",\"TeacherUserID\",\"TeacherStateID\",\"TeacherEmail\",\"TeacherFirstName\",\"TeacherMiddleName\",\"TeacherLastName\",\"AssessmentID\",\"LaunchDate\",\"CompletedDate\",\"CompletedDateLocal\",\"AssessmentNumber\",\"AssessmentType\",\"AssessmentStatus\",\"DeactivationReason\",\"GradePlacement\",\"Grade\",\"ExtraTime\",\"Audio\",\"ScaledScore\",\"StandardErrorOfMeasurement\",\"RaschScore\",\"UnifiedScore\",\"PartnershipForAssessmentOfReadinessForCollegeAndCareers\",\"SmarterBalancedAssessmentConsortium\",\"OpenGrowthScore\",\"GradeEquivalent\",\"PercentileRank\",\"NormalCurveEquivalent\",\"TotalTimeInSeconds\",\"TotalCorrect\",\"TotalPossible\",\"StudentGrowthPercentileFallFall\",\"StudentGrowthPercentileFallSpring\",\"StudentGrowthPercentileFallWinter\",\"StudentGrowthPercentileSpringFall\",\"StudentGrowthPercentileSpringSpring\",\"StudentGrowthPercentileWinterSpring\",\"ScreeningPeriodWindowName\",\"ScreeningWindowStartDate\",\"ScreeningWindowEndDate\",\"RenaissanceBenchmarkCategoryName\",\"RenaissanceBenchmarkCategoryLevel\",\"RenaissanceBenchmarkCategoryNumberOfLevels\",\"RenaissanceBenchmarkCategoryMinPercentileRank\",\"RenaissanceBenchmarkCategoryMaxPercentileRank\",\"StateBenchmarkAssessmentName\",\"StateBenchmarkCategoryName\",\"StateBenchmarkProficient\",\"StateBenchmarkCategoryLevel\",\"StateBenchmarkNumberOfCategoryLevels\",\"StateBenchmarkMinScaledScore\",\"StateBenchmarkMaxScaledScore\",\"DistrictBenchmarkCategoryName\",\"DistrictBenchmarkProficient\",\"DistrictBenchmarkCategoryLevel\",\"DistrictBenchmarkNumberOfCategoryLevels\",\"DistrictBenchmarkMinPercentileRank\",\"DistrictBenchmarkMaxPercentileRank\",\"SchoolBenchmarkCategoryName\",\"SchoolBenchmarkProficient\",\"SchoolBenchmarkCategoryLevel\",\"SchoolBenchmarkNumberOfCategoryLevels\",\"SchoolBenchmarkMinPercentileRank\",\"SchoolBenchmarkMaxPercentileRank\",\"CurrentSGP\",\"Quantile\",\"TakenAt\"],\"Map\":{\"assessmentReference\":{\"identifier\":\"STAR-MA-V1\",\"namespace\":\"http://renaissance.com/Assessment\"},\"studentReference\":{\"studentUniqueId\":{\"Column\":\"DI_StudentId\"}},\"administrationDate\":{\"Column\":\"DI_AdministrationDate\"},\"identifier\":{\"Column\":\"DI_AssessmentStudentIdentifier\"},\"whenAssessedGradeLevelDescriptor\":{\"Column\":\"DI_AssessedGradeLevel\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Renaissance Benchmark\",\"performanceLevelDescriptor\":{\"Column\":\"DI_RenaissanceBenchmarkCategoryName\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"ScaledScore\"}},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"StandardErrorOfMeasurement\"}},{\"assessmentReportingMethodType\":\"Rasch Score\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"RaschScore\"}},{\"assessmentReportingMethodType\":\"Unified Score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"UnifiedScore\"}},{\"assessmentReportingMethodType\":\"Open Growth Score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"OpenGrowthScore\"}},{\"assessmentReportingMethodType\":\"Grade Equivalent\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"GradeEquivalent\"}},{\"assessmentReportingMethodType\":\"Normal curve equivalent\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"NormalCurveEquivalent\"}},{\"assessmentReportingMethodType\":\"Percentile rank\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"PercentileRank\"}},{\"assessmentReportingMethodType\":\"Growth Percentile Fall-to-Fall\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileFallFall\"}},{\"assessmentReportingMethodType\":\"Growth Percentile Fall-to-Spring\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileFallSpring\"}},{\"assessmentReportingMethodType\":\"Growth Percentile Fall-to-Winter\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileFallWinter\"}},{\"assessmentReportingMethodType\":\"Growth Percentile Spring-to-Fall\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileSpringFall\"}},{\"assessmentReportingMethodType\":\"Growth Percentile Spring-to-Spring\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileSpringSpring\"}},{\"assessmentReportingMethodType\":\"Growth Percentile Winter-to-Spring\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileWinterSpring\"}},{\"assessmentReportingMethodType\":\"Total Correct\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"TotalCorrect\"}},{\"assessmentReportingMethodType\":\"Total Possible\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"TotalPossible\"}},{\"assessmentReportingMethodType\":\"Quantile Measure\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Quantile\"}},{\"assessmentReportingMethodType\":\"Screening Period Window Name\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"ScreeningPeriodWindowName\"}},{\"assessmentReportingMethodType\":\"Renaissance Benchmark Level\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"RenaissanceBenchmarkCategoryLevel\"}},{\"assessmentReportingMethodType\":\"State Benchmark Cat. Name\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"StateBenchmarkCategoryName\"}},{\"assessmentReportingMethodType\":\"State Benchmark Level\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"StateBenchmarkCategoryLevel\"}},{\"assessmentReportingMethodType\":\"State Benchmark Proficient\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"StateBenchmarkProficient\"}},{\"assessmentReportingMethodType\":\"District Benchmark Cat. Name\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"DistrictBenchmarkCategoryName\"}},{\"assessmentReportingMethodType\":\"District Benchmark Level\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"DistrictBenchmarkCategoryLevel\"}},{\"assessmentReportingMethodType\":\"District Benchmark Proficient\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"DistrictBenchmarkProficient\"}}]}},{\"Name\":\"DataMap_ODS2.5_STAR_STAR-RD-V1\",\"ResourcePath\":\"/studentAssessments\",\"ColumnHeaders\":[\"DI_StudentId\",\"DI_SchoolYear\",\"DI_AssessedGradeLevel\",\"DI_AssessmentStudentIdentifier\",\"DI_AdministrationDate\",\"DI_RenaissanceBenchmarkCategoryName\",\"RenaissanceClientID\",\"SchoolYear\",\"SchoolYearStartDate\",\"SchoolYearEndDate\",\"StudentRenaissanceID\",\"StudentSourcedID\",\"StudentIdentifier\",\"StudentUserID\",\"StudentStateID\",\"StudentEmail\",\"StudentFirstName\",\"StudentMiddleName\",\"StudentLastName\",\"Gender\",\"BirthDate\",\"MultiRace\",\"HispanicOrLatino\",\"AmericanIndianOrAlaskaNative\",\"Asian\",\"BlackOrAfricanAmerican\",\"NativeHawaiianOrOtherPacificIslander\",\"White\",\"CurrentGrade\",\"EnrollmentStatus\",\"DistrictRenaissanceID\",\"DistrictSourcedID\",\"DistrictIdentifier\",\"DistrictStateID\",\"DistrictName\",\"SchoolRenaissanceID\",\"SchoolSourcedID\",\"SchoolIdentifier\",\"SchoolStateID\",\"SchoolName\",\"CourseRenaissanceID\",\"CourseSourcedID\",\"CourseCode\",\"CourseName\",\"ClassRenaissanceID\",\"ClassSourcedID\",\"ClassCode\",\"GroupID\",\"GroupOrClassName\",\"TeacherRenaissanceID\",\"TeacherSourcedID\",\"TeacherIdentifier\",\"TeacherUserID\",\"TeacherStateID\",\"TeacherEmail\",\"TeacherFirstName\",\"TeacherMiddleName\",\"TeacherLastName\",\"AssessmentID\",\"LaunchDate\",\"CompletedDate\",\"CompletedDateLocal\",\"AssessmentNumber\",\"AssessmentType\",\"AssessmentStatus\",\"DeactivationReason\",\"GradePlacement\",\"Grade\",\"ExtraTime\",\"ScaledScore\",\"StandardErrorOfMeasurement\",\"RaschScore\",\"UnifiedScore\",\"PartnershipForAssessmentOfReadinessForCollegeAndCareers\",\"SmarterBalancedAssessmentConsortium\",\"OpenGrowthScore\",\"GradeEquivalent\",\"PercentileRank\",\"NormalCurveEquivalent\",\"InstructionalReadingLevel\",\"EstimatedOralReadingFluency\",\"LowerZoneOfProximalDevelopment\",\"UpperZoneOfProximalDevelopment\",\"Lexile\",\"LowerLexileZoneOfProximalDevelopment\",\"UpperLexileZoneOfProximalDevelopment\",\"TotalTimeInSeconds\",\"TotalCorrect\",\"TotalPossible\",\"Grade3_AssessmentAttempts\",\"Grade3_PassingStatus\",\"Grade3_PassingScore\",\"StudentGrowthPercentileFallFall\",\"StudentGrowthPercentileFallSpring\",\"StudentGrowthPercentileFallWinter\",\"StudentGrowthPercentileSpringFall\",\"StudentGrowthPercentileSpringSpring\",\"StudentGrowthPercentileWinterSpring\",\"ScreeningPeriodWindowName\",\"ScreeningWindowStartDate\",\"ScreeningWindowEndDate\",\"RenaissanceBenchmarkCategoryName\",\"RenaissanceBenchmarkCategoryLevel\",\"RenaissanceBenchmarkCategoryNumberOfLevels\",\"RenaissanceBenchmarkCategoryMinPercentileRank\",\"RenaissanceBenchmarkCategoryMaxPercentileRank\",\"StateBenchmarkAssessmentName\",\"StateBenchmarkCategoryName\",\"StateBenchmarkProficient\",\"StateBenchmarkCategoryLevel\",\"StateBenchmarkNumberOfCategoryLevels\",\"StateBenchmarkMinScaledScore\",\"StateBenchmarkMaxScaledScore\",\"DistrictBenchmarkCategoryName\",\"DistrictBenchmarkProficient\",\"DistrictBenchmarkCategoryLevel\",\"DistrictBenchmarkNumberOfCategoryLevels\",\"DistrictBenchmarkMinPercentileRank\",\"DistrictBenchmarkMaxPercentileRank\",\"SchoolBenchmarkCategoryName\",\"SchoolBenchmarkProficient\",\"SchoolBenchmarkCategoryLevel\",\"SchoolBenchmarkNumberOfCategoryLevels\",\"SchoolBenchmarkMinPercentileRank\",\"SchoolBenchmarkMaxPercentileRank\",\"CurrentSGP\",\"TakenAt\"],\"Map\":{\"assessmentReference\":{\"identifier\":\"STAR-RD-V1\",\"namespace\":\"http://renaissance.com/Assessment\"},\"studentReference\":{\"studentUniqueId\":{\"Column\":\"DI_StudentId\"}},\"administrationDate\":{\"Column\":\"DI_AdministrationDate\"},\"identifier\":{\"Column\":\"DI_AssessmentStudentIdentifier\"},\"whenAssessedGradeLevelDescriptor\":{\"Column\":\"DI_AssessedGradeLevel\"},\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Renaissance Benchmark\",\"performanceLevelDescriptor\":{\"Column\":\"DI_RenaissanceBenchmarkCategoryName\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"ScaledScore\"}},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"StandardErrorOfMeasurement\"}},{\"assessmentReportingMethodType\":\"Rasch Score\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"RaschScore\"}},{\"assessmentReportingMethodType\":\"Unified Score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"UnifiedScore\"}},{\"assessmentReportingMethodType\":\"Open Growth Score\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"OpenGrowthScore\"}},{\"assessmentReportingMethodType\":\"Grade Equivalent\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"GradeEquivalent\"}},{\"assessmentReportingMethodType\":\"Normal curve equivalent\",\"resultDatatypeType\":\"Decimal\",\"result\":{\"Column\":\"NormalCurveEquivalent\"}},{\"assessmentReportingMethodType\":\"Percentile rank\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"PercentileRank\"}},{\"assessmentReportingMethodType\":\"Growth Percentile Fall-to-Fall\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileFallFall\"}},{\"assessmentReportingMethodType\":\"Growth Percentile Fall-to-Spring\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileFallSpring\"}},{\"assessmentReportingMethodType\":\"Growth Percentile Fall-to-Winter\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileFallWinter\"}},{\"assessmentReportingMethodType\":\"Growth Percentile Spring-to-Fall\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileSpringFall\"}},{\"assessmentReportingMethodType\":\"Growth Percentile Spring-to-Spring\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileSpringSpring\"}},{\"assessmentReportingMethodType\":\"Growth Percentile Winter-to-Spring\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"StudentGrowthPercentileWinterSpring\"}},{\"assessmentReportingMethodType\":\"Total Correct\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"TotalCorrect\"}},{\"assessmentReportingMethodType\":\"Total Possible\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"TotalPossible\"}},{\"assessmentReportingMethodType\":\"Screening Period Window Name\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"ScreeningPeriodWindowName\"}},{\"assessmentReportingMethodType\":\"Renaissance Benchmark Level\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"RenaissanceBenchmarkCategoryLevel\"}},{\"assessmentReportingMethodType\":\"State Benchmark Cat. Name\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"StateBenchmarkCategoryName\"}},{\"assessmentReportingMethodType\":\"State Benchmark Level\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"StateBenchmarkCategoryLevel\"}},{\"assessmentReportingMethodType\":\"State Benchmark Proficient\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"StateBenchmarkProficient\"}},{\"assessmentReportingMethodType\":\"District Benchmark Cat. Name\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"DistrictBenchmarkCategoryName\"}},{\"assessmentReportingMethodType\":\"District Benchmark Level\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"DistrictBenchmarkCategoryLevel\"}},{\"assessmentReportingMethodType\":\"District Benchmark Proficient\",\"resultDatatypeType\":\"Level\",\"result\":{\"Column\":\"DistrictBenchmarkProficient\"}},{\"assessmentReportingMethodType\":\"Lexile Measure\",\"resultDatatypeType\":\"Integer\",\"result\":{\"Column\":\"Lexile\"}}]}}],\"Bootstraps\":[{\"Name\":\"STAR_ODS2.5_PLD\",\"ResourcePath\":\"/performanceLevelDescriptors\",\"Data\":[{\"codeValue\":\"At-Above-Benchmark\",\"description\":\"At-Above-Benchmark\",\"namespace\":\"http://renaissance.com/PerformanceLevelDescriptor\",\"shortDescription\":\"At-Above-Benchmark\"},{\"codeValue\":\"Intervention\",\"description\":\"Intervention\",\"namespace\":\"http://renaissance.com/PerformanceLevelDescriptor\",\"shortDescription\":\"Intervention\"},{\"codeValue\":\"On-Watch\",\"description\":\"On-Watch\",\"namespace\":\"http://renaissance.com/PerformanceLevelDescriptor\",\"shortDescription\":\"On-Watch\"},{\"codeValue\":\"Urgent-Intervention\",\"description\":\"Urgent-Intervention\",\"namespace\":\"http://renaissance.com/PerformanceLevelDescriptor\",\"shortDescription\":\"Urgent-Intervention\"}]},{\"Name\":\"STAR_ODS2.5_Assessment_STAR-EARLY-LIT-V1\",\"ResourcePath\":\"/assessments\",\"Data\":{\"identifier\":\"STAR-EARLY-LIT-V1\",\"title\":\"Renaissance Star Early Literacy\",\"revisionDate\":\"2021-04-13\",\"version\":2020,\"namespace\":\"http://renaissance.com/Assessment\",\"assessedGradeLevels\":[{\"gradeLevelDescriptor\":\"Kindergarten\"},{\"gradeLevelDescriptor\":\"First grade\"},{\"gradeLevelDescriptor\":\"Second grade\"},{\"gradeLevelDescriptor\":\"Third grade\"},{\"gradeLevelDescriptor\":\"Fourth grade\"},{\"gradeLevelDescriptor\":\"Fifth grade\"},{\"gradeLevelDescriptor\":\"Sixth grade\"},{\"gradeLevelDescriptor\":\"Seventh grade\"},{\"gradeLevelDescriptor\":\"Eighth grade\"},{\"gradeLevelDescriptor\":\"Ninth grade\"},{\"gradeLevelDescriptor\":\"Tenth grade\"},{\"gradeLevelDescriptor\":\"Eleventh grade\"},{\"gradeLevelDescriptor\":\"Twelfth grade\"},{\"gradeLevelDescriptor\":\"Ungraded\"}],\"categoryDescriptor\":\"Other\",\"academicSubjects\":[{\"academicSubjectDescriptor\":\"Reading\"}],\"scores\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Rasch Score\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Unified Score\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Open Growth Score\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Grade Equivalent\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Normal curve equivalent\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Percentile rank\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Growth Percentile Fall-to-Fall\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Growth Percentile Fall-to-Spring\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Growth Percentile Fall-to-Winter\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Growth Percentile Spring-to-Fall\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Growth Percentile Spring-to-Spring\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Growth Percentile Winter-to-Spring\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Total Correct\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Total Possible\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Screening Period Window Name\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Renaissance Benchmark Level\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"State Benchmark Cat. Name\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"State Benchmark Level\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"State Benchmark Proficient\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"District Benchmark Cat. Name\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"District Benchmark Level\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"District Benchmark Proficient\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Estimated Oral Reading Fluency\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Literacy Classification\",\"resultDatatypeType\":\"Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Renaissance Benchmark\",\"performanceLevelDescriptor\":\"http://renaissance.com/PerformanceLevelDescriptor/At-Above-Benchmark\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Renaissance Benchmark\",\"performanceLevelDescriptor\":\"http://renaissance.com/PerformanceLevelDescriptor/Intervention\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Renaissance Benchmark\",\"performanceLevelDescriptor\":\"http://renaissance.com/PerformanceLevelDescriptor/On-Watch\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Renaissance Benchmark\",\"performanceLevelDescriptor\":\"http://renaissance.com/PerformanceLevelDescriptor/Urgent-Intervention\",\"resultDatatypeType\":\"Level\"}]}},{\"Name\":\"STAR_ODS2.5_Assessment_STAR-MA-V1\",\"ResourcePath\":\"/assessments\",\"Data\":{\"identifier\":\"STAR-MA-V1\",\"title\":\"Renaissance Star Math\",\"revisionDate\":\"2021-04-13\",\"version\":2020,\"namespace\":\"http://renaissance.com/Assessment\",\"assessedGradeLevels\":[{\"gradeLevelDescriptor\":\"Kindergarten\"},{\"gradeLevelDescriptor\":\"First grade\"},{\"gradeLevelDescriptor\":\"Second grade\"},{\"gradeLevelDescriptor\":\"Third grade\"},{\"gradeLevelDescriptor\":\"Fourth grade\"},{\"gradeLevelDescriptor\":\"Fifth grade\"},{\"gradeLevelDescriptor\":\"Sixth grade\"},{\"gradeLevelDescriptor\":\"Seventh grade\"},{\"gradeLevelDescriptor\":\"Eighth grade\"},{\"gradeLevelDescriptor\":\"Ninth grade\"},{\"gradeLevelDescriptor\":\"Tenth grade\"},{\"gradeLevelDescriptor\":\"Eleventh grade\"},{\"gradeLevelDescriptor\":\"Twelfth grade\"},{\"gradeLevelDescriptor\":\"Ungraded\"}],\"categoryDescriptor\":\"Other\",\"academicSubjects\":[{\"academicSubjectDescriptor\":\"Mathematics\"}],\"scores\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Rasch Score\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Unified Score\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Open Growth Score\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Grade Equivalent\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Normal curve equivalent\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Percentile rank\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Growth Percentile Fall-to-Fall\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Growth Percentile Fall-to-Spring\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Growth Percentile Fall-to-Winter\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Growth Percentile Spring-to-Fall\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Growth Percentile Spring-to-Spring\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Growth Percentile Winter-to-Spring\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Total Correct\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Total Possible\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Quantile Measure\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Screening Period Window Name\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Renaissance Benchmark Level\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"State Benchmark Cat. Name\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"State Benchmark Level\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"State Benchmark Proficient\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"District Benchmark Cat. Name\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"District Benchmark Level\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"District Benchmark Proficient\",\"resultDatatypeType\":\"Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Renaissance Benchmark\",\"performanceLevelDescriptor\":\"http://renaissance.com/PerformanceLevelDescriptor/At-Above-Benchmark\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Renaissance Benchmark\",\"performanceLevelDescriptor\":\"http://renaissance.com/PerformanceLevelDescriptor/Intervention\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Renaissance Benchmark\",\"performanceLevelDescriptor\":\"http://renaissance.com/PerformanceLevelDescriptor/On-Watch\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Renaissance Benchmark\",\"performanceLevelDescriptor\":\"http://renaissance.com/PerformanceLevelDescriptor/Urgent-Intervention\",\"resultDatatypeType\":\"Level\"}]}},{\"Name\":\"STAR_ODS2.5_Assessment_STAR-RD-V1\",\"ResourcePath\":\"/assessments\",\"Data\":{\"identifier\":\"STAR-RD-V1\",\"title\":\"Renaissance Star Reading\",\"revisionDate\":\"2021-04-13\",\"version\":2020,\"namespace\":\"http://renaissance.com/Assessment\",\"assessedGradeLevels\":[{\"gradeLevelDescriptor\":\"Kindergarten\"},{\"gradeLevelDescriptor\":\"First grade\"},{\"gradeLevelDescriptor\":\"Second grade\"},{\"gradeLevelDescriptor\":\"Third grade\"},{\"gradeLevelDescriptor\":\"Fourth grade\"},{\"gradeLevelDescriptor\":\"Fifth grade\"},{\"gradeLevelDescriptor\":\"Sixth grade\"},{\"gradeLevelDescriptor\":\"Seventh grade\"},{\"gradeLevelDescriptor\":\"Eighth grade\"},{\"gradeLevelDescriptor\":\"Ninth grade\"},{\"gradeLevelDescriptor\":\"Tenth grade\"},{\"gradeLevelDescriptor\":\"Eleventh grade\"},{\"gradeLevelDescriptor\":\"Twelfth grade\"},{\"gradeLevelDescriptor\":\"Ungraded\"}],\"categoryDescriptor\":\"Other\",\"academicSubjects\":[{\"academicSubjectDescriptor\":\"Reading\"}],\"scores\":[{\"assessmentReportingMethodType\":\"Scale score\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Standard error measurement\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Rasch Score\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Unified Score\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Open Growth Score\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Grade Equivalent\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Normal curve equivalent\",\"resultDatatypeType\":\"Decimal\"},{\"assessmentReportingMethodType\":\"Percentile rank\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Growth Percentile Fall-to-Fall\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Growth Percentile Fall-to-Spring\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Growth Percentile Fall-to-Winter\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Growth Percentile Spring-to-Fall\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Growth Percentile Spring-to-Spring\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Growth Percentile Winter-to-Spring\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Total Correct\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Total Possible\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"Screening Period Window Name\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Renaissance Benchmark Level\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"State Benchmark Cat. Name\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"State Benchmark Level\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"State Benchmark Proficient\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"District Benchmark Cat. Name\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"District Benchmark Level\",\"resultDatatypeType\":\"Integer\"},{\"assessmentReportingMethodType\":\"District Benchmark Proficient\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Lexile Measure\",\"resultDatatypeType\":\"Integer\"}],\"performanceLevels\":[{\"assessmentReportingMethodType\":\"Renaissance Benchmark\",\"performanceLevelDescriptor\":\"http://renaissance.com/PerformanceLevelDescriptor/At-Above-Benchmark\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Renaissance Benchmark\",\"performanceLevelDescriptor\":\"http://renaissance.com/PerformanceLevelDescriptor/Intervention\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Renaissance Benchmark\",\"performanceLevelDescriptor\":\"http://renaissance.com/PerformanceLevelDescriptor/On-Watch\",\"resultDatatypeType\":\"Level\"},{\"assessmentReportingMethodType\":\"Renaissance Benchmark\",\"performanceLevelDescriptor\":\"http://renaissance.com/PerformanceLevelDescriptor/Urgent-Intervention\",\"resultDatatypeType\":\"Level\"}]}}],\"Lookups\":[]}",
-    "submitter": {
-        "name": "Emilio Baez",
-        "organization": "Developers.Net",
-        "email": "emilio@developers.net"
-    }
+  "id": 1052,
+  "title": "STAR Reading, STAR Early Literacy and STAR Math Assessments - API 2.X - v1",
+  "description": "This template includes the STAR Reading, STAR Early Literacy and STAR Math assessments.",
+  "apiVersion": "2.5+",
+  "dateTimePublished": "2021-04-15T15:02:30.3557221",
+  "template": {
+    "Maps": [
+      {
+        "Name": "DataMap_ODS2.5_STAR_STAR-EARLY-LIT-V1",
+        "ResourcePath": "/studentAssessments",
+        "ColumnHeaders": [
+          "DI_StudentId",
+          "DI_SchoolYear",
+          "DI_AssessedGradeLevel",
+          "DI_AssessmentStudentIdentifier",
+          "DI_AdministrationDate",
+          "DI_RenaissanceBenchmarkCategoryName",
+          "RenaissanceClientID",
+          "SchoolYear",
+          "SchoolYearStartDate",
+          "SchoolYearEndDate",
+          "StudentRenaissanceID",
+          "StudentSourcedID",
+          "StudentIdentifier",
+          "StudentUserID",
+          "StudentStateID",
+          "StudentEmail",
+          "StudentFirstName",
+          "StudentMiddleName",
+          "StudentLastName",
+          "Gender",
+          "BirthDate",
+          "MultiRace",
+          "HispanicOrLatino",
+          "AmericanIndianOrAlaskaNative",
+          "Asian",
+          "BlackOrAfricanAmerican",
+          "NativeHawaiianOrOtherPacificIslander",
+          "White",
+          "CurrentGrade",
+          "EnrollmentStatus",
+          "DistrictRenaissanceID",
+          "DistrictSourcedID",
+          "DistrictIdentifier",
+          "DistrictStateID",
+          "DistrictName",
+          "SchoolRenaissanceID",
+          "SchoolSourcedID",
+          "SchoolIdentifier",
+          "SchoolStateID",
+          "SchoolName",
+          "CourseRenaissanceID",
+          "CourseSourcedID",
+          "CourseCode",
+          "CourseName",
+          "ClassRenaissanceID",
+          "ClassSourcedID",
+          "ClassCode",
+          "GroupID",
+          "GroupOrClassName",
+          "TeacherRenaissanceID",
+          "TeacherSourcedID",
+          "TeacherIdentifier",
+          "TeacherUserID",
+          "TeacherStateID",
+          "TeacherEmail",
+          "TeacherFirstName",
+          "TeacherMiddleName",
+          "TeacherLastName",
+          "AssessmentID",
+          "LaunchDate",
+          "CompletedDate",
+          "CompletedDateLocal",
+          "AssessmentNumber",
+          "AssessmentType",
+          "AssessmentStatus",
+          "DeactivationReason",
+          "GradePlacement",
+          "Grade",
+          "ExtraTime",
+          "ScaledScore",
+          "StandardErrorOfMeasurement",
+          "RaschScore",
+          "UnifiedScore",
+          "PartnershipForAssessmentOfReadinessForCollegeAndCareers",
+          "SmarterBalancedAssessmentConsortium",
+          "OpenGrowthScore",
+          "GradeEquivalent",
+          "PercentileRank",
+          "NormalCurveEquivalent",
+          "EstimatedOralReadingFluency",
+          "LiteracyClassification",
+          "TotalTimeInSeconds",
+          "TotalCorrect",
+          "TotalPossible",
+          "StudentGrowthPercentileFallFall",
+          "StudentGrowthPercentileFallSpring",
+          "StudentGrowthPercentileFallWinter",
+          "StudentGrowthPercentileSpringFall",
+          "StudentGrowthPercentileSpringSpring",
+          "StudentGrowthPercentileWinterSpring",
+          "ScreeningPeriodWindowName",
+          "ScreeningWindowStartDate",
+          "ScreeningWindowEndDate",
+          "RenaissanceBenchmarkCategoryName",
+          "RenaissanceBenchmarkCategoryLevel",
+          "RenaissanceBenchmarkCategoryNumberOfLevels",
+          "RenaissanceBenchmarkCategoryMinPercentileRank",
+          "RenaissanceBenchmarkCategoryMaxPercentileRank",
+          "StateBenchmarkAssessmentName",
+          "StateBenchmarkCategoryName",
+          "StateBenchmarkProficient",
+          "StateBenchmarkCategoryLevel",
+          "StateBenchmarkNumberOfCategoryLevels",
+          "StateBenchmarkMinScaledScore",
+          "StateBenchmarkMaxScaledScore",
+          "DistrictBenchmarkCategoryName",
+          "DistrictBenchmarkProficient",
+          "DistrictBenchmarkCategoryLevel",
+          "DistrictBenchmarkNumberOfCategoryLevels",
+          "DistrictBenchmarkMinPercentileRank",
+          "DistrictBenchmarkMaxPercentileRank",
+          "SchoolBenchmarkCategoryName",
+          "SchoolBenchmarkProficient",
+          "SchoolBenchmarkCategoryLevel",
+          "SchoolBenchmarkNumberOfCategoryLevels",
+          "SchoolBenchmarkMinPercentileRank",
+          "SchoolBenchmarkMaxPercentileRank",
+          "CurrentSGP",
+          "TakenAt"
+        ],
+        "Map": {
+          "assessmentReference": {
+            "identifier": "STAR-EARLY-LIT-V1",
+            "namespace": "http://renaissance.com/Assessment"
+          },
+          "studentReference": {
+            "studentUniqueId": {
+              "Column": "DI_StudentId"
+            }
+          },
+          "administrationDate": {
+            "Column": "DI_AdministrationDate"
+          },
+          "identifier": {
+            "Column": "DI_AssessmentStudentIdentifier"
+          },
+          "whenAssessedGradeLevelDescriptor": {
+            "Column": "DI_AssessedGradeLevel"
+          },
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodType": "Renaissance Benchmark",
+              "performanceLevelDescriptor": {
+                "Column": "DI_RenaissanceBenchmarkCategoryName"
+              },
+              "performanceLevelMet": true
+            }
+          ],
+          "scoreResults": [
+            {
+              "assessmentReportingMethodType": "Scale score",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "ScaledScore"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Standard error measurement",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "StandardErrorOfMeasurement"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Rasch Score",
+              "resultDatatypeType": "Decimal",
+              "result": {
+                "Column": "RaschScore"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Unified Score",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "UnifiedScore"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Open Growth Score",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "OpenGrowthScore"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Grade Equivalent",
+              "resultDatatypeType": "Decimal",
+              "result": {
+                "Column": "GradeEquivalent"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Normal curve equivalent",
+              "resultDatatypeType": "Decimal",
+              "result": {
+                "Column": "NormalCurveEquivalent"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Percentile rank",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "PercentileRank"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Fall-to-Fall",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileFallFall"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Fall-to-Spring",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileFallSpring"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Fall-to-Winter",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileFallWinter"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Spring-to-Fall",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileSpringFall"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Spring-to-Spring",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileSpringSpring"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Winter-to-Spring",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileWinterSpring"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Total Correct",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "TotalCorrect"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Total Possible",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "TotalPossible"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Screening Period Window Name",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "ScreeningPeriodWindowName"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Renaissance Benchmark Level",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "RenaissanceBenchmarkCategoryLevel"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "State Benchmark Cat. Name",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "StateBenchmarkCategoryName"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "State Benchmark Level",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "StateBenchmarkCategoryLevel"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "State Benchmark Proficient",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "StateBenchmarkProficient"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "District Benchmark Cat. Name",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "DistrictBenchmarkCategoryName"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "District Benchmark Level",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "DistrictBenchmarkCategoryLevel"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "District Benchmark Proficient",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "DistrictBenchmarkProficient"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Estimated Oral Reading Fluency",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "EstimatedOralReadingFluency"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Literacy Classification",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "LiteracyClassification"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Name": "DataMap_ODS2.5_STAR_STAR-MA-V1",
+        "ResourcePath": "/studentAssessments",
+        "ColumnHeaders": [
+          "DI_StudentId",
+          "DI_SchoolYear",
+          "DI_AssessedGradeLevel",
+          "DI_AssessmentStudentIdentifier",
+          "DI_AdministrationDate",
+          "DI_RenaissanceBenchmarkCategoryName",
+          "RenaissanceClientID",
+          "SchoolYear",
+          "SchoolYearStartDate",
+          "SchoolYearEndDate",
+          "StudentRenaissanceID",
+          "StudentSourcedID",
+          "StudentIdentifier",
+          "StudentUserID",
+          "StudentStateID",
+          "StudentEmail",
+          "StudentFirstName",
+          "StudentMiddleName",
+          "StudentLastName",
+          "Gender",
+          "BirthDate",
+          "MultiRace",
+          "HispanicOrLatino",
+          "AmericanIndianOrAlaskaNative",
+          "Asian",
+          "BlackOrAfricanAmerican",
+          "NativeHawaiianOrOtherPacificIslander",
+          "White",
+          "CurrentGrade",
+          "EnrollmentStatus",
+          "DistrictRenaissanceID",
+          "DistrictSourcedID",
+          "DistrictIdentifier",
+          "DistrictStateID",
+          "DistrictName",
+          "SchoolRenaissanceID",
+          "SchoolSourcedID",
+          "SchoolIdentifier",
+          "SchoolStateID",
+          "SchoolName",
+          "CourseRenaissanceID",
+          "CourseSourcedID",
+          "CourseCode",
+          "CourseName",
+          "ClassRenaissanceID",
+          "ClassSourcedID",
+          "ClassCode",
+          "GroupID",
+          "GroupOrClassName",
+          "TeacherRenaissanceID",
+          "TeacherSourcedID",
+          "TeacherIdentifier",
+          "TeacherUserID",
+          "TeacherStateID",
+          "TeacherEmail",
+          "TeacherFirstName",
+          "TeacherMiddleName",
+          "TeacherLastName",
+          "AssessmentID",
+          "LaunchDate",
+          "CompletedDate",
+          "CompletedDateLocal",
+          "AssessmentNumber",
+          "AssessmentType",
+          "AssessmentStatus",
+          "DeactivationReason",
+          "GradePlacement",
+          "Grade",
+          "ExtraTime",
+          "Audio",
+          "ScaledScore",
+          "StandardErrorOfMeasurement",
+          "RaschScore",
+          "UnifiedScore",
+          "PartnershipForAssessmentOfReadinessForCollegeAndCareers",
+          "SmarterBalancedAssessmentConsortium",
+          "OpenGrowthScore",
+          "GradeEquivalent",
+          "PercentileRank",
+          "NormalCurveEquivalent",
+          "TotalTimeInSeconds",
+          "TotalCorrect",
+          "TotalPossible",
+          "StudentGrowthPercentileFallFall",
+          "StudentGrowthPercentileFallSpring",
+          "StudentGrowthPercentileFallWinter",
+          "StudentGrowthPercentileSpringFall",
+          "StudentGrowthPercentileSpringSpring",
+          "StudentGrowthPercentileWinterSpring",
+          "ScreeningPeriodWindowName",
+          "ScreeningWindowStartDate",
+          "ScreeningWindowEndDate",
+          "RenaissanceBenchmarkCategoryName",
+          "RenaissanceBenchmarkCategoryLevel",
+          "RenaissanceBenchmarkCategoryNumberOfLevels",
+          "RenaissanceBenchmarkCategoryMinPercentileRank",
+          "RenaissanceBenchmarkCategoryMaxPercentileRank",
+          "StateBenchmarkAssessmentName",
+          "StateBenchmarkCategoryName",
+          "StateBenchmarkProficient",
+          "StateBenchmarkCategoryLevel",
+          "StateBenchmarkNumberOfCategoryLevels",
+          "StateBenchmarkMinScaledScore",
+          "StateBenchmarkMaxScaledScore",
+          "DistrictBenchmarkCategoryName",
+          "DistrictBenchmarkProficient",
+          "DistrictBenchmarkCategoryLevel",
+          "DistrictBenchmarkNumberOfCategoryLevels",
+          "DistrictBenchmarkMinPercentileRank",
+          "DistrictBenchmarkMaxPercentileRank",
+          "SchoolBenchmarkCategoryName",
+          "SchoolBenchmarkProficient",
+          "SchoolBenchmarkCategoryLevel",
+          "SchoolBenchmarkNumberOfCategoryLevels",
+          "SchoolBenchmarkMinPercentileRank",
+          "SchoolBenchmarkMaxPercentileRank",
+          "CurrentSGP",
+          "Quantile",
+          "TakenAt"
+        ],
+        "Map": {
+          "assessmentReference": {
+            "identifier": "STAR-MA-V1",
+            "namespace": "http://renaissance.com/Assessment"
+          },
+          "studentReference": {
+            "studentUniqueId": {
+              "Column": "DI_StudentId"
+            }
+          },
+          "administrationDate": {
+            "Column": "DI_AdministrationDate"
+          },
+          "identifier": {
+            "Column": "DI_AssessmentStudentIdentifier"
+          },
+          "whenAssessedGradeLevelDescriptor": {
+            "Column": "DI_AssessedGradeLevel"
+          },
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodType": "Renaissance Benchmark",
+              "performanceLevelDescriptor": {
+                "Column": "DI_RenaissanceBenchmarkCategoryName"
+              },
+              "performanceLevelMet": true
+            }
+          ],
+          "scoreResults": [
+            {
+              "assessmentReportingMethodType": "Scale score",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "ScaledScore"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Standard error measurement",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "StandardErrorOfMeasurement"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Rasch Score",
+              "resultDatatypeType": "Decimal",
+              "result": {
+                "Column": "RaschScore"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Unified Score",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "UnifiedScore"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Open Growth Score",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "OpenGrowthScore"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Grade Equivalent",
+              "resultDatatypeType": "Decimal",
+              "result": {
+                "Column": "GradeEquivalent"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Normal curve equivalent",
+              "resultDatatypeType": "Decimal",
+              "result": {
+                "Column": "NormalCurveEquivalent"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Percentile rank",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "PercentileRank"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Fall-to-Fall",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileFallFall"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Fall-to-Spring",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileFallSpring"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Fall-to-Winter",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileFallWinter"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Spring-to-Fall",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileSpringFall"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Spring-to-Spring",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileSpringSpring"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Winter-to-Spring",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileWinterSpring"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Total Correct",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "TotalCorrect"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Total Possible",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "TotalPossible"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Quantile Measure",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "Quantile"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Screening Period Window Name",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "ScreeningPeriodWindowName"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Renaissance Benchmark Level",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "RenaissanceBenchmarkCategoryLevel"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "State Benchmark Cat. Name",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "StateBenchmarkCategoryName"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "State Benchmark Level",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "StateBenchmarkCategoryLevel"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "State Benchmark Proficient",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "StateBenchmarkProficient"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "District Benchmark Cat. Name",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "DistrictBenchmarkCategoryName"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "District Benchmark Level",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "DistrictBenchmarkCategoryLevel"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "District Benchmark Proficient",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "DistrictBenchmarkProficient"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Name": "DataMap_ODS2.5_STAR_STAR-RD-V1",
+        "ResourcePath": "/studentAssessments",
+        "ColumnHeaders": [
+          "DI_StudentId",
+          "DI_SchoolYear",
+          "DI_AssessedGradeLevel",
+          "DI_AssessmentStudentIdentifier",
+          "DI_AdministrationDate",
+          "DI_RenaissanceBenchmarkCategoryName",
+          "RenaissanceClientID",
+          "SchoolYear",
+          "SchoolYearStartDate",
+          "SchoolYearEndDate",
+          "StudentRenaissanceID",
+          "StudentSourcedID",
+          "StudentIdentifier",
+          "StudentUserID",
+          "StudentStateID",
+          "StudentEmail",
+          "StudentFirstName",
+          "StudentMiddleName",
+          "StudentLastName",
+          "Gender",
+          "BirthDate",
+          "MultiRace",
+          "HispanicOrLatino",
+          "AmericanIndianOrAlaskaNative",
+          "Asian",
+          "BlackOrAfricanAmerican",
+          "NativeHawaiianOrOtherPacificIslander",
+          "White",
+          "CurrentGrade",
+          "EnrollmentStatus",
+          "DistrictRenaissanceID",
+          "DistrictSourcedID",
+          "DistrictIdentifier",
+          "DistrictStateID",
+          "DistrictName",
+          "SchoolRenaissanceID",
+          "SchoolSourcedID",
+          "SchoolIdentifier",
+          "SchoolStateID",
+          "SchoolName",
+          "CourseRenaissanceID",
+          "CourseSourcedID",
+          "CourseCode",
+          "CourseName",
+          "ClassRenaissanceID",
+          "ClassSourcedID",
+          "ClassCode",
+          "GroupID",
+          "GroupOrClassName",
+          "TeacherRenaissanceID",
+          "TeacherSourcedID",
+          "TeacherIdentifier",
+          "TeacherUserID",
+          "TeacherStateID",
+          "TeacherEmail",
+          "TeacherFirstName",
+          "TeacherMiddleName",
+          "TeacherLastName",
+          "AssessmentID",
+          "LaunchDate",
+          "CompletedDate",
+          "CompletedDateLocal",
+          "AssessmentNumber",
+          "AssessmentType",
+          "AssessmentStatus",
+          "DeactivationReason",
+          "GradePlacement",
+          "Grade",
+          "ExtraTime",
+          "ScaledScore",
+          "StandardErrorOfMeasurement",
+          "RaschScore",
+          "UnifiedScore",
+          "PartnershipForAssessmentOfReadinessForCollegeAndCareers",
+          "SmarterBalancedAssessmentConsortium",
+          "OpenGrowthScore",
+          "GradeEquivalent",
+          "PercentileRank",
+          "NormalCurveEquivalent",
+          "InstructionalReadingLevel",
+          "EstimatedOralReadingFluency",
+          "LowerZoneOfProximalDevelopment",
+          "UpperZoneOfProximalDevelopment",
+          "Lexile",
+          "LowerLexileZoneOfProximalDevelopment",
+          "UpperLexileZoneOfProximalDevelopment",
+          "TotalTimeInSeconds",
+          "TotalCorrect",
+          "TotalPossible",
+          "Grade3_AssessmentAttempts",
+          "Grade3_PassingStatus",
+          "Grade3_PassingScore",
+          "StudentGrowthPercentileFallFall",
+          "StudentGrowthPercentileFallSpring",
+          "StudentGrowthPercentileFallWinter",
+          "StudentGrowthPercentileSpringFall",
+          "StudentGrowthPercentileSpringSpring",
+          "StudentGrowthPercentileWinterSpring",
+          "ScreeningPeriodWindowName",
+          "ScreeningWindowStartDate",
+          "ScreeningWindowEndDate",
+          "RenaissanceBenchmarkCategoryName",
+          "RenaissanceBenchmarkCategoryLevel",
+          "RenaissanceBenchmarkCategoryNumberOfLevels",
+          "RenaissanceBenchmarkCategoryMinPercentileRank",
+          "RenaissanceBenchmarkCategoryMaxPercentileRank",
+          "StateBenchmarkAssessmentName",
+          "StateBenchmarkCategoryName",
+          "StateBenchmarkProficient",
+          "StateBenchmarkCategoryLevel",
+          "StateBenchmarkNumberOfCategoryLevels",
+          "StateBenchmarkMinScaledScore",
+          "StateBenchmarkMaxScaledScore",
+          "DistrictBenchmarkCategoryName",
+          "DistrictBenchmarkProficient",
+          "DistrictBenchmarkCategoryLevel",
+          "DistrictBenchmarkNumberOfCategoryLevels",
+          "DistrictBenchmarkMinPercentileRank",
+          "DistrictBenchmarkMaxPercentileRank",
+          "SchoolBenchmarkCategoryName",
+          "SchoolBenchmarkProficient",
+          "SchoolBenchmarkCategoryLevel",
+          "SchoolBenchmarkNumberOfCategoryLevels",
+          "SchoolBenchmarkMinPercentileRank",
+          "SchoolBenchmarkMaxPercentileRank",
+          "CurrentSGP",
+          "TakenAt"
+        ],
+        "Map": {
+          "assessmentReference": {
+            "identifier": "STAR-RD-V1",
+            "namespace": "http://renaissance.com/Assessment"
+          },
+          "studentReference": {
+            "studentUniqueId": {
+              "Column": "DI_StudentId"
+            }
+          },
+          "administrationDate": {
+            "Column": "DI_AdministrationDate"
+          },
+          "identifier": {
+            "Column": "DI_AssessmentStudentIdentifier"
+          },
+          "whenAssessedGradeLevelDescriptor": {
+            "Column": "DI_AssessedGradeLevel"
+          },
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodType": "Renaissance Benchmark",
+              "performanceLevelDescriptor": {
+                "Column": "DI_RenaissanceBenchmarkCategoryName"
+              },
+              "performanceLevelMet": true
+            }
+          ],
+          "scoreResults": [
+            {
+              "assessmentReportingMethodType": "Scale score",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "ScaledScore"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Standard error measurement",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "StandardErrorOfMeasurement"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Rasch Score",
+              "resultDatatypeType": "Decimal",
+              "result": {
+                "Column": "RaschScore"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Unified Score",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "UnifiedScore"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Open Growth Score",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "OpenGrowthScore"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Grade Equivalent",
+              "resultDatatypeType": "Decimal",
+              "result": {
+                "Column": "GradeEquivalent"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Normal curve equivalent",
+              "resultDatatypeType": "Decimal",
+              "result": {
+                "Column": "NormalCurveEquivalent"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Percentile rank",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "PercentileRank"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Fall-to-Fall",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileFallFall"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Fall-to-Spring",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileFallSpring"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Fall-to-Winter",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileFallWinter"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Spring-to-Fall",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileSpringFall"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Spring-to-Spring",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileSpringSpring"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Winter-to-Spring",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "StudentGrowthPercentileWinterSpring"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Total Correct",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "TotalCorrect"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Total Possible",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "TotalPossible"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Screening Period Window Name",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "ScreeningPeriodWindowName"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Renaissance Benchmark Level",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "RenaissanceBenchmarkCategoryLevel"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "State Benchmark Cat. Name",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "StateBenchmarkCategoryName"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "State Benchmark Level",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "StateBenchmarkCategoryLevel"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "State Benchmark Proficient",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "StateBenchmarkProficient"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "District Benchmark Cat. Name",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "DistrictBenchmarkCategoryName"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "District Benchmark Level",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "DistrictBenchmarkCategoryLevel"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "District Benchmark Proficient",
+              "resultDatatypeType": "Level",
+              "result": {
+                "Column": "DistrictBenchmarkProficient"
+              }
+            },
+            {
+              "assessmentReportingMethodType": "Lexile Measure",
+              "resultDatatypeType": "Integer",
+              "result": {
+                "Column": "Lexile"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "Bootstraps": [
+      {
+        "Name": "STAR_ODS2.5_PLD",
+        "ResourcePath": "/performanceLevelDescriptors",
+        "Data": [
+          {
+            "codeValue": "At-Above-Benchmark",
+            "description": "At-Above-Benchmark",
+            "namespace": "http://renaissance.com/PerformanceLevelDescriptor",
+            "shortDescription": "At-Above-Benchmark"
+          },
+          {
+            "codeValue": "Intervention",
+            "description": "Intervention",
+            "namespace": "http://renaissance.com/PerformanceLevelDescriptor",
+            "shortDescription": "Intervention"
+          },
+          {
+            "codeValue": "On-Watch",
+            "description": "On-Watch",
+            "namespace": "http://renaissance.com/PerformanceLevelDescriptor",
+            "shortDescription": "On-Watch"
+          },
+          {
+            "codeValue": "Urgent-Intervention",
+            "description": "Urgent-Intervention",
+            "namespace": "http://renaissance.com/PerformanceLevelDescriptor",
+            "shortDescription": "Urgent-Intervention"
+          }
+        ]
+      },
+      {
+        "Name": "STAR_ODS2.5_Assessment_STAR-EARLY-LIT-V1",
+        "ResourcePath": "/assessments",
+        "Data": {
+          "identifier": "STAR-EARLY-LIT-V1",
+          "title": "Renaissance Star Early Literacy",
+          "revisionDate": "2021-04-13",
+          "version": 2020,
+          "namespace": "http://renaissance.com/Assessment",
+          "assessedGradeLevels": [
+            {
+              "gradeLevelDescriptor": "Kindergarten"
+            },
+            {
+              "gradeLevelDescriptor": "First grade"
+            },
+            {
+              "gradeLevelDescriptor": "Second grade"
+            },
+            {
+              "gradeLevelDescriptor": "Third grade"
+            },
+            {
+              "gradeLevelDescriptor": "Fourth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Fifth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Sixth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Seventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "Eighth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Ninth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Tenth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Eleventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "Twelfth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Ungraded"
+            }
+          ],
+          "categoryDescriptor": "Other",
+          "academicSubjects": [
+            {
+              "academicSubjectDescriptor": "Reading"
+            }
+          ],
+          "scores": [
+            {
+              "assessmentReportingMethodType": "Scale score",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Standard error measurement",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Rasch Score",
+              "resultDatatypeType": "Decimal"
+            },
+            {
+              "assessmentReportingMethodType": "Unified Score",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Open Growth Score",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Grade Equivalent",
+              "resultDatatypeType": "Decimal"
+            },
+            {
+              "assessmentReportingMethodType": "Normal curve equivalent",
+              "resultDatatypeType": "Decimal"
+            },
+            {
+              "assessmentReportingMethodType": "Percentile rank",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Fall-to-Fall",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Fall-to-Spring",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Fall-to-Winter",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Spring-to-Fall",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Spring-to-Spring",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Winter-to-Spring",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Total Correct",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Total Possible",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Screening Period Window Name",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Renaissance Benchmark Level",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "State Benchmark Cat. Name",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "State Benchmark Level",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "State Benchmark Proficient",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "District Benchmark Cat. Name",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "District Benchmark Level",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "District Benchmark Proficient",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Estimated Oral Reading Fluency",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Literacy Classification",
+              "resultDatatypeType": "Level"
+            }
+          ],
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodType": "Renaissance Benchmark",
+              "performanceLevelDescriptor": "http://renaissance.com/PerformanceLevelDescriptor/At-Above-Benchmark",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Renaissance Benchmark",
+              "performanceLevelDescriptor": "http://renaissance.com/PerformanceLevelDescriptor/Intervention",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Renaissance Benchmark",
+              "performanceLevelDescriptor": "http://renaissance.com/PerformanceLevelDescriptor/On-Watch",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Renaissance Benchmark",
+              "performanceLevelDescriptor": "http://renaissance.com/PerformanceLevelDescriptor/Urgent-Intervention",
+              "resultDatatypeType": "Level"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "STAR_ODS2.5_Assessment_STAR-MA-V1",
+        "ResourcePath": "/assessments",
+        "Data": {
+          "identifier": "STAR-MA-V1",
+          "title": "Renaissance Star Math",
+          "revisionDate": "2021-04-13",
+          "version": 2020,
+          "namespace": "http://renaissance.com/Assessment",
+          "assessedGradeLevels": [
+            {
+              "gradeLevelDescriptor": "Kindergarten"
+            },
+            {
+              "gradeLevelDescriptor": "First grade"
+            },
+            {
+              "gradeLevelDescriptor": "Second grade"
+            },
+            {
+              "gradeLevelDescriptor": "Third grade"
+            },
+            {
+              "gradeLevelDescriptor": "Fourth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Fifth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Sixth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Seventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "Eighth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Ninth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Tenth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Eleventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "Twelfth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Ungraded"
+            }
+          ],
+          "categoryDescriptor": "Other",
+          "academicSubjects": [
+            {
+              "academicSubjectDescriptor": "Mathematics"
+            }
+          ],
+          "scores": [
+            {
+              "assessmentReportingMethodType": "Scale score",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Standard error measurement",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Rasch Score",
+              "resultDatatypeType": "Decimal"
+            },
+            {
+              "assessmentReportingMethodType": "Unified Score",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Open Growth Score",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Grade Equivalent",
+              "resultDatatypeType": "Decimal"
+            },
+            {
+              "assessmentReportingMethodType": "Normal curve equivalent",
+              "resultDatatypeType": "Decimal"
+            },
+            {
+              "assessmentReportingMethodType": "Percentile rank",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Fall-to-Fall",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Fall-to-Spring",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Fall-to-Winter",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Spring-to-Fall",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Spring-to-Spring",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Winter-to-Spring",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Total Correct",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Total Possible",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Quantile Measure",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Screening Period Window Name",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Renaissance Benchmark Level",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "State Benchmark Cat. Name",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "State Benchmark Level",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "State Benchmark Proficient",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "District Benchmark Cat. Name",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "District Benchmark Level",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "District Benchmark Proficient",
+              "resultDatatypeType": "Level"
+            }
+          ],
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodType": "Renaissance Benchmark",
+              "performanceLevelDescriptor": "http://renaissance.com/PerformanceLevelDescriptor/At-Above-Benchmark",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Renaissance Benchmark",
+              "performanceLevelDescriptor": "http://renaissance.com/PerformanceLevelDescriptor/Intervention",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Renaissance Benchmark",
+              "performanceLevelDescriptor": "http://renaissance.com/PerformanceLevelDescriptor/On-Watch",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Renaissance Benchmark",
+              "performanceLevelDescriptor": "http://renaissance.com/PerformanceLevelDescriptor/Urgent-Intervention",
+              "resultDatatypeType": "Level"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "STAR_ODS2.5_Assessment_STAR-RD-V1",
+        "ResourcePath": "/assessments",
+        "Data": {
+          "identifier": "STAR-RD-V1",
+          "title": "Renaissance Star Reading",
+          "revisionDate": "2021-04-13",
+          "version": 2020,
+          "namespace": "http://renaissance.com/Assessment",
+          "assessedGradeLevels": [
+            {
+              "gradeLevelDescriptor": "Kindergarten"
+            },
+            {
+              "gradeLevelDescriptor": "First grade"
+            },
+            {
+              "gradeLevelDescriptor": "Second grade"
+            },
+            {
+              "gradeLevelDescriptor": "Third grade"
+            },
+            {
+              "gradeLevelDescriptor": "Fourth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Fifth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Sixth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Seventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "Eighth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Ninth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Tenth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Eleventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "Twelfth grade"
+            },
+            {
+              "gradeLevelDescriptor": "Ungraded"
+            }
+          ],
+          "categoryDescriptor": "Other",
+          "academicSubjects": [
+            {
+              "academicSubjectDescriptor": "Reading"
+            }
+          ],
+          "scores": [
+            {
+              "assessmentReportingMethodType": "Scale score",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Standard error measurement",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Rasch Score",
+              "resultDatatypeType": "Decimal"
+            },
+            {
+              "assessmentReportingMethodType": "Unified Score",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Open Growth Score",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Grade Equivalent",
+              "resultDatatypeType": "Decimal"
+            },
+            {
+              "assessmentReportingMethodType": "Normal curve equivalent",
+              "resultDatatypeType": "Decimal"
+            },
+            {
+              "assessmentReportingMethodType": "Percentile rank",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Fall-to-Fall",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Fall-to-Spring",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Fall-to-Winter",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Spring-to-Fall",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Spring-to-Spring",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Growth Percentile Winter-to-Spring",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Total Correct",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Total Possible",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "Screening Period Window Name",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Renaissance Benchmark Level",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "State Benchmark Cat. Name",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "State Benchmark Level",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "State Benchmark Proficient",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "District Benchmark Cat. Name",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "District Benchmark Level",
+              "resultDatatypeType": "Integer"
+            },
+            {
+              "assessmentReportingMethodType": "District Benchmark Proficient",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Lexile Measure",
+              "resultDatatypeType": "Integer"
+            }
+          ],
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodType": "Renaissance Benchmark",
+              "performanceLevelDescriptor": "http://renaissance.com/PerformanceLevelDescriptor/At-Above-Benchmark",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Renaissance Benchmark",
+              "performanceLevelDescriptor": "http://renaissance.com/PerformanceLevelDescriptor/Intervention",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Renaissance Benchmark",
+              "performanceLevelDescriptor": "http://renaissance.com/PerformanceLevelDescriptor/On-Watch",
+              "resultDatatypeType": "Level"
+            },
+            {
+              "assessmentReportingMethodType": "Renaissance Benchmark",
+              "performanceLevelDescriptor": "http://renaissance.com/PerformanceLevelDescriptor/Urgent-Intervention",
+              "resultDatatypeType": "Level"
+            }
+          ]
+        }
+      }
+    ],
+    "Lookups": []
+  },
+  "submitter": {
+    "name": "Emilio Baez",
+    "organization": "Developers.Net",
+    "email": "emilio@developers.net"
+  }
 }

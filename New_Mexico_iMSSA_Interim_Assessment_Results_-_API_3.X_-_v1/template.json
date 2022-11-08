@@ -1,13 +1,1566 @@
 {
-    "id": 1044,
-    "title": "New Mexico iMSSA Interim Assessment Results - API 3.X - v1",
-    "description": "This template includes the New Mexico iMSSA Interim Assessments",
-    "apiVersion": "3.2.0",
-    "dateTimePublished": "2021-01-06T17:36:21.4456083",
-    "template": "{\"Maps\":[{\"Name\":\"DataMap_iMSSA_IMSSA-V1\",\"ResourcePath\":\"/ed-fi/studentAssessments\",\"ColumnHeaders\":[\"DI_StudentId\",\"DI_SchoolYear\",\"DI_AssessedGradeLevel\",\"DI_AssessmentStudentIdentifier\",\"DI_AdministrationDate\",\"Language Usage Scale Score\",\"Lexile Score\",\"Mathematics Scale Score\",\"PSAT (EBRW)\",\"PSAT (Mathematics)\",\"Quantile Score\",\"Reading Scale Score\",\"DI_LevelDescriptor_\",\"DI_LevelDescriptor_Analysis and Interpretation Achievement Level\",\"DI_LevelDescriptor_Argument Writing Analysis Achievement Level\",\"DI_LevelDescriptor_Comprehension Achievement Level\",\"DI_LevelDescriptor_English Language Conventions Achievement Level\",\"DI_LevelDescriptor_Expository Writing Analysis Achievement Level\",\"DI_LevelDescriptor_Expressions & Equations Achievement Level\",\"DI_LevelDescriptor_Functions Achievement Level\",\"DI_LevelDescriptor_Geometry Achievement Level\",\"DI_LevelDescriptor_Informational Text Achievement Level\",\"DI_LevelDescriptor_Language Usage Achievement Level\",\"DI_LevelDescriptor_Language Usage Projection Level\",\"DI_LevelDescriptor_Literary Text Achievement Level\",\"DI_LevelDescriptor_Mathematics Achievement Level\",\"DI_LevelDescriptor_Mathematics Projection Level\",\"DI_LevelDescriptor_Measurement & Data Achievement Level\",\"DI_LevelDescriptor_Modeling Achievement Level\",\"DI_LevelDescriptor_Narrative Writing Analysis Achievement Level\",\"DI_LevelDescriptor_Number & Operations in Base 10 Achievement Level\",\"DI_LevelDescriptor_Number & Operations-Fractions Achievement Level\",\"DI_LevelDescriptor_Operations and Algebraic Thinking Achievement Level\",\"DI_LevelDescriptor_Problem Solving Achievement Level\",\"DI_LevelDescriptor_Ratios & Proportional Relationships Achievement Level\",\"DI_LevelDescriptor_Reading Achievement Level\",\"DI_LevelDescriptor_Reading Projection Level\",\"DI_LevelDescriptor_Reasoning and Argument Achievement Level\",\"DI_LevelDescriptor_Statistics & Probability Achievement Level\",\"DI_LevelDescriptor_Structure and Repeated Reasoning Achievement Level\",\"DI_LevelDescriptor_The Number System Achievement Level\"],\"Map\":{\"studentAssessmentIdentifier\":{\"Column\":\"DI_AssessmentStudentIdentifier\"},\"assessmentReference\":{\"assessmentIdentifier\":\"IMSSA-V1\",\"namespace\":\"uri://cognia.org/iMSSA/Assessment\"},\"schoolYearTypeReference\":{\"schoolYear\":{\"Column\":\"DI_SchoolYear\"}},\"studentReference\":{\"studentUniqueId\":{\"Column\":\"DI_StudentId\"}},\"administrationDate\":{\"Column\":\"DI_AdministrationDate\"},\"studentObjectiveAssessments\":[{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"IMSSA-V1\",\"identificationCode\":\"IMSSA-V1-Language Usage\",\"namespace\":\"uri://cognia.org/iMSSA/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Argument Wrt Analys Achv Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Argument Writing Analysis Achievement Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#English Lang Conventions Achv Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_English Language Conventions Achievement Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Expository Wrt Analys Achv Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Expository Writing Analysis Achievement Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Narrative Wrt Analys Achv Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Narrative Writing Analysis Achievement Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Language Usage Projection Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Language Usage Achievement Level\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Language Usage Scale Score\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"IMSSA-V1\",\"identificationCode\":\"IMSSA-V1-Mathematics\",\"namespace\":\"uri://cognia.org/iMSSA/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Express & Equations Achv Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Expressions & Equations Achievement Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Functions Achv Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Functions Achievement Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Geometry Achv Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Geometry Achievement Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Measurement & Data Achv Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Measurement & Data Achievement Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Modeling Achievement Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Modeling Achievement Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Modeling Achv Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Modeling Achievement Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Base 10 Achv Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Number & Operations in Base 10 Achievement Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Fractions Achv Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Number & Operations-Fractions Achievement Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Oper and Alg Thinking Achv Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Operations and Algebraic Thinking Achievement Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Problem Solving Achv Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Problem Solving Achievement Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Mathematics Projection Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Ratios & Propor Relation Achv Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Ratios & Proportional Relationships Achievement Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Reason and Argu Achv Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Reasoning and Argument Achievement Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Stats & Probab Achv Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Statistics & Probability Achievement Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Struct and Rep Reason Achv Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Structure and Repeated Reasoning Achievement Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#The Number System Achv Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_The Number System Achievement Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Mathematics Achievement Level\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#PSAT (Mathematics)\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"PSAT (Mathematics)\"}},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Quantile Measure\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Quantile Score\"}},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Mathematics Scale Score\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"IMSSA-V1\",\"identificationCode\":\"IMSSA-V1-Reading\",\"namespace\":\"uri://cognia.org/iMSSA/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Analysis and Intpn Achv Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Analysis and Interpretation Achievement Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Comprehension Achv Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Comprehension Achievement Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Informational Text Achv Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Informational Text Achievement Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Literary Text Achv Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Literary Text Achievement Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Reading Projection Level\"},\"performanceLevelMet\":true},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_LevelDescriptor_Reading Achievement Level\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#PSAT (EBRW)\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"PSAT (EBRW)\"}},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Lexile Measure\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Lexile Score\"}},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Reading Scale Score\"}}]}]}}],\"Bootstraps\":[{\"Name\":\"iMSSA_ARMD\",\"ResourcePath\":\"/ed-fi/assessmentReportingMethodDescriptors\",\"Data\":[{\"codeValue\":\"PSAT (EBRW)\",\"description\":\"PSAT (EBRW)\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"PSAT (EBRW)\"},{\"codeValue\":\"PSAT (Mathematics)\",\"description\":\"PSAT (Mathematics)\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"PSAT (Mathematics)\"},{\"codeValue\":\"Analysis and Intpn Achv Level\",\"description\":\"Analysis and Intpn Achv Level\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Analysis and Intpn Achv Level\"},{\"codeValue\":\"Argument Wrt Analys Achv Level\",\"description\":\"Argument Wrt Analys Achv Level\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Argument Wrt Analys Achv Level\"},{\"codeValue\":\"Comprehension Achv Level\",\"description\":\"Comprehension Achv Level\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Comprehension Achv Level\"},{\"codeValue\":\"English Lang Conventions Achv Level\",\"description\":\"English Lang Conventions Achv Level\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"English Lang Conventions Achv Level\"},{\"codeValue\":\"Expository Wrt Analys Achv Level\",\"description\":\"Expository Wrt Analys Achv Level\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Expository Wrt Analys Achv Level\"},{\"codeValue\":\"Express & Equations Achv Level\",\"description\":\"Express & Equations Achv Level\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Express & Equations Achv Level\"},{\"codeValue\":\"Functions Achv Level\",\"description\":\"Functions Achv Level\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Functions Achv Level\"},{\"codeValue\":\"Geometry Achv Level\",\"description\":\"Geometry Achv Level\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Geometry Achv Level\"},{\"codeValue\":\"Informational Text Achv Level\",\"description\":\"Informational Text Achv Level\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Informational Text Achv Level\"},{\"codeValue\":\"Literary Text Achv Level\",\"description\":\"Literary Text Achv Level\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Literary Text Achv Level\"},{\"codeValue\":\"Measurement & Data Achv Level\",\"description\":\"Measurement & Data Achv Level\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Measurement & Data Achv Level\"},{\"codeValue\":\"Modeling Achievement Level\",\"description\":\"Modeling Achievement Level\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Modeling Achievement Level\"},{\"codeValue\":\"Modeling Achv Level\",\"description\":\"Modeling Achv Level\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Modeling Achv Level\"},{\"codeValue\":\"Narrative Wrt Analys Achv Level\",\"description\":\"Narrative Wrt Analys Achv Level\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Narrative Wrt Analys Achv Level\"},{\"codeValue\":\"Number & Oper Base 10 Achv Level\",\"description\":\"Number & Oper Base 10 Achv Level\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Number & Oper Base 10 Achv Level\"},{\"codeValue\":\"Number & Oper Fractions Achv Level\",\"description\":\"Number & Oper Fractions Achv Level\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Number & Oper Fractions Achv Level\"},{\"codeValue\":\"Oper and Alg Thinking Achv Level\",\"description\":\"Oper and Alg Thinking Achv Level\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Oper and Alg Thinking Achv Level\"},{\"codeValue\":\"Problem Solving Achv Level\",\"description\":\"Problem Solving Achv Level\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Problem Solving Achv Level\"},{\"codeValue\":\"Projection Level\",\"description\":\"Projection Level\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Projection Level\"},{\"codeValue\":\"Ratios & Propor Relation Achv Level\",\"description\":\"Ratios & Propor Relation Achv Level\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Ratios & Propor Relation Achv Level\"},{\"codeValue\":\"Reason and Argu Achv Level\",\"description\":\"Reason and Argu Achv Level\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Reason and Argu Achv Level\"},{\"codeValue\":\"Stats & Probab Achv Level\",\"description\":\"Stats & Probab Achv Level\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Stats & Probab Achv Level\"},{\"codeValue\":\"Struct and Rep Reason Achv Level\",\"description\":\"Struct and Rep Reason Achv Level\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Struct and Rep Reason Achv Level\"},{\"codeValue\":\"The Number System Achv Level\",\"description\":\"The Number System Achv Level\",\"namespace\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"The Number System Achv Level\"}]},{\"Name\":\"iMSSA_PLD\",\"ResourcePath\":\"/ed-fi/performanceLevelDescriptors\",\"Data\":[{\"codeValue\":\"Above\",\"description\":\"Above\",\"namespace\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor\",\"shortDescription\":\"Above\"},{\"codeValue\":\"Absent\",\"description\":\"Absent\",\"namespace\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor\",\"shortDescription\":\"Absent\"},{\"codeValue\":\"At/Near\",\"description\":\"At/Near\",\"namespace\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor\",\"shortDescription\":\"At/Near\"},{\"codeValue\":\"Below\",\"description\":\"Below\",\"namespace\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor\",\"shortDescription\":\"Below\"},{\"codeValue\":\"Likely\",\"description\":\"Likely\",\"namespace\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor\",\"shortDescription\":\"Likely\"},{\"codeValue\":\"Near Target\",\"description\":\"Near Target\",\"namespace\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor\",\"shortDescription\":\"Near Target\"},{\"codeValue\":\"Needs Support\",\"description\":\"Needs Support\",\"namespace\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor\",\"shortDescription\":\"Needs Support\"},{\"codeValue\":\"Not Available\",\"description\":\"Not Available\",\"namespace\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor\",\"shortDescription\":\"Not Available\"},{\"codeValue\":\"On Target\",\"description\":\"On Target\",\"namespace\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor\",\"shortDescription\":\"On Target\"},{\"codeValue\":\"Other Non-Completion\",\"description\":\"Other Non-Completion\",\"namespace\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor\",\"shortDescription\":\"Other Non-Completion\"},{\"codeValue\":\"Somewhat Likely\",\"description\":\"Somewhat Likely\",\"namespace\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor\",\"shortDescription\":\"Somewhat Likely\"},{\"codeValue\":\"Unlikely\",\"description\":\"Unlikely\",\"namespace\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor\",\"shortDescription\":\"Unlikely\"},{\"codeValue\":\"Very Likely\",\"description\":\"Very Likely\",\"namespace\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor\",\"shortDescription\":\"Very Likely\"},{\"codeValue\":\"Withdrew Before Test Completion\",\"description\":\"Withdrew Before Test Completion\",\"namespace\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor\",\"shortDescription\":\"Withdrew Before Test Completion\"}]},{\"Name\":\"iMSSA_Assessment_IMSSA-V1\",\"ResourcePath\":\"/ed-fi/assessments\",\"Data\":{\"assessmentIdentifier\":\"IMSSA-V1\",\"assessmentTitle\":\"iMSSA interim assessments\",\"namespace\":\"uri://cognia.org/iMSSA/Assessment\",\"assessedGradeLevels\":[{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Third grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Fourth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Fifth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Sixth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Seventh grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Eighth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#No grade level\"}],\"assessmentCategoryDescriptor\":\"uri://ed-fi.org/AssessmentCategoryDescriptor#State assessment\",\"academicSubjects\":[{\"academicSubjectDescriptor\":\"uri://ed-fi.org/AcademicSubjectDescriptor#English\"},{\"academicSubjectDescriptor\":\"uri://ed-fi.org/AcademicSubjectDescriptor#Reading\"},{\"academicSubjectDescriptor\":\"uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts\"}]}},{\"Name\":\"iMSSA_ObjectiveAssessment_IMSSA-V1\",\"ResourcePath\":\"/ed-fi/objectiveAssessments\",\"Data\":[{\"identificationCode\":\"IMSSA-V1-Language Usage\",\"assessmentReference\":{\"assessmentIdentifier\":\"IMSSA-V1\",\"namespace\":\"uri://cognia.org/iMSSA/Assessment\"},\"description\":\"Language Usage\",\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Argument Wrt Analys Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Argument Wrt Analys Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Argument Wrt Analys Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Argument Wrt Analys Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Argument Wrt Analys Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Argument Wrt Analys Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#English Lang Conventions Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#English Lang Conventions Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#English Lang Conventions Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#English Lang Conventions Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#English Lang Conventions Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#English Lang Conventions Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Expository Wrt Analys Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Expository Wrt Analys Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Expository Wrt Analys Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Expository Wrt Analys Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Expository Wrt Analys Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Expository Wrt Analys Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Narrative Wrt Analys Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Narrative Wrt Analys Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Narrative Wrt Analys Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Narrative Wrt Analys Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Narrative Wrt Analys Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Narrative Wrt Analys Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Likely\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Not Available\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Somewhat Likely\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Unlikely\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Very Likely\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Near Target\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Needs Support\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#On Target\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]},{\"identificationCode\":\"IMSSA-V1-Mathematics\",\"assessmentReference\":{\"assessmentIdentifier\":\"IMSSA-V1\",\"namespace\":\"uri://cognia.org/iMSSA/Assessment\"},\"description\":\"Mathematics\",\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#PSAT (Mathematics)\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Quantile Measure\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Express & Equations Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Express & Equations Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Express & Equations Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Express & Equations Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Express & Equations Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Express & Equations Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Functions Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Functions Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Functions Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Functions Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Functions Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Functions Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Geometry Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Geometry Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Geometry Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Geometry Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Geometry Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Geometry Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Measurement & Data Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Measurement & Data Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Measurement & Data Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Measurement & Data Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Measurement & Data Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Measurement & Data Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Modeling Achievement Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Modeling Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Modeling Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Modeling Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Modeling Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Modeling Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Base 10 Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Base 10 Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Base 10 Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Base 10 Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Base 10 Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Base 10 Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Fractions Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Fractions Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Fractions Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Fractions Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Fractions Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Fractions Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Oper and Alg Thinking Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Oper and Alg Thinking Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Oper and Alg Thinking Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Oper and Alg Thinking Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Oper and Alg Thinking Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Oper and Alg Thinking Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Problem Solving Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Problem Solving Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Problem Solving Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Problem Solving Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Problem Solving Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Problem Solving Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Likely\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Not Available\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Somewhat Likely\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Unlikely\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Very Likely\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Ratios & Propor Relation Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Ratios & Propor Relation Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Ratios & Propor Relation Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Ratios & Propor Relation Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Ratios & Propor Relation Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Ratios & Propor Relation Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Reason and Argu Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Reason and Argu Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Reason and Argu Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Reason and Argu Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Reason and Argu Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Reason and Argu Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Stats & Probab Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Stats & Probab Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Stats & Probab Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Stats & Probab Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Stats & Probab Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Stats & Probab Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Struct and Rep Reason Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Struct and Rep Reason Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Struct and Rep Reason Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Struct and Rep Reason Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Struct and Rep Reason Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Struct and Rep Reason Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#The Number System Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#The Number System Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#The Number System Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#The Number System Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#The Number System Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#The Number System Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Near Target\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Needs Support\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#On Target\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]},{\"identificationCode\":\"IMSSA-V1-Reading\",\"assessmentReference\":{\"assessmentIdentifier\":\"IMSSA-V1\",\"namespace\":\"uri://cognia.org/iMSSA/Assessment\"},\"description\":\"Reading\",\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#PSAT (EBRW)\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Lexile Measure\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Analysis and Intpn Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Analysis and Intpn Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Analysis and Intpn Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Analysis and Intpn Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Analysis and Intpn Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Analysis and Intpn Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Comprehension Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Comprehension Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Comprehension Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Comprehension Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Comprehension Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Comprehension Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Informational Text Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Informational Text Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Informational Text Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Informational Text Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Informational Text Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Informational Text Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Literary Text Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Literary Text Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Literary Text Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Literary Text Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Literary Text Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Literary Text Achv Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Likely\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Not Available\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Somewhat Likely\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Unlikely\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Very Likely\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Near Target\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Needs Support\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#On Target\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]}]}],\"Lookups\":[]}",
-    "submitter": {
-        "name": "Emilio Baez",
-        "organization": "Developers.Net",
-        "email": "emilio@developers.net"
-    }
+  "id": 1044,
+  "title": "New Mexico iMSSA Interim Assessment Results - API 3.X - v1",
+  "description": "This template includes the New Mexico iMSSA Interim Assessments",
+  "apiVersion": "3.2.0",
+  "dateTimePublished": "2021-01-06T17:36:21.4456083",
+  "template": {
+    "Maps": [
+      {
+        "Name": "DataMap_iMSSA_IMSSA-V1",
+        "ResourcePath": "/ed-fi/studentAssessments",
+        "ColumnHeaders": [
+          "DI_StudentId",
+          "DI_SchoolYear",
+          "DI_AssessedGradeLevel",
+          "DI_AssessmentStudentIdentifier",
+          "DI_AdministrationDate",
+          "Language Usage Scale Score",
+          "Lexile Score",
+          "Mathematics Scale Score",
+          "PSAT (EBRW)",
+          "PSAT (Mathematics)",
+          "Quantile Score",
+          "Reading Scale Score",
+          "DI_LevelDescriptor_",
+          "DI_LevelDescriptor_Analysis and Interpretation Achievement Level",
+          "DI_LevelDescriptor_Argument Writing Analysis Achievement Level",
+          "DI_LevelDescriptor_Comprehension Achievement Level",
+          "DI_LevelDescriptor_English Language Conventions Achievement Level",
+          "DI_LevelDescriptor_Expository Writing Analysis Achievement Level",
+          "DI_LevelDescriptor_Expressions & Equations Achievement Level",
+          "DI_LevelDescriptor_Functions Achievement Level",
+          "DI_LevelDescriptor_Geometry Achievement Level",
+          "DI_LevelDescriptor_Informational Text Achievement Level",
+          "DI_LevelDescriptor_Language Usage Achievement Level",
+          "DI_LevelDescriptor_Language Usage Projection Level",
+          "DI_LevelDescriptor_Literary Text Achievement Level",
+          "DI_LevelDescriptor_Mathematics Achievement Level",
+          "DI_LevelDescriptor_Mathematics Projection Level",
+          "DI_LevelDescriptor_Measurement & Data Achievement Level",
+          "DI_LevelDescriptor_Modeling Achievement Level",
+          "DI_LevelDescriptor_Narrative Writing Analysis Achievement Level",
+          "DI_LevelDescriptor_Number & Operations in Base 10 Achievement Level",
+          "DI_LevelDescriptor_Number & Operations-Fractions Achievement Level",
+          "DI_LevelDescriptor_Operations and Algebraic Thinking Achievement Level",
+          "DI_LevelDescriptor_Problem Solving Achievement Level",
+          "DI_LevelDescriptor_Ratios & Proportional Relationships Achievement Level",
+          "DI_LevelDescriptor_Reading Achievement Level",
+          "DI_LevelDescriptor_Reading Projection Level",
+          "DI_LevelDescriptor_Reasoning and Argument Achievement Level",
+          "DI_LevelDescriptor_Statistics & Probability Achievement Level",
+          "DI_LevelDescriptor_Structure and Repeated Reasoning Achievement Level",
+          "DI_LevelDescriptor_The Number System Achievement Level"
+        ],
+        "Map": {
+          "studentAssessmentIdentifier": {
+            "Column": "DI_AssessmentStudentIdentifier"
+          },
+          "assessmentReference": {
+            "assessmentIdentifier": "IMSSA-V1",
+            "namespace": "uri://cognia.org/iMSSA/Assessment"
+          },
+          "schoolYearTypeReference": {
+            "schoolYear": {
+              "Column": "DI_SchoolYear"
+            }
+          },
+          "studentReference": {
+            "studentUniqueId": {
+              "Column": "DI_StudentId"
+            }
+          },
+          "administrationDate": {
+            "Column": "DI_AdministrationDate"
+          },
+          "studentObjectiveAssessments": [
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "IMSSA-V1",
+                "identificationCode": "IMSSA-V1-Language Usage",
+                "namespace": "uri://cognia.org/iMSSA/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Argument Wrt Analys Achv Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Argument Writing Analysis Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#English Lang Conventions Achv Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_English Language Conventions Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Expository Wrt Analys Achv Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Expository Writing Analysis Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Narrative Wrt Analys Achv Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Narrative Writing Analysis Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Language Usage Projection Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Language Usage Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+                  "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                  "result": {
+                    "Column": "Language Usage Scale Score"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "IMSSA-V1",
+                "identificationCode": "IMSSA-V1-Mathematics",
+                "namespace": "uri://cognia.org/iMSSA/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Express & Equations Achv Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Expressions & Equations Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Functions Achv Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Functions Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Geometry Achv Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Geometry Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Measurement & Data Achv Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Measurement & Data Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Modeling Achievement Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Modeling Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Modeling Achv Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Modeling Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Base 10 Achv Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Number & Operations in Base 10 Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Fractions Achv Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Number & Operations-Fractions Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Oper and Alg Thinking Achv Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Operations and Algebraic Thinking Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Problem Solving Achv Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Problem Solving Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Mathematics Projection Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Ratios & Propor Relation Achv Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Ratios & Proportional Relationships Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Reason and Argu Achv Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Reasoning and Argument Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Stats & Probab Achv Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Statistics & Probability Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Struct and Rep Reason Achv Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Structure and Repeated Reasoning Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#The Number System Achv Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_The Number System Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Mathematics Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#PSAT (Mathematics)",
+                  "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                  "result": {
+                    "Column": "PSAT (Mathematics)"
+                  }
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Quantile Measure",
+                  "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                  "result": {
+                    "Column": "Quantile Score"
+                  }
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+                  "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                  "result": {
+                    "Column": "Mathematics Scale Score"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "IMSSA-V1",
+                "identificationCode": "IMSSA-V1-Reading",
+                "namespace": "uri://cognia.org/iMSSA/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Analysis and Intpn Achv Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Analysis and Interpretation Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Comprehension Achv Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Comprehension Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Informational Text Achv Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Informational Text Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Literary Text Achv Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Literary Text Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Reading Projection Level"
+                  },
+                  "performanceLevelMet": true
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_LevelDescriptor_Reading Achievement Level"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#PSAT (EBRW)",
+                  "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                  "result": {
+                    "Column": "PSAT (EBRW)"
+                  }
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Lexile Measure",
+                  "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                  "result": {
+                    "Column": "Lexile Score"
+                  }
+                },
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+                  "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                  "result": {
+                    "Column": "Reading Scale Score"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "Bootstraps": [
+      {
+        "Name": "iMSSA_ARMD",
+        "ResourcePath": "/ed-fi/assessmentReportingMethodDescriptors",
+        "Data": [
+          {
+            "codeValue": "PSAT (EBRW)",
+            "description": "PSAT (EBRW)",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "PSAT (EBRW)"
+          },
+          {
+            "codeValue": "PSAT (Mathematics)",
+            "description": "PSAT (Mathematics)",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "PSAT (Mathematics)"
+          },
+          {
+            "codeValue": "Analysis and Intpn Achv Level",
+            "description": "Analysis and Intpn Achv Level",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Analysis and Intpn Achv Level"
+          },
+          {
+            "codeValue": "Argument Wrt Analys Achv Level",
+            "description": "Argument Wrt Analys Achv Level",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Argument Wrt Analys Achv Level"
+          },
+          {
+            "codeValue": "Comprehension Achv Level",
+            "description": "Comprehension Achv Level",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Comprehension Achv Level"
+          },
+          {
+            "codeValue": "English Lang Conventions Achv Level",
+            "description": "English Lang Conventions Achv Level",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "English Lang Conventions Achv Level"
+          },
+          {
+            "codeValue": "Expository Wrt Analys Achv Level",
+            "description": "Expository Wrt Analys Achv Level",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Expository Wrt Analys Achv Level"
+          },
+          {
+            "codeValue": "Express & Equations Achv Level",
+            "description": "Express & Equations Achv Level",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Express & Equations Achv Level"
+          },
+          {
+            "codeValue": "Functions Achv Level",
+            "description": "Functions Achv Level",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Functions Achv Level"
+          },
+          {
+            "codeValue": "Geometry Achv Level",
+            "description": "Geometry Achv Level",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Geometry Achv Level"
+          },
+          {
+            "codeValue": "Informational Text Achv Level",
+            "description": "Informational Text Achv Level",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Informational Text Achv Level"
+          },
+          {
+            "codeValue": "Literary Text Achv Level",
+            "description": "Literary Text Achv Level",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Literary Text Achv Level"
+          },
+          {
+            "codeValue": "Measurement & Data Achv Level",
+            "description": "Measurement & Data Achv Level",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Measurement & Data Achv Level"
+          },
+          {
+            "codeValue": "Modeling Achievement Level",
+            "description": "Modeling Achievement Level",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Modeling Achievement Level"
+          },
+          {
+            "codeValue": "Modeling Achv Level",
+            "description": "Modeling Achv Level",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Modeling Achv Level"
+          },
+          {
+            "codeValue": "Narrative Wrt Analys Achv Level",
+            "description": "Narrative Wrt Analys Achv Level",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Narrative Wrt Analys Achv Level"
+          },
+          {
+            "codeValue": "Number & Oper Base 10 Achv Level",
+            "description": "Number & Oper Base 10 Achv Level",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Number & Oper Base 10 Achv Level"
+          },
+          {
+            "codeValue": "Number & Oper Fractions Achv Level",
+            "description": "Number & Oper Fractions Achv Level",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Number & Oper Fractions Achv Level"
+          },
+          {
+            "codeValue": "Oper and Alg Thinking Achv Level",
+            "description": "Oper and Alg Thinking Achv Level",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Oper and Alg Thinking Achv Level"
+          },
+          {
+            "codeValue": "Problem Solving Achv Level",
+            "description": "Problem Solving Achv Level",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Problem Solving Achv Level"
+          },
+          {
+            "codeValue": "Projection Level",
+            "description": "Projection Level",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Projection Level"
+          },
+          {
+            "codeValue": "Ratios & Propor Relation Achv Level",
+            "description": "Ratios & Propor Relation Achv Level",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Ratios & Propor Relation Achv Level"
+          },
+          {
+            "codeValue": "Reason and Argu Achv Level",
+            "description": "Reason and Argu Achv Level",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Reason and Argu Achv Level"
+          },
+          {
+            "codeValue": "Stats & Probab Achv Level",
+            "description": "Stats & Probab Achv Level",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Stats & Probab Achv Level"
+          },
+          {
+            "codeValue": "Struct and Rep Reason Achv Level",
+            "description": "Struct and Rep Reason Achv Level",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Struct and Rep Reason Achv Level"
+          },
+          {
+            "codeValue": "The Number System Achv Level",
+            "description": "The Number System Achv Level",
+            "namespace": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor",
+            "shortDescription": "The Number System Achv Level"
+          }
+        ]
+      },
+      {
+        "Name": "iMSSA_PLD",
+        "ResourcePath": "/ed-fi/performanceLevelDescriptors",
+        "Data": [
+          {
+            "codeValue": "Above",
+            "description": "Above",
+            "namespace": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor",
+            "shortDescription": "Above"
+          },
+          {
+            "codeValue": "Absent",
+            "description": "Absent",
+            "namespace": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor",
+            "shortDescription": "Absent"
+          },
+          {
+            "codeValue": "At/Near",
+            "description": "At/Near",
+            "namespace": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor",
+            "shortDescription": "At/Near"
+          },
+          {
+            "codeValue": "Below",
+            "description": "Below",
+            "namespace": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor",
+            "shortDescription": "Below"
+          },
+          {
+            "codeValue": "Likely",
+            "description": "Likely",
+            "namespace": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor",
+            "shortDescription": "Likely"
+          },
+          {
+            "codeValue": "Near Target",
+            "description": "Near Target",
+            "namespace": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor",
+            "shortDescription": "Near Target"
+          },
+          {
+            "codeValue": "Needs Support",
+            "description": "Needs Support",
+            "namespace": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor",
+            "shortDescription": "Needs Support"
+          },
+          {
+            "codeValue": "Not Available",
+            "description": "Not Available",
+            "namespace": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor",
+            "shortDescription": "Not Available"
+          },
+          {
+            "codeValue": "On Target",
+            "description": "On Target",
+            "namespace": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor",
+            "shortDescription": "On Target"
+          },
+          {
+            "codeValue": "Other Non-Completion",
+            "description": "Other Non-Completion",
+            "namespace": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor",
+            "shortDescription": "Other Non-Completion"
+          },
+          {
+            "codeValue": "Somewhat Likely",
+            "description": "Somewhat Likely",
+            "namespace": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor",
+            "shortDescription": "Somewhat Likely"
+          },
+          {
+            "codeValue": "Unlikely",
+            "description": "Unlikely",
+            "namespace": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor",
+            "shortDescription": "Unlikely"
+          },
+          {
+            "codeValue": "Very Likely",
+            "description": "Very Likely",
+            "namespace": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor",
+            "shortDescription": "Very Likely"
+          },
+          {
+            "codeValue": "Withdrew Before Test Completion",
+            "description": "Withdrew Before Test Completion",
+            "namespace": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor",
+            "shortDescription": "Withdrew Before Test Completion"
+          }
+        ]
+      },
+      {
+        "Name": "iMSSA_Assessment_IMSSA-V1",
+        "ResourcePath": "/ed-fi/assessments",
+        "Data": {
+          "assessmentIdentifier": "IMSSA-V1",
+          "assessmentTitle": "iMSSA interim assessments",
+          "namespace": "uri://cognia.org/iMSSA/Assessment",
+          "assessedGradeLevels": [
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fourth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fifth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Sixth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Seventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eighth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#No grade level"
+            }
+          ],
+          "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#State assessment",
+          "academicSubjects": [
+            {
+              "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#English"
+            },
+            {
+              "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Reading"
+            },
+            {
+              "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "iMSSA_ObjectiveAssessment_IMSSA-V1",
+        "ResourcePath": "/ed-fi/objectiveAssessments",
+        "Data": [
+          {
+            "identificationCode": "IMSSA-V1-Language Usage",
+            "assessmentReference": {
+              "assessmentIdentifier": "IMSSA-V1",
+              "namespace": "uri://cognia.org/iMSSA/Assessment"
+            },
+            "description": "Language Usage",
+            "scores": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Argument Wrt Analys Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Argument Wrt Analys Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Argument Wrt Analys Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Argument Wrt Analys Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Argument Wrt Analys Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Argument Wrt Analys Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#English Lang Conventions Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#English Lang Conventions Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#English Lang Conventions Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#English Lang Conventions Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#English Lang Conventions Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#English Lang Conventions Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Expository Wrt Analys Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Expository Wrt Analys Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Expository Wrt Analys Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Expository Wrt Analys Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Expository Wrt Analys Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Expository Wrt Analys Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Narrative Wrt Analys Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Narrative Wrt Analys Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Narrative Wrt Analys Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Narrative Wrt Analys Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Narrative Wrt Analys Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Narrative Wrt Analys Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Likely",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Not Available",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Somewhat Likely",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Unlikely",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Very Likely",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Near Target",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Needs Support",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#On Target",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "IMSSA-V1-Mathematics",
+            "assessmentReference": {
+              "assessmentIdentifier": "IMSSA-V1",
+              "namespace": "uri://cognia.org/iMSSA/Assessment"
+            },
+            "description": "Mathematics",
+            "scores": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#PSAT (Mathematics)",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Quantile Measure",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Express & Equations Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Express & Equations Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Express & Equations Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Express & Equations Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Express & Equations Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Express & Equations Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Functions Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Functions Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Functions Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Functions Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Functions Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Functions Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Geometry Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Geometry Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Geometry Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Geometry Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Geometry Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Geometry Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Measurement & Data Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Measurement & Data Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Measurement & Data Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Measurement & Data Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Measurement & Data Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Measurement & Data Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Modeling Achievement Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Modeling Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Modeling Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Modeling Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Modeling Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Modeling Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Base 10 Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Base 10 Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Base 10 Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Base 10 Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Base 10 Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Base 10 Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Fractions Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Fractions Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Fractions Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Fractions Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Fractions Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Number & Oper Fractions Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Oper and Alg Thinking Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Oper and Alg Thinking Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Oper and Alg Thinking Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Oper and Alg Thinking Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Oper and Alg Thinking Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Oper and Alg Thinking Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Problem Solving Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Problem Solving Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Problem Solving Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Problem Solving Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Problem Solving Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Problem Solving Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Likely",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Not Available",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Somewhat Likely",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Unlikely",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Very Likely",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Ratios & Propor Relation Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Ratios & Propor Relation Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Ratios & Propor Relation Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Ratios & Propor Relation Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Ratios & Propor Relation Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Ratios & Propor Relation Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Reason and Argu Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Reason and Argu Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Reason and Argu Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Reason and Argu Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Reason and Argu Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Reason and Argu Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Stats & Probab Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Stats & Probab Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Stats & Probab Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Stats & Probab Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Stats & Probab Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Stats & Probab Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Struct and Rep Reason Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Struct and Rep Reason Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Struct and Rep Reason Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Struct and Rep Reason Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Struct and Rep Reason Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Struct and Rep Reason Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#The Number System Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#The Number System Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#The Number System Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#The Number System Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#The Number System Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#The Number System Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Near Target",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Needs Support",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#On Target",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "IMSSA-V1-Reading",
+            "assessmentReference": {
+              "assessmentIdentifier": "IMSSA-V1",
+              "namespace": "uri://cognia.org/iMSSA/Assessment"
+            },
+            "description": "Reading",
+            "scores": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#PSAT (EBRW)",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Lexile Measure",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Analysis and Intpn Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Analysis and Intpn Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Analysis and Intpn Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Analysis and Intpn Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Analysis and Intpn Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Analysis and Intpn Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Comprehension Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Comprehension Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Comprehension Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Comprehension Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Comprehension Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Comprehension Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Informational Text Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Informational Text Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Informational Text Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Informational Text Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Informational Text Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Informational Text Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Literary Text Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Above",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Literary Text Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Literary Text Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#At/Near",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Literary Text Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Below",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Literary Text Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Literary Text Achv Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Likely",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Not Available",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Somewhat Likely",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Unlikely",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://cognia.org/iMSSA/AssessmentReportingMethodDescriptor#Projection Level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Very Likely",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Absent",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Near Target",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Needs Support",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#On Target",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Other Non-Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://cognia.org/iMSSA/PerformanceLevelDescriptor#Withdrew Before Test Completion",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Lookups": []
+  },
+  "submitter": {
+    "name": "Emilio Baez",
+    "organization": "Developers.Net",
+    "email": "emilio@developers.net"
+  }
 }

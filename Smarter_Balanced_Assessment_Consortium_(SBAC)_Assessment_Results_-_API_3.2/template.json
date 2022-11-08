@@ -1,13 +1,1488 @@
 {
-    "id": 30,
-    "title": "Smarter Balanced Assessment Consortium (SBAC) Assessment Results - API 3.2",
-    "description": "This template includes the Smarter Balanced Assessment Consortium (SBAC) Assessment",
-    "apiVersion": "3.2.0",
-    "dateTimePublished": "2020-07-02T18:21:53.440194",
-    "template": "{\"Maps\":[{\"Name\":\"SBAC_Map\",\"ResourcePath\":\"/ed-fi/studentAssessments\",\"ColumnHeaders\":[\"DI_StudentId\",\"DI_SchoolYear\",\"DI_PerfLevel_Achievement Levels\",\"DI_PerfLevel_Smarter Claim 1 Performance Level\",\"DI_PerfLevel_Smarter Claim 2 Performance Level\",\"DI_PerfLevel_Smarter Claim 3 Performance Level\",\"DI_PerfLevel_Smarter Claim 4 Performance Level\",\"DI_PerfLevel_Domain 1 Level\",\"DI_PerfLevel_Domain 2 Level\",\"DI_PerfLevel_Domain 3 Level\",\"DI_PerfLevel_Domain 4 Level\",\"DI_GradeLevel\",\"Record Type\",\"Statewide Student Identifier (SSID)\",\"Student Last Name\",\"Student First Name\",\"Student Middle Name\",\"Date of Birth\",\"Gender\",\"CALPADS Grade\",\"Grade Assessed\",\"CALPADS District Code\",\"CALPADS School Code\",\"CALPADS Charter Code\",\"CALPADS Charter School  Indicator\",\"County/District Code of Accountability\",\"Section 504 Status\",\"Primary Disability Type\",\"IDEA Indicator\",\"Migrant Status\",\"EL Status\",\"EL ID Date\",\"RFEP Date\",\"First Entry Date in US School\",\"English Language Acquisition Status\",\"Language Code (CEDS)\",\"Primary Language\",\"Military Status\",\"Foster Status\",\"Homeless Status\",\"Economic Disadvantage Status\",\"NPS School Flag\",\"Hispanic or Latino\",\"American Indian or Alaska Native\",\"Asian\",\"Native Hawaiian or Other Pacific Islander\",\"Filipino\",\"Black or African American\",\"White\",\"Two or More Races\",\"Reporting Ethnicity\",\"Parent Education Level \",\"Blank1\",\"Opportunity ID 1\",\"Opportunity 1 Testing Status\",\"Opportunity ID 2\",\"Opportunity 2 Testing Status\",\"Opportunity ID 3\",\"Opportunity 3 Testing Status\",\"Test Registration ID\",\"Tested LEA Name 1\",\"Tested County/District Code 1\",\"Tested School Name 1\",\"Tested School Code 1\",\"Tested Charter School Indicator 1\",\"Tested Charter School Code 1\",\"Tested School NPS Flag 1\",\"Paper and Pencil Test Completion Date  (PAPER)\",\"Tested LEA Name 2\",\"Tested County/District Code 2\",\"Tested School Name 2\",\"Tested School Code 2\",\"Tested Charter School Indicator 2\",\"Tested Charter School Code 2\",\"Tested School NPS Flag 2\",\"Tested LEA Name 3\",\"Tested County/District Code 3\",\"Tested School Name 3\",\"Tested School Code 3\",\"Tested Charter School Indicator 3\",\"Tested Charter School Code 3\",\"Tested School NPS Flag 3\",\"Test Start Date 1\",\"Test Completion Date 1\",\"Test Start Date 2\",\"Test Completion Date 2\",\"Test Start Date 3\",\"Test Completion Date 3\",\"School Selected Start of Test Window 1\",\"School Selected End of Test Window 1\",\"School Selected Start of Test Window 2\",\"School Selected End of Test Window 2\",\"School Selected Start of Test Window 3\",\"School Selected End of Test Window 3\",\"Student Exit Code\",\"Student Exit Withdrawal Date\",\"Student Removed from CALPADS File Date\",\"CAST Last Science Class Flag\",\"CAA Science Percent Correct\",\"CAA Science Preliminary Indicator\",\"Condition Code\",\"Attemptedness\",\"Score Status\",\"Unlisted Resources Construct Change\",\"Test Mode  ?   Online or Paper\",\"Include Indicator\",\"Blank2\",\"Raw Score\",\"Blank3\",\"Smarter Claim 1 Performance Level\",\"Blank4\",\"Smarter Claim 2 Performance Level\",\"Blank5\",\"Smarter Claim 3 Performance Level\",\"Blank6\",\"Smarter Claim 4 Performance Level\",\"Scale Score\",\"Smarter Standard Error Measurement  ?  SEM\",\"Smarter Scale Scores Error Bands  ?  Min\",\"Smarter Scale Scores Error Bands  ?  Max\",\"Achievement Levels\",\"Domain 1 Level\",\"Domain 2 Level\",\"Domain 3 Level\",\"Genre\",\"WER POR\",\"WER DEV EEL\",\"WER COV\",\"EAP\",\"Accommodations Available Indicator\",\"Designated Support Available Indicator\",\"Embedded Accommodation 1  ?  American Sign Language (Online)(Listening)\",\"Embedded Accommodation 1  ?  Audio Transcript (Online)\",\"Embedded Accommodation 1  ?  Braille (Online)\",\"Embedded Accommodation 1  ?  Closed Captioning (Online)\",\"Embedded Accommodation 1  ?  Text-to-Speech Passages (Online)\",\"Embedded Accommodation 2  ?  American Sign Language (Online)\",\"Embedded Accommodation 2  ?  Braille (Online)\",\"Embedded Accommodation 2  ?  Text-to-Speech Passages (Online)\",\"Non-Embedded Accommodation 1  ?  Abacus (Online)\",\"Non-Embedded Accommodation 1   ?  Additional Instructional Supports for Alternate Assessments (Online)\",\"Non-Embedded Accommodation 1   ?  Alternate Response Options (Online)\",\"Non-Embedded Accommodation 1  ?  Calculator (Online)\",\"Non-Embedded Accommodation 1  ?  Multiplication Table  (Online)\",\"Non-Embedded Accommodation 1   ?  Print on Demand (Online)\",\"Non-Embedded Accommodation 1  - Read Aloud Passages (Online)\",\"Non-Embedded Accommodation 1   ?  Scribe (Writing)\",\"Non-Embedded Accommodation 1   ?  Speech-to-Text (Online)\",\"Non-Embedded Accommodation 1  ?  100s Number Table (Online)\",\"Non-Embedded Accommodation 1  ?  Unlisted Resources (Online)\",\"Non-Embedded Accommodation 1  ?  Word Prediction (Online)\",\"Non-Embedded Accommodation 2  ?  Abacus (Online)\",\"Non-Embedded Accommodation 2   ?  Additional Instructional Supports for Alternate Assessments (Online)\",\"Non-Embedded Accommodation 2   ?  Alternate Response Options (Online)\",\"Non-Embedded Accommodation 2  ?  Calculator (Online)\",\"Non-Embedded Accommodation 2  ?  Multiplication Table (Online)\",\"Non-Embedded Accommodation 2   ?  Print on Demand (Online)\",\"Non-Embedded Accommodation 2   ?  Scribe (Writing) (Online)\",\"Non-Embedded Accommodation 2   ?  Speech-to-Text  (Online)\",\"Non-Embedded Accommodation 2   ?  Unlisted Resources (Online)\",\"Non-Embedded Accommodation 2  ?  Word Prediction (Online)\",\"Non-Embedded Accommodation 2  ?  100s Number Table (Online)\",\"Non-Embedded Accommodation 3  ?  Abacus (Online)\",\"Non-Embedded Accommodation 3   ?  Additional Instructional Supports for Alternate Assessments (Online)\",\"Non-Embedded Accommodation 3   ?  Alternate Response Options (Online)\",\"Non-Embedded Accommodation 3   ?  Print on Demand (Online)\",\"Non-Embedded Accommodation 3  ?  Unlisted Resources (Online)\",\"Non-Embedded Accommodation 3  ?  Word Prediction (Online)\",\"Embedded Designated Support 1  ?  Color Contrast (Online)\",\"Embedded Designated Support 1  ?  Masking (Online)\",\"Embedded Designated Support 1  ?  Mouse Pointer (Online)\",\"Embedded Designated Support 1  ?  Permissive Mode (Online)\",\"Embedded Designated Support 1  ?  Print Size\",\"Embedded Designated Support 1 - Stacked Translations and Translated Test Directions (Online)\",\"Embedded Designated Support 1  ?  Streamline(Online)\",\"Embedded Designated Support 1  ?  Text to Speech (Online)\",\"Embedded Designated Support 1  ?  Translations (Glossary) (Online)\",\"Embedded Designated Support 1  ?  Turn off Universal Tools (Online)\",\"Embedded Designated Support 2  ?  Color Contrast (Online)\",\"Embedded Designated Support 2  ?  Masking (Online)\",\"Embedded Designated Support 2  ?  Permissive Mode (Online)\",\"Embedded Designated Support 2  ?  Mouse Pointer (Online)\",\"Embedded Designated Support 2  ?  Print Size (Online)\",\"Embedded Designated Support 2  ?  Streamline (Online)\",\"Embedded Designated Support 2  ?  Stacked Translations and Translated Test Directions (Online)\",\"Embedded Designated Support 2  ?  Text to Speech (Online)\",\"Embedded Designated Support 2  ?  Translations (Glossary) (Online)\",\"Embedded Designated Support 2  ?  Turn off Universal Tools (Online)\",\"Embedded Designated Support 3  ?  Color Contrast (Online)\",\"Embedded Designated Support 3 ?  Masking (Online)\",\"Embedded Designated Support 3  ?  Mouse Pointer (Online)\",\"Embedded Designated Support 3  ?  Permissive Mode (Online)\",\"Embedded Designated Support 3  ?  Print Size\",\"Embedded Designated Support 3 ?  Streamline (Online)\",\"Embedded Designated Support 3  ?  Turn off Universal Tools (Online)\",\"Non-Embedded Designated Support 1  ?  Amplification (Online)\",\"Non-Embedded Designated Support 1  ?  Bilingual Dictionary\",\"Non-Embedded Designated Support 1  ?  Calculator (Online) \",\"Non-Embedded Designated Support 1  ?  Color Contrast  (Online)\",\"Non-Embedded Designated Support 1  ?  Color Overlay (Online)\",\"Non-Embedded Designated Support 1  ?  Magnification (Online)\",\"Non-Embedded Designated Support 1  ?  Medical Device (Online)\",\"Non-Embedded Designated Support 1  ?  Multiplication Table (Online)\",\"Non-Embedded Designated Support 1  ?  Noise Buffers (Online)\",\"Non-Embedded Designated Support 1  ?  Read Aloud Items (Online)\",\"Non-Embedded Designated Support 1  ?  Read Aloud in Spanish (Online)\",\"Non-Embedded Designated Support 1  ? Science Charts (State Approved) (Online)\",\"Non-Embedded Designated Support 1  ?  Scribe Items (Online)\",\"Non-Embedded Designated Support 1  ?  Separate Setting  (Online)\",\"Non-Embedded Designated Support 1  ?  Simplified Test Directions  (Online)\",\"Non-Embedded Designated Support 1  ?  Translated Test Directions (PDF on CAASPP.org) (Online)\",\"Non-Embedded Designated Support 1  ?  100s Number table  (Online)\",\"Non-Embedded Designated Support 2  ?  Amplification (Online)\",\"Non-Embedded Designated Support 2  ?  Bilingual Dictionary (Online)\",\"Non-Embedded Designated Support 2  ?  Color Contrast (Online)\",\"Non-Embedded Designated Support 2  ?  Color Overlay (Online)\",\"Non-Embedded Designated Support 2  ?  Magnification (Online)\",\"Non-Embedded Designated Support 2  ?  Medical Device (Online)\",\"Non-Embedded Designated Support 2  ?  Multiplication Table (Online)\",\"Non-Embedded Designated Support 2  ?  Noise Buffers (Online)\",\"Non-Embedded Designated Support 2  ?  Read Aloud Items (Online)\",\"Non-Embedded Designated Support 2  ?  Read Aloud in Spanish (Online)\",\"Non-Embedded Designated Support 2  ?  Scribe Items  (Online)\",\"Non-Embedded Designated Support 2  ?  Separate Setting (Online)\",\"Non-Embedded Designated Support 2  ?  Simplified Test Directions (Online)\",\"Non-Embedded Designated Support 2  ?  Translated Test Directions (PDF on CAASPP.org) (Online)\",\"Non-Embedded Designated Support 2  ?  100s Number table  (Online)\",\"Non-Embedded Designated Support 3  ?  Amplification (Online)\",\"Non-Embedded Designated Support 3  ?  Color Contrast  (Online)\",\"Non-Embedded Designated Support 3  ?  Color Overlay (Online)\",\"Non-Embedded Designated Support 3  ?  Magnification (Online)\",\"Non-Embedded Designated Support 3  ?  Medical Device (Online)\",\"Non-Embedded Designated Support 3  ?  Multiplication Table (Online)\",\"Non-Embedded Designated Support 3  ?  Noise Buffers (Online)\",\"Non-Embedded Designated Support 3  ?  Read Aloud Items (Online)\",\"Non-Embedded Designated Support 3  ?  Scribe Items (Online)\",\"Non-Embedded Designated Support 3 ?  Separate Setting (Online)\",\"Non-Embedded Designated Support 3  ?  100s Number table  (Online)\",\"Non-Embedded Accommodation (Paper)  ?  Abacus\",\"Non-Embedded Accommodation (Paper)  ?  Alternate Response Options\",\"Non-Embedded Accommodation  (Paper)  ?  Braille\",\"Non-Embedded Accommodation  (Paper)  ?  Calculator\",\"Non-Embedded Accommodation  (Paper)  ?  Large-print\",\"Non-Embedded Accommodation (Paper) ?  Multiplication Table\",\"Non-Embedded Accommodation (Paper)  ?  Read Aloud Passages\",\"Non-Embedded Accommodation (Paper) - Scribe\",\"Non-Embedded Accommodation  (Paper)  ?  Speech-to-Text\",\"Non-Embedded Accommodation (Paper)  ?  100s Number Table\",\"Non-Embedded Designated Supports (Paper)  ?  Bilingual Dictionary\",\"Non-Embedded Designated Supports (Paper)  ?  Medical Device\",\"Non-Embedded Designated Supports  (Paper)  ?  Read Aloud\",\"Non-Embedded Designated Supports  (Paper)  ?  Scribe\",\"Non-Embedded Designated Supports  (Paper)  ?  Separate Setting\",\"Non-Embedded Designated Supports (Paper)  ?  Simplified Test Directions\",\"Non-Embedded Designated Supports (Paper)  ?  Translated Test Directions\",\"Non-Embedded Designated Supports (Paper)  ?  Translations (Glossary)\",\"Non-embedded Universal Tools (Paper)  ?  English Dictionary\",\"Number of Items attempted 1\",\"Number of Items attempted 2\",\"Number of Items attempted 3\",\"Grade Assessed Current Year minus 1\",\"Blank7\",\"Smarter Standard Error Measurement  - SEM Current Year minus 1\",\"Scale Scores Current Year minus 1\",\"Condition Code Current Year minus 1\",\"Blank8\",\"Blank9\",\"Blank10\",\"Blank11\",\"Blank12\",\"Blank13\",\"Blank14\",\"Blank15\",\"Grade Assessed Current Year minus 2\",\"Blank16\",\"Smarter Standard Error Measurement   ?  SEM Current Year minus 2\",\"Scale Score Current Year minus 2\",\"Condition Code Current Year minus 2\",\"Blank17\",\"Blank18\",\"Blank19\",\"Blank20\",\"Blank21\",\"Blank22\",\"Blank23\",\"Blank24\",\"Grade Assessed Current Year minus 3\",\"Blank25\",\"Smarter Standard Error Measurement   ?  SEM Current Year minus 3\",\"Scale Score Current Year minus 3\",\"Condition Code Current Year minus 3\",\"Blank26\",\"Blank27\",\"Blank28\",\"Blank29\",\"Blank30\",\"Blank31\",\"Blank32\",\"Blank33\",\"Growth Score\",\"Blank34\",\"UIN (Unique Identification Number)\",\"Blank35\",\"End of Record\",\"\",\"\"],\"Map\":{\"studentAssessmentIdentifier\":{\"Column\":\"Test Start Date 1\"},\"assessmentReference\":{\"assessmentIdentifier\":\"SBAC-V1\",\"namespace\":\"uri://caaspp.org/SBAC/Assessment\"},\"schoolYearTypeReference\":{\"schoolYear\":{\"Column\":\"DI_SchoolYear\"}},\"studentReference\":{\"studentUniqueId\":{\"Column\":\"DI_StudentId\"}},\"administrationDate\":{\"Column\":\"Test Start Date 1\"},\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_PerfLevel_Achievement Levels\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Record Type\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Record Type\"}},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Scale Score\"}},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Raw Score\"}},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Achievement Levels\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Test Start Date 1\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Test Start Date 1\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Test Completion Date 1\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Test Completion Date 1\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Test Start Date 2\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Test Start Date 2\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Test Completion Date 2\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Test Completion Date 2\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Test Start Date 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Test Start Date 3\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Test Completion Date 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Test Completion Date 3\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#CAA Science Percent Correct\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"CAA Science Percent Correct\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#CAA Science Preliminary Indicator\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\",\"result\":{\"Column\":\"CAA Science Preliminary Indicator\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Condition Code\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Condition Code\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Attemptedness\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Attemptedness\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Score Status\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Score Status\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Include Indicator\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Include Indicator\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Genre\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Genre\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#WER POR\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"WER POR\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#WER DEV EEL\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"WER DEV EEL\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#WER COV\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"WER COV\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#EAP\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"EAP\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Accommodations Available Indicator\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Accommodations Available Indicator\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Designated Support Available Indicator\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Designated Support Available Indicator\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Number of Items attempted 1\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Number of Items attempted 1\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Number of Items attempted 2\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Number of Items attempted 2\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Number of Items attempted 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Number of Items attempted 3\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Scale Scores Current Year minus 1\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Scale Scores Current Year minus 1\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Scale Score Current Year minus 2\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Scale Score Current Year minus 2\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Scale Score Current Year minus 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Scale Score Current Year minus 3\"}},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Growth Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\",\"result\":{\"Column\":\"Growth Score\"}}],\"studentObjectiveAssessments\":[{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"SBAC-V1\",\"identificationCode\":\"SBAC-V1-SMARTER-CLAIM-1\",\"namespace\":\"uri://caaspp.org/SBAC/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_PerfLevel_Smarter Claim 1 Performance Level\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Smarter Claim 1 Performance Level\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"SBAC-V1\",\"identificationCode\":\"SBAC-V1-SMARTER-CLAIM-2\",\"namespace\":\"uri://caaspp.org/SBAC/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_PerfLevel_Smarter Claim 2 Performance Level\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Smarter Claim 2 Performance Level\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"SBAC-V1\",\"identificationCode\":\"SBAC-V1-SMARTER-CLAIM-3\",\"namespace\":\"uri://caaspp.org/SBAC/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_PerfLevel_Smarter Claim 3 Performance Level\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Smarter Claim 3 Performance Level\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"SBAC-V1\",\"identificationCode\":\"SBAC-V1-SMARTER-CLAIM-4\",\"namespace\":\"uri://caaspp.org/SBAC/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_PerfLevel_Smarter Claim 4 Performance Level\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Smarter Claim 4 Performance Level\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"SBAC-V1\",\"identificationCode\":\"SBAC-V1-DOMAIN-1\",\"namespace\":\"uri://caaspp.org/SBAC/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_PerfLevel_Domain 1 Level\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Domain 1 Level\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"SBAC-V1\",\"identificationCode\":\"SBAC-V1-DOMAIN-2\",\"namespace\":\"uri://caaspp.org/SBAC/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_PerfLevel_Domain 2 Level\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Domain 2 Level\"}}]},{\"objectiveAssessmentReference\":{\"assessmentIdentifier\":\"SBAC-V1\",\"identificationCode\":\"SBAC-V1-DOMAIN-3\",\"namespace\":\"uri://caaspp.org/SBAC/Assessment\"},\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_PerfLevel_Domain 3 Level\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Domain 3 Level\"}}]}],\"whenAssessedGradeLevelDescriptor\":{\"Column\":\"DI_GradeLevel\"}}}],\"Bootstraps\":[{\"Name\":\"SBAC_ARMD\",\"ResourcePath\":\"/ed-fi/assessmentReportingMethodDescriptors\",\"Data\":[{\"codeValue\":\"Record Type\",\"description\":\"Record Type\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Record Type\"},{\"codeValue\":\"Test Start Date 1\",\"description\":\"Test Start Date 1\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Test Start Date 1\"},{\"codeValue\":\"Test Completion Date 1\",\"description\":\"Test Completion Date 1\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Test Completion Date 1\"},{\"codeValue\":\"Test Start Date 2\",\"description\":\"Test Start Date 2\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Test Start Date 2\"},{\"codeValue\":\"Test Completion Date 2\",\"description\":\"Test Completion Date 2\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Test Completion Date 2\"},{\"codeValue\":\"Test Start Date 3\",\"description\":\"Test Start Date 3\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Test Start Date 3\"},{\"codeValue\":\"Test Completion Date 3\",\"description\":\"Test Completion Date 3\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Test Completion Date 3\"},{\"codeValue\":\"CAA Science Percent Correct\",\"description\":\"CAA Science Percent Correct\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"CAA Science Percent Correct\"},{\"codeValue\":\"CAA Science Preliminary Indicator\",\"description\":\"CAA Science Preliminary Indicator\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"CAA Science Preliminary Indicator\"},{\"codeValue\":\"Condition Code\",\"description\":\"Condition Code\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Condition Code\"},{\"codeValue\":\"Attemptedness\",\"description\":\"Attemptedness\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Attemptedness\"},{\"codeValue\":\"Score Status\",\"description\":\"Score Status\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Score Status\"},{\"codeValue\":\"Include Indicator\",\"description\":\"Include Indicator\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Include Indicator\"},{\"codeValue\":\"Smarter Claim 1 Performance Level\",\"description\":\"Smarter Claim 1 Performance Level\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Smarter Claim 1 Performance Level\"},{\"codeValue\":\"Smarter Claim 2 Performance Level\",\"description\":\"Smarter Claim 2 Performance Level\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Smarter Claim 2 Performance Level\"},{\"codeValue\":\"Smarter Claim 3 Performance Level\",\"description\":\"Smarter Claim 3 Performance Level\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Smarter Claim 3 Performance Level\"},{\"codeValue\":\"Smarter Claim 4 Performance Level\",\"description\":\"Smarter Claim 4 Performance Level\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Smarter Claim 4 Performance Level\"},{\"codeValue\":\"Domain 1 Level\",\"description\":\"Domain 1 Level\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Domain 1 Level\"},{\"codeValue\":\"Domain 2 Level\",\"description\":\"Domain 2 Level\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Domain 2 Level\"},{\"codeValue\":\"Domain 3 Level\",\"description\":\"Domain 3 Level\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Domain 3 Level\"},{\"codeValue\":\"WER POR\",\"description\":\"WER POR\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"WER POR\"},{\"codeValue\":\"WER DEV EEL\",\"description\":\"WER DEV EEL\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"WER DEV EEL\"},{\"codeValue\":\"WER COV\",\"description\":\"WER COV\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"WER COV\"},{\"codeValue\":\"EAP\",\"description\":\"EAP\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"EAP\"},{\"codeValue\":\"Accommodations Available Indicator\",\"description\":\"Accommodations Available Indicator\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Accommodations Available Indicator\"},{\"codeValue\":\"Designated Support Available Indicator\",\"description\":\"Designated Support Available Indicator\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Designated Support Available Indicator\"},{\"codeValue\":\"Number of Items attempted 1\",\"description\":\"Number of Items attempted 1\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Number of Items attempted 1\"},{\"codeValue\":\"Number of Items attempted 2\",\"description\":\"Number of Items attempted 2\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Number of Items attempted 2\"},{\"codeValue\":\"Number of Items attempted 3\",\"description\":\"Number of Items attempted 3\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Number of Items attempted 3\"},{\"codeValue\":\"Scale Scores Current Year minus 1\",\"description\":\"Scale Scores Current Year minus 1\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Scale Scores Current Year minus 1\"},{\"codeValue\":\"Scale Score Current Year minus 2\",\"description\":\"Scale Score Current Year minus 2\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Scale Score Current Year minus 2\"},{\"codeValue\":\"Scale Score Current Year minus 3\",\"description\":\"Scale Score Current Year minus 3\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Scale Score Current Year minus 3\"},{\"codeValue\":\"Growth Score\",\"description\":\"Growth Score\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Growth Score\"},{\"codeValue\":\"Genre\",\"description\":\"Genre\",\"namespace\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Genre\"}]},{\"Name\":\"SBAC_PLD\",\"ResourcePath\":\"/ed-fi/performanceLevelDescriptors\",\"Data\":[{\"codeValue\":\"No score\",\"description\":\"No score (9)\",\"namespace\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor\",\"shortDescription\":\"No score\"},{\"codeValue\":\"Standard Not Met\",\"description\":\"Standard Not Met (1)\",\"namespace\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor\",\"shortDescription\":\"Standard Not Met\"},{\"codeValue\":\"Standard Nearly Met\",\"description\":\"Standard Nearly Met (2)\",\"namespace\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor\",\"shortDescription\":\"Standard Nearly Met\"},{\"codeValue\":\"Standard Met\",\"description\":\"Standard Met (3)\",\"namespace\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor\",\"shortDescription\":\"Standard Met\"},{\"codeValue\":\"Standard Exceeded\",\"description\":\"Standard Exceeded (4)\",\"namespace\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor\",\"shortDescription\":\"Standard Exceeded\"},{\"codeValue\":\"Level 1 Alternate\",\"description\":\"Level 1 Alternate\",\"namespace\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor\",\"shortDescription\":\"Level 1 Alternate\"},{\"codeValue\":\"Level 2 Alternate\",\"description\":\"Level 2 Alternate\",\"namespace\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor\",\"shortDescription\":\"Level 2 Alternate\"},{\"codeValue\":\"Level 3 Alternate\",\"description\":\"Level 3 Alternate\",\"namespace\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor\",\"shortDescription\":\"Level 3 Alternate\"},{\"codeValue\":\"Below Standard\",\"description\":\"Below Standard (1)\",\"namespace\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor\",\"shortDescription\":\"Below Standard\"},{\"codeValue\":\"Near Standard\",\"description\":\"Near Standard (2)\",\"namespace\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor\",\"shortDescription\":\"Near Standard\"},{\"codeValue\":\"Above Standard\",\"description\":\"Above Standard (3)\",\"namespace\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor\",\"shortDescription\":\"Above Standard\"}]},{\"Name\":\"SBAC_Assessment\",\"ResourcePath\":\"/ed-fi/assessments\",\"Data\":{\"assessmentIdentifier\":\"SBAC-V1\",\"assessmentTitle\":\"SBAC Assessment\",\"namespace\":\"uri://caaspp.org/SBAC/Assessment\",\"assessedGradeLevels\":[{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Kindergarten\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#First grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Second grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Third grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Fourth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Fifth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Sixth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Seventh grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Eighth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Ninth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Tenth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Ungraded\"}],\"assessmentCategoryDescriptor\":\"uri://ed-fi.org/AssessmentCategoryDescriptor#State assessment\",\"academicSubjects\":[{\"academicSubjectDescriptor\":\"uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts\"},{\"academicSubjectDescriptor\":\"uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics\"},{\"academicSubjectDescriptor\":\"uri://ed-fi.org/AcademicSubjectDescriptor#Science\"}],\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Record Type\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Test Start Date 1\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Test Completion Date 1\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Test Start Date 2\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Test Completion Date 2\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Test Start Date 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Test Completion Date 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#CAA Science Percent Correct\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#CAA Science Preliminary Indicator\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Condition Code\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Attemptedness\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Score Status\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Include Indicator\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Genre\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#WER POR\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#WER DEV EEL\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#WER COV\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#EAP\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Accommodations Available Indicator\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Designated Support Available Indicator\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Number of Items attempted 1\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Number of Items attempted 2\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Number of Items attempted 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Scale Scores Current Year minus 1\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Scale Score Current Year minus 2\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Scale Score Current Year minus 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Growth Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#No score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Standard Not Met\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Standard Nearly Met\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Standard Met\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Standard Exceeded\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Level 1 Alternate\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Level 2 Alternate\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Level 3 Alternate\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]}},{\"Name\":\"SBAC_OA\",\"ResourcePath\":\"/ed-fi/objectiveAssessments\",\"Data\":[{\"identificationCode\":\"SBAC-V1-SMARTER-CLAIM-1\",\"assessmentReference\":{\"assessmentIdentifier\":\"SBAC-V1\",\"namespace\":\"uri://caaspp.org/SBAC/Assessment\"},\"description\":\"Smarter Claim 1\",\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Below Standard\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Near Standard\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Above Standard\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]},{\"identificationCode\":\"SBAC-V1-SMARTER-CLAIM-2\",\"assessmentReference\":{\"assessmentIdentifier\":\"SBAC-V1\",\"namespace\":\"uri://caaspp.org/SBAC/Assessment\"},\"description\":\"Smarter Claim 2\",\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Below Standard\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Near Standard\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Above Standard\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]},{\"identificationCode\":\"SBAC-V1-SMARTER-CLAIM-3\",\"assessmentReference\":{\"assessmentIdentifier\":\"SBAC-V1\",\"namespace\":\"uri://caaspp.org/SBAC/Assessment\"},\"description\":\"Smarter Claim 3\",\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Below Standard\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Near Standard\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Above Standard\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]},{\"identificationCode\":\"SBAC-V1-SMARTER-CLAIM-4\",\"assessmentReference\":{\"assessmentIdentifier\":\"SBAC-V1\",\"namespace\":\"uri://caaspp.org/SBAC/Assessment\"},\"description\":\"Smarter Claim 4\",\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Below Standard\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Near Standard\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Above Standard\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]},{\"identificationCode\":\"SBAC-V1-DOMAIN-1\",\"assessmentReference\":{\"assessmentIdentifier\":\"SBAC-V1\",\"namespace\":\"uri://caaspp.org/SBAC/Assessment\"},\"description\":\"Domain 1\",\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Below Standard\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Near Standard\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Above Standard\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]},{\"identificationCode\":\"SBAC-V1-DOMAIN-2\",\"assessmentReference\":{\"assessmentIdentifier\":\"SBAC-V1\",\"namespace\":\"uri://caaspp.org/SBAC/Assessment\"},\"description\":\"Domain 2\",\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Below Standard\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Near Standard\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Above Standard\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]},{\"identificationCode\":\"SBAC-V1-DOMAIN-3\",\"assessmentReference\":{\"assessmentIdentifier\":\"SBAC-V1\",\"namespace\":\"uri://caaspp.org/SBAC/Assessment\"},\"description\":\"Domain 3\",\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Below Standard\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Near Standard\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level\",\"performanceLevelDescriptor\":\"uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Above Standard\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]}]}],\"Lookups\":[]}",
-    "submitter": {
-        "name": "Emilio Baez",
-        "organization": "Developers.Net",
-        "email": "emilio@developers.net"
-    }
+  "id": 30,
+  "title": "Smarter Balanced Assessment Consortium (SBAC) Assessment Results - API 3.2",
+  "description": "This template includes the Smarter Balanced Assessment Consortium (SBAC) Assessment",
+  "apiVersion": "3.2.0",
+  "dateTimePublished": "2020-07-02T18:21:53.440194",
+  "template": {
+    "Maps": [
+      {
+        "Name": "SBAC_Map",
+        "ResourcePath": "/ed-fi/studentAssessments",
+        "ColumnHeaders": [
+          "DI_StudentId",
+          "DI_SchoolYear",
+          "DI_PerfLevel_Achievement Levels",
+          "DI_PerfLevel_Smarter Claim 1 Performance Level",
+          "DI_PerfLevel_Smarter Claim 2 Performance Level",
+          "DI_PerfLevel_Smarter Claim 3 Performance Level",
+          "DI_PerfLevel_Smarter Claim 4 Performance Level",
+          "DI_PerfLevel_Domain 1 Level",
+          "DI_PerfLevel_Domain 2 Level",
+          "DI_PerfLevel_Domain 3 Level",
+          "DI_PerfLevel_Domain 4 Level",
+          "DI_GradeLevel",
+          "Record Type",
+          "Statewide Student Identifier (SSID)",
+          "Student Last Name",
+          "Student First Name",
+          "Student Middle Name",
+          "Date of Birth",
+          "Gender",
+          "CALPADS Grade",
+          "Grade Assessed",
+          "CALPADS District Code",
+          "CALPADS School Code",
+          "CALPADS Charter Code",
+          "CALPADS Charter School  Indicator",
+          "County/District Code of Accountability",
+          "Section 504 Status",
+          "Primary Disability Type",
+          "IDEA Indicator",
+          "Migrant Status",
+          "EL Status",
+          "EL ID Date",
+          "RFEP Date",
+          "First Entry Date in US School",
+          "English Language Acquisition Status",
+          "Language Code (CEDS)",
+          "Primary Language",
+          "Military Status",
+          "Foster Status",
+          "Homeless Status",
+          "Economic Disadvantage Status",
+          "NPS School Flag",
+          "Hispanic or Latino",
+          "American Indian or Alaska Native",
+          "Asian",
+          "Native Hawaiian or Other Pacific Islander",
+          "Filipino",
+          "Black or African American",
+          "White",
+          "Two or More Races",
+          "Reporting Ethnicity",
+          "Parent Education Level ",
+          "Blank1",
+          "Opportunity ID 1",
+          "Opportunity 1 Testing Status",
+          "Opportunity ID 2",
+          "Opportunity 2 Testing Status",
+          "Opportunity ID 3",
+          "Opportunity 3 Testing Status",
+          "Test Registration ID",
+          "Tested LEA Name 1",
+          "Tested County/District Code 1",
+          "Tested School Name 1",
+          "Tested School Code 1",
+          "Tested Charter School Indicator 1",
+          "Tested Charter School Code 1",
+          "Tested School NPS Flag 1",
+          "Paper and Pencil Test Completion Date  (PAPER)",
+          "Tested LEA Name 2",
+          "Tested County/District Code 2",
+          "Tested School Name 2",
+          "Tested School Code 2",
+          "Tested Charter School Indicator 2",
+          "Tested Charter School Code 2",
+          "Tested School NPS Flag 2",
+          "Tested LEA Name 3",
+          "Tested County/District Code 3",
+          "Tested School Name 3",
+          "Tested School Code 3",
+          "Tested Charter School Indicator 3",
+          "Tested Charter School Code 3",
+          "Tested School NPS Flag 3",
+          "Test Start Date 1",
+          "Test Completion Date 1",
+          "Test Start Date 2",
+          "Test Completion Date 2",
+          "Test Start Date 3",
+          "Test Completion Date 3",
+          "School Selected Start of Test Window 1",
+          "School Selected End of Test Window 1",
+          "School Selected Start of Test Window 2",
+          "School Selected End of Test Window 2",
+          "School Selected Start of Test Window 3",
+          "School Selected End of Test Window 3",
+          "Student Exit Code",
+          "Student Exit Withdrawal Date",
+          "Student Removed from CALPADS File Date",
+          "CAST Last Science Class Flag",
+          "CAA Science Percent Correct",
+          "CAA Science Preliminary Indicator",
+          "Condition Code",
+          "Attemptedness",
+          "Score Status",
+          "Unlisted Resources Construct Change",
+          "Test Mode  ?   Online or Paper",
+          "Include Indicator",
+          "Blank2",
+          "Raw Score",
+          "Blank3",
+          "Smarter Claim 1 Performance Level",
+          "Blank4",
+          "Smarter Claim 2 Performance Level",
+          "Blank5",
+          "Smarter Claim 3 Performance Level",
+          "Blank6",
+          "Smarter Claim 4 Performance Level",
+          "Scale Score",
+          "Smarter Standard Error Measurement  ?  SEM",
+          "Smarter Scale Scores Error Bands  ?  Min",
+          "Smarter Scale Scores Error Bands  ?  Max",
+          "Achievement Levels",
+          "Domain 1 Level",
+          "Domain 2 Level",
+          "Domain 3 Level",
+          "Genre",
+          "WER POR",
+          "WER DEV EEL",
+          "WER COV",
+          "EAP",
+          "Accommodations Available Indicator",
+          "Designated Support Available Indicator",
+          "Embedded Accommodation 1  ?  American Sign Language (Online)(Listening)",
+          "Embedded Accommodation 1  ?  Audio Transcript (Online)",
+          "Embedded Accommodation 1  ?  Braille (Online)",
+          "Embedded Accommodation 1  ?  Closed Captioning (Online)",
+          "Embedded Accommodation 1  ?  Text-to-Speech Passages (Online)",
+          "Embedded Accommodation 2  ?  American Sign Language (Online)",
+          "Embedded Accommodation 2  ?  Braille (Online)",
+          "Embedded Accommodation 2  ?  Text-to-Speech Passages (Online)",
+          "Non-Embedded Accommodation 1  ?  Abacus (Online)",
+          "Non-Embedded Accommodation 1   ?  Additional Instructional Supports for Alternate Assessments (Online)",
+          "Non-Embedded Accommodation 1   ?  Alternate Response Options (Online)",
+          "Non-Embedded Accommodation 1  ?  Calculator (Online)",
+          "Non-Embedded Accommodation 1  ?  Multiplication Table  (Online)",
+          "Non-Embedded Accommodation 1   ?  Print on Demand (Online)",
+          "Non-Embedded Accommodation 1  - Read Aloud Passages (Online)",
+          "Non-Embedded Accommodation 1   ?  Scribe (Writing)",
+          "Non-Embedded Accommodation 1   ?  Speech-to-Text (Online)",
+          "Non-Embedded Accommodation 1  ?  100s Number Table (Online)",
+          "Non-Embedded Accommodation 1  ?  Unlisted Resources (Online)",
+          "Non-Embedded Accommodation 1  ?  Word Prediction (Online)",
+          "Non-Embedded Accommodation 2  ?  Abacus (Online)",
+          "Non-Embedded Accommodation 2   ?  Additional Instructional Supports for Alternate Assessments (Online)",
+          "Non-Embedded Accommodation 2   ?  Alternate Response Options (Online)",
+          "Non-Embedded Accommodation 2  ?  Calculator (Online)",
+          "Non-Embedded Accommodation 2  ?  Multiplication Table (Online)",
+          "Non-Embedded Accommodation 2   ?  Print on Demand (Online)",
+          "Non-Embedded Accommodation 2   ?  Scribe (Writing) (Online)",
+          "Non-Embedded Accommodation 2   ?  Speech-to-Text  (Online)",
+          "Non-Embedded Accommodation 2   ?  Unlisted Resources (Online)",
+          "Non-Embedded Accommodation 2  ?  Word Prediction (Online)",
+          "Non-Embedded Accommodation 2  ?  100s Number Table (Online)",
+          "Non-Embedded Accommodation 3  ?  Abacus (Online)",
+          "Non-Embedded Accommodation 3   ?  Additional Instructional Supports for Alternate Assessments (Online)",
+          "Non-Embedded Accommodation 3   ?  Alternate Response Options (Online)",
+          "Non-Embedded Accommodation 3   ?  Print on Demand (Online)",
+          "Non-Embedded Accommodation 3  ?  Unlisted Resources (Online)",
+          "Non-Embedded Accommodation 3  ?  Word Prediction (Online)",
+          "Embedded Designated Support 1  ?  Color Contrast (Online)",
+          "Embedded Designated Support 1  ?  Masking (Online)",
+          "Embedded Designated Support 1  ?  Mouse Pointer (Online)",
+          "Embedded Designated Support 1  ?  Permissive Mode (Online)",
+          "Embedded Designated Support 1  ?  Print Size",
+          "Embedded Designated Support 1 - Stacked Translations and Translated Test Directions (Online)",
+          "Embedded Designated Support 1  ?  Streamline(Online)",
+          "Embedded Designated Support 1  ?  Text to Speech (Online)",
+          "Embedded Designated Support 1  ?  Translations (Glossary) (Online)",
+          "Embedded Designated Support 1  ?  Turn off Universal Tools (Online)",
+          "Embedded Designated Support 2  ?  Color Contrast (Online)",
+          "Embedded Designated Support 2  ?  Masking (Online)",
+          "Embedded Designated Support 2  ?  Permissive Mode (Online)",
+          "Embedded Designated Support 2  ?  Mouse Pointer (Online)",
+          "Embedded Designated Support 2  ?  Print Size (Online)",
+          "Embedded Designated Support 2  ?  Streamline (Online)",
+          "Embedded Designated Support 2  ?  Stacked Translations and Translated Test Directions (Online)",
+          "Embedded Designated Support 2  ?  Text to Speech (Online)",
+          "Embedded Designated Support 2  ?  Translations (Glossary) (Online)",
+          "Embedded Designated Support 2  ?  Turn off Universal Tools (Online)",
+          "Embedded Designated Support 3  ?  Color Contrast (Online)",
+          "Embedded Designated Support 3 ?  Masking (Online)",
+          "Embedded Designated Support 3  ?  Mouse Pointer (Online)",
+          "Embedded Designated Support 3  ?  Permissive Mode (Online)",
+          "Embedded Designated Support 3  ?  Print Size",
+          "Embedded Designated Support 3 ?  Streamline (Online)",
+          "Embedded Designated Support 3  ?  Turn off Universal Tools (Online)",
+          "Non-Embedded Designated Support 1  ?  Amplification (Online)",
+          "Non-Embedded Designated Support 1  ?  Bilingual Dictionary",
+          "Non-Embedded Designated Support 1  ?  Calculator (Online) ",
+          "Non-Embedded Designated Support 1  ?  Color Contrast  (Online)",
+          "Non-Embedded Designated Support 1  ?  Color Overlay (Online)",
+          "Non-Embedded Designated Support 1  ?  Magnification (Online)",
+          "Non-Embedded Designated Support 1  ?  Medical Device (Online)",
+          "Non-Embedded Designated Support 1  ?  Multiplication Table (Online)",
+          "Non-Embedded Designated Support 1  ?  Noise Buffers (Online)",
+          "Non-Embedded Designated Support 1  ?  Read Aloud Items (Online)",
+          "Non-Embedded Designated Support 1  ?  Read Aloud in Spanish (Online)",
+          "Non-Embedded Designated Support 1  ? Science Charts (State Approved) (Online)",
+          "Non-Embedded Designated Support 1  ?  Scribe Items (Online)",
+          "Non-Embedded Designated Support 1  ?  Separate Setting  (Online)",
+          "Non-Embedded Designated Support 1  ?  Simplified Test Directions  (Online)",
+          "Non-Embedded Designated Support 1  ?  Translated Test Directions (PDF on CAASPP.org) (Online)",
+          "Non-Embedded Designated Support 1  ?  100s Number table  (Online)",
+          "Non-Embedded Designated Support 2  ?  Amplification (Online)",
+          "Non-Embedded Designated Support 2  ?  Bilingual Dictionary (Online)",
+          "Non-Embedded Designated Support 2  ?  Color Contrast (Online)",
+          "Non-Embedded Designated Support 2  ?  Color Overlay (Online)",
+          "Non-Embedded Designated Support 2  ?  Magnification (Online)",
+          "Non-Embedded Designated Support 2  ?  Medical Device (Online)",
+          "Non-Embedded Designated Support 2  ?  Multiplication Table (Online)",
+          "Non-Embedded Designated Support 2  ?  Noise Buffers (Online)",
+          "Non-Embedded Designated Support 2  ?  Read Aloud Items (Online)",
+          "Non-Embedded Designated Support 2  ?  Read Aloud in Spanish (Online)",
+          "Non-Embedded Designated Support 2  ?  Scribe Items  (Online)",
+          "Non-Embedded Designated Support 2  ?  Separate Setting (Online)",
+          "Non-Embedded Designated Support 2  ?  Simplified Test Directions (Online)",
+          "Non-Embedded Designated Support 2  ?  Translated Test Directions (PDF on CAASPP.org) (Online)",
+          "Non-Embedded Designated Support 2  ?  100s Number table  (Online)",
+          "Non-Embedded Designated Support 3  ?  Amplification (Online)",
+          "Non-Embedded Designated Support 3  ?  Color Contrast  (Online)",
+          "Non-Embedded Designated Support 3  ?  Color Overlay (Online)",
+          "Non-Embedded Designated Support 3  ?  Magnification (Online)",
+          "Non-Embedded Designated Support 3  ?  Medical Device (Online)",
+          "Non-Embedded Designated Support 3  ?  Multiplication Table (Online)",
+          "Non-Embedded Designated Support 3  ?  Noise Buffers (Online)",
+          "Non-Embedded Designated Support 3  ?  Read Aloud Items (Online)",
+          "Non-Embedded Designated Support 3  ?  Scribe Items (Online)",
+          "Non-Embedded Designated Support 3 ?  Separate Setting (Online)",
+          "Non-Embedded Designated Support 3  ?  100s Number table  (Online)",
+          "Non-Embedded Accommodation (Paper)  ?  Abacus",
+          "Non-Embedded Accommodation (Paper)  ?  Alternate Response Options",
+          "Non-Embedded Accommodation  (Paper)  ?  Braille",
+          "Non-Embedded Accommodation  (Paper)  ?  Calculator",
+          "Non-Embedded Accommodation  (Paper)  ?  Large-print",
+          "Non-Embedded Accommodation (Paper) ?  Multiplication Table",
+          "Non-Embedded Accommodation (Paper)  ?  Read Aloud Passages",
+          "Non-Embedded Accommodation (Paper) - Scribe",
+          "Non-Embedded Accommodation  (Paper)  ?  Speech-to-Text",
+          "Non-Embedded Accommodation (Paper)  ?  100s Number Table",
+          "Non-Embedded Designated Supports (Paper)  ?  Bilingual Dictionary",
+          "Non-Embedded Designated Supports (Paper)  ?  Medical Device",
+          "Non-Embedded Designated Supports  (Paper)  ?  Read Aloud",
+          "Non-Embedded Designated Supports  (Paper)  ?  Scribe",
+          "Non-Embedded Designated Supports  (Paper)  ?  Separate Setting",
+          "Non-Embedded Designated Supports (Paper)  ?  Simplified Test Directions",
+          "Non-Embedded Designated Supports (Paper)  ?  Translated Test Directions",
+          "Non-Embedded Designated Supports (Paper)  ?  Translations (Glossary)",
+          "Non-embedded Universal Tools (Paper)  ?  English Dictionary",
+          "Number of Items attempted 1",
+          "Number of Items attempted 2",
+          "Number of Items attempted 3",
+          "Grade Assessed Current Year minus 1",
+          "Blank7",
+          "Smarter Standard Error Measurement  - SEM Current Year minus 1",
+          "Scale Scores Current Year minus 1",
+          "Condition Code Current Year minus 1",
+          "Blank8",
+          "Blank9",
+          "Blank10",
+          "Blank11",
+          "Blank12",
+          "Blank13",
+          "Blank14",
+          "Blank15",
+          "Grade Assessed Current Year minus 2",
+          "Blank16",
+          "Smarter Standard Error Measurement   ?  SEM Current Year minus 2",
+          "Scale Score Current Year minus 2",
+          "Condition Code Current Year minus 2",
+          "Blank17",
+          "Blank18",
+          "Blank19",
+          "Blank20",
+          "Blank21",
+          "Blank22",
+          "Blank23",
+          "Blank24",
+          "Grade Assessed Current Year minus 3",
+          "Blank25",
+          "Smarter Standard Error Measurement   ?  SEM Current Year minus 3",
+          "Scale Score Current Year minus 3",
+          "Condition Code Current Year minus 3",
+          "Blank26",
+          "Blank27",
+          "Blank28",
+          "Blank29",
+          "Blank30",
+          "Blank31",
+          "Blank32",
+          "Blank33",
+          "Growth Score",
+          "Blank34",
+          "UIN (Unique Identification Number)",
+          "Blank35",
+          "End of Record",
+          "",
+          ""
+        ],
+        "Map": {
+          "studentAssessmentIdentifier": {
+            "Column": "Test Start Date 1"
+          },
+          "assessmentReference": {
+            "assessmentIdentifier": "SBAC-V1",
+            "namespace": "uri://caaspp.org/SBAC/Assessment"
+          },
+          "schoolYearTypeReference": {
+            "schoolYear": {
+              "Column": "DI_SchoolYear"
+            }
+          },
+          "studentReference": {
+            "studentUniqueId": {
+              "Column": "DI_StudentId"
+            }
+          },
+          "administrationDate": {
+            "Column": "Test Start Date 1"
+          },
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+              "performanceLevelDescriptor": {
+                "Column": "DI_PerfLevel_Achievement Levels"
+              },
+              "performanceLevelMet": true
+            }
+          ],
+          "scoreResults": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Record Type",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Record Type"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Scale Score"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Raw Score"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Achievement Levels"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Test Start Date 1",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Test Start Date 1"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Test Completion Date 1",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Test Completion Date 1"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Test Start Date 2",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Test Start Date 2"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Test Completion Date 2",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Test Completion Date 2"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Test Start Date 3",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Test Start Date 3"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Test Completion Date 3",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Test Completion Date 3"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#CAA Science Percent Correct",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "CAA Science Percent Correct"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#CAA Science Preliminary Indicator",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+              "result": {
+                "Column": "CAA Science Preliminary Indicator"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Condition Code",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Condition Code"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Attemptedness",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Attemptedness"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Score Status",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Score Status"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Include Indicator",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Include Indicator"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Genre",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Genre"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#WER POR",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "WER POR"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#WER DEV EEL",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "WER DEV EEL"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#WER COV",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "WER COV"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#EAP",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "EAP"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Accommodations Available Indicator",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Accommodations Available Indicator"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Designated Support Available Indicator",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Designated Support Available Indicator"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Number of Items attempted 1",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Number of Items attempted 1"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Number of Items attempted 2",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Number of Items attempted 2"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Number of Items attempted 3",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Number of Items attempted 3"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Scale Scores Current Year minus 1",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Scale Scores Current Year minus 1"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Scale Score Current Year minus 2",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Scale Score Current Year minus 2"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Scale Score Current Year minus 3",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Scale Score Current Year minus 3"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Growth Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+              "result": {
+                "Column": "Growth Score"
+              }
+            }
+          ],
+          "studentObjectiveAssessments": [
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "SBAC-V1",
+                "identificationCode": "SBAC-V1-SMARTER-CLAIM-1",
+                "namespace": "uri://caaspp.org/SBAC/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_PerfLevel_Smarter Claim 1 Performance Level"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                  "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                  "result": {
+                    "Column": "Smarter Claim 1 Performance Level"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "SBAC-V1",
+                "identificationCode": "SBAC-V1-SMARTER-CLAIM-2",
+                "namespace": "uri://caaspp.org/SBAC/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_PerfLevel_Smarter Claim 2 Performance Level"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                  "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                  "result": {
+                    "Column": "Smarter Claim 2 Performance Level"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "SBAC-V1",
+                "identificationCode": "SBAC-V1-SMARTER-CLAIM-3",
+                "namespace": "uri://caaspp.org/SBAC/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_PerfLevel_Smarter Claim 3 Performance Level"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                  "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                  "result": {
+                    "Column": "Smarter Claim 3 Performance Level"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "SBAC-V1",
+                "identificationCode": "SBAC-V1-SMARTER-CLAIM-4",
+                "namespace": "uri://caaspp.org/SBAC/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_PerfLevel_Smarter Claim 4 Performance Level"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                  "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                  "result": {
+                    "Column": "Smarter Claim 4 Performance Level"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "SBAC-V1",
+                "identificationCode": "SBAC-V1-DOMAIN-1",
+                "namespace": "uri://caaspp.org/SBAC/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_PerfLevel_Domain 1 Level"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                  "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                  "result": {
+                    "Column": "Domain 1 Level"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "SBAC-V1",
+                "identificationCode": "SBAC-V1-DOMAIN-2",
+                "namespace": "uri://caaspp.org/SBAC/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_PerfLevel_Domain 2 Level"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                  "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                  "result": {
+                    "Column": "Domain 2 Level"
+                  }
+                }
+              ]
+            },
+            {
+              "objectiveAssessmentReference": {
+                "assessmentIdentifier": "SBAC-V1",
+                "identificationCode": "SBAC-V1-DOMAIN-3",
+                "namespace": "uri://caaspp.org/SBAC/Assessment"
+              },
+              "performanceLevels": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                  "performanceLevelDescriptor": {
+                    "Column": "DI_PerfLevel_Domain 3 Level"
+                  },
+                  "performanceLevelMet": true
+                }
+              ],
+              "scoreResults": [
+                {
+                  "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                  "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                  "result": {
+                    "Column": "Domain 3 Level"
+                  }
+                }
+              ]
+            }
+          ],
+          "whenAssessedGradeLevelDescriptor": {
+            "Column": "DI_GradeLevel"
+          }
+        }
+      }
+    ],
+    "Bootstraps": [
+      {
+        "Name": "SBAC_ARMD",
+        "ResourcePath": "/ed-fi/assessmentReportingMethodDescriptors",
+        "Data": [
+          {
+            "codeValue": "Record Type",
+            "description": "Record Type",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Record Type"
+          },
+          {
+            "codeValue": "Test Start Date 1",
+            "description": "Test Start Date 1",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Test Start Date 1"
+          },
+          {
+            "codeValue": "Test Completion Date 1",
+            "description": "Test Completion Date 1",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Test Completion Date 1"
+          },
+          {
+            "codeValue": "Test Start Date 2",
+            "description": "Test Start Date 2",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Test Start Date 2"
+          },
+          {
+            "codeValue": "Test Completion Date 2",
+            "description": "Test Completion Date 2",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Test Completion Date 2"
+          },
+          {
+            "codeValue": "Test Start Date 3",
+            "description": "Test Start Date 3",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Test Start Date 3"
+          },
+          {
+            "codeValue": "Test Completion Date 3",
+            "description": "Test Completion Date 3",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Test Completion Date 3"
+          },
+          {
+            "codeValue": "CAA Science Percent Correct",
+            "description": "CAA Science Percent Correct",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "CAA Science Percent Correct"
+          },
+          {
+            "codeValue": "CAA Science Preliminary Indicator",
+            "description": "CAA Science Preliminary Indicator",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "CAA Science Preliminary Indicator"
+          },
+          {
+            "codeValue": "Condition Code",
+            "description": "Condition Code",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Condition Code"
+          },
+          {
+            "codeValue": "Attemptedness",
+            "description": "Attemptedness",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Attemptedness"
+          },
+          {
+            "codeValue": "Score Status",
+            "description": "Score Status",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Score Status"
+          },
+          {
+            "codeValue": "Include Indicator",
+            "description": "Include Indicator",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Include Indicator"
+          },
+          {
+            "codeValue": "Smarter Claim 1 Performance Level",
+            "description": "Smarter Claim 1 Performance Level",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Smarter Claim 1 Performance Level"
+          },
+          {
+            "codeValue": "Smarter Claim 2 Performance Level",
+            "description": "Smarter Claim 2 Performance Level",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Smarter Claim 2 Performance Level"
+          },
+          {
+            "codeValue": "Smarter Claim 3 Performance Level",
+            "description": "Smarter Claim 3 Performance Level",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Smarter Claim 3 Performance Level"
+          },
+          {
+            "codeValue": "Smarter Claim 4 Performance Level",
+            "description": "Smarter Claim 4 Performance Level",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Smarter Claim 4 Performance Level"
+          },
+          {
+            "codeValue": "Domain 1 Level",
+            "description": "Domain 1 Level",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Domain 1 Level"
+          },
+          {
+            "codeValue": "Domain 2 Level",
+            "description": "Domain 2 Level",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Domain 2 Level"
+          },
+          {
+            "codeValue": "Domain 3 Level",
+            "description": "Domain 3 Level",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Domain 3 Level"
+          },
+          {
+            "codeValue": "WER POR",
+            "description": "WER POR",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "WER POR"
+          },
+          {
+            "codeValue": "WER DEV EEL",
+            "description": "WER DEV EEL",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "WER DEV EEL"
+          },
+          {
+            "codeValue": "WER COV",
+            "description": "WER COV",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "WER COV"
+          },
+          {
+            "codeValue": "EAP",
+            "description": "EAP",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "EAP"
+          },
+          {
+            "codeValue": "Accommodations Available Indicator",
+            "description": "Accommodations Available Indicator",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Accommodations Available Indicator"
+          },
+          {
+            "codeValue": "Designated Support Available Indicator",
+            "description": "Designated Support Available Indicator",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Designated Support Available Indicator"
+          },
+          {
+            "codeValue": "Number of Items attempted 1",
+            "description": "Number of Items attempted 1",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Number of Items attempted 1"
+          },
+          {
+            "codeValue": "Number of Items attempted 2",
+            "description": "Number of Items attempted 2",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Number of Items attempted 2"
+          },
+          {
+            "codeValue": "Number of Items attempted 3",
+            "description": "Number of Items attempted 3",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Number of Items attempted 3"
+          },
+          {
+            "codeValue": "Scale Scores Current Year minus 1",
+            "description": "Scale Scores Current Year minus 1",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Scale Scores Current Year minus 1"
+          },
+          {
+            "codeValue": "Scale Score Current Year minus 2",
+            "description": "Scale Score Current Year minus 2",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Scale Score Current Year minus 2"
+          },
+          {
+            "codeValue": "Scale Score Current Year minus 3",
+            "description": "Scale Score Current Year minus 3",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Scale Score Current Year minus 3"
+          },
+          {
+            "codeValue": "Growth Score",
+            "description": "Growth Score",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Growth Score"
+          },
+          {
+            "codeValue": "Genre",
+            "description": "Genre",
+            "namespace": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Genre"
+          }
+        ]
+      },
+      {
+        "Name": "SBAC_PLD",
+        "ResourcePath": "/ed-fi/performanceLevelDescriptors",
+        "Data": [
+          {
+            "codeValue": "No score",
+            "description": "No score (9)",
+            "namespace": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor",
+            "shortDescription": "No score"
+          },
+          {
+            "codeValue": "Standard Not Met",
+            "description": "Standard Not Met (1)",
+            "namespace": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor",
+            "shortDescription": "Standard Not Met"
+          },
+          {
+            "codeValue": "Standard Nearly Met",
+            "description": "Standard Nearly Met (2)",
+            "namespace": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor",
+            "shortDescription": "Standard Nearly Met"
+          },
+          {
+            "codeValue": "Standard Met",
+            "description": "Standard Met (3)",
+            "namespace": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor",
+            "shortDescription": "Standard Met"
+          },
+          {
+            "codeValue": "Standard Exceeded",
+            "description": "Standard Exceeded (4)",
+            "namespace": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor",
+            "shortDescription": "Standard Exceeded"
+          },
+          {
+            "codeValue": "Level 1 Alternate",
+            "description": "Level 1 Alternate",
+            "namespace": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor",
+            "shortDescription": "Level 1 Alternate"
+          },
+          {
+            "codeValue": "Level 2 Alternate",
+            "description": "Level 2 Alternate",
+            "namespace": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor",
+            "shortDescription": "Level 2 Alternate"
+          },
+          {
+            "codeValue": "Level 3 Alternate",
+            "description": "Level 3 Alternate",
+            "namespace": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor",
+            "shortDescription": "Level 3 Alternate"
+          },
+          {
+            "codeValue": "Below Standard",
+            "description": "Below Standard (1)",
+            "namespace": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor",
+            "shortDescription": "Below Standard"
+          },
+          {
+            "codeValue": "Near Standard",
+            "description": "Near Standard (2)",
+            "namespace": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor",
+            "shortDescription": "Near Standard"
+          },
+          {
+            "codeValue": "Above Standard",
+            "description": "Above Standard (3)",
+            "namespace": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor",
+            "shortDescription": "Above Standard"
+          }
+        ]
+      },
+      {
+        "Name": "SBAC_Assessment",
+        "ResourcePath": "/ed-fi/assessments",
+        "Data": {
+          "assessmentIdentifier": "SBAC-V1",
+          "assessmentTitle": "SBAC Assessment",
+          "namespace": "uri://caaspp.org/SBAC/Assessment",
+          "assessedGradeLevels": [
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Kindergarten"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#First grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Second grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fourth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fifth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Sixth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Seventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eighth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Ninth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Tenth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Ungraded"
+            }
+          ],
+          "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#State assessment",
+          "academicSubjects": [
+            {
+              "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts"
+            },
+            {
+              "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics"
+            },
+            {
+              "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Science"
+            }
+          ],
+          "scores": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Record Type",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Test Start Date 1",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Test Completion Date 1",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Test Start Date 2",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Test Completion Date 2",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Test Start Date 3",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Test Completion Date 3",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#CAA Science Percent Correct",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#CAA Science Preliminary Indicator",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Condition Code",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Attemptedness",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Score Status",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Include Indicator",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Genre",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#WER POR",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#WER DEV EEL",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#WER COV",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#EAP",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Accommodations Available Indicator",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Designated Support Available Indicator",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Number of Items attempted 1",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Number of Items attempted 2",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Number of Items attempted 3",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Scale Scores Current Year minus 1",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Scale Score Current Year minus 2",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Scale Score Current Year minus 3",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://caaspp.org/SBAC/AssessmentReportingMethodDescriptor#Growth Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+            }
+          ],
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+              "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#No score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+              "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Standard Not Met",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+              "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Standard Nearly Met",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+              "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Standard Met",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+              "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Standard Exceeded",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+              "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Level 1 Alternate",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+              "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Level 2 Alternate",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+              "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Level 3 Alternate",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "SBAC_OA",
+        "ResourcePath": "/ed-fi/objectiveAssessments",
+        "Data": [
+          {
+            "identificationCode": "SBAC-V1-SMARTER-CLAIM-1",
+            "assessmentReference": {
+              "assessmentIdentifier": "SBAC-V1",
+              "namespace": "uri://caaspp.org/SBAC/Assessment"
+            },
+            "description": "Smarter Claim 1",
+            "scores": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Below Standard",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Near Standard",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Above Standard",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "SBAC-V1-SMARTER-CLAIM-2",
+            "assessmentReference": {
+              "assessmentIdentifier": "SBAC-V1",
+              "namespace": "uri://caaspp.org/SBAC/Assessment"
+            },
+            "description": "Smarter Claim 2",
+            "scores": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Below Standard",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Near Standard",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Above Standard",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "SBAC-V1-SMARTER-CLAIM-3",
+            "assessmentReference": {
+              "assessmentIdentifier": "SBAC-V1",
+              "namespace": "uri://caaspp.org/SBAC/Assessment"
+            },
+            "description": "Smarter Claim 3",
+            "scores": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Below Standard",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Near Standard",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Above Standard",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "SBAC-V1-SMARTER-CLAIM-4",
+            "assessmentReference": {
+              "assessmentIdentifier": "SBAC-V1",
+              "namespace": "uri://caaspp.org/SBAC/Assessment"
+            },
+            "description": "Smarter Claim 4",
+            "scores": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Below Standard",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Near Standard",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Above Standard",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "SBAC-V1-DOMAIN-1",
+            "assessmentReference": {
+              "assessmentIdentifier": "SBAC-V1",
+              "namespace": "uri://caaspp.org/SBAC/Assessment"
+            },
+            "description": "Domain 1",
+            "scores": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Below Standard",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Near Standard",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Above Standard",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "SBAC-V1-DOMAIN-2",
+            "assessmentReference": {
+              "assessmentIdentifier": "SBAC-V1",
+              "namespace": "uri://caaspp.org/SBAC/Assessment"
+            },
+            "description": "Domain 2",
+            "scores": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Below Standard",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Near Standard",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Above Standard",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              }
+            ]
+          },
+          {
+            "identificationCode": "SBAC-V1-DOMAIN-3",
+            "assessmentReference": {
+              "assessmentIdentifier": "SBAC-V1",
+              "namespace": "uri://caaspp.org/SBAC/Assessment"
+            },
+            "description": "Domain 3",
+            "scores": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+              }
+            ],
+            "performanceLevels": [
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Below Standard",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Near Standard",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              },
+              {
+                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                "performanceLevelDescriptor": "uri://caaspp.org/SBAC/PerformanceLevelDescriptor#Above Standard",
+                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "Lookups": []
+  },
+  "submitter": {
+    "name": "Emilio Baez",
+    "organization": "Developers.Net",
+    "email": "emilio@developers.net"
+  }
 }

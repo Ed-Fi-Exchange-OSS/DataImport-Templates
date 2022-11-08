@@ -1,13 +1,1186 @@
 {
-    "id": 18,
-    "title": "Pearson Standard of Learning (SOL) Writing and Non-Writing Assessment Results - API 3.2",
-    "description": "This template includes the Pearson Standard of Learning (SOL) Writing and Non-Writing Assessments",
-    "apiVersion": "3.2.0",
-    "dateTimePublished": "2020-03-13T20:03:54.1731654",
-    "template": "{\"Maps\":[{\"Name\":\"PearsonSOL-Non-Writing_Map\",\"ResourcePath\":\"/ed-fi/studentAssessments\",\"ColumnHeaders\":[\"Division Name\",\"Division Code\",\"School Name\",\"School Code\",\"Group Name\",\"Group Code\",\"Filler\",\"Date Last Update - Month\",\"Date Last Update - Day\",\"Date Last Update - Year\",\"Filler-P11\",\"Last Name\",\"First Name\",\"Middle Initial\",\"State Testing Identifier (STI)\",\"Student Number\",\"DOB Month\",\"DOB Day\",\"DOB Year\",\"Gender\",\"Grade\",\"Filler-P22\",\"Ethnicity\",\"Race\",\"Filler-P25\",\"Military Connected Student Code\",\"SOA Adjustment - EL\",\"Transfer\",\"Filler-P29\",\"Disability Status\",\"Temp Condition\",\"Filler-P32\",\"Filler-P33\",\"Filler-P34\",\"Local Use Data - Student\",\"Filler-P36\",\"Primary Nighttime Residence Code\",\"Foster Care\",\"Filler-P39\",\"N-Code\",\"Filler-P41\",\"Formerly EL\",\"X-Code-B\",\"X-Code-C\",\"X-Code-D\",\"Proj Grad\",\"Filler-P47\",\"Term Graduate\",\"Filler-P49\",\"Filler-P50\",\"Filler-P51\",\"Filler-P52\",\"Filler-P53\",\"Filler-P54\",\"Recently Arrived EL\",\"Filler-P56\",\"Retest\",\"Filler-P58\",\"Recovery\",\"Filler-P60\",\"D-Code\",\"Filler-P62\",\"Filler-P63\",\"Filler-P64\",\"Parent Requested\",\"Z-Code-D\",\"Z-Code-E\",\"Z-Code-F\",\"Filler-P69\",\"EL Overall Proficiency Level\",\"Filler-P71\",\"Filler-P72\",\"Local Use Data -Test\",\"Filler-P74\",\"Testing Status\",\"Test Administration-Time of Year\",\"Test Administration-Year\",\"Stack Number\",\"Batch Number\",\"Sequence Number\",\"Document ID\",\"Level\",\"Form\",\"Filler-P84\",\"Subject Code\",\"Core/Admin\",\"Year of Standard\",\"Revision\",\"Filler-P89\",\"Items Blank &/or Mult Marked\",\"Filler-P91\",\"Test Name\",\"Filler-P93\",\"Filler-P94\",\"Filler-P95\",\"Filler-P96\",\"Filler-P97\",\"Filler-P98\",\"Filler-P99\",\"Test Scaled Score\",\"Reporting Cat Scaled Score 1\",\"Reporting Cat Scaled Score 2\",\"Reporting Cat Scaled Score 3\",\"Reporting Cat Scaled Score 4\",\"Reporting Cat Scaled Score 5\",\"Reporting Cat Scaled Score 6\",\"Reporting Cat Scaled Score 7\",\"Vertical Scale\",\"Transitional Scaled Score\",\"Performance Level\",\"Filler-P111\",\"UIN\",\"Filler-P113\",\"Filler-P114\",\"Filler-P115\",\"Student Test Month\",\"Student Test Day\",\"Student Test Year\",\"Online Test\",\"Code TFN\",\"Code TLN\",\"Code VTLN\",\"UUID\",\"Filler-P124\",\"Filler-P125\",\"STA-A\",\"STA-B\",\"STA-Code 1\",\"STA-Code 2\",\"STA-Code 3\",\"STA-Code 4\",\"STA-Code 5\",\"STA-Code 6\",\"STA-Code 7\",\"STA-Code 8\",\"STA-Code 9\",\"STA-Code 10\",\"STA-Code 11\",\"STA-Code 12\",\"STA-Code 13\",\"STA-Code 14\",\"STA-Code 15\",\"STA-Code 16\",\"STA-Code 17\",\"STA-Code 18\",\"STA-Code 19\",\"STA-Code 20\",\"STA-Code 21\",\"STA-Code 22\",\"STA-Code 23\",\"STA-Code 24\",\"STA-Code 25\",\"STA-Code 26\",\"STA-Code 27\",\"STA-Code 28\",\"STA-Code 29\",\"STA-Code 30\",\"STA-Code 31\",\"STA-Code 32\",\"Filler-P160\",\"Z indicates End of Record\",\"DI_AdministrationDate\",\"DI_PerformanceLevelDescription\",\"DI_RetestDescriptor\"],\"Map\":{\"studentAssessmentIdentifier\":{\"Column\":\"UIN\"},\"assessmentReference\":{\"assessmentIdentifier\":\"PEARSONSOL-NON-WRITING-V1\",\"namespace\":\"uri://www.pearsonassessments.com/sol/Assessment\"},\"schoolYearTypeReference\":{\"schoolYear\":{\"Column\":\"Test Administration-Year\"}},\"studentReference\":{\"studentUniqueId\":{\"Column\":\"Student Number\"}},\"administrationDate\":{\"Column\":\"DI_AdministrationDate\"},\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_PerformanceLevelDescription\"},\"performanceLevelMet\":true}],\"retestIndicatorDescriptor\":{\"Column\":\"DI_RetestDescriptor\"},\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Test Administration-Time of Year\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Test Administration-Time of Year\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Test Administration-Year\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Test Administration-Year\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Items Blank &/or Mult Marked\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Items Blank &/or Mult Marked\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Test Name\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Test Name\"}},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Test Scaled Score\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 1\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Reporting Cat Scaled Score 1\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 2\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Reporting Cat Scaled Score 2\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Reporting Cat Scaled Score 3\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 4\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Reporting Cat Scaled Score 4\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 5\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Reporting Cat Scaled Score 5\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 6\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Reporting Cat Scaled Score 6\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 7\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Reporting Cat Scaled Score 7\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Performance Level\"}}]}},{\"Name\":\"PearsonSOL-Writing_Map\",\"ResourcePath\":\"/ed-fi/studentAssessments\",\"ColumnHeaders\":[\"Division Name\",\"Division Code\",\"School Name\",\"School Code\",\"Group Name\",\"Group Code\",\"Filler\",\"Date Last Update - Month\",\"Date Last Update - Day\",\"Date Last Update - Year\",\"Filler-P11\",\"Last Name\",\"First Name\",\"Middle Initial\",\"State Testing Identifier (STI)\",\"Student Number\",\"DOB Month\",\"DOB Day\",\"DOB Year\",\"Gender\",\"Grade\",\"Filler-P22\",\"Ethnicity\",\"Race\",\"Filler-P25\",\"Military Connected Student Code\",\"SOA Adjustment - EL\",\"Transfer\",\"Filler-P29\",\"Disability Status\",\"Temp Condition\",\"Filler-P32\",\"Filler-P33\",\"Filler-P34\",\"Local Use Data - Student\",\"Filler-P36\",\"Primary Nighttime Residence Code\",\"Foster Care\",\"Filler-P39\",\"N-Code\",\"Filler-P41\",\"Formerly EL\",\"X-Code-B\",\"X-Code-C\",\"X-Code-D\",\"Proj Grad\",\"Filler-P47\",\"Term Graduate\",\"Filler-P49\",\"Filler-P50\",\"Filler-P51\",\"Filler-P52\",\"Filler-P53\",\"Filler-P54\",\"Recently Arrived EL\",\"Filler-P56\",\"Retest\",\"Filler-P58\",\"Filler-P59\",\"Filler-P60\",\"Parent Requested\",\"Z-Code-D\",\"Z-Code-E\",\"Z-Code-F\",\"Filler-P65\",\"EL Overall Proficiency Level\",\"Filler-P67\",\"Filler-P68\",\"Local Use Data -Test\",\"Filler-P70\",\"Testing Status\",\"Test Administration-Time of Year\",\"Test Administration-Year\",\"Stack Number\",\"Batch Number\",\"Sequence Number\",\"Document ID\",\"Level\",\"Form\",\"Prompt Number\",\"Subject Code\",\"Core\",\"Year of Standard\",\"Revision\",\"Composing/Written Expression Score\",\"Filler-P86\",\"Usage/Mechanics Score\",\"MC/TEI Number Correct-Writing Total\",\"MC/TEI Number Correct-Reporting Category 1\",\"MC/TEI Number Correct-Reporting Category 2\",\"SP Points Earned-Writing Total\",\"SP Points Earned - Composing/Written Expression\",\"Filler-P93\",\"SP Points Earned-Usage/Mechanics\",\"Total (MC/TEI+SP) Number Correct-Writing Total\",\"Total (MC/TEI+SP) Number Correct-Reporting Category 1\",\"Total (MC/TEI+SP) Number Correct-Reporting Category 2\",\"Items Blank &/or Mult Marked\",\"Filler-P99\",\"Scaled Score-Writing Total\",\"Scaled Score-Reporting Category 1\",\"Scaled Score-Reporting Category 2\",\"2nd Attempt\",\"Filler-P104\",\"Filler-P105\",\"Test Name\",\"Filler-P107\",\"Performance Level Total (MC/TEI + SP)\",\"Filler-P109\",\"UIN\",\"Filler-P111\",\"MC Test Month\",\"MC Test Day\",\"MC Test Year\",\"SP Test Month\",\"SP Test Day\",\"SP Test Year\",\"Online Test\",\"Code TFN\",\"Code TLN\",\"Code VTLN\",\"UUID\",\"Filler-P123\",\"Filler-P124\",\"STA-A\",\"STA-B\",\"STA-Code 1\",\"STA-Code 2\",\"STA-Code 3\",\"STA-Code 4\",\"STA-Code 5\",\"STA-Code 6\",\"STA-Code 7\",\"STA-Code 8\",\"STA-Code 9\",\"STA-Code 10\",\"STA-Code 11\",\"STA-Code 12\",\"STA-Code 13\",\"STA-Code 14\",\"STA-Code 15\",\"STA-Code 16\",\"STA-Code 17\",\"STA-Code 18\",\"STA-Code 19\",\"STA-Code 20\",\"STA-Code 21\",\"STA-Code 22\",\"STA-Code 23\",\"STA-Code 24\",\"STA-Code 25\",\"STA-Code 26\",\"STA-Code 27\",\"STA-Code 28\",\"STA-Code 29\",\"STA-Code 30\",\"STA-Code 31\",\"STA-Code 32\",\"Filler-P159\",\"Z indicates End of Record\",\"DI_AdministrationDate\",\"DI_PerformanceLevelDescription\"],\"Map\":{\"studentAssessmentIdentifier\":{\"Column\":\"UIN\"},\"assessmentReference\":{\"assessmentIdentifier\":\"PEARSONSOL-WRITING-V1\",\"namespace\":\"uri://www.pearsonassessments.com/sol/Assessment\"},\"schoolYearTypeReference\":{\"schoolYear\":{\"Column\":\"Test Administration-Year\"}},\"studentReference\":{\"studentUniqueId\":{\"Column\":\"Student Number\"}},\"administrationDate\":{\"Column\":\"DI_AdministrationDate\"},\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level\",\"performanceLevelDescriptor\":{\"Column\":\"DI_PerformanceLevelDescription\"},\"performanceLevelMet\":true}],\"scoreResults\":[{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Test Administration-Time of Year\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Test Administration-Time of Year\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Test Administration-Year\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Test Administration-Year\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Composing/Written Expression Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Composing/Written Expression Score\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Usage/Mechanics Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Usage/Mechanics Score\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#MC/TEI Number Correct-Writing Total\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"MC/TEI Number Correct-Writing Total\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#MC/TEI Number Correct-Reporting Category 1\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"MC/TEI Number Correct-Reporting Category 1\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#MC/TEI Number Correct-Reporting Category 2\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"MC/TEI Number Correct-Reporting Category 2\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#SP Points Earned-Writing Total\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"SP Points Earned-Writing Total\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#SP Points Earned - Composing/Written Expression\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"SP Points Earned - Composing/Written Expression\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#SP Points Earned-Usage/Mechanics\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"SP Points Earned-Usage/Mechanics\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Total (MC/TEI+SP) Number Correct-Writing Total\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Total (MC/TEI+SP) Number Correct-Writing Total\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Total (MC/TEI+SP) Number Correct-Rpt Category 1\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Total (MC/TEI+SP) Number Correct-Reporting Category 1\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Total (MC/TEI+SP) Number Correct-Rpt Category 2\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Total (MC/TEI+SP) Number Correct-Reporting Category 2\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Items Blank &/or Mult Marked\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Items Blank &/or Mult Marked\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Scaled Score-Writing Total\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Scaled Score-Writing Total\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Scaled Score-Reporting Category 1\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Scaled Score-Reporting Category 1\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Scaled Score-Reporting Category 2\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\",\"result\":{\"Column\":\"Scaled Score-Reporting Category 2\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Test Name\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Test Name\"}},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level Total (MC/TEI + SP)\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\",\"result\":{\"Column\":\"Performance Level Total (MC/TEI + SP)\"}}]}}],\"Bootstraps\":[{\"Name\":\"PerasonSOL-ARMD\",\"ResourcePath\":\"/ed-fi/assessmentReportingMethodDescriptors\",\"Data\":[{\"codeValue\":\"Test Administration-Time of Year\",\"description\":\"Test Administration-Time of Year\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Test Administration-Time of Year\"},{\"codeValue\":\"Test Administration-Year\",\"description\":\"Test Administration-Year\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Test Administration-Year\"},{\"codeValue\":\"Composing/Written Expression Score\",\"description\":\"Composing/Written Expression Score\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Composing/Written Expression Score\"},{\"codeValue\":\"Usage/Mechanics Score\",\"description\":\"Usage/Mechanics Score\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Usage/Mechanics Score\"},{\"codeValue\":\"MC/TEI Number Correct-Writing Total\",\"description\":\"MC/TEI Number Correct-Writing Total\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"MC/TEI Number Correct-Writing Total\"},{\"codeValue\":\"MC/TEI Number Correct-Reporting Category 1\",\"description\":\"MC/TEI Number Correct-Reporting Category 1\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"MC/TEI Number Correct-Reporting Category 1\"},{\"codeValue\":\"MC/TEI Number Correct-Reporting Category 2\",\"description\":\"MC/TEI Number Correct-Reporting Category 2\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"MC/TEI Number Correct-Reporting Category 2\"},{\"codeValue\":\"SP Points Earned-Writing Total\",\"description\":\"SP Points Earned-Writing Total\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"SP Points Earned-Writing Total\"},{\"codeValue\":\"SP Points Earned-Usage/Mechanics\",\"description\":\"SP Points Earned-Usage/Mechanics\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"SP Points Earned-Usage/Mechanics\"},{\"codeValue\":\"SP Points Earned - Composing/Written Expression\",\"description\":\"SP Points Earned - Composing/Written Expression\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"SP Points Earned - Composing/Written Expression\"},{\"codeValue\":\"Total (MC/TEI+SP) Number Correct-Writing Total\",\"description\":\"Total (MC/TEI+SP) Number Correct-Writing Total\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Total (MC/TEI+SP) Number Correct-Writing Total\"},{\"codeValue\":\"Total (MC/TEI+SP) Number Correct-Rpt Category 1\",\"description\":\"Total (MC/TEI+SP) Number Correct-Reporting Category 1\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Total (MC/TEI+SP) Number Correct-Reporting Category 1\"},{\"codeValue\":\"Total (MC/TEI+SP) Number Correct-Rpt Category 2\",\"description\":\"Total (MC/TEI+SP) Number Correct-Reporting Category 2\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Total (MC/TEI+SP) Number Correct-Reporting Category 2\"},{\"codeValue\":\"Items Blank &/or Mult Marked\",\"description\":\"Items Blank &/or Mult Marked\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Items Blank &/or Mult Marked\"},{\"codeValue\":\"Scaled Score-Writing Total\",\"description\":\"Scaled Score-Writing Total\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Scaled Score-Writing Total\"},{\"codeValue\":\"Scaled Score-Reporting Category 1\",\"description\":\"Scaled Score-Reporting Category 1\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Scaled Score-Reporting Category 1\"},{\"codeValue\":\"Scaled Score-Reporting Category 2\",\"description\":\"Scaled Score-Reporting Category 2\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Scaled Score-Reporting Category 2\"},{\"codeValue\":\"Test Name\",\"description\":\"Test Name\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Test Name\"},{\"codeValue\":\"Performance Level Total (MC/TEI + SP)\",\"description\":\"Performance Level Total (MC/TEI + SP)\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Performance Level Total (MC/TEI + SP)\"},{\"codeValue\":\"Reporting Cat Scaled Score 1\",\"description\":\"Reporting Cat Scaled Score 1\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Reporting Cat Scaled Score 1\"},{\"codeValue\":\"Reporting Cat Scaled Score 2\",\"description\":\"Reporting Cat Scaled Score 2\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Reporting Cat Scaled Score 2\"},{\"codeValue\":\"Reporting Cat Scaled Score 3\",\"description\":\"Reporting Cat Scaled Score 3\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Reporting Cat Scaled Score 3\"},{\"codeValue\":\"Reporting Cat Scaled Score 4\",\"description\":\"Reporting Cat Scaled Score 4\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Reporting Cat Scaled Score 4\"},{\"codeValue\":\"Reporting Cat Scaled Score 5\",\"description\":\"Reporting Cat Scaled Score 5\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Reporting Cat Scaled Score 5\"},{\"codeValue\":\"Reporting Cat Scaled Score 6\",\"description\":\"Reporting Cat Scaled Score 6\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Reporting Cat Scaled Score 6\"},{\"codeValue\":\"Reporting Cat Scaled Score 7\",\"description\":\"Reporting Cat Scaled Score 7\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Reporting Cat Scaled Score 7\"},{\"codeValue\":\"Performance Level\",\"description\":\"Performance Level\",\"namespace\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor\",\"shortDescription\":\"Performance Level\"}]},{\"Name\":\"PerasonSOL-PLD\",\"ResourcePath\":\"/ed-fi/performanceLevelDescriptors\",\"Data\":[{\"codeValue\":\"Pass/Advanced\",\"description\":\"Pass/Advanced(1)\",\"namespace\":\"uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor\",\"shortDescription\":\"Pass/Advanced(1)\"},{\"codeValue\":\"Pass/Proficient\",\"description\":\"Pass/Proficient(2)\",\"namespace\":\"uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor\",\"shortDescription\":\"Pass/Proficient(2)\"},{\"codeValue\":\"Fail\",\"description\":\"Fail(3)\",\"namespace\":\"uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor\",\"shortDescription\":\"Fail(3)\"},{\"codeValue\":\"Fail/Basic\",\"description\":\"Fail/Basic(4)\",\"namespace\":\"uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor\",\"shortDescription\":\"Fail/Basic(4)\"},{\"codeValue\":\"Fail/Below Basic\",\"description\":\"Fail/Below Basic(5)\",\"namespace\":\"uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor\",\"shortDescription\":\"Fail/Below Basic(5)\"},{\"codeValue\":\"Advanced/College Path\",\"description\":\"Advanced/College Path(8)\",\"namespace\":\"uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor\",\"shortDescription\":\"Advanced/College Path(8)\"},{\"codeValue\":\"Did not Attempt/No Score\",\"description\":\"Did not Attempt/No Score(9)\",\"namespace\":\"uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor\",\"shortDescription\":\"Did not Attempt/No Score(9)\"}]},{\"Name\":\"PerasonSOL-Assessment_Writing\",\"ResourcePath\":\"/ed-fi/assessments\",\"Data\":{\"assessmentIdentifier\":\"PEARSONSOL-WRITING-V1\",\"assessmentTitle\":\"Pearson SOL Writing\",\"namespace\":\"uri://www.pearsonassessments.com/sol/Assessment\",\"assessedGradeLevels\":[{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Kindergarten\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#First grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Second grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Third grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Fourth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Fifth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Sixth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Seventh grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Eighth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Ninth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Tenth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Ungraded\"}],\"assessmentCategoryDescriptor\":\"uri://ed-fi.org/AssessmentCategoryDescriptor#Other\",\"academicSubjects\":[{\"academicSubjectDescriptor\":\"uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics\"},{\"academicSubjectDescriptor\":\"uri://ed-fi.org/AcademicSubjectDescriptor#Reading\"}],\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Test Administration-Time of Year\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Test Administration-Year\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Composing/Written Expression Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Usage/Mechanics Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#MC/TEI Number Correct-Writing Total\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#MC/TEI Number Correct-Reporting Category 1\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#MC/TEI Number Correct-Reporting Category 2\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#SP Points Earned-Writing Total\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#SP Points Earned - Composing/Written Expression\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#SP Points Earned-Usage/Mechanics\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Total (MC/TEI+SP) Number Correct-Writing Total\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Total (MC/TEI+SP) Number Correct-Rpt Category 1\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Total (MC/TEI+SP) Number Correct-Rpt Category 2\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Items Blank &/or Mult Marked\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Scaled Score-Writing Total\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Scaled Score-Reporting Category 1\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Scaled Score-Reporting Category 2\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Test Name\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level Total (MC/TEI + SP)\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level\",\"performanceLevelDescriptor\":\"uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor#Pass/Advanced\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level\",\"performanceLevelDescriptor\":\"uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor#Pass/Proficient\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level\",\"performanceLevelDescriptor\":\"uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor#Fail\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level\",\"performanceLevelDescriptor\":\"uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor#Advanced/College Path\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level\",\"performanceLevelDescriptor\":\"uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor#Did not Attempt/No Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]}},{\"Name\":\"PerasonSOL-Assessment_Non-Writing\",\"ResourcePath\":\"/ed-fi/assessments\",\"Data\":{\"assessmentIdentifier\":\"PEARSONSOL-NON-WRITING-V1\",\"assessmentTitle\":\"Pearson SOL - V1\",\"namespace\":\"uri://www.pearsonassessments.com/sol/Assessment\",\"assessedGradeLevels\":[{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Kindergarten\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#First grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Second grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Third grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Fourth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Fifth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Sixth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Seventh grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Eighth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Ninth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Tenth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade\"},{\"gradeLevelDescriptor\":\"uri://ed-fi.org/GradeLevelDescriptor#Ungraded\"}],\"assessmentCategoryDescriptor\":\"uri://ed-fi.org/AssessmentCategoryDescriptor#Other\",\"academicSubjects\":[{\"academicSubjectDescriptor\":\"uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics\"},{\"academicSubjectDescriptor\":\"uri://ed-fi.org/AcademicSubjectDescriptor#Reading\"}],\"scores\":[{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Test Administration-Time of Year\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Test Administration-Year\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Items Blank &/or Mult Marked\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Test Name\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 1\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 2\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 3\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 4\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 5\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 6\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 7\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}],\"performanceLevels\":[{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level\",\"performanceLevelDescriptor\":\"uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor#Pass/Advanced\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level\",\"performanceLevelDescriptor\":\"uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor#Pass/Proficient\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level\",\"performanceLevelDescriptor\":\"uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor#Fail\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level\",\"performanceLevelDescriptor\":\"uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor#Fail/Basic\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level\",\"performanceLevelDescriptor\":\"uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor#Fail/Below Basic\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level\",\"performanceLevelDescriptor\":\"uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor#Advanced/College Path\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"},{\"assessmentReportingMethodDescriptor\":\"uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level\",\"performanceLevelDescriptor\":\"uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor#Did not Attempt/No Score\",\"resultDatatypeTypeDescriptor\":\"uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level\"}]}}],\"Lookups\":[]}",
-    "submitter": {
-        "name": "Emilio Baez",
-        "organization": "Developers.Net",
-        "email": "emilio@developers.net"
-    }
+  "id": 18,
+  "title": "Pearson Standard of Learning (SOL) Writing and Non-Writing Assessment Results - API 3.2",
+  "description": "This template includes the Pearson Standard of Learning (SOL) Writing and Non-Writing Assessments",
+  "apiVersion": "3.2.0",
+  "dateTimePublished": "2020-03-13T20:03:54.1731654",
+  "template": {
+    "Maps": [
+      {
+        "Name": "PearsonSOL-Non-Writing_Map",
+        "ResourcePath": "/ed-fi/studentAssessments",
+        "ColumnHeaders": [
+          "Division Name",
+          "Division Code",
+          "School Name",
+          "School Code",
+          "Group Name",
+          "Group Code",
+          "Filler",
+          "Date Last Update - Month",
+          "Date Last Update - Day",
+          "Date Last Update - Year",
+          "Filler-P11",
+          "Last Name",
+          "First Name",
+          "Middle Initial",
+          "State Testing Identifier (STI)",
+          "Student Number",
+          "DOB Month",
+          "DOB Day",
+          "DOB Year",
+          "Gender",
+          "Grade",
+          "Filler-P22",
+          "Ethnicity",
+          "Race",
+          "Filler-P25",
+          "Military Connected Student Code",
+          "SOA Adjustment - EL",
+          "Transfer",
+          "Filler-P29",
+          "Disability Status",
+          "Temp Condition",
+          "Filler-P32",
+          "Filler-P33",
+          "Filler-P34",
+          "Local Use Data - Student",
+          "Filler-P36",
+          "Primary Nighttime Residence Code",
+          "Foster Care",
+          "Filler-P39",
+          "N-Code",
+          "Filler-P41",
+          "Formerly EL",
+          "X-Code-B",
+          "X-Code-C",
+          "X-Code-D",
+          "Proj Grad",
+          "Filler-P47",
+          "Term Graduate",
+          "Filler-P49",
+          "Filler-P50",
+          "Filler-P51",
+          "Filler-P52",
+          "Filler-P53",
+          "Filler-P54",
+          "Recently Arrived EL",
+          "Filler-P56",
+          "Retest",
+          "Filler-P58",
+          "Recovery",
+          "Filler-P60",
+          "D-Code",
+          "Filler-P62",
+          "Filler-P63",
+          "Filler-P64",
+          "Parent Requested",
+          "Z-Code-D",
+          "Z-Code-E",
+          "Z-Code-F",
+          "Filler-P69",
+          "EL Overall Proficiency Level",
+          "Filler-P71",
+          "Filler-P72",
+          "Local Use Data -Test",
+          "Filler-P74",
+          "Testing Status",
+          "Test Administration-Time of Year",
+          "Test Administration-Year",
+          "Stack Number",
+          "Batch Number",
+          "Sequence Number",
+          "Document ID",
+          "Level",
+          "Form",
+          "Filler-P84",
+          "Subject Code",
+          "Core/Admin",
+          "Year of Standard",
+          "Revision",
+          "Filler-P89",
+          "Items Blank &/or Mult Marked",
+          "Filler-P91",
+          "Test Name",
+          "Filler-P93",
+          "Filler-P94",
+          "Filler-P95",
+          "Filler-P96",
+          "Filler-P97",
+          "Filler-P98",
+          "Filler-P99",
+          "Test Scaled Score",
+          "Reporting Cat Scaled Score 1",
+          "Reporting Cat Scaled Score 2",
+          "Reporting Cat Scaled Score 3",
+          "Reporting Cat Scaled Score 4",
+          "Reporting Cat Scaled Score 5",
+          "Reporting Cat Scaled Score 6",
+          "Reporting Cat Scaled Score 7",
+          "Vertical Scale",
+          "Transitional Scaled Score",
+          "Performance Level",
+          "Filler-P111",
+          "UIN",
+          "Filler-P113",
+          "Filler-P114",
+          "Filler-P115",
+          "Student Test Month",
+          "Student Test Day",
+          "Student Test Year",
+          "Online Test",
+          "Code TFN",
+          "Code TLN",
+          "Code VTLN",
+          "UUID",
+          "Filler-P124",
+          "Filler-P125",
+          "STA-A",
+          "STA-B",
+          "STA-Code 1",
+          "STA-Code 2",
+          "STA-Code 3",
+          "STA-Code 4",
+          "STA-Code 5",
+          "STA-Code 6",
+          "STA-Code 7",
+          "STA-Code 8",
+          "STA-Code 9",
+          "STA-Code 10",
+          "STA-Code 11",
+          "STA-Code 12",
+          "STA-Code 13",
+          "STA-Code 14",
+          "STA-Code 15",
+          "STA-Code 16",
+          "STA-Code 17",
+          "STA-Code 18",
+          "STA-Code 19",
+          "STA-Code 20",
+          "STA-Code 21",
+          "STA-Code 22",
+          "STA-Code 23",
+          "STA-Code 24",
+          "STA-Code 25",
+          "STA-Code 26",
+          "STA-Code 27",
+          "STA-Code 28",
+          "STA-Code 29",
+          "STA-Code 30",
+          "STA-Code 31",
+          "STA-Code 32",
+          "Filler-P160",
+          "Z indicates End of Record",
+          "DI_AdministrationDate",
+          "DI_PerformanceLevelDescription",
+          "DI_RetestDescriptor"
+        ],
+        "Map": {
+          "studentAssessmentIdentifier": {
+            "Column": "UIN"
+          },
+          "assessmentReference": {
+            "assessmentIdentifier": "PEARSONSOL-NON-WRITING-V1",
+            "namespace": "uri://www.pearsonassessments.com/sol/Assessment"
+          },
+          "schoolYearTypeReference": {
+            "schoolYear": {
+              "Column": "Test Administration-Year"
+            }
+          },
+          "studentReference": {
+            "studentUniqueId": {
+              "Column": "Student Number"
+            }
+          },
+          "administrationDate": {
+            "Column": "DI_AdministrationDate"
+          },
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level",
+              "performanceLevelDescriptor": {
+                "Column": "DI_PerformanceLevelDescription"
+              },
+              "performanceLevelMet": true
+            }
+          ],
+          "retestIndicatorDescriptor": {
+            "Column": "DI_RetestDescriptor"
+          },
+          "scoreResults": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Test Administration-Time of Year",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Test Administration-Time of Year"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Test Administration-Year",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Test Administration-Year"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Items Blank &/or Mult Marked",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Items Blank &/or Mult Marked"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Test Name",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Test Name"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Test Scaled Score"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 1",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Reporting Cat Scaled Score 1"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 2",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Reporting Cat Scaled Score 2"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 3",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Reporting Cat Scaled Score 3"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 4",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Reporting Cat Scaled Score 4"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 5",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Reporting Cat Scaled Score 5"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 6",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Reporting Cat Scaled Score 6"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 7",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Reporting Cat Scaled Score 7"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Performance Level"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "Name": "PearsonSOL-Writing_Map",
+        "ResourcePath": "/ed-fi/studentAssessments",
+        "ColumnHeaders": [
+          "Division Name",
+          "Division Code",
+          "School Name",
+          "School Code",
+          "Group Name",
+          "Group Code",
+          "Filler",
+          "Date Last Update - Month",
+          "Date Last Update - Day",
+          "Date Last Update - Year",
+          "Filler-P11",
+          "Last Name",
+          "First Name",
+          "Middle Initial",
+          "State Testing Identifier (STI)",
+          "Student Number",
+          "DOB Month",
+          "DOB Day",
+          "DOB Year",
+          "Gender",
+          "Grade",
+          "Filler-P22",
+          "Ethnicity",
+          "Race",
+          "Filler-P25",
+          "Military Connected Student Code",
+          "SOA Adjustment - EL",
+          "Transfer",
+          "Filler-P29",
+          "Disability Status",
+          "Temp Condition",
+          "Filler-P32",
+          "Filler-P33",
+          "Filler-P34",
+          "Local Use Data - Student",
+          "Filler-P36",
+          "Primary Nighttime Residence Code",
+          "Foster Care",
+          "Filler-P39",
+          "N-Code",
+          "Filler-P41",
+          "Formerly EL",
+          "X-Code-B",
+          "X-Code-C",
+          "X-Code-D",
+          "Proj Grad",
+          "Filler-P47",
+          "Term Graduate",
+          "Filler-P49",
+          "Filler-P50",
+          "Filler-P51",
+          "Filler-P52",
+          "Filler-P53",
+          "Filler-P54",
+          "Recently Arrived EL",
+          "Filler-P56",
+          "Retest",
+          "Filler-P58",
+          "Filler-P59",
+          "Filler-P60",
+          "Parent Requested",
+          "Z-Code-D",
+          "Z-Code-E",
+          "Z-Code-F",
+          "Filler-P65",
+          "EL Overall Proficiency Level",
+          "Filler-P67",
+          "Filler-P68",
+          "Local Use Data -Test",
+          "Filler-P70",
+          "Testing Status",
+          "Test Administration-Time of Year",
+          "Test Administration-Year",
+          "Stack Number",
+          "Batch Number",
+          "Sequence Number",
+          "Document ID",
+          "Level",
+          "Form",
+          "Prompt Number",
+          "Subject Code",
+          "Core",
+          "Year of Standard",
+          "Revision",
+          "Composing/Written Expression Score",
+          "Filler-P86",
+          "Usage/Mechanics Score",
+          "MC/TEI Number Correct-Writing Total",
+          "MC/TEI Number Correct-Reporting Category 1",
+          "MC/TEI Number Correct-Reporting Category 2",
+          "SP Points Earned-Writing Total",
+          "SP Points Earned - Composing/Written Expression",
+          "Filler-P93",
+          "SP Points Earned-Usage/Mechanics",
+          "Total (MC/TEI+SP) Number Correct-Writing Total",
+          "Total (MC/TEI+SP) Number Correct-Reporting Category 1",
+          "Total (MC/TEI+SP) Number Correct-Reporting Category 2",
+          "Items Blank &/or Mult Marked",
+          "Filler-P99",
+          "Scaled Score-Writing Total",
+          "Scaled Score-Reporting Category 1",
+          "Scaled Score-Reporting Category 2",
+          "2nd Attempt",
+          "Filler-P104",
+          "Filler-P105",
+          "Test Name",
+          "Filler-P107",
+          "Performance Level Total (MC/TEI + SP)",
+          "Filler-P109",
+          "UIN",
+          "Filler-P111",
+          "MC Test Month",
+          "MC Test Day",
+          "MC Test Year",
+          "SP Test Month",
+          "SP Test Day",
+          "SP Test Year",
+          "Online Test",
+          "Code TFN",
+          "Code TLN",
+          "Code VTLN",
+          "UUID",
+          "Filler-P123",
+          "Filler-P124",
+          "STA-A",
+          "STA-B",
+          "STA-Code 1",
+          "STA-Code 2",
+          "STA-Code 3",
+          "STA-Code 4",
+          "STA-Code 5",
+          "STA-Code 6",
+          "STA-Code 7",
+          "STA-Code 8",
+          "STA-Code 9",
+          "STA-Code 10",
+          "STA-Code 11",
+          "STA-Code 12",
+          "STA-Code 13",
+          "STA-Code 14",
+          "STA-Code 15",
+          "STA-Code 16",
+          "STA-Code 17",
+          "STA-Code 18",
+          "STA-Code 19",
+          "STA-Code 20",
+          "STA-Code 21",
+          "STA-Code 22",
+          "STA-Code 23",
+          "STA-Code 24",
+          "STA-Code 25",
+          "STA-Code 26",
+          "STA-Code 27",
+          "STA-Code 28",
+          "STA-Code 29",
+          "STA-Code 30",
+          "STA-Code 31",
+          "STA-Code 32",
+          "Filler-P159",
+          "Z indicates End of Record",
+          "DI_AdministrationDate",
+          "DI_PerformanceLevelDescription"
+        ],
+        "Map": {
+          "studentAssessmentIdentifier": {
+            "Column": "UIN"
+          },
+          "assessmentReference": {
+            "assessmentIdentifier": "PEARSONSOL-WRITING-V1",
+            "namespace": "uri://www.pearsonassessments.com/sol/Assessment"
+          },
+          "schoolYearTypeReference": {
+            "schoolYear": {
+              "Column": "Test Administration-Year"
+            }
+          },
+          "studentReference": {
+            "studentUniqueId": {
+              "Column": "Student Number"
+            }
+          },
+          "administrationDate": {
+            "Column": "DI_AdministrationDate"
+          },
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level",
+              "performanceLevelDescriptor": {
+                "Column": "DI_PerformanceLevelDescription"
+              },
+              "performanceLevelMet": true
+            }
+          ],
+          "scoreResults": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Test Administration-Time of Year",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Test Administration-Time of Year"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Test Administration-Year",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Test Administration-Year"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Composing/Written Expression Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Composing/Written Expression Score"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Usage/Mechanics Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Usage/Mechanics Score"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#MC/TEI Number Correct-Writing Total",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "MC/TEI Number Correct-Writing Total"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#MC/TEI Number Correct-Reporting Category 1",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "MC/TEI Number Correct-Reporting Category 1"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#MC/TEI Number Correct-Reporting Category 2",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "MC/TEI Number Correct-Reporting Category 2"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#SP Points Earned-Writing Total",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "SP Points Earned-Writing Total"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#SP Points Earned - Composing/Written Expression",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "SP Points Earned - Composing/Written Expression"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#SP Points Earned-Usage/Mechanics",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "SP Points Earned-Usage/Mechanics"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Total (MC/TEI+SP) Number Correct-Writing Total",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Total (MC/TEI+SP) Number Correct-Writing Total"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Total (MC/TEI+SP) Number Correct-Rpt Category 1",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Total (MC/TEI+SP) Number Correct-Reporting Category 1"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Total (MC/TEI+SP) Number Correct-Rpt Category 2",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Total (MC/TEI+SP) Number Correct-Reporting Category 2"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Items Blank &/or Mult Marked",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Items Blank &/or Mult Marked"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Scaled Score-Writing Total",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Scaled Score-Writing Total"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Scaled Score-Reporting Category 1",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Scaled Score-Reporting Category 1"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Scaled Score-Reporting Category 2",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+              "result": {
+                "Column": "Scaled Score-Reporting Category 2"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Test Name",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Test Name"
+              }
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level Total (MC/TEI + SP)",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+              "result": {
+                "Column": "Performance Level Total (MC/TEI + SP)"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "Bootstraps": [
+      {
+        "Name": "PerasonSOL-ARMD",
+        "ResourcePath": "/ed-fi/assessmentReportingMethodDescriptors",
+        "Data": [
+          {
+            "codeValue": "Test Administration-Time of Year",
+            "description": "Test Administration-Time of Year",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Test Administration-Time of Year"
+          },
+          {
+            "codeValue": "Test Administration-Year",
+            "description": "Test Administration-Year",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Test Administration-Year"
+          },
+          {
+            "codeValue": "Composing/Written Expression Score",
+            "description": "Composing/Written Expression Score",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Composing/Written Expression Score"
+          },
+          {
+            "codeValue": "Usage/Mechanics Score",
+            "description": "Usage/Mechanics Score",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Usage/Mechanics Score"
+          },
+          {
+            "codeValue": "MC/TEI Number Correct-Writing Total",
+            "description": "MC/TEI Number Correct-Writing Total",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "MC/TEI Number Correct-Writing Total"
+          },
+          {
+            "codeValue": "MC/TEI Number Correct-Reporting Category 1",
+            "description": "MC/TEI Number Correct-Reporting Category 1",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "MC/TEI Number Correct-Reporting Category 1"
+          },
+          {
+            "codeValue": "MC/TEI Number Correct-Reporting Category 2",
+            "description": "MC/TEI Number Correct-Reporting Category 2",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "MC/TEI Number Correct-Reporting Category 2"
+          },
+          {
+            "codeValue": "SP Points Earned-Writing Total",
+            "description": "SP Points Earned-Writing Total",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "SP Points Earned-Writing Total"
+          },
+          {
+            "codeValue": "SP Points Earned-Usage/Mechanics",
+            "description": "SP Points Earned-Usage/Mechanics",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "SP Points Earned-Usage/Mechanics"
+          },
+          {
+            "codeValue": "SP Points Earned - Composing/Written Expression",
+            "description": "SP Points Earned - Composing/Written Expression",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "SP Points Earned - Composing/Written Expression"
+          },
+          {
+            "codeValue": "Total (MC/TEI+SP) Number Correct-Writing Total",
+            "description": "Total (MC/TEI+SP) Number Correct-Writing Total",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Total (MC/TEI+SP) Number Correct-Writing Total"
+          },
+          {
+            "codeValue": "Total (MC/TEI+SP) Number Correct-Rpt Category 1",
+            "description": "Total (MC/TEI+SP) Number Correct-Reporting Category 1",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Total (MC/TEI+SP) Number Correct-Reporting Category 1"
+          },
+          {
+            "codeValue": "Total (MC/TEI+SP) Number Correct-Rpt Category 2",
+            "description": "Total (MC/TEI+SP) Number Correct-Reporting Category 2",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Total (MC/TEI+SP) Number Correct-Reporting Category 2"
+          },
+          {
+            "codeValue": "Items Blank &/or Mult Marked",
+            "description": "Items Blank &/or Mult Marked",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Items Blank &/or Mult Marked"
+          },
+          {
+            "codeValue": "Scaled Score-Writing Total",
+            "description": "Scaled Score-Writing Total",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Scaled Score-Writing Total"
+          },
+          {
+            "codeValue": "Scaled Score-Reporting Category 1",
+            "description": "Scaled Score-Reporting Category 1",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Scaled Score-Reporting Category 1"
+          },
+          {
+            "codeValue": "Scaled Score-Reporting Category 2",
+            "description": "Scaled Score-Reporting Category 2",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Scaled Score-Reporting Category 2"
+          },
+          {
+            "codeValue": "Test Name",
+            "description": "Test Name",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Test Name"
+          },
+          {
+            "codeValue": "Performance Level Total (MC/TEI + SP)",
+            "description": "Performance Level Total (MC/TEI + SP)",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Performance Level Total (MC/TEI + SP)"
+          },
+          {
+            "codeValue": "Reporting Cat Scaled Score 1",
+            "description": "Reporting Cat Scaled Score 1",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Reporting Cat Scaled Score 1"
+          },
+          {
+            "codeValue": "Reporting Cat Scaled Score 2",
+            "description": "Reporting Cat Scaled Score 2",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Reporting Cat Scaled Score 2"
+          },
+          {
+            "codeValue": "Reporting Cat Scaled Score 3",
+            "description": "Reporting Cat Scaled Score 3",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Reporting Cat Scaled Score 3"
+          },
+          {
+            "codeValue": "Reporting Cat Scaled Score 4",
+            "description": "Reporting Cat Scaled Score 4",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Reporting Cat Scaled Score 4"
+          },
+          {
+            "codeValue": "Reporting Cat Scaled Score 5",
+            "description": "Reporting Cat Scaled Score 5",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Reporting Cat Scaled Score 5"
+          },
+          {
+            "codeValue": "Reporting Cat Scaled Score 6",
+            "description": "Reporting Cat Scaled Score 6",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Reporting Cat Scaled Score 6"
+          },
+          {
+            "codeValue": "Reporting Cat Scaled Score 7",
+            "description": "Reporting Cat Scaled Score 7",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Reporting Cat Scaled Score 7"
+          },
+          {
+            "codeValue": "Performance Level",
+            "description": "Performance Level",
+            "namespace": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor",
+            "shortDescription": "Performance Level"
+          }
+        ]
+      },
+      {
+        "Name": "PerasonSOL-PLD",
+        "ResourcePath": "/ed-fi/performanceLevelDescriptors",
+        "Data": [
+          {
+            "codeValue": "Pass/Advanced",
+            "description": "Pass/Advanced(1)",
+            "namespace": "uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor",
+            "shortDescription": "Pass/Advanced(1)"
+          },
+          {
+            "codeValue": "Pass/Proficient",
+            "description": "Pass/Proficient(2)",
+            "namespace": "uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor",
+            "shortDescription": "Pass/Proficient(2)"
+          },
+          {
+            "codeValue": "Fail",
+            "description": "Fail(3)",
+            "namespace": "uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor",
+            "shortDescription": "Fail(3)"
+          },
+          {
+            "codeValue": "Fail/Basic",
+            "description": "Fail/Basic(4)",
+            "namespace": "uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor",
+            "shortDescription": "Fail/Basic(4)"
+          },
+          {
+            "codeValue": "Fail/Below Basic",
+            "description": "Fail/Below Basic(5)",
+            "namespace": "uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor",
+            "shortDescription": "Fail/Below Basic(5)"
+          },
+          {
+            "codeValue": "Advanced/College Path",
+            "description": "Advanced/College Path(8)",
+            "namespace": "uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor",
+            "shortDescription": "Advanced/College Path(8)"
+          },
+          {
+            "codeValue": "Did not Attempt/No Score",
+            "description": "Did not Attempt/No Score(9)",
+            "namespace": "uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor",
+            "shortDescription": "Did not Attempt/No Score(9)"
+          }
+        ]
+      },
+      {
+        "Name": "PerasonSOL-Assessment_Writing",
+        "ResourcePath": "/ed-fi/assessments",
+        "Data": {
+          "assessmentIdentifier": "PEARSONSOL-WRITING-V1",
+          "assessmentTitle": "Pearson SOL Writing",
+          "namespace": "uri://www.pearsonassessments.com/sol/Assessment",
+          "assessedGradeLevels": [
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Kindergarten"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#First grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Second grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fourth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fifth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Sixth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Seventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eighth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Ninth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Tenth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Ungraded"
+            }
+          ],
+          "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#Other",
+          "academicSubjects": [
+            {
+              "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics"
+            },
+            {
+              "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Reading"
+            }
+          ],
+          "scores": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Test Administration-Time of Year",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Test Administration-Year",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Composing/Written Expression Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Usage/Mechanics Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#MC/TEI Number Correct-Writing Total",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#MC/TEI Number Correct-Reporting Category 1",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#MC/TEI Number Correct-Reporting Category 2",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#SP Points Earned-Writing Total",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#SP Points Earned - Composing/Written Expression",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#SP Points Earned-Usage/Mechanics",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Total (MC/TEI+SP) Number Correct-Writing Total",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Total (MC/TEI+SP) Number Correct-Rpt Category 1",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Total (MC/TEI+SP) Number Correct-Rpt Category 2",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Items Blank &/or Mult Marked",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Scaled Score-Writing Total",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Scaled Score-Reporting Category 1",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Scaled Score-Reporting Category 2",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Test Name",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level Total (MC/TEI + SP)",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            }
+          ],
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level",
+              "performanceLevelDescriptor": "uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor#Pass/Advanced",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level",
+              "performanceLevelDescriptor": "uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor#Pass/Proficient",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level",
+              "performanceLevelDescriptor": "uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor#Fail",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level",
+              "performanceLevelDescriptor": "uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor#Advanced/College Path",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level",
+              "performanceLevelDescriptor": "uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor#Did not Attempt/No Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            }
+          ]
+        }
+      },
+      {
+        "Name": "PerasonSOL-Assessment_Non-Writing",
+        "ResourcePath": "/ed-fi/assessments",
+        "Data": {
+          "assessmentIdentifier": "PEARSONSOL-NON-WRITING-V1",
+          "assessmentTitle": "Pearson SOL - V1",
+          "namespace": "uri://www.pearsonassessments.com/sol/Assessment",
+          "assessedGradeLevels": [
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Kindergarten"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#First grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Second grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fourth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fifth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Sixth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Seventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eighth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Ninth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Tenth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade"
+            },
+            {
+              "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Ungraded"
+            }
+          ],
+          "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#Other",
+          "academicSubjects": [
+            {
+              "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics"
+            },
+            {
+              "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Reading"
+            }
+          ],
+          "scores": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Test Administration-Time of Year",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Test Administration-Year",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Items Blank &/or Mult Marked",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Test Name",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 1",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 2",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 3",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 4",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 5",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 6",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Reporting Cat Scaled Score 7",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            }
+          ],
+          "performanceLevels": [
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level",
+              "performanceLevelDescriptor": "uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor#Pass/Advanced",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level",
+              "performanceLevelDescriptor": "uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor#Pass/Proficient",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level",
+              "performanceLevelDescriptor": "uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor#Fail",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level",
+              "performanceLevelDescriptor": "uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor#Fail/Basic",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level",
+              "performanceLevelDescriptor": "uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor#Fail/Below Basic",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level",
+              "performanceLevelDescriptor": "uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor#Advanced/College Path",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            },
+            {
+              "assessmentReportingMethodDescriptor": "uri://www.pearsonassessments.com/sol/AssessmentReportingMethodDescriptor#Performance Level",
+              "performanceLevelDescriptor": "uri://www.pearsonassessments.com/sol/PerformanceLevelDescriptor#Did not Attempt/No Score",
+              "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+            }
+          ]
+        }
+      }
+    ],
+    "Lookups": []
+  },
+  "submitter": {
+    "name": "Emilio Baez",
+    "organization": "Developers.Net",
+    "email": "emilio@developers.net"
+  }
 }

@@ -1,0 +1,2313 @@
+{
+    "title": "ExportTemplate-NAA-V2",
+    "description": "ExportT emplate-NEVADA-V2",
+    "apiVersion": "5.3",
+    "template": {
+        "maps": [
+            {
+                "name": "DataMap_Nevada-NAA_NAA-ELA-V1",
+                "resourcePath": "/ed-fi/studentAssessments",
+                "columnHeaders": [
+                    "report_dist_num",
+                    "report_dist_name",
+                    "report_sch_num",
+                    "report_sch_name",
+                    "last",
+                    "first",
+                    "middle",
+                    "dob",
+                    "state_unique_id",
+                    "local_student_id",
+                    "student_id",
+                    "gender",
+                    "ethnicity",
+                    "iep",
+                    "lep",
+                    "f_lep_lte",
+                    "frl",
+                    "immigrant",
+                    "migrant",
+                    "nic",
+                    "yid",
+                    "yis",
+                    "slug_key",
+                    "homeschool",
+                    "nicy2",
+                    "foster_care",
+                    "armed_forces",
+                    "homeless",
+                    "precode_grade_level",
+                    "grade_level",
+                    "test_date_start",
+                    "test_date_end",
+                    "school_year",
+                    "participation_status",
+                    "ela_tc_modification",
+                    "ela_tc_invalidation",
+                    "ela_not_tested_code",
+                    "ela_attemptedness_status",
+                    "ela_number_possible",
+                    "ela_number_attempted",
+                    "ela_points_possible",
+                    "ela_raw_score",
+                    "ela_scale_score",
+                    "ela_achievement_level",
+                    "ela_sem_high",
+                    "ela_sem_low",
+                    "ela_sem_value",
+                    "ela_C1_performance_level",
+                    "ela_C2_performance_level",
+                    "ela_C3_performance_level",
+                    "ela_C4_performance_level",
+                    "ela_DOK1_points_possible",
+                    "ela_DOK1_points_correct",
+                    "ela_DOK2_points_possible",
+                    "ela_DOK2_points_correct",
+                    "ela_DOK3_points_possible",
+                    "ela_DOK3_points_correct",
+                    "math_tc_modification",
+                    "math_tc_invalidation",
+                    "math_not_tested_code",
+                    "math_attemptedness_status",
+                    "math_number_possible",
+                    "math_number_attempted",
+                    "math_points_possible",
+                    "math_raw_score",
+                    "math_scale_score",
+                    "math_achievement_level",
+                    "math_sem_high",
+                    "math_sem_low",
+                    "math_sem_value",
+                    "math_C1_performance_level",
+                    "math_C3_performance_level",
+                    "math_C4_performance_level",
+                    "math_DOK1_points_possible",
+                    "math_DOK1_points_correct",
+                    "math_DOK2_points_possible",
+                    "math_DOK2_points_correct",
+                    "math_DOK3_points_possible",
+                    "math_DOK3_points_correct",
+                    "sci_tc_modification",
+                    "sci_tc_invalidation",
+                    "sci_not_tested_code",
+                    "sci_attemptedness_status",
+                    "sci_number_possible",
+                    "sci_number_attempted",
+                    "sci_points_possible",
+                    "sci_raw_score",
+                    "sci_scale_score",
+                    "sci_achievement_level",
+                    "sci_sem_high",
+                    "sci_sem_low",
+                    "sci_sem_value",
+                    "sci_D1_performance_level",
+                    "sci_D2_performance_level",
+                    "sci_D3_performance_level",
+                    "sci_RC1_performance_level",
+                    "sci_RC2_performance_level",
+                    "sci_RC3_performance_level",
+                    "sci_RC4_performance_level",
+                    "sci_RC5_performance_level",
+                    "sci_RC6_performance_level",
+                    "sci_RC7_performance_level",
+                    "sci_DOK1_points_possible",
+                    "sci_DOK1_points_correct",
+                    "sci_DOK2_points_possible",
+                    "sci_DOK2_points_correct",
+                    "sci_DOK3_points_possible",
+                    "sci_DOK3_points_correct",
+                    "DI_AdministrationDate",
+                    "DI_AssessmentIdentifier",
+                    "DI_AssessmentStudentIdentifier",
+                    "DI_ReasonNotTestedDescriptor",
+                    "DI_SchoolYear",
+                    "DI_StudentId",
+                    "DI_ela_C1_performance_level",
+                    "DI_ela_C2_performance_level",
+                    "DI_ela_C3_performance_level",
+                    "DI_ela_C4_performance_level"
+                ],
+                "map": {
+                    "studentAssessmentIdentifier": {
+                        "Column": "DI_AssessmentStudentIdentifier"
+                    },
+                    "assessmentReference": {
+                        "assessmentIdentifier": "NAA-ELA-V1",
+                        "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                    },
+                    "schoolYearTypeReference": {
+                        "schoolYear": {
+                            "Column": "DI_SchoolYear"
+                        }
+                    },
+                    "studentReference": {
+                        "studentUniqueId": {
+                            "Column": "DI_StudentId"
+                        }
+                    },
+                    "administrationDate": {
+                        "Column": "DI_AdministrationDate"
+                    },
+                    "performanceLevels": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": {
+                                "Column": "sci_achievement_level",
+                                "Lookup": "Nevada-v2_AchievementLevel_LU"
+                            },
+                            "performanceLevelMet": true
+                        }
+                    ],
+                    "reasonNotTestedDescriptor": {
+                        "Column": "DI_ReasonNotTestedDescriptor",
+                        "Lookup": "Nevada-v2_ReasonNotTested_LU"
+                    },
+                    "scoreResults": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "ela_scale_score"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "ela_raw_score"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "ela_achievement_level"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "ela_sem_value"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 1 - Points Possible",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "ela_DOK1_points_possible"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 1 - Points Correct",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "ela_DOK1_points_correct"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 2 - Points Possible",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "ela_DOK2_points_possible"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 2 - Points Correct",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "ela_DOK2_points_correct"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 3 - Points Possible",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "ela_DOK3_points_possible"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 3 - Points Correct",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "ela_DOK3_points_correct"
+                            }
+                        }
+                    ],
+                    "studentObjectiveAssessments": [
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NAA-ELA-V1",
+                                "identificationCode": "Claim-1",
+                                "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "DI_ela_C1_performance_level",
+                                        "Lookup": "Nevada-v2_CategoryPerformanceLevel_LU"
+                                    },
+                                    "performanceLevelMet": true
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "ela_C1_performance_level"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NAA-ELA-V1",
+                                "identificationCode": "Claim-2",
+                                "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "DI_ela_C2_performance_level",
+                                        "Lookup": "Nevada-v2_CategoryPerformanceLevel_LU"
+                                    },
+                                    "performanceLevelMet": true
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "ela_C2_performance_level"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NAA-ELA-V1",
+                                "identificationCode": "Claim-3",
+                                "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "DI_ela_C3_performance_level",
+                                        "Lookup": "Nevada-v2_CategoryPerformanceLevel_LU"
+                                    },
+                                    "performanceLevelMet": true
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "ela_C3_performance_level"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NAA-ELA-V1",
+                                "identificationCode": "Claim-4",
+                                "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "DI_ela_C4_performance_level",
+                                        "Lookup": "Nevada-v2_CategoryPerformanceLevel_LU"
+                                    },
+                                    "performanceLevelMet": true
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "ela_C4_performance_level"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "whenAssessedGradeLevelDescriptor": {
+                        "Column": "grade_level",
+                        "Lookup": "Nevada-v2_GradeLevel_LU"
+                    }
+                },
+                "customFileProcessor": "NevadaAlternateAssessment(NAA)_ODSv3+",
+                "attribute": "ELA"
+            },
+            {
+                "name": "DataMap_Nevada-NAA_NAA-MA-V1",
+                "resourcePath": "/ed-fi/studentAssessments",
+                "columnHeaders": [
+                    "dis_num",
+                    "dis_name",
+                    "sch_num",
+                    "sch_name",
+                    "last",
+                    "first",
+                    "middle",
+                    "dob",
+                    "local_student_id",
+                    "state_unique_id",
+                    "student_id",
+                    "gender",
+                    "ethnicity",
+                    "iep",
+                    "lep",
+                    "f_lep_lte",
+                    "frl",
+                    "immigrant",
+                    "migrant",
+                    "nic",
+                    "yid",
+                    "yis",
+                    "slug_key",
+                    "homeschool",
+                    "nic_y2",
+                    "foster_care",
+                    "armed_forces",
+                    "homeless",
+                    "precode_grade_level",
+                    "grade_level",
+                    "test_date_start",
+                    "test_date_end",
+                    "school_year",
+                    "participation_status",
+                    "ela_lithocode",
+                    "ela_tc_modification",
+                    "ela_tc_invalidation",
+                    "ela_did_not_participate",
+                    "ela_attemptedness_status",
+                    "ela_number_possible",
+                    "ela_number_attempted",
+                    "ela_points_possible",
+                    "ela_raw_score",
+                    "ela_scale_score",
+                    "ela_achievement_level",
+                    "ela_sem_high",
+                    "ela_sem_low",
+                    "ela_sem_value",
+                    "ela_C1_performance_level",
+                    "ela_C2_performance_level",
+                    "ela_C3_performance_level",
+                    "ela_C4_performance_level",
+                    "ela_DOK1_points_possible",
+                    "ela_DOK1_points_correct",
+                    "ela_DOK2_points_possible",
+                    "ela_DOK2_points_correct",
+                    "ela_DOK3_points_possible",
+                    "ela_DOK3_points_correct",
+                    "math_lithocode",
+                    "math_tc_modification",
+                    "math_tc_invalidation",
+                    "math_did_not_participate",
+                    "math_attemptedness_status",
+                    "math_number_possible",
+                    "math_number_attempted",
+                    "math_points_possible",
+                    "math_raw_score",
+                    "math_scale_score",
+                    "math_achievement_level",
+                    "math_sem_high",
+                    "math_sem_low",
+                    "math_sem_value",
+                    "math_C1_performance_level",
+                    "math_C3_performance_level",
+                    "math_C4_performance_level",
+                    "math_DOK1_points_possible",
+                    "math_DOK1_points_correct",
+                    "math_DOK2_points_possible",
+                    "math_DOK2_points_correct",
+                    "math_DOK3_points_possible",
+                    "math_DOK3_points_correct",
+                    "sci_lithocode",
+                    "sci_tc_modification",
+                    "sci_tc_invalidation",
+                    "sci_did_not_participate",
+                    "sci_attemptedness_status",
+                    "sci_number_possible",
+                    "sci_number_attempted",
+                    "sci_points_possible",
+                    "sci_raw_score",
+                    "sci_scale_score",
+                    "sci_achievement_level",
+                    "sci_sem_high",
+                    "sci_sem_low",
+                    "sci_sem_value",
+                    "sci_D1_performance_level",
+                    "sci_D2_performance_level",
+                    "sci_D3_performance_level",
+                    "sci_RC1_performance_level",
+                    "sci_RC2_performance_level",
+                    "sci_RC3_performance_level",
+                    "sci_RC4_performance_level",
+                    "sci_RC5_performance_level",
+                    "sci_RC6_performance_level",
+                    "sci_RC7_performance_level",
+                    "sci_DOK1_points_possible",
+                    "sci_DOK1_points_correct",
+                    "sci_DOK2_points_possible",
+                    "sci_DOK2_points_correct",
+                    "sci_DOK3_points_possible",
+                    "sci_DOK3_points_correct",
+                    "DI_AdministrationDate",
+                    "DI_AssessmentIdentifier",
+                    "DI_AssessmentStudentIdentifier",
+                    "DI_ReasonNotTestedDescriptor",
+                    "DI_SchoolYear",
+                    "DI_StudentId",
+                    "DI_math_C1_performance_level",
+                    "DI_math_C3_performance_level",
+                    "DI_math_C4_performance_level"
+                ],
+                "map": {
+                    "studentAssessmentIdentifier": {
+                        "Column": "DI_AssessmentStudentIdentifier"
+                    },
+                    "assessmentReference": {
+                        "assessmentIdentifier": "NAA-MA-V1",
+                        "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                    },
+                    "schoolYearTypeReference": {
+                        "schoolYear": {
+                            "Column": "DI_SchoolYear"
+                        }
+                    },
+                    "studentReference": {
+                        "studentUniqueId": {
+                            "Column": "DI_StudentId"
+                        }
+                    },
+                    "administrationDate": {
+                        "Column": "DI_AdministrationDate"
+                    },
+                    "performanceLevels": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": {
+                                "Column": "sci_achievement_level",
+                                "Lookup": "Nevada-v2_AchievementLevel_LU"
+                            },
+                            "performanceLevelMet": true
+                        }
+                    ],
+                    "reasonNotTestedDescriptor": {
+                        "Column": "DI_ReasonNotTestedDescriptor",
+                        "Lookup": "Nevada-v2_ReasonNotTested_LU"
+                    },
+                    "scoreResults": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "math_scale_score"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "math_raw_score"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "math_achievement_level"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "math_sem_value"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 1 - Points Possible",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "math_DOK1_points_possible"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 1 - Points Correct",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "math_DOK1_points_correct"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 2 - Points Possible",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "math_DOK2_points_possible"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 2 - Points Correct",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "math_DOK2_points_correct"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 3 - Points Possible",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "math_DOK3_points_possible"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 3 - Points Correct",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "math_DOK3_points_correct"
+                            }
+                        }
+                    ],
+                    "studentObjectiveAssessments": [
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NAA-MA-V1",
+                                "identificationCode": "Claim-1",
+                                "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "DI_math_C1_performance_level",
+                                        "Lookup": "Nevada-v2_CategoryPerformanceLevel_LU"
+                                    },
+                                    "performanceLevelMet": true
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "math_C1_performance_level"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NAA-MA-V1",
+                                "identificationCode": "Claim-2-and-4",
+                                "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "DI_math_C4_performance_level",
+                                        "Lookup": "Nevada-v2_CategoryPerformanceLevel_LU"
+                                    },
+                                    "performanceLevelMet": true
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "math_C4_performance_level"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NAA-MA-V1",
+                                "identificationCode": "Claim-3",
+                                "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "DI_math_C3_performance_level",
+                                        "Lookup": "Nevada-v2_CategoryPerformanceLevel_LU"
+                                    },
+                                    "performanceLevelMet": true
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "math_C3_performance_level"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "whenAssessedGradeLevelDescriptor": {
+                        "Column": "grade_level",
+                        "Lookup": "Nevada-v2_GradeLevel_LU"
+                    }
+                },
+                "customFileProcessor": "NevadaAlternateAssessment(NAA)_ODSv3+",
+                "attribute": "MA"
+            },
+            {
+                "name": "DataMap_Nevada-NAA_NAA-SCI-V1",
+                "resourcePath": "/ed-fi/studentAssessments",
+                "columnHeaders": [
+                    "report_dist_num",
+                    "report_dist_name",
+                    "report_sch_num",
+                    "report_sch_name",
+                    "last",
+                    "first",
+                    "middle",
+                    "dob",
+                    "state_unique_id",
+                    "local_student_id",
+                    "student_id",
+                    "gender",
+                    "ethnicity",
+                    "iep",
+                    "lep",
+                    "f_lep_lte",
+                    "frl",
+                    "immigrant",
+                    "migrant",
+                    "nic",
+                    "yid",
+                    "yis",
+                    "slug_key",
+                    "homeschool",
+                    "nicy2",
+                    "foster_care",
+                    "armed_forces",
+                    "homeless",
+                    "precode_grade_level",
+                    "grade_level",
+                    "test_date_start",
+                    "test_date_end",
+                    "school_year",
+                    "participation_status",
+                    "ela_tc_modification",
+                    "ela_tc_invalidation",
+                    "ela_not_tested_code",
+                    "ela_attemptedness_status",
+                    "ela_number_possible",
+                    "ela_number_attempted",
+                    "ela_points_possible",
+                    "ela_raw_score",
+                    "ela_scale_score",
+                    "ela_achievement_level",
+                    "ela_sem_high",
+                    "ela_sem_low",
+                    "ela_sem_value",
+                    "ela_C1_performance_level",
+                    "ela_C2_performance_level",
+                    "ela_C3_performance_level",
+                    "ela_C4_performance_level",
+                    "ela_DOK1_points_possible",
+                    "ela_DOK1_points_correct",
+                    "ela_DOK2_points_possible",
+                    "ela_DOK2_points_correct",
+                    "ela_DOK3_points_possible",
+                    "ela_DOK3_points_correct",
+                    "math_tc_modification",
+                    "math_tc_invalidation",
+                    "math_not_tested_code",
+                    "math_attemptedness_status",
+                    "math_number_possible",
+                    "math_number_attempted",
+                    "math_points_possible",
+                    "math_raw_score",
+                    "math_scale_score",
+                    "math_achievement_level",
+                    "math_sem_high",
+                    "math_sem_low",
+                    "math_sem_value",
+                    "math_C1_performance_level",
+                    "math_C3_performance_level",
+                    "math_C4_performance_level",
+                    "math_DOK1_points_possible",
+                    "math_DOK1_points_correct",
+                    "math_DOK2_points_possible",
+                    "math_DOK2_points_correct",
+                    "math_DOK3_points_possible",
+                    "math_DOK3_points_correct",
+                    "sci_tc_modification",
+                    "sci_tc_invalidation",
+                    "sci_not_tested_code",
+                    "sci_attemptedness_status",
+                    "sci_number_possible",
+                    "sci_number_attempted",
+                    "sci_points_possible",
+                    "sci_raw_score",
+                    "sci_scale_score",
+                    "sci_achievement_level",
+                    "sci_sem_high",
+                    "sci_sem_low",
+                    "sci_sem_value",
+                    "sci_D1_performance_level",
+                    "sci_D2_performance_level",
+                    "sci_D3_performance_level",
+                    "sci_RC1_performance_level",
+                    "sci_RC2_performance_level",
+                    "sci_RC3_performance_level",
+                    "sci_RC4_performance_level",
+                    "sci_RC5_performance_level",
+                    "sci_RC6_performance_level",
+                    "sci_RC7_performance_level",
+                    "sci_DOK1_points_possible",
+                    "sci_DOK1_points_correct",
+                    "sci_DOK2_points_possible",
+                    "sci_DOK2_points_correct",
+                    "sci_DOK3_points_possible",
+                    "sci_DOK3_points_correct",
+                    "DI_AdministrationDate",
+                    "DI_AssessmentIdentifier",
+                    "DI_AssessmentStudentIdentifier",
+                    "DI_ReasonNotTestedDescriptor",
+                    "DI_SchoolYear",
+                    "DI_StudentId",
+                    "DI_sci_D1_performance_level",
+                    "DI_sci_D2_performance_level",
+                    "DI_sci_D3_performance_level",
+                    "DI_sci_RC1_performance_level",
+                    "DI_sci_RC2_performance_level",
+                    "DI_sci_RC3_performance_level",
+                    "DI_sci_RC4_performance_level",
+                    "DI_sci_RC5_performance_level",
+                    "DI_sci_RC6_performance_level",
+                    "DI_sci_RC7_performance_level"
+                ],
+                "map": {
+                    "studentAssessmentIdentifier": {
+                        "Column": "DI_AssessmentStudentIdentifier"
+                    },
+                    "assessmentReference": {
+                        "assessmentIdentifier": "NAA-SCI-V1",
+                        "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                    },
+                    "schoolYearTypeReference": {
+                        "schoolYear": {
+                            "Column": "DI_SchoolYear"
+                        }
+                    },
+                    "studentReference": {
+                        "studentUniqueId": {
+                            "Column": "DI_StudentId"
+                        }
+                    },
+                    "administrationDate": {
+                        "Column": "DI_AdministrationDate"
+                    },
+                    "performanceLevels": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": {
+                                "Column": "sci_achievement_level",
+                                "Lookup": "Nevada-v2_AchievementLevel_LU"
+                            },
+                            "performanceLevelMet": true
+                        }
+                    ],
+                    "reasonNotTestedDescriptor": {
+                        "Column": "DI_ReasonNotTestedDescriptor",
+                        "Lookup": "Nevada-v2_ReasonNotTested_LU"
+                    },
+                    "scoreResults": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "sci_scale_score"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "sci_raw_score"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "sci_achievement_level"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "sci_sem_value"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 1 - Points Possible",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "sci_DOK1_points_possible"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 1 - Points Correct",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "sci_DOK1_points_correct"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 2 - Points Possible",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "sci_DOK2_points_possible"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 2 - Points Correct",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "sci_DOK2_points_correct"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 3 - Points Possible",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "sci_DOK3_points_possible"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 3 - Points Correct",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "sci_DOK3_points_correct"
+                            }
+                        }
+                    ],
+                    "studentObjectiveAssessments": [
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NAA-SCI-V1",
+                                "identificationCode": "Category-1",
+                                "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "DI_sci_RC1_performance_level",
+                                        "Lookup": "Nevada-v2_CategoryPerformanceLevel_LU"
+                                    },
+                                    "performanceLevelMet": true
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "sci_RC1_performance_level"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NAA-SCI-V1",
+                                "identificationCode": "Category-2",
+                                "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "DI_sci_RC2_performance_level",
+                                        "Lookup": "Nevada-v2_CategoryPerformanceLevel_LU"
+                                    },
+                                    "performanceLevelMet": true
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "sci_RC2_performance_level"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NAA-SCI-V1",
+                                "identificationCode": "Category-3",
+                                "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "DI_sci_RC3_performance_level",
+                                        "Lookup": "Nevada-v2_CategoryPerformanceLevel_LU"
+                                    },
+                                    "performanceLevelMet": true
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "sci_RC3_performance_level"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NAA-SCI-V1",
+                                "identificationCode": "Category-4",
+                                "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "DI_sci_RC4_performance_level",
+                                        "Lookup": "Nevada-v2_CategoryPerformanceLevel_LU"
+                                    },
+                                    "performanceLevelMet": true
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "sci_RC4_performance_level"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NAA-SCI-V1",
+                                "identificationCode": "Category-5",
+                                "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "DI_sci_RC5_performance_level",
+                                        "Lookup": "Nevada-v2_CategoryPerformanceLevel_LU"
+                                    },
+                                    "performanceLevelMet": true
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "sci_RC5_performance_level"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NAA-SCI-V1",
+                                "identificationCode": "Category-6",
+                                "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "DI_sci_RC6_performance_level",
+                                        "Lookup": "Nevada-v2_CategoryPerformanceLevel_LU"
+                                    },
+                                    "performanceLevelMet": true
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "sci_RC6_performance_level"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NAA-SCI-V1",
+                                "identificationCode": "Category-7",
+                                "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "DI_sci_RC7_performance_level",
+                                        "Lookup": "Nevada-v2_CategoryPerformanceLevel_LU"
+                                    },
+                                    "performanceLevelMet": true
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "sci_RC7_performance_level"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NAA-SCI-V1",
+                                "identificationCode": "Domain-1",
+                                "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "DI_sci_D1_performance_level",
+                                        "Lookup": "Nevada-v2_CategoryPerformanceLevel_LU"
+                                    },
+                                    "performanceLevelMet": true
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "sci_D1_performance_level"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NAA-SCI-V1",
+                                "identificationCode": "Domain-2",
+                                "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "DI_sci_D2_performance_level",
+                                        "Lookup": "Nevada-v2_CategoryPerformanceLevel_LU"
+                                    },
+                                    "performanceLevelMet": true
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "sci_D2_performance_level"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NAA-SCI-V1",
+                                "identificationCode": "Domain-3",
+                                "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "DI_sci_D3_performance_level",
+                                        "Lookup": "Nevada-v2_CategoryPerformanceLevel_LU"
+                                    },
+                                    "performanceLevelMet": true
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "sci_D3_performance_level"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "whenAssessedGradeLevelDescriptor": {
+                        "Column": "grade_level",
+                        "Lookup": "Nevada-v2_GradeLevel_LU"
+                    }
+                },
+                "customFileProcessor": "NevadaAlternateAssessment(NAA)_ODSv3+",
+                "attribute": "SCI"
+            }
+        ],
+        "bootstraps": [
+            {
+                "name": "Nevada-NAA_ARMD",
+                "resourcePath": "/ed-fi/assessmentReportingMethodDescriptors",
+                "data": [
+                    {
+                        "codeValue": "Depth of Knowledge 1 - Points Correct",
+                        "description": "Depth of Knowledge 1 - Points Correct",
+                        "namespace": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Depth of Knowledge 1 - Points Correct"
+                    },
+                    {
+                        "codeValue": "Depth of Knowledge 1 - Points Possible",
+                        "description": "Depth of Knowledge 1 - Points Possible",
+                        "namespace": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Depth of Knowledge 1 - Points Possible"
+                    },
+                    {
+                        "codeValue": "Depth of Knowledge 2 - Points Correct",
+                        "description": "Depth of Knowledge 2 - Points Correct",
+                        "namespace": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Depth of Knowledge 2 - Points Correct"
+                    },
+                    {
+                        "codeValue": "Depth of Knowledge 2 - Points Possible",
+                        "description": "Depth of Knowledge 2 - Points Possible",
+                        "namespace": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Depth of Knowledge 2 - Points Possible"
+                    },
+                    {
+                        "codeValue": "Depth of Knowledge 3 - Points Correct",
+                        "description": "Depth of Knowledge 3 - Points Correct",
+                        "namespace": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Depth of Knowledge 3 - Points Correct"
+                    },
+                    {
+                        "codeValue": "Depth of Knowledge 3 - Points Possible",
+                        "description": "Depth of Knowledge 3 - Points Possible",
+                        "namespace": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Depth of Knowledge 3 - Points Possible"
+                    }
+                ]
+            },
+            {
+                "name": "Nevada-NAA_Assessment_NAA-ELA-V1",
+                "resourcePath": "/ed-fi/assessments",
+                "data": {
+                    "assessmentIdentifier": "NAA-ELA-V1",
+                    "assessmentTitle": "Nevada Alternate Assessment (NAA) - ELA",
+                    "assessmentVersion": 2021,
+                    "revisionDate": "2021-10-12",
+                    "assessmentFamily": "Nevada Alternate Assessment",
+                    "namespace": "uri://doe.nv.gov/NAA/Assessment",
+                    "assessedGradeLevels": [
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fourth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fifth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Sixth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Seventh grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eighth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade"
+                        }
+                    ],
+                    "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#State alternative assessment/grade-level standards",
+                    "academicSubjects": [
+                        {
+                            "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts"
+                        }
+                    ],
+                    "scores": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 1 - Points Possible",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 1 - Points Correct",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 2 - Points Possible",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 2 - Points Correct",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 3 - Points Possible",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 3 - Points Correct",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        }
+                    ],
+                    "performanceLevels": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Minimal Understanding",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Partial Understanding",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Proficient",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Advanced",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "Nevada-NAA_Assessment_NAA-MA-V1",
+                "resourcePath": "/ed-fi/assessments",
+                "data": {
+                    "assessmentIdentifier": "NAA-MA-V1",
+                    "assessmentTitle": "Nevada Alternate Assessment (NAA) - Mathematics",
+                    "assessmentVersion": 2021,
+                    "revisionDate": "2021-10-12",
+                    "assessmentFamily": "Nevada Alternate Assessment",
+                    "namespace": "uri://doe.nv.gov/NAA/Assessment",
+                    "assessedGradeLevels": [
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fourth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fifth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Sixth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Seventh grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eighth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade"
+                        }
+                    ],
+                    "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#State alternative assessment/grade-level standards",
+                    "academicSubjects": [
+                        {
+                            "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics"
+                        }
+                    ],
+                    "scores": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 1 - Points Possible",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 1 - Points Correct",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 2 - Points Possible",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 2 - Points Correct",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 3 - Points Possible",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 3 - Points Correct",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        }
+                    ],
+                    "performanceLevels": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Minimal Understanding",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Partial Understanding",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Proficient",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Advanced",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "Nevada-NAA_Assessment_NAA-SCI-V1",
+                "resourcePath": "/ed-fi/assessments",
+                "data": {
+                    "assessmentIdentifier": "NAA-SCI-V1",
+                    "assessmentTitle": "Nevada Alternate Assessment (NAA) - Science",
+                    "assessmentVersion": 2021,
+                    "revisionDate": "2021-10-12",
+                    "assessmentFamily": "Nevada Alternate Assessment",
+                    "namespace": "uri://doe.nv.gov/NAA/Assessment",
+                    "assessedGradeLevels": [
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fifth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eighth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade"
+                        }
+                    ],
+                    "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#State alternative assessment/grade-level standards",
+                    "academicSubjects": [
+                        {
+                            "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Science"
+                        }
+                    ],
+                    "scores": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Raw score",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 1 - Points Possible",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 1 - Points Correct",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 2 - Points Possible",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 2 - Points Correct",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 3 - Points Possible",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/NAA/AssessmentReportingMethodDescriptor#Depth of Knowledge 3 - Points Correct",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        }
+                    ],
+                    "performanceLevels": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Minimal Understanding",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Partial Understanding",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Proficient",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Advanced",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "Nevada-NAA_ObjectiveAssessment_NAA-ELA-V1",
+                "resourcePath": "/ed-fi/objectiveAssessments",
+                "data": [
+                    {
+                        "identificationCode": "Claim-1",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NAA-ELA-V1",
+                            "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                        },
+                        "description": "Claim 1: Reading",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Above",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#At/Near",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Below",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "Claim-2",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NAA-ELA-V1",
+                            "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                        },
+                        "description": "Claim 2: Writing",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Above",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#At/Near",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Below",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "Claim-3",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NAA-ELA-V1",
+                            "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                        },
+                        "description": "Claim 3: Speaking/Listening",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Above",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#At/Near",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Below",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "Claim-4",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NAA-ELA-V1",
+                            "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                        },
+                        "description": "Claim 4: Research & Inquiry",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Above",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#At/Near",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Below",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Nevada-NAA_ObjectiveAssessment_NAA-MA-V1",
+                "resourcePath": "/ed-fi/objectiveAssessments",
+                "data": [
+                    {
+                        "identificationCode": "Claim-1",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NAA-MA-V1",
+                            "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                        },
+                        "description": "Claim 1: Concepts & Procedures",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Above",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#At/Near",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Below",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "Claim-2-and-4",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NAA-MA-V1",
+                            "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                        },
+                        "description": "Claim 2 & 4: Problem Solving & Modeling/Data Analysis",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Above",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#At/Near",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Below",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "Claim-3",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NAA-MA-V1",
+                            "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                        },
+                        "description": "Claim 3: Communicating Reasoning",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Above",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#At/Near",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Below",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Nevada-NAA_ObjectiveAssessment_NAA-SCI-V1",
+                "resourcePath": "/ed-fi/objectiveAssessments",
+                "data": [
+                    {
+                        "identificationCode": "Category-1",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NAA-SCI-V1",
+                            "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                        },
+                        "description": "Reporting Category 1",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Above",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#At/Near",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Below",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "Category-2",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NAA-SCI-V1",
+                            "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                        },
+                        "description": "Reporting Category 2",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Above",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#At/Near",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Below",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "Category-3",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NAA-SCI-V1",
+                            "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                        },
+                        "description": "Reporting Category 3",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Above",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#At/Near",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Below",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "Category-4",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NAA-SCI-V1",
+                            "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                        },
+                        "description": "Reporting Category 4",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Above",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#At/Near",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Below",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "Category-5",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NAA-SCI-V1",
+                            "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                        },
+                        "description": "Reporting Category 5",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Above",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#At/Near",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Below",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "Category-6",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NAA-SCI-V1",
+                            "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                        },
+                        "description": "Reporting Category 6",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Above",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#At/Near",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Below",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "Category-7",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NAA-SCI-V1",
+                            "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                        },
+                        "description": "Reporting Category 7",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Above",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#At/Near",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Below",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "Domain-1",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NAA-SCI-V1",
+                            "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                        },
+                        "description": "Domain 1: Science Core Concepts",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Above",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#At/Near",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Below",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "Domain-2",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NAA-SCI-V1",
+                            "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                        },
+                        "description": "Domain 2: Science & Engineering Practice",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Above",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#At/Near",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Below",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "Domain-3",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NAA-SCI-V1",
+                            "namespace": "uri://doe.nv.gov/NAA/Assessment"
+                        },
+                        "description": "Domain 3: Cross Cutting Concepts",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Above",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#At/Near",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Below",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Nevada-NAA_PLD",
+                "resourcePath": "/ed-fi/performanceLevelDescriptors",
+                "data": [
+                    {
+                        "codeValue": "Above",
+                        "description": "Above",
+                        "namespace": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor",
+                        "shortDescription": "Above"
+                    },
+                    {
+                        "codeValue": "Advanced",
+                        "description": "Advanced",
+                        "namespace": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor",
+                        "shortDescription": "Advanced"
+                    },
+                    {
+                        "codeValue": "At/Near",
+                        "description": "At/Near",
+                        "namespace": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor",
+                        "shortDescription": "At/Near"
+                    },
+                    {
+                        "codeValue": "Below",
+                        "description": "Below",
+                        "namespace": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor",
+                        "shortDescription": "Below"
+                    },
+                    {
+                        "codeValue": "Minimal Understanding",
+                        "description": "Minimal Understanding",
+                        "namespace": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor",
+                        "shortDescription": "Minimal Understanding"
+                    },
+                    {
+                        "codeValue": "Partial Understanding",
+                        "description": "Partial Understanding",
+                        "namespace": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor",
+                        "shortDescription": "Partial Understanding"
+                    },
+                    {
+                        "codeValue": "Proficient",
+                        "description": "Proficient",
+                        "namespace": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor",
+                        "shortDescription": "Proficient"
+                    }
+                ]
+            },
+            {
+                "name": "Nevada-NAA_ReasonNotTestedDescriptors",
+                "resourcePath": "/ed-fi/reasonNotTestedDescriptors",
+                "data": [
+                    {
+                        "codeValue": "Not Enrolled",
+                        "description": "Not Enrolled",
+                        "namespace": "uri://doe.nv.gov/NAA/ReasonNotTestedDescriptors",
+                        "shortDescription": "Not Enrolled"
+                    },
+                    {
+                        "codeValue": "Absent",
+                        "description": "Absent",
+                        "namespace": "uri://doe.nv.gov/NAA/ReasonNotTestedDescriptors",
+                        "shortDescription": "Absent"
+                    },
+                    {
+                        "codeValue": "Other",
+                        "description": "Other",
+                        "namespace": "uri://doe.nv.gov/NAA/ReasonNotTestedDescriptors",
+                        "shortDescription": "Other"
+                    },
+                    {
+                        "codeValue": "General Education",
+                        "description": "General Education",
+                        "namespace": "uri://doe.nv.gov/NAA/ReasonNotTestedDescriptors",
+                        "shortDescription": "General Education"
+                    },
+                    {
+                        "codeValue": "Special Circumstance",
+                        "description": "Special Circumstance",
+                        "namespace": "uri://doe.nv.gov/NAA/ReasonNotTestedDescriptors",
+                        "shortDescription": "Special Circumstance"
+                    },
+                    {
+                        "codeValue": "Out of State",
+                        "description": "Out of State",
+                        "namespace": "uri://doe.nv.gov/NAA/ReasonNotTestedDescriptors",
+                        "shortDescription": "Out of State"
+                    },
+                    {
+                        "codeValue": "Home School",
+                        "description": "Home School",
+                        "namespace": "uri://doe.nv.gov/NAA/ReasonNotTestedDescriptors",
+                        "shortDescription": "Home School"
+                    }
+                ]
+            }
+        ],
+        "lookups": [
+            {
+                "sourceTable": "Nevada-v2_AchievementLevel_LU",
+                "key": "1",
+                "value": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Minimal Understanding"
+            },
+            {
+                "sourceTable": "Nevada-v2_AchievementLevel_LU",
+                "key": "2",
+                "value": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Partial Understanding"
+            },
+            {
+                "sourceTable": "Nevada-v2_AchievementLevel_LU",
+                "key": "3",
+                "value": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Proficient"
+            },
+            {
+                "sourceTable": "Nevada-v2_AchievementLevel_LU",
+                "key": "4",
+                "value": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Advanced"
+            },
+            {
+                "sourceTable": "Nevada-v2_CategoryPerformanceLevel_LU",
+                "key": "1",
+                "value": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Below"
+            },
+            {
+                "sourceTable": "Nevada-v2_CategoryPerformanceLevel_LU",
+                "key": "2",
+                "value": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#At/Near"
+            },
+            {
+                "sourceTable": "Nevada-v2_CategoryPerformanceLevel_LU",
+                "key": "3",
+                "value": "uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Above"
+            },
+            {
+                "sourceTable": "Nevada-v2_GradeLevel_LU",
+                "key": "01",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#First grade"
+            },
+            {
+                "sourceTable": "Nevada-v2_GradeLevel_LU",
+                "key": "02",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Second grade"
+            },
+            {
+                "sourceTable": "Nevada-v2_GradeLevel_LU",
+                "key": "03",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Third grade"
+            },
+            {
+                "sourceTable": "Nevada-v2_GradeLevel_LU",
+                "key": "04",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Fourth grade"
+            },
+            {
+                "sourceTable": "Nevada-v2_GradeLevel_LU",
+                "key": "05",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Fifth grade"
+            },
+            {
+                "sourceTable": "Nevada-v2_GradeLevel_LU",
+                "key": "06",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Sixth grade"
+            },
+            {
+                "sourceTable": "Nevada-v2_GradeLevel_LU",
+                "key": "07",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Seventh grade"
+            },
+            {
+                "sourceTable": "Nevada-v2_GradeLevel_LU",
+                "key": "08",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Eighth grade"
+            },
+            {
+                "sourceTable": "Nevada-v2_GradeLevel_LU",
+                "key": "09",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Ninth grade"
+            },
+            {
+                "sourceTable": "Nevada-v2_GradeLevel_LU",
+                "key": "0K",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Kindergarten"
+            },
+            {
+                "sourceTable": "Nevada-v2_GradeLevel_LU",
+                "key": "10",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Tenth grade"
+            },
+            {
+                "sourceTable": "Nevada-v2_GradeLevel_LU",
+                "key": "11",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade"
+            },
+            {
+                "sourceTable": "Nevada-v2_GradeLevel_LU",
+                "key": "12",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade"
+            },
+            {
+                "sourceTable": "Nevada-v2_ReasonNotTested_LU",
+                "key": "ABS",
+                "value": "uri://doe.nv.gov/NAA/ReasonNotTestedDescriptors#Absent"
+            },
+            {
+                "sourceTable": "Nevada-v2_ReasonNotTested_LU",
+                "key": "GEN",
+                "value": "uri://doe.nv.gov/NAA/ReasonNotTestedDescriptors#General Education"
+            },
+            {
+                "sourceTable": "Nevada-v2_ReasonNotTested_LU",
+                "key": "HS",
+                "value": "uri://doe.nv.gov/NAA/ReasonNotTestedDescriptors#Home School"
+            },
+            {
+                "sourceTable": "Nevada-v2_ReasonNotTested_LU",
+                "key": "NER",
+                "value": "uri://doe.nv.gov/NAA/ReasonNotTestedDescriptors#Not Enrolled"
+            },
+            {
+                "sourceTable": "Nevada-v2_ReasonNotTested_LU",
+                "key": "OS",
+                "value": "uri://doe.nv.gov/NAA/ReasonNotTestedDescriptors#Out of State"
+            },
+            {
+                "sourceTable": "Nevada-v2_ReasonNotTested_LU",
+                "key": "OTH",
+                "value": "uri://doe.nv.gov/NAA/ReasonNotTestedDescriptors#Other"
+            },
+            {
+                "sourceTable": "Nevada-v2_ReasonNotTested_LU",
+                "key": "SC",
+                "value": "uri://doe.nv.gov/NAA/ReasonNotTestedDescriptors#Special Circumstance"
+            }
+        ],
+        "supplementalInformation": null,
+        "preprocessors": [
+            {
+                "name": "NevadaAlternateAssessment(NAA)_ODSv3+",
+                "scriptContent": "[CmdletBinding()]\r\nParam(\r\n    [parameter(Mandatory = $true, ValueFromPipeline = $true)][string]$line\r\n)\r\n\r\n#####################################################\r\n### Ed-Fi ODS v3+\r\n### Assessment: Nevada Alternate Assessment (NAA)\r\n### Script: Custom File Processor\r\n#####################################################\r\n\r\nbegin {\r\n    # Set up the statistics\r\n    # validations: Hashtable of HashTables with properties for each screening period, and each screening period will have statistics like number of records not loaded, and detailed info\r\n    <#\r\n    #>\r\n    $global:statistics = @{\r\n        \"rowsProcessed\" = 0\r\n        \"rowsLoaded\"    = 0\r\n        \"validations\"   = @{}\r\n    }\r\n\r\n    # Prepare some other variables\r\n    $currentLineNumber = 0\r\n    $global:inputHeaders = @()\r\n    $global:headersLookup = @{}\r\n\r\n    #get ApiVersion\r\n    $global:apiVersion = $DataImport.ApiVersion\r\n\r\n    ## ODS functions\r\n    \r\n    function Get-StudentUniqueIdType ($apiVersion) {\r\n        <#\r\n            .SYNOPSIS\r\n                Determines whether the value in Student.studentUniqueId is a District or State ID value. \r\n    \r\n            .DESCRIPTION\r\n                Determining the studentUniqueId value type is done by querying the /students endpoint for 10 \r\n                students and then checking either the values in the identificationCodes[] array on either the\r\n                Student record (v2.5+ API) or the studentEducationOrganizationAssociation record (v3.x API) to\r\n                see whether the District or State ID matches the StudentUniqueId value. 10 students are checked \r\n                to make sure there aren't any discrepancies.\r\n    \r\n                NOTE: Only \"District\" and \"State\" Student ID types are used in this check; all others are ignored!\r\n    \r\n            .PARAMETER ApiVersion\r\n                The version number of the API as set in $DataImport.ApiVersion. For whatever reason the $DataImport\r\n                object is not directly addressable from within a module.\r\n    \r\n            .OUTPUTS\r\n                A string representing the type of ID stored in studentUniqueId. This value  will be either\r\n                'District' or 'State'.\r\n    \r\n                Throws an error on any failure to connect to or query the API or if one or more students of\r\n                the 10 checked have a different ID value type (e.g. one has 'District' while the rest have \r\n                'State'). Also throws an error if a match can't be made on any of the 10 students checked.\r\n    \r\n            .EXAMPLE\r\n                $studentUniqueIdType = Get-StudentUniqueIdType -apiVersion $DataImport.ApiVersion\r\n        #>\r\n    \r\n        # Do sanity checks on parameters\r\n        if (!$apiVersion) { throw \"The apiVersion parameter must be set to a valid value.\" }\r\n    \r\n        # Processing depends on API version\r\n        # Only valid for apis version 3 and above\r\n        \r\n        if ($apiVersion.StartsWith(\"3.\") -or $apiVersion.StartsWith(\"5.\")) {\r\n            # Query for 10 students (whatever comes back first - and yes, this could be flaky)\r\n            try {\r\n                $jsonResponse = Invoke-OdsApiRequest -RequestPath \"/ed-fi/studentEducationOrganizationAssociations?limit=10\"\r\n                $seoas = ConvertFrom-Json $jsonResponse\r\n            }\r\n            catch {\r\n                throw $_\r\n            }\r\n            if ($seoas.Count -eq 0) { throw \"Unable to determine StudentUniqueId type as no StudentEducationOrganizationAssociations were found in the ODS.\" }\r\n        \r\n            # Iterate the list of students checking studentUniqueId against the ID code types. These should all be the same but you know student data...\r\n            $ret = \"\"\r\n            foreach ($seoa in $seoas) {\r\n                foreach ($idCode in $seoa.studentIdentificationCodes) {\r\n                    if ($seoa.studentReference.studentUniqueId -eq $idCode.identificationCode) {\r\n                        $codeType = $idCode.studentIdentificationSystemDescriptor.Split(\"#\")\r\n                        $codeType = $codeType[1]\r\n                        if ($codeType -in @(\"District\", \"State\")) {\r\n                            if ($ret -eq \"\") { $ret = $codeType }\r\n                            elseif ($codeType -ne $ret) { \r\n                                throw \"Unable to determine studentUniqueId type as StudentEducationOrganizationAssociations have been found with both District and State ID values in studentUniqueId\" \r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n        \r\n            # If we got here then all 10 students had the same type of studentUniqueId value, so return that type\r\n            return $ret\r\n        }\r\n        else {\r\n            throw \"Attempt to connect to a version $($apiVersion) API, which is unsupported.\"\r\n        }\r\n        \r\n    }\r\n\r\n    function Get-StudentsIdMap ($apiVersion, $studentIdTypeCode) {\r\n        <#\r\n        .SYNOPSIS\r\n            Load from ODS studentId mapping from a given studentId type to its corresponding UniqueStudentId. $studentIdTypeCode valid values 'District','State'\r\n\r\n        .DESCRIPTION\r\n            Loads StudentUniqueId mapped to a passed studentId type from the ODS. \r\n            This data can then be used to look up a StudentUniqueId value by a specific studentIdType.\r\n\r\n        .PARAMETER ApiVersion\r\n            The version number of the API as set in $DataImport.ApiVersion. For whatever reason the $DataImport\r\n            object is not directly addressable from within a module.\r\n\r\n        .PARAMETER StudentIdTypeCode\r\n            The studentId Type that needs to be mapped to StudentUniqueId.\r\n\r\n        .OUTPUTS\r\n            A complex HashMap of values that you can treat as an object. The format is:\r\n            - StudentIdMap: Hashmap where keys are the desired studentIdType IdentificationCode value and the value is the StudentUniqueId from ODS\r\n                - Student Records (Key: StudentIdType IdentificationCode from ODS; Value: StudentUniqueId\r\n            \r\n            Throws an error on any failure to connect to or query the API or if one or more students of\r\n            the 10 checked have a different ID value type (e.g. one has 'District' while the rest have \r\n            'State')\r\n\r\n        .EXAMPLE\r\n            $students = Get-StudentsIdMap -apiVersion $DataImport.ApiVersion -studentIdTypeCode \"State\"\r\n    #>\r\n\r\n        # Set up some basic varialbes\r\n        $ret = @{\r\n            \"StudentIdMap\" = @{}\r\n            # \"DuplicateStudents\"         = @()\r\n            # \"NoAdditionalIdValuesFound\" = 0\r\n        }\r\n        $continue = $true\r\n        $offset = 0\r\n        $limit = 100\r\n\r\n        # Do sanity checks on parameters\r\n        if (!$apiVersion) { throw \"The apiVersion parameter must be set to a valid value.\" }\r\n\r\n        # Processing depends on the API version\r\n        if ($apiVersion.StartsWith(\"3.\") -or $apiVersion.StartsWith(\"5.\")) {\r\n            try {\r\n                # Load the additional ID values\r\n                $continue = $true\r\n                $offset = 0\r\n                while ($continue) {\r\n                    $response = Invoke-OdsApiRequest -RequestPath \"/ed-fi/studentEducationOrganizationAssociations?limit=$limit&offset=$offset\"\r\n                    $students = ConvertFrom-Json $response\r\n                    if ($students.Count -gt 0) {\r\n                        foreach ($student in $students) {\r\n                            $studentUniqueId = $student.studentReference.studentUniqueId\r\n                            foreach ($idCode in $student.studentIdentificationCodes) {\r\n                                \r\n                                if ($idCode.studentIdentificationSystemDescriptor.Contains($studentIdTypeCode)) { \r\n                                    $ret.StudentIdMap[$idCode.identificationCode] = $studentUniqueId \r\n                                    # If found stop loop\r\n                                    break\r\n                                }\r\n                            }\r\n                        }\r\n                    }\r\n                    else {\r\n                        $continue = $false\r\n                    }\r\n                    $offset += $limit\r\n                }\r\n        \r\n                # Return the data\r\n                return $ret\r\n            }\r\n            catch {\r\n                throw $_\r\n            }\r\n        }\r\n        else {\r\n            throw \"Attempt to connect to a version $($apiVersion) API, which is unsupported.\"\r\n        }\r\n\r\n    }\r\n\r\n    #Create list Student Id  lookup\r\n    function Get-StudentIdLookupNeeded ($studentIdType){\r\n         Write-Information \"$studentIdType\"\r\n        # Get the studentUniqueIdType\r\n        Write-Information \"Checking StudentUniqueIdType...\"\r\n        \r\n        $global:studentUniqueIdType = Get-AgentCacheItem -Key \"StudentUniqueIdType\"\r\n        \r\n        if (!$global:studentUniqueIdType) {\r\n            try {\r\n                $global:studentUniqueIdType = Get-StudentUniqueIdType -apiVersion $apiVersion\r\n                New-AgentCacheItem -Key \"StudentUniqueIdType\" -Value $global:studentUniqueIdType\r\n                if ($global:studentUniqueIdType) {\r\n                    Write-Information \"StudentUniqueId Type: $($global:studentUniqueIdType)\"\r\n                }  \r\n            }\r\n            catch {\r\n                Write-Error \"Failed to determine studentUniqueId type. Error returned is '$($_.Exception.Message)'\"\r\n                throw \"Fatal error while running Begin section of Preprocessor.\"\r\n            }\r\n        }\r\n\r\n        $global:needStudentIdLookup = $false\r\n        # Only if we are able to find studentIdType in ODS\r\n        if ($studentUniqueIdType) {\r\n            # Check whether student id in ODS matches the studentId in the assessment file.\r\n            if ($studentIdType -ne $studentUniqueIdType) {\r\n                $global:needStudentIdLookup = $true\r\n\r\n                # Only load students if IDs do not match(file StudentId vs ODS UniqueStudentId)\r\n                # Load the list of students\r\n                Write-Information \"Loading list of studentId mappings ...\"\r\n                $STUDENT_ID_MAPPING_CACHE_KEY = \"StudentsIdMap\"\r\n                $global:studentsIdMap = Get-AgentCacheItem -Key $STUDENT_ID_MAPPING_CACHE_KEY\r\n                if (!$global:studentsIdMap) {\r\n                    try {\r\n                        $s = Get-StudentsIdMap -apiVersion $apiVersion -studentIdTypeCode $studentIdType\r\n                        Write-Information \"Loaded $($s.StudentIdMap.Count) StudentId mapping records from ODS.\"\r\n                        $global:studentsIdMap = $s.StudentIdMap\r\n                        New-AgentCacheItem -Key $STUDENT_ID_MAPPING_CACHE_KEY -Value $global:studentsIdMap\r\n                    }\r\n                    catch {\r\n                        Write-Error \"Failed to load list of students from the ODS> Error returned is '$($_.Exception.Message)'\"\r\n                        throw \"Fatal error while running Begin section of Preprocessor.\"\r\n                    }\r\n                    if ($global:studentsIdMap.Count -eq 0) {\r\n                        throw \"StudentId from file does not match ODS student id and we were not able to load id mapping from ODS(relation from ODS UniqueId to studentId in file).\"\r\n                    }\r\n                }\r\n            }\r\n        }\r\n        else {\r\n            Write-Warning \"Unable to find StudentId Type. Script will proceed and use student identifier as it comes in assessment file.\"\r\n        }\r\n        return $needStudentIdLookup\r\n    }\r\n\r\n    ## Helper functions  \r\n\r\n    # Get a parsed record in Hashtable where properties are the headers(used for CSV data only)\r\n    function Get-ParsedRecord($headers, $line) {\r\n        # Deal with double-quote wrappers and the fact that fields may have embedded commas\r\n        # NOTE: This is vastly stupid, but we can't run Regex in ConstrainedLanguage mode so it is what it is.\r\n        if ($line.Contains('\",\"') -or $line.Contains(',\"') -or $line.Contains('\",')) {\r\n            $cleanLine = $line\r\n            $inQuote = $false\r\n            for ($i = 0; $i -le $cleanLine.length; $i++) {\r\n                if ($cleanLine[$i] -eq '\"') {\r\n                    $inQuote = !$inQuote\r\n                }\r\n                else {\r\n                    if ($cleanLine[$i] -eq \",\" -and $inQuote -eq $false) {\r\n                        $cleanLine = $cleanLine.Substring(0, $i) + \"^\" + $cleanLine.Substring($i + 1)\r\n                    }\r\n                }\r\n            }\r\n            $cleanLine = $cleanLine.Replace(\",\", \"\")\r\n            $fields = $cleanLine.split(\"^\")\r\n        }\r\n        else {\r\n            $fields = $line.split(\",\")\r\n        }\r\n        $ret = @{}\r\n        for ($i = 0; $i -lt $fields.Length; $i++) {\r\n            $ret.Add($headers[$i], ($fields[$i].Replace('\"', ''))) | Out-Null\r\n        }\r\n        return $ret\r\n    }\r\n\r\n    # Get a parsed csv line in an array of values (used for CSV data only)\r\n    function Get-ParsedRecordArray($line, $delimiter = \",\") {\r\n        # Deal with double-quote wrappers and the fact that fields may have embedded commas\r\n        # NOTE: This is vastly stupid, but we can't run Regex in ConstrainedLanguage mode so it is what it is.\r\n        if ($line.Contains('\"{0}\"' -f $delimiter ) -or $line.Contains('{0}\"' -f $delimiter) -or $line.Contains('\"{0}' -f $delimiter)) {\r\n            $cleanLine = $line\r\n            $inQuote = $false\r\n            for ($i = 0; $i -le $cleanLine.length; $i++) {\r\n                if ($cleanLine[$i] -eq '\"') {\r\n                    $inQuote = !$inQuote\r\n                }\r\n                else {\r\n                    if ($cleanLine[$i] -eq $delimiter -and $inQuote -eq $false) {\r\n                        $cleanLine = $cleanLine.Substring(0, $i) + \"^\" + $cleanLine.Substring($i + 1)\r\n                    }\r\n                }\r\n            }\r\n            $cleanLine = $cleanLine.Replace($delimiter, \"\")\r\n            $fields = $cleanLine.split(\"^\")\r\n        }\r\n        else {\r\n            $fields = $line.split($delimiter)\r\n        }\r\n        $ret = @()\r\n        for ($i = 0; $i -lt $fields.Length; $i++) {\r\n            $ret += $fields[$i].Replace('\"', '')\r\n        }\r\n        return $ret\r\n    }\r\n\r\n\r\n    # Parse Date from string\r\n    function Get-ParsedDate ($date, $inputFormat, $outputFormat = $null) {\r\n        <# \r\n                .SYNOPSIS\r\n                    Parse a date string and returns it in the correct format.\r\n        \r\n                .PARAMETER date (required)\r\n                    The date string to parse\r\n        \r\n                .PARAMETER inputFormat (required)\r\n                    The expected format of the incoming date string\r\n        \r\n                .PARAMETER outputFormat (optional)\r\n                    The desired format of the retured date string\r\n        \r\n                .OUTPUTS\r\n                    If no outputFormat is provided then a Date object is returned\r\n        \r\n                    If outputFormat is provided then a formatted string is returned\r\n        \r\n                    If parsing fails for any reason then $null is returned\r\n            #>\r\n        \r\n        try {\r\n            $d = $([datetime]::ParseExact($date, $inputFormat, $null))\r\n            if ($outputFormat) {\r\n                $d = Get-Date -Date $d -Format $outputFormat\r\n            }\r\n            return $d\r\n        }\r\n        catch {\r\n            return $null\r\n        }\r\n    }\r\n\r\n    # Add record to statistics indicating a record was not processed becuase of a validation error\r\n    function Get-StudentODSId($fileStudentId) {\r\n        if ($global:needStudentIdLookup) {\r\n            return $global:studentsIdMap[$fileStudentId]\r\n        }\r\n        else {\r\n            # StudentId matches ODS\r\n            return $fileStudentId\r\n        }\r\n    }\r\n\r\n    ## Helper functions        \r\n\r\n    # Convert an array list of data into a CSV line for output\r\n    function Get-CSVLine($inputData) {\r\n        $ret = \"\"\r\n        foreach ($cell in $inputData) {\r\n            if ($ret -ne \"\") { $ret += \",\" }\r\n            $ret += ('\"' + $cell + '\"')\r\n        }\r\n        return $ret\r\n    }\r\n\r\n\r\n    ### Assessment fields\r\n\r\n    # Type of StudentId that will be used from assessment file to match student in ODS\r\n    # Valid values 'District','State'\r\n    $studentIdType = \"District\" \r\n\r\n     $global:fileColumnDelimiter = \",\"    \r\n    \r\n    #Create map\r\n    $needStudentIdLookup =  Get-StudentIdLookupNeeded($studentIdType)\r\n\r\n    # Assessment ID\r\n\r\n    # Check which assessment is being processed, same script is used to extract all three assessemnt results (ELA, Math and Science) \r\n    # Expected values are 'ELA','MA', or 'SCI'\r\n    $assessmentSubject = $DataImport.MapAttribute\r\n    $global:ASSESSMENT_SUBJECT_ELA = \"ELA\"\r\n    $global:ASSESSMENT_SUBJECT_MATH = \"MA\"\r\n    $global:ASSESSMENT_SUBJECT_SCI = \"SCI\"\r\n\r\n\r\n    $global:assessmentSpecificColumnNameValue = $null\r\n    $global:assessmentIdentifier = $null\r\n    #Reporting Categories by subject\r\n    $ACHIEVEMENT_LEVEL_COLUMN = $null\r\n    $REASON_NOT_TESTED_COLUMN = $null\r\n\r\n    $REPORTING_CATEAGORY_COLUMNS = @()\r\n\r\n    switch -Exact ($assessmentSubject) {\r\n        $global:ASSESSMENT_SUBJECT_ELA {\r\n            $global:assessmentIdentifier = \"NAA-ELA-V1\"\r\n            $global:assessmentSpecificColumnNameValue = \"ela\"\r\n\r\n            # Achievement Level Column\r\n            $ACHIEVEMENT_LEVEL_COLUMN = \"ela_achievement_level\"\r\n\r\n            # ReportingCategories/Domain/Claims\r\n            $REPORTING_CATEAGORY_COLUMNS += \"ela_C1_performance_level\"\r\n            $REPORTING_CATEAGORY_COLUMNS += \"ela_C2_performance_level\"\r\n            $REPORTING_CATEAGORY_COLUMNS += \"ela_C3_performance_level\"\r\n            $REPORTING_CATEAGORY_COLUMNS += \"ela_C4_performance_level\"            \r\n        }\r\n        $global:ASSESSMENT_SUBJECT_MATH {\r\n            $global:assessmentIdentifier = \"NAA-MA-V1\"\r\n            $global:assessmentSpecificColumnNameValue = \"math\"\r\n\r\n            # Achievement Level Column\r\n            $ACHIEVEMENT_LEVEL_COLUMN = \"math_achievement_level\"\r\n\r\n            # ReportingCategories/Domain/Claims\r\n            $REPORTING_CATEAGORY_COLUMNS += \"math_C1_performance_level\"\r\n            $REPORTING_CATEAGORY_COLUMNS += \"math_C3_performance_level\"\r\n            $REPORTING_CATEAGORY_COLUMNS += \"math_C4_performance_level\"\r\n        }\r\n        $global:ASSESSMENT_SUBJECT_SCI {\r\n            $global:assessmentIdentifier = \"NAA-SCI-V1\"\r\n            $global:assessmentSpecificColumnNameValue = \"sci\"\r\n\r\n            # Achievement Level Column\r\n            $ACHIEVEMENT_LEVEL_COLUMN = \"sci_achievement_level\"\r\n\r\n            # ReportingCategories/Domain/Claims\r\n            $REPORTING_CATEAGORY_COLUMNS += \"sci_D1_performance_level\"\r\n            $REPORTING_CATEAGORY_COLUMNS += \"sci_D2_performance_level\"\r\n            $REPORTING_CATEAGORY_COLUMNS += \"sci_D3_performance_level\"\r\n            $REPORTING_CATEAGORY_COLUMNS += \"sci_RC1_performance_level\"\r\n            $REPORTING_CATEAGORY_COLUMNS += \"sci_RC2_performance_level\"\r\n            $REPORTING_CATEAGORY_COLUMNS += \"sci_RC3_performance_level\"\r\n            $REPORTING_CATEAGORY_COLUMNS += \"sci_RC4_performance_level\"\r\n            $REPORTING_CATEAGORY_COLUMNS += \"sci_RC5_performance_level\"\r\n            $REPORTING_CATEAGORY_COLUMNS += \"sci_RC6_performance_level\"\r\n            $REPORTING_CATEAGORY_COLUMNS += \"sci_RC7_performance_level\"\r\n        }\r\n        Default {\r\n            # If map attribute does not match then throw error and stop execution\r\n            $errorMessage = \"Error: Template is designed to receive a specific map attribute value ('ELA','MA', or 'SCI'). Value '$assessmentSubject' is not an option.\"\r\n            Write-Error \"$errorMessage\"\r\n            throw \"$errorMessage\"\r\n        }\r\n    }\r\n    Write-Information \"AssessmentId: $($global:assessmentIdentifier)\"\r\n\r\n    # reason not tested, depends on assessment subject being processed\r\n    # example: ela_not_tested_code, sci_not_tested_code, math_not_tested_code\r\n    $global:SRC_COLUMN_2019_REASON_NOT_TESTED = \"{0}_did_not_participate\" -f $global:assessmentSpecificColumnNameValue\r\n    $global:SRC_COLUMN_2021_REASON_NOT_TESTED = \"{0}_not_tested_code\" -f $global:assessmentSpecificColumnNameValue\r\n\r\n    # GradeLevelLookup\r\n    $global:GRADE_LEVEL_LOOKUP = @{}\r\n    $global:GRADE_LEVEL_LOOKUP.Add(\"0K\", \"uri://ed-fi.org/GradeLevelDescriptor#Kindergarten\") | Out-Null\r\n    $global:GRADE_LEVEL_LOOKUP.Add(\"01\", \"uri://ed-fi.org/GradeLevelDescriptor#First grade\") | Out-Null\r\n    $global:GRADE_LEVEL_LOOKUP.Add(\"02\", \"uri://ed-fi.org/GradeLevelDescriptor#Second grade\") | Out-Null\r\n    $global:GRADE_LEVEL_LOOKUP.Add(\"03\", \"uri://ed-fi.org/GradeLevelDescriptor#Third grade\") | Out-Null\r\n    $global:GRADE_LEVEL_LOOKUP.Add(\"04\", \"uri://ed-fi.org/GradeLevelDescriptor#Fourth grade\") | Out-Null\r\n    $global:GRADE_LEVEL_LOOKUP.Add(\"05\", \"uri://ed-fi.org/GradeLevelDescriptor#Fifth grade\") | Out-Null\r\n    $global:GRADE_LEVEL_LOOKUP.Add(\"06\", \"uri://ed-fi.org/GradeLevelDescriptor#Sixth grade\") | Out-Null\t\r\n    $global:GRADE_LEVEL_LOOKUP.Add(\"07\", \"uri://ed-fi.org/GradeLevelDescriptor#Seventh grade\") | Out-Null\r\n    $global:GRADE_LEVEL_LOOKUP.Add(\"08\", \"uri://ed-fi.org/GradeLevelDescriptor#Eighth grade\") | Out-Null\r\n    $global:GRADE_LEVEL_LOOKUP.Add(\"09\", \"uri://ed-fi.org/GradeLevelDescriptor#Ninth grade\") | Out-Null\r\n    $global:GRADE_LEVEL_LOOKUP.Add(\"10\", \"uri://ed-fi.org/GradeLevelDescriptor#Tenth grade\") | Out-Null\r\n    $global:GRADE_LEVEL_LOOKUP.Add(\"11\", \"uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade\") | Out-Null\r\n    $global:GRADE_LEVEL_LOOKUP.Add(\"12\", \"uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade\") | Out-Null\r\n\r\n\r\n    # Level lookup\r\n    $global:LEVEL_LOOKUP = @{}\r\n    $global:LEVEL_LOOKUP.Add(\"1\", \"uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Minimal Understanding\") | Out-Null\r\n    $global:LEVEL_LOOKUP.Add(\"2\", \"uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Partial Understanding\") | Out-Null\r\n    $global:LEVEL_LOOKUP.Add(\"3\", \"uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Proficient\") | Out-Null\r\n    $global:LEVEL_LOOKUP.Add(\"4\", \"uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Advanced\") | Out-Null\r\n\r\n    # Reporting Claim/Category/Domain lookup\r\n    $global:REPORTING_CATEGORY_LOOKUP = @{}\r\n    $global:REPORTING_CATEGORY_LOOKUP.Add(\"1\", \"uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Below\") | Out-Null\r\n    $global:REPORTING_CATEGORY_LOOKUP.Add(\"2\", \"uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#At/Near\") | Out-Null\r\n    $global:REPORTING_CATEGORY_LOOKUP.Add(\"3\", \"uri://doe.nv.gov/NAA/PerformanceLevelDescriptor#Above\") | Out-Null\r\n    \r\n    <#\r\n    \"Identifies the Not Tested code associated with the test.\r\n        \"\"NER\"\" = Did Not Participate - Not Enrolled\r\n        \"\"ABS\"\" = Did Not Participate - Absent\r\n        \"\"OTH\"\" = Did Not Participate - Other\r\n        \"\"GEN\"\" = Did Not Participate - General Education\r\n        \"\"SC\"\" = Did Not Participate - Special Circumstance\r\n        \"\"OS\"\" = Did Not Participate - Out of State\r\n        \"\"HS\"\" = Did Not Participate - Home School\r\n        Blank = None of the above marked\"\r\n    #>\r\n    # Reason not tested lookup\r\n    $global:REASON_NOT_TESTED_LOOKUP = @{}\r\n    $global:REASON_NOT_TESTED_LOOKUP.Add(\"NER\", \"uri://doe.nv.gov/NAA/ReasonNotTestedDescriptors#Not Enrolled\") | Out-Null\r\n    $global:REASON_NOT_TESTED_LOOKUP.Add(\"ABS\", \"uri://doe.nv.gov/NAA/ReasonNotTestedDescriptors#Absent\") | Out-Null\r\n    $global:REASON_NOT_TESTED_LOOKUP.Add(\"OTH\", \"uri://doe.nv.gov/NAA/ReasonNotTestedDescriptors#Other\") | Out-Null\r\n    $global:REASON_NOT_TESTED_LOOKUP.Add(\"GEN\", \"uri://doe.nv.gov/NAA/ReasonNotTestedDescriptors#General Education\") | Out-Null\r\n    $global:REASON_NOT_TESTED_LOOKUP.Add(\"SC\", \"uri://doe.nv.gov/NAA/ReasonNotTestedDescriptors#Special Circumstance\") | Out-Null\r\n    $global:REASON_NOT_TESTED_LOOKUP.Add(\"OS\", \"uri://doe.nv.gov/NAA/ReasonNotTestedDescriptors#Out of State\") | Out-Null\r\n    $global:REASON_NOT_TESTED_LOOKUP.Add(\"HS\", \"uri://doe.nv.gov/NAA/ReasonNotTestedDescriptors#Home School\") | Out-Null\r\n\r\n    $global:FileVersion = $null\r\n    $global:FILE_VERSION_2019 = \"2019\"\r\n    $global:FILE_VERSION_2021 = \"2021\"\r\n\r\n    ######################\r\n    ### Columns Definition \r\n    ######################\r\n   \r\n    # Custom/computed output columns. key: output column name, value: HashTable with source column name and other info\r\n    \r\n    $global:CUSTOM_COLUMN_MAP = @{}\r\n    $global:CUSTOM_COLUMN_MAP.Add(\"DI_StudentId\", \r\n        @{ \"SourceColumnName\" = \"state_unique_id\"; }) | Out-Null\r\n    \r\n    $global:CUSTOM_COLUMN_MAP.Add(\"DI_AdministrationDate\", \r\n        @{ \"SourceColumnName\" = \"test_date_end\"; }) | Out-Null\r\n    \r\n    $global:CUSTOM_COLUMN_MAP.Add(\"DI_SchoolYear\", \r\n        @{ \"SourceColumnName\" = \"school_year\"; }) | Out-Null\r\n    \r\n    $global:CUSTOM_COLUMN_MAP.Add(\"DI_AssessmentStudentIdentifier\", \r\n        @{ \"SourceColumnName\" = \"test_date_end\" }) | Out-Null\r\n\r\n    $global:CUSTOM_COLUMN_MAP.Add(\"DI_AssessmentIdentifier\", \r\n        @{ \"SourceColumnName\" = \"\"; }) | Out-Null\r\n    \r\n    $global:CUSTOM_COLUMN_MAP.Add(\"DI_ReasonNotTestedDescriptor\", \r\n        @{ \"SourceColumnName\" = \"\"; }) | Out-Null\r\n\r\n\r\n    # Assesment specific functions\r\n\r\n    # Get Normalized output column name given an source column name\r\n    function Get-DIColumnName($srcName) {\r\n        return \"DI_{0}\" -f $srcName\r\n    }\r\n\r\n    # Returns Hastable/lookup for current assessment being processed\r\n    function Get-LevelLookup() {\r\n        return $global:LEVEL_LOOKUP\r\n    }\r\n    #Include leading zeroes\r\n    <#\r\n                        format: MMDDYYYY\t\"Include leading zeroes.\"\r\n                        For 2019: 02212019\"\r\n                    #>\r\n                    ## admin date\r\n                    # In case leading zero might not be present\r\n    function Get-LeadingZeroes($rawDate){\r\n        if ($rawDate -and $rawDate.Length -eq 7) {\r\n                $rawDate = \"0{0}\" -f $rawDate\r\n            }\r\n        return $rawDate\r\n    }\r\n\r\n}\r\n\r\nprocess {\r\n    $currentLineNumber += 1\r\n    $global:statistics.rowsProcessed += 1\r\n\r\n    # Make sure we got something\r\n    if (!$line) { Write-Error \"Line $currentLineNumber does not contain any data\"; return }\r\n\r\n    # File is fixed width and does not contain headers, so on first line output headers before exporting calues\r\n    # If the first line then output all of the headers\r\n    if ($currentLineNumber -eq 1) { \r\n\r\n        # We assume headers will not have commas in the names\r\n        #$headerRow = $line.Split(\",\")    \r\n        $headerRow = Get-ParsedRecordArray -line $line\r\n\r\n        $outputHeaders = @()\r\n\r\n\r\n        if ($global:SRC_COLUMN_2021_REASON_NOT_TESTED -in $headerRow) {\r\n            Write-Information \"Subject: $($global:assessmentSubject) ->  File version 2021\"\r\n            $global:FileVersion = $global:FILE_VERSION_2021\r\n        }\r\n        elseif ($global:SRC_COLUMN_2019_REASON_NOT_TESTED -in $headerRow) {\r\n            Write-Information \"Subject:  $($global:assessmentSubject) -> File version 2019\"\r\n            $global:FileVersion = $global:FILE_VERSION_2019\r\n        }\r\n        if ($null -eq $global:FileVersion) {\r\n            Write-Error \"Unable to detect file version.\"\r\n            throw \"Unable to detect file version.\"\r\n        }\r\n\r\n        # 1 - Loop thru headers to find and fix empty of duplicate headers\r\n        for ($i = 0; $i -lt $headerRow.Count; $i++) {\r\n            $item = $headerRow[$i]\r\n\r\n            # handle empty headers\r\n            if (!$item) {\r\n                $newName = \"EMPTY-$i\"\r\n                Write-Warning \"Found empty column at position $($i + 1). Renaming column to '$newName'.\"\r\n                $item = $newName\r\n            }\r\n            # handle duplicate headers\r\n            if ($global:headersLookup[$item]) {\r\n                $newName = \"$item-$i\"\r\n                Write-Warning \"Found duplicate column name of '$item' at position $($i + 1). Renaming column to '$newName'.\"\r\n                $item = $newName\r\n            }\r\n            $global:inputHeaders += $item            \r\n            $outputHeaders += $item\r\n            $global:headersLookup.Add($item, $index) | Out-Null        \r\n        }      \r\n\r\n        # 2 - If there are custom headers add to output header line\r\n        if ($global:CUSTOM_COLUMN_MAP.Count) {            \r\n            $outputHeaders += $( $global:CUSTOM_COLUMN_MAP.Keys | Sort-Object )\r\n        }\r\n\r\n        # 3 - Reporting categories/DLevel Descriptors\r\n        foreach ($colName in $REPORTING_CATEAGORY_COLUMNS) {\r\n            $outputHeaders += Get-DIColumnName($colName)  \r\n        }\r\n\r\n        Write-Output $(Get-CSVLine($outputHeaders))\r\n        return\r\n        #does not return after headers because first line contains values not headers, headers are fixed\r\n    }\r\n\r\n    # array, Ordered output values\r\n    $orderedOutputValues = @()\r\n\r\n    # HashTable, will hold all input values for current line, used in case computed columns need to reference input values\r\n    $row = @{}\r\n    \r\n    # Not the cleanest of solutions, but none of the values should have double quotes, replace to remove wrapping quotes if present\r\n    #$normalizedLine = $line.Replace('\"', '')\r\n    #$row = ConvertFrom-Csv -InputObject $normalizedLine -Header $global:inputHeaders\r\n    $row = Get-ParsedRecord -headers $($global:inputHeaders) -line $line\r\n\r\n    # 1 - add all values as they come in line\r\n    #$orderedOutputValues = $line.Split(\",\")\r\n    $orderedOutputValues = Get-ParsedRecordArray -line $line\r\n\r\n    # Validation will tell whether or not a record has the required values needed to be posted to ODS, \r\n    # if not valid error code and line number will be displayed in the summary\r\n    $passedValidation = $true\r\n    $validationId = $null\r\n    # 2 - Process custom/computed columns\r\n    if ($global:CUSTOM_COLUMN_MAP.Count) {            \r\n        foreach ($outColumnName in  $( $global:CUSTOM_COLUMN_MAP.Keys | Sort-Object )) {\r\n                    \r\n            $srcInfo = $global:CUSTOM_COLUMN_MAP[$outColumnName]\r\n            $srcColName = $srcInfo.SourceColumnName   \r\n            \r\n            ### DataImport Assessment Custom Columns\r\n            switch -Exact ($outColumnName) {\r\n                # StudentId\r\n                \"DI_StudentId\" {\r\n                    $stdId = Get-StudentODSId($row.$srcColName)\r\n\r\n                    # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                    if (!$stdId) {\r\n                        $passedValidation = $false\r\n                        $validationId = \"InvalidStudentId\"\r\n                        break\r\n                    }\r\n    \r\n                    $orderedOutputValues += $stdId\r\n                    break\r\n                }\r\n    \r\n                # Admin Date\r\n                \"DI_AdministrationDate\" {\r\n                    $rawDate = Get-LeadingZeroes($row.$srcColName)\r\n                    \r\n                    $adminDate = Get-ParsedDate -date $rawDate -inputFormat \"Mdyyyy\" -outputFormat \"MM/dd/yyyy\"\r\n\r\n                    # Validation, this is a required field, if empty will be unable to post to ODS\r\n                    if (!$adminDate) {\r\n                        $passedValidation = $false\r\n                        $validationId = \"InvalidAdministrationDate\"\r\n                        break\r\n                    }\r\n    \r\n                    $orderedOutputValues += $adminDate\r\n                    break\r\n                }\r\n    \r\n                # School Year\r\n                \"DI_SchoolYear\" {\r\n                    # 1819 = Year 2018-2019\r\n                    $schoolYearRaw = $row.$srcColName\r\n    \r\n                    $schoolYear = $null\r\n                    # If value is 4 characters then assume SchoolYear is the ending (two digits) year, will work for another 80 years :)\r\n                    if ($schoolYearRaw.Length -ge 4) {\r\n                        $year2digits = $schoolYearRaw.Substring(2, 2)\r\n                        $schoolYear = \"20{0}\" -f $year2digits\r\n                    }\r\n\r\n                    # Validation, this is a required field, if empty will be unable to post to ODS\r\n                    if (!$schoolYear) {\r\n                        $passedValidation = $false\r\n                        $validationId = \"InvalidSchoolYear\"\r\n                        break\r\n                    }\r\n    \r\n                    $orderedOutputValues += $schoolYear\r\n                    break\r\n                }\r\n    \r\n                # Assessment Student Identifier\r\n                \"DI_AssessmentStudentIdentifier\" {    \r\n                    $outStudentId = Get-LeadingZeroes($row.$srcColName)\r\n                    $assessStudentId = Get-ParsedDate -date $outStudentId -inputFormat \"Mdyyyy\" -outputFormat \"MMddyyyy\"\r\n                            \r\n                    # Validation, this is a required field, if empty will be unable to post to ODS\r\n                    if (!$assessStudentId) {\r\n                        $passedValidation = $false\r\n                        $validationId = \"InvalidStudentAssessmentId\"\r\n                        break\r\n                    }\r\n    \r\n                    $orderedOutputValues += $assessStudentId\r\n                    break\r\n                }\r\n\r\n                \"DI_AssessmentIdentifier\" {\r\n                    $orderedOutputValues += $global:assessmentIdentifier\r\n                    break\r\n                }\r\n\r\n                \"DI_ReasonNotTestedDescriptor\" {\r\n                    # Reason not tested descriptor source column changes per subject\r\n\r\n                    # Reason not tested\r\n                    switch ($global:FileVersion) {\r\n                        $global:FILE_VERSION_2019 {\r\n                            $REASON_NOT_TESTED_COLUMN = $global:SRC_COLUMN_2019_REASON_NOT_TESTED\r\n                        }\r\n                        $global:FILE_VERSION_2021 {\r\n                            $REASON_NOT_TESTED_COLUMN = $global:SRC_COLUMN_2021_REASON_NOT_TESTED\r\n                        }\r\n                        Default {\r\n                            Write-Error \"File version not defined, unable to find ReasonNotTested column\"\r\n                            throw \"Unable to select Not-Tested-Reason column name. Invalid file version.\"\r\n                        }\r\n                    }\r\n                    \r\n                    $notTestedValue = $row.$REASON_NOT_TESTED_COLUMN\r\n                \r\n                                        \r\n                    $orderedOutputValues += $notTestedValue.toUpper()\r\n\r\n                    break\r\n                }\r\n\r\n                Default {\r\n                    # In case of no implementation for custom column add $null output to preserve output format and order\r\n                    $orderedOutputValues += $null\r\n                    break;\r\n                }\r\n            }\r\n        }\r\n    }     \r\n\r\n    # 3 - Reporting Category Descriptors\r\n    foreach ($colName in $REPORTING_CATEAGORY_COLUMNS) {       \r\n        $levelValue = $row.$colName\r\n        $levelDescriptor = $null\r\n        \r\n        $orderedOutputValues += $levelValue\r\n    }\r\n\r\n    # If not valid add to statistics to notify user at the end of execution and skip record and do not post current for current row this screening period to ODS\r\n    if (!$passedValidation) {\r\n        # Only print once per row\r\n        if (!$errorInCurrentRow) {\r\n            Write-Warning \"Invalid record see statistics summary for details.($currentLineNumber)\"\r\n        }            \r\n\r\n        # Check if this validation error already added for current screening period\r\n        if ($global:statistics.validations[$validationId]) {\r\n            $global:statistics.validations[$validationId] += $currentLineNumber\r\n        }\r\n        else {\r\n            $global:statistics.validations.Add($validationId, @($currentLineNumber)) | Out-Null\r\n        }\r\n        \r\n        # Skip current line do not pass values to DataImport\r\n        return\r\n    }\r\n\r\n    Write-Output $(Get-CSVLine($orderedOutputValues))\r\n    $global:statistics.rowsLoaded ++    \r\n}\r\n\r\nend {\r\n\r\n    Write-Information \"SUMMARY: `\r\n        Rows Processed: $($global:statistics.rowsProcessed); `\r\n        Rows Loaded: $($global:statistics.rowsLoaded)\"\r\n\r\n    foreach ($validationId in $global:statistics.validations.Keys) {\r\n        Write-Warning \"Error reason: '$validationId'\"                \r\n        Write-Information \"Line number(s):\"\r\n        $lineNumbers = $global:statistics.validations[$validationId]\r\n        $errorThreshold = 50\r\n        if ($lineNumbers.Count -gt $errorThreshold) {\r\n            Write-Warning \"There are $($lineNumbers.Count) lines with errors. Will only print the first $errorThreshold line numbers where errors ocurred.\"\r\n            $lineNumbers = $lineNumbers[0..$($errorThreshold - 1)]\r\n        }\r\n        Write-Warning \"$([string]::Join(\",\",$lineNumbers))\"\r\n    }\r\n\r\n}",
+                "requireOdsApiAccess": true,
+                "hasAttribute": true
+            }
+        ]
+    }
+}

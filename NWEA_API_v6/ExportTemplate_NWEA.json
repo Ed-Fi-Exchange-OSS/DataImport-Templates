@@ -1,0 +1,2336 @@
+{
+    "title": "ExportTemplate_NWEA_MAP",
+    "description": "Export Template NWEA MAP",
+    "apiVersion": "6.0",
+    "template": {
+        "maps": [
+            {
+                "name": "NWEA-MAP_DataMap_v2",
+                "resourcePath": "/ed-fi/studentAssessments",
+                "columnHeaders": [
+                    "TermName",
+                    "StudentID",
+                    "SchoolName",
+                    "Course",
+                    "Subject",
+                    "GrowthMeasureYN",
+                    "NormsReferenceData",
+                    "WISelectedAYFall",
+                    "WISelectedAYWinter",
+                    "WISelectedAYSpring",
+                    "WIPreviousAYFall",
+                    "WIPreviousAYWinter",
+                    "WIPreviousAYSpring",
+                    "TestType",
+                    "TestName",
+                    "TestID",
+                    "TestStartDate",
+                    "TestDurationMinutes",
+                    "TestRITScore",
+                    "TestStandardError",
+                    "TestPercentile",
+                    "FallToFallProjectedGrowth",
+                    "FallToFallObservedGrowth",
+                    "FallToFallObservedGrowthSE",
+                    "FallToFallMetProjectedGrowth",
+                    "FallToFallConditionalGrowthIndex",
+                    "FallToFallConditionalGrowthPercentile",
+                    "FallToWinterProjectedGrowth",
+                    "FallToWinterObservedGrowth",
+                    "FallToWinterObservedGrowthSE",
+                    "FallToWinterMetProjectedGrowth",
+                    "FallToWinterConditionalGrowthIndex",
+                    "FallToWinterConditionalGrowthPercentile",
+                    "FallToSpringProjectedGrowth",
+                    "FallToSpringObservedGrowth",
+                    "FallToSpringObservedGrowthSE",
+                    "FallToSpringMetProjectedGrowth",
+                    "FallToSpringConditionalGrowthIndex",
+                    "FallToSpringConditionalGrowthPercentile",
+                    "WinterToWinterProjectedGrowth",
+                    "WinterToWinterObservedGrowth",
+                    "WinterToWinterObservedGrowthSE",
+                    "WinterToWinterMetProjectedGrowth",
+                    "WinterToWinterConditionalGrowthIndex",
+                    "WinterToWinterConditionalGrowthPercentile",
+                    "WinterToSpringProjectedGrowth",
+                    "WinterToSpringObservedGrowth",
+                    "WinterToSpringObservedGrowthSE",
+                    "WinterToSpringMetProjectedGrowth",
+                    "WinterToSpringConditionalGrowthIndex",
+                    "WinterToSpringConditionalGrowthPercentile",
+                    "SpringToSpringProjectedGrowth",
+                    "SpringToSpringObservedGrowth",
+                    "SpringToSpringObservedGrowthSE",
+                    "SpringToSpringMetProjectedGrowth",
+                    "SpringToSpringConditionalGrowthIndex",
+                    "SpringToSpringConditionalGrowthPercentile",
+                    "LexileScore",
+                    "LexileMin",
+                    "LexileMax",
+                    "Goal1Name",
+                    "Goal1RitScore",
+                    "Goal1StdErr",
+                    "Goal1Range",
+                    "Goal1Adjective",
+                    "Goal2Name",
+                    "Goal2RitScore",
+                    "Goal2StdErr",
+                    "Goal2Range",
+                    "Goal2Adjective",
+                    "Goal3Name",
+                    "Goal3RitScore",
+                    "Goal3StdErr",
+                    "Goal3Range",
+                    "Goal3Adjective",
+                    "Goal4Name",
+                    "Goal4RitScore",
+                    "Goal4StdErr",
+                    "Goal4Range",
+                    "Goal4Adjective",
+                    "Goal5Name",
+                    "Goal5RitScore",
+                    "Goal5StdErr",
+                    "Goal5Range",
+                    "Goal5Adjective",
+                    "Goal6Name",
+                    "Goal6RitScore",
+                    "Goal6StdErr",
+                    "Goal6Range",
+                    "Goal6Adjective",
+                    "Goal7Name",
+                    "Goal7RitScore",
+                    "Goal7StdErr",
+                    "Goal7Range",
+                    "Goal7Adjective",
+                    "Goal8Name",
+                    "Goal8RitScore",
+                    "Goal8StdErr",
+                    "Goal8Range",
+                    "Goal8Adjective",
+                    "TestStartTime",
+                    "PercentCorrect",
+                    "ProjectedProficiencyStudy1",
+                    "ProjectedProficiencyLevel1",
+                    "ProjectedProficiencyStudy2",
+                    "ProjectedProficiencyLevel2",
+                    "ProjectedProficiencyStudy3",
+                    "ProjectedProficiencyLevel3",
+                    "TypicalFallToFallGrowth",
+                    "TypicalFallToWinterGrowth",
+                    "TypicalFallToSpringGrowth",
+                    "TypicalWinterToWinterGrowth",
+                    "TypicalWinterToSpringGrowth",
+                    "TypicalSpringToSpringGrowth",
+                    "ProjectedProficiencyStudy4",
+                    "ProjectedProficiencyLevel4",
+                    "ProjectedProficiencyStudy5",
+                    "ProjectedProficiencyLevel5",
+                    "ProjectedProficiencyStudy6",
+                    "ProjectedProficiencyLevel6",
+                    "ProjectedProficiencyStudy7",
+                    "ProjectedProficiencyLevel7",
+                    "ProjectedProficiencyStudy8",
+                    "ProjectedProficiencyLevel8",
+                    "ProjectedProficiencyStudy9",
+                    "ProjectedProficiencyLevel9",
+                    "ProjectedProficiencyStudy10",
+                    "ProjectedProficiencyLevel10",
+                    "DI_AdministrationDate",
+                    "DI_AssessmentStudentIdentifier",
+                    "DI_SchoolYear",
+                    "DI_StudentId"
+                ],
+                "map": {
+                    "studentAssessmentIdentifier": {
+                        "Column": "DI_AssessmentStudentIdentifier"
+                    },
+                    "assessmentReference": {
+                        "assessmentIdentifier": "NWEA-MAP-V1",
+                        "namespace": "uri://www.nwea.org/map/Assessment"
+                    },
+                    "schoolYearTypeReference": {
+                        "schoolYear": {
+                            "Column": "DI_SchoolYear"
+                        }
+                    },
+                    "studentReference": {
+                        "studentUniqueId": {
+                            "Column": "DI_StudentId"
+                        }
+                    },
+                    "administrationDate": {
+                        "Column": "TestStartDate"
+                    },
+                    "performanceLevels": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Growth Measure YN",
+                            "performanceLevelDescriptor": {
+                                "Column": "GrowthMeasureYN",
+                                "Lookup": "NWEA-growthMeasure-Descriptors_LU"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Fall Met Projected Growth",
+                            "performanceLevelDescriptor": {
+                                "Column": "FallToFallMetProjectedGrowth",
+                                "Lookup": "NWEA-metProjectedGrowth-Descriptors_LU"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Winter Met Projected Growth",
+                            "performanceLevelDescriptor": {
+                                "Column": "FallToWinterMetProjectedGrowth",
+                                "Lookup": "NWEA-metProjectedGrowth-Descriptors_LU"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Spring Met Projected Growth",
+                            "performanceLevelDescriptor": {
+                                "Column": "FallToSpringMetProjectedGrowth",
+                                "Lookup": "NWEA-metProjectedGrowth-Descriptors_LU"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Winter Met Projected Growth",
+                            "performanceLevelDescriptor": {
+                                "Column": "WinterToWinterMetProjectedGrowth",
+                                "Lookup": "NWEA-metProjectedGrowth-Descriptors_LU"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Spring Met Projected Growth",
+                            "performanceLevelDescriptor": {
+                                "Column": "WinterToSpringMetProjectedGrowth",
+                                "Lookup": "NWEA-metProjectedGrowth-Descriptors_LU"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Spring-To-Spring Met Projected Growth",
+                            "performanceLevelDescriptor": {
+                                "Column": "SpringToSpringMetProjectedGrowth",
+                                "Lookup": "NWEA-metProjectedGrowth-Descriptors_LU"
+                            }
+                        }
+                    ],
+                    "scoreResults": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Term Name",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "TermName"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Measurement Scale",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "Course"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Test Name",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "TestName"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#RIT scale score",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "TestRITScore"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "TestStandardError"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "TestPercentile"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Fall Projected Growth",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "FallToFallProjectedGrowth"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Fall Observed Growth",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "FallToFallObservedGrowth"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Fall Observed Growth SE",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "FallToFallObservedGrowthSE"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Fall Conditional Growth Index",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "FallToFallConditionalGrowthIndex"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Fall Conditional Growth Percentile",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "FallToFallConditionalGrowthPercentile"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Winter Projected Growth",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "FallToWinterProjectedGrowth"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Winter Observed Growth",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "FallToWinterObservedGrowth"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Winter Observed Growth SE",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "FallToWinterObservedGrowthSE"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Winter Conditional Growth Index",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "FallToWinterConditionalGrowthIndex"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Winter Conditional Growth Percentile",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "FallToWinterConditionalGrowthPercentile"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Spring Projected Growth",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "FallToSpringProjectedGrowth"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Spring Observed Growth",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "FallToSpringObservedGrowth"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Spring Observed Growth SE",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "FallToSpringObservedGrowthSE"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Spring Conditional Growth Index",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "FallToSpringConditionalGrowthIndex"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Spring Conditional Growth Percentile",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "FallToSpringConditionalGrowthPercentile"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Winter Projected Growth",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "WinterToWinterProjectedGrowth"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Winter Observed Growth",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "WinterToWinterObservedGrowth"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Winter Observed Growth SE",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "WinterToWinterObservedGrowthSE"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Winter Conditional Growth Index",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "WinterToWinterConditionalGrowthIndex"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Winter Conditional Growth Percentile",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "WinterToWinterConditionalGrowthPercentile"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Spring Projected Growth",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "WinterToSpringProjectedGrowth"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Spring Observed Growth",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "WinterToSpringObservedGrowth"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Spring Observed Growth SE",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "WinterToSpringObservedGrowthSE"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Spring Conditional Growth Index",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "WinterToSpringConditionalGrowthIndex"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Spring Conditional Growth Percentile",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "WinterToSpringConditionalGrowthPercentile"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Spring-To-Spring Projected Growth",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "SpringToSpringProjectedGrowth"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Spring-To-Spring Observed Growth",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "SpringToSpringObservedGrowth"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Spring-To-Spring Observed Growth SE",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "SpringToSpringObservedGrowthSE"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Spring-To-Spring Conditional Growth Index",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "SpringToSpringConditionalGrowthIndex"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Spring-To-Spring Conditional Growth Percentile",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "SpringToSpringConditionalGrowthPercentile"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#RIT to Reading Score",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "LexileScore"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#RIT to Reading Min",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "LexileMin"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#RIT to Reading Max",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "LexileMax"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Level-1",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "ProjectedProficiencyLevel1"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Level-2",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "ProjectedProficiencyLevel2"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Level-3",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "ProjectedProficiencyLevel3"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Level-4",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "ProjectedProficiencyLevel4"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Level-5",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "ProjectedProficiencyLevel5"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Level-6",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "ProjectedProficiencyLevel6"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Level-7",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "ProjectedProficiencyLevel7"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Level-8",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "ProjectedProficiencyLevel8"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Level-9",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "ProjectedProficiencyLevel9"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Level-10",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "ProjectedProficiencyLevel10"
+                            }
+                        }
+                    ],
+                    "studentObjectiveAssessments": [
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NWEA-MAP-V1",
+                                "identificationCode": "NWEA-MAP-V1-GOAL-1",
+                                "namespace": "uri://www.nwea.org/map/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "Goal1Adjective",
+                                        "Lookup": "NWEA-goalAdjective-Descriptors_LU"
+                                    }
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#RIT scale score",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "Goal1RitScore"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                                    "result": {
+                                        "Column": "Goal1StdErr"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Range",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Range",
+                                    "result": {
+                                        "Column": "Goal1Range"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NWEA-MAP-V1",
+                                "identificationCode": "NWEA-MAP-V1-GOAL-2",
+                                "namespace": "uri://www.nwea.org/map/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "Goal2Adjective",
+                                        "Lookup": "NWEA-goalAdjective-Descriptors_LU"
+                                    }
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#RIT scale score",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "Goal2RitScore"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                                    "result": {
+                                        "Column": "Goal2StdErr"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Range",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Range",
+                                    "result": {
+                                        "Column": "Goal2Range"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NWEA-MAP-V1",
+                                "identificationCode": "NWEA-MAP-V1-GOAL-3",
+                                "namespace": "uri://www.nwea.org/map/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "Goal3Adjective",
+                                        "Lookup": "NWEA-goalAdjective-Descriptors_LU"
+                                    }
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#RIT scale score",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "Goal3RitScore"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                                    "result": {
+                                        "Column": "Goal3StdErr"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Range",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Range",
+                                    "result": {
+                                        "Column": "Goal3Range"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NWEA-MAP-V1",
+                                "identificationCode": "NWEA-MAP-V1-GOAL-4",
+                                "namespace": "uri://www.nwea.org/map/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "Goal4Adjective",
+                                        "Lookup": "NWEA-goalAdjective-Descriptors_LU"
+                                    }
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#RIT scale score",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "Goal4RitScore"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                                    "result": {
+                                        "Column": "Goal4StdErr"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Range",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Range",
+                                    "result": {
+                                        "Column": "Goal4Range"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NWEA-MAP-V1",
+                                "identificationCode": "NWEA-MAP-V1-GOAL-5",
+                                "namespace": "uri://www.nwea.org/map/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "Goal5Adjective",
+                                        "Lookup": "NWEA-goalAdjective-Descriptors_LU"
+                                    }
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#RIT scale score",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "Goal5RitScore"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                                    "result": {
+                                        "Column": "Goal5StdErr"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Range",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Range",
+                                    "result": {
+                                        "Column": "Goal5Range"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NWEA-MAP-V1",
+                                "identificationCode": "NWEA-MAP-V1-GOAL-6",
+                                "namespace": "uri://www.nwea.org/map/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "Goal6Adjective",
+                                        "Lookup": "NWEA-goalAdjective-Descriptors_LU"
+                                    }
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#RIT scale score",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "Goal6RitScore"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                                    "result": {
+                                        "Column": "Goal6StdErr"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Range",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Range",
+                                    "result": {
+                                        "Column": "Goal6Range"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NWEA-MAP-V1",
+                                "identificationCode": "NWEA-MAP-V1-GOAL-7",
+                                "namespace": "uri://www.nwea.org/map/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "Goal7Adjective",
+                                        "Lookup": "NWEA-goalAdjective-Descriptors_LU"
+                                    }
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#RIT scale score",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "Goal7RitScore"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                                    "result": {
+                                        "Column": "Goal7StdErr"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Range",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Range",
+                                    "result": {
+                                        "Column": "Goal7Range"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NWEA-MAP-V1",
+                                "identificationCode": "NWEA-MAP-V1-GOAL-8",
+                                "namespace": "uri://www.nwea.org/map/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "Goal8Adjective",
+                                        "Lookup": "NWEA-goalAdjective-Descriptors_LU"
+                                    }
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#RIT scale score",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "Goal8RitScore"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                                    "result": {
+                                        "Column": "Goal8StdErr"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Range",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Range",
+                                    "result": {
+                                        "Column": "Goal8Range"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "customFileProcessor": "NWEA_v2_ODSv3+",
+                "attribute": null
+            }
+        ],
+        "bootstraps": [
+            {
+                "name": "1-NWEA-MAP_ARMD_v2",
+                "resourcePath": "/ed-fi/assessmentReportingMethodDescriptors",
+                "data": [
+                    {
+                        "codeValue": "Term Name",
+                        "description": "Term Name",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Term Name"
+                    },
+                    {
+                        "codeValue": "Measurement Scale",
+                        "description": "Specific RIT scale that applies  to the associated test.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Measurement Scale"
+                    },
+                    {
+                        "codeValue": "Growth Measure YN",
+                        "description": "When more than one result record exists for a given student and test, only one record counts for growth reporting, marked TRUE.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Growth Measure YN"
+                    },
+                    {
+                        "codeValue": "Test Name",
+                        "description": "Full name of the test.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Test Name"
+                    },
+                    {
+                        "codeValue": "Fall-To-Fall Projected Growth",
+                        "description": "Projected RIT growth from previous academic year fall term to the fall term chosen at export. Based on previous fall term RIT score and weeks of instruction.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Fall-To-Fall Projected Growth"
+                    },
+                    {
+                        "codeValue": "Fall-To-Fall Observed Growth",
+                        "description": "Actual growth from previous academic year fall term to the fall term chosen at export.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Fall-To-Fall Observed Growth"
+                    },
+                    {
+                        "codeValue": "Fall-To-Fall Observed Growth SE",
+                        "description": "Standard Error associated with calculation for FalltoFallObservedGrowth.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Fall-To-Fall Observed Growth SE"
+                    },
+                    {
+                        "codeValue": "Fall-To-Fall Met Projected Growth",
+                        "description": "Whether Projected Growth was met or not. Asterisk means Observed Growth Standard Error (SE) could be large enough to put the outcome in question, so evaluate in combination with other points of data.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Fall-To-Fall Met Projected Growth"
+                    },
+                    {
+                        "codeValue": "Fall-To-Fall Conditional Growth Index",
+                        "description": "Calculation that enables you to compare student growth. Measures growth from the previous academic year fall term to the fall term chosen at export. It incorporates: -weeks of instruction before testing -how high students scored in the first term.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Fall-To-Fall Conditional Growth Index"
+                    },
+                    {
+                        "codeValue": "Fall-To-Fall Conditional Growth Percentile",
+                        "description": "Translates the Conditional Growth Index to national percentile rankings for growth. Measures growth from the previous academic year fall term to the fall term chosen at export.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Fall-To-Fall Conditional Growth Percentile"
+                    },
+                    {
+                        "codeValue": "Fall-To-Winter Projected Growth",
+                        "description": "Projected RIT growth from previous academic year fall term to the winter term chosen at export. Based on previous fall term RIT score and weeks of instruction.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Fall-To-Winter Projected Growth"
+                    },
+                    {
+                        "codeValue": "Fall-To-Winter Observed Growth",
+                        "description": "Actual growth from previous academic year fall term to the winter term chosen at export.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Fall-To-Winter Observed Growth"
+                    },
+                    {
+                        "codeValue": "Fall-To-Winter Observed Growth SE",
+                        "description": "Standard Error associated with calculation for FalltoWinterObservedGrowth.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Fall-To-Winter Observed Growth SE"
+                    },
+                    {
+                        "codeValue": "Fall-To-Winter Met Projected Growth",
+                        "description": "Whether Projected Growth was met or not. Asterisk means Observed Growth Standard Error (SE) could be large enough to put the outcome in question, so evaluate in combination with other points of data.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Fall-To-Winter Met Projected Growth"
+                    },
+                    {
+                        "codeValue": "Fall-To-Winter Conditional Growth Index",
+                        "description": "Calculation that enables you to compare student growth. Measures growth from the previous academic year fall term to the winter term chosen at export. It incorporates: -weeks of instruction before testing -how high students scored in the first term.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Fall-To-Winter Conditional Growth Index"
+                    },
+                    {
+                        "codeValue": "Fall-To-Winter Conditional Growth Percentile",
+                        "description": "Translates the Conditional Growth Index to national percentile rankings for growth. Measures growth from the previous academic year fall term to the winter term chosen at export.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Fall-To-Winter Conditional Growth Percentile"
+                    },
+                    {
+                        "codeValue": "Fall-To-Spring Projected Growth",
+                        "description": "Projected RIT growth from previous academic year fall term to the spring term chosen at export.  Based on previous fall term RIT score and weeks of instruction.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Fall-To-Spring Projected Growth"
+                    },
+                    {
+                        "codeValue": "Fall-To-Spring Observed Growth",
+                        "description": "Actual growth from previous academic year fall term to the spring term chosen at export.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Fall-To-Spring Observed Growth"
+                    },
+                    {
+                        "codeValue": "Fall-To-Spring Observed Growth SE",
+                        "description": "Standard Error associated with calculation for FalltoSpringObservedGrowth.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Fall-To-Spring Observed Growth SE"
+                    },
+                    {
+                        "codeValue": "Fall-To-Spring Met Projected Growth",
+                        "description": "Whether Projected Growth was met or not. Asterisk means Observed Growth Standard Error (SE) could be large enough to put the outcome in question, so evaluate in combination with other points of data.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Fall-To-Spring Met Projected Growth"
+                    },
+                    {
+                        "codeValue": "Fall-To-Spring Conditional Growth Index",
+                        "description": "Calculation that enables you to compare student growth. Measures growth from the previous academic year fall term to the spring term chosen at export. It incorporates: -weeks of instruction before testing -how high students scored in the first term.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Fall-To-Spring Conditional Growth Index"
+                    },
+                    {
+                        "codeValue": "Fall-To-Spring Conditional Growth Percentile",
+                        "description": "Translates the Conditional Growth Index to national percentile rankings for growth. Measures growth from the previous academic year fall term to the spring term chosen at export.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Fall-To-Spring Conditional Growth Percentile"
+                    },
+                    {
+                        "codeValue": "Winter-To-Winter Projected Growth",
+                        "description": "Projected RIT growth from previous academic year winter term to the winter term chosen at export.  Based on previous fall term RIT score and weeks of instruction.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Winter-To-Winter Projected Growth"
+                    },
+                    {
+                        "codeValue": "Winter-To-Winter Observed Growth",
+                        "description": "Actual growth from previous academic year winter term to the winter term chosen at export.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Winter-To-Winter Observed Growth"
+                    },
+                    {
+                        "codeValue": "Winter-To-Winter Observed Growth SE",
+                        "description": "Standard Error associated with calculation for FalltoSpringObservedGrowth.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Winter-To-Winter Observed Growth SE"
+                    },
+                    {
+                        "codeValue": "Winter-To-Winter Met Projected Growth",
+                        "description": "Whether Projected Growth was met or not. Asterisk means Observed Growth Standard Error (SE) could be large enough to put the outcome in question, so evaluate in combination with other points of data.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Winter-To-Winter Met Projected Growth"
+                    },
+                    {
+                        "codeValue": "Winter-To-Winter Conditional Growth Index",
+                        "description": "Calculation that enables you to compare student growth. Measures growth from the previous academic year winter term to the winter term chosen at export. It incorporates: -weeks of instruction before testing -how high students scored in the first term.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Winter-To-Winter Conditional Growth Index"
+                    },
+                    {
+                        "codeValue": "Winter-To-Winter Conditional Growth Percentile",
+                        "description": "Translates the Conditional Growth Index to national percentile rankings for growth. Measures growth from the previous academic year winter term to the winter term chosen at export.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Winter-To-Winter Conditional Growth Percentile"
+                    },
+                    {
+                        "codeValue": "Winter-To-Spring Projected Growth",
+                        "description": "Projected RIT growth from previous academic year winter term to spring term chosen at export.  Based on previous fall term RIT score and weeks of instruction.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Winter-To-Spring Projected Growth"
+                    },
+                    {
+                        "codeValue": "Winter-To-Spring Observed Growth",
+                        "description": "Actual growth from previous academic year winter term to spring term chosen at export.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Winter-To-Spring Observed Growth"
+                    },
+                    {
+                        "codeValue": "Winter-To-Spring Observed Growth SE",
+                        "description": "Standard Error associated with calculation for FalltoSpringObservedGrowth.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Winter-To-Spring Observed Growth SE"
+                    },
+                    {
+                        "codeValue": "Winter-To-Spring Met Projected Growth",
+                        "description": "Whether Projected Growth was met or not. Asterisk means Observed Growth Standard Error (SE) could be large enough to put the outcome in question, so evaluate in combination with other points of data.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Winter-To-Spring Met Projected Growth"
+                    },
+                    {
+                        "codeValue": "Winter-To-Spring Conditional Growth Index",
+                        "description": "Calculation that enables you to compare student growth. Measures growth from the previous academic year winter term to spring term chosen at export. It incorporates: -weeks of instruction before testing -how high students scored in the first term.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Winter-To-Spring Conditional Growth Index"
+                    },
+                    {
+                        "codeValue": "Winter-To-Spring Conditional Growth Percentile",
+                        "description": "Translates the Conditional Growth Index to national percentile rankings for growth. Measures growth from the previous academic year winter term to spring term chosen at export.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Winter-To-Spring Conditional Growth Percentile"
+                    },
+                    {
+                        "codeValue": "Spring-To-Spring Projected Growth",
+                        "description": "Projected RIT growth from previous academic year spring term to spring term chosen at export.  Based on previous fall term RIT score and weeks of instruction.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Spring-To-Spring Projected Growth"
+                    },
+                    {
+                        "codeValue": "Spring-To-Spring Observed Growth",
+                        "description": "Actual growth from previous academic year spring term to spring term chosen at export.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Spring-To-Spring Observed Growth"
+                    },
+                    {
+                        "codeValue": "Spring-To-Spring Observed Growth SE",
+                        "description": "Standard Error associated with calculation for FalltoSpringObservedGrowth.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Spring-To-Spring Observed Growth SE"
+                    },
+                    {
+                        "codeValue": "Spring-To-Spring Met Projected Growth",
+                        "description": "Whether Projected Growth was met or not. Asterisk means Observed Growth Standard Error (SE) could be large enough to put the outcome in question, so evaluate in combination with other points of data.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Spring-To-Spring Met Projected Growth"
+                    },
+                    {
+                        "codeValue": "Spring-To-Spring Conditional Growth Index",
+                        "description": "Calculation that enables you to compare student growth. Measures growth from the previous academic year spring term to spring term chosen at export. It incorporates: -weeks of instruction before testing -how high students scored in the first term. ",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Spring-To-Spring Conditional Growth Index"
+                    },
+                    {
+                        "codeValue": "Spring-To-Spring Conditional Growth Percentile",
+                        "description": "Translates the Conditional Growth Index to national percentile rankings for growth. Measures growth from the previous academic year spring term to spring term chosen at export.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Spring-To-Spring Conditional Growth Percentile"
+                    },
+                    {
+                        "codeValue": "RIT to Reading Score",
+                        "description": "Score resulting from a correlation between NWEA’s RIT score and the Lexile®  scale (a measure defined by MetaMetrics®). Available only for Reading tests.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "RIT to Reading Score"
+                    },
+                    {
+                        "codeValue": "RIT to Reading Min",
+                        "description": "Lower end of the RIT to Reading Range.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "RIT to Reading Min"
+                    },
+                    {
+                        "codeValue": "RIT to Reading Max",
+                        "description": "Upper end of the RIT to Reading Range.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "RIT to Reading Max"
+                    },
+                    {
+                        "codeValue": "Goal Name",
+                        "description": "Name of goal for a section of the test.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Goal Name"
+                    },
+                    {
+                        "codeValue": "Goal Range",
+                        "description": "RIT range based on the standard error and RIT score.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Goal Range"
+                    },
+                    {
+                        "codeValue": "Goal Adjective",
+                        "description": "Goal adjective related to the goal score. This is defined using the goal score percentile as it relates to a norm set and its associative cut sheet.",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Goal Adjective"
+                    },
+                    {
+                        "codeValue": "Projected Proficiency Study-1",
+                        "description": "NWEA linking study associated with the MAP test taken",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Projected Proficiency Study-1"
+                    },
+                    {
+                        "codeValue": "Projected Proficiency Level-1",
+                        "description": "Projected proficiency level, or category, such as Unsatisfactory, Partially Proficient, and so on",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Projected Proficiency Level-1"
+                    },
+                    {
+                        "codeValue": "Projected Proficiency Study-2",
+                        "description": "NWEA linking study associated with the MAP test taken",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Projected Proficiency Study-2"
+                    },
+                    {
+                        "codeValue": "Projected Proficiency Level-2",
+                        "description": "Projected proficiency level, or category, such as Unsatisfactory, Partially Proficient, and so on",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Projected Proficiency Level-2"
+                    },
+                    {
+                        "codeValue": "Projected Proficiency Study-3",
+                        "description": "NWEA linking study associated with the MAP test taken",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Projected Proficiency Study-3"
+                    },
+                    {
+                        "codeValue": "Projected Proficiency Level-3",
+                        "description": "Projected proficiency level, or category, such as Unsatisfactory, Partially Proficient, and so on",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Projected Proficiency Level-3"
+                    },
+                    {
+                        "codeValue": "Projected Proficiency Study-4",
+                        "description": "NWEA linking study associated with the MAP test taken",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Projected Proficiency Study-4"
+                    },
+                    {
+                        "codeValue": "Projected Proficiency Level-4",
+                        "description": "Projected proficiency level, or category, such as Unsatisfactory, Partially Proficient, and so on",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Projected Proficiency Level-4"
+                    },
+                    {
+                        "codeValue": "Projected Proficiency Study-5",
+                        "description": "NWEA linking study associated with the MAP test taken",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Projected Proficiency Study-5"
+                    },
+                    {
+                        "codeValue": "Projected Proficiency Level-5",
+                        "description": "Projected proficiency level, or category, such as Unsatisfactory, Partially Proficient, and so on",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Projected Proficiency Level-5"
+                    },
+                    {
+                        "codeValue": "Projected Proficiency Study-6",
+                        "description": "NWEA linking study associated with the MAP test taken",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Projected Proficiency Study-6"
+                    },
+                    {
+                        "codeValue": "Projected Proficiency Level-6",
+                        "description": "Projected proficiency level, or category, such as Unsatisfactory, Partially Proficient, and so on",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Projected Proficiency Level-6"
+                    },
+                    {
+                        "codeValue": "Projected Proficiency Study-7",
+                        "description": "NWEA linking study associated with the MAP test taken",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Projected Proficiency Study-7"
+                    },
+                    {
+                        "codeValue": "Projected Proficiency Level-7",
+                        "description": "Projected proficiency level, or category, such as Unsatisfactory, Partially Proficient, and so on",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Projected Proficiency Level-7"
+                    },
+                    {
+                        "codeValue": "Projected Proficiency Study-8",
+                        "description": "NWEA linking study associated with the MAP test taken",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Projected Proficiency Study-8"
+                    },
+                    {
+                        "codeValue": "Projected Proficiency Level-8",
+                        "description": "Projected proficiency level, or category, such as Unsatisfactory, Partially Proficient, and so on",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Projected Proficiency Level-8"
+                    },
+                    {
+                        "codeValue": "Projected Proficiency Study-9",
+                        "description": "NWEA linking study associated with the MAP test taken",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Projected Proficiency Study-9"
+                    },
+                    {
+                        "codeValue": "Projected Proficiency Level-9",
+                        "description": "Projected proficiency level, or category, such as Unsatisfactory, Partially Proficient, and so on",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Projected Proficiency Level-9"
+                    },
+                    {
+                        "codeValue": "Projected Proficiency Study-10",
+                        "description": "NWEA linking study associated with the MAP test taken",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Projected Proficiency Study-10"
+                    },
+                    {
+                        "codeValue": "Projected Proficiency Level-10",
+                        "description": "Projected proficiency level, or category, such as Unsatisfactory, Partially Proficient, and so on",
+                        "namespace": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Projected Proficiency Level-10"
+                    }
+                ]
+            },
+            {
+                "name": "1-NWEA-MAP_PLD_v2",
+                "resourcePath": "/ed-fi/performanceLevelDescriptors",
+                "data": [
+                    {
+                        "codeValue": "TRUE",
+                        "description": "TRUE",
+                        "namespace": "uri://www.nwea.org/map/PerformanceLevelDescriptor",
+                        "shortDescription": "TRUE"
+                    },
+                    {
+                        "codeValue": "FALSE",
+                        "description": "FALSE",
+                        "namespace": "uri://www.nwea.org/map/PerformanceLevelDescriptor",
+                        "shortDescription": "FALSE"
+                    },
+                    {
+                        "codeValue": "Yes",
+                        "description": "Student met growth projection.",
+                        "namespace": "uri://www.nwea.org/map/PerformanceLevelDescriptor",
+                        "shortDescription": "Yes"
+                    },
+                    {
+                        "codeValue": "No",
+                        "description": "Growth projection not met. Asterisk means Observed Growth Standard Error (SE) could be large enough to put the outcome in question, so evaluate in combination with other points of data.",
+                        "namespace": "uri://www.nwea.org/map/PerformanceLevelDescriptor",
+                        "shortDescription": "No"
+                    },
+                    {
+                        "codeValue": "Yes*",
+                        "description": "Student met growth projection.",
+                        "namespace": "uri://www.nwea.org/map/PerformanceLevelDescriptor",
+                        "shortDescription": "Yes*"
+                    },
+                    {
+                        "codeValue": "No*",
+                        "description": "Growth projection not met. Asterisk means Observed Growth Standard Error (SE) could be large enough to put the outcome in question, so evaluate in combination with other points of data.",
+                        "namespace": "uri://www.nwea.org/map/PerformanceLevelDescriptor",
+                        "shortDescription": "No*"
+                    },
+                    {
+                        "codeValue": "Low",
+                        "description": "Low (percentile <= 20)",
+                        "namespace": "uri://www.nwea.org/map/PerformanceLevelDescriptor",
+                        "shortDescription": "Low"
+                    },
+                    {
+                        "codeValue": "LoAvg",
+                        "description": "LoAvg (percentile > 20 to <= 40)",
+                        "namespace": "uri://www.nwea.org/map/PerformanceLevelDescriptor",
+                        "shortDescription": "LoAvg"
+                    },
+                    {
+                        "codeValue": "Avg",
+                        "description": "Avg (percentile > 40 to <= 60)",
+                        "namespace": "uri://www.nwea.org/map/PerformanceLevelDescriptor",
+                        "shortDescription": "Avg"
+                    },
+                    {
+                        "codeValue": "HiAvg",
+                        "description": "HiAvg (percentile > 60 to <= 80)",
+                        "namespace": "uri://www.nwea.org/map/PerformanceLevelDescriptor",
+                        "shortDescription": "HiAvg"
+                    },
+                    {
+                        "codeValue": "High",
+                        "description": "High (percentile > 80",
+                        "namespace": "uri://www.nwea.org/map/PerformanceLevelDescriptor",
+                        "shortDescription": "High"
+                    },
+                    {
+                        "codeValue": "*",
+                        "description": "* goal adjective could not be computed)",
+                        "namespace": "uri://www.nwea.org/map/PerformanceLevelDescriptor",
+                        "shortDescription": "*"
+                    }
+                ]
+            },
+            {
+                "name": "2-NWEA-MAP_Assessment_v2",
+                "resourcePath": "/ed-fi/assessments",
+                "data": {
+                    "assessmentIdentifier": "NWEA-MAP-V1",
+                    "assessmentTitle": "NWEA-MAP-V1",
+                    "namespace": "uri://www.nwea.org/map/Assessment",
+                    "assessedGradeLevels": [
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Kindergarten"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#First grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Second grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fourth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fifth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Sixth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Seventh grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eighth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Ninth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Tenth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Ungraded"
+                        }
+                    ],
+                    "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#Other",
+                    "academicSubjects": [
+                        {
+                            "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics"
+                        },
+                        {
+                            "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Reading"
+                        }
+                    ],
+                    "scores": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Term Name",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Measurement Scale",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Test Name",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#RIT scale score",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Fall Projected Growth",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Fall Observed Growth",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Fall Observed Growth SE",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Fall Conditional Growth Index",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Fall Conditional Growth Percentile",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Winter Projected Growth",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Winter Observed Growth",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Winter Observed Growth SE",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Winter Conditional Growth Index",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Winter Conditional Growth Percentile",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Spring Projected Growth",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Spring Observed Growth",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Spring Observed Growth SE",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Spring Conditional Growth Index",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Spring Conditional Growth Percentile",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Winter Projected Growth",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Winter Observed Growth",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Winter Observed Growth SE",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Winter Conditional Growth Index",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Winter Conditional Growth Percentile",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Spring Projected Growth",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Spring Observed Growth",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Spring Observed Growth SE",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Spring Conditional Growth Index",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Spring Conditional Growth Percentile",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Spring-To-Spring Projected Growth",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Spring-To-Spring Observed Growth",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Spring-To-Spring Observed Growth SE",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Spring-To-Spring Conditional Growth Index",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Spring-To-Spring Conditional Growth Percentile",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#RIT to Reading Score",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#RIT to Reading Min",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#RIT to Reading Max",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Study-1",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Level-1",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Study-2",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Level-2",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Study-3",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Level-3",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Study-4",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Level-4",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Study-5",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Level-5",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Study-6",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Level-6",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Study-7",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Level-7",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Study-8",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Level-8",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Study-9",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Level-9",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Study-10",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Projected Proficiency Level-10",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        }
+                    ],
+                    "performanceLevels": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Growth Measure YN",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#TRUE",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Growth Measure YN",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#FALSE",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Fall Met Projected Growth",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Yes",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Fall Met Projected Growth",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#No",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Fall Met Projected Growth",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Yes*",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Fall Met Projected Growth",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#No*",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Winter Met Projected Growth",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Yes",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Winter Met Projected Growth",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#No",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Winter Met Projected Growth",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Yes*",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Winter Met Projected Growth",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#No*",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Spring Met Projected Growth",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Yes",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Spring Met Projected Growth",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#No",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Spring Met Projected Growth",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Yes*",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Fall-To-Spring Met Projected Growth",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#No*",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Winter Met Projected Growth",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Yes",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Winter Met Projected Growth",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#No",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Winter Met Projected Growth",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Yes*",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Winter Met Projected Growth",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#No*",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Spring Met Projected Growth",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Yes",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Spring Met Projected Growth",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#No",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Spring Met Projected Growth",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Yes*",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Winter-To-Spring Met Projected Growth",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#No*",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Spring-To-Spring Met Projected Growth",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Yes",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Spring-To-Spring Met Projected Growth",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#No",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Spring-To-Spring Met Projected Growth",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Yes*",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Spring-To-Spring Met Projected Growth",
+                            "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#No*",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "3-NWEA-MAP_ObjectiveAssessments_v2",
+                "resourcePath": "/ed-fi/objectiveAssessments",
+                "data": [
+                    {
+                        "identificationCode": "NWEA-MAP-V1-GOAL-1",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NWEA-MAP-V1",
+                            "namespace": "uri://www.nwea.org/map/Assessment"
+                        },
+                        "description": "Goal-1",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Name",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#RIT scale score",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Range",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Range"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Low",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#LoAvg",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Avg",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#HiAvg",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#High",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#*",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "NWEA-MAP-V1-GOAL-2",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NWEA-MAP-V1",
+                            "namespace": "uri://www.nwea.org/map/Assessment"
+                        },
+                        "description": "Goal-2",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Name",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#RIT scale score",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Range",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Range"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Low",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#LoAvg",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Avg",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#HiAvg",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#High",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#*",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "NWEA-MAP-V1-GOAL-3",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NWEA-MAP-V1",
+                            "namespace": "uri://www.nwea.org/map/Assessment"
+                        },
+                        "description": "Goal-3",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Name",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#RIT scale score",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Range",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Range"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Low",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#LoAvg",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Avg",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#HiAvg",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#High",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#*",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "NWEA-MAP-V1-GOAL-4",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NWEA-MAP-V1",
+                            "namespace": "uri://www.nwea.org/map/Assessment"
+                        },
+                        "description": "Goal-4",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Name",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#RIT scale score",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Range",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Range"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Low",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#LoAvg",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Avg",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#HiAvg",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#High",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#*",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "NWEA-MAP-V1-GOAL-5",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NWEA-MAP-V1",
+                            "namespace": "uri://www.nwea.org/map/Assessment"
+                        },
+                        "description": "Goal-5",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Name",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#RIT scale score",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Range",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Range"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Low",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#LoAvg",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Avg",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#HiAvg",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#High",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#*",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "NWEA-MAP-V1-GOAL-6",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NWEA-MAP-V1",
+                            "namespace": "uri://www.nwea.org/map/Assessment"
+                        },
+                        "description": "Goal-6",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Name",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#RIT scale score",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Range",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Range"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Low",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#LoAvg",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Avg",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#HiAvg",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#High",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#*",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "NWEA-MAP-V1-GOAL-7",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NWEA-MAP-V1",
+                            "namespace": "uri://www.nwea.org/map/Assessment"
+                        },
+                        "description": "Goal-7",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Name",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#RIT scale score",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Range",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Range"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Low",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#LoAvg",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Avg",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#HiAvg",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#High",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#*",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "NWEA-MAP-V1-GOAL-8",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NWEA-MAP-V1",
+                            "namespace": "uri://www.nwea.org/map/Assessment"
+                        },
+                        "description": "Goal-8",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Name",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#RIT scale score",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Range",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Range"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Low",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#LoAvg",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Avg",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#HiAvg",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#High",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://www.nwea.org/map/AssessmentReportingMethodDescriptor#Goal Adjective",
+                                "performanceLevelDescriptor": "uri://www.nwea.org/map/PerformanceLevelDescriptor#*",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "lookups": [
+            {
+                "sourceTable": "NWEA-goalAdjective-Descriptors_LU",
+                "key": "*",
+                "value": "uri://www.nwea.org/map/PerformanceLevelDescriptor#*"
+            },
+            {
+                "sourceTable": "NWEA-goalAdjective-Descriptors_LU",
+                "key": "Avg",
+                "value": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Avg"
+            },
+            {
+                "sourceTable": "NWEA-goalAdjective-Descriptors_LU",
+                "key": "HiAvg",
+                "value": "uri://www.nwea.org/map/PerformanceLevelDescriptor#HiAvg"
+            },
+            {
+                "sourceTable": "NWEA-goalAdjective-Descriptors_LU",
+                "key": "High",
+                "value": "uri://www.nwea.org/map/PerformanceLevelDescriptor#High"
+            },
+            {
+                "sourceTable": "NWEA-goalAdjective-Descriptors_LU",
+                "key": "LoAvg",
+                "value": "uri://www.nwea.org/map/PerformanceLevelDescriptor#LoAvg"
+            },
+            {
+                "sourceTable": "NWEA-goalAdjective-Descriptors_LU",
+                "key": "Low",
+                "value": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Low"
+            },
+            {
+                "sourceTable": "NWEA-growthMeasure-Descriptors_LU",
+                "key": "FALSE",
+                "value": "uri://www.nwea.org/map/PerformanceLevelDescriptor#FALSE"
+            },
+            {
+                "sourceTable": "NWEA-growthMeasure-Descriptors_LU",
+                "key": "TRUE",
+                "value": "uri://www.nwea.org/map/PerformanceLevelDescriptor#TRUE"
+            },
+            {
+                "sourceTable": "NWEA-metProjectedGrowth-Descriptors_LU",
+                "key": "No",
+                "value": "uri://www.nwea.org/map/PerformanceLevelDescriptor#No"
+            },
+            {
+                "sourceTable": "NWEA-metProjectedGrowth-Descriptors_LU",
+                "key": "No*",
+                "value": "uri://www.nwea.org/map/PerformanceLevelDescriptor#No*"
+            },
+            {
+                "sourceTable": "NWEA-metProjectedGrowth-Descriptors_LU",
+                "key": "Yes",
+                "value": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Yes"
+            },
+            {
+                "sourceTable": "NWEA-metProjectedGrowth-Descriptors_LU",
+                "key": "Yes*",
+                "value": "uri://www.nwea.org/map/PerformanceLevelDescriptor#Yes*"
+            }
+        ],
+        "supplementalInformation": null,
+        "preprocessors": [
+            {
+                "name": "NWEA_v2_ODSv3+",
+                "scriptContent": "[CmdletBinding()]\r\nParam(\r\n    [parameter(Mandatory = $true, ValueFromPipeline = $true)][string]$line\r\n)\r\n\r\n######################################################################################\r\n### Ed-Fi ODS v3+\r\n### Assessment: NWEA v2 (July 2020 schema changes)\r\n### Script: Custom File Processor\r\n######################################################################################\r\n\r\nbegin {\r\n    # Set up the statistics\r\n    # validations: Hashtable of HashTables with properties for each screening period, and each screening period will have statistics like number of records not loaded, and detailed info\r\n    <#\r\n    #>\r\n    $global:statistics = @{\r\n        \"rowsProcessed\" = 0\r\n        \"rowsLoaded\"    = 0\r\n        \"validations\"   = @{}\r\n    }\r\n\r\n    # Prepare some other variables\r\n    $currentLineNumber = 0\r\n    $global:inputHeaders = @()\r\n    $global:headersLookup = @{}\r\n\r\n\r\n    # report progress on console after this number of seconds, for long running tasks\r\n    $global:REPORT_PROGRESS_FREQ_IN_SECONDS = 30\r\n\r\n    #set api version\r\n    $global:apiVersion = $DataImport.ApiVersion\r\n    ## ODS functions\r\n    \r\n    function Get-StudentUniqueIdType ($apiVersion) {\r\n        <#\r\n            .SYNOPSIS\r\n                Determines whether the value in Student.studentUniqueId is a District or State ID value. \r\n    \r\n            .DESCRIPTION\r\n                Determining the studentUniqueId value type is done by querying the /students endpoint for 10 \r\n                students and then checking either the values in the identificationCodes[] array on either the\r\n                Student record (v2.5+ API) or the studentEducationOrganizationAssociation record (v3.x API) to\r\n                see whether the District or State ID matches the StudentUniqueId value. 10 students are checked \r\n                to make sure there aren't any discrepancies.\r\n    \r\n                NOTE: Only \"District\" and \"State\" Student ID types are used in this check; all others are ignored!\r\n    \r\n            .PARAMETER ApiVersion\r\n                The version number of the API as set in $DataImport.ApiVersion. For whatever reason the $DataImport\r\n                object is not directly addressable from within a module.\r\n    \r\n            .OUTPUTS\r\n                A string representing the type of ID stored in studentUniqueId. This value  will be either\r\n                'District' or 'State'.\r\n    \r\n                Throws an error on any failure to connect to or query the API or if one or more students of\r\n                the 10 checked have a different ID value type (e.g. one has 'District' while the rest have \r\n                'State'). Also throws an error if a match can't be made on any of the 10 students checked.\r\n    \r\n            .EXAMPLE\r\n                $studentUniqueIdType = Get-StudentUniqueIdType -apiVersion $DataImport.ApiVersion\r\n        #>\r\n    \r\n        # Do sanity checks on parameters\r\n        if (!$apiVersion) { throw \"The apiVersion parameter must be set to a valid value.\" }\r\n    \r\n        # Processing depends on API version\r\n        # Only valid for apis version 3 and above\r\n        \r\n        if ($apiVersion.StartsWith(\"3.\") -or $apiVersion.StartsWith(\"5.\") -or $apiVersion.StartsWith(\"6.\")) {\r\n            # Query for 10 students (whatever comes back first - and yes, this could be flaky)\r\n            try {\r\n                $jsonResponse = Invoke-OdsApiRequest -RequestPath \"/ed-fi/studentEducationOrganizationAssociations?limit=10\"\r\n                $seoas = ConvertFrom-Json $jsonResponse\r\n            }\r\n            catch {\r\n                throw $_\r\n            }\r\n            if ($seoas.Count -eq 0) { throw \"Unable to determine StudentUniqueId type as no StudentEducationOrganizationAssociations were found in the ODS.\" }\r\n        \r\n            # Iterate the list of students checking studentUniqueId against the ID code types. These should all be the same but you know student data...\r\n            $ret = \"\"\r\n            foreach ($seoa in $seoas) {\r\n                foreach ($idCode in $seoa.studentIdentificationCodes) {\r\n                    if ($seoa.studentReference.studentUniqueId -eq $idCode.identificationCode) {\r\n                        $codeType = $idCode.studentIdentificationSystemDescriptor.Split(\"#\")\r\n                        $codeType = $codeType[1]\r\n                        if ($codeType -in @(\"District\", \"State\")) {\r\n                            if ($ret -eq \"\") { $ret = $codeType }\r\n                            elseif ($codeType -ne $ret) { \r\n                                throw \"Unable to determine studentUniqueId type as StudentEducationOrganizationAssociations have been found with both District and State ID values in studentUniqueId\" \r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n        \r\n            # If we got here then all 10 students had the same type of studentUniqueId value, so return that type\r\n            return $ret\r\n        }\r\n        else {\r\n            throw \"Attempt to connect to a version $($apiVersion) API, which is unsupported.\"\r\n        }\r\n        \r\n    }\r\n\r\n    function Get-StudentsIdMap ($apiVersion, $studentIdTypeCode) {\r\n        <#\r\n        .SYNOPSIS\r\n            Load from ODS studentId mapping from a given studentId type to its corresponding UniqueStudentId. $studentIdTypeCode valid values 'District','State'\r\n\r\n        .DESCRIPTION\r\n            Loads StudentUniqueId mapped to a passed studentId type from the ODS. \r\n            This data can then be used to look up a StudentUniqueId value by a specific studentIdType.\r\n\r\n        .PARAMETER ApiVersion\r\n            The version number of the API as set in $DataImport.ApiVersion. For whatever reason the $DataImport\r\n            object is not directly addressable from within a module.\r\n\r\n        .PARAMETER StudentIdTypeCode\r\n            The studentId Type that needs to be mapped to StudentUniqueId.\r\n\r\n        .OUTPUTS\r\n            A complex HashMap of values that you can treat as an object. The format is:\r\n            - StudentIdMap: Hashmap where keys are the desired studentIdType IdentificationCode value and the value is the StudentUniqueId from ODS\r\n                - Student Records (Key: StudentIdType IdentificationCode from ODS; Value: StudentUniqueId\r\n            \r\n            Throws an error on any failure to connect to or query the API or if one or more students of\r\n            the 10 checked have a different ID value type (e.g. one has 'District' while the rest have \r\n            'State')\r\n\r\n        .EXAMPLE\r\n            $students = Get-StudentsIdMap -apiVersion $DataImport.ApiVersion -studentIdTypeCode \"State\"\r\n    #>\r\n\r\n        # Set up some basic varialbes\r\n        $ret = @{\r\n            \"StudentIdMap\" = @{}\r\n            # \"DuplicateStudents\"         = @()\r\n            # \"NoAdditionalIdValuesFound\" = 0\r\n        }\r\n        $continue = $true\r\n        $offset = 0\r\n        $limit = 100\r\n\r\n        # Do sanity checks on parameters\r\n        if (!$apiVersion) { throw \"The apiVersion parameter must be set to a valid value.\" }\r\n\r\n        # Processing depends on the API version\r\n        if ($apiVersion.StartsWith(\"3.\") -or $apiVersion.StartsWith(\"5.\") -or $apiVersion.StartsWith(\"6.\")) {\r\n            try {\r\n                $start = Get-Date\r\n                $progress = (Get-Date).AddSeconds($global:REPORT_PROGRESS_FREQ_IN_SECONDS)\r\n                # Load the additional ID values\r\n                $continue = $true\r\n                $offset = 0\r\n                while ($continue) {\r\n                    $response = Invoke-OdsApiRequest -RequestPath \"/ed-fi/studentEducationOrganizationAssociations?limit=$limit&offset=$offset\"\r\n                    $students = ConvertFrom-Json $response\r\n                    if ($students.Count -gt 0) {\r\n                        foreach ($student in $students) {\r\n                            $studentUniqueId = $student.studentReference.studentUniqueId\r\n                            foreach ($idCode in $student.studentIdentificationCodes) {\r\n                                \r\n                                if ($idCode.studentIdentificationSystemDescriptor.Contains($studentIdTypeCode)) { \r\n                                    $ret.StudentIdMap[$idCode.identificationCode] = $studentUniqueId \r\n                                    # If found stop loop\r\n                                    break\r\n                                }\r\n                            }\r\n                        }\r\n                    }\r\n                    else {\r\n                        $continue = $false\r\n                    }\r\n                    $offset += $limit\r\n                    # report progress, takes long to pull from api , show progress so user does not think process is not doing anything\r\n                    if ((Get-Date) -gt $progress) {\r\n                        $progress = (Get-Date).AddSeconds($global:REPORT_PROGRESS_FREQ_IN_SECONDS)\r\n                        $duration = NEW-TIMESPAN $start $(Get-Date)\r\n                        Write-Information \"loading students ... duration $($duration.toString(\"hh\\:mm\\:ss\")) ($offset) stds)\"\r\n                    }\r\n                }\r\n        \r\n                # Return the data\r\n                return $ret\r\n            }\r\n            catch {\r\n                throw $_\r\n            }\r\n        }\r\n        else {\r\n            throw \"Attempt to connect to a version $($apiVersion) API, which is unsupported.\"\r\n        }\r\n\r\n    }\r\n\r\n    #Create list Student Id  lookup\r\n    function Get-StudentIdLookupNeeded ($studentIdType){\r\n         Write-Information \"$studentIdType\"\r\n        # Get the studentUniqueIdType\r\n        Write-Information \"Checking StudentUniqueIdType...\"\r\n        \r\n        $global:studentUniqueIdType = Get-AgentCacheItem -Key \"StudentUniqueIdType\"\r\n        if (!$global:studentUniqueIdType) {\r\n            try {\r\n                $global:studentUniqueIdType = Get-StudentUniqueIdType -apiVersion $apiVersion\r\n                New-AgentCacheItem -Key \"StudentUniqueIdType\" -Value $global:studentUniqueIdType\r\n                if ($global:studentUniqueIdType) {\r\n                    Write-Information \"StudentUniqueId Type: $($global:studentUniqueIdType)\"\r\n                }  \r\n            }\r\n            catch {\r\n                Write-Error \"Failed to determine studentUniqueId type. Error returned is '$($_.Exception.Message)'\"\r\n                throw \"Fatal error while running Begin section of Preprocessor.\"\r\n            }\r\n        }\r\n\r\n        $global:needStudentIdLookup = $false\r\n        # Only if we are able to find studentIdType in ODS\r\n        if ($studentUniqueIdType) {\r\n            # Check whether student id in ODS matches the studentId in the assessment file.\r\n            if ($studentIdType -ne $studentUniqueIdType) {\r\n                $global:needStudentIdLookup = $true\r\n\r\n                # Only load students if IDs do not match(file StudentId vs ODS UniqueStudentId)\r\n                # Load the list of students\r\n                Write-Information \"Loading list of studentId mappings ...\"\r\n                $STUDENT_ID_MAPPING_CACHE_KEY = \"StudentsIdMap\"\r\n                $global:studentsIdMap = Get-AgentCacheItem -Key $STUDENT_ID_MAPPING_CACHE_KEY\r\n                if (!$global:studentsIdMap) {\r\n                    try {\r\n                        $s = Get-StudentsIdMap -apiVersion $apiVersion -studentIdTypeCode $studentIdType\r\n                        Write-Information \"Loaded $($s.StudentIdMap.Count) StudentId mapping records from ODS.\"\r\n                        $global:studentsIdMap = $s.StudentIdMap\r\n                        New-AgentCacheItem -Key $STUDENT_ID_MAPPING_CACHE_KEY -Value $global:studentsIdMap\r\n                    }\r\n                    catch {\r\n                        Write-Error \"Failed to load list of students from the ODS> Error returned is '$($_.Exception.Message)'\"\r\n                        throw \"Fatal error while running Begin section of Preprocessor.\"\r\n                    }\r\n                    if ($global:studentsIdMap.Count -eq 0) {\r\n                        throw \"StudentId from file does not match ODS student id and we were not able to load id mapping from ODS(relation from ODS UniqueId to studentId in file).\"\r\n                    }\r\n                }\r\n            }\r\n        }\r\n        else {\r\n            Write-Warning \"Unable to find StudentId Type. Script will proceed and use student identifier as it comes in assessment file.\"\r\n        }\r\n        return $needStudentIdLookup\r\n    }\r\n\r\n    ## Helper functions  \r\n\r\n    # Get a parsed record in Hashtable where properties are the headers(used for CSV data only)\r\n    function Get-ParsedRecord($headers, $line) {\r\n        # Deal with double-quote wrappers and the fact that fields may have embedded commas\r\n        # NOTE: This is vastly stupid, but we can't run Regex in ConstrainedLanguage mode so it is what it is.\r\n        if ($line.Contains('\",\"') -or $line.Contains(',\"') -or $line.Contains('\",')) {\r\n            $cleanLine = $line\r\n            $inQuote = $false\r\n            for ($i = 0; $i -le $cleanLine.length; $i++) {\r\n                if ($cleanLine[$i] -eq '\"') {\r\n                    $inQuote = !$inQuote\r\n                }\r\n                else {\r\n                    if ($cleanLine[$i] -eq \",\" -and $inQuote -eq $false) {\r\n                        $cleanLine = $cleanLine.Substring(0, $i) + \"^\" + $cleanLine.Substring($i + 1)\r\n                    }\r\n                }\r\n            }\r\n            $cleanLine = $cleanLine.Replace(\",\", \"\")\r\n            $fields = $cleanLine.split(\"^\")\r\n        }\r\n        else {\r\n            $fields = $line.split(\",\")\r\n        }\r\n        $ret = @{}\r\n        for ($i = 0; $i -lt $fields.Length; $i++) {\r\n            $ret.Add($headers[$i], ($fields[$i].Replace('\"', ''))) | Out-Null\r\n        }\r\n        return $ret\r\n    }\r\n\r\n    # Get a parsed csv line in an array of values (used for CSV data only)\r\n    function Get-ParsedRecordArray($line) {\r\n        # Deal with double-quote wrappers and the fact that fields may have embedded commas\r\n        # NOTE: This is vastly stupid, but we can't run Regex in ConstrainedLanguage mode so it is what it is.\r\n        if ($line.Contains('\",\"') -or $line.Contains(',\"') -or $line.Contains('\",')) {\r\n            $cleanLine = $line\r\n            $inQuote = $false\r\n            for ($i = 0; $i -le $cleanLine.length; $i++) {\r\n                if ($cleanLine[$i] -eq '\"') {\r\n                    $inQuote = !$inQuote\r\n                }\r\n                else {\r\n                    if ($cleanLine[$i] -eq \",\" -and $inQuote -eq $false) {\r\n                        $cleanLine = $cleanLine.Substring(0, $i) + \"^\" + $cleanLine.Substring($i + 1)\r\n                    }\r\n                }\r\n            }\r\n            $cleanLine = $cleanLine.Replace(\",\", \"\")\r\n            $fields = $cleanLine.split(\"^\")\r\n        }\r\n        else {\r\n            $fields = $line.split(\",\")\r\n        }\r\n        $ret = @()\r\n        for ($i = 0; $i -lt $fields.Length; $i++) {\r\n            $ret += $fields[$i].Replace('\"', '')\r\n        }\r\n        return $ret\r\n    }\r\n\r\n    # Parse Date from string\r\n    function Get-ParsedDate ($date, $inputFormat, $outputFormat = $null) {\r\n        <# \r\n                .SYNOPSIS\r\n                    Parse a date string and returns it in the correct format.\r\n        \r\n                .PARAMETER date (required)\r\n                    The date string to parse\r\n        \r\n                .PARAMETER inputFormat (required)\r\n                    The expected format of the incoming date string\r\n        \r\n                .PARAMETER outputFormat (optional)\r\n                    The desired format of the retured date string\r\n        \r\n                .OUTPUTS\r\n                    If no outputFormat is provided then a Date object is returned\r\n        \r\n                    If outputFormat is provided then a formatted string is returned\r\n        \r\n                    If parsing fails for any reason then $null is returned\r\n            #>\r\n        \r\n        try {\r\n            $d = $([datetime]::ParseExact($date, $inputFormat, $null))\r\n            if ($outputFormat) {\r\n                $d = Get-Date -Date $d -Format $outputFormat\r\n            }\r\n            return $d\r\n        }\r\n        catch {\r\n            return $null\r\n        }\r\n    }\r\n\r\n    # Add record to statistics indicating a record was not processed becuase of a validation error\r\n    function Get-StudentODSId($fileStudentId) {\r\n        if ($global:needStudentIdLookup) {\r\n            return $global:studentsIdMap[$fileStudentId]\r\n        }\r\n        else {\r\n            # StudentId matches ODS\r\n            return $fileStudentId\r\n        }\r\n    }\r\n\r\n    # Convert an array list of data into a CSV line for output\r\n    function Get-CSVLine($inputData) {\r\n        $ret = \"\"\r\n        foreach ($cell in $inputData) {\r\n            if ($ret -ne \"\") { $ret += \",\" }\r\n            $ret += ('\"' + $cell + '\"')\r\n        }\r\n        return $ret\r\n    }\r\n\r\n\r\n    ### Assessment fields\r\n\r\n    # Type of StudentId that will be used from assessment file to match student in ODS\r\n    # Valid values 'District','State'\r\n    $studentIdType = \"District\" \r\n\r\n    $global:fileColumnDelimiter = \",\"\r\n\r\n    #Create studentsIdMap \r\n    $needStudentIdLookup =  Get-StudentIdLookupNeeded($studentIdType)\r\n\r\n    ######################\r\n    ### Columns Definition \r\n    ######################\r\n\r\n    # MET_PROJECTED_GROWTH\r\n    $global:SRC_COLUMNS_MET_PROJECTED_GROWTH = 'FallToFallMetProjectedGrowth',\r\n    'FallToWinterMetProjectedGrowth',\r\n    'FallToSpringMetProjectedGrowth',\r\n    'WinterToWinterMetProjectedGrowth',\r\n    'WinterToSpringMetProjectedGrowth',\r\n    'SpringToSpringMetProjectedGrowth'\r\n\r\n\r\n    $global:SRC_COLUMNS_GOAL_ADJECTIVES = 'Goal1Adjective',\r\n    'Goal2Adjective',\r\n    'Goal3Adjective',\r\n    'Goal4Adjective',\r\n    'Goal5Adjective',\r\n    'Goal6Adjective',\r\n    'Goal7Adjective',\r\n    'Goal8Adjective'\r\n\r\n    #############\r\n    ### LOOKUPS\r\n    #############\r\n    $global:LOOKUP_growthMeasure = @{\r\n        'TRUE'  = 'uri://www.nwea.org/map/PerformanceLevelDescriptor#TRUE'\r\n        'FALSE' = 'uri://www.nwea.org/map/PerformanceLevelDescriptor#FALSE'\r\n    }\r\n\r\n    $global:LOOKUP_metProjectedGrowth = @{ \r\n        'Yes'  = 'uri://www.nwea.org/map/PerformanceLevelDescriptor#Yes'\r\n        'No'   = 'uri://www.nwea.org/map/PerformanceLevelDescriptor#No'\r\n        'Yes*' = 'uri://www.nwea.org/map/PerformanceLevelDescriptor#Yes*'\r\n        'No*'  = 'uri://www.nwea.org/map/PerformanceLevelDescriptor#No*'\r\n    }\r\n\r\n\r\n    $global:LOOKUP_goalAdjective = @{\r\n        '*'     = 'uri://www.nwea.org/map/PerformanceLevelDescriptor#*'        \r\n        'Avg'   = 'uri://www.nwea.org/map/PerformanceLevelDescriptor#Avg'    \r\n        'HiAvg' = 'uri://www.nwea.org/map/PerformanceLevelDescriptor#HiAvg'\r\n        'High'  = 'uri://www.nwea.org/map/PerformanceLevelDescriptor#High'  \r\n        'LoAvg' = 'uri://www.nwea.org/map/PerformanceLevelDescriptor#LoAvg'\r\n        'Low'   = 'uri://www.nwea.org/map/PerformanceLevelDescriptor#Low'    \r\n    }\r\n\r\n\r\n    # Custom/computed output columns. key: output column name, value: HashTable with source column name and other info\r\n   \r\n    $global:CUSTOM_COLUMN_MAP = @{ \r\n        \"DI_StudentId\"                   = @{ \"SourceColumnName\" = \"StudentID\"; }\r\n        \"DI_AdministrationDate\"          = @{ \"SourceColumnName\" = \"TestStartDate\"; }\r\n        \"DI_SchoolYear\"                  = @{ \"SourceColumnName\" = \"TermName\"; }\r\n        \"DI_AssessmentStudentIdentifier\" = @{ \"SourceColumnName\" = \"TestID\" }\r\n    }\r\n\r\n    # Assesment specific functions\r\n    # Get Normalized output column name given an source column name\r\n    function Get-DIColumnName($srcName) {\r\n        return \"DI_{0}\" -f $srcName\r\n    }\r\n\r\n    # progress reporting, so user sees progress when processing large files.\r\n    $global:PROGRESS_EXECUTION_STARTED = Get-Date\r\n    $global:PROGRESS_NEXT_REPORT = (Get-Date).AddSeconds($global:REPORT_PROGRESS_FREQ_IN_SECONDS)\r\n}\r\n\r\nprocess {\r\n    $currentLineNumber += 1\r\n    $global:statistics.rowsProcessed += 1\r\n\r\n    $now = Get-Date\r\n    # report progress, if large files uploaded, see progress\r\n    if ($now -gt $global:PROGRESS_NEXT_REPORT) {\r\n        $global:PROGRESS_NEXT_REPORT = $now.AddSeconds($global:REPORT_PROGRESS_FREQ_IN_SECONDS)\r\n        $duration = NEW-TIMESPAN $global:PROGRESS_EXECUTION_STARTED $now\r\n        Write-Information \"Custom File Processor loading rows($($global:statistics.rowsProcessed)) == duration -> $($duration.toString(\"hh\\:mm\\:ss\")))\"\r\n    }\r\n\r\n    # Make sure we got something\r\n    if (!$line) { Write-Error \"Line $currentLineNumber does not contain any data\"; return }\r\n\r\n    # File is fixed width and does not contain headers, so on first line output headers before exporting calues\r\n    # If the first line then output all of the headers\r\n    if ($currentLineNumber -eq 1) { \r\n\r\n        # We assume headers will not have commas in the names\r\n        #$headerRow = $line.Split(\",\")    \r\n        $headerRow = Get-ParsedRecordArray -line $line\r\n\r\n        $outputHeaders = @()\r\n\r\n        # 1 - Loop thru headers to find and fix empty of duplicate headers\r\n        for ($i = 0; $i -lt $headerRow.Count; $i++) {\r\n            $item = $headerRow[$i]\r\n\r\n            # handle empty headers\r\n            if (!$item) {\r\n                $newName = \"EMPTY-$i\"\r\n                Write-Warning \"Found empty column at position $($i + 1). Renaming column to '$newName'.\"\r\n                $item = $newName\r\n            }\r\n            # handle duplicate headers\r\n            if ($global:headersLookup[$item]) {\r\n                $newName = \"$item-$i\"\r\n                Write-Warning \"Found duplicate column name of '$item' at position $($i + 1). Renaming column to '$newName'.\"\r\n                $item = $newName\r\n            }\r\n            $global:inputHeaders += $item            \r\n            $outputHeaders += $item\r\n            $global:headersLookup.Add($item, $index) | Out-Null     \r\n            \r\n        }      \r\n\r\n        # Headers/columns\r\n        # 2 - If there are custom headers add to output header line\r\n        if ($global:CUSTOM_COLUMN_MAP.Count) {            \r\n            $outputHeaders += $( $global:CUSTOM_COLUMN_MAP.Keys | Sort-Object )\r\n        }\r\n\r\n        Write-Output $(Get-CSVLine($outputHeaders))\r\n        return\r\n        #does not return after headers because first line contains values not headers, headers are fixed\r\n    }\r\n\r\n    # array, Ordered output values\r\n    $orderedOutputValues = @()\r\n\r\n    # HashTable, will hold all input values for current line, used in case computed columns need to reference input values\r\n    $row = @{}\r\n    \r\n    # Not the cleanest of solutions, but none of the values should have double quotes, replace to remove wrapping quotes if present\r\n    #$row = Get-ParsedRecord -headers $($global:inputHeaders) -line $line\r\n    $row = ConvertFrom-Csv -InputObject $line -Header $global:inputHeaders\r\n\r\n    # 1 - add all values as they come in line\r\n    $orderedOutputValues = Get-ParsedRecordArray -line $line\r\n\r\n    # Validation will tell whether or not a record has the required values needed to be posted to ODS, \r\n    # if not valid error code and line number will be displayed in the summary\r\n    $passedValidation = $true\r\n    $validationId = $null\r\n    # 2 - Process custom/computed columns\r\n    if ($global:CUSTOM_COLUMN_MAP.Count) {            \r\n        foreach ($outColumnName in  $( $global:CUSTOM_COLUMN_MAP.Keys | Sort-Object )) {\r\n                    \r\n            $srcInfo = $global:CUSTOM_COLUMN_MAP[$outColumnName]\r\n            $srcColName = $srcInfo.SourceColumnName   \r\n            \r\n            ### DataImport Assessment Custom Columns\r\n            switch -Exact ($outColumnName) {\r\n                # StudentId\r\n                \"DI_StudentId\" {\r\n                    $stdId = Get-StudentODSId($row.$srcColName)\r\n\r\n                    # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                    if (!$stdId) {\r\n                        $passedValidation = $false\r\n                        $validationId = \"InvalidStudentId\"\r\n                        break\r\n                    }\r\n    \r\n                    $orderedOutputValues += $stdId\r\n                    break\r\n                }\r\n    \r\n                # Admin Date\r\n                \"DI_AdministrationDate\" {\r\n                    \r\n                    ## admin date                    \r\n                    $adminDate = $row.$srcColName\r\n                    \r\n                    # Validation, this is a required field, if empty will be unable to post to ODS\r\n                    if (!$adminDate) {\r\n                        $passedValidation = $false\r\n                        $validationId = \"InvalidAdministrationDate\"\r\n                        break\r\n                    }\r\n    \r\n                    $orderedOutputValues += $adminDate\r\n                    break\r\n                }\r\n    \r\n                # School Year\r\n                \"DI_SchoolYear\" {                \r\n\r\n                    $schoolYearRaw = $row.$srcColName    \r\n                    $schoolYear = $null\r\n                    if ($schoolYearRaw.Length -ge 4) {\r\n                        $schoolYear = $schoolYearRaw.Substring($schoolYearRaw.Length - 4)                        \r\n                    }\r\n\r\n                    # Validation, this is a required field, if empty will be unable to post to ODS\r\n                    if (!$schoolYear) {\r\n                        $passedValidation = $false\r\n                        $validationId = \"InvalidSchoolYear\"\r\n                        break\r\n                    }\r\n    \r\n                    $orderedOutputValues += $schoolYear\r\n                    break\r\n                }\r\n    \r\n                # Assessment Student Identifier\r\n                \"DI_AssessmentStudentIdentifier\" {    \r\n                    $assessStudentId = $row.$srcColName\r\n                            \r\n                    # Validation, this is a required field, if empty will be unable to post to ODS\r\n                    if (!$assessStudentId) {\r\n                        $passedValidation = $false\r\n                        $validationId = \"InvalidStudentAssessmentId\"\r\n                        break\r\n                    }\r\n    \r\n                    $orderedOutputValues += $assessStudentId\r\n                    break\r\n                }\r\n\r\n                Default {\r\n                    # In case of no implementation for custom column add $null output to preserve output format and order\r\n                    $orderedOutputValues += $null\r\n                    break;\r\n                }\r\n            }\r\n        }\r\n    }     \r\n\r\n    # If not valid add to statistics to notify user at the end of execution and skip record and do not post current for current row this screening period to ODS\r\n    if (!$passedValidation) {\r\n        # Only print once per row\r\n        if (!$errorInCurrentRow) {\r\n            Write-Warning \"Invalid record see statistics summary for details.($currentLineNumber)\"\r\n        }            \r\n\r\n        # Check if this validation error already added for current screening period\r\n        if ($global:statistics.validations[$validationId]) {\r\n            $global:statistics.validations[$validationId] += $currentLineNumber\r\n        }\r\n        else {\r\n            $global:statistics.validations.Add($validationId, @($currentLineNumber)) | Out-Null\r\n        }\r\n        \r\n        # Skip current line do not pass values to DataImport\r\n        return\r\n    }\r\n\r\n    Write-Output $(Get-CSVLine($orderedOutputValues))\r\n    $global:statistics.rowsLoaded ++    \r\n}\r\n\r\nend {\r\n\r\n    Write-Information \"SUMMARY: `\r\n        Rows Processed: $($global:statistics.rowsProcessed); `\r\n        Rows Loaded: $($global:statistics.rowsLoaded)\"\r\n\r\n    foreach ($validationId in $global:statistics.validations.Keys) {\r\n        Write-Warning \"Error reason: '$validationId'\"                \r\n        Write-Information \"Line number(s):\"\r\n        $lineNumbers = $global:statistics.validations[$validationId]\r\n        $errorThreshold = 50\r\n        if ($lineNumbers.Count -gt $errorThreshold) {\r\n            Write-Warning \"There are $($lineNumbers.Count) lines with errors. Will only print the first $errorThreshold line numbers where errors ocurred.\"\r\n            $lineNumbers = $lineNumbers[0..$($errorThreshold - 1)]\r\n        }\r\n        Write-Warning \"$([string]::Join(\",\",$lineNumbers))\"\r\n    }\r\n\r\n}",
+                "requireOdsApiAccess": true,
+                "hasAttribute": false
+            }
+        ]
+    }
+}

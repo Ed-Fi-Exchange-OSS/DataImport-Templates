@@ -1,0 +1,2639 @@
+{
+    "title": "ExportTemplate-ReadingPlus",
+    "description": "ExportTemplate ReadingPlus",
+    "apiVersion": "6.0",
+    "template": {
+        "maps": [
+            {
+                "name": "ReadingPlus-Map B1",
+                "resourcePath": "/ed-fi/studentAssessments",
+                "columnHeaders": [
+                    "Site Name",
+                    "Class Name",
+                    "Teacher(s)",
+                    "Student Last Name",
+                    "Student First Name",
+                    "Student Creation Date",
+                    "Student Number",
+                    "Grade",
+                    "Initial Assessment (B1) Date/Time",
+                    "B1 Diagnostic Profile",
+                    "B1 Proficiency Level",
+                    "B1 Prof Level Text Lexile Range",
+                    "Mean of B1 Prof Lvl Text Lexile Range",
+                    "B1 Comprehension Level",
+                    "B1 Comp Level Text Lexile Range",
+                    "Mean of B1 Comp Lvl Text Lexile Range",
+                    "B1 Vocabulary Level",
+                    "B1 Reading Rate (wpm)",
+                    "B1 Confidence",
+                    "B1 Self-Improvement Belief",
+                    "B1 Volume",
+                    "B1 Interest",
+                    "B1 Value",
+                    "B1 Comments",
+                    "Total Instructional Time (hrs)",
+                    "Reading (SR) Total Time (hrs)",
+                    "Date First SR Lesson",
+                    "Date Last SR Lesson",
+                    "SR Total Lessons",
+                    "SR Lessons 80%+",
+                    "# SR Lessons Fluency Focus",
+                    "# SR Lessons Comp Focus",
+                    "SR Start Level",
+                    "SR Start Level Text Lexile Range",
+                    "SR Current Level",
+                    "SR Current Level Text Lexile Range",
+                    "SR Level Gain",
+                    "SR Start Rate",
+                    "SR Current G-Rate",
+                    "SR G-Rate Gain",
+                    "SR Current I-Rate",
+                    "SR Last I-Rate 80%+",
+                    "SR I-Rate Gain",
+                    "SR Avg Comp %",
+                    "SR Avg Comp Current Lvl",
+                    "SR Words Read",
+                    "SR Words Read 80%+",
+                    "Combos Earned",
+                    "A1-Close Read %",
+                    "A1 # Correct Responses",
+                    "A1 # Total Responses",
+                    "A2-Main Idea/Theme %",
+                    "A2 # Correct Responses",
+                    "A2 # Total Responses",
+                    "A3-Interact Ideas %",
+                    "A3 # Correct Responses",
+                    "A3 # Total Responses",
+                    "A4-Use Language %",
+                    "A4 # Correct Responses",
+                    "A4 # Total Responses",
+                    "A5-Structure %",
+                    "A5 # Correct Responses",
+                    "A5 # Total Responses",
+                    "A6-Point of View %",
+                    "A6 # Correct Responses",
+                    "A6 # Total Responses",
+                    "A7-Image Scaffold %",
+                    "A7 # Correct Responses",
+                    "A7 # Total Responses",
+                    "A8-Reason/Rhet %",
+                    "A8 # Correct Responses",
+                    "A8 # Total Responses",
+                    "A9-Compare Read %",
+                    "A9 # Correct Responses",
+                    "A9 # Total Responses",
+                    "Last Student Login",
+                    "Use Goal (SR Lessons)",
+                    "Implementation End Date",
+                    "Projected End Use (SR Lessons)",
+                    "Visual Skills (iB) Total Time (hrs)",
+                    "iB Total Lessons",
+                    "iB Start Scan Rate",
+                    "iB Current Scan Rate",
+                    "iB Scan Rate Gain",
+                    "iB Start Flash Level",
+                    "iB Current Flash Level",
+                    "iB Flash Level Gain",
+                    "Vocabulary (RA) Total Time (hrs)",
+                    "RA Total Lessons",
+                    "RA Start Level",
+                    "RA Current Level",
+                    "RA Level Gain",
+                    "Mid-Year Assessment (B2) Date/Time",
+                    "SR Lessons Btwn B1 - B2",
+                    "B2 Diagnostic Profile",
+                    "B2 Proficiency Level",
+                    "B2 Prof Level Text Lexile Range",
+                    "Mean of B2 Prof Lvl Text Lexile Range",
+                    "B2 Comprehension Level",
+                    "B2 Comp Level Text Lexile Range",
+                    "Mean of B2 Comp Lvl Text Lexile Range",
+                    "B2 Vocabulary Level",
+                    "B2 Reading Rate (wpm)",
+                    "B2 Confidence",
+                    "B2 Self-Improvement Belief",
+                    "B2 Volume",
+                    "B2 Interest",
+                    "B2 Value",
+                    "B2 Comments",
+                    "End Assessment (B3) Date/Time",
+                    "SR Lessons Btwn B2 - B3",
+                    "SR Lessons Btwn B1 - B3",
+                    "B3 Diagnostic Profile",
+                    "B3 Proficiency Level",
+                    "B3 Prof Level Text Lexile Range",
+                    "Mean of B3 Prof Lvl Text Lexile Range",
+                    "B3 Comprehension Level",
+                    "B3 Comp Level Text Lexile Range",
+                    "Mean of B3 Comp Lvl Text Lexile Range",
+                    "B3 Vocabulary Level",
+                    "B3 Reading Rate (wpm)",
+                    "B3 Confidence",
+                    "B3 Self-Improvement Belief",
+                    "B3 Volume",
+                    "B3 Interest",
+                    "B3 Value",
+                    "B3 Comments",
+                    "Gender",
+                    "Race",
+                    "Ethnicity",
+                    "Lunch Status",
+                    "Special Ed",
+                    "EL/ELL",
+                    "Tier",
+                    "DI_AdminDate",
+                    "DI_LvlDesc_B1 Proficiency Level",
+                    "DI_LvlDesc_B2 Proficiency Level",
+                    "DI_LvlDesc_B3 Proficiency Level",
+                    "DI_SchoolYear",
+                    "DI_StudentAssessmentIdentifier",
+                    "DI_StudentId"
+                ],
+                "map": {
+                    "studentAssessmentIdentifier": {
+                        "Column": "DI_StudentAssessmentIdentifier"
+                    },
+                    "assessmentReference": {
+                        "assessmentIdentifier": "READINGPLUS-V1",
+                        "namespace": "uri://readingplus.com/Assessment"
+                    },
+                    "schoolYearTypeReference": {
+                        "schoolYear": {
+                            "Column": "DI_SchoolYear"
+                        }
+                    },
+                    "studentReference": {
+                        "studentUniqueId": {
+                            "Column": "Student Number"
+                        }
+                    },
+                    "administrationDate": {
+                        "Column": "DI_AdminDate"
+                    },
+                    "performanceLevels": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B1 Proficiency Level Description",
+                            "performanceLevelDescriptor": {
+                                "Column": "DI_LvlDesc_B1 Proficiency Level",
+                                "Lookup": "Reading-Plus_PerformanceLevel_LU"
+                            }
+                        }
+                    ],
+                    "scoreResults": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Initial Assessment (B1) Date/Time",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "Initial Assessment (B1) Date/Time"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B1 Diagnostic Profile",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "B1 Diagnostic Profile"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B1 Proficiency Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "B1 Proficiency Level"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B1 Comprehension Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "B1 Comprehension Level"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B1 Vocabulary Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "B1 Vocabulary Level"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B1 Reading Rate (wpm)",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "B1 Reading Rate (wpm)"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B1 Self-Improvement Belief",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "B1 Self-Improvement Belief"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B1 Interest",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "B1 Interest"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B1 Value",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "B1 Value"
+                            }
+                        }
+                    ],
+                    "whenAssessedGradeLevelDescriptor": {
+                        "Column": "Grade",
+                        "Lookup": "Reading-Plus_GradeLevel_LU"
+                    }
+                },
+                "customFileProcessor": "Reading-Plus_CFP",
+                "attribute": "B1"
+            },
+            {
+                "name": "ReadingPlus-Map B2",
+                "resourcePath": "/ed-fi/studentAssessments",
+                "columnHeaders": [
+                    "Site Name",
+                    "Class Name",
+                    "Teacher(s)",
+                    "Student Last Name",
+                    "Student First Name",
+                    "Student Creation Date",
+                    "Student Number",
+                    "Grade",
+                    "Initial Assessment (B1) Date/Time",
+                    "B1 Diagnostic Profile",
+                    "B1 Proficiency Level",
+                    "B1 Prof Level Text Lexile Range",
+                    "Mean of B1 Prof Lvl Text Lexile Range",
+                    "B1 Comprehension Level",
+                    "B1 Comp Level Text Lexile Range",
+                    "Mean of B1 Comp Lvl Text Lexile Range",
+                    "B1 Vocabulary Level",
+                    "B1 Reading Rate (wpm)",
+                    "B1 Confidence",
+                    "B1 Self-Improvement Belief",
+                    "B1 Volume",
+                    "B1 Interest",
+                    "B1 Value",
+                    "B1 Comments",
+                    "Total Instructional Time (hrs)",
+                    "Reading (SR) Total Time (hrs)",
+                    "Date First SR Lesson",
+                    "Date Last SR Lesson",
+                    "SR Total Lessons",
+                    "SR Lessons 80%+",
+                    "# SR Lessons Fluency Focus",
+                    "# SR Lessons Comp Focus",
+                    "SR Start Level",
+                    "SR Start Level Text Lexile Range",
+                    "SR Current Level",
+                    "SR Current Level Text Lexile Range",
+                    "SR Level Gain",
+                    "SR Start Rate",
+                    "SR Current G-Rate",
+                    "SR G-Rate Gain",
+                    "SR Current I-Rate",
+                    "SR Last I-Rate 80%+",
+                    "SR I-Rate Gain",
+                    "SR Avg Comp %",
+                    "SR Avg Comp Current Lvl",
+                    "SR Words Read",
+                    "SR Words Read 80%+",
+                    "Combos Earned",
+                    "A1-Close Read %",
+                    "A1 # Correct Responses",
+                    "A1 # Total Responses",
+                    "A2-Main Idea/Theme %",
+                    "A2 # Correct Responses",
+                    "A2 # Total Responses",
+                    "A3-Interact Ideas %",
+                    "A3 # Correct Responses",
+                    "A3 # Total Responses",
+                    "A4-Use Language %",
+                    "A4 # Correct Responses",
+                    "A4 # Total Responses",
+                    "A5-Structure %",
+                    "A5 # Correct Responses",
+                    "A5 # Total Responses",
+                    "A6-Point of View %",
+                    "A6 # Correct Responses",
+                    "A6 # Total Responses",
+                    "A7-Image Scaffold %",
+                    "A7 # Correct Responses",
+                    "A7 # Total Responses",
+                    "A8-Reason/Rhet %",
+                    "A8 # Correct Responses",
+                    "A8 # Total Responses",
+                    "A9-Compare Read %",
+                    "A9 # Correct Responses",
+                    "A9 # Total Responses",
+                    "Last Student Login",
+                    "Use Goal (SR Lessons)",
+                    "Implementation End Date",
+                    "Projected End Use (SR Lessons)",
+                    "Visual Skills (iB) Total Time (hrs)",
+                    "iB Total Lessons",
+                    "iB Start Scan Rate",
+                    "iB Current Scan Rate",
+                    "iB Scan Rate Gain",
+                    "iB Start Flash Level",
+                    "iB Current Flash Level",
+                    "iB Flash Level Gain",
+                    "Vocabulary (RA) Total Time (hrs)",
+                    "RA Total Lessons",
+                    "RA Start Level",
+                    "RA Current Level",
+                    "RA Level Gain",
+                    "Mid-Year Assessment (B2) Date/Time",
+                    "SR Lessons Btwn B1 - B2",
+                    "B2 Diagnostic Profile",
+                    "B2 Proficiency Level",
+                    "B2 Prof Level Text Lexile Range",
+                    "Mean of B2 Prof Lvl Text Lexile Range",
+                    "B2 Comprehension Level",
+                    "B2 Comp Level Text Lexile Range",
+                    "Mean of B2 Comp Lvl Text Lexile Range",
+                    "B2 Vocabulary Level",
+                    "B2 Reading Rate (wpm)",
+                    "B2 Confidence",
+                    "B2 Self-Improvement Belief",
+                    "B2 Volume",
+                    "B2 Interest",
+                    "B2 Value",
+                    "B2 Comments",
+                    "End Assessment (B3) Date/Time",
+                    "SR Lessons Btwn B2 - B3",
+                    "SR Lessons Btwn B1 - B3",
+                    "B3 Diagnostic Profile",
+                    "B3 Proficiency Level",
+                    "B3 Prof Level Text Lexile Range",
+                    "Mean of B3 Prof Lvl Text Lexile Range",
+                    "B3 Comprehension Level",
+                    "B3 Comp Level Text Lexile Range",
+                    "Mean of B3 Comp Lvl Text Lexile Range",
+                    "B3 Vocabulary Level",
+                    "B3 Reading Rate (wpm)",
+                    "B3 Confidence",
+                    "B3 Self-Improvement Belief",
+                    "B3 Volume",
+                    "B3 Interest",
+                    "B3 Value",
+                    "B3 Comments",
+                    "Gender",
+                    "Race",
+                    "Ethnicity",
+                    "Lunch Status",
+                    "Special Ed",
+                    "EL/ELL",
+                    "Tier",
+                    "DI_AdminDate",
+                    "DI_LvlDesc_B1 Proficiency Level",
+                    "DI_LvlDesc_B2 Proficiency Level",
+                    "DI_LvlDesc_B3 Proficiency Level",
+                    "DI_SchoolYear",
+                    "DI_StudentAssessmentIdentifier",
+                    "DI_StudentId"
+                ],
+                "map": {
+                    "studentAssessmentIdentifier": {
+                        "Column": "DI_StudentAssessmentIdentifier"
+                    },
+                    "assessmentReference": {
+                        "assessmentIdentifier": "READINGPLUS-V1",
+                        "namespace": "uri://readingplus.com/Assessment"
+                    },
+                    "schoolYearTypeReference": {
+                        "schoolYear": {
+                            "Column": "DI_SchoolYear"
+                        }
+                    },
+                    "studentReference": {
+                        "studentUniqueId": {
+                            "Column": "Student Number"
+                        }
+                    },
+                    "administrationDate": {
+                        "Column": "DI_AdminDate"
+                    },
+                    "performanceLevels": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B2 Proficiency Level Description",
+                            "performanceLevelDescriptor": {
+                                "Column": "DI_LvlDesc_B2 Proficiency Level",
+                                "Lookup": "Reading-Plus_PerformanceLevel_LU"
+                            }
+                        }
+                    ],
+                    "scoreResults": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Mid-Year Assessment (B2) Date/Time",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "Mid-Year Assessment (B2) Date/Time"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Lessons Btwn B1 - B2",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "SR Lessons Btwn B1 - B2"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B2 Diagnostic Profile",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "B2 Diagnostic Profile"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B2 Proficiency Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "B2 Proficiency Level"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B2 Comprehension Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "B2 Comprehension Level"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B2 Vocabulary Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "B2 Vocabulary Level"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B2 Reading Rate (wpm)",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "B2 Reading Rate (wpm)"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B2 Self-Improvement Belief",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "B2 Self-Improvement Belief"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B2 Interest",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "B2 Interest"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B2 Value",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "B2 Value"
+                            }
+                        }
+                    ],
+                    "whenAssessedGradeLevelDescriptor": {
+                        "Column": "Grade",
+                        "Lookup": "Reading-Plus_GradeLevel_LU"
+                    }
+                },
+                "customFileProcessor": "Reading-Plus_CFP",
+                "attribute": "B2"
+            },
+            {
+                "name": "ReadingPlus-Map B3",
+                "resourcePath": "/ed-fi/studentAssessments",
+                "columnHeaders": [
+                    "Site Name",
+                    "Class Name",
+                    "Teacher(s)",
+                    "Student Last Name",
+                    "Student First Name",
+                    "Student Creation Date",
+                    "Student Number",
+                    "Grade",
+                    "Initial Assessment (B1) Date/Time",
+                    "B1 Diagnostic Profile",
+                    "B1 Proficiency Level",
+                    "B1 Prof Level Text Lexile Range",
+                    "Mean of B1 Prof Lvl Text Lexile Range",
+                    "B1 Comprehension Level",
+                    "B1 Comp Level Text Lexile Range",
+                    "Mean of B1 Comp Lvl Text Lexile Range",
+                    "B1 Vocabulary Level",
+                    "B1 Reading Rate (wpm)",
+                    "B1 Confidence",
+                    "B1 Self-Improvement Belief",
+                    "B1 Volume",
+                    "B1 Interest",
+                    "B1 Value",
+                    "B1 Comments",
+                    "Total Instructional Time (hrs)",
+                    "Reading (SR) Total Time (hrs)",
+                    "Date First SR Lesson",
+                    "Date Last SR Lesson",
+                    "SR Total Lessons",
+                    "SR Lessons 80%+",
+                    "# SR Lessons Fluency Focus",
+                    "# SR Lessons Comp Focus",
+                    "SR Start Level",
+                    "SR Start Level Text Lexile Range",
+                    "SR Current Level",
+                    "SR Current Level Text Lexile Range",
+                    "SR Level Gain",
+                    "SR Start Rate",
+                    "SR Current G-Rate",
+                    "SR G-Rate Gain",
+                    "SR Current I-Rate",
+                    "SR Last I-Rate 80%+",
+                    "SR I-Rate Gain",
+                    "SR Avg Comp %",
+                    "SR Avg Comp Current Lvl",
+                    "SR Words Read",
+                    "SR Words Read 80%+",
+                    "Combos Earned",
+                    "A1-Close Read %",
+                    "A1 # Correct Responses",
+                    "A1 # Total Responses",
+                    "A2-Main Idea/Theme %",
+                    "A2 # Correct Responses",
+                    "A2 # Total Responses",
+                    "A3-Interact Ideas %",
+                    "A3 # Correct Responses",
+                    "A3 # Total Responses",
+                    "A4-Use Language %",
+                    "A4 # Correct Responses",
+                    "A4 # Total Responses",
+                    "A5-Structure %",
+                    "A5 # Correct Responses",
+                    "A5 # Total Responses",
+                    "A6-Point of View %",
+                    "A6 # Correct Responses",
+                    "A6 # Total Responses",
+                    "A7-Image Scaffold %",
+                    "A7 # Correct Responses",
+                    "A7 # Total Responses",
+                    "A8-Reason/Rhet %",
+                    "A8 # Correct Responses",
+                    "A8 # Total Responses",
+                    "A9-Compare Read %",
+                    "A9 # Correct Responses",
+                    "A9 # Total Responses",
+                    "Last Student Login",
+                    "Use Goal (SR Lessons)",
+                    "Implementation End Date",
+                    "Projected End Use (SR Lessons)",
+                    "Visual Skills (iB) Total Time (hrs)",
+                    "iB Total Lessons",
+                    "iB Start Scan Rate",
+                    "iB Current Scan Rate",
+                    "iB Scan Rate Gain",
+                    "iB Start Flash Level",
+                    "iB Current Flash Level",
+                    "iB Flash Level Gain",
+                    "Vocabulary (RA) Total Time (hrs)",
+                    "RA Total Lessons",
+                    "RA Start Level",
+                    "RA Current Level",
+                    "RA Level Gain",
+                    "Mid-Year Assessment (B2) Date/Time",
+                    "SR Lessons Btwn B1 - B2",
+                    "B2 Diagnostic Profile",
+                    "B2 Proficiency Level",
+                    "B2 Prof Level Text Lexile Range",
+                    "Mean of B2 Prof Lvl Text Lexile Range",
+                    "B2 Comprehension Level",
+                    "B2 Comp Level Text Lexile Range",
+                    "Mean of B2 Comp Lvl Text Lexile Range",
+                    "B2 Vocabulary Level",
+                    "B2 Reading Rate (wpm)",
+                    "B2 Confidence",
+                    "B2 Self-Improvement Belief",
+                    "B2 Volume",
+                    "B2 Interest",
+                    "B2 Value",
+                    "B2 Comments",
+                    "End Assessment (B3) Date/Time",
+                    "SR Lessons Btwn B2 - B3",
+                    "SR Lessons Btwn B1 - B3",
+                    "B3 Diagnostic Profile",
+                    "B3 Proficiency Level",
+                    "B3 Prof Level Text Lexile Range",
+                    "Mean of B3 Prof Lvl Text Lexile Range",
+                    "B3 Comprehension Level",
+                    "B3 Comp Level Text Lexile Range",
+                    "Mean of B3 Comp Lvl Text Lexile Range",
+                    "B3 Vocabulary Level",
+                    "B3 Reading Rate (wpm)",
+                    "B3 Confidence",
+                    "B3 Self-Improvement Belief",
+                    "B3 Volume",
+                    "B3 Interest",
+                    "B3 Value",
+                    "B3 Comments",
+                    "Gender",
+                    "Race",
+                    "Ethnicity",
+                    "Lunch Status",
+                    "Special Ed",
+                    "EL/ELL",
+                    "Tier",
+                    "DI_AdminDate",
+                    "DI_LvlDesc_B1 Proficiency Level",
+                    "DI_LvlDesc_B2 Proficiency Level",
+                    "DI_LvlDesc_B3 Proficiency Level",
+                    "DI_SchoolYear",
+                    "DI_StudentAssessmentIdentifier",
+                    "DI_StudentId"
+                ],
+                "map": {
+                    "studentAssessmentIdentifier": {
+                        "Column": "DI_StudentAssessmentIdentifier"
+                    },
+                    "assessmentReference": {
+                        "assessmentIdentifier": "READINGPLUS-V1",
+                        "namespace": "uri://readingplus.com/Assessment"
+                    },
+                    "schoolYearTypeReference": {
+                        "schoolYear": {
+                            "Column": "DI_SchoolYear"
+                        }
+                    },
+                    "studentReference": {
+                        "studentUniqueId": {
+                            "Column": "Student Number"
+                        }
+                    },
+                    "administrationDate": {
+                        "Column": "DI_AdminDate"
+                    },
+                    "performanceLevels": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B3 Proficiency Level Description",
+                            "performanceLevelDescriptor": {
+                                "Column": "DI_LvlDesc_B3 Proficiency Level",
+                                "Lookup": "Reading-Plus_PerformanceLevel_LU"
+                            }
+                        }
+                    ],
+                    "scoreResults": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#End Assessment (B3) Date/Time",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "End Assessment (B3) Date/Time"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Lessons Btwn B2 - B3",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "SR Lessons Btwn B2 - B3"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Lessons Btwn B1 - B3",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "SR Lessons Btwn B1 - B3"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B3 Diagnostic Profile",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "B3 Diagnostic Profile"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B3 Proficiency Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "B3 Proficiency Level"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B3 Comprehension Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "B3 Comprehension Level"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B3 Vocabulary Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "B3 Vocabulary Level"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B3 Reading Rate (wpm)",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "B3 Reading Rate (wpm)"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B3 Self-Improvement Belief",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "B3 Self-Improvement Belief"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B3 Interest",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "B3 Interest"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B3 Value",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "B3 Value"
+                            }
+                        }
+                    ],
+                    "whenAssessedGradeLevelDescriptor": {
+                        "Column": "Grade",
+                        "Lookup": "Reading-Plus_GradeLevel_LU"
+                    }
+                },
+                "customFileProcessor": "Reading-Plus_CFP",
+                "attribute": "B3"
+            },
+            {
+                "name": "ReadingPlus-Map Other",
+                "resourcePath": "/ed-fi/studentAssessments",
+                "columnHeaders": [
+                    "Site Name",
+                    "Class Name",
+                    "Teacher(s)",
+                    "Student Last Name",
+                    "Student First Name",
+                    "Student Creation Date",
+                    "Student Number",
+                    "Grade",
+                    "Initial Assessment (B1) Date/Time",
+                    "B1 Diagnostic Profile",
+                    "B1 Proficiency Level",
+                    "B1 Prof Level Text Lexile Range",
+                    "Mean of B1 Prof Lvl Text Lexile Range",
+                    "B1 Comprehension Level",
+                    "B1 Comp Level Text Lexile Range",
+                    "Mean of B1 Comp Lvl Text Lexile Range",
+                    "B1 Vocabulary Level",
+                    "B1 Reading Rate (wpm)",
+                    "B1 Confidence",
+                    "B1 Self-Improvement Belief",
+                    "B1 Volume",
+                    "B1 Interest",
+                    "B1 Value",
+                    "B1 Comments",
+                    "Total Instructional Time (hrs)",
+                    "Reading (SR) Total Time (hrs)",
+                    "Date First SR Lesson",
+                    "Date Last SR Lesson",
+                    "SR Total Lessons",
+                    "SR Lessons 80%+",
+                    "# SR Lessons Fluency Focus",
+                    "# SR Lessons Comp Focus",
+                    "SR Start Level",
+                    "SR Start Level Text Lexile Range",
+                    "SR Current Level",
+                    "SR Current Level Text Lexile Range",
+                    "SR Level Gain",
+                    "SR Start Rate",
+                    "SR Current G-Rate",
+                    "SR G-Rate Gain",
+                    "SR Current I-Rate",
+                    "SR Last I-Rate 80%+",
+                    "SR I-Rate Gain",
+                    "SR Avg Comp %",
+                    "SR Avg Comp Current Lvl",
+                    "SR Words Read",
+                    "SR Words Read 80%+",
+                    "Combos Earned",
+                    "A1-Close Read %",
+                    "A1 # Correct Responses",
+                    "A1 # Total Responses",
+                    "A2-Main Idea/Theme %",
+                    "A2 # Correct Responses",
+                    "A2 # Total Responses",
+                    "A3-Interact Ideas %",
+                    "A3 # Correct Responses",
+                    "A3 # Total Responses",
+                    "A4-Use Language %",
+                    "A4 # Correct Responses",
+                    "A4 # Total Responses",
+                    "A5-Structure %",
+                    "A5 # Correct Responses",
+                    "A5 # Total Responses",
+                    "A6-Point of View %",
+                    "A6 # Correct Responses",
+                    "A6 # Total Responses",
+                    "A7-Image Scaffold %",
+                    "A7 # Correct Responses",
+                    "A7 # Total Responses",
+                    "A8-Reason/Rhet %",
+                    "A8 # Correct Responses",
+                    "A8 # Total Responses",
+                    "A9-Compare Read %",
+                    "A9 # Correct Responses",
+                    "A9 # Total Responses",
+                    "Last Student Login",
+                    "Use Goal (SR Lessons)",
+                    "Implementation End Date",
+                    "Projected End Use (SR Lessons)",
+                    "Visual Skills (iB) Total Time (hrs)",
+                    "iB Total Lessons",
+                    "iB Start Scan Rate",
+                    "iB Current Scan Rate",
+                    "iB Scan Rate Gain",
+                    "iB Start Flash Level",
+                    "iB Current Flash Level",
+                    "iB Flash Level Gain",
+                    "Vocabulary (RA) Total Time (hrs)",
+                    "RA Total Lessons",
+                    "RA Start Level",
+                    "RA Current Level",
+                    "RA Level Gain",
+                    "Mid-Year Assessment (B2) Date/Time",
+                    "SR Lessons Btwn B1 - B2",
+                    "B2 Diagnostic Profile",
+                    "B2 Proficiency Level",
+                    "B2 Prof Level Text Lexile Range",
+                    "Mean of B2 Prof Lvl Text Lexile Range",
+                    "B2 Comprehension Level",
+                    "B2 Comp Level Text Lexile Range",
+                    "Mean of B2 Comp Lvl Text Lexile Range",
+                    "B2 Vocabulary Level",
+                    "B2 Reading Rate (wpm)",
+                    "B2 Confidence",
+                    "B2 Self-Improvement Belief",
+                    "B2 Volume",
+                    "B2 Interest",
+                    "B2 Value",
+                    "B2 Comments",
+                    "End Assessment (B3) Date/Time",
+                    "SR Lessons Btwn B2 - B3",
+                    "SR Lessons Btwn B1 - B3",
+                    "B3 Diagnostic Profile",
+                    "B3 Proficiency Level",
+                    "B3 Prof Level Text Lexile Range",
+                    "Mean of B3 Prof Lvl Text Lexile Range",
+                    "B3 Comprehension Level",
+                    "B3 Comp Level Text Lexile Range",
+                    "Mean of B3 Comp Lvl Text Lexile Range",
+                    "B3 Vocabulary Level",
+                    "B3 Reading Rate (wpm)",
+                    "B3 Confidence",
+                    "B3 Self-Improvement Belief",
+                    "B3 Volume",
+                    "B3 Interest",
+                    "B3 Value",
+                    "B3 Comments",
+                    "Gender",
+                    "Race",
+                    "Ethnicity",
+                    "Lunch Status",
+                    "Special Ed",
+                    "EL/ELL",
+                    "Tier",
+                    "DI_AdminDate",
+                    "DI_LvlDesc_B1 Proficiency Level",
+                    "DI_LvlDesc_B2 Proficiency Level",
+                    "DI_LvlDesc_B3 Proficiency Level",
+                    "DI_SchoolYear",
+                    "DI_StudentAssessmentIdentifier",
+                    "DI_StudentId"
+                ],
+                "map": {
+                    "studentAssessmentIdentifier": {
+                        "Column": "DI_StudentAssessmentIdentifier"
+                    },
+                    "assessmentReference": {
+                        "assessmentIdentifier": "READINGPLUS-V1",
+                        "namespace": "uri://readingplus.com/Assessment"
+                    },
+                    "schoolYearTypeReference": {
+                        "schoolYear": {
+                            "Column": "DI_SchoolYear"
+                        }
+                    },
+                    "studentReference": {
+                        "studentUniqueId": {
+                            "Column": "Student Number"
+                        }
+                    },
+                    "administrationDate": {
+                        "Column": "DI_AdminDate"
+                    },
+                    "scoreResults": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Total Instructional Time (hrs)",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "Total Instructional Time (hrs)"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Reading (SR) Total Time (hrs)",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "Reading (SR) Total Time (hrs)"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Date First SR Lesson",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "Date First SR Lesson"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Date Last SR Lesson",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "Date Last SR Lesson"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Total Lessons",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "SR Total Lessons"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Lessons 80%+",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "SR Lessons 80%+"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Number SR Lessons Fluency Focus",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "# SR Lessons Fluency Focus"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Number SR Lessons Comp Focus",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "# SR Lessons Comp Focus"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Start Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "SR Start Level"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Current Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "SR Current Level"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Current Level Text Lexile Range",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "SR Current Level Text Lexile Range"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Level Gain",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "SR Level Gain"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Start Rate",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "SR Start Rate"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Current G-Rate",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "SR Current G-Rate"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR G-Rate Gain",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "SR G-Rate Gain"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Current I-Rate",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "SR Current I-Rate"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Last I-Rate 80%+",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "SR Last I-Rate 80%+"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR I-Rate Gain",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "SR I-Rate Gain"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Avg Comp %",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "SR Avg Comp %"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Avg Comp Current Lvl",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "SR Avg Comp Current Lvl"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Words Read",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "SR Words Read"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Words Read 80%+",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "SR Words Read 80%+"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Combos Earned",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "Combos Earned"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Visual Skills (iB) Total Time (hrs)",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "Visual Skills (iB) Total Time (hrs)"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#iB Total Lessons",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "iB Total Lessons"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#iB Start Scan Rate",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "iB Start Scan Rate"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#iB Current Scan Rate",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "iB Current Scan Rate"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#iB Scan Rate Gain",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "iB Scan Rate Gain"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#iB Start Flash Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "iB Start Flash Level"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#iB Current Flash Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "iB Current Flash Level"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#iB Flash Level Gain",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "iB Flash Level Gain"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Vocabulary (RA) Total Time (hrs)",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                            "result": {
+                                "Column": "Vocabulary (RA) Total Time (hrs)"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#RA Total Lessons",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "RA Total Lessons"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#RA Start Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "RA Start Level"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#RA Current Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "RA Current Level"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#RA Level Gain",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "RA Level Gain"
+                            }
+                        }
+                    ],
+                    "studentObjectiveAssessments": [
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "READINGPLUS-V1",
+                                "identificationCode": "READINGPLUS-V1-CLOSE-READ",
+                                "namespace": "uri://readingplus.com/Assessment"
+                            },
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Correct Responses",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "A1 # Correct Responses"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Total Responses",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "A1 # Total Responses"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                                    "result": {
+                                        "Column": "A1-Close Read %"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "READINGPLUS-V1",
+                                "identificationCode": "READINGPLUS-V1-MAIN-IDEA-THEMES",
+                                "namespace": "uri://readingplus.com/Assessment"
+                            },
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Correct Responses",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "A2 # Correct Responses"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Total Responses",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "A2 # Total Responses"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                                    "result": {
+                                        "Column": "A2-Main Idea/Theme %"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "READINGPLUS-V1",
+                                "identificationCode": "READINGPLUS-V1-INTERACTION-IDEAS",
+                                "namespace": "uri://readingplus.com/Assessment"
+                            },
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Correct Responses",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "A3 # Correct Responses"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Total Responses",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "A3 # Total Responses"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                                    "result": {
+                                        "Column": "A3-Interact Ideas %"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "READINGPLUS-V1",
+                                "identificationCode": "READINGPLUS-V1-USE-LANGUAGE",
+                                "namespace": "uri://readingplus.com/Assessment"
+                            },
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Correct Responses",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "A4 # Correct Responses"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Total Responses",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "A4 # Total Responses"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                                    "result": {
+                                        "Column": "A4-Use Language %"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "READINGPLUS-V1",
+                                "identificationCode": "READINGPLUS-V1-TEXT-STRUCTURE",
+                                "namespace": "uri://readingplus.com/Assessment"
+                            },
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Correct Responses",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "A5 # Correct Responses"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Total Responses",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "A5 # Total Responses"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                                    "result": {
+                                        "Column": "A5-Structure %"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "READINGPLUS-V1",
+                                "identificationCode": "READINGPLUS-V1-POINT-VIEW",
+                                "namespace": "uri://readingplus.com/Assessment"
+                            },
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Correct Responses",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "A6 # Correct Responses"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Total Responses",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "A6 # Total Responses"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                                    "result": {
+                                        "Column": "A6-Point of View %"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "READINGPLUS-V1",
+                                "identificationCode": "READINGPLUS-V1-IMAGE-SCAFF",
+                                "namespace": "uri://readingplus.com/Assessment"
+                            },
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Correct Responses",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "A7 # Correct Responses"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Total Responses",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "A7 # Total Responses"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                                    "result": {
+                                        "Column": "A7-Image Scaffold %"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "READINGPLUS-V1",
+                                "identificationCode": "READINGPLUS-V1-REASONING-RHET",
+                                "namespace": "uri://readingplus.com/Assessment"
+                            },
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Correct Responses",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "A8 # Correct Responses"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Total Responses",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "A8 # Total Responses"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                                    "result": {
+                                        "Column": "A8-Reason/Rhet %"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "READINGPLUS-V1",
+                                "identificationCode": "READINGPLUS-V1-COMPARATIVE-READ",
+                                "namespace": "uri://readingplus.com/Assessment"
+                            },
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Correct Responses",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "A9 # Correct Responses"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Total Responses",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "A9 # Total Responses"
+                                    }
+                                },
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal",
+                                    "result": {
+                                        "Column": "A9-Compare Read %"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "whenAssessedGradeLevelDescriptor": {
+                        "Column": "Grade",
+                        "Lookup": "Reading-Plus_GradeLevel_LU"
+                    }
+                },
+                "customFileProcessor": "Reading-Plus_CFP",
+                "attribute": "Other"
+            }
+        ],
+        "bootstraps": [
+            {
+                "name": "ReadingPlus-ARMD",
+                "resourcePath": "/ed-fi/assessmentReportingMethodDescriptors",
+                "data": [
+                    {
+                        "codeValue": "Correct Responses",
+                        "description": "Correct Responses",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Correct Responses"
+                    },
+                    {
+                        "codeValue": "Total Responses",
+                        "description": "Total Responses",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Total Responses"
+                    },
+                    {
+                        "codeValue": "Initial Assessment (B1) Date/Time",
+                        "description": "Initial Assessment (B1) Date/Time",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "(B1) Date/Time"
+                    },
+                    {
+                        "codeValue": "B1 Diagnostic Profile",
+                        "description": "B1 Diagnostic Profile",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B1 Diagnostic Profile"
+                    },
+                    {
+                        "codeValue": "B1 Proficiency Level",
+                        "description": "B1 Proficiency Level",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B1 Proficiency Level"
+                    },
+                    {
+                        "codeValue": "B1 Comprehension Level",
+                        "description": "B1 Comprehension Level",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B1 Comprehension Level"
+                    },
+                    {
+                        "codeValue": "B1 Vocabulary Level",
+                        "description": "B1 Vocabulary Level",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B1 Vocabulary Level"
+                    },
+                    {
+                        "codeValue": "B1 Reading Rate (wpm)",
+                        "description": "B1 Reading Rate (wpm)",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B1 Reading Rate (wpm)"
+                    },
+                    {
+                        "codeValue": "B1 Read Rate Percentile",
+                        "description": "B1 Read Rate Percentile",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B1 Read Rate Percentile"
+                    },
+                    {
+                        "codeValue": "B1 Self-Improvement Belief",
+                        "description": "B1 Self-Improvement Belief",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B1 Self-Improvement Belief"
+                    },
+                    {
+                        "codeValue": "B1 Interest",
+                        "description": "B1 Interest",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B1 Interest"
+                    },
+                    {
+                        "codeValue": "B1 Value",
+                        "description": "B1 Value",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B1 Value"
+                    },
+                    {
+                        "codeValue": "B1 Comments",
+                        "description": "B1 Comments",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B1 Comments"
+                    },
+                    {
+                        "codeValue": "Mid-Year Assessment (B2) Date/Time",
+                        "description": "Mid-Year Assessment (B2) Date/Time",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "(B2) Date/Time"
+                    },
+                    {
+                        "codeValue": "SR Lessons Btwn B1 - B2",
+                        "description": "SR Lessons Btwn B1 - B2",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "SR Lessons Btwn B1 - B2"
+                    },
+                    {
+                        "codeValue": "B2 Diagnostic Profile",
+                        "description": "B2 Diagnostic Profile",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B2 Diagnostic Profile"
+                    },
+                    {
+                        "codeValue": "B2 Proficiency Level",
+                        "description": "B2 Proficiency Level",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B2 Proficiency Level"
+                    },
+                    {
+                        "codeValue": "B2 Comprehension Level",
+                        "description": "B2 Comprehension Level",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B2 Comprehension Level"
+                    },
+                    {
+                        "codeValue": "B2 Vocabulary Level",
+                        "description": "B2 Vocabulary Level",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B2 Vocabulary Level"
+                    },
+                    {
+                        "codeValue": "B2 Reading Rate (wpm)",
+                        "description": "B2 Reading Rate (wpm)",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B2 Reading Rate (wpm)"
+                    },
+                    {
+                        "codeValue": "B2 Read Rate Percentile",
+                        "description": "B2 Read Rate Percentile",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B2 Read Rate Percentile"
+                    },
+                    {
+                        "codeValue": "B2 Self-Improvement Belief",
+                        "description": "B2 Self-Improvement Belief",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B2 Self-Improvement Belief"
+                    },
+                    {
+                        "codeValue": "B2 Interest",
+                        "description": "B2 Interest",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B2 Interest"
+                    },
+                    {
+                        "codeValue": "B2 Value",
+                        "description": "B2 Value",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B2 Value"
+                    },
+                    {
+                        "codeValue": "B2 Comments",
+                        "description": "B2 Comments",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B2 Comments"
+                    },
+                    {
+                        "codeValue": "End Assessment (B3) Date/Time",
+                        "description": "End Assessment (B3) Date/Time",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "(B3) Date/Time"
+                    },
+                    {
+                        "codeValue": "SR Lessons Btwn B2 - B3",
+                        "description": "SR Lessons Btwn B2 - B3",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "SR Lessons Btwn B2 - B3"
+                    },
+                    {
+                        "codeValue": "SR Lessons Btwn B1 - B3",
+                        "description": "SR Lessons Btwn B1 - B3",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "SR Lessons Btwn B1 - B3"
+                    },
+                    {
+                        "codeValue": "B3 Diagnostic Profile",
+                        "description": "B3 Diagnostic Profile",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B3 Diagnostic Profile"
+                    },
+                    {
+                        "codeValue": "B3 Proficiency Level",
+                        "description": "B3 Proficiency Level",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B3 Proficiency Level"
+                    },
+                    {
+                        "codeValue": "B3 Comprehension Level",
+                        "description": "B3 Comprehension Level",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B3 Comprehension Level"
+                    },
+                    {
+                        "codeValue": "B3 Vocabulary Level",
+                        "description": "B3 Vocabulary Level",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B3 Vocabulary Level"
+                    },
+                    {
+                        "codeValue": "B3 Reading Rate (wpm)",
+                        "description": "B3 Reading Rate (wpm)",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B3 Reading Rate (wpm)"
+                    },
+                    {
+                        "codeValue": "B3 Read Rate Percentile",
+                        "description": "B3 Read Rate Percentile",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B3 Read Rate Percentile"
+                    },
+                    {
+                        "codeValue": "B3 Self-Improvement Belief",
+                        "description": "B3 Self-Improvement Belief",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B3 Self-Improvement Belief"
+                    },
+                    {
+                        "codeValue": "B3 Interest",
+                        "description": "B3 Interest",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B3 Interest"
+                    },
+                    {
+                        "codeValue": "B3 Value",
+                        "description": "B3 Value",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B3 Value"
+                    },
+                    {
+                        "codeValue": "B3 Comments",
+                        "description": "B3 Comments",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B3 Comments"
+                    },
+                    {
+                        "codeValue": "Total Instructional Time (hrs)",
+                        "description": "Total Instructional Time (hrs)",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Total Instructional Time (hrs)"
+                    },
+                    {
+                        "codeValue": "Reading (SR) Total Time (hrs)",
+                        "description": "Reading (SR) Total Time (hrs)",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Reading (SR) Total Time (hrs)"
+                    },
+                    {
+                        "codeValue": "Date First SR Lesson",
+                        "description": "Date First SR Lesson",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Date First SR Lesson"
+                    },
+                    {
+                        "codeValue": "Date Last SR Lesson",
+                        "description": "Date Last SR Lesson",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Date Last SR Lesson"
+                    },
+                    {
+                        "codeValue": "SR Total Lessons",
+                        "description": "SR Total Lessons",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "SR Total Lessons"
+                    },
+                    {
+                        "codeValue": "SR Lessons 80%+",
+                        "description": "SR Lessons 80%+",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "SR Lessons 80%+"
+                    },
+                    {
+                        "codeValue": "Number SR Lessons Fluency Focus",
+                        "description": "Number SR Lessons Fluency Focus",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Number SR Lessons Fluency Focus"
+                    },
+                    {
+                        "codeValue": "Number SR Lessons Comp Focus",
+                        "description": "Number SR Lessons Comp Focus",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Number SR Lessons Comp Focus"
+                    },
+                    {
+                        "codeValue": "SR Start Level",
+                        "description": "SR Start Level",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "SR Start Level"
+                    },
+                    {
+                        "codeValue": "SR Current Level",
+                        "description": "SR Current Level",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "SR Current Level"
+                    },
+                    {
+                        "codeValue": "SR Current Level Text Lexile Range",
+                        "description": "SR Current Level Text Lexile Range",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "SR Current Level Text Lexile Range"
+                    },
+                    {
+                        "codeValue": "SR Level Gain",
+                        "description": "SR Level Gain",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "SR Level Gain"
+                    },
+                    {
+                        "codeValue": "SR Start Rate",
+                        "description": "SR Start Rate",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "SR Start Rate"
+                    },
+                    {
+                        "codeValue": "SR Current G-Rate",
+                        "description": "SR Current G-Rate",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "SR Current G-Rate"
+                    },
+                    {
+                        "codeValue": "SR G-Rate Gain",
+                        "description": "SR G-Rate Gain",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "SR G-Rate Gain"
+                    },
+                    {
+                        "codeValue": "SR Current I-Rate",
+                        "description": "SR Current I-Rate",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "SR Current I-Rate"
+                    },
+                    {
+                        "codeValue": "SR Last I-Rate 80%+",
+                        "description": "SR Last I-Rate 80%+",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "SR Last I-Rate 80%+"
+                    },
+                    {
+                        "codeValue": "SR I-Rate Gain",
+                        "description": "SR I-Rate Gain",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "SR I-Rate Gain"
+                    },
+                    {
+                        "codeValue": "SR Avg Comp %",
+                        "description": "SR Avg Comp %",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "SR Avg Comp %"
+                    },
+                    {
+                        "codeValue": "SR Avg Comp Current Lvl",
+                        "description": "SR Avg Comp Current Lvl",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "SR Avg Comp Current Lvl"
+                    },
+                    {
+                        "codeValue": "SR Words Read",
+                        "description": "SR Words Read",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "SR Words Read"
+                    },
+                    {
+                        "codeValue": "SR Words Read 80%+",
+                        "description": "SR Words Read 80%+",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "SR Words Read 80%+"
+                    },
+                    {
+                        "codeValue": "Combos Earned",
+                        "description": "Combos Earned",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Combos Earned"
+                    },
+                    {
+                        "codeValue": "Visual Skills (iB) Total Time (hrs)",
+                        "description": "Visual Skills (iB) Total Time (hrs)",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Visual Skills (iB) Total Time (hrs)"
+                    },
+                    {
+                        "codeValue": "iB Total Lessons",
+                        "description": "iB Total Lessons",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "iB Total Lessons"
+                    },
+                    {
+                        "codeValue": "iB Start Scan Rate",
+                        "description": "iB Start Scan Rate",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "iB Start Scan Rate"
+                    },
+                    {
+                        "codeValue": "iB Current Scan Rate",
+                        "description": "iB Current Scan Rate",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "iB Current Scan Rate"
+                    },
+                    {
+                        "codeValue": "iB Scan Rate Gain",
+                        "description": "iB Scan Rate Gain",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "iB Scan Rate Gain"
+                    },
+                    {
+                        "codeValue": "iB Start Flash Level",
+                        "description": "iB Start Flash Level",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "iB Start Flash Level"
+                    },
+                    {
+                        "codeValue": "iB Current Flash Level",
+                        "description": "iB Current Flash Level",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "iB Current Flash Level"
+                    },
+                    {
+                        "codeValue": "iB Flash Level Gain",
+                        "description": "iB Flash Level Gain",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "iB Flash Level Gain"
+                    },
+                    {
+                        "codeValue": "Vocabulary (RA) Total Time (hrs)",
+                        "description": "Vocabulary (RA) Total Time (hrs)",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Vocabulary (RA) Total Time (hrs)"
+                    },
+                    {
+                        "codeValue": "RA Total Lessons",
+                        "description": "RA Total Lessons",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "RA Total Lessons"
+                    },
+                    {
+                        "codeValue": "RA Start Level",
+                        "description": "RA Start Level",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "RA Start Level"
+                    },
+                    {
+                        "codeValue": "RA Current Level",
+                        "description": "RA Current Level",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "RA Current Level"
+                    },
+                    {
+                        "codeValue": "RA Level Gain",
+                        "description": "RA Level Gain",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "RA Level Gain"
+                    },
+                    {
+                        "codeValue": "B1 Proficiency Level Description",
+                        "description": "B1 Proficiency Level Description",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B1 Proficiency Level Description"
+                    },
+                    {
+                        "codeValue": "B2 Proficiency Level Description",
+                        "description": "B2 Proficiency Level Description",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B2 Proficiency Level Description"
+                    },
+                    {
+                        "codeValue": "B3 Proficiency Level Description",
+                        "description": "B3 Proficiency Level Description",
+                        "namespace": "uri://readingplus.com/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "B3 Proficiency Level Description"
+                    }
+                ]
+            },
+            {
+                "name": "ReadingPlus-Assessment",
+                "resourcePath": "/ed-fi/assessments",
+                "data": {
+                    "assessmentIdentifier": "READINGPLUS-V1",
+                    "assessmentTitle": "Reading Plus",
+                    "namespace": "uri://readingplus.com/Assessment",
+                    "assessedGradeLevels": [
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Kindergarten"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#First grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Second grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fourth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fifth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Sixth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Seventh grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eighth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Ninth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Tenth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#No grade level"
+                        }
+                    ],
+                    "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#Reading readiness test",
+                    "academicSubjects": [
+                        {
+                            "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Reading"
+                        }
+                    ],
+                    "scores": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Initial Assessment (B1) Date/Time",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B1 Diagnostic Profile",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B1 Proficiency Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B1 Comprehension Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B1 Vocabulary Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B1 Reading Rate (wpm)",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B1 Self-Improvement Belief",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B1 Interest",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B1 Value",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Mid-Year Assessment (B2) Date/Time",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Lessons Btwn B1 - B2",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B2 Diagnostic Profile",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B2 Proficiency Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B2 Comprehension Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B2 Vocabulary Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B2 Reading Rate (wpm)",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B2 Self-Improvement Belief",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B2 Interest",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B2 Value",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#End Assessment (B3) Date/Time",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Lessons Btwn B2 - B3",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Lessons Btwn B1 - B3",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B3 Diagnostic Profile",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B3 Proficiency Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B3 Comprehension Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B3 Vocabulary Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B3 Reading Rate (wpm)",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B3 Self-Improvement Belief",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B3 Interest",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B3 Value",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Total Instructional Time (hrs)",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Reading (SR) Total Time (hrs)",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Date First SR Lesson",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Date Last SR Lesson",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Total Lessons",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Lessons 80%+",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Number SR Lessons Fluency Focus",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Number SR Lessons Comp Focus",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Start Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Current Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Current Level Text Lexile Range",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Level Gain",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Start Rate",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Current G-Rate",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR G-Rate Gain",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Current I-Rate",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Last I-Rate 80%+",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR I-Rate Gain",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Avg Comp %",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Avg Comp Current Lvl",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Words Read",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#SR Words Read 80%+",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Combos Earned",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Visual Skills (iB) Total Time (hrs)",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#iB Total Lessons",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#iB Start Scan Rate",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#iB Current Scan Rate",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#iB Scan Rate Gain",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#iB Start Flash Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#iB Current Flash Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#iB Flash Level Gain",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Vocabulary (RA) Total Time (hrs)",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#RA Total Lessons",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#RA Start Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#RA Current Level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#RA Level Gain",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        }
+                    ],
+                    "performanceLevels": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B1 Proficiency Level Description",
+                            "performanceLevelDescriptor": "uri://readingplus.com/PerformanceLevelDescriptor#Below grade level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B1 Proficiency Level Description",
+                            "performanceLevelDescriptor": "uri://readingplus.com/PerformanceLevelDescriptor#At grade level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B1 Proficiency Level Description",
+                            "performanceLevelDescriptor": "uri://readingplus.com/PerformanceLevelDescriptor#Above grade level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B2 Proficiency Level Description",
+                            "performanceLevelDescriptor": "uri://readingplus.com/PerformanceLevelDescriptor#Below grade level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B2 Proficiency Level Description",
+                            "performanceLevelDescriptor": "uri://readingplus.com/PerformanceLevelDescriptor#At grade level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B2 Proficiency Level Description",
+                            "performanceLevelDescriptor": "uri://readingplus.com/PerformanceLevelDescriptor#Above grade level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B3 Proficiency Level Description",
+                            "performanceLevelDescriptor": "uri://readingplus.com/PerformanceLevelDescriptor#Below grade level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B3 Proficiency Level Description",
+                            "performanceLevelDescriptor": "uri://readingplus.com/PerformanceLevelDescriptor#At grade level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#B3 Proficiency Level Description",
+                            "performanceLevelDescriptor": "uri://readingplus.com/PerformanceLevelDescriptor#Above grade level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "ReadingPlus-ObjectiveAssessment",
+                "resourcePath": "/ed-fi/objectiveAssessments",
+                "data": [
+                    {
+                        "identificationCode": "READINGPLUS-V1-CLOSE-READ",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "READINGPLUS-V1",
+                            "namespace": "uri://readingplus.com/Assessment"
+                        },
+                        "description": "Close Reading",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Correct Responses",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Total Responses",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "READINGPLUS-V1-MAIN-IDEA-THEMES",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "READINGPLUS-V1",
+                            "namespace": "uri://readingplus.com/Assessment"
+                        },
+                        "description": "Main Idea & Themes",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Correct Responses",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Total Responses",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "READINGPLUS-V1-INTERACTION-IDEAS",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "READINGPLUS-V1",
+                            "namespace": "uri://readingplus.com/Assessment"
+                        },
+                        "description": "Interaction of Ideas",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Correct Responses",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Total Responses",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "READINGPLUS-V1-USE-LANGUAGE",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "READINGPLUS-V1",
+                            "namespace": "uri://readingplus.com/Assessment"
+                        },
+                        "description": "Use of Language",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Correct Responses",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Total Responses",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "READINGPLUS-V1-TEXT-STRUCTURE",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "READINGPLUS-V1",
+                            "namespace": "uri://readingplus.com/Assessment"
+                        },
+                        "description": "Text Structure",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Correct Responses",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Total Responses",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "READINGPLUS-V1-POINT-VIEW",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "READINGPLUS-V1",
+                            "namespace": "uri://readingplus.com/Assessment"
+                        },
+                        "description": "Point of View",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Correct Responses",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Total Responses",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "READINGPLUS-V1-IMAGE-SCAFF",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "READINGPLUS-V1",
+                            "namespace": "uri://readingplus.com/Assessment"
+                        },
+                        "description": "Image Scaffolds",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Correct Responses",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Total Responses",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "READINGPLUS-V1-REASONING-RHET",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "READINGPLUS-V1",
+                            "namespace": "uri://readingplus.com/Assessment"
+                        },
+                        "description": "Reasoning and Rhetoric",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Correct Responses",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Total Responses",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "READINGPLUS-V1-COMPARATIVE-READ",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "READINGPLUS-V1",
+                            "namespace": "uri://readingplus.com/Assessment"
+                        },
+                        "description": "Comparative Reading",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Correct Responses",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://readingplus.com/AssessmentReportingMethodDescriptor#Total Responses",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Percentile",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Decimal"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "ReadingPlus-PLD",
+                "resourcePath": "/ed-fi/performanceLevelDescriptors",
+                "data": [
+                    {
+                        "codeValue": "Below grade level",
+                        "description": "Below grade level",
+                        "namespace": "uri://readingplus.com/PerformanceLevelDescriptor",
+                        "shortDescription": "Below grade level"
+                    },
+                    {
+                        "codeValue": "At grade level",
+                        "description": "At grade level",
+                        "namespace": "uri://readingplus.com/PerformanceLevelDescriptor",
+                        "shortDescription": "At grade level"
+                    },
+                    {
+                        "codeValue": "Above grade level",
+                        "description": "Above grade level",
+                        "namespace": "uri://readingplus.com/PerformanceLevelDescriptor",
+                        "shortDescription": "Above grade level"
+                    }
+                ]
+            }
+        ],
+        "lookups": [
+            {
+                "sourceTable": "Reading-Plus_GradeLevel_LU",
+                "key": "0",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Kindergarten"
+            },
+            {
+                "sourceTable": "Reading-Plus_GradeLevel_LU",
+                "key": "1",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#First grade"
+            },
+            {
+                "sourceTable": "Reading-Plus_GradeLevel_LU",
+                "key": "10",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Tenth grade"
+            },
+            {
+                "sourceTable": "Reading-Plus_GradeLevel_LU",
+                "key": "11",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade"
+            },
+            {
+                "sourceTable": "Reading-Plus_GradeLevel_LU",
+                "key": "12",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade"
+            },
+            {
+                "sourceTable": "Reading-Plus_GradeLevel_LU",
+                "key": "2",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Second grade"
+            },
+            {
+                "sourceTable": "Reading-Plus_GradeLevel_LU",
+                "key": "3",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Third grade"
+            },
+            {
+                "sourceTable": "Reading-Plus_GradeLevel_LU",
+                "key": "4",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Fourth grade"
+            },
+            {
+                "sourceTable": "Reading-Plus_GradeLevel_LU",
+                "key": "5",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Fifth grade"
+            },
+            {
+                "sourceTable": "Reading-Plus_GradeLevel_LU",
+                "key": "6",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Sixth grade"
+            },
+            {
+                "sourceTable": "Reading-Plus_GradeLevel_LU",
+                "key": "7",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Seventh grade"
+            },
+            {
+                "sourceTable": "Reading-Plus_GradeLevel_LU",
+                "key": "8",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Eighth grade"
+            },
+            {
+                "sourceTable": "Reading-Plus_GradeLevel_LU",
+                "key": "9",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Ninth grade"
+            },
+            {
+                "sourceTable": "Reading-Plus_PerformanceLevel_LU",
+                "key": "above",
+                "value": "uri://readingplus.com/PerformanceLevelDescriptor#Above grade level"
+            },
+            {
+                "sourceTable": "Reading-Plus_PerformanceLevel_LU",
+                "key": "atLevel",
+                "value": "uri://readingplus.com/PerformanceLevelDescriptor#At grade level"
+            },
+            {
+                "sourceTable": "Reading-Plus_PerformanceLevel_LU",
+                "key": "below",
+                "value": "uri://readingplus.com/PerformanceLevelDescriptor#Below grade level"
+            }
+        ],
+        "supplementalInformation": null,
+        "preprocessors": [
+            {
+                "name": "Reading-Plus_CFP",
+                "scriptContent": "[CmdletBinding()]\r\nParam(\r\n  [parameter(Mandatory = $true, ValueFromPipeline = $true)][string]$line\r\n)\r\n\r\n######################################################################################\r\n### Ed-Fi ODS v3+\r\n### Assessment: ReadingPlus_v1_ODSv32\r\n### Script: Custom File Processor\r\n######################################################################################\r\n\r\nbegin {\r\n  # Set up the statistics\r\n  # validations: Hashtable of HashTables with properties for each screening period, and each screening period will have statistics like number of records not loaded, and detailed info\r\n  <#\r\n    #>\r\n  $global:statistics = @{\r\n    \"rowsProcessed\" = 0\r\n    \"rowsLoaded\"    = 0\r\n    \"validations\"   = @{}\r\n  }\r\n\r\n  # Prepare some other variables\r\n  $currentLineNumber = 0\r\n  $global:inputHeaders = @()\r\n  $global:headersLookup = @{}\r\n\r\n\r\n  #set api version\r\n  $global:apiVersion = $DataImport.ApiVersion\r\n\r\n  ## ODS functions\r\n    \r\n  function Get-StudentUniqueIdType ($apiVersion) {\r\n    <#\r\n            .SYNOPSIS\r\n                Determines whether the value in Student.studentUniqueId is a District or State ID value. \r\n    \r\n            .DESCRIPTION\r\n                Determining the studentUniqueId value type is done by querying the /students endpoint for 10 \r\n                students and then checking either the values in the identificationCodes[] array on either the\r\n                Student record (v2.5+ API) or the studentEducationOrganizationAssociation record (v3.x API) to\r\n                see whether the District or State ID matches the StudentUniqueId value. 10 students are checked \r\n                to make sure there aren't any discrepancies.\r\n    \r\n                NOTE: Only \"District\" and \"State\" Student ID types are used in this check; all others are ignored!\r\n    \r\n            .PARAMETER ApiVersion\r\n                The version number of the API as set in $DataImport.ApiVersion. For whatever reason the $DataImport\r\n                object is not directly addressable from within a module.\r\n    \r\n            .OUTPUTS\r\n                A string representing the type of ID stored in studentUniqueId. This value  will be either\r\n                'District' or 'State'.\r\n    \r\n                Throws an error on any failure to connect to or query the API or if one or more students of\r\n                the 10 checked have a different ID value type (e.g. one has 'District' while the rest have \r\n                'State'). Also throws an error if a match can't be made on any of the 10 students checked.\r\n    \r\n            .EXAMPLE\r\n                $studentUniqueIdType = Get-StudentUniqueIdType -apiVersion $DataImport.ApiVersion\r\n        #>\r\n    \r\n    # Do sanity checks on parameters\r\n    if (!$apiVersion) { throw \"The apiVersion parameter must be set to a valid value.\" }\r\n    \r\n    # Processing depends on API version\r\n    # Only valid for apis version 3 and above\r\n        \r\n    if ($apiVersion.StartsWith(\"3.\") -or $apiVersion.StartsWith(\"5.\") -or $apiVersion.StartsWith(\"6.\")) {\r\n      # Query for 10 students (whatever comes back first - and yes, this could be flaky)\r\n      try {\r\n        $jsonResponse = Invoke-OdsApiRequest -RequestPath \"/ed-fi/studentEducationOrganizationAssociations?limit=10\"\r\n        $seoas = ConvertFrom-Json $jsonResponse\r\n      }\r\n      catch {\r\n        throw $_\r\n      }\r\n      if ($seoas.Count -eq 0) { throw \"Unable to determine StudentUniqueId type as no StudentEducationOrganizationAssociations were found in the ODS.\" }\r\n        \r\n      # Iterate the list of students checking studentUniqueId against the ID code types. These should all be the same but you know student data...\r\n      $ret = \"\"\r\n      foreach ($seoa in $seoas) {\r\n        foreach ($idCode in $seoa.studentIdentificationCodes) {\r\n          if ($seoa.studentReference.studentUniqueId -eq $idCode.identificationCode) {\r\n            $codeType = $idCode.studentIdentificationSystemDescriptor.Split(\"#\")\r\n            $codeType = $codeType[1]\r\n            if ($codeType -in @(\"District\", \"State\")) {\r\n              if ($ret -eq \"\") { $ret = $codeType }\r\n              elseif ($codeType -ne $ret) { \r\n                throw \"Unable to determine studentUniqueId type as StudentEducationOrganizationAssociations have been found with both District and State ID values in studentUniqueId\" \r\n              }\r\n            }\r\n          }\r\n        }\r\n      }\r\n        \r\n      # If we got here then all 10 students had the same type of studentUniqueId value, so return that type\r\n      return $ret\r\n    }\r\n    else {\r\n      throw \"Attempt to connect to a version $($apiVersion) API, which is unsupported.\"\r\n    }\r\n        \r\n  }\r\n\r\n  function Get-StudentsIdMap ($apiVersion, $studentIdTypeCode) {\r\n    <#\r\n        .SYNOPSIS\r\n            Load from ODS studentId mapping from a given studentId type to its corresponding UniqueStudentId. $studentIdTypeCode valid values 'District','State'\r\n\r\n        .DESCRIPTION\r\n            Loads StudentUniqueId mapped to a passed studentId type from the ODS. \r\n            This data can then be used to look up a StudentUniqueId value by a specific studentIdType.\r\n\r\n        .PARAMETER ApiVersion\r\n            The version number of the API as set in $DataImport.ApiVersion. For whatever reason the $DataImport\r\n            object is not directly addressable from within a module.\r\n\r\n        .PARAMETER StudentIdTypeCode\r\n            The studentId Type that needs to be mapped to StudentUniqueId.\r\n\r\n        .OUTPUTS\r\n            A complex HashMap of values that you can treat as an object. The format is:\r\n            - StudentIdMap: Hashmap where keys are the desired studentIdType IdentificationCode value and the value is the StudentUniqueId from ODS\r\n                - Student Records (Key: StudentIdType IdentificationCode from ODS; Value: StudentUniqueId\r\n            \r\n            Throws an error on any failure to connect to or query the API or if one or more students of\r\n            the 10 checked have a different ID value type (e.g. one has 'District' while the rest have \r\n            'State')\r\n\r\n        .EXAMPLE\r\n            $students = Get-StudentsIdMap -apiVersion $DataImport.ApiVersion -studentIdTypeCode \"State\"\r\n    #>\r\n\r\n    # Set up some basic varialbes\r\n    $ret = @{\r\n      \"StudentIdMap\" = @{}\r\n      # \"DuplicateStudents\"         = @()\r\n      # \"NoAdditionalIdValuesFound\" = 0\r\n    }\r\n    $continue = $true\r\n    $offset = 0\r\n    $limit = 100\r\n\r\n    # Do sanity checks on parameters\r\n    if (!$apiVersion) { throw \"The apiVersion parameter must be set to a valid value.\" }\r\n\r\n    # Processing depends on the API version\r\n    if ($apiVersion.StartsWith(\"3.\") -or $apiVersion.StartsWith(\"5.\") -or $apiVersion.StartsWith(\"6.\")) {\r\n      try {\r\n        $start = Get-Date\r\n        $progress = (Get-Date).AddSeconds($global:REPORT_PROGRESS_FREQ_IN_SECONDS)\r\n        # Load the additional ID values\r\n        $continue = $true\r\n        $offset = 0\r\n        while ($continue) {\r\n          $response = Invoke-OdsApiRequest -RequestPath \"/ed-fi/studentEducationOrganizationAssociations?limit=$limit&offset=$offset\"\r\n          $students = ConvertFrom-Json $response\r\n          if ($students.Count -gt 0) {\r\n            foreach ($student in $students) {\r\n              $studentUniqueId = $student.studentReference.studentUniqueId\r\n              foreach ($idCode in $student.studentIdentificationCodes) {\r\n                                \r\n                if ($idCode.studentIdentificationSystemDescriptor.Contains($studentIdTypeCode)) { \r\n                  $ret.StudentIdMap[$idCode.identificationCode] = $studentUniqueId \r\n                  # If found stop loop\r\n                  break\r\n                }\r\n              }\r\n            }\r\n          }\r\n          else {\r\n            $continue = $false\r\n          }\r\n          $offset += $limit\r\n          # report progress, takes long to pull from api , show progress so user does not think process is not doing anything\r\n          if ((Get-Date) -gt $progress) {\r\n            $progress = (Get-Date).AddSeconds($global:REPORT_PROGRESS_FREQ_IN_SECONDS)\r\n            $duration = NEW-TIMESPAN $start $(Get-Date)\r\n            Write-Information \"loading students ... duration $($duration.toString(\"hh\\:mm\\:ss\")) ($offset) stds)\"\r\n          }\r\n        }\r\n        \r\n        # Return the data\r\n        return $ret\r\n      }\r\n      catch {\r\n        throw $_\r\n      }\r\n    }\r\n    else {\r\n      throw \"Attempt to connect to a version $($apiVersion) API, which is unsupported.\"\r\n    }\r\n\r\n  }\r\n\r\n  #Create list Student Id  lookup\r\n  function Get-StudentIdLookupNeeded ($studentIdType){\r\n         Write-Information \"$studentIdType\"\r\n        # Get the studentUniqueIdType\r\n        Write-Information \"Checking StudentUniqueIdType...\"\r\n        \r\n        $global:studentUniqueIdType = Get-AgentCacheItem -Key \"StudentUniqueIdType\"\r\n        \r\n        if (!$global:studentUniqueIdType) {\r\n            try {\r\n                $global:studentUniqueIdType = Get-StudentUniqueIdType -apiVersion $apiVersion\r\n                New-AgentCacheItem -Key \"StudentUniqueIdType\" -Value $global:studentUniqueIdType\r\n                if ($global:studentUniqueIdType) {\r\n                    Write-Information \"StudentUniqueId Type: $($global:studentUniqueIdType)\"\r\n                }  \r\n            }\r\n            catch {\r\n                Write-Error \"Failed to determine studentUniqueId type. Error returned is '$($_.Exception.Message)'\"\r\n                throw \"Fatal error while running Begin section of Preprocessor.\"\r\n            }\r\n        }\r\n\r\n        $global:needStudentIdLookup = $false\r\n        # Only if we are able to find studentIdType in ODS\r\n        if ($studentUniqueIdType) {\r\n            # Check whether student id in ODS matches the studentId in the assessment file.\r\n            if ($studentIdType -ne $studentUniqueIdType) {\r\n                $global:needStudentIdLookup = $true\r\n\r\n                # Only load students if IDs do not match(file StudentId vs ODS UniqueStudentId)\r\n                # Load the list of students\r\n                Write-Information \"Loading list of studentId mappings ...\"\r\n                $STUDENT_ID_MAPPING_CACHE_KEY = \"StudentsIdMap\"\r\n                $global:studentsIdMap = Get-AgentCacheItem -Key $STUDENT_ID_MAPPING_CACHE_KEY\r\n                if (!$global:studentsIdMap) {\r\n                    try {\r\n                        $s = Get-StudentsIdMap -apiVersion $apiVersion -studentIdTypeCode $studentIdType\r\n                        Write-Information \"Loaded $($s.StudentIdMap.Count) StudentId mapping records from ODS.\"\r\n                        $global:studentsIdMap = $s.StudentIdMap\r\n                        New-AgentCacheItem -Key $STUDENT_ID_MAPPING_CACHE_KEY -Value $global:studentsIdMap\r\n                    }\r\n                    catch {\r\n                        Write-Error \"Failed to load list of students from the ODS> Error returned is '$($_.Exception.Message)'\"\r\n                        throw \"Fatal error while running Begin section of Preprocessor.\"\r\n                    }\r\n                    if ($global:studentsIdMap.Count -eq 0) {\r\n                        throw \"StudentId from file does not match ODS student id and we were not able to load id mapping from ODS(relation from ODS UniqueId to studentId in file).\"\r\n                    }\r\n                }\r\n            }\r\n        }\r\n        else {\r\n            Write-Warning \"Unable to find StudentId Type. Script will proceed and use student identifier as it comes in assessment file.\"\r\n        }\r\n        return $needStudentIdLookup\r\n  }\r\n\r\n  ## Helper functions  \r\n\r\n  # Get a parsed record in Hashtable where properties are the headers(used for CSV data only)\r\n  function Get-ParsedRecord($headers, $line) {\r\n    # Deal with double-quote wrappers and the fact that fields may have embedded commas\r\n    # NOTE: This is vastly stupid, but we can't run Regex in ConstrainedLanguage mode so it is what it is.\r\n    if ($line.Contains('\",\"') -or $line.Contains(',\"') -or $line.Contains('\",')) {\r\n      $cleanLine = $line\r\n      $inQuote = $false\r\n      for ($i = 0; $i -le $cleanLine.length; $i++) {\r\n        if ($cleanLine[$i] -eq '\"') {\r\n          $inQuote = !$inQuote\r\n        }\r\n        else {\r\n          if ($cleanLine[$i] -eq \",\" -and $inQuote -eq $false) {\r\n            $cleanLine = $cleanLine.Substring(0, $i) + \"^\" + $cleanLine.Substring($i + 1)\r\n          }\r\n        }\r\n      }\r\n      $cleanLine = $cleanLine.Replace(\",\", \"\")\r\n      $fields = $cleanLine.split(\"^\")\r\n    }\r\n    else {\r\n      $fields = $line.split(\",\")\r\n    }\r\n    $ret = @{}\r\n    for ($i = 0; $i -lt $fields.Length; $i++) {\r\n      $ret.Add($headers[$i], ($fields[$i].Replace('\"', ''))) | Out-Null\r\n    }\r\n    return $ret\r\n  }\r\n\r\n    # Get a parsed csv line in an array of values (used for CSV data only)\r\n    function Get-ParsedRecordArray($line, $delimiter = \",\") {\r\n        # Deal with double-quote wrappers and the fact that fields may have embedded commas\r\n        # NOTE: This is vastly stupid, but we can't run Regex in ConstrainedLanguage mode so it is what it is.\r\n        if ($line.Contains('\"{0}\"' -f $delimiter ) -or $line.Contains('{0}\"' -f $delimiter) -or $line.Contains('\"{0}' -f $delimiter)) {\r\n            $cleanLine = $line\r\n            $inQuote = $false\r\n            for ($i = 0; $i -le $cleanLine.length; $i++) {\r\n                if ($cleanLine[$i] -eq '\"') {\r\n                    $inQuote = !$inQuote\r\n                }\r\n                else {\r\n                    if ($cleanLine[$i] -eq $delimiter -and $inQuote -eq $false) {\r\n                        $cleanLine = $cleanLine.Substring(0, $i) + \"^\" + $cleanLine.Substring($i + 1)\r\n                    }\r\n                }\r\n            }\r\n            $cleanLine = $cleanLine.Replace($delimiter, \"\")\r\n            $fields = $cleanLine.split(\"^\")\r\n        }\r\n        else {\r\n            $fields = $line.split($delimiter)\r\n        }\r\n        $ret = @()\r\n        for ($i = 0; $i -lt $fields.Length; $i++) {\r\n            $ret += $fields[$i].Replace('\"', '')\r\n        }\r\n        return $ret\r\n    }\r\n\r\n  # Parse Date from string\r\n  function Get-ParsedDate ($date, $inputFormat, $outputFormat = $null) {\r\n    <# \r\n                .SYNOPSIS\r\n                    Parse a date string and returns it in the correct format.\r\n        \r\n                .PARAMETER date (required)\r\n                    The date string to parse\r\n        \r\n                .PARAMETER inputFormat (required)\r\n                    The expected format of the incoming date string\r\n        \r\n                .PARAMETER outputFormat (optional)\r\n                    The desired format of the retured date string\r\n        \r\n                .OUTPUTS\r\n                    If no outputFormat is provided then a Date object is returned\r\n        \r\n                    If outputFormat is provided then a formatted string is returned\r\n        \r\n                    If parsing fails for any reason then $null is returned\r\n            #>\r\n        \r\n    try {\r\n      $d = $([datetime]::ParseExact($date, $inputFormat, $null))\r\n      if ($outputFormat) {\r\n        $d = Get-Date -Date $d -Format $outputFormat\r\n      }\r\n      return $d\r\n    }\r\n    catch {\r\n      return $null\r\n    }\r\n  }\r\n\r\n  # Add record to statistics indicating a record was not processed becuase of a validation error\r\n  function Get-StudentODSId($fileStudentId) {\r\n    if ($global:needStudentIdLookup) {\r\n      return $global:studentsIdMap[$fileStudentId]\r\n    }\r\n    else {\r\n      # StudentId matches ODS\r\n      return $fileStudentId\r\n    }\r\n  }\r\n\r\n  # Convert an array list of data into a CSV line for output\r\n  function Get-CSVLine($inputData) {\r\n    $ret = \"\"\r\n    foreach ($cell in $inputData) {\r\n      if ($ret -ne \"\") { $ret += \",\" }\r\n      $ret += ('\"' + $cell + '\"')\r\n    }\r\n    return $ret\r\n  }\r\n  function Get-Floor($inputData) {\r\n    $ret= $null\r\n    $res= $inputData -as [decimal]\r\n    $div= $res%1\r\n\r\n    if($div -ge 0.5){\r\n      $ret=$inputData - $div -as [int]\r\n    }\r\n    else {\r\n          $ret = $inputData -as [int]\r\n          }\r\n    return $ret\r\n  }\r\n\r\n\r\n\r\n\r\n  ### Assessment fields\r\n\r\n  # Type of StudentId that will be used from assessment file to match student in ODS\r\n  # Valid values 'District','State'\r\n  $studentIdType = \"District\" \r\n\r\n  $global:fileColumnDelimiter = \",\"    \r\n    \r\n  #Create studentsIdMap \r\n  $needStudentIdLookup =  Get-StudentIdLookupNeeded($studentIdType)\r\n\r\n\r\n    #Value perfLevel_lookup\r\n    #prof levels\r\n    $src_columnCollection_perfLevel = \"B1 Proficiency Level\",\r\n    \"B2 Proficiency Level\", \r\n    \"B3 Proficiency Level\"\r\n\r\n    $AT_LEVEL = 'atLevel'\r\n    $ABOVE_LEVEL = 'above'\r\n    $BELOW_LEVEL = 'below'\r\n\r\n    $global:Date_Map = $null\r\n    $global:Map_B1 = \"B1\"\r\n    $global:Map_B2 = \"B2\"\r\n    $global:Map_B3 = \"B3\" \r\n    $global:Map_Other = \"Other\" \r\n\r\n      # columns by subject\r\n    switch ($DataImport.MapAttribute) {\r\n        $global:Map_B1 {\r\n            # Map B1\r\n            $global:Date_Map = \"Initial Assessment (B1) Date/Time\"        \r\n        }\r\n        $global:Map_B2 {\r\n            # Map B1\r\n            $global:Date_Map = \"Mid-Year Assessment (B2) Date/Time\"\r\n        }\r\n        $global:Map_B3 {\r\n            # Map B1\r\n            $global:Date_Map = \"End Assessment (B3) Date/Time\"\r\n        }\r\n         $global:Map_Other {\r\n            # Map B1\r\n            $global:Date_Map = \"Initial Assessment (B1) Date/Time\"\r\n        }\r\n        Default {\r\n            throw \"Unknown Map.\"\r\n        }\r\n    }\r\n\r\n  ######################\r\n  ### Columns Definition \r\n  ######################\r\n\r\n  $outfile_computedcol_perfLevelDescription_Template = \"DI_LvlDesc_{0}\"\r\n\r\n\r\n  $global:CUSTOM_COLUMN_MAP = @{ \r\n    \"DI_StudentId\"  = @{ \"SourceColumnName\" = \"Student Number\"; }\r\n    \"DI_SchoolYear\" = @{ \"SourceColumnName\" = \"Initial Assessment (B1) Date/Time\"; }\r\n    \"DI_AdminDate\"  = @{ \"SourceColumnName\" = \"\"; }\r\n    \"DI_StudentAssessmentIdentifier\" = @{ \"SourceColumnName\" = \"\"; }\r\n  }\r\n\r\n  foreach($rc in $src_columnCollection_perfLevel){\r\n        $outColumnName = $outfile_computedcol_perfLevelDescription_Template -f $rc\r\n        $global:CUSTOM_COLUMN_MAP.Add($outColumnName, \r\n        @{ \"SourceColumnName\" = $rc;}) | Out-Null\r\n    }\r\n\r\n\r\n  # Assesment specific functions\r\n  # Get Normalized output column name given an source column name\r\n  function Get-DIColumnName($srcName) {\r\n    return \"DI_{0}\" -f $srcName\r\n  }\r\n\r\n    # Get DI_SchoolYear\r\n    function Get-SchoolYear($col_Date) {\r\n      $schoolYear = $NULL\r\n      if($col_Date.Month -ge 8){\r\n                  $schoolYear = $col_Date.Year + 1\r\n        } else { \r\n                  $schoolYear = $col_Date.Year\r\n                }\r\n      return $schoolYear\r\n    }\r\n\r\n\r\n  # progress reporting, so user sees progress when processing large files.\r\n  $global:PROGRESS_EXECUTION_STARTED = Get-Date\r\n  $global:PROGRESS_NEXT_REPORT = (Get-Date).AddSeconds($global:REPORT_PROGRESS_FREQ_IN_SECONDS)\r\n}\r\n\r\nprocess {\r\n  $currentLineNumber += 1\r\n  $global:statistics.rowsProcessed += 1\r\n\r\n  $now = Get-Date\r\n  # report progress, if large files uploaded, see progress\r\n  if ($now -gt $global:PROGRESS_NEXT_REPORT) {\r\n    $global:PROGRESS_NEXT_REPORT = $now.AddSeconds($global:REPORT_PROGRESS_FREQ_IN_SECONDS)\r\n    $duration = NEW-TIMESPAN $global:PROGRESS_EXECUTION_STARTED $now\r\n   # Write-Information \"Custom File Processor loading rows($($global:statistics.rowsProcessed)) == duration -> $($duration.toString(\"hh\\:mm\\:ss\")))\"\r\n  }\r\n\r\n  # Make sure we got something\r\n  if (!$line) { Write-Error \"Line $currentLineNumber does not contain any data\"; return }\r\n\r\n  # File is fixed width and does not contain headers, so on first line output headers before exporting calues\r\n  # If the first line then output all of the headers\r\n  if ($currentLineNumber -eq 1) { \r\n\r\n    # We assume headers will not have commas in the names\r\n    #$headerRow = $line.Split(\",\")    \r\n    $headerRow = Get-ParsedRecordArray -line $line\r\n\r\n    $outputHeaders = @()\r\n\r\n    # 1 - Loop thru headers to find and fix empty of duplicate headers\r\n    for ($i = 0; $i -lt $headerRow.Count; $i++) {\r\n      $item = $headerRow[$i]\r\n\r\n      # handle empty headers\r\n      if (!$item) {\r\n        $newName = \"EMPTY-$i\"\r\n        Write-Warning \"Found empty column at position $($i + 1). Renaming column to '$newName'.\"\r\n        $item = $newName\r\n      }\r\n      # handle duplicate headers\r\n      if ($global:headersLookup[$item]) {\r\n        $newName = \"$item-$i\"\r\n        Write-Warning \"Found duplicate column name of '$item' at position $($i + 1). Renaming column to '$newName'.\"\r\n        $item = $newName\r\n      }\r\n      $global:inputHeaders += $item            \r\n      $outputHeaders += $item\r\n      $global:headersLookup.Add($item, $index) | Out-Null     \r\n            \r\n    }      \r\n\r\n    # Headers/columns\r\n    # 2 - If there are custom headers add to output header line\r\n    if ($global:CUSTOM_COLUMN_MAP.Count) {            \r\n      $outputHeaders += $( $global:CUSTOM_COLUMN_MAP.Keys | Sort-Object )\r\n    }\r\n\r\n    Write-Output $(Get-CSVLine($outputHeaders))\r\n    return\r\n    #does not return after headers because first line contains values not headers, headers are fixed\r\n  }\r\n\r\n  # array, Ordered output values\r\n  $orderedOutputValues = @()\r\n\r\n  # HashTable, will hold all input values for current line, used in case computed columns need to reference input values\r\n  $row = @{}\r\n    \r\n  # Not the cleanest of solutions, but none of the values should have double quotes, replace to remove wrapping quotes if present\r\n  #$row = Get-ParsedRecord -headers $($global:inputHeaders) -line $line\r\n  $row = ConvertFrom-Csv -InputObject $line -Header $global:inputHeaders\r\n\r\n  # 1 - add all values as they come in line\r\n  $orderedOutputValues = Get-ParsedRecordArray -line $line\r\n\r\n  # Validation will tell whether or not a record has the required values needed to be posted to ODS, \r\n  # if not valid error code and line number will be displayed in the summary\r\n  $passedValidation = $true\r\n  $validationId = $null\r\n  # 2 - Process custom/computed columns\r\n  if ($global:CUSTOM_COLUMN_MAP.Count) {            \r\n    foreach ($outColumnName in  $( $global:CUSTOM_COLUMN_MAP.Keys | Sort-Object )) {\r\n                    \r\n      $srcInfo = $global:CUSTOM_COLUMN_MAP[$outColumnName]\r\n      $srcColName = $srcInfo.SourceColumnName   \r\n            \r\n      ### DataImport Assessment Custom Columns\r\n      switch -Exact ($outColumnName) {\r\n        # StudentId\r\n        \"DI_StudentId\" {\r\n          $stdId = Get-StudentODSId($row.$srcColName)\r\n\r\n          # Validation, this is a required field, if empty will be unable to post to ODS.\r\n          if (!$stdId) {\r\n            $passedValidation = $false\r\n            $validationId = \"InvalidStudentId\"\r\n            break\r\n          }\r\n    \r\n          $orderedOutputValues += $stdId\r\n          break\r\n        }\r\n    \r\n        # School Year\r\n        \"DI_SchoolYear\" {                \r\n\r\n          $schoolYearDate = $row.$srcColName\r\n          $schoolYear = $null  \r\n\r\n          # Validation, this is a required field, if empty will be unable to post to ODS\r\n          if (!$schoolYearDate) {\r\n            $passedValidation = $false\r\n            $validationId = \"InvalidSchoolYear\"\r\n            break\r\n          }\r\n\r\n          $out_col_Date = Get-ParsedDate -date $schoolYearDate -inputFormat \"M/d/yyyy H:mm\"\r\n\r\n          $schoolYear=  Get-SchoolYear -col_Date $out_col_Date\r\n        \r\n    \r\n          $orderedOutputValues += $schoolYear\r\n          break\r\n        }\r\n        # DI_StudentAssessmentIdentifier\r\n          \"DI_StudentAssessmentIdentifier\" {\r\n              $out_col_AdminDate = $null;\r\n              $srcColName = $global:Date_Map\r\n              $col_Date = $row.$srcColName\r\n              \r\n                # Validation, this is a required field, if empty will be unable to post to ODS\r\n                if (!$col_Date) {\r\n                    $passedValidation = $false\r\n                    $validationId = \"Invalid_DI_StudentAssessmentIdentifier\"\r\n                    break\r\n                }\r\n                \r\n\r\n                if($DataImport.MapAttribute -eq $global:Map_Other) {\r\n                  $out_col_Date = Get-ParsedDate -date $col_Date -inputFormat \"M/d/yyyy H:mm\"\r\n                  $schoolYear=  Get-SchoolYear -col_Date $out_col_Date\r\n\r\n                  $out_col_AdminDate = \"0501{0}\" -f $schoolYear\r\n                }\r\n                else {\r\n                   $out_col_AdminDate = Get-ParsedDate -date $col_Date -inputFormat \"M/d/yyyy H:mm\" -outputFormat \"MMddyyyy\"\r\n                }\r\n                \r\n                 if (!$out_col_AdminDate) {\r\n                    $passedValidation = $false\r\n                    $validationId = \"Invalid_DI_StudentAssessmentIdentifier\"\r\n                    break\r\n                }\r\n\r\n      \r\n              $orderedOutputValues += $out_col_AdminDate\r\n              break\r\n          }\r\n        # DI_AdminDate\r\n          \"DI_AdminDate\" {\r\n                $out_col_AdminDate = $null;\r\n                $srcColName = $global:Date_Map\r\n                $col_Date = $row.$srcColName\r\n\r\n                # Validation, this is a required field, if empty will be unable to post to ODS\r\n                if (!$col_Date) {\r\n                    $passedValidation = $false\r\n                    $validationId = \"Invalid_DI_AdminDate\"\r\n                    break\r\n                }\r\n\r\n                if($DataImport.MapAttribute -eq $global:Map_Other) {\r\n                  $out_col_Date = Get-ParsedDate -date $col_Date -inputFormat \"M/d/yyyy H:mm\"\r\n                  $schoolYear=  Get-SchoolYear -col_Date $out_col_Date\r\n                  $out_col_AdminDate = \"{0}-05-01\" -f $schoolYear\r\n                }\r\n                else {\r\n                   $out_col_AdminDate = Get-ParsedDate -date $col_Date -inputFormat \"M/d/yyyy H:mm\" -outputFormat \"yyyy-MM-dd\"\r\n                }\r\n\r\n                if (!$out_col_AdminDate) {\r\n                    $passedValidation = $false\r\n                    $validationId = \"Invalid_DI_AdminDate\"\r\n                    break\r\n                }\r\n        \r\n                $orderedOutputValues += $out_col_AdminDate\r\n                break\r\n            }\r\n\r\n            { ( $_ -like \"DI_LvlDesc_*\" ) }\r\n                {\r\n                  $perfLevel = $row.$srcColName\r\n                  $out_perfLevel = $null\r\n                  $studGrade = \"Grade\"\r\n                  $out_studGrade = $row.$studGrade\r\n\r\n                  if(!($perfLevel -eq $null) -and !($out_studGrade -eq $null)) {\r\n                    $perfLevelInt=Get-Floor($perfLevel)\r\n                    \r\n                    $out_studGradeInt = $out_studGrade -as [int]\r\n\r\n                    if($out_studGradeInt -eq $perfLevelInt){ $out_perfLevel = $AT_LEVEL}\r\n                    elseif($out_studGradeInt -lt $perfLevelInt){ $out_perfLevel = $ABOVE_LEVEL}\r\n                    elseif($out_studGradeInt -gt $perfLevelInt){ $out_perfLevel = $BELOW_LEVEL}\r\n                  }\r\n\r\n                $orderedOutputValues += $out_perfLevel\r\n                break\r\n\r\n                }\r\n\r\n        Default {\r\n          # In case of no implementation for custom column add $null output to preserve output format and order\r\n          $orderedOutputValues += $null\r\n          break;\r\n        }\r\n      }\r\n    }\r\n  }     \r\n\r\n  # If not valid add to statistics to notify user at the end of execution and skip record and do not post current for current row this screening period to ODS\r\n  if (!$passedValidation) {\r\n    # Only print once per row\r\n    if (!$errorInCurrentRow) {\r\n      Write-Warning \"Invalid record see statistics summary for details.($currentLineNumber)\"\r\n    }            \r\n\r\n    # Check if this validation error already added for current screening period\r\n    if ($global:statistics.validations[$validationId]) {\r\n      $global:statistics.validations[$validationId] += $currentLineNumber\r\n    }\r\n    else {\r\n      $global:statistics.validations.Add($validationId, @($currentLineNumber)) | Out-Null\r\n    }\r\n        \r\n    # Skip current line do not pass values to DataImport\r\n    return\r\n  }\r\n\r\n  Write-Output $(Get-CSVLine($orderedOutputValues))\r\n  $global:statistics.rowsLoaded ++    \r\n}\r\n\r\nend {\r\n\r\n  Write-Information \"SUMMARY: `\r\n        Rows Processed: $($global:statistics.rowsProcessed); `\r\n        Rows Loaded: $($global:statistics.rowsLoaded)\"\r\n\r\n  foreach ($validationId in $global:statistics.validations.Keys) {\r\n    Write-Warning \"Error reason: '$validationId'\"                \r\n    Write-Information \"Line number(s):\"\r\n    $lineNumbers = $global:statistics.validations[$validationId]\r\n    $errorThreshold = 50\r\n    if ($lineNumbers.Count -gt $errorThreshold) {\r\n      Write-Warning \"There are $($lineNumbers.Count) lines with errors. Will only print the first $errorThreshold line numbers where errors ocurred.\"\r\n      $lineNumbers = $lineNumbers[0..$($errorThreshold - 1)]\r\n    }\r\n    Write-Warning \"$([string]::Join(\",\",$lineNumbers))\"\r\n  }\r\n\r\n}",
+                "requireOdsApiAccess": true,
+                "hasAttribute": true
+            }
+        ]
+    }
+}

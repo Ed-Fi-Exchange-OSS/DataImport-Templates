@@ -1,0 +1,2097 @@
+{
+    "title": "ExportTemplate-NV-SBAC-ODSv6",
+    "description": "Export Template NV SBAC ODSv6",
+    "apiVersion": "6.0",
+    "template": {
+        "maps": [
+            {
+                "name": "DataMap_Nevada-SBAC_NV-SBAC-ELA-V1",
+                "resourcePath": "/ed-fi/studentAssessments",
+                "columnHeaders": [
+                    "report_dist_num",
+                    "report_dist_name",
+                    "report_sch_num",
+                    "report_sch_name",
+                    "last",
+                    "first",
+                    "middle",
+                    "dob",
+                    "state_unique_id",
+                    "local_student_id",
+                    "student_id",
+                    "gender",
+                    "ethnicity",
+                    "iep",
+                    "lep",
+                    "f_lep_lte",
+                    "frl",
+                    "immigrant",
+                    "migrant",
+                    "nic",
+                    "yid",
+                    "yis",
+                    "slug_key",
+                    "homeschool",
+                    "nicy2",
+                    "foster_care",
+                    "armed_forces",
+                    "homeless",
+                    "precode_grade_level",
+                    "grade_level",
+                    "test_date_start",
+                    "test_date_end",
+                    "school_year",
+                    "ela_iep_accommodation",
+                    "ela_braille",
+                    "ela_large_print",
+                    "ela_pod",
+                    "ela_ja_pod",
+                    "ela_text_to_speech_items",
+                    "ela_text_to_speech_itemsandpassages",
+                    "ela_video_sign_language",
+                    "ela_speech_to_text",
+                    "ela_tc_modification_CAT",
+                    "ela_tc_modification_PT",
+                    "ela_tc_invalidation_CAT",
+                    "ela_tc_invalidation_PT",
+                    "ela_not_tested_code_CAT",
+                    "ela_not_tested_code_PT",
+                    "ela_participation_status",
+                    "ela_attemptedness_status",
+                    "ela_test_form_CAT",
+                    "ela_test_form_PT",
+                    "ela_CAT_number_attempted",
+                    "ela_PT_number_attempted",
+                    "ela_scale_score",
+                    "ela_achievement_level",
+                    "ela_sem_high",
+                    "ela_sem_low",
+                    "ela_sem_value",
+                    "ela_proficient",
+                    "ela_C1_performance_level",
+                    "ela_C2_performance_level",
+                    "ela_C3_performance_level",
+                    "ela_C4_performance_level",
+                    "ela_lexile_score",
+                    "math_iep_accommodation",
+                    "math_braille",
+                    "math_large_print",
+                    "math_pod",
+                    "math_ja_pod",
+                    "math_text_to_speech_items",
+                    "math_video_sign_language",
+                    "math_speech_to_text",
+                    "math_tc_modification_CAT",
+                    "math_tc_modification_PT",
+                    "math_tc_invalidation_CAT",
+                    "math_tc_invalidation_PT",
+                    "math_not_tested_code_CAT",
+                    "math_not_tested_code_PT",
+                    "math_participation_status",
+                    "math_attemptedness_status",
+                    "math_test_form_CAT",
+                    "math_test_form_PT",
+                    "math_CAT_number_attempted",
+                    "math_PT_number_attempted",
+                    "math_scale_score",
+                    "math_achievement_level",
+                    "math_sem_high",
+                    "math_sem_low",
+                    "math_sem_value",
+                    "math_proficient",
+                    "math_C1_performance_level",
+                    "math_C3_performance_level",
+                    "math_C4_performance_level",
+                    "math_quantile_score",
+                    "DI_AdministrationDate",
+                    "DI_AssessmentStudentIdentifier",
+                    "DI_SchoolYear",
+                    "DI_StudentId",
+                    "DI_ela_braille",
+                    "DI_ela_large_print",
+                    "DI_ela_pod",
+                    "DI_ela_text_to_speech_items",
+                    "DI_ela_text_to_speech_itemsandpassages",
+                    "DI_ela_video_sign_language",
+                    "DI_ela_speech_to_text",
+                    "DI_ela_ja_pod",
+                    "DI_ReasonNotTestedDescriptor"
+                ],
+                "map": {
+                    "studentAssessmentIdentifier": {
+                        "Column": "DI_AssessmentStudentIdentifier"
+                    },
+                    "assessmentReference": {
+                        "assessmentIdentifier": "NV-SBAC-ELA-V1",
+                        "namespace": "uri://doe.nv.gov/SBAC/Assessment"
+                    },
+                    "schoolYearTypeReference": {
+                        "schoolYear": {
+                            "Column": "DI_SchoolYear"
+                        }
+                    },
+                    "studentReference": {
+                        "studentUniqueId": {
+                            "Column": "DI_StudentId"
+                        }
+                    },
+                    "accommodations": [
+                        {
+                            "accommodationDescriptor": {
+                                "Column": "DI_ela_braille",
+                                "Lookup": "Nevada-SBAC_Accomodations-Braille"
+                            }
+                        },
+                        {
+                            "accommodationDescriptor": {
+                                "Column": "DI_ela_large_print",
+                                "Lookup": "Nevada-SBAC_Accomodations-Large Print"
+                            }
+                        },
+                        {
+                            "accommodationDescriptor": {
+                                "Column": "DI_ela_pod",
+                                "Lookup": "Nevada-SBAC_Accomodations-Print on Demand"
+                            }
+                        },
+                        {
+                            "accommodationDescriptor": {
+                                "Column": "DI_ela_ja_pod",
+                                "Lookup": "Nevada-SBAC_Accomodations-Judicially Adjudicated"
+                            }
+                        },
+                        {
+                            "accommodationDescriptor": {
+                                "Column": "DI_ela_text_to_speech_items",
+                                "Lookup": "Nevada-SBAC_Accomodations-Text-to-Speech Items only"
+                            }
+                        },
+                        {
+                            "accommodationDescriptor": {
+                                "Column": "DI_ela_text_to_speech_itemsandpassages",
+                                "Lookup": "Nevada-SBAC_Accomodations-Text-to-Speech Items & Passages"
+                            }
+                        },
+                        {
+                            "accommodationDescriptor": {
+                                "Column": "DI_ela_video_sign_language",
+                                "Lookup": "Nevada-SBAC_Accomodations-Video-Sign-Language"
+                            }
+                        },
+                        {
+                            "accommodationDescriptor": {
+                                "Column": "DI_ela_speech_to_text",
+                                "Lookup": "Nevada-SBAC_Accomodations-Speech-to-Text"
+                            }
+                        }
+                    ],
+                    "administrationDate": {
+                        "Column": "DI_AdministrationDate"
+                    },
+                    "performanceLevels": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": {
+                                "Column": "ela_achievement_level",
+                                "Lookup": "Nevada-SBAC_AchievementLevel"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                            "performanceLevelDescriptor": {
+                                "Column": "ela_proficient",
+                                "Lookup": "Nevada-SBAC_ProficiencyStatus"
+                            }
+                        }
+                    ],
+                    "reasonNotTestedDescriptor": {
+                        "Column": "DI_ReasonNotTestedDescriptor",
+                        "Lookup": "Nevada-SBAC_ReasonNotTested"
+                    },
+                    "scoreResults": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "ela_scale_score"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "ela_achievement_level"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "ela_sem_value"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Lexile Measure",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "ela_lexile_score"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/SBAC/AssessmentReportingMethodDescriptor#CAT Number Attempted",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "ela_CAT_number_attempted"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/SBAC/AssessmentReportingMethodDescriptor#PT Number Attempted",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "ela_PT_number_attempted"
+                            }
+                        }
+                    ],
+                    "studentObjectiveAssessments": [
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NV-SBAC-ELA-V1",
+                                "identificationCode": "Claim-1",
+                                "namespace": "uri://doe.nv.gov/SBAC/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "ela_C1_performance_level",
+                                        "Lookup": "Nevada-SBAC_PerformanceLevel"
+                                    }
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "ela_C1_performance_level"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NV-SBAC-ELA-V1",
+                                "identificationCode": "Claim-2",
+                                "namespace": "uri://doe.nv.gov/SBAC/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "ela_C2_performance_level",
+                                        "Lookup": "Nevada-SBAC_PerformanceLevel"
+                                    }
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "ela_C2_performance_level"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NV-SBAC-ELA-V1",
+                                "identificationCode": "Claim-3",
+                                "namespace": "uri://doe.nv.gov/SBAC/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "ela_C3_performance_level",
+                                        "Lookup": "Nevada-SBAC_PerformanceLevel"
+                                    }
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "ela_C3_performance_level"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NV-SBAC-ELA-V1",
+                                "identificationCode": "Claim-4",
+                                "namespace": "uri://doe.nv.gov/SBAC/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "ela_C4_performance_level",
+                                        "Lookup": "Nevada-SBAC_PerformanceLevel"
+                                    }
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "ela_C4_performance_level"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "whenAssessedGradeLevelDescriptor": {
+                        "Column": "grade_level",
+                        "Lookup": "Nevada-SBAC_GradeLevel"
+                    }
+                },
+                "customFileProcessor": "Nevada-SBAC_ODSv3+",
+                "attribute": "ELA"
+            },
+            {
+                "name": "DataMap_Nevada-SBAC_NV-SBAC-MA-V1",
+                "resourcePath": "/ed-fi/studentAssessments",
+                "columnHeaders": [
+                    "report_dist_num",
+                    "report_dist_name",
+                    "report_sch_num",
+                    "report_sch_name",
+                    "last",
+                    "first",
+                    "middle",
+                    "dob",
+                    "state_unique_id",
+                    "local_student_id",
+                    "student_id",
+                    "gender",
+                    "ethnicity",
+                    "iep",
+                    "lep",
+                    "f_lep_lte",
+                    "frl",
+                    "immigrant",
+                    "migrant",
+                    "nic",
+                    "yid",
+                    "yis",
+                    "slug_key",
+                    "homeschool",
+                    "nicy2",
+                    "foster_care",
+                    "armed_forces",
+                    "homeless",
+                    "precode_grade_level",
+                    "grade_level",
+                    "test_date_start",
+                    "test_date_end",
+                    "school_year",
+                    "ela_iep_accommodation",
+                    "ela_braille",
+                    "ela_large_print",
+                    "ela_pod",
+                    "ela_ja_pod",
+                    "ela_text_to_speech_items",
+                    "ela_text_to_speech_itemsandpassages",
+                    "ela_video_sign_language",
+                    "ela_speech_to_text",
+                    "ela_tc_modification_CAT",
+                    "ela_tc_modification_PT",
+                    "ela_tc_invalidation_CAT",
+                    "ela_tc_invalidation_PT",
+                    "ela_not_tested_code_CAT",
+                    "ela_not_tested_code_PT",
+                    "ela_participation_status",
+                    "ela_attemptedness_status",
+                    "ela_test_form_CAT",
+                    "ela_test_form_PT",
+                    "ela_CAT_number_attempted",
+                    "ela_PT_number_attempted",
+                    "ela_scale_score",
+                    "ela_achievement_level",
+                    "ela_sem_high",
+                    "ela_sem_low",
+                    "ela_sem_value",
+                    "ela_proficient",
+                    "ela_C1_performance_level",
+                    "ela_C2_performance_level",
+                    "ela_C3_performance_level",
+                    "ela_C4_performance_level",
+                    "ela_lexile_score",
+                    "math_iep_accommodation",
+                    "math_braille",
+                    "math_large_print",
+                    "math_pod",
+                    "math_ja_pod",
+                    "math_text_to_speech_items",
+                    "math_video_sign_language",
+                    "math_speech_to_text",
+                    "math_tc_modification_CAT",
+                    "math_tc_modification_PT",
+                    "math_tc_invalidation_CAT",
+                    "math_tc_invalidation_PT",
+                    "math_not_tested_code_CAT",
+                    "math_not_tested_code_PT",
+                    "math_participation_status",
+                    "math_attemptedness_status",
+                    "math_test_form_CAT",
+                    "math_test_form_PT",
+                    "math_CAT_number_attempted",
+                    "math_PT_number_attempted",
+                    "math_scale_score",
+                    "math_achievement_level",
+                    "math_sem_high",
+                    "math_sem_low",
+                    "math_sem_value",
+                    "math_proficient",
+                    "math_C1_performance_level",
+                    "math_C3_performance_level",
+                    "math_C4_performance_level",
+                    "math_quantile_score",
+                    "DI_AdministrationDate",
+                    "DI_AssessmentStudentIdentifier",
+                    "DI_SchoolYear",
+                    "DI_StudentId",
+                    "DI_math_braille",
+                    "DI_math_large_print",
+                    "DI_math_pod",
+                    "DI_math_text_to_speech_items",
+                    "DI_math_video_sign_language",
+                    "DI_math_speech_to_text",
+                    "DI_math_ja_pod",
+                    "DI_ReasonNotTestedDescriptor"
+                ],
+                "map": {
+                    "studentAssessmentIdentifier": {
+                        "Column": "DI_AssessmentStudentIdentifier"
+                    },
+                    "assessmentReference": {
+                        "assessmentIdentifier": "NV-SBAC-MA-V1",
+                        "namespace": "uri://doe.nv.gov/SBAC/Assessment"
+                    },
+                    "schoolYearTypeReference": {
+                        "schoolYear": {
+                            "Column": "DI_SchoolYear"
+                        }
+                    },
+                    "studentReference": {
+                        "studentUniqueId": {
+                            "Column": "DI_StudentId"
+                        }
+                    },
+                    "accommodations": [
+                        {
+                            "accommodationDescriptor": {
+                                "Column": "DI_math_braille",
+                                "Lookup": "Nevada-SBAC_Accomodations-Braille"
+                            }
+                        },
+                        {
+                            "accommodationDescriptor": {
+                                "Column": "DI_math_large_print",
+                                "Lookup": "Nevada-SBAC_Accomodations-Large Print"
+                            }
+                        },
+                        {
+                            "accommodationDescriptor": {
+                                "Column": "DI_math_pod",
+                                "Lookup": "Nevada-SBAC_Accomodations-Print on Demand"
+                            }
+                        },
+                        {
+                            "accommodationDescriptor": {
+                                "Column": "DI_math_ja_pod",
+                                "Lookup": "Nevada-SBAC_Accomodations-Judicially Adjudicated"
+                            }
+                        },
+                        {
+                            "accommodationDescriptor": {
+                                "Column": "DI_math_text_to_speech_items",
+                                "Lookup": "Nevada-SBAC_Accomodations-Text-to-Speech Items only"
+                            }
+                        },
+                        {
+                            "accommodationDescriptor": {
+                                "Column": "DI_math_video_sign_language",
+                                "Lookup": "Nevada-SBAC_Accomodations-Video-Sign-Language"
+                            }
+                        },
+                        {
+                            "accommodationDescriptor": {
+                                "Column": "DI_math_speech_to_text",
+                                "Lookup": "Nevada-SBAC_Accomodations-Speech-to-Text"
+                            }
+                        }
+                    ],
+                    "administrationDate": {
+                        "Column": "DI_AdministrationDate"
+                    },
+                    "performanceLevels": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": {
+                                "Column": "math_achievement_level",
+                                "Lookup": "Nevada-SBAC_AchievementLevel"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                            "performanceLevelDescriptor": {
+                                "Column": "math_proficient",
+                                "Lookup": "Nevada-SBAC_ProficiencyStatus"
+                            }
+                        }
+                    ],
+                    "reasonNotTestedDescriptor": {
+                        "Column": "DI_ReasonNotTestedDescriptor",
+                        "Lookup": "Nevada-SBAC_ReasonNotTested"
+                    },
+                    "scoreResults": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "math_scale_score"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "math_achievement_level"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "math_sem_value"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Quantile Measure",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "math_quantile_score"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/SBAC/AssessmentReportingMethodDescriptor#CAT Number Attempted",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "math_CAT_number_attempted"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/SBAC/AssessmentReportingMethodDescriptor#PT Number Attempted",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "math_PT_number_attempted"
+                            }
+                        }
+                    ],
+                    "studentObjectiveAssessments": [
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NV-SBAC-MA-V1",
+                                "identificationCode": "Claim-1",
+                                "namespace": "uri://doe.nv.gov/SBAC/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "math_C1_performance_level",
+                                        "Lookup": "Nevada-SBAC_PerformanceLevel"
+                                    }
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "math_C1_performance_level"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NV-SBAC-MA-V1",
+                                "identificationCode": "Claim-3",
+                                "namespace": "uri://doe.nv.gov/SBAC/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "math_C3_performance_level",
+                                        "Lookup": "Nevada-SBAC_PerformanceLevel"
+                                    }
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "math_C3_performance_level"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "objectiveAssessmentReference": {
+                                "assessmentIdentifier": "NV-SBAC-MA-V1",
+                                "identificationCode": "Claim-2-and-4",
+                                "namespace": "uri://doe.nv.gov/SBAC/Assessment"
+                            },
+                            "performanceLevels": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "performanceLevelDescriptor": {
+                                        "Column": "math_C4_performance_level",
+                                        "Lookup": "Nevada-SBAC_PerformanceLevel"
+                                    }
+                                }
+                            ],
+                            "scoreResults": [
+                                {
+                                    "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                    "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                                    "result": {
+                                        "Column": "math_C4_performance_level"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "whenAssessedGradeLevelDescriptor": {
+                        "Column": "grade_level",
+                        "Lookup": "Nevada-SBAC_GradeLevel"
+                    }
+                },
+                "customFileProcessor": "Nevada-SBAC_ODSv3+",
+                "attribute": "MA"
+            }
+        ],
+        "bootstraps": [
+            {
+                "name": "Nevada-SBAC_Assessment_NV-SBAC-ELA-V1",
+                "resourcePath": "/ed-fi/assessments",
+                "data": {
+                    "assessmentIdentifier": "NV-SBAC-ELA-V1",
+                    "assessmentTitle": "Nevada Smarter Balanced assessments (SBAC) - ELA",
+                    "assessmentVersion": 2021,
+                    "revisionDate": "2021-08-23",
+                    "namespace": "uri://doe.nv.gov/SBAC/Assessment",
+                    "assessmentFamily": "Nevada Summative Assessments",
+                    "assessedGradeLevels": [
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fourth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fifth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Sixth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Seventh grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eighth grade"
+                        }
+                    ],
+                    "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#State summative assessment 3-8 general",
+                    "academicSubjects": [
+                        {
+                            "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#English Language Arts"
+                        }
+                    ],
+                    "scores": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/SBAC/AssessmentReportingMethodDescriptor#CAT Number Attempted",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/SBAC/AssessmentReportingMethodDescriptor#PT Number Attempted",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Lexile Measure",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        }
+                    ],
+                    "performanceLevels": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Minimal Understanding",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Partial Understanding",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Proficient",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Advanced",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                            "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Proficient",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                            "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Non Proficient",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "Nevada-SBAC_Assessment_NV-SBAC-MA-V1",
+                "resourcePath": "/ed-fi/assessments",
+                "data": {
+                    "assessmentIdentifier": "NV-SBAC-MA-V1",
+                    "assessmentTitle": "Nevada Smarter Balanced assessments (SBAC) - Mathematics",
+                    "assessmentVersion": 2021,
+                    "revisionDate": "2021-08-23",
+                    "namespace": "uri://doe.nv.gov/SBAC/Assessment",
+                    "assessmentFamily": "Nevada Summative Assessments",
+                    "assessedGradeLevels": [
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Third grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fourth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Fifth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Sixth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Seventh grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eighth grade"
+                        }
+                    ],
+                    "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#State summative assessment 3-8 general",
+                    "academicSubjects": [
+                        {
+                            "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Mathematics"
+                        }
+                    ],
+                    "scores": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/SBAC/AssessmentReportingMethodDescriptor#CAT Number Attempted",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://doe.nv.gov/SBAC/AssessmentReportingMethodDescriptor#PT Number Attempted",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Scale score",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Standard error measurement",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Quantile Measure",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        }
+                    ],
+                    "performanceLevels": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Minimal Understanding",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Partial Understanding",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Proficient",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                            "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Advanced",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                            "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Proficient",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Proficiency level",
+                            "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Non Proficient",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "Nevada-SBAC_Desc-Accommodations",
+                "resourcePath": "/ed-fi/accommodationDescriptors",
+                "data": [
+                    {
+                        "codeValue": "Braille",
+                        "description": "Braille",
+                        "namespace": "uri://doe.nv.gov/SBAC/AccommodationDescriptor",
+                        "shortDescription": "Braille"
+                    },
+                    {
+                        "codeValue": "Large Print",
+                        "description": "Large Print",
+                        "namespace": "uri://doe.nv.gov/SBAC/AccommodationDescriptor",
+                        "shortDescription": "Large Print"
+                    },
+                    {
+                        "codeValue": "Print on Demand",
+                        "description": "Print on Demand",
+                        "namespace": "uri://doe.nv.gov/SBAC/AccommodationDescriptor",
+                        "shortDescription": "Print on Demand"
+                    },
+                    {
+                        "codeValue": "Text-to-Speech Items only",
+                        "description": "Text-to-Speech Items only",
+                        "namespace": "uri://doe.nv.gov/SBAC/AccommodationDescriptor",
+                        "shortDescription": "Text-to-Speech Items only"
+                    },
+                    {
+                        "codeValue": "Text-to-Speech Items & Passages",
+                        "description": "Text-to-Speech Items & Passages",
+                        "namespace": "uri://doe.nv.gov/SBAC/AccommodationDescriptor",
+                        "shortDescription": "Text-to-Speech Items & Passages"
+                    },
+                    {
+                        "codeValue": "Video-Sign-Language",
+                        "description": "Video-Sign-Language",
+                        "namespace": "uri://doe.nv.gov/SBAC/AccommodationDescriptor",
+                        "shortDescription": "Video-Sign-Language"
+                    },
+                    {
+                        "codeValue": "Speech-to-Text",
+                        "description": "Speech-to-Text",
+                        "namespace": "uri://doe.nv.gov/SBAC/AccommodationDescriptor",
+                        "shortDescription": "Speech-to-Text"
+                    },
+                    {
+                        "codeValue": "Judicially Adjudicated",
+                        "description": "Judicially Adjudicated",
+                        "namespace": "uri://doe.nv.gov/SBAC/AccommodationDescriptor",
+                        "shortDescription": "Judicially Adjudicated"
+                    }
+                ]
+            },
+            {
+                "name": "Nevada-SBAC_Desc-ARMD",
+                "resourcePath": "/ed-fi/assessmentReportingMethodDescriptors",
+                "data": [
+                    {
+                        "codeValue": "CAT Number Attempted",
+                        "description": "CAT Number Attempted",
+                        "namespace": "uri://doe.nv.gov/SBAC/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "CAT Number Attempted"
+                    },
+                    {
+                        "codeValue": "PT Number Attempted",
+                        "description": "PT Number Attempted",
+                        "namespace": "uri://doe.nv.gov/SBAC/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "PT Number Attempted"
+                    }
+                ]
+            },
+            {
+                "name": "Nevada-SBAC_Desc-PLD",
+                "resourcePath": "/ed-fi/performanceLevelDescriptors",
+                "data": [
+                    {
+                        "codeValue": "Above",
+                        "description": "Above",
+                        "namespace": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor",
+                        "shortDescription": "Above"
+                    },
+                    {
+                        "codeValue": "At/Near",
+                        "description": "At/Near",
+                        "namespace": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor",
+                        "shortDescription": "At/Near"
+                    },
+                    {
+                        "codeValue": "Below",
+                        "description": "Below",
+                        "namespace": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor",
+                        "shortDescription": "Below"
+                    },
+                    {
+                        "codeValue": "Minimal Understanding",
+                        "description": "Minimal Understanding",
+                        "namespace": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor",
+                        "shortDescription": "Minimal Understanding"
+                    },
+                    {
+                        "codeValue": "Partial Understanding",
+                        "description": "Partial Understanding",
+                        "namespace": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor",
+                        "shortDescription": "Partial Understanding"
+                    },
+                    {
+                        "codeValue": "Proficient",
+                        "description": "Proficient",
+                        "namespace": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor",
+                        "shortDescription": "Proficient"
+                    },
+                    {
+                        "codeValue": "Advanced",
+                        "description": "Advanced",
+                        "namespace": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor",
+                        "shortDescription": "Advanced"
+                    },
+                    {
+                        "codeValue": "Non Proficient",
+                        "description": "Non Proficient",
+                        "namespace": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor",
+                        "shortDescription": "Non Proficient"
+                    }
+                ]
+            },
+            {
+                "name": "Nevada-SBAC_Desc-ReasonNotTested",
+                "resourcePath": "/ed-fi/reasonNotTestedDescriptors",
+                "data": [
+                    {
+                        "codeValue": "Not Enrolled",
+                        "description": "Not Enrolled",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Not Enrolled"
+                    },
+                    {
+                        "codeValue": "Absent",
+                        "description": "Absent",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Absent"
+                    },
+                    {
+                        "codeValue": "Other",
+                        "description": "Other",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Other"
+                    },
+                    {
+                        "codeValue": "Alternate Assessment",
+                        "description": "Alternate Assessment",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Alternate Assessment"
+                    },
+                    {
+                        "codeValue": "Special Circumstance",
+                        "description": "Special Circumstance",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Special Circumstance"
+                    },
+                    {
+                        "codeValue": "Out of State",
+                        "description": "Out of State",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Out of State"
+                    },
+                    {
+                        "codeValue": "Home School",
+                        "description": "Home School",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Home School"
+                    },
+                    {
+                        "codeValue": "CAT:Not Enrolled",
+                        "description": "CAT:Not Enrolled",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "CAT:Not Enrolled"
+                    },
+                    {
+                        "codeValue": "PT:Not Enrolled",
+                        "description": "PT:Not Enrolled",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "PT:Not Enrolled"
+                    },
+                    {
+                        "codeValue": "Not Enrolled-Absent",
+                        "description": "Not Enrolled-Absent",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Not Enrolled-Absent"
+                    },
+                    {
+                        "codeValue": "Not Enrolled-Other",
+                        "description": "Not Enrolled-Other",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Not Enrolled-Other"
+                    },
+                    {
+                        "codeValue": "Not Enrolled-Alt. Assessment",
+                        "description": "Not Enrolled-Alt. Assessment",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Not Enrolled-Alt. Assessment"
+                    },
+                    {
+                        "codeValue": "Not Enrolled-Special Circ.",
+                        "description": "Not Enrolled-Special Circ.",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Not Enrolled-Special Circ."
+                    },
+                    {
+                        "codeValue": "Not Enrolled-Out of State",
+                        "description": "Not Enrolled-Out of State",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Not Enrolled-Out of State"
+                    },
+                    {
+                        "codeValue": "Not Enrolled-Home School",
+                        "description": "Not Enrolled-Home School",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Not Enrolled-Home School"
+                    },
+                    {
+                        "codeValue": "CAT:Absent",
+                        "description": "CAT:Absent",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "CAT:Absent"
+                    },
+                    {
+                        "codeValue": "PT:Absent",
+                        "description": "PT:Absent",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "PT:Absent"
+                    },
+                    {
+                        "codeValue": "Absent-Not Enrolled",
+                        "description": "Absent-Not Enrolled",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Absent-Not Enrolled"
+                    },
+                    {
+                        "codeValue": "Absent-Other",
+                        "description": "Absent-Other",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Absent-Other"
+                    },
+                    {
+                        "codeValue": "Absent-Alt. Assessment",
+                        "description": "Absent-Alt. Assessment",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Absent-Alt. Assessment"
+                    },
+                    {
+                        "codeValue": "Absent-Special Circ.",
+                        "description": "Absent-Special Circ.",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Absent-Special Circ."
+                    },
+                    {
+                        "codeValue": "Absent-Out of State",
+                        "description": "Absent-Out of State",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Absent-Out of State"
+                    },
+                    {
+                        "codeValue": "Absent-Home School",
+                        "description": "Absent-Home School",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Absent-Home School"
+                    },
+                    {
+                        "codeValue": "CAT:Other",
+                        "description": "CAT:Other",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "CAT:Other"
+                    },
+                    {
+                        "codeValue": "PT:Other",
+                        "description": "PT:Other",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "PT:Other"
+                    },
+                    {
+                        "codeValue": "Other-Not Enrolled",
+                        "description": "Other-Not Enrolled",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Other-Not Enrolled"
+                    },
+                    {
+                        "codeValue": "Other-Absent",
+                        "description": "Other-Absent",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Other-Absent"
+                    },
+                    {
+                        "codeValue": "Other-Alt. Assessment",
+                        "description": "Other-Alt. Assessment",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Other-Alt. Assessment"
+                    },
+                    {
+                        "codeValue": "Other-Special Circ.",
+                        "description": "Other-Special Circ.",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Other-Special Circ."
+                    },
+                    {
+                        "codeValue": "Other-Out of State",
+                        "description": "Other-Out of State",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Other-Out of State"
+                    },
+                    {
+                        "codeValue": "Other-Home School",
+                        "description": "Other-Home School",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Other-Home School"
+                    },
+                    {
+                        "codeValue": "CAT:Alt. Assessment",
+                        "description": "CAT:Alt. Assessment",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "CAT:Alt. Assessment"
+                    },
+                    {
+                        "codeValue": "PT:Alt. Assessment",
+                        "description": "PT:Alt. Assessment",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "PT:Alt. Assessment"
+                    },
+                    {
+                        "codeValue": "Alt. Assessment-Not Enrolled",
+                        "description": "Alt. Assessment-Not Enrolled",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Alt. Assessment-Not Enrolled"
+                    },
+                    {
+                        "codeValue": "Alt. Assessment-Absent",
+                        "description": "Alt. Assessment-Absent",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Alt. Assessment-Absent"
+                    },
+                    {
+                        "codeValue": "Alt. Assessment-Other",
+                        "description": "Alt. Assessment-Other",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Alt. Assessment-Other"
+                    },
+                    {
+                        "codeValue": "Alt. Assessment-Special Circ.",
+                        "description": "Alt. Assessment-Special Circ.",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Alt. Assessment-Special Circ."
+                    },
+                    {
+                        "codeValue": "Alt. Assessment-Out of State",
+                        "description": "Alt. Assessment-Out of State",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Alt. Assessment-Out of State"
+                    },
+                    {
+                        "codeValue": "Alt. Assessment-Home School",
+                        "description": "Alt. Assessment-Home School",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Alt. Assessment-Home School"
+                    },
+                    {
+                        "codeValue": "CAT:Special Circ.",
+                        "description": "CAT:Special Circ.",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "CAT:Special Circ."
+                    },
+                    {
+                        "codeValue": "PT:Special Circ.",
+                        "description": "PT:Special Circ.",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "PT:Special Circ."
+                    },
+                    {
+                        "codeValue": "Special Circ.-Not Enrolled",
+                        "description": "Special Circ.-Not Enrolled",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Special Circ.-Not Enrolled"
+                    },
+                    {
+                        "codeValue": "Special Circ.-Absent",
+                        "description": "Special Circ.-Absent",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Special Circ.-Absent"
+                    },
+                    {
+                        "codeValue": "Special Circ.-Other",
+                        "description": "Special Circ.-Other",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Special Circ.-Other"
+                    },
+                    {
+                        "codeValue": "Special Circ.-Alt. Assessment",
+                        "description": "Special Circ.-Alt. Assessment",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Special Circ.-Alt. Assessment"
+                    },
+                    {
+                        "codeValue": "Special Circ.-Out of State",
+                        "description": "Special Circ.-Out of State",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Special Circ.-Out of State"
+                    },
+                    {
+                        "codeValue": "Special Circ.-Home School",
+                        "description": "Special Circ.-Home School",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Special Circ.-Home School"
+                    },
+                    {
+                        "codeValue": "CAT:Out of State",
+                        "description": "CAT:Out of State",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "CAT:Out of State"
+                    },
+                    {
+                        "codeValue": "PT:Out of State",
+                        "description": "PT:Out of State",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "PT:Out of State"
+                    },
+                    {
+                        "codeValue": "Out of State-Not Enrolled",
+                        "description": "Out of State-Not Enrolled",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Out of State-Not Enrolled"
+                    },
+                    {
+                        "codeValue": "Out of State-Absent",
+                        "description": "Out of State-Absent",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Out of State-Absent"
+                    },
+                    {
+                        "codeValue": "Out of State-Other",
+                        "description": "Out of State-Other",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Out of State-Other"
+                    },
+                    {
+                        "codeValue": "Out of State-Alt. Assessment",
+                        "description": "Out of State-Alt. Assessment",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Out of State-Alt. Assessment"
+                    },
+                    {
+                        "codeValue": "Out of State-Special Circ.",
+                        "description": "Out of State-Special Circ.",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Out of State-Special Circ."
+                    },
+                    {
+                        "codeValue": "Out of State-Home School",
+                        "description": "Out of State-Home School",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Out of State-Home School"
+                    },
+                    {
+                        "codeValue": "CAT:Home School",
+                        "description": "CAT:Home School",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "CAT:Home School"
+                    },
+                    {
+                        "codeValue": "PT:Home School",
+                        "description": "PT:Home School",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "PT:Home School"
+                    },
+                    {
+                        "codeValue": "Home School-Not Enrolled",
+                        "description": "Home School-Not Enrolled",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Home School-Not Enrolled"
+                    },
+                    {
+                        "codeValue": "Home School-Absent",
+                        "description": "Home School-Absent",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Home School-Absent"
+                    },
+                    {
+                        "codeValue": "Home School-Other",
+                        "description": "Home School-Other",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Home School-Other"
+                    },
+                    {
+                        "codeValue": "Home School-Alt. Assessment",
+                        "description": "Home School-Alt. Assessment",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Home School-Alt. Assessment"
+                    },
+                    {
+                        "codeValue": "Home School-Special Circ.",
+                        "description": "Home School-Special Circ.",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Home School-Special Circ."
+                    },
+                    {
+                        "codeValue": "Home School-Out of State",
+                        "description": "Home School-Out of State",
+                        "namespace": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors",
+                        "shortDescription": "Home School-Out of State"
+                    }
+                ]
+            },
+            {
+                "name": "Nevada-SBAC_ObjectiveAssessment_NV-SBAC-ELA-V1",
+                "resourcePath": "/ed-fi/objectiveAssessments",
+                "data": [
+                    {
+                        "identificationCode": "Claim-1",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NV-SBAC-ELA-V1",
+                            "namespace": "uri://doe.nv.gov/SBAC/Assessment"
+                        },
+                        "description": "Claim 1: Reading",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Above",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#At/Near",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Below",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "Claim-2",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NV-SBAC-ELA-V1",
+                            "namespace": "uri://doe.nv.gov/SBAC/Assessment"
+                        },
+                        "description": "Claim 2: Writing",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Above",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#At/Near",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Below",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "Claim-3",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NV-SBAC-ELA-V1",
+                            "namespace": "uri://doe.nv.gov/SBAC/Assessment"
+                        },
+                        "description": "Claim 3: Speaking/Listening",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Above",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#At/Near",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Below",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "Claim-4",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NV-SBAC-ELA-V1",
+                            "namespace": "uri://doe.nv.gov/SBAC/Assessment"
+                        },
+                        "description": "Claim 4: Research & Inquiry",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Above",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#At/Near",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Below",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Nevada-SBAC_ObjectiveAssessment_NV-SBAC-MA-V1",
+                "resourcePath": "/ed-fi/objectiveAssessments",
+                "data": [
+                    {
+                        "identificationCode": "Claim-1",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NV-SBAC-MA-V1",
+                            "namespace": "uri://doe.nv.gov/SBAC/Assessment"
+                        },
+                        "description": "Claim 1: Concepts and Procedures",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Above",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#At/Near",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Below",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "Claim-3",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NV-SBAC-MA-V1",
+                            "namespace": "uri://doe.nv.gov/SBAC/Assessment"
+                        },
+                        "description": "Claim 3: Communicating Reasoning",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Above",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#At/Near",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Below",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    },
+                    {
+                        "identificationCode": "Claim-2-and-4",
+                        "assessmentReference": {
+                            "assessmentIdentifier": "NV-SBAC-MA-V1",
+                            "namespace": "uri://doe.nv.gov/SBAC/Assessment"
+                        },
+                        "description": "Claim 2 & 4: Problem Solving & Modeling/Data Analysis",
+                        "scores": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                            }
+                        ],
+                        "performanceLevels": [
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Above",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#At/Near",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            },
+                            {
+                                "assessmentReportingMethodDescriptor": "uri://ed-fi.org/AssessmentReportingMethodDescriptor#Achievement/proficiency level",
+                                "performanceLevelDescriptor": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Below",
+                                "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "lookups": [
+            {
+                "sourceTable": "Nevada-SBAC_Accomodations-Braille",
+                "key": "1",
+                "value": "uri://doe.nv.gov/SBAC/AccommodationDescriptor#Braille"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_Accomodations-Judicially Adjudicated",
+                "key": "1",
+                "value": "uri://doe.nv.gov/SBAC/AccommodationDescriptor#Judicially Adjudicated"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_Accomodations-Large Print",
+                "key": "1",
+                "value": "uri://doe.nv.gov/SBAC/AccommodationDescriptor#Large Print"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_Accomodations-Print on Demand",
+                "key": "1",
+                "value": "uri://doe.nv.gov/SBAC/AccommodationDescriptor#Print on Demand"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_Accomodations-Speech-to-Text",
+                "key": "1",
+                "value": "uri://doe.nv.gov/SBAC/AccommodationDescriptor#Speech-to-Text"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_Accomodations-Text-to-Speech Items & Passages",
+                "key": "1",
+                "value": "uri://doe.nv.gov/SBAC/AccommodationDescriptor#Text-to-Speech Items & Passages"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_Accomodations-Text-to-Speech Items only",
+                "key": "1",
+                "value": "uri://doe.nv.gov/SBAC/AccommodationDescriptor#Text-to-Speech Items only"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_Accomodations-Video-Sign-Language",
+                "key": "1",
+                "value": "uri://doe.nv.gov/SBAC/AccommodationDescriptor#Video-Sign-Language"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_AchievementLevel",
+                "key": "1",
+                "value": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Minimal Understanding"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_AchievementLevel",
+                "key": "2",
+                "value": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Partial Understanding"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_AchievementLevel",
+                "key": "3",
+                "value": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Proficient"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_AchievementLevel",
+                "key": "4",
+                "value": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Advanced"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_GradeLevel",
+                "key": "03",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Third grade"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_GradeLevel",
+                "key": "04",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Fourth grade"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_GradeLevel",
+                "key": "05",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Fifth grade"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_GradeLevel",
+                "key": "06",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Sixth grade"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_GradeLevel",
+                "key": "07",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Seventh grade"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_GradeLevel",
+                "key": "08",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Eighth grade"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_GradeLevel",
+                "key": "3",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Third grade"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_GradeLevel",
+                "key": "4",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Fourth grade"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_GradeLevel",
+                "key": "5",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Fifth grade"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_GradeLevel",
+                "key": "6",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Sixth grade"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_GradeLevel",
+                "key": "7",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Seventh grade"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_GradeLevel",
+                "key": "8",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Eighth grade"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_PerformanceLevel",
+                "key": "1",
+                "value": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Below"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_PerformanceLevel",
+                "key": "2",
+                "value": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#At/Near"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_PerformanceLevel",
+                "key": "3",
+                "value": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Above"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ProficiencyStatus",
+                "key": "Non Proficient",
+                "value": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Non Proficient"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ProficiencyStatus",
+                "key": "Proficient",
+                "value": "uri://doe.nv.gov/SBAC/PerformanceLevelDescriptor#Proficient"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "_ABS",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#PT:Absent"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "_HS",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#PT:Home School"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "_NAA",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#PT:Alt. Assessment"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "_NER",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#PT:Not Enrolled"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "_OS",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#PT:Out of State"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "_OTH",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#PT:Other"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "_SC",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#PT:Special Circ."
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "ABS",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Absent"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "ABS_",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#CAT:Absent"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "ABS_HS",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Absent-Home School"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "ABS_NAA",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Absent-Alt. Assessment"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "ABS_NER",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Absent-Not Enrolled"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "ABS_OS",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Absent-Out of State"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "ABS_OTH",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Absent-Other"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "ABS_SC",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Absent-Special Circ."
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "HS",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Home School"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "HS_",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#CAT:Home School"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "HS_ABS",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Home School-Absent"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "HS_NAA",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Home School-Alt. Assessment"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "HS_NER",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Home School-Not Enrolled"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "HS_OS",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Home School-Out of State"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "HS_OTH",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Home School-Other"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "HS_SC",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Home School-Special Circ."
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "NAA",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Alternate Assessment"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "NAA_",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#CAT:Alt. Assessment"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "NAA_ABS",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Alt. Assessment-Absent"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "NAA_HS",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Alt. Assessment-Home School"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "NAA_NER",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Alt. Assessment-Not Enrolled"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "NAA_OS",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Alt. Assessment-Out of State"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "NAA_OTH",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Alt. Assessment-Other"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "NAA_SC",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Alt. Assessment-Special Circ."
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "NER",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Not Enrolled"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "NER_",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#CAT:Not Enrolled"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "NER_ABS",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Not Enrolled-Absent"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "NER_HS",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Not Enrolled-Home School"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "NER_NAA",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Not Enrolled-Alt. Assessment"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "NER_OS",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Not Enrolled-Out of State"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "NER_OTH",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Not Enrolled-Other"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "NER_SC",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Not Enrolled-Special Circ."
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "OS",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Out of State"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "OS_",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#CAT:Out of State"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "OS_ABS",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Out of State-Absent"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "OS_HS",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Out of State-Home School"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "OS_NAA",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Out of State-Alt. Assessment"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "OS_NER",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Out of State-Not Enrolled"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "OS_OTH",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Out of State-Other"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "OS_SC",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Out of State-Special Circ."
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "OTH",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Other"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "OTH_",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#CAT:Other"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "OTH_ABS",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Other-Absent"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "OTH_HS",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Other-Home School"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "OTH_NAA",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Other-Alt. Assessment"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "OTH_NER",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Other-Not Enrolled"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "OTH_OS",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Other-Out of State"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "OTH_SC",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Other-Special Circ."
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "SC",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Special Circumstance"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "SC_",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#CAT:Special Circ."
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "SC_ABS",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Special Circ.-Absent"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "SC_HS",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Special Circ.-Home School"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "SC_NAA",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Special Circ.-Alt. Assessment"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "SC_NER",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Special Circ.-Not Enrolled"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "SC_OS",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Special Circ.-Out of State"
+            },
+            {
+                "sourceTable": "Nevada-SBAC_ReasonNotTested",
+                "key": "SC_OTH",
+                "value": "uri://doe.nv.gov/SBAC/ReasonNotTestedDescriptors#Special Circ.-Other"
+            }
+        ],
+        "supplementalInformation": null,
+        "preprocessors": [
+            {
+                "name": "Nevada-SBAC_ODSv3+",
+                "scriptContent": "[CmdletBinding()]\r\nParam(\r\n    [parameter(Mandatory = $true, ValueFromPipeline = $true)][string]$line\r\n)\r\n\r\n##########################################################\r\n### Ed-Fi ODS v3+\r\n### Assessment: Nevada Smarter Balanced Assessments (SBAC)\r\n### Script: Custom File Processor\r\n##########################################################\r\n\r\nbegin {\r\n    # Set up the statistics\r\n    # validations: Hashtable of HashTables with properties for each screening period, and each screening period will have statistics like number of records not loaded, and detailed info\r\n    <#\r\n    #>\r\n    $global:statistics = @{\r\n        \"rowsProcessed\" = 0\r\n        \"rowsLoaded\"    = 0\r\n        \"validations\"   = @{}\r\n    }\r\n\r\n    # Prepare some other variables\r\n    $currentLineNumber = 0\r\n    $global:inputHeaders = @()\r\n    $global:headersLookup = @{}\r\n\r\n    #set api version\r\n    $global:apiVersion = $DataImport.ApiVersion\r\n\r\n    ## ODS functions\r\n    \r\n    function Get-StudentUniqueIdType ($apiVersion) {\r\n        <#\r\n            .SYNOPSIS\r\n                Determines whether the value in Student.studentUniqueId is a District or State ID value. \r\n    \r\n            .DESCRIPTION\r\n                Determining the studentUniqueId value type is done by querying the /students endpoint for 10 \r\n                students and then checking either the values in the identificationCodes[] array on either the\r\n                Student record (v2.5+ API) or the studentEducationOrganizationAssociation record (v3.x API) to\r\n                see whether the District or State ID matches the StudentUniqueId value. 10 students are checked \r\n                to make sure there aren't any discrepancies.\r\n    \r\n                NOTE: Only \"District\" and \"State\" Student ID types are used in this check; all others are ignored!\r\n    \r\n            .PARAMETER ApiVersion\r\n                The version number of the API as set in $DataImport.ApiVersion. For whatever reason the $DataImport\r\n                object is not directly addressable from within a module.\r\n    \r\n            .OUTPUTS\r\n                A string representing the type of ID stored in studentUniqueId. This value  will be either\r\n                'District' or 'State'.\r\n    \r\n                Throws an error on any failure to connect to or query the API or if one or more students of\r\n                the 10 checked have a different ID value type (e.g. one has 'District' while the rest have \r\n                'State'). Also throws an error if a match can't be made on any of the 10 students checked.\r\n    \r\n            .EXAMPLE\r\n                $studentUniqueIdType = Get-StudentUniqueIdType -apiVersion $DataImport.ApiVersion\r\n        #>\r\n    \r\n        # Do sanity checks on parameters\r\n        if (!$apiVersion) { throw \"The apiVersion parameter must be set to a valid value.\" }\r\n    \r\n        # Processing depends on API version\r\n        # Only valid for apis version 3 and above\r\n        \r\n        if ($apiVersion.StartsWith(\"3.\") -or $apiVersion.StartsWith(\"5.\") -or $apiVersion.StartsWith(\"6.\")) {\r\n            # Query for 10 students (whatever comes back first - and yes, this could be flaky)\r\n            try {\r\n                $jsonResponse = Invoke-OdsApiRequest -RequestPath \"/ed-fi/studentEducationOrganizationAssociations?limit=10\"\r\n                $seoas = ConvertFrom-Json $jsonResponse\r\n            }\r\n            catch {\r\n                throw $_\r\n            }\r\n            if ($seoas.Count -eq 0) { throw \"Unable to determine StudentUniqueId type as no StudentEducationOrganizationAssociations were found in the ODS.\" }\r\n        \r\n            # Iterate the list of students checking studentUniqueId against the ID code types. These should all be the same but you know student data...\r\n            $ret = \"\"\r\n            foreach ($seoa in $seoas) {\r\n                foreach ($idCode in $seoa.studentIdentificationCodes) {\r\n                    if ($seoa.studentReference.studentUniqueId -eq $idCode.identificationCode) {\r\n                        $codeType = $idCode.studentIdentificationSystemDescriptor.Split(\"#\")\r\n                        $codeType = $codeType[1]\r\n                        if ($codeType -in @(\"District\", \"State\")) {\r\n                            if ($ret -eq \"\") { $ret = $codeType }\r\n                            elseif ($codeType -ne $ret) { \r\n                                throw \"Unable to determine studentUniqueId type as StudentEducationOrganizationAssociations have been found with both District and State ID values in studentUniqueId\" \r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n        \r\n            # If we got here then all 10 students had the same type of studentUniqueId value, so return that type\r\n            return $ret\r\n        }\r\n        else {\r\n            throw \"Attempt to connect to a version $($apiVersion) API, which is unsupported.\"\r\n        }\r\n        \r\n    }\r\n\r\n    function Get-StudentsIdMap ($apiVersion, $studentIdTypeCode) {\r\n        <#\r\n        .SYNOPSIS\r\n            Load from ODS studentId mapping from a given studentId type to its corresponding UniqueStudentId. $studentIdTypeCode valid values 'District','State'\r\n\r\n        .DESCRIPTION\r\n            Loads StudentUniqueId mapped to a passed studentId type from the ODS. \r\n            This data can then be used to look up a StudentUniqueId value by a specific studentIdType.\r\n\r\n        .PARAMETER ApiVersion\r\n            The version number of the API as set in $DataImport.ApiVersion. For whatever reason the $DataImport\r\n            object is not directly addressable from within a module.\r\n\r\n        .PARAMETER StudentIdTypeCode\r\n            The studentId Type that needs to be mapped to StudentUniqueId.\r\n\r\n        .OUTPUTS\r\n            A complex HashMap of values that you can treat as an object. The format is:\r\n            - StudentIdMap: Hashmap where keys are the desired studentIdType IdentificationCode value and the value is the StudentUniqueId from ODS\r\n                - Student Records (Key: StudentIdType IdentificationCode from ODS; Value: StudentUniqueId\r\n            \r\n            Throws an error on any failure to connect to or query the API or if one or more students of\r\n            the 10 checked have a different ID value type (e.g. one has 'District' while the rest have \r\n            'State')\r\n\r\n        .EXAMPLE\r\n            $students = Get-StudentsIdMap -apiVersion $DataImport.ApiVersion -studentIdTypeCode \"State\"\r\n        #>\r\n\r\n        # Set up some basic varialbes\r\n        $ret = @{\r\n            \"StudentIdMap\" = @{}\r\n            # \"DuplicateStudents\"         = @()\r\n            # \"NoAdditionalIdValuesFound\" = 0\r\n        }\r\n        $continue = $true\r\n        $offset = 0\r\n        $limit = 100\r\n\r\n        # Do sanity checks on parameters\r\n        if (!$apiVersion) { throw \"The apiVersion parameter must be set to a valid value.\" }\r\n\r\n        # Processing depends on the API version\r\n        if ($apiVersion.StartsWith(\"3.\") -or $apiVersion.StartsWith(\"5.\") -or $apiVersion.StartsWith(\"6.\")) {\r\n            try {\r\n                # Load the additional ID values\r\n                $continue = $true\r\n                $offset = 0\r\n                while ($continue) {\r\n                    $response = Invoke-OdsApiRequest -RequestPath \"/ed-fi/studentEducationOrganizationAssociations?limit=$limit&offset=$offset\"\r\n                    $students = ConvertFrom-Json $response\r\n                    if ($students.Count -gt 0) {\r\n                        foreach ($student in $students) {\r\n                            $studentUniqueId = $student.studentReference.studentUniqueId\r\n                            foreach ($idCode in $student.studentIdentificationCodes) {\r\n                                \r\n                                if ($idCode.studentIdentificationSystemDescriptor.Contains($studentIdTypeCode)) { \r\n                                    $ret.StudentIdMap[$idCode.identificationCode] = $studentUniqueId \r\n                                    # If found stop loop\r\n                                    break\r\n                                }\r\n                            }\r\n                        }\r\n                    }\r\n                    else {\r\n                        $continue = $false\r\n                    }\r\n                    $offset += $limit\r\n                }\r\n        \r\n                # Return the data\r\n                return $ret\r\n            }\r\n            catch {\r\n                throw $_\r\n            }\r\n        }\r\n        else {\r\n            throw \"Attempt to connect to a version $($apiVersion) API, which is unsupported.\"\r\n        }\r\n\r\n    }\r\n\r\n    #Create list Student Id  lookup\r\n    function Get-StudentIdLookupNeeded ($studentIdType){\r\n         Write-Information \"$studentIdType\"\r\n        # Get the studentUniqueIdType\r\n        Write-Information \"Checking StudentUniqueIdType...\"\r\n        \r\n        $global:studentUniqueIdType = Get-AgentCacheItem -Key \"StudentUniqueIdType\"\r\n        \r\n        if (!$global:studentUniqueIdType) {\r\n            try {\r\n                $global:studentUniqueIdType = Get-StudentUniqueIdType -apiVersion $apiVersion\r\n                New-AgentCacheItem -Key \"StudentUniqueIdType\" -Value $global:studentUniqueIdType\r\n                if ($global:studentUniqueIdType) {\r\n                    Write-Information \"StudentUniqueId Type: $($global:studentUniqueIdType)\"\r\n                }  \r\n            }\r\n            catch {\r\n                Write-Error \"Failed to determine studentUniqueId type. Error returned is '$($_.Exception.Message)'\"\r\n                throw \"Fatal error while running Begin section of Preprocessor.\"\r\n            }\r\n        }\r\n\r\n        $global:needStudentIdLookup = $false\r\n        # Only if we are able to find studentIdType in ODS\r\n        if ($studentUniqueIdType) {\r\n            # Check whether student id in ODS matches the studentId in the assessment file.\r\n            if ($studentIdType -ne $studentUniqueIdType) {\r\n                $global:needStudentIdLookup = $true\r\n\r\n                # Only load students if IDs do not match(file StudentId vs ODS UniqueStudentId)\r\n                # Load the list of students\r\n                Write-Information \"Loading list of studentId mappings ...\"\r\n                $STUDENT_ID_MAPPING_CACHE_KEY = \"StudentsIdMap\"\r\n                $global:studentsIdMap = Get-AgentCacheItem -Key $STUDENT_ID_MAPPING_CACHE_KEY\r\n                if (!$global:studentsIdMap) {\r\n                    try {\r\n                        $s = Get-StudentsIdMap -apiVersion $apiVersion -studentIdTypeCode $studentIdType\r\n                        Write-Information \"Loaded $($s.StudentIdMap.Count) StudentId mapping records from ODS.\"\r\n                        $global:studentsIdMap = $s.StudentIdMap\r\n                        New-AgentCacheItem -Key $STUDENT_ID_MAPPING_CACHE_KEY -Value $global:studentsIdMap\r\n                    }\r\n                    catch {\r\n                        Write-Error \"Failed to load list of students from the ODS> Error returned is '$($_.Exception.Message)'\"\r\n                        throw \"Fatal error while running Begin section of Preprocessor.\"\r\n                    }\r\n                    if ($global:studentsIdMap.Count -eq 0) {\r\n                        throw \"StudentId from file does not match ODS student id and we were not able to load id mapping from ODS(relation from ODS UniqueId to studentId in file).\"\r\n                    }\r\n                }\r\n            }\r\n        }\r\n        else {\r\n            Write-Warning \"Unable to find StudentId Type. Script will proceed and use student identifier as it comes in assessment file.\"\r\n        }\r\n        return $needStudentIdLookup\r\n    }\r\n\r\n    ## Helper functions  \r\n\r\n    # Get a parsed record in Hashtable where properties are the headers(used for CSV data only)\r\n    function Get-ParsedRecord($headers, $line) {\r\n        # Deal with double-quote wrappers and the fact that fields may have embedded commas\r\n        # NOTE: This is vastly stupid, but we can't run Regex in ConstrainedLanguage mode so it is what it is.\r\n        if ($line.Contains('\",\"') -or $line.Contains(',\"') -or $line.Contains('\",')) {\r\n            $cleanLine = $line\r\n            $inQuote = $false\r\n            for ($i = 0; $i -le $cleanLine.length; $i++) {\r\n                if ($cleanLine[$i] -eq '\"') {\r\n                    $inQuote = !$inQuote\r\n                }\r\n                else {\r\n                    if ($cleanLine[$i] -eq \",\" -and $inQuote -eq $false) {\r\n                        $cleanLine = $cleanLine.Substring(0, $i) + \"^\" + $cleanLine.Substring($i + 1)\r\n                    }\r\n                }\r\n            }\r\n            $cleanLine = $cleanLine.Replace(\",\", \"\")\r\n            $fields = $cleanLine.split(\"^\")\r\n        }\r\n        else {\r\n            $fields = $line.split(\",\")\r\n        }\r\n        $ret = @{}\r\n        for ($i = 0; $i -lt $fields.Length; $i++) {\r\n            $ret.Add($headers[$i], ($fields[$i].Replace('\"', ''))) | Out-Null\r\n        }\r\n        return $ret\r\n    }\r\n\r\n    # Get a parsed csv line in an array of values (used for CSV data only)\r\n    function Get-ParsedRecordArray($line, $delimiter = \",\") {\r\n        # Deal with double-quote wrappers and the fact that fields may have embedded commas\r\n        # NOTE: This is vastly stupid, but we can't run Regex in ConstrainedLanguage mode so it is what it is.\r\n        if ($line.Contains('\"{0}\"' -f $delimiter ) -or $line.Contains('{0}\"' -f $delimiter) -or $line.Contains('\"{0}' -f $delimiter)) {\r\n            $cleanLine = $line\r\n            $inQuote = $false\r\n            for ($i = 0; $i -le $cleanLine.length; $i++) {\r\n                if ($cleanLine[$i] -eq '\"') {\r\n                    $inQuote = !$inQuote\r\n                }\r\n                else {\r\n                    if ($cleanLine[$i] -eq $delimiter -and $inQuote -eq $false) {\r\n                        $cleanLine = $cleanLine.Substring(0, $i) + \"^\" + $cleanLine.Substring($i + 1)\r\n                    }\r\n                }\r\n            }\r\n            $cleanLine = $cleanLine.Replace($delimiter, \"\")\r\n            $fields = $cleanLine.split(\"^\")\r\n        }\r\n        else {\r\n            $fields = $line.split($delimiter)\r\n        }\r\n        $ret = @()\r\n        for ($i = 0; $i -lt $fields.Length; $i++) {\r\n            $ret += $fields[$i].Replace('\"', '')\r\n        }\r\n        return $ret\r\n    }\r\n\r\n    # Parse Date from string\r\n    function Get-ParsedDate ($date, $inputFormat, $outputFormat = $null) {\r\n        <# \r\n                .SYNOPSIS\r\n                    Parse a date string and returns it in the correct format.\r\n        \r\n                .PARAMETER date (required)\r\n                    The date string to parse\r\n        \r\n                .PARAMETER inputFormat (required)\r\n                    The expected format of the incoming date string\r\n        \r\n                .PARAMETER outputFormat (optional)\r\n                    The desired format of the retured date string\r\n        \r\n                .OUTPUTS\r\n                    If no outputFormat is provided then a Date object is returned\r\n        \r\n                    If outputFormat is provided then a formatted string is returned\r\n        \r\n                    If parsing fails for any reason then $null is returned\r\n            #>\r\n        \r\n        try {\r\n            $d = $([datetime]::ParseExact($date, $inputFormat, $null))\r\n            if ($outputFormat) {\r\n                $d = Get-Date -Date $d -Format $outputFormat\r\n            }\r\n            return $d\r\n        }\r\n        catch {\r\n            return $null\r\n        }\r\n    }\r\n\r\n    # Add record to statistics indicating a record was not processed becuase of a validation error\r\n    function Get-StudentODSId($fileStudentId) {\r\n        if ($global:needStudentIdLookup) {\r\n            return $global:studentsIdMap[$fileStudentId]\r\n        }\r\n        else {\r\n            # StudentId matches ODS\r\n            return $fileStudentId\r\n        }\r\n    }\r\n\r\n    # Convert an array list of data into a CSV line for output\r\n    function Get-CSVLine($inputData) {\r\n        $ret = \"\"\r\n        foreach ($cell in $inputData) {\r\n            if ($ret -ne \"\") { $ret += \",\" }\r\n            $ret += ('\"' + $cell + '\"')\r\n        }\r\n        return $ret\r\n    }\r\n\r\n\r\n    ### Assessment fields\r\n\r\n    # Type of StudentId that will be used from assessment file to match student in ODS\r\n    # Valid values 'District','State'\r\n    $studentIdType = \"District\" \r\n\r\n    $global:fileColumnDelimiter = \",\"    \r\n    \r\n    #Create studentsIdMap \r\n    $needStudentIdLookup =  Get-StudentIdLookupNeeded($studentIdType)\r\n\r\n\r\n    # Check which assessment is being processed, same script is used for both assessemnts (ELA and Math) \r\n    # Expected values are 'ELA' or 'MA'\r\n    $global:ASSESSMENT_SUBJECT_ELA = \"ELA\"\r\n    $global:ASSESSMENT_SUBJECT_MATH = \"MA\"\r\n    \r\n\r\n    switch -Exact ($DataImport.MapAttribute) {\r\n        $global:ASSESSMENT_SUBJECT_ELA {\r\n            $global:assessmentSubject = $global:ASSESSMENT_SUBJECT_ELA\r\n        }\r\n        $global:ASSESSMENT_SUBJECT_MATH {\r\n            $global:assessmentSubject = $global:ASSESSMENT_SUBJECT_MATH\r\n        }\r\n        Default {\r\n            # If map attribute does not match then throw error and stop execution\r\n            $errorMessage = \"Error: Template is designed to receive a specific map attribute value ('ELA' or 'MA'). Value '$($DataImport.MapAttribute)' is not an option.\"\r\n            Write-Error \"$errorMessage\"\r\n            throw \"$errorMessage\"\r\n        }\r\n    }\r\n\r\n    ######################\r\n    ### Columns Definition \r\n    ######################\r\n\r\n    $global:FileVersion_2019 = \"2019\"\r\n    $global:FileVersion_2021 = \"2021\"\r\n\r\n    # Accomodations\r\n    $global:SRC_COLUMNS_ACCOMMODATIONS = @()\r\n    switch -Exact ($global:assessmentSubject) {\r\n        $global:ASSESSMENT_SUBJECT_ELA {\r\n            $global:SRC_COLUMNS_ACCOMMODATIONS += 'ela_braille'\r\n            $global:SRC_COLUMNS_ACCOMMODATIONS += 'ela_large_print'\r\n            $global:SRC_COLUMNS_ACCOMMODATIONS += 'ela_pod'\r\n            $global:SRC_COLUMNS_ACCOMMODATIONS += 'ela_text_to_speech_items'\r\n            $global:SRC_COLUMNS_ACCOMMODATIONS += 'ela_text_to_speech_itemsandpassages'\r\n            $global:SRC_COLUMNS_ACCOMMODATIONS += 'ela_video_sign_language'\r\n            $global:SRC_COLUMNS_ACCOMMODATIONS += 'ela_speech_to_text'\r\n            # specific to 2021 file version\r\n            $global:SRC_COLUMNS_ACCOMMODATIONS += 'ela_ja_pod'\r\n        }\r\n        $global:ASSESSMENT_SUBJECT_MATH {\r\n            $global:SRC_COLUMNS_ACCOMMODATIONS += 'math_braille'\r\n            $global:SRC_COLUMNS_ACCOMMODATIONS += 'math_large_print'\r\n            $global:SRC_COLUMNS_ACCOMMODATIONS += 'math_pod'\r\n            $global:SRC_COLUMNS_ACCOMMODATIONS += 'math_text_to_speech_items'\r\n            $global:SRC_COLUMNS_ACCOMMODATIONS += 'math_video_sign_language'\r\n            $global:SRC_COLUMNS_ACCOMMODATIONS += 'math_speech_to_text'\r\n            # specific to 2021 file version\r\n            $global:SRC_COLUMNS_ACCOMMODATIONS += 'math_ja_pod'\r\n        }\r\n    }\r\n\r\n\r\n    # Reason Not tested\r\n    # File Versions possible values \"2019\" or \"2021\", variable is set when goring thru headers in first row of the data     \r\n    $global:REASON_NOT_TESTED_FileVersion = $null\r\n    switch -Exact ($global:assessmentSubject) {\r\n        $global:ASSESSMENT_SUBJECT_ELA {\r\n            # v2019 \r\n            $global:SRC_COLUMN_2019_REASON_NOT_TESTED_CAT = 'ela_did_not_participate_CAT'\r\n            $global:SRC_COLUMN_2019_REASON_NOT_TESTED_PT = 'ela_did_not_participate_PT'\r\n            # v2021 \r\n            $global:SRC_COLUMN_2021_REASON_NOT_TESTED_CAT = 'ela_not_tested_code_CAT'\r\n            $global:SRC_COLUMN_2021_REASON_NOT_TESTED_PT = 'ela_not_tested_code_PT'\r\n        }\r\n        $global:ASSESSMENT_SUBJECT_MATH {\r\n            # v2019 \r\n            $global:SRC_COLUMN_2019_REASON_NOT_TESTED_CAT = 'math_did_not_participate_CAT'\r\n            $global:SRC_COLUMN_2019_REASON_NOT_TESTED_PT = 'math_did_not_participate_PT'\r\n            # v2021 \r\n            $global:SRC_COLUMN_2021_REASON_NOT_TESTED_CAT = 'math_not_tested_code_CAT'\r\n            $global:SRC_COLUMN_2021_REASON_NOT_TESTED_PT = 'math_not_tested_code_PT'\r\n        }\r\n    }\r\n\r\n    # Custom/computed output columns. key: output column name, value: HashTable with source column name and other info\r\n    \r\n    $global:CUSTOM_COLUMN_MAP = @{}\r\n    $global:CUSTOM_COLUMN_MAP.Add(\"DI_StudentId\", \r\n        @{ \"SourceColumnName\" = \"local_student_id\"; }) | Out-Null\r\n    \r\n    $global:CUSTOM_COLUMN_MAP.Add(\"DI_AdministrationDate\", \r\n        @{ \"SourceColumnName\" = \"test_date_end\"; }) | Out-Null\r\n    \r\n    $global:CUSTOM_COLUMN_MAP.Add(\"DI_SchoolYear\", \r\n        @{ \"SourceColumnName\" = \"school_year\"; }) | Out-Null\r\n\r\n    $global:CUSTOM_COLUMN_MAP.Add(\"DI_AssessmentStudentIdentifier\", \r\n        @{ \"SourceColumnName\" = \"school_year\" }) | Out-Null\r\n\r\n    # Assesment specific functions\r\n\r\n    # Get Normalized output column name given an source column name\r\n    function Get-DIColumnName($srcName) {\r\n        return \"DI_{0}\" -f $srcName\r\n    }\r\n\r\n}\r\n\r\nprocess {\r\n    $currentLineNumber += 1\r\n    $global:statistics.rowsProcessed += 1\r\n\r\n    # Make sure we got something\r\n    if (!$line) { Write-Error \"Line $currentLineNumber does not contain any data\"; return }\r\n\r\n    # File is fixed width and does not contain headers, so on first line output headers before exporting calues\r\n    # If the first line then output all of the headers\r\n    if ($currentLineNumber -eq 1) { \r\n\r\n        # We assume headers will not have commas in the names\r\n        #$headerRow = $line.Split(\",\")    \r\n        $headerRow = Get-ParsedRecordArray -line $line\r\n\r\n        $outputHeaders = @()\r\n\r\n        # find version of the export file, columns for ReasonNotTested changed\r\n        if ($global:SRC_COLUMN_2021_REASON_NOT_TESTED_CAT -in $headerRow) {\r\n            Write-Information \"Subject: $($global:assessmentSubject) ->  File version 2021\"\r\n            $global:REASON_NOT_TESTED_FileVersion = $global:FileVersion_2021\r\n        }\r\n        elseif ($global:SRC_COLUMN_2019_REASON_NOT_TESTED_CAT -in $headerRow) {\r\n            Write-Information \"Subject:  $($global:assessmentSubject) -> File version 2019\"\r\n            $global:REASON_NOT_TESTED_FileVersion = $global:FileVersion_2019\r\n        }\r\n        if ($null -eq $global:REASON_NOT_TESTED_FileVersion) {\r\n            Write-Error \"Unable to detect file version.\"\r\n            throw \"Unable to detect file version.\"\r\n        }\r\n\r\n        # 1 - Loop thru headers to find and fix empty of duplicate headers\r\n        for ($i = 0; $i -lt $headerRow.Count; $i++) {\r\n            $item = $headerRow[$i]\r\n\r\n            # handle empty headers\r\n            if (!$item) {\r\n                $newName = \"EMPTY-$i\"\r\n                Write-Warning \"Found empty column at position $($i + 1). Renaming column to '$newName'.\"\r\n                $item = $newName\r\n            }\r\n            # handle duplicate headers\r\n            if ($global:headersLookup[$item]) {\r\n                $newName = \"$item-$i\"\r\n                Write-Warning \"Found duplicate column name of '$item' at position $($i + 1). Renaming column to '$newName'.\"\r\n                $item = $newName\r\n            }\r\n            $global:inputHeaders += $item            \r\n            $outputHeaders += $item\r\n            $global:headersLookup.Add($item, $index) | Out-Null     \r\n            \r\n        }      \r\n\r\n        # Headers/columns\r\n        # 2 - If there are custom headers add to output header line\r\n        if ($global:CUSTOM_COLUMN_MAP.Count) {            \r\n            $outputHeaders += $( $global:CUSTOM_COLUMN_MAP.Keys | Sort-Object )\r\n        }\r\n\r\n        # 3 - Accommodation Columns\r\n        foreach ($accommodationColumnName in $global:SRC_COLUMNS_ACCOMMODATIONS) {\r\n            $outputHeaders += Get-DIColumnName($accommodationColumnName)\r\n        }\r\n\r\n        # 4 - ReasonNotTested\r\n        $outputHeaders += Get-DIColumnName(\"ReasonNotTestedDescriptor\")\r\n\r\n        Write-Output $(Get-CSVLine($outputHeaders))\r\n        return\r\n        #does not return after headers because first line contains values not headers, headers are fixed\r\n    }\r\n\r\n    # array, Ordered output values\r\n    $orderedOutputValues = @()\r\n\r\n    # HashTable, will hold all input values for current line, used in case computed columns need to reference input values\r\n    $row = @{}\r\n    \r\n    # Not the cleanest of solutions, but none of the values should have double quotes, replace to remove wrapping quotes if present\r\n    #$row = Get-ParsedRecord -headers $($global:inputHeaders) -line $line\r\n    $row = ConvertFrom-Csv -InputObject $line -Header $global:inputHeaders\r\n\r\n    # 1 - add all values as they come in line\r\n    #$orderedOutputValues = $line.Split(\",\")\r\n    $orderedOutputValues = Get-ParsedRecordArray -line $line\r\n\r\n    # Validation will tell whether or not a record has the required values needed to be posted to ODS, \r\n    # if not valid error code and line number will be displayed in the summary\r\n    $passedValidation = $true\r\n    $validationId = $null\r\n    # 2 - Process custom/computed columns\r\n    if ($global:CUSTOM_COLUMN_MAP.Count) {            \r\n        foreach ($outColumnName in  $( $global:CUSTOM_COLUMN_MAP.Keys | Sort-Object )) {\r\n                    \r\n            $srcInfo = $global:CUSTOM_COLUMN_MAP[$outColumnName]\r\n            $srcColName = $srcInfo.SourceColumnName   \r\n            \r\n            ### DataImport Assessment Custom Columns\r\n            switch -Exact ($outColumnName) {\r\n                # StudentId\r\n                \"DI_StudentId\" {\r\n                    $stdId = Get-StudentODSId($row.$srcColName)\r\n\r\n                    # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                    if (!$stdId) {\r\n                        $passedValidation = $false\r\n                        $validationId = \"InvalidStudentId\"\r\n                        break\r\n                    }\r\n    \r\n                    $orderedOutputValues += $stdId\r\n                    break\r\n                }\r\n    \r\n                # Admin Date\r\n                \"DI_AdministrationDate\" {\r\n                    \r\n                    <#\r\n                        format: MMDDYYYY\t\"Include leading zeroes.\"\r\n                        For 2019: 02212019\r\n                    #>\r\n                    ## admin date\r\n                    # In case it might not have 8 digits (leading zero)\r\n                    $rawDate = $row.$srcColName\r\n                    if ($rawDate -and $rawDate.Length -eq 7) {\r\n                        $rawDate = \"0{0}\" -f $rawDate\r\n                    }\r\n\r\n                    $adminDate = Get-ParsedDate -date $rawDate -inputFormat \"Mdyyyy\" -outputFormat \"MM/dd/yyyy\"\r\n                    \r\n                    # Validation, this is a required field, if empty will be unable to post to ODS\r\n                    if (!$adminDate) {\r\n                        $passedValidation = $false\r\n                        $validationId = \"InvalidAdministrationDate\"\r\n                        break\r\n                    }\r\n    \r\n                    $orderedOutputValues += $adminDate\r\n                    break\r\n                }\r\n    \r\n                # School Year\r\n                \"DI_SchoolYear\" {\r\n                    # 1819 = Year 2018-2019\r\n                    $schoolYearRaw = $row.$srcColName\r\n    \r\n                    $schoolYear = $null\r\n                    # If value is 4 characters then assume SchoolYear is the ending (two digits) year, will work for another 80 years :)\r\n                    if ($schoolYearRaw.Length -ge 4) {\r\n                        $year2digits = $schoolYearRaw.Substring(2, 2)\r\n                        $schoolYear = \"20{0}\" -f $year2digits\r\n                    }\r\n\r\n                    # Validation, this is a required field, if empty will be unable to post to ODS\r\n                    if (!$schoolYear) {\r\n                        $passedValidation = $false\r\n                        $validationId = \"InvalidSchoolYear\"\r\n                        break\r\n                    }\r\n    \r\n                    $orderedOutputValues += $schoolYear\r\n                    break\r\n                }\r\n    \r\n                # Assessment Student Identifier\r\n                \"DI_AssessmentStudentIdentifier\" {    \r\n                    $assessStudentId = $row.$srcColName\r\n                            \r\n                    # Validation, this is a required field, if empty will be unable to post to ODS\r\n                    if (!$assessStudentId) {\r\n                        $passedValidation = $false\r\n                        $validationId = \"InvalidStudentAssessmentId\"\r\n                        break\r\n                    }\r\n    \r\n                    $orderedOutputValues += $assessStudentId\r\n                    break\r\n                }\r\n\r\n                Default {\r\n                    # In case of no implementation for custom column add $null output to preserve output format and order\r\n                    $orderedOutputValues += $null\r\n                    break;\r\n                }\r\n            }\r\n        }\r\n    }     \r\n\r\n    # 3 - Accommodation Columns\r\n    foreach ($accommodationColumnName in $global:SRC_COLUMNS_ACCOMMODATIONS) {\r\n        $value = $row.$accommodationColumnName\r\n        if ($value -ne '1') {\r\n            $value = $null\r\n        }\r\n        $orderedOutputValues += $value\r\n    }\r\n\r\n    # 4 - ReasonNotTested\r\n    <#\r\n        will be handed to lookups to deside what des\r\n    #>\r\n    switch ($global:REASON_NOT_TESTED_FileVersion) {\r\n        \"2021\" {\r\n            $rntdColumn_cat = $global:SRC_COLUMN_2021_REASON_NOT_TESTED_CAT\r\n            $rntdColumn_pt = $global:SRC_COLUMN_2021_REASON_NOT_TESTED_PT\r\n            break\r\n        }\r\n        \"2019\" {\r\n            $rntdColumn_cat = $global:SRC_COLUMN_2019_REASON_NOT_TESTED_CAT\r\n            $rntdColumn_pt = $global:SRC_COLUMN_2019_REASON_NOT_TESTED_PT\r\n            break\r\n        }\r\n        default {\r\n            Write-Error \"ReasonNotTested source column is invalid.\"\r\n            break\r\n        }\r\n    }\r\n    $catValue = $row.$rntdColumn_cat\r\n    $ptValue = $row.$rntdColumn_pt\r\n    $outValue = $null\r\n    if ($catValue -or $ptValue) {\r\n\r\n        #if botha re the same just send one value\r\n        if ($catValue -eq $ptValue) {\r\n            $outValue = $catValue\r\n        }\r\n        else {\r\n            $outValue = \"{0}_{1}\" -f $catValue, $ptValue\r\n        }\r\n    }    \r\n    $orderedOutputValues += $outValue\r\n\r\n    # If not valid add to statistics to notify user at the end of execution and skip record and do not post current for current row this screening period to ODS\r\n    if (!$passedValidation) {\r\n        # Only print once per row\r\n        if (!$errorInCurrentRow) {\r\n            Write-Warning \"Invalid record see statistics summary for details.($currentLineNumber)\"\r\n        }            \r\n\r\n        # Check if this validation error already added for current screening period\r\n        if ($global:statistics.validations[$validationId]) {\r\n            $global:statistics.validations[$validationId] += $currentLineNumber\r\n        }\r\n        else {\r\n            $global:statistics.validations.Add($validationId, @($currentLineNumber)) | Out-Null\r\n        }\r\n        \r\n        # Skip current line do not pass values to DataImport\r\n        return\r\n    }\r\n\r\n    Write-Output $(Get-CSVLine($orderedOutputValues))\r\n    $global:statistics.rowsLoaded ++    \r\n}\r\n\r\nend {\r\n\r\n    Write-Information \"SUMMARY: `\r\n        Rows Processed: $($global:statistics.rowsProcessed); `\r\n        Rows Loaded: $($global:statistics.rowsLoaded)\"\r\n\r\n    foreach ($validationId in $global:statistics.validations.Keys) {\r\n        Write-Warning \"Error reason: '$validationId'\"                \r\n        Write-Information \"Line number(s):\"\r\n        $lineNumbers = $global:statistics.validations[$validationId]\r\n        $errorThreshold = 50\r\n        if ($lineNumbers.Count -gt $errorThreshold) {\r\n            Write-Warning \"There are $($lineNumbers.Count) lines with errors. Will only print the first $errorThreshold line numbers where errors ocurred.\"\r\n            $lineNumbers = $lineNumbers[0..$($errorThreshold - 1)]\r\n        }\r\n        Write-Warning \"$([string]::Join(\",\",$lineNumbers))\"\r\n    }\r\n\r\n}",
+                "requireOdsApiAccess": true,
+                "hasAttribute": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,448 @@
+{
+    "title": "Export-Template_CollegeBoard-AP",
+    "description": "Export Template CollegeBoard AP",
+    "apiVersion": "5.3",
+    "template": {
+        "maps": [
+            {
+                "name": "AP-DataMap",
+                "resourcePath": "/ed-fi/studentAssessments",
+                "columnHeaders": [
+                    "Student Identifier",
+                    "AP Number",
+                    "Admin Year",
+                    "Exam Code",
+                    "Exam Grade",
+                    "Irregularity Code #1",
+                    "Irregularity Code #2",
+                    "Class Section Code",
+                    "DI_AdministrationDate",
+                    "DI_SchoolYear",
+                    "DI_StudentAssessmentIdentifier",
+                    "DI_StudentId"
+                ],
+                "map": {
+                    "studentAssessmentIdentifier": {
+                        "Column": "DI_StudentAssessmentIdentifier"
+                    },
+                    "assessmentReference": {
+                        "assessmentIdentifier": "AdvancedPlacement(AP)-V1",
+                        "namespace": "uri://collegeboard.org/ap/Assessment"
+                    },
+                    "schoolYearTypeReference": {
+                        "schoolYear": {
+                            "Column": "DI_SchoolYear"
+                        }
+                    },
+                    "studentReference": {
+                        "studentUniqueId": {
+                            "Column": "Student Identifier"
+                        }
+                    },
+                    "administrationDate": {
+                        "Column": "DI_AdministrationDate"
+                    },
+                    "scoreResults": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Admin Year",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "Admin Year"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Exam Code",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "Exam Code"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Exam Grade",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "Exam Grade"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Irregularity Code #1",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "Irregularity Code #1"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Irregularity Code #2",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "Irregularity Code #2"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Class Section Code",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer",
+                            "result": {
+                                "Column": "Class Section Code"
+                            }
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Exam Code Description",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level",
+                            "result": {
+                                "Column": "Exam Code",
+                                "Lookup": "CollegeBoard-AP_ExamCodeDescription_LU"
+                            }
+                        }
+                    ]
+                },
+                "customFileProcessor": "CollegeBoard-AP_ODSv5_CFP",
+                "attribute": null
+            }
+        ],
+        "bootstraps": [
+            {
+                "name": "AP-ARMD",
+                "resourcePath": "/ed-fi/assessmentReportingMethodDescriptors",
+                "data": [
+                    {
+                        "codeValue": "Admin Year",
+                        "description": "Admin Year",
+                        "namespace": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Admin Year"
+                    },
+                    {
+                        "codeValue": "Exam Code",
+                        "description": "Exam Code",
+                        "namespace": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Exam Code"
+                    },
+                    {
+                        "codeValue": "Exam Code Description",
+                        "description": "The exam code description. This column is derived from the Exam Code.",
+                        "namespace": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Exam Code Description"
+                    },
+                    {
+                        "codeValue": "Exam Grade",
+                        "description": "The converted score (1-5) of the student’s most recent exam.",
+                        "namespace": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Exam Grade"
+                    },
+                    {
+                        "codeValue": "Irregularity Code #1",
+                        "description": "Code indicating the type of irregularity or event related to the student’s most recent AP Exam, if any.",
+                        "namespace": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Irregularity Code #1"
+                    },
+                    {
+                        "codeValue": "Irregularity Code #2",
+                        "description": "Code indicating the type of irregularity or event related to the student’s most recent AP Exam, if there is more than one.",
+                        "namespace": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Irregularity Code #2"
+                    },
+                    {
+                        "codeValue": "Class Section Code",
+                        "description": "Always blank starting in 2020. Reports generated for administration years prior to 2020 may contain values when a school had multiple classes and/or teachers for an AP Exam. ",
+                        "namespace": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor",
+                        "shortDescription": "Class Section Code"
+                    }
+                ]
+            },
+            {
+                "name": "AP-Assessment",
+                "resourcePath": "/ed-fi/assessments",
+                "data": {
+                    "assessmentIdentifier": "AdvancedPlacement(AP)-V1",
+                    "assessmentTitle": "Advanced Placement (AP)",
+                    "namespace": "uri://collegeboard.org/ap/Assessment",
+                    "assessedGradeLevels": [
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Ninth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Tenth grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade"
+                        },
+                        {
+                            "gradeLevelDescriptor": "uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade"
+                        }
+                    ],
+                    "assessmentCategoryDescriptor": "uri://ed-fi.org/AssessmentCategoryDescriptor#College entrance exam",
+                    "academicSubjects": [
+                        {
+                            "academicSubjectDescriptor": "uri://ed-fi.org/AcademicSubjectDescriptor#Other"
+                        }
+                    ],
+                    "scores": [
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Admin Year",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Exam Code",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Exam Grade",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Irregularity Code #1",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Irregularity Code #2",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Class Section Code",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Integer"
+                        },
+                        {
+                            "assessmentReportingMethodDescriptor": "uri://collegeboard.org/ap/AssessmentReportingMethodDescriptor#Exam Code Description",
+                            "resultDatatypeTypeDescriptor": "uri://ed-fi.org/ResultDatatypeTypeDescriptor#Level"
+                        }
+                    ]
+                }
+            }
+        ],
+        "lookups": [
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "13",
+                "value": "Art History"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "14",
+                "value": "Drawing"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "15",
+                "value": "2-D Art and Design"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "16",
+                "value": "3-D Art and Design"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "20",
+                "value": "Biology"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "22",
+                "value": "Seminar"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "23",
+                "value": "Research"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "25",
+                "value": "Chemistry"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "28",
+                "value": "Chinese Language and Culture"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "31",
+                "value": "Computer Science A"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "32",
+                "value": "Computer Science Principles"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "33",
+                "value": "Computer Science AB"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "34",
+                "value": "Microeconomics"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "35",
+                "value": "Macroeconomics"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "36",
+                "value": "English Language and Composition"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "37",
+                "value": "English Literature and Composition"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "40",
+                "value": "Environmental Science"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "43",
+                "value": "European History"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "48",
+                "value": "French Language and Culture"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "51",
+                "value": "French Literature"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "53",
+                "value": "Human Geography"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "55",
+                "value": "German Language and Culture Code Description Discontinued"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "57",
+                "value": "United States Government and Politics"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "58",
+                "value": "Comparative Government and Politics"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "60",
+                "value": "Latin"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "61",
+                "value": "Latin Literature"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "62",
+                "value": "Italian Language and Culture"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "64",
+                "value": "Japanese Language and Culture"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "66",
+                "value": "Calculus AB"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "68",
+                "value": "Calculus BC"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "69",
+                "value": "Calculus BC: AB Subscore"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "7",
+                "value": "United States History"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "75",
+                "value": "Music Theory"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "76",
+                "value": "Music Aural Subscore"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "77",
+                "value": "Music Non-Aural Subscore"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "78",
+                "value": "Physics B"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "80",
+                "value": "Physics C: Mechanics"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "82",
+                "value": "Physics C: Electricity and Magnetism"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "83",
+                "value": "Physics 1"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "84",
+                "value": "Physics 2"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "85",
+                "value": "Psychology"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "87",
+                "value": "Spanish Language and Culture"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "89",
+                "value": "Spanish Literature and Culture"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "90",
+                "value": "Statistics"
+            },
+            {
+                "sourceTable": "CollegeBoard-AP_ExamCodeDescription_LU",
+                "key": "93",
+                "value": "World History: Modern"
+            }
+        ],
+        "supplementalInformation": null,
+        "preprocessors": [
+            {
+                "name": "CollegeBoard-AP_ODSv5_CFP",
+                "scriptContent": "[CmdletBinding()]\r\nParam(\r\n    [parameter(Mandatory = $true, ValueFromPipeline = $true)][string]$line\r\n)\r\n\r\n#####################################################\r\n### Ed-Fi ODS v5+\r\n### Assessment: CollegeBoard-AP\r\n### Script: Custom File Processor\r\n#####################################################\r\n\r\n\r\n# Handle start of processing\r\nbegin {\r\n\r\n    # Set up the statistics\r\n    # validations: Hashtable of HashTables with properties for each screening period, and each screening period will have statistics like number of records not loaded, and detailed info\r\n    <#\r\n    #>\r\n    $global:statistics = @{\r\n        \"rowsProcessed\" = 0\r\n        \"rowsLoaded\"    = 0\r\n        \"validations\"   = @{}\r\n    }\r\n\r\n    # Prepare some other variables\r\n    $currentLineNumber = 0\r\n    $global:inputHeaders = @()\r\n    $global:headersLookup = @{}\r\n\r\n    ## ODS functions\r\n    $global:ReportingBatchQty=50\r\n    $global:StartTime = Get-Date\r\n    $global:apiVersion = $DataImport.ApiVersion\r\n        \r\n    function Get-StudentUniqueIdType ($apiVersion) {\r\n        <#\r\n            .SYNOPSIS\r\n                Determines whether the value in Student.studentUniqueId is a District or State ID value. \r\n    \r\n            .DESCRIPTION\r\n                Determining the studentUniqueId value type is done by querying the /students endpoint for 10 \r\n                students and then checking either the values in the identificationCodes[] array on either the\r\n                Student record (v2.5+ API) or the studentEducationOrganizationAssociation record (v3.x API) to\r\n                see whether the District or State ID matches the StudentUniqueId value. 10 students are checked \r\n                to make sure there aren't any discrepancies.\r\n    \r\n                NOTE: Only \"District\" and \"State\" Student ID types are used in this check; all others are ignored!\r\n    \r\n            .PARAMETER ApiVersion\r\n                The version number of the API as set in $DataImport.ApiVersion. For whatever reason the $DataImport\r\n                object is not directly addressable from within a module.\r\n    \r\n            .OUTPUTS\r\n                A string representing the type of ID stored in studentUniqueId. This value  will be either\r\n                'District' or 'State'.\r\n    \r\n                Throws an error on any failure to connect to or query the API or if one or more students of\r\n                the 10 checked have a different ID value type (e.g. one has 'District' while the rest have \r\n                'State'). Also throws an error if a match can't be made on any of the 10 students checked.\r\n    \r\n            .EXAMPLE\r\n                $studentUniqueIdType = Get-StudentUniqueIdType -apiVersion $DataImport.ApiVersion\r\n        #>\r\n    \r\n        # Do sanity checks on parameters\r\n        if (!$apiVersion) { throw \"The apiVersion parameter must be set to a valid value.\" }\r\n    \r\n        # Processing depends on API version\r\n        # Only valid for apis version 3 and above\r\n        \r\n        if ($apiVersion.StartsWith(\"3.\") -or $apiVersion.StartsWith(\"5.\") -or $apiVersion.StartsWith(\"6.\")) {\r\n            # Query for 10 students (whatever comes back first - and yes, this could be flaky)\r\n            try {\r\n                $jsonResponse = Invoke-OdsApiRequest -RequestPath \"/ed-fi/studentEducationOrganizationAssociations?limit=10\"\r\n                $seoas = ConvertFrom-Json $jsonResponse\r\n            }\r\n            catch {\r\n                throw $_\r\n            }\r\n            if ($seoas.Count -eq 0) { throw \"Unable to determine StudentUniqueId type as no StudentEducationOrganizationAssociations were found in the ODS.\" }\r\n        \r\n            # Iterate the list of students checking studentUniqueId against the ID code types. These should all be the same but you know student data...\r\n            $ret = \"\"\r\n            foreach ($seoa in $seoas) {\r\n                foreach ($idCode in $seoa.studentIdentificationCodes) {\r\n                    if ($seoa.studentReference.studentUniqueId -eq $idCode.identificationCode) {\r\n                        $codeType = $idCode.studentIdentificationSystemDescriptor.Split(\"#\")\r\n                        $codeType = $codeType[1]\r\n                        if ($codeType -in @(\"District\", \"State\")) {\r\n                            if ($ret -eq \"\") { $ret = $codeType }\r\n                            elseif ($codeType -ne $ret) { \r\n                                throw \"Unable to determine studentUniqueId type as StudentEducationOrganizationAssociations have been found with both District and State ID values in studentUniqueId\" \r\n                            }\r\n                        }\r\n                    }\r\n                }\r\n            }\r\n        \r\n            # If we got here then all 10 students had the same type of studentUniqueId value, so return that type\r\n            return $ret\r\n        }\r\n        else {\r\n            throw \"Attempt to connect to a version $($apiVersion) API, which is unsupported.\"\r\n        }\r\n        \r\n    }\r\n\r\n    function Get-StudentsIdMap ($apiVersion, $studentIdTypeCode) {\r\n        <#\r\n            .SYNOPSIS\r\n                Load from ODS studentId mapping from a given studentId type to its corresponding UniqueStudentId. $studentIdTypeCode valid values 'District','State'\r\n\r\n            .DESCRIPTION\r\n                Loads StudentUniqueId mapped to a passed studentId type from the ODS. \r\n                This data can then be used to look up a StudentUniqueId value by a specific studentIdType.\r\n\r\n            .PARAMETER ApiVersion\r\n                The version number of the API as set in $DataImport.ApiVersion. For whatever reason the $DataImport\r\n                object is not directly addressable from within a module.\r\n\r\n            .PARAMETER StudentIdTypeCode\r\n                The studentId Type that needs to be mapped to StudentUniqueId.\r\n\r\n            .OUTPUTS\r\n                A complex HashMap of values that you can treat as an object. The format is:\r\n                - StudentIdMap: Hashmap where keys are the desired studentIdType IdentificationCode value and the value is the StudentUniqueId from ODS\r\n                    - Student Records (Key: StudentIdType IdentificationCode from ODS; Value: StudentUniqueId\r\n                \r\n                Throws an error on any failure to connect to or query the API or if one or more students of\r\n                the 10 checked have a different ID value type (e.g. one has 'District' while the rest have \r\n                'State')\r\n\r\n            .EXAMPLE\r\n                $students = Get-StudentsIdMap -apiVersion $DataImport.ApiVersion -studentIdTypeCode \"State\"\r\n        #>\r\n\r\n        # Set up some basic varialbes\r\n        $ret = @{\r\n            \"StudentIdMap\" = @{}\r\n            # \"DuplicateStudents\"         = @()\r\n            # \"NoAdditionalIdValuesFound\" = 0\r\n        }\r\n        $continue = $true\r\n        $offset = 0\r\n        $limit = 100\r\n\r\n        # Do sanity checks on parameters\r\n        if (!$apiVersion) { throw \"The apiVersion parameter must be set to a valid value.\" }\r\n\r\n        # Processing depends on the API version\r\n        if ($apiVersion.StartsWith(\"3.\") -or $apiVersion.StartsWith(\"5.\") -or $apiVersion.StartsWith(\"6.\")) {\r\n            try {\r\n                # Load the additional ID values\r\n                $continue = $true\r\n                $offset = 0\r\n                while ($continue) {\r\n                    $response = Invoke-OdsApiRequest -RequestPath \"/ed-fi/studentEducationOrganizationAssociations?limit=$limit&offset=$offset\"\r\n                    $students = ConvertFrom-Json $response\r\n                    if ($students.Count -gt 0) {\r\n                        foreach ($student in $students) {\r\n                            $studentUniqueId = $student.studentReference.studentUniqueId\r\n                            foreach ($idCode in $student.studentIdentificationCodes) {\r\n                                \r\n                                if ($idCode.studentIdentificationSystemDescriptor.Contains($studentIdTypeCode)) { \r\n                                    $ret.StudentIdMap[$idCode.identificationCode] = $studentUniqueId \r\n                                    # If found stop loop\r\n                                    break\r\n                                }\r\n                            }\r\n                        }\r\n                    }\r\n                    else {\r\n                        $continue = $false\r\n                    }\r\n                    $offset += $limit\r\n                }\r\n        \r\n                # Return the data\r\n                return $ret\r\n            }\r\n            catch {\r\n                throw $_\r\n            }\r\n        }\r\n        else {\r\n            throw \"Attempt to connect to a version $($apiVersion) API, which is unsupported.\"\r\n        }\r\n\r\n    }\r\n    \r\n    #Create list Student Id  lookup\r\n    function Get-StudentIdLookupNeeded ($studentIdType){\r\n         Write-Information \"$studentIdType\"\r\n        # Get the studentUniqueIdType\r\n        Write-Information \"Checking StudentUniqueIdType...\"\r\n        \r\n        $global:studentUniqueIdType = Get-AgentCacheItem -Key \"StudentUniqueIdType\"\r\n        \r\n        if (!$global:studentUniqueIdType) {\r\n            try {\r\n                $global:studentUniqueIdType = Get-StudentUniqueIdType -apiVersion $apiVersion\r\n                New-AgentCacheItem -Key \"StudentUniqueIdType\" -Value $global:studentUniqueIdType\r\n                if ($global:studentUniqueIdType) {\r\n                    Write-Information \"StudentUniqueId Type: $($global:studentUniqueIdType)\"\r\n                }  \r\n            }\r\n            catch {\r\n                Write-Error \"Failed to determine studentUniqueId type. Error returned is '$($_.Exception.Message)'\"\r\n                throw \"Fatal error while running Begin section of Preprocessor.\"\r\n            }\r\n        }\r\n\r\n        $global:needStudentIdLookup = $false\r\n        # Only if we are able to find studentIdType in ODS\r\n        if ($studentUniqueIdType) {\r\n            # Check whether student id in ODS matches the studentId in the assessment file.\r\n            if ($studentIdType -ne $studentUniqueIdType) {\r\n                $global:needStudentIdLookup = $true\r\n\r\n                # Only load students if IDs do not match(file StudentId vs ODS UniqueStudentId)\r\n                # Load the list of students\r\n                Write-Information \"Loading list of studentId mappings ...\"\r\n                $STUDENT_ID_MAPPING_CACHE_KEY = \"StudentsIdMap\"\r\n                $global:studentsIdMap = Get-AgentCacheItem -Key $STUDENT_ID_MAPPING_CACHE_KEY\r\n                if (!$global:studentsIdMap) {\r\n                    try {\r\n                        $s = Get-StudentsIdMap -apiVersion $apiVersion -studentIdTypeCode $studentIdType\r\n                        Write-Information \"Loaded $($s.StudentIdMap.Count) StudentId mapping records from ODS.\"\r\n                        $global:studentsIdMap = $s.StudentIdMap\r\n                        New-AgentCacheItem -Key $STUDENT_ID_MAPPING_CACHE_KEY -Value $global:studentsIdMap\r\n                    }\r\n                    catch {\r\n                        Write-Error \"Failed to load list of students from the ODS> Error returned is '$($_.Exception.Message)'\"\r\n                        throw \"Fatal error while running Begin section of Preprocessor.\"\r\n                    }\r\n                    if ($global:studentsIdMap.Count -eq 0) {\r\n                        throw \"StudentId from file does not match ODS student id and we were not able to load id mapping from ODS(relation from ODS UniqueId to studentId in file).\"\r\n                    }\r\n                }\r\n            }\r\n        }\r\n        else {\r\n            Write-Warning \"Unable to find StudentId Type. Script will proceed and use student identifier as it comes in assessment file.\"\r\n        }\r\n        return $needStudentIdLookup\r\n    }\r\n\r\n    # Add record to statistics indicating a record was not processed becuase of a validation error\r\n    function Get-StudentODSId($fileStudentId) {\r\n        if ($global:needStudentIdLookup) {\r\n            return $global:studentsIdMap[$fileStudentId]\r\n        }\r\n        else {\r\n            # StudentId matches ODS\r\n            return $fileStudentId\r\n        }\r\n    }\r\n\r\n    ## Helper functions        \r\n\r\n    # Convert an array list of data into a CSV line for output\r\n    function Get-CSVLine($inputData) {\r\n        $ret = \"\"\r\n        foreach ($cell in $inputData) {\r\n            if ($ret -ne \"\") { $ret += \",\" }\r\n            $ret += ('\"' + $cell + '\"')\r\n        }\r\n        return $ret\r\n    }\r\n      # Get a parsed csv line in an array of values (used for CSV data only)\r\n      function Get-ParsedRecordArray($line, $delimiter = \",\") {\r\n        # Deal with double-quote wrappers and the fact that fields may have embedded commas\r\n        # NOTE: This is vastly stupid, but we can't run Regex in ConstrainedLanguage mode so it is what it is.\r\n        if ($line.Contains('\"{0}\"' -f $delimiter ) -or $line.Contains('{0}\"' -f $delimiter) -or $line.Contains('\"{0}' -f $delimiter)) {\r\n            $cleanLine = $line\r\n            $inQuote = $false\r\n            for ($i = 0; $i -le $cleanLine.length; $i++) {\r\n                if ($cleanLine[$i] -eq '\"') {\r\n                    $inQuote = !$inQuote\r\n                }\r\n                else {\r\n                    if ($cleanLine[$i] -eq $delimiter -and $inQuote -eq $false) {\r\n                        $cleanLine = $cleanLine.Substring(0, $i) + \"^\" + $cleanLine.Substring($i + 1)\r\n                    }\r\n                }\r\n            }\r\n            $cleanLine = $cleanLine.Replace($delimiter, \"\")\r\n            $fields = $cleanLine.split(\"^\")\r\n        }\r\n        else {\r\n            $fields = $line.split($delimiter)\r\n        }\r\n        $ret = @()\r\n        for ($i = 0; $i -lt $fields.Length; $i++) {\r\n            $ret += $fields[$i].Replace('\"', '')\r\n        }\r\n        return $ret\r\n    }\r\n    # Parse Date from string\r\n    function Get-ParsedDate ($date, $inputFormat, $outputFormat = $null) {\r\n        <# \r\n            .SYNOPSIS\r\n                Parse a date string and returns it in the correct format.\r\n    \r\n            .PARAMETER date (required)\r\n                The date string to parse\r\n    \r\n            .PARAMETER inputFormat (required)\r\n                The expected format of the incoming date string\r\n    \r\n            .PARAMETER outputFormat (optional)\r\n                The desired format of the retured date string\r\n    \r\n            .OUTPUTS\r\n                If no outputFormat is provided then a Date object is returned\r\n    \r\n                If outputFormat is provided then a formatted string is returned\r\n    \r\n                If parsing fails for any reason then $null is returned\r\n        #>\r\n    \r\n        try {\r\n            $d = $([datetime]::ParseExact($date, $inputFormat, $null))\r\n            if ($outputFormat) {\r\n                $d = Get-Date -Date $d -Format $outputFormat\r\n            }\r\n            return $d\r\n        }\r\n        catch {\r\n            return $null\r\n        }\r\n    }\r\n    \r\n    $fileCol_examCode = 'Exam Code'\r\n    $outfile_computedcol_stdAssessId = \"DI_StudentAssessmentIdentifier1\"\r\n    $global:srcfile_fixedColumns = 'Student Identifier','AP Number';\r\n    $global:templateColumnNames = 'Admin Year', 'Exam Code', 'Exam Grade', 'Irregularity Code #1' , 'Irregularity Code #2' , 'Class Section Code';\r\n    $global:srcfile_headerColumns =$srcfile_fixedColumns + $global:templateColumnNames\r\n\r\n    \r\n    ### Assessment fields\r\n\r\n    # Type of StudentId that will be used from assessment file to match student in ODS\r\n    # Valid values 'District','State'\r\n    $studentIdType = \"District\" \r\n\r\n    $global:fileColumnDelimiter = \",\"    \r\n    \r\n    #Create studentsIdMap \r\n    $needStudentIdLookup =  Get-StudentIdLookupNeeded($studentIdType)\r\n\r\n    # Custom/computed output columns. key: output column name, value: HashTable with source column name and other info\r\n    $global:CUSTOM_COLUMN_MAP = @{}\r\n    $global:CUSTOM_COLUMN_MAP.Add(\"DI_StudentAssessmentIdentifier\", \r\n        @{ \"SourceColumnName\" = \"Admin Year 03\" }) | Out-Null\r\n    $global:CUSTOM_COLUMN_MAP.Add(\"DI_SchoolYear\", \r\n        @{ \"SourceColumnName\" = \"Admin Year 03\"}) | Out-Null\r\n    $global:CUSTOM_COLUMN_MAP.Add(\"DI_AdministrationDate\", \r\n        @{ \"SourceColumnName\" = \"Admin Year 03\"}) | Out-Null\r\n    $global:CUSTOM_COLUMN_MAP.Add(\"DI_StudentId\", \r\n        @{ \"SourceColumnName\" = \"Student Identifier\" }) | Out-Null\r\n\r\n\r\n    $global:studentAssessmentRecords = @()\r\n\r\n\r\n\r\n}\r\n\r\n\r\n# Process each individual line of incoming data (the pipeline sends this one line at a time)\r\nprocess {\r\n    $currentLineNumber += 1\r\n    $global:statistics.rowsProcessed += 1\r\n\r\n    $global:studentAssessmentRecord = @{}\r\n\r\n    # Make sure we got something\r\n    if (!$line) { Write-Error \"Line $currentLineNumber does not contain any data\"; return }\r\n    \r\n    \r\n    # If the first line pick out all of the headers\r\n    if ($currentLineNumber -eq 1) { \r\n\r\n        # We assume headers will not have commas in the names\r\n        #$headerRow = $line.Split(\",\")    \r\n        $headerRow = Get-ParsedRecordArray -line $line\r\n        $outputHeaders = @()\r\n        \r\n        # Loop thru headers to find and fix empty and duplicate headers\r\n        for ($i = 0; $i -lt $headerRow.Count; $i++) {\r\n            $item = $headerRow[$i]\r\n            $item = $item.Trim(' ')\r\n            \r\n            # handle empty headers\r\n            if (!$item) {\r\n                $newName = \"EMPTY-$i\"\r\n                Write-Warning \"Found empty column at position $($i + 1). Renaming column to '$newName'.\"\r\n                $item = $newName\r\n            }\r\n            # handle duplicate headers\r\n            if ($global:headersLookup[$item]) {\r\n                $newName = \"$item-$i\"\r\n                Write-Warning \"Found duplicate column name of '$item' at position $($i + 1). Renaming column to '$newName'.\"\r\n                $item = $newName\r\n            }\r\n            $global:inputHeaders += $item            \r\n            $global:headersLookup.Add($item, $index) | Out-Null        \r\n        }\r\n        # Fixed Headers\r\n        # Order matters, output values must be extracted in this same order \r\n        \r\n        # 1 new custom headers\r\n        foreach ($item in $global:srcfile_headerColumns) {\r\n            $outputHeaders += $($item)\r\n        }\r\n         # 2 - If there are DI custom headers add to output header line\r\n        if ($global:CUSTOM_COLUMN_MAP.Count) {            \r\n            $outputHeaders += $( $global:CUSTOM_COLUMN_MAP.Keys | Sort-Object )\r\n        }\r\n\r\n        \r\n        Write-Output $(Get-CSVLine($outputHeaders))        \r\n        return\r\n    }\r\n\r\n     # array, Ordered output values\r\n     $orderedOutputValues = @()\r\n\r\n     # HashTable, will hold all input values for current line, used in case computed columns need to reference input values\r\n     $row = @{}\r\n     \r\n     # Not the cleanest of solutions, but none of the values should have double quotes, replace to remove wrapping quotes if present\r\n\r\n     $row = ConvertFrom-Csv -InputObject $line -Header $global:inputHeaders  -Delimiter $global:fileColumnDelimiter \r\n \r\n     # 1 - add all values as they come in line\r\n     #$orderedOutputValues = $line.Split(\",\")\r\n     #$orderedOutputValues = Get-ParsedRecordArray -line $line   \r\n\r\n    # Validation will tell whether or not a record has the required values needed to be posted to ODS, if not valid add line number to show in summary\r\n    $passedValidation = $true\r\n    $validationId = $null\r\n    \r\n\r\n    $i=0\r\n    # Process custom/computed columns\r\n    if ($global:CUSTOM_COLUMN_MAP.Count) {            \r\n        foreach ($outColumnName in $global:CUSTOM_COLUMN_MAP.Keys) {\r\n            $out_col_Measure = $null\r\n            $srcInfo = $global:CUSTOM_COLUMN_MAP[$outColumnName]       \r\n             $val = $null\r\n\r\n            ### DataImport Assessment Custom Columns\r\n            switch -Exact ($outColumnName) {\r\n                \r\n                # DI_StudentAssessmentIdentifier\r\n                \"DI_StudentAssessmentIdentifier\" {\r\n                    $srcColName = $srcInfo.SourceColumnName\r\n                    $col_AssessIden = $row.$srcColName\r\n\r\n                    $outAsessIdentDate = Get-ParsedDate -date $col_AssessIden -inputFormat \"yy\" -outputFormat \"050120yy\"\r\n                    \r\n                                     \r\n                    # Validation, this is a required field, if empty will be unable to post to ODS\r\n                    if (!$outAsessIdentDate) {\r\n                        $passedValidation = $false\r\n                        $validationId = \"Invalid_DI_StudentAssessmentIdentifier\"\r\n                        break\r\n                    }\r\n            \r\n                    $val += $outAsessIdentDate                     \r\n                    break\r\n                }\r\n                \r\n                # DI_SchoolYear\r\n                \"DI_SchoolYear\" {\r\n                    $out_SchoolYear = $null\r\n                    $srcColName = $srcInfo.SourceColumnName\r\n                    $col_date = $row.$srcColName\r\n                    $out_date = \"20{0:d2}\" -f $col_date\r\n\r\n                    #$out_date = Get-ParsedDate -date $col_date -inputFormat \"M/d/yyyy\"\r\n                     \r\n                    #valid date\r\n                    if (!$out_date) {\r\n                        $passedValidation = $false\r\n                        $validationId = \"Invalid_DI_SchoolYear\"\r\n                        break\r\n                    }\r\n               \r\n            \r\n                    $val += $out_date\r\n                    break\r\n                }\r\n                 # DI_AdministrationDate\r\n                \"DI_AdministrationDate\" {\r\n                    $out_SchoolYear = $null\r\n                    $srcColName = $srcInfo.SourceColumnName\r\n                    $col_date = $row.$srcColName\r\n                    $dateTemplate = \"05/01/20{0:d2}\" \r\n\r\n                    $out_date = Get-ParsedDate -date $col_date -inputFormat \"yy\"  -outputFormat \"05/01/20yy\"\r\n                     \r\n                    #valid date\r\n                    if (!$out_date) {\r\n                        $passedValidation = $false\r\n                        $validationId = \"Invalid_DI_AdministrationDate\"\r\n                        break\r\n                    }\r\n               \r\n            \r\n                    $val += $out_date\r\n                    break\r\n                }\r\n                # Student UniqueId\r\n                \"DI_StudentId\" {\r\n                    $stdId = $null;\r\n                    $srcColName = $srcInfo.SourceColumnName\r\n                    $outStudentId = $row.$srcColName\r\n                    $stdId = Get-StudentODSId($outStudentId)\r\n                    # Validation, this is a required field, if empty will be unable to post to ODS\r\n                    if (!$stdId) {\r\n                        $passedValidation = $false\r\n                        $validationId = \"Invalid_StudentUniqueId\"\r\n                        break\r\n                    }\r\n                    \r\n                    $val += $stdId\r\n                    break\r\n                }           \r\n\r\n               \r\n                \r\n\r\n                Default {\r\n                    # In case of no implementation for custom column add $null output to preserve output format and order\r\n                    $val += $null\r\n                    break;\r\n                }\r\n            }\r\n            $global:studentAssessmentRecord[$outColumnName] = $val\r\n           \r\n        }\r\n        \r\n        foreach ($columnName in $global:headersLookup.keys) {\r\n         $global:studentAssessmentRecord[$ColumnName] = $row.$columnName\r\n         $testrow =$row.$columnName\r\n\r\n        }\r\n\r\n\r\n       ## Only add record to output csv when 1) studentId is is not null or empty and has AdministrationDate \r\n          if($global:studentAssessmentRecord[\"DI_AdministrationDate\"] -and  $global:studentAssessmentRecord[\"DI_StudentId\"] ){\r\n            # add to output\r\n           $global:studentAssessmentRecords += $global:studentAssessmentRecord\r\n          }\r\n    }        \r\n\r\n    # If not valid add to statistics to notify user at the end of execution and skip record and do not post current for current row this screening period to ODS\r\n    if (!$passedValidation) {\r\n        # Only print once per row\r\n        Write-Warning \"Invalid record see statistics summary for details.($currentLineNumber)\"        \r\n\r\n        # Check if this validation error already added for current screening period\r\n        if ($global:statistics.validations[$validationId]) {\r\n            $global:statistics.validations[$validationId] += $currentLineNumber\r\n        }\r\n        else {\r\n            $global:statistics.validations.Add($validationId, @($currentLineNumber)) | Out-Null\r\n        }\r\n        \r\n        # Skip current line do not pass values to DataImport\r\n        return\r\n    }\r\n    $global:statistics.rowsLoaded ++       \r\n    \r\n\r\n    return\r\n}\r\n\r\n# end of processing\r\nend {\r\n    $_qtyTemplateColumns=30\r\n    $_template = \"{0} {1:d2}\";\r\n    $c=$global:studentAssessmentRecords.Count\r\n\r\n    foreach($row in $global:studentAssessmentRecords){\r\n        \r\n        #unpivot          \r\n        for($i = 1; $i -le $_qtyTemplateColumns ; $i++){\r\n            $orderedOutputValues = @()\r\n            #$newRow = $outputTable.NewRow()\r\n            #$out_row={}\t\r\n\r\n            #fixed columns\r\n                foreach($colName in $global:srcfile_fixedColumns){\r\n                    $val = $row[$colName]\r\n                        $orderedOutputValues  += $val \r\n                }\r\n\r\n\r\n                #template columns\r\n                foreach($colName in $global:templateColumnNames){\t\t\r\n                    #get srcfile column from template\t     \r\n                    $columnInSrcFile = $_template -f $colName,$i\r\n                    $val = $row.$columnInSrcFile\r\n                    $orderedOutputValues  += $val\r\n                }\r\n\r\n                foreach ($colName in $global:CUSTOM_COLUMN_MAP.Keys){\r\n                 if($colName -eq 'DI_StudentAssessmentIdentifier'){   \r\n                 $columnInSrcFile = $_template -f 'Exam Code',$i\r\n                 \r\n                    $val = \"{0}_{1}\" -f $row.$colName,$row.$columnInSrcFile          \r\n                  }else\r\n                  {\r\n                  $val = $row[$colName]\r\n                  }\r\n                    \r\n                    $orderedOutputValues  += $val\r\n                }  \r\n                \r\n                        \r\n                Write-Output $(Get-CSVLine($orderedOutputValues))\r\n                    # Increment record loaded\r\n            $global:statistics.rowsLoaded++\r\n            # Report progress\r\n            if (!($global:statistics.rowsLoaded % $global:ReportingBatchQty)) {\r\n                # only report progress when a batch has been loaded, for testing purposes batch is small, in prod could be increased to a bigger batch number\r\n\r\n                $elapsed = New-TimeSpan $global:StartTime $(Get-Date)\r\n                Write-Information \"$elapsed - Records loaded:$($global:statistics.rowsLoaded) ...\"\r\n            }\r\n        }         \r\n        \r\n    }\r\n\r\n   \r\n\r\n     Write-Information \"SUMMARY: `\r\n                    Rows Processed: $($global:statistics.rowsProcessed); `\r\n                    Rows Loaded: $($global:statistics.rowsLoaded)\"\r\n\r\n     foreach ($validationId in $global:statistics.validations.Keys) {\r\n        Write-Warning \"Error reason: '$validationId'\"                \r\n        Write-Information \"Line number(s):\"\r\n        $lineNumbers = $global:statistics.validations[$validationId]\r\n        $errorThreshold = 50\r\n        if ($lineNumbers.Count -gt $errorThreshold) {\r\n            Write-Warning \"There are $($lineNumbers.Count) lines with errors. Will only print the first $errorThreshold line numbers where errors ocurred.\"\r\n            $lineNumbers = $lineNumbers[0..$($errorThreshold - 1)]\r\n        }\r\n        Write-Warning \"$([string]::Join(\",\",$lineNumbers))\"\r\n    }\r\n}",
+                "requireOdsApiAccess": true,
+                "hasAttribute": false
+            }
+        ]
+    }
+}

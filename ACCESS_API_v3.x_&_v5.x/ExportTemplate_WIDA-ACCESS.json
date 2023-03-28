@@ -8,7 +8,7 @@
                 "name": "WIDA-ACCESS_Alternate-Map",
                 "resourcePath": "/ed-fi/studentAssessments",
                 "columnHeaders": [
-                    "Unique DRC Student ID",
+                    "Unique DRC Student ID whatever",
                     "Reported Record",
                     "State Name Abbreviation",
                     "District Name",

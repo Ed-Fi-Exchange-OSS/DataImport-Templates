@@ -1,0 +1,2540 @@
+{
+    "title": "TEA HR Templates(With validations in preprocessors)",
+    "description": "TEA HR Templates(With validations in preprocessors)",
+    "apiVersion": "6.1",
+    "template": {
+        "maps": [
+            {
+                "name": "TEA HR Staff",
+                "resourcePath": "/ed-fi/staffs",
+                "columnHeaders": [
+                    "STAFFUNIQUEID",
+                    "BIRTHDATE",
+                    "HIGHESTCOMPLETEDLEVELOFEDUCATION",
+                    "HISPANICLATINOETHNICITY",
+                    "FIRSTNAME",
+                    "LASTSURNAME",
+                    "MIDDLENAME",
+                    "RACES1",
+                    "RACES2",
+                    "RACES3",
+                    "RACES4",
+                    "RACES5",
+                    "SEX",
+                    "_EXTGENERATIONCODE",
+                    "_EXTPKTEACHERREQUIREMENT",
+                    "_EXTADDITIONALDAYSPROGRAMTEACHER",
+                    "_EXTCREDITABLEYEAROFSERVICE",
+                    "_EXTSTAFFDONOTREPORTTSDS",
+                    "_EXTSTAFFID",
+                    "_EXTTOTALYEARSPRIORTEACHINGEXPERIENCE",
+                    "_EXTTOTALYEARSPROFEXPERIENCE",
+                    "_EXTYEARSEXPERIENCEINDISTRICT",
+                    "_EXTTEACHERINCENTIVEALLOTMENTDESIGNATIONS1",
+                    "_EXTTEACHERINCENTIVEALLOTMENTDESIGNATIONS2",
+                    "_EXTTEACHERINCENTIVEALLOTMENTDESIGNATIONS3",
+                    "_EXTTYPESETS_BEGINDATE1",
+                    "_EXTTYPESETS_STAFFTYPE1",
+                    "_EXTTYPESETS_ENDDATE1",
+                    "_EXTTYPESETS_BEGINDATE2",
+                    "_EXTTYPESETS_STAFFTYPE2",
+                    "_EXTTYPESETS_ENDDATE2",
+                    "_EXTTYPESETS_BEGINDATE3",
+                    "_EXTTYPESETS_STAFFTYPE3",
+                    "_EXTTYPESETS_ENDDATE3",
+                    "_EXTCERTIFICATIONSET_BEGINDATE",
+                    "_EXTCERTIFICATIONSET_ENDDATE",
+                    "_EXTCERTIFICATIONSET_CERTIFICATION"
+                ],
+                "map": {
+                    "staffUniqueId": {
+                        "Column": "STAFFUNIQUEID"
+                    },
+                    "birthDate": {
+                        "Column": "BIRTHDATE"
+                    },
+                    "firstName": {
+                        "Column": "FIRSTNAME"
+                    },
+                    "highestCompletedLevelOfEducationDescriptor": {
+                        "Column": "HIGHESTCOMPLETEDLEVELOFEDUCATION",
+                        "Lookup": "TEA HR LevelOfEducationDescriptor"
+                    },
+                    "hispanicLatinoEthnicity": {
+                        "Column": "HISPANICLATINOETHNICITY"
+                    },
+                    "lastSurname": {
+                        "Column": "LASTSURNAME"
+                    },
+                    "middleName": {
+                        "Column": "MIDDLENAME"
+                    },
+                    "races": [
+                        {
+                            "raceDescriptor": {
+                                "Column": "RACES1",
+                                "Lookup": "TEA HR RaceDescriptor"
+                            }
+                        },
+                        {
+                            "raceDescriptor": {
+                                "Column": "RACES2",
+                                "Lookup": "TEA HR RaceDescriptor"
+                            }
+                        },
+                        {
+                            "raceDescriptor": {
+                                "Column": "RACES3",
+                                "Lookup": "TEA HR RaceDescriptor"
+                            }
+                        },
+                        {
+                            "raceDescriptor": {
+                                "Column": "RACES4",
+                                "Lookup": "TEA HR RaceDescriptor"
+                            }
+                        },
+                        {
+                            "raceDescriptor": {
+                                "Column": "RACES5",
+                                "Lookup": "TEA HR RaceDescriptor"
+                            }
+                        }
+                    ],
+                    "sexDescriptor": {
+                        "Column": "SEX",
+                        "Lookup": "TEA HR SexDescriptor"
+                    },
+                    "_ext": {
+                        "TX": {
+                            "generationCodeDescriptor": {
+                                "Column": "_EXTGENERATIONCODE",
+                                "Lookup": "TEA HR GenerationCodeDescriptor"
+                            },
+                            "pkTeacherRequirementDescriptor": {
+                                "Column": "_EXTPKTEACHERREQUIREMENT",
+                                "Lookup": "TEA HR PkTeacherRequirementDescriptor"
+                            },
+                            "additionalDaysProgramTeacher": {
+                                "Column": "_EXTADDITIONALDAYSPROGRAMTEACHER"
+                            },
+                            "creditableYearOfService": {
+                                "Column": "_EXTCREDITABLEYEAROFSERVICE"
+                            },
+                            "staffDoNotReportTSDS": {
+                                "Column": "_EXTSTAFFDONOTREPORTTSDS"
+                            },
+                            "staffId": {
+                                "Column": "_EXTSTAFFID"
+                            },
+                            "totalYearsPriorTeachingExperience": {
+                                "Column": "_EXTTOTALYEARSPRIORTEACHINGEXPERIENCE"
+                            },
+                            "totalYearsProfExperience": {
+                                "Column": "_EXTTOTALYEARSPROFEXPERIENCE"
+                            },
+                            "yearsExperienceInDistrict": {
+                                "Column": "_EXTYEARSEXPERIENCEINDISTRICT"
+                            },
+                            "teacherIncentiveAllotmentDesignations": [
+                                {
+                                    "teacherIncentiveAllotmentDesignationDescriptor": {
+                                        "Column": "_EXTTEACHERINCENTIVEALLOTMENTDESIGNATIONS1",
+                                        "Lookup": "TEA HR TeacherIncentiveAllotmentDesignationDescriptor"
+                                    }
+                                },
+                                {
+                                    "teacherIncentiveAllotmentDesignationDescriptor": {
+                                        "Column": "_EXTTEACHERINCENTIVEALLOTMENTDESIGNATIONS2",
+                                        "Lookup": "TEA HR TeacherIncentiveAllotmentDesignationDescriptor"
+                                    }
+                                },
+                                {
+                                    "teacherIncentiveAllotmentDesignationDescriptor": {
+                                        "Column": "_EXTTEACHERINCENTIVEALLOTMENTDESIGNATIONS3",
+                                        "Lookup": "TEA HR TeacherIncentiveAllotmentDesignationDescriptor"
+                                    }
+                                }
+                            ],
+                            "typeSets": [
+                                {
+                                    "beginDate": {
+                                        "Column": "_EXTTYPESETS_BEGINDATE1"
+                                    },
+                                    "staffTypeDescriptor": {
+                                        "Column": "_EXTTYPESETS_STAFFTYPE1",
+                                        "Lookup": "TEA HR StaffTypeDescriptor"
+                                    },
+                                    "endDate": {
+                                        "Column": "_EXTTYPESETS_ENDDATE1"
+                                    }
+                                },
+                                {
+                                    "beginDate": {
+                                        "Column": "_EXTTYPESETS_BEGINDATE2"
+                                    },
+                                    "staffTypeDescriptor": {
+                                        "Column": "_EXTTYPESETS_STAFFTYPE2",
+                                        "Lookup": "TEA HR StaffTypeDescriptor"
+                                    },
+                                    "endDate": {
+                                        "Column": "_EXTTYPESETS_ENDDATE2"
+                                    }
+                                },
+                                {
+                                    "beginDate": {
+                                        "Column": "_EXTTYPESETS_BEGINDATE3"
+                                    },
+                                    "staffTypeDescriptor": {
+                                        "Column": "_EXTTYPESETS_STAFFTYPE3",
+                                        "Lookup": "TEA HR StaffTypeDescriptor"
+                                    },
+                                    "endDate": {
+                                        "Column": "_EXTTYPESETS_ENDDATE3"
+                                    }
+                                }
+                            ],
+                            "paraprofessionalCertificationSet": {
+                                "beginDate": {
+                                    "Column": "_EXTCERTIFICATIONSET_BEGINDATE"
+                                },
+                                "endDate": {
+                                    "Column": "_EXTCERTIFICATIONSET_ENDDATE"
+                                },
+                                "paraprofessionalCertification": {
+                                    "Column": "_EXTCERTIFICATIONSET_CERTIFICATION"
+                                }
+                            }
+                        }
+                    }
+                },
+                "customFileProcessor": "TEA HR Staff PreProcessor",
+                "attribute": null
+            },
+            {
+                "name": "TEA HR StaffEducationOrganizationAssignmentAssociations",
+                "resourcePath": "/ed-fi/staffEducationOrganizationAssignmentAssociations",
+                "columnHeaders": [
+                    "STAFF",
+                    "EDUCATIONORGANIZATION",
+                    "STAFFCLASSIFICATION",
+                    "BEGINDATE",
+                    "ENDDATE",
+                    "SHAREDSERVICEARRANGEMENTSTAFF",
+                    "STAFFSERVICE1",
+                    "GRADELEVEL1",
+                    "POPULATIONSERVED1",
+                    "MONTHLYMINUTES1",
+                    "NUMBEROFSTUDENTSINCLASS1",
+                    "STAFFSERVICEBEGINDATE1",
+                    "STAFFSERVICEENDDATE1",
+                    "STAFFSERVICE2",
+                    "GRADELEVEL2",
+                    "POPULATIONSERVED2",
+                    "MONTHLYMINUTES2",
+                    "NUMBEROFSTUDENTSINCLASS2",
+                    "STAFFSERVICEBEGINDATE2",
+                    "STAFFSERVICEENDDATE2",
+                    "STAFFSERVICE3",
+                    "GRADELEVEL3",
+                    "POPULATIONSERVED3",
+                    "MONTHLYMINUTES3",
+                    "NUMBEROFSTUDENTSINCLASS3",
+                    "STAFFSERVICEBEGINDATE3",
+                    "STAFFSERVICEENDDATE3"
+                ],
+                "map": {
+                    "beginDate": {
+                        "Column": "BEGINDATE"
+                    },
+                    "staffClassificationDescriptor": {
+                        "Column": "STAFFCLASSIFICATION",
+                        "Lookup": "TEA HR StaffClassificationDescriptor"
+                    },
+                    "educationOrganizationReference": {
+                        "educationOrganizationId": {
+                            "Column": "EDUCATIONORGANIZATION"
+                        }
+                    },
+                    "staffReference": {
+                        "staffUniqueId": {
+                            "Column": "STAFF"
+                        }
+                    },
+                    "endDate": {
+                        "Column": "ENDDATE"
+                    },
+                    "_ext": {
+                        "TX": {
+                            "sharedServiceArrangementStaffDescriptor": {
+                                "Column": "SHAREDSERVICEARRANGEMENTSTAFF",
+                                "Lookup": "TEA HR SharedServiceArrangementStaffDescriptor"
+                            },
+                            "staffServiceSets": [
+                                {
+                                    "staffServiceDescriptor": {
+                                        "Column": "STAFFSERVICE1",
+                                        "Lookup": "TEA HR StaffServiceDescriptor"
+                                    },
+                                    "staffServiceBeginDate": {
+                                        "Column": "STAFFSERVICEBEGINDATE1"
+                                    },
+                                    "gradeLevelDescriptor": {
+                                        "Column": "GRADELEVEL1",
+                                        "Lookup": "TEA HR GradeLevelDescriptor"
+                                    },
+                                    "populationServedDescriptor": {
+                                        "Column": "POPULATIONSERVED1",
+                                        "Lookup": "TEA HR PopulationServedDescriptor"
+                                    },
+                                    "monthlyMinutes": {
+                                        "Column": "MONTHLYMINUTES1"
+                                    },
+                                    "numberOfStudentsInClass": {
+                                        "Column": "NUMBEROFSTUDENTSINCLASS1"
+                                    },
+                                    "staffServiceEndDate": {
+                                        "Column": "STAFFSERVICEENDDATE1"
+                                    }
+                                },
+                                {
+                                    "staffServiceDescriptor": {
+                                        "Column": "STAFFSERVICE2",
+                                        "Lookup": "TEA HR StaffServiceDescriptor"
+                                    },
+                                    "staffServiceBeginDate": {
+                                        "Column": "STAFFSERVICEBEGINDATE2"
+                                    },
+                                    "gradeLevelDescriptor": {
+                                        "Column": "GRADELEVEL2",
+                                        "Lookup": "TEA HR GradeLevelDescriptor"
+                                    },
+                                    "populationServedDescriptor": {
+                                        "Column": "POPULATIONSERVED2",
+                                        "Lookup": "TEA HR PopulationServedDescriptor"
+                                    },
+                                    "monthlyMinutes": {
+                                        "Column": "MONTHLYMINUTES2"
+                                    },
+                                    "numberOfStudentsInClass": {
+                                        "Column": "NUMBEROFSTUDENTSINCLASS2"
+                                    },
+                                    "staffServiceEndDate": {
+                                        "Column": "STAFFSERVICEENDDATE2"
+                                    }
+                                },
+                                {
+                                    "staffServiceDescriptor": {
+                                        "Column": "STAFFSERVICE3",
+                                        "Lookup": "TEA HR StaffServiceDescriptor"
+                                    },
+                                    "staffServiceBeginDate": {
+                                        "Column": "STAFFSERVICEBEGINDATE3"
+                                    },
+                                    "gradeLevelDescriptor": {
+                                        "Column": "GRADELEVEL3",
+                                        "Lookup": "TEA HR GradeLevelDescriptor"
+                                    },
+                                    "populationServedDescriptor": {
+                                        "Column": "POPULATIONSERVED3",
+                                        "Lookup": "TEA HR PopulationServedDescriptor"
+                                    },
+                                    "monthlyMinutes": {
+                                        "Column": "MONTHLYMINUTES3"
+                                    },
+                                    "numberOfStudentsInClass": {
+                                        "Column": "NUMBEROFSTUDENTSINCLASS3"
+                                    },
+                                    "staffServiceEndDate": {
+                                        "Column": "STAFFSERVICEENDDATE3"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "customFileProcessor": "TEA HR staffEducationOrganizationAssignmentAssociations Preprocessor",
+                "attribute": null
+            },
+            {
+                "name": "TEA HR StaffEducationOrganizationEmploymentAssociation",
+                "resourcePath": "/ed-fi/staffEducationOrganizationEmploymentAssociations",
+                "columnHeaders": [
+                    "STAFF",
+                    "EDUCATIONORGANIZATION",
+                    "EMPLOYMENTSTATUS",
+                    "PERCENTDAYEMPLOYED",
+                    "NUMBERDAYSEMPLOYED",
+                    "HIREDATE",
+                    "ENDDATE",
+                    "AUXILIARYROLEID1",
+                    "_EXTBEGINDATE1",
+                    "_EXTENDDATE1",
+                    "AUXILIARYROLEID2",
+                    "_EXTBEGINDATE2",
+                    "_EXTENDDATE2",
+                    "AUXILIARYROLEID3",
+                    "_EXTBEGINDATE3",
+                    "_EXTENDDATE3"
+                ],
+                "map": {
+                    "employmentStatusDescriptor": {
+                        "Column": "EMPLOYMENTSTATUS",
+                        "Lookup": "TEA HR EmploymentStatusDescriptor"
+                    },
+                    "hireDate": {
+                        "Column": "HIREDATE"
+                    },
+                    "educationOrganizationReference": {
+                        "educationOrganizationId": {
+                            "Column": "EDUCATIONORGANIZATION"
+                        }
+                    },
+                    "staffReference": {
+                        "staffUniqueId": {
+                            "Column": "STAFF"
+                        }
+                    },
+                    "endDate": {
+                        "Column": "ENDDATE"
+                    },
+                    "_ext": {
+                        "TX": {
+                            "numberDaysEmployed": {
+                                "Column": "NUMBERDAYSEMPLOYED"
+                            },
+                            "percentDayEmployed": {
+                                "Column": "PERCENTDAYEMPLOYED"
+                            },
+                            "auxiliaryRoleIdSets": [
+                                {
+                                    "auxiliaryRoleIdDescriptor": {
+                                        "Column": "AUXILIARYROLEID1",
+                                        "Lookup": "TEA HR AuxiliaryRoleIdDescriptor"
+                                    },
+                                    "beginDate": {
+                                        "Column": "_EXTBEGINDATE1"
+                                    },
+                                    "endDate": {
+                                        "Column": "_EXTENDDATE1"
+                                    }
+                                },
+                                {
+                                    "auxiliaryRoleIdDescriptor": {
+                                        "Column": "AUXILIARYROLEID2",
+                                        "Lookup": "TEA HR AuxiliaryRoleIdDescriptor"
+                                    },
+                                    "beginDate": {
+                                        "Column": "_EXTBEGINDATE2"
+                                    },
+                                    "endDate": {
+                                        "Column": "_EXTENDDATE2"
+                                    }
+                                },
+                                {
+                                    "auxiliaryRoleIdDescriptor": {
+                                        "Column": "AUXILIARYROLEID3",
+                                        "Lookup": "TEA HR AuxiliaryRoleIdDescriptor"
+                                    },
+                                    "beginDate": {
+                                        "Column": "_EXTBEGINDATE3"
+                                    },
+                                    "endDate": {
+                                        "Column": "_EXTENDDATE3"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "customFileProcessor": "TEA HR StaffEducationOrganizationEmploymentAssociation Preprocessor",
+                "attribute": null
+            },
+            {
+                "name": "TEA HR StaffSchoolAssociation",
+                "resourcePath": "/ed-fi/staffSchoolAssociations",
+                "columnHeaders": [
+                    "STAFF",
+                    "SCHOOL",
+                    "PROGRAMASSIGNMENT"
+                ],
+                "map": {
+                    "programAssignmentDescriptor": {
+                        "Column": "PROGRAMASSIGNMENT",
+                        "Lookup": "TEA HR ProgramAssignmentDescriptor"
+                    },
+                    "schoolReference": {
+                        "schoolId": {
+                            "Column": "SCHOOL"
+                        }
+                    },
+                    "staffReference": {
+                        "staffUniqueId": {
+                            "Column": "STAFF"
+                        }
+                    }
+                },
+                "customFileProcessor": "TEA HR StaffSchoolAssociation Preprocessor",
+                "attribute": null
+            }
+        ],
+        "bootstraps": [],
+        "lookups": [
+            {
+                "sourceTable": "TEA HR AuxiliaryRoleIdDescriptor",
+                "key": "201",
+                "value": "uri://tea.texas.gov/AuxiliaryRoleIdDescriptor#201"
+            },
+            {
+                "sourceTable": "TEA HR AuxiliaryRoleIdDescriptor",
+                "key": "202",
+                "value": "uri://tea.texas.gov/AuxiliaryRoleIdDescriptor#202"
+            },
+            {
+                "sourceTable": "TEA HR AuxiliaryRoleIdDescriptor",
+                "key": "203",
+                "value": "uri://tea.texas.gov/AuxiliaryRoleIdDescriptor#203"
+            },
+            {
+                "sourceTable": "TEA HR AuxiliaryRoleIdDescriptor",
+                "key": "204",
+                "value": "uri://tea.texas.gov/AuxiliaryRoleIdDescriptor#204"
+            },
+            {
+                "sourceTable": "TEA HR AuxiliaryRoleIdDescriptor",
+                "key": "205",
+                "value": "uri://tea.texas.gov/AuxiliaryRoleIdDescriptor#205"
+            },
+            {
+                "sourceTable": "TEA HR AuxiliaryRoleIdDescriptor",
+                "key": "206",
+                "value": "uri://tea.texas.gov/AuxiliaryRoleIdDescriptor#206"
+            },
+            {
+                "sourceTable": "TEA HR AuxiliaryRoleIdDescriptor",
+                "key": "207",
+                "value": "uri://tea.texas.gov/AuxiliaryRoleIdDescriptor#207"
+            },
+            {
+                "sourceTable": "TEA HR AuxiliaryRoleIdDescriptor",
+                "key": "213",
+                "value": "uri://tea.texas.gov/AuxiliaryRoleIdDescriptor#213"
+            },
+            {
+                "sourceTable": "TEA HR AuxiliaryRoleIdDescriptor",
+                "key": "214",
+                "value": "uri://tea.texas.gov/AuxiliaryRoleIdDescriptor#214"
+            },
+            {
+                "sourceTable": "TEA HR AuxiliaryRoleIdDescriptor",
+                "key": "215",
+                "value": "uri://tea.texas.gov/AuxiliaryRoleIdDescriptor#215"
+            },
+            {
+                "sourceTable": "TEA HR AuxiliaryRoleIdDescriptor",
+                "key": "216",
+                "value": "uri://tea.texas.gov/AuxiliaryRoleIdDescriptor#216"
+            },
+            {
+                "sourceTable": "TEA HR AuxiliaryRoleIdDescriptor",
+                "key": "217",
+                "value": "uri://tea.texas.gov/AuxiliaryRoleIdDescriptor#217"
+            },
+            {
+                "sourceTable": "TEA HR AuxiliaryRoleIdDescriptor",
+                "key": "218",
+                "value": "uri://tea.texas.gov/AuxiliaryRoleIdDescriptor#218"
+            },
+            {
+                "sourceTable": "TEA HR AuxiliaryRoleIdDescriptor",
+                "key": "219",
+                "value": "uri://tea.texas.gov/AuxiliaryRoleIdDescriptor#219"
+            },
+            {
+                "sourceTable": "TEA HR AuxiliaryRoleIdDescriptor",
+                "key": "220",
+                "value": "uri://tea.texas.gov/AuxiliaryRoleIdDescriptor#220"
+            },
+            {
+                "sourceTable": "TEA HR AuxiliaryRoleIdDescriptor",
+                "key": "221",
+                "value": "uri://tea.texas.gov/AuxiliaryRoleIdDescriptor#221"
+            },
+            {
+                "sourceTable": "TEA HR AuxiliaryRoleIdDescriptor",
+                "key": "222",
+                "value": "uri://tea.texas.gov/AuxiliaryRoleIdDescriptor#222"
+            },
+            {
+                "sourceTable": "TEA HR EmploymentStatusDescriptor",
+                "key": "Contractual",
+                "value": "uri://ed-fi.org/EmploymentStatusDescriptor#Contractual"
+            },
+            {
+                "sourceTable": "TEA HR EmploymentStatusDescriptor",
+                "key": "Employed or affiliated with outside agency part-ti",
+                "value": "uri://ed-fi.org/EmploymentStatusDescriptor#Employed or affiliated with outside agency part-ti"
+            },
+            {
+                "sourceTable": "TEA HR EmploymentStatusDescriptor",
+                "key": "Employed or affiliated with outside organization",
+                "value": "uri://ed-fi.org/EmploymentStatusDescriptor#Employed or affiliated with outside organization"
+            },
+            {
+                "sourceTable": "TEA HR EmploymentStatusDescriptor",
+                "key": "Employed part-time",
+                "value": "uri://ed-fi.org/EmploymentStatusDescriptor#Employed part-time"
+            },
+            {
+                "sourceTable": "TEA HR EmploymentStatusDescriptor",
+                "key": "Non-contractual",
+                "value": "uri://ed-fi.org/EmploymentStatusDescriptor#Non-contractual"
+            },
+            {
+                "sourceTable": "TEA HR EmploymentStatusDescriptor",
+                "key": "Other",
+                "value": "uri://ed-fi.org/EmploymentStatusDescriptor#Other"
+            },
+            {
+                "sourceTable": "TEA HR EmploymentStatusDescriptor",
+                "key": "Probationary",
+                "value": "uri://ed-fi.org/EmploymentStatusDescriptor#Probationary"
+            },
+            {
+                "sourceTable": "TEA HR EmploymentStatusDescriptor",
+                "key": "Substitute/temporary",
+                "value": "uri://ed-fi.org/EmploymentStatusDescriptor#Substitute/temporary"
+            },
+            {
+                "sourceTable": "TEA HR EmploymentStatusDescriptor",
+                "key": "Tenured or permanent",
+                "value": "uri://ed-fi.org/EmploymentStatusDescriptor#Tenured or permanent"
+            },
+            {
+                "sourceTable": "TEA HR EmploymentStatusDescriptor",
+                "key": "Volunteer/no contract",
+                "value": "uri://ed-fi.org/EmploymentStatusDescriptor#Volunteer/no contract"
+            },
+            {
+                "sourceTable": "TEA HR GenerationCodeDescriptor",
+                "key": "1",
+                "value": "uri://tea.texas.gov/GenerationCodeDescriptor#1"
+            },
+            {
+                "sourceTable": "TEA HR GenerationCodeDescriptor",
+                "key": "2",
+                "value": "uri://tea.texas.gov/GenerationCodeDescriptor#2"
+            },
+            {
+                "sourceTable": "TEA HR GenerationCodeDescriptor",
+                "key": "3",
+                "value": "uri://tea.texas.gov/GenerationCodeDescriptor#3"
+            },
+            {
+                "sourceTable": "TEA HR GenerationCodeDescriptor",
+                "key": "4",
+                "value": "uri://tea.texas.gov/GenerationCodeDescriptor#4"
+            },
+            {
+                "sourceTable": "TEA HR GenerationCodeDescriptor",
+                "key": "5",
+                "value": "uri://tea.texas.gov/GenerationCodeDescriptor#5"
+            },
+            {
+                "sourceTable": "TEA HR GenerationCodeDescriptor",
+                "key": "6",
+                "value": "uri://tea.texas.gov/GenerationCodeDescriptor#6"
+            },
+            {
+                "sourceTable": "TEA HR GenerationCodeDescriptor",
+                "key": "7",
+                "value": "uri://tea.texas.gov/GenerationCodeDescriptor#7"
+            },
+            {
+                "sourceTable": "TEA HR GenerationCodeDescriptor",
+                "key": "8",
+                "value": "uri://tea.texas.gov/GenerationCodeDescriptor#8"
+            },
+            {
+                "sourceTable": "TEA HR GenerationCodeDescriptor",
+                "key": "9",
+                "value": "uri://tea.texas.gov/GenerationCodeDescriptor#9"
+            },
+            {
+                "sourceTable": "TEA HR GenerationCodeDescriptor",
+                "key": "A",
+                "value": "uri://tea.texas.gov/GenerationCodeDescriptor#A"
+            },
+            {
+                "sourceTable": "TEA HR GenerationCodeDescriptor",
+                "key": "B",
+                "value": "uri://tea.texas.gov/GenerationCodeDescriptor#B"
+            },
+            {
+                "sourceTable": "TEA HR GenerationCodeDescriptor",
+                "key": "C",
+                "value": "uri://tea.texas.gov/GenerationCodeDescriptor#C"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "01",
+                "value": "uri://tea.texas.gov/GradeLevelDescriptor#01"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "02",
+                "value": "uri://tea.texas.gov/GradeLevelDescriptor#02"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "03",
+                "value": "uri://tea.texas.gov/GradeLevelDescriptor#03"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "04",
+                "value": "uri://tea.texas.gov/GradeLevelDescriptor#04"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "05",
+                "value": "uri://tea.texas.gov/GradeLevelDescriptor#05"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "06",
+                "value": "uri://tea.texas.gov/GradeLevelDescriptor#06"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "07",
+                "value": "uri://tea.texas.gov/GradeLevelDescriptor#07"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "08",
+                "value": "uri://tea.texas.gov/GradeLevelDescriptor#08"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "09",
+                "value": "uri://tea.texas.gov/GradeLevelDescriptor#09"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "1",
+                "value": "uri://tea.texas.gov/GradeLevelDescriptor#01"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "10",
+                "value": "uri://tea.texas.gov/GradeLevelDescriptor#10"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "11",
+                "value": "uri://tea.texas.gov/GradeLevelDescriptor#11"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "12",
+                "value": "uri://tea.texas.gov/GradeLevelDescriptor#12"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "2",
+                "value": "uri://tea.texas.gov/GradeLevelDescriptor#02"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "3",
+                "value": "uri://tea.texas.gov/GradeLevelDescriptor#03"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "4",
+                "value": "uri://tea.texas.gov/GradeLevelDescriptor#04"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "5",
+                "value": "uri://tea.texas.gov/GradeLevelDescriptor#05"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "6",
+                "value": "uri://tea.texas.gov/GradeLevelDescriptor#06"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "7",
+                "value": "uri://tea.texas.gov/GradeLevelDescriptor#07"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "8",
+                "value": "uri://tea.texas.gov/GradeLevelDescriptor#08"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "9",
+                "value": "uri://tea.texas.gov/GradeLevelDescriptor#09"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Adult Education",
+                "value": "uri://tea.texas.gov/LevelOfEducationDescriptor#Adult Education"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Doctoral Program",
+                "value": "uri://tpdm.ed-fi.org/GradeLevelDescriptor#Doctoral Program"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "EE",
+                "value": "uri://tea.texas.gov/GradeLevelDescriptor#EE"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Early Education",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Early Education"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Eighth grade",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Eighth grade"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Eleventh grade",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Eleventh grade"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Fifth grade",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Fifth grade"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "First grade",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#First grade"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Fourth grade",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Fourth grade"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Freshman",
+                "value": "uri://tpdm.ed-fi.org/GradeLevelDescriptor#Freshman"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Grade 13",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Grade 13"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Infant/toddler",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Infant/toddler"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Junior",
+                "value": "uri://tpdm.ed-fi.org/GradeLevelDescriptor#Junior"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "KG",
+                "value": "uri://tea.texas.gov/GradeLevelDescriptor#KG"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Kindergarten",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Kindergarten"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Master's Program",
+                "value": "uri://tpdm.ed-fi.org/GradeLevelDescriptor#Master's Program"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Ninth grade",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Ninth grade"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "No grade level",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#No grade level"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Other",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Other"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Out of School",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Out of School"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "PK",
+                "value": "uri://tea.texas.gov/GradeLevelDescriptor#PK"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Postbaccalaureate",
+                "value": "uri://tpdm.ed-fi.org/GradeLevelDescriptor#Postbaccalaureate"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Postsecondary",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Postsecondary"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Prekindergarten",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Prekindergarten"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Preschool",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Preschool"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Preschool/Prekindergarten",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Preschool/Prekindergarten"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Professional Certification",
+                "value": "uri://tpdm.ed-fi.org/GradeLevelDescriptor#Professional Certification"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Second grade",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Second grade"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Senior",
+                "value": "uri://tpdm.ed-fi.org/GradeLevelDescriptor#Senior"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Seventh grade",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Seventh grade"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Sixth grade",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Sixth grade"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Sophomore",
+                "value": "uri://tpdm.ed-fi.org/GradeLevelDescriptor#Sophomore"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Tenth grade",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Tenth grade"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Third grade",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Third grade"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Transitional Kindergarten",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Transitional Kindergarten"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Twelfth grade",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Twelfth grade"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Undergraduate",
+                "value": "uri://tpdm.ed-fi.org/GradeLevelDescriptor#Undergraduate"
+            },
+            {
+                "sourceTable": "TEA HR GradeLevelDescriptor",
+                "key": "Ungraded",
+                "value": "uri://ed-fi.org/GradeLevelDescriptor#Ungraded"
+            },
+            {
+                "sourceTable": "TEA HR LevelOfEducationDescriptor",
+                "key": "0",
+                "value": "uri://tea.texas.gov/LevelOfEducationDescriptor#0"
+            },
+            {
+                "sourceTable": "TEA HR LevelOfEducationDescriptor",
+                "key": "1",
+                "value": "uri://tea.texas.gov/LevelOfEducationDescriptor#1"
+            },
+            {
+                "sourceTable": "TEA HR LevelOfEducationDescriptor",
+                "key": "2",
+                "value": "uri://tea.texas.gov/LevelOfEducationDescriptor#2"
+            },
+            {
+                "sourceTable": "TEA HR LevelOfEducationDescriptor",
+                "key": "3",
+                "value": "uri://tea.texas.gov/LevelOfEducationDescriptor#3"
+            },
+            {
+                "sourceTable": "TEA HR LevelOfEducationDescriptor",
+                "key": "Associate's Degree (two years or more)",
+                "value": "uri://ed-fi.org/LevelOfEducationDescriptor#Associate's Degree (two years or more)"
+            },
+            {
+                "sourceTable": "TEA HR LevelOfEducationDescriptor",
+                "key": "Bachelor's",
+                "value": "uri://ed-fi.org/LevelOfEducationDescriptor#Bachelor's"
+            },
+            {
+                "sourceTable": "TEA HR LevelOfEducationDescriptor",
+                "key": "Did Not Graduate High School",
+                "value": "uri://ed-fi.org/LevelOfEducationDescriptor#Did Not Graduate High School"
+            },
+            {
+                "sourceTable": "TEA HR LevelOfEducationDescriptor",
+                "key": "Doctorate",
+                "value": "uri://ed-fi.org/LevelOfEducationDescriptor#Doctorate"
+            },
+            {
+                "sourceTable": "TEA HR LevelOfEducationDescriptor",
+                "key": "High School Diploma",
+                "value": "uri://ed-fi.org/LevelOfEducationDescriptor#High School Diploma"
+            },
+            {
+                "sourceTable": "TEA HR LevelOfEducationDescriptor",
+                "key": "Master's",
+                "value": "uri://ed-fi.org/LevelOfEducationDescriptor#Master's"
+            },
+            {
+                "sourceTable": "TEA HR LevelOfEducationDescriptor",
+                "key": "Some College No Degree",
+                "value": "uri://ed-fi.org/LevelOfEducationDescriptor#Some College No Degree"
+            },
+            {
+                "sourceTable": "TEA HR PkTeacherRequirementDescriptor",
+                "key": "01",
+                "value": "uri://tea.texas.gov/PKTeacherRequirementDescriptor#01"
+            },
+            {
+                "sourceTable": "TEA HR PkTeacherRequirementDescriptor",
+                "key": "03",
+                "value": "uri://tea.texas.gov/PKTeacherRequirementDescriptor#03"
+            },
+            {
+                "sourceTable": "TEA HR PkTeacherRequirementDescriptor",
+                "key": "05",
+                "value": "uri://tea.texas.gov/PKTeacherRequirementDescriptor#05"
+            },
+            {
+                "sourceTable": "TEA HR PkTeacherRequirementDescriptor",
+                "key": "06",
+                "value": "uri://tea.texas.gov/PKTeacherRequirementDescriptor#06"
+            },
+            {
+                "sourceTable": "TEA HR PkTeacherRequirementDescriptor",
+                "key": "07",
+                "value": "uri://tea.texas.gov/PKTeacherRequirementDescriptor#07"
+            },
+            {
+                "sourceTable": "TEA HR PkTeacherRequirementDescriptor",
+                "key": "08",
+                "value": "uri://tea.texas.gov/PKTeacherRequirementDescriptor#08"
+            },
+            {
+                "sourceTable": "TEA HR PkTeacherRequirementDescriptor",
+                "key": "09",
+                "value": "uri://tea.texas.gov/PKTeacherRequirementDescriptor#09"
+            },
+            {
+                "sourceTable": "TEA HR PkTeacherRequirementDescriptor",
+                "key": "1",
+                "value": "uri://tea.texas.gov/PKTeacherRequirementDescriptor#01"
+            },
+            {
+                "sourceTable": "TEA HR PkTeacherRequirementDescriptor",
+                "key": "10",
+                "value": "uri://tea.texas.gov/PKTeacherRequirementDescriptor#10"
+            },
+            {
+                "sourceTable": "TEA HR PkTeacherRequirementDescriptor",
+                "key": "11",
+                "value": "uri://tea.texas.gov/PKTeacherRequirementDescriptor#11"
+            },
+            {
+                "sourceTable": "TEA HR PkTeacherRequirementDescriptor",
+                "key": "12",
+                "value": "uri://tea.texas.gov/PKTeacherRequirementDescriptor#12"
+            },
+            {
+                "sourceTable": "TEA HR PkTeacherRequirementDescriptor",
+                "key": "13",
+                "value": "uri://tea.texas.gov/PKTeacherRequirementDescriptor#13"
+            },
+            {
+                "sourceTable": "TEA HR PkTeacherRequirementDescriptor",
+                "key": "3",
+                "value": "uri://tea.texas.gov/PKTeacherRequirementDescriptor#03"
+            },
+            {
+                "sourceTable": "TEA HR PkTeacherRequirementDescriptor",
+                "key": "5",
+                "value": "uri://tea.texas.gov/PKTeacherRequirementDescriptor#05"
+            },
+            {
+                "sourceTable": "TEA HR PkTeacherRequirementDescriptor",
+                "key": "6",
+                "value": "uri://tea.texas.gov/PKTeacherRequirementDescriptor#06"
+            },
+            {
+                "sourceTable": "TEA HR PkTeacherRequirementDescriptor",
+                "key": "7",
+                "value": "uri://tea.texas.gov/PKTeacherRequirementDescriptor#07"
+            },
+            {
+                "sourceTable": "TEA HR PkTeacherRequirementDescriptor",
+                "key": "8",
+                "value": "uri://tea.texas.gov/PKTeacherRequirementDescriptor#08"
+            },
+            {
+                "sourceTable": "TEA HR PkTeacherRequirementDescriptor",
+                "key": "9",
+                "value": "uri://tea.texas.gov/PKTeacherRequirementDescriptor#09"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "01",
+                "value": "uri://tea.texas.gov/PopulationServedDescriptor#01"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "02",
+                "value": "uri://tea.texas.gov/PopulationServedDescriptor#02"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "03",
+                "value": "uri://tea.texas.gov/PopulationServedDescriptor#03"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "04",
+                "value": "uri://tea.texas.gov/PopulationServedDescriptor#04"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "05",
+                "value": "uri://tea.texas.gov/PopulationServedDescriptor#05"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "06",
+                "value": "uri://tea.texas.gov/PopulationServedDescriptor#06"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "07",
+                "value": "uri://tea.texas.gov/PopulationServedDescriptor#07"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "08",
+                "value": "uri://tea.texas.gov/PopulationServedDescriptor#08"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "09",
+                "value": "uri://tea.texas.gov/PopulationServedDescriptor#09"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "1",
+                "value": "uri://tea.texas.gov/PopulationServedDescriptor#01"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "10",
+                "value": "uri://tea.texas.gov/PopulationServedDescriptor#10"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "2",
+                "value": "uri://tea.texas.gov/PopulationServedDescriptor#02"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "3",
+                "value": "uri://tea.texas.gov/PopulationServedDescriptor#03"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "4",
+                "value": "uri://tea.texas.gov/PopulationServedDescriptor#04"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "5",
+                "value": "uri://tea.texas.gov/PopulationServedDescriptor#05"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "6",
+                "value": "uri://tea.texas.gov/PopulationServedDescriptor#06"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "7",
+                "value": "uri://tea.texas.gov/PopulationServedDescriptor#07"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "8",
+                "value": "uri://tea.texas.gov/PopulationServedDescriptor#08"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "9",
+                "value": "uri://tea.texas.gov/PopulationServedDescriptor#09"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "Adult Basic Education Students",
+                "value": "uri://ed-fi.org/PopulationServedDescriptor#Adult Basic Education Students"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "Bilingual Students",
+                "value": "uri://ed-fi.org/PopulationServedDescriptor#Bilingual Students"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "Career and Technical Education Students",
+                "value": "uri://ed-fi.org/PopulationServedDescriptor#Career and Technical Education Students"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "Compensatory/Remedial Education Students",
+                "value": "uri://ed-fi.org/PopulationServedDescriptor#Compensatory/Remedial Education Students"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "ESL Students",
+                "value": "uri://ed-fi.org/PopulationServedDescriptor#ESL Students"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "Economic Disadvantaged",
+                "value": "uri://ed-fi.org/PopulationServedDescriptor#Economic Disadvantaged"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "Gifted and Talented Students",
+                "value": "uri://ed-fi.org/PopulationServedDescriptor#Gifted and Talented Students"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "Honors Students",
+                "value": "uri://ed-fi.org/PopulationServedDescriptor#Honors Students"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "Migrant Students",
+                "value": "uri://ed-fi.org/PopulationServedDescriptor#Migrant Students"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "Regular Students",
+                "value": "uri://ed-fi.org/PopulationServedDescriptor#Regular Students"
+            },
+            {
+                "sourceTable": "TEA HR PopulationServedDescriptor",
+                "key": "Special Education Students",
+                "value": "uri://ed-fi.org/PopulationServedDescriptor#Special Education Students"
+            },
+            {
+                "sourceTable": "TEA HR ProgramAssignmentDescriptor",
+                "key": "01",
+                "value": "uri://tea.texas.gov/ProgramAssignmentDescriptor#01"
+            },
+            {
+                "sourceTable": "TEA HR ProgramAssignmentDescriptor",
+                "key": "1",
+                "value": "uri://tea.texas.gov/ProgramAssignmentDescriptor#01"
+            },
+            {
+                "sourceTable": "TEA HR ProgramAssignmentDescriptor",
+                "key": "Bilingual/English as a Second Language",
+                "value": "uri://ed-fi.org/ProgramAssignmentDescriptor#Bilingual/English as a Second Language"
+            },
+            {
+                "sourceTable": "TEA HR ProgramAssignmentDescriptor",
+                "key": "Other",
+                "value": "uri://ed-fi.org/ProgramAssignmentDescriptor#Other"
+            },
+            {
+                "sourceTable": "TEA HR ProgramAssignmentDescriptor",
+                "key": "Regular Education",
+                "value": "uri://ed-fi.org/ProgramAssignmentDescriptor#Regular Education"
+            },
+            {
+                "sourceTable": "TEA HR ProgramAssignmentDescriptor",
+                "key": "Special Education",
+                "value": "uri://ed-fi.org/ProgramAssignmentDescriptor#Special Education"
+            },
+            {
+                "sourceTable": "TEA HR ProgramAssignmentDescriptor",
+                "key": "Title I-Academic",
+                "value": "uri://ed-fi.org/ProgramAssignmentDescriptor#Title I-Academic"
+            },
+            {
+                "sourceTable": "TEA HR ProgramAssignmentDescriptor",
+                "key": "Title I-Non-Academic",
+                "value": "uri://ed-fi.org/ProgramAssignmentDescriptor#Title I-Non-Academic"
+            },
+            {
+                "sourceTable": "TEA HR RaceDescriptor",
+                "key": "01",
+                "value": "uri://tea.texas.gov/RaceDescriptor#01"
+            },
+            {
+                "sourceTable": "TEA HR RaceDescriptor",
+                "key": "02",
+                "value": "uri://tea.texas.gov/RaceDescriptor#02"
+            },
+            {
+                "sourceTable": "TEA HR RaceDescriptor",
+                "key": "03",
+                "value": "uri://tea.texas.gov/RaceDescriptor#03"
+            },
+            {
+                "sourceTable": "TEA HR RaceDescriptor",
+                "key": "04",
+                "value": "uri://tea.texas.gov/RaceDescriptor#04"
+            },
+            {
+                "sourceTable": "TEA HR RaceDescriptor",
+                "key": "05",
+                "value": "uri://tea.texas.gov/RaceDescriptor#05"
+            },
+            {
+                "sourceTable": "TEA HR RaceDescriptor",
+                "key": "1",
+                "value": "uri://tea.texas.gov/RaceDescriptor#01"
+            },
+            {
+                "sourceTable": "TEA HR RaceDescriptor",
+                "key": "2",
+                "value": "uri://tea.texas.gov/RaceDescriptor#02"
+            },
+            {
+                "sourceTable": "TEA HR RaceDescriptor",
+                "key": "3",
+                "value": "uri://tea.texas.gov/RaceDescriptor#03"
+            },
+            {
+                "sourceTable": "TEA HR RaceDescriptor",
+                "key": "4",
+                "value": "uri://tea.texas.gov/RaceDescriptor#04"
+            },
+            {
+                "sourceTable": "TEA HR RaceDescriptor",
+                "key": "5",
+                "value": "uri://tea.texas.gov/RaceDescriptor#05"
+            },
+            {
+                "sourceTable": "TEA HR RaceDescriptor",
+                "key": "American Indian - Alaska Native",
+                "value": "uri://ed-fi.org/RaceDescriptor#American Indian - Alaska Native"
+            },
+            {
+                "sourceTable": "TEA HR RaceDescriptor",
+                "key": "Asian",
+                "value": "uri://ed-fi.org/RaceDescriptor#Asian"
+            },
+            {
+                "sourceTable": "TEA HR RaceDescriptor",
+                "key": "Black - African American",
+                "value": "uri://ed-fi.org/RaceDescriptor#Black - African American"
+            },
+            {
+                "sourceTable": "TEA HR RaceDescriptor",
+                "key": "Choose Not to Respond",
+                "value": "uri://ed-fi.org/RaceDescriptor#Choose Not to Respond"
+            },
+            {
+                "sourceTable": "TEA HR RaceDescriptor",
+                "key": "Native Hawaiian - Pacific Islander",
+                "value": "uri://ed-fi.org/RaceDescriptor#Native Hawaiian - Pacific Islander"
+            },
+            {
+                "sourceTable": "TEA HR RaceDescriptor",
+                "key": "Other",
+                "value": "uri://ed-fi.org/RaceDescriptor#Other"
+            },
+            {
+                "sourceTable": "TEA HR RaceDescriptor",
+                "key": "White",
+                "value": "uri://ed-fi.org/RaceDescriptor#White"
+            },
+            {
+                "sourceTable": "TEA HR SexDescriptor",
+                "key": "F",
+                "value": "uri://ed-fi.org/SexDescriptor#Female"
+            },
+            {
+                "sourceTable": "TEA HR SexDescriptor",
+                "key": "Female",
+                "value": "uri://ed-fi.org/SexDescriptor#Female"
+            },
+            {
+                "sourceTable": "TEA HR SexDescriptor",
+                "key": "M",
+                "value": "uri://ed-fi.org/SexDescriptor#Male"
+            },
+            {
+                "sourceTable": "TEA HR SexDescriptor",
+                "key": "Male",
+                "value": "uri://ed-fi.org/SexDescriptor#Male"
+            },
+            {
+                "sourceTable": "TEA HR SexDescriptor",
+                "key": "Non-binary",
+                "value": "uri://ed-fi.org/SexDescriptor#Non-binary"
+            },
+            {
+                "sourceTable": "TEA HR SexDescriptor",
+                "key": "Not Selected",
+                "value": "uri://ed-fi.org/SexDescriptor#Not Selected"
+            },
+            {
+                "sourceTable": "TEA HR SharedServiceArrangementStaffDescriptor",
+                "key": "1",
+                "value": "uri://tea.texas.gov/SharedServiceArrangementStaffDescriptor#1"
+            },
+            {
+                "sourceTable": "TEA HR SharedServiceArrangementStaffDescriptor",
+                "key": "2",
+                "value": "uri://tea.texas.gov/SharedServiceArrangementStaffDescriptor#2"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "002",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#002"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "003",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#003"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "004",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#004"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "005",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#005"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "006",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#006"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "007",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#007"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "008",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#008"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "011",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#011"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "012",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#012"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "013",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#013"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "015",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#015"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "016",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#016"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "017",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#017"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "018",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#018"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "019",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#019"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "020",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#020"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "021",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#021"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "022",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#022"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "023",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#023"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "024",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#024"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "026",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#026"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "027",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#027"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "028",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#028"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "030",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#030"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "032",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#032"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "033",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#033"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "036",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#036"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "040",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#040"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "041",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#041"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "042",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#042"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "043",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#043"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "044",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#044"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "045",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#045"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "047",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#047"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "054",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#054"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "055",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#055"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "056",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#056"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "060",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#060"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "061",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#061"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "062",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#062"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "063",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#063"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "064",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#064"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "065",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#065"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "079",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#079"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "087",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#087"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "100",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#100"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "101",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#101"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "102",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#102"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "103",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#103"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "104",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#104"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "105",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#105"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "106",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#106"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "107",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#107"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "108",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#108"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "109",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#109"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "110",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#110"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "111",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#111"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "112",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#112"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "113",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#113"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "114",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#114"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "115",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#115"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "116",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#116"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "117",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#117"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "118",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#118"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "119",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#119"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "120",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#120"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "121",
+                "value": "uri://tea.texas.gov/StaffClassificationDescriptor#121"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "All Other Support Staff",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#All Other Support Staff"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Assistant Principal",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Assistant Principal"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Assistant Superintendent",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Assistant Superintendent"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Counselor",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Counselor"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Elementary School Counselor",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Elementary School Counselor"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Elementary Teacher",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Elementary Teacher"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Instr Coordinator and Supervisor to the Staff",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Instr Coordinator and Supervisor to the Staff"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Instructional Aide",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Instructional Aide"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Instructional Coordinator",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Instructional Coordinator"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Kindergarten Teacher",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Kindergarten Teacher"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "LEA Administrative Support Staff",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#LEA Administrative Support Staff"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "LEA Administrator",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#LEA Administrator"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "LEA Specialist",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#LEA Specialist"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "LEA System Administrator",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#LEA System Administrator"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Librarian/Media Specialist",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Librarian/Media Specialist"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Library/Media Support Staff",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Library/Media Support Staff"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Missing",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Missing"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Operational Support",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Operational Support"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Other",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Other"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Paraprofessional/Instructional Aide",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Paraprofessional/Instructional Aide"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Pre-Kindergarten Teacher",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Pre-Kindergarten Teacher"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Principal",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Principal"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "School Administrative Support Staff",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#School Administrative Support Staff"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "School Administrator",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#School Administrator"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "School Counselor",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#School Counselor"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "School Leader",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#School Leader"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "School Psychologist",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#School Psychologist"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "School Specialist",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#School Specialist"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Secondary School Counselor",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Secondary School Counselor"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Secondary Teacher",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Secondary Teacher"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "State Administrator",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#State Administrator"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Student Support Services Staff (w/o Psychology)",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Student Support Services Staff (w/o Psychology)"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Substitute Teacher",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Substitute Teacher"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Superintendent",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Superintendent"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Support Services Staff",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Support Services Staff"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Teacher",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Teacher"
+            },
+            {
+                "sourceTable": "TEA HR StaffClassificationDescriptor",
+                "key": "Ungraded Teacher",
+                "value": "uri://ed-fi.org/StaffClassificationDescriptor#Ungraded Teacher"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SA000003",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SA000003"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SA000004",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SA000004"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SE000001",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SE000001"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SE000002",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SE000002"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SE000003",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SE000003"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SE000004",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SE000004"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SE000005",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SE000005"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SE000006",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SE000006"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SE000007",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SE000007"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SR000001",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SR000001"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SR000003",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SR000003"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SR000005",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SR000005"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SR000006",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SR000006"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SR000007",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SR000007"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SR000008",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SR000008"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SR000009",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SR000009"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SR000010",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SR000010"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SR000011",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SR000011"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SR000012",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SR000012"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SR000013",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SR000013"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SR000014",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SR000014"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS001000",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS001000"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS001001",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS001001"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS001002",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS001002"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS001003",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS001003"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS001004",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS001004"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS001005",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS001005"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS001006",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS001006"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS001007",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS001007"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS001008",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS001008"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS001009",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS001009"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS001010",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS001010"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS001011",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS001011"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS001012",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS001012"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS001013",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS001013"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS001014",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS001014"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS001015",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS001015"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS001016",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS001016"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS001017",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS001017"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS001018",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS001018"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS002000",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS002000"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS003000",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS003000"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS004000",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS004000"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS004001",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS004001"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS004002",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS004002"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS004003",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS004003"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS004004",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS004004"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS004005",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS004005"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS004006",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS004006"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS004007",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS004007"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS004008",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS004008"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS004009",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS004009"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS004010",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS004010"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS004011",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS004011"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS004012",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS004012"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS004013",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS004013"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS004014",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS004014"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS004015",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS004015"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS004016",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS004016"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS004017",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS004017"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS004018",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS004018"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS005000",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS005000"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS005001",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS005001"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS005002",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS005002"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS005003",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS005003"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS005004",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS005004"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS005005",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS005005"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS005006",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS005006"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS005007",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS005007"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS005008",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS005008"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS005009",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS005009"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS005010",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS005010"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS005011",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS005011"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS005012",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS005012"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS005013",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS005013"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS005014",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS005014"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS005015",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS005015"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS005016",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS005016"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS005017",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS005017"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS005018",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS005018"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS005019",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS005019"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS005020",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS005020"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS006000",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS006000"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS007000",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS007000"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS008000",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS008000"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS009000",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS009000"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS010000",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS010000"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS011000",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS011000"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS012000",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS012000"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS013000",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS013000"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS014000",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS014000"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS015000",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS015000"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS016000",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS016000"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS017000",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS017000"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS018000",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS018000"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS019000",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS019000"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS020000",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS020000"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS021000",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS021000"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS022000",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS022000"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS023000",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS023000"
+            },
+            {
+                "sourceTable": "TEA HR StaffServiceDescriptor",
+                "key": "SS025000",
+                "value": "uri://tea.texas.gov/StaffServiceDescriptor#SS025000"
+            },
+            {
+                "sourceTable": "TEA HR StaffTypeDescriptor",
+                "key": "1",
+                "value": "uri://tea.texas.gov/StaffTypeDescriptor#1"
+            },
+            {
+                "sourceTable": "TEA HR StaffTypeDescriptor",
+                "key": "3",
+                "value": "uri://tea.texas.gov/StaffTypeDescriptor#3"
+            },
+            {
+                "sourceTable": "TEA HR StaffTypeDescriptor",
+                "key": "4",
+                "value": "uri://tea.texas.gov/StaffTypeDescriptor#4"
+            },
+            {
+                "sourceTable": "TEA HR TeacherIncentiveAllotmentDesignationDescriptor",
+                "key": "01",
+                "value": "uri://tea.texas.gov/TeacherIncentiveAllotmentDesignationDescriptor#01"
+            },
+            {
+                "sourceTable": "TEA HR TeacherIncentiveAllotmentDesignationDescriptor",
+                "key": "02",
+                "value": "uri://tea.texas.gov/TeacherIncentiveAllotmentDesignationDescriptor#02"
+            },
+            {
+                "sourceTable": "TEA HR TeacherIncentiveAllotmentDesignationDescriptor",
+                "key": "03",
+                "value": "uri://tea.texas.gov/TeacherIncentiveAllotmentDesignationDescriptor#03"
+            },
+            {
+                "sourceTable": "TEA HR TeacherIncentiveAllotmentDesignationDescriptor",
+                "key": "1",
+                "value": "uri://tea.texas.gov/TeacherIncentiveAllotmentDesignationDescriptor#01"
+            },
+            {
+                "sourceTable": "TEA HR TeacherIncentiveAllotmentDesignationDescriptor",
+                "key": "2",
+                "value": "uri://tea.texas.gov/TeacherIncentiveAllotmentDesignationDescriptor#02"
+            },
+            {
+                "sourceTable": "TEA HR TeacherIncentiveAllotmentDesignationDescriptor",
+                "key": "3",
+                "value": "uri://tea.texas.gov/TeacherIncentiveAllotmentDesignationDescriptor#03"
+            }
+        ],
+        "supplementalInformation": null,
+        "preprocessors": [
+            {
+                "name": "TEA HR Staff PreProcessor",
+                "scriptContent": "[CmdletBinding()]\r\nParam(\r\n    [parameter(Mandatory = $true, ValueFromPipeline = $true)][string]$line\r\n)\r\n\r\n#####################################################\r\n### Ed-Fi ODS v3+\r\n### Assessment: ELPAC \r\n### Script: Custom File Processor\r\n#####################################################\r\n\r\n\r\n# Handle start of processing\r\nbegin {\r\n         function IsValidHeaderRow($headers) {        \r\n                if ($headers.Length -le 1) {\r\n                    $global:validHeader = $false\r\n                }\r\n            }\r\n \r\n         function Get-JsonSummary() {\r\n            # Validate evry field to add the errors to the json Object\r\n           if( $global:StaffUniqueIdFailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors._extStaffId = @{\r\n                    ColName = \"_extStaffId\"\t\r\n\t                Rows = $global:StaffUniqueIdFailedRows\r\n                }\r\n           }\r\n\r\n           if( $global:FirstNameFailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors.FirstName = @{\r\n                    ColName = \"FirstName\"\t\r\n\t                Rows = $global:FirstNameFailedRows\r\n                }\r\n           }\r\n\r\n            if( $global:LastSurnameFailedRows.count -gt 0)\r\n           {\r\n                 $global:jsonObject.errors.LastSurname = @{\r\n                    ColName = \"LastSurname\"\t\r\n\t                Rows = $global:LastSurnameFailedRows\r\n                }\r\n           }\r\n\r\n            if( $global:BirthDateFailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors.BirthDate = @{\r\n                    ColName = \"BirthDate\"\t\r\n\t                Rows = $global:BirthDateFailedRows\r\n                }\r\n           }\r\n\r\n            if( $global:ExtTypeSets_beginDate1FailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors._extTypeSets_beginDate1 = @{\r\n                    ColName = \"_extTypeSets_beginDate1\"\t\r\n\t                Rows = $global:ExtTypeSets_beginDate1FailedRows\r\n                }\r\n           }\r\n\r\n            if( $global:ExtTypeSets_endDate1FailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors._extTypeSets_endDate1 = @{\r\n                    ColName = \"_extTypeSets_endDate1\"\t\r\n\t                Rows = $global:_extTypeSets_endDate11FailedRows\r\n                }\r\n           }\r\n             if( $global:ExtTypeSets_beginDate2FailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors._extTypeSets_beginDate2 = @{\r\n                    ColName = \"_extTypeSets_beginDate2\"\t\r\n\t                Rows = $global:ExtTypeSets_beginDate2FailedRows\r\n                }\r\n           }\r\n             if( $global:ExtTypeSets_endDate2FailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors._extTypeSets_endDate2 =@{\r\n                    ColName = \"_extTypeSets_endDate2\"\t\r\n\t                Rows = $global:ExtTypeSets_endDate2FailedRows\r\n                }\r\n           }\r\n             if( $global:ExtTypeSets_beginDate3FailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors._extTypeSets_beginDate3 = @{\r\n                    ColName = \"_extTypeSets_beginDate3\"\t\r\n\t                Rows = $global:_extTypeSets_beginDate3FailedRows\r\n                }\r\n           }\r\n             if( $global:ExtTypeSets_endDate3FailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors._extTypeSets_endDate3 = @{\r\n                    ColName = \"_extTypeSets_endDate3\"\t\r\n\t                Rows = $global:_extTypeSets_endDate3FailedRows\r\n                }\r\n           }\r\n\r\n           if( $global:ExtCertificationSet_beginDateFailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors._extCertificationSet_beginDate3 = @{\r\n                    ColName = \"_extCertificationSet_beginDate\"\t\r\n\t                Rows = $global:ExtCertificationSet_beginDateFailedRows\r\n                }\r\n           }\r\n           if( $global:ExtCertificationSet_endDateFailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors._extCertificationSet_endDate = @{\r\n                    ColName = \"_extCertificationSet_endDate\"\t\r\n\t                Rows = $global:ExtCertificationSet_endDateFailedRows\r\n                }\r\n           }\r\n           $global:jsonObject.finished = Get-Date -Format \"HH:mm:ss\"   \r\n        return $global:jsonObject\r\n}\r\n   \r\n     # Convert an array list of data into a CSV line for output\r\n    function Get-CSVLine($inputData) {\r\n        $ret = \"\"\r\n        foreach ($cell in $inputData) {\r\n            if ($ret -ne \"\") { $ret += \",\" }\r\n            $ret += ('\"' + $cell + '\"')\r\n        }\r\n        return $ret\r\n    }\r\n\r\n    function Get-ParsedDate ($date) {             \r\n        <# \r\n            .SYNOPSIS\r\n                Parse a date string and returns it in the correct format (MM/dd/yyyy).\r\n    \r\n            .PARAMETER date (required)\r\n                The date string to parse\r\n    \r\n            .OUTPUTS\r\n    \r\n                If parsing fails for any reason then $null is returned, if not the date is returned in the next forma: MM/dd/yyyy\r\n        #>\r\n    \r\n        try {\r\n            \r\n            if (!$date) {\r\n                return\r\n            }   \r\n            \r\n            return  ([datetime]$date.Trim()).ToString(\"MM/dd/yyyy\")  \r\n        }\r\n        catch {\r\n            return $null\r\n        }\r\n    }\r\n    \r\n    # Set up the statistics\r\n\r\n    $global:statistics = @{\r\n        \"rowsProcessed\" = 0\r\n        \"rowsLoaded\"    = 0\r\n        \"validations\"   = @{}\r\n    }\r\n\r\n\r\n    # create ordered dictionary\r\n$global:jsonObject = [ordered]@{\r\n        \"started\"    = Get-Date -Format \"HH:mm:ss\"\r\n        \"finished\"   = \"\"\r\n        \"errors\"  = [ordered]@{}\r\n        }\r\n        $global:StaffUniqueIdFailedRows=  @()\r\n        $global:FirstNameFailedRows=  @()\r\n        $global:LastSurnameFailedRows=  @()\r\n        $global:BirthDateFailedRows=  @()\r\n        $global:ExtTypeSets_beginDate1FailedRows= @()\r\n        $global:ExtTypeSets_endDate1FailedRows= @()\r\n        $global:ExtTypeSets_beginDate2FailedRows= @()\r\n        $global:ExtTypeSets_endDate2FailedRows= @()\r\n        $global:ExtTypeSets_beginDate3FailedRows= @()\r\n        $global:ExtTypeSets_endDate3FailedRows= @()\r\n        $global:ExtCertificationSet_beginDateFailedRows= @()\r\n        $global:ExtCertificationSet_endDateFailedRows= @()\r\n        $global:ExtStaffIdFailedRows=  @()\r\n\r\n\r\n    # Prepare some other variables\r\n    $currentLineNumber = 0\r\n    $global:inputHeaders = @()\r\n    $global:headersLookup = @{}\r\n    $global:validHeader = $true\r\n    ### Helper functions\r\n\r\n    ## ODS functions\r\n    $apiVersion = $DataImport.ApiVersion\r\n}\r\n\r\n\r\n# Process each individual line of incoming data (the pipeline sends this one line at a time)\r\nprocess {\r\n    $currentLineNumber += 1\r\n    $global:statistics.rowsProcessed += 1\r\n\r\n    # Make sure we got something\r\n    if (!$line) { Write-Error \"Line $currentLineNumber does not contain any data\"; return }\r\n\r\n   $line= $line.Replace(\"`t\", \",\") # Convert any TAB delimeter to comma \r\n    \r\n    # If the first line pick out all of the headers\r\n    if ($currentLineNumber -eq 1) { \r\n        try\r\n        {        \r\n            $global:inputHeaders = $line.Replace(' ', '').ToUpper().Split(\",\")  -replace '[\\W]', ''\r\n            $(IsValidHeaderRow($global:inputHeaders))\r\n             if($global:validHeader -eq $true) {\r\n                Write-Output $(Get-CSVLine($global:inputHeaders))\r\n                return\r\n            } else {\r\n                Write-Host \"Invalid Header Row. Please check file content.\" -ForegroundColor red -BackgroundColor white\r\n                break\r\n            }\r\n        }\r\n        catch\r\n        {\r\n            Write-Output \"Something threw an exception\"\r\n            Write-Output $_\r\n        }\r\n\r\n    }\r\n     if($global:validHeader -eq $true) {\r\n     \r\n    $row = $line | ConvertFrom-Csv -Header $global:inputHeaders.Trim()\r\n    $errorInCurrentRow = $false\r\n    $orderedOutputValues = @()       \r\n\r\n    # Validation will tell whether or not a record has the required values needed to be posted to ODS, if not valid add line number to show in summary\r\n    $passedValidation = $true\r\n    $validationId = $null\r\n    \r\n    # Process custom/computed columns\r\n           \r\n        foreach ($outColumnName in $global:inputHeaders) {\r\n         $ValidatedDate= $null\r\n            #Write-Information $outColumnName\r\n            switch -Exact ($outColumnName) {\r\n\r\n             \"StaffUniqueId\" {\r\n\r\n                 if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {      $passedValidation = $false\r\n                            $validationId = \"StaffUniqueId\"\r\n                            $global:StaffUniqueIdFailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues += $row.$outColumnName   \r\n                    \r\n                }\r\n\r\n\r\n             \"FirstName\" {\r\n\r\n                 if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {      $passedValidation = $false\r\n                            $validationId = \"FirstName\"\r\n                            $global:FirstNameFailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues += $row.$outColumnName   \r\n                    \r\n                }\r\n\r\n                 \"LastSurname\" {\r\n\r\n                 if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {      $passedValidation = $false\r\n                            $validationId = \"LastSurname\"\r\n                            $global:LastSurnameFailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues += $row.$outColumnName   \r\n                    \r\n                }\r\n               \r\n                \"BirthDate\" {\r\n                if (![string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {  \r\n                        $ValidatedDate =  Get-ParsedDate $row.$outColumnName                    \r\n                        # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                        if (!$ValidatedDate) {\r\n                            $passedValidation = $false\r\n                            $validationId = \"InvalidBirthDate\"\r\n                            $global:BirthDateFailedRows += $currentLineNumber\r\n                            $ValidatedDate = $row.$outColumnName   \r\n                        }\r\n                    }\r\n                    \r\n                    $orderedOutputValues += $ValidatedDate \r\n                }\r\n                 \r\n                \"_extTypeSets_beginDate1\" {\r\n                 if (![string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {  \r\n                       $ValidatedDate =  Get-ParsedDate $row.$outColumnName                    \r\n                        # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                        if (!$ValidatedDate) {\r\n                            $passedValidation = $false\r\n                            $validationId = \"Invalid_extTypeSets_beginDate1\"\r\n                            $global:ExtTypeSets_beginDate1FailedRows += $currentLineNumber\r\n                            $ValidatedDate = $row.$outColumnName \r\n                        }\r\n                    }\r\n                    \r\n                    $orderedOutputValues += $ValidatedDate                \r\n                }\r\n                \r\n                 \"_extTypeSets_endDate1\" {\r\n                    if (![string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {  \r\n                        $ValidatedDate =  Get-ParsedDate $row.$outColumnName                    \r\n                        # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                        if (!$ValidatedDate) {\r\n                            $passedValidation = $false\r\n                            $validationId = \"Invalid_extTypeSets_endDate1\"\r\n                            $global:ExtTypeSets_endDate1FailedRows += $currentLineNumber\r\n                            $ValidatedDate = $row.$outColumnName \r\n                        }            \r\n                         \r\n                    }\r\n                    $orderedOutputValues += $ValidatedDate \r\n                }\r\n\r\n                 \"_extTypeSets_beginDate2\" {\r\n                  if (![string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {  \r\n                        $ValidatedDate =  Get-ParsedDate $row.$outColumnName                    \r\n                        # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                        if (!$ValidatedDate) {\r\n                            $passedValidation = $false\r\n                            $validationId = \"Invalid_extTypeSets_beginDate2\"\r\n                            $global:ExtTypeSets_beginDate2FailedRows += $currentLineNumber\r\n                            $ValidatedDate = $row.$outColumnName \r\n                        }            \r\n                        \r\n                    }\r\n                    $orderedOutputValues += $ValidatedDate  \r\n                }\r\n                \r\n                 \"_extTypeSets_endDate2\" {\r\n                  if (![string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {  \r\n                        $ValidatedDate =  Get-ParsedDate $row.$outColumnName                    \r\n                        # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                        if (!$ValidatedDate) {\r\n                            $passedValidation = $false\r\n                            $validationId = \"Invalid_extTypeSets_endDate2\"\r\n                            $global:ExtTypeSets_endDate2FailedRows += $currentLineNumber\r\n                            $ValidatedDate = $row.$outColumnName \r\n                        }            \r\n                        \r\n                    }\r\n                    $orderedOutputValues += $ValidatedDate \r\n                }\r\n\r\n\r\n                  \"_extTypeSets_beginDate3\" {\r\n                       if (![string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                        {  \r\n                            $ValidatedDate =  Get-ParsedDate $row.$outColumnName                    \r\n                            # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                            if (!$ValidatedDate) {\r\n                                $passedValidation = $false\r\n                                $validationId = \"Invalid_extTypeSets_beginDate3\"\r\n                                $global:ExtTypeSets_beginDate3FailedRows += $currentLineNumber\r\n                                $ValidatedDate = $row.$outColumnName \r\n                            }\r\n                        }\r\n                        $orderedOutputValues += $ValidatedDate   \r\n                }\r\n\r\n                  \"_extTypeSets_endDate3\" {\r\n                  if (![string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {  \r\n                         $ValidatedDate =  Get-ParsedDate $row.$outColumnName                    \r\n                        # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                        if (!$ValidatedDate) {\r\n                            $passedValidation = $false\r\n                            $validationId = \"Invalid_extTypeSets_endDate3\"\r\n                            $global:ExtTypeSets_endDate3FailedRows += $currentLineNumber\r\n                            $ValidatedDate = $row.$outColumnName \r\n                        }           \r\n                        \r\n                    }\r\n                    $orderedOutputValues += $ValidatedDate \r\n                }\r\n\r\n                 \"_extCertificationSet_beginDate\" {\r\n                        if (![string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                        {  \r\n                           $ValidatedDate =  Get-ParsedDate $row.$outColumnName                    \r\n                            # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                            if (!$ValidatedDate) {\r\n                                $passedValidation = $false\r\n                                $validationId = \"Invalid_extCertificationSet_beginDate\"\r\n                                $global:ExtCertificationSet_beginDateFailedRows += $currentLineNumber\r\n                                $ValidatedDate = $row.$outColumnName \r\n                            }            \r\n                            \r\n                        }\r\n                        $orderedOutputValues += $ValidatedDate \r\n                }\r\n\r\n                 \"_extCertificationSet_endDate\" {\r\n\r\n                 if (![string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    { \r\n                         $ValidatedDate =  Get-ParsedDate $row.$outColumnName                    \r\n                        # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                        if (!$ValidatedDate) {\r\n                            $passedValidation = $false\r\n                            $validationId = \"Invalid_extCertificationSet_endDate\"\r\n                            $global:ExtCertificationSet_endDateFailedRows += $currentLineNumber\r\n                            $ValidatedDate = $row.$outColumnName \r\n                        }            \r\n                        \r\n                    }\r\n                    $orderedOutputValues += $ValidatedDate  \r\n                }\r\n\r\n                \"_extStaffId\" {\r\n\r\n                 if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {      $passedValidation = $false\r\n                            $validationId = \"Invalid_extStaffId\"\r\n                            $global:ExtStaffIdFailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName   \r\n                    \r\n                }\r\n                \r\n                Default {\r\n                    # In case of no implementation for custom column add $null output to preserve output format and order\r\n                    #$orderedOutputValues += $null\r\n                    $orderedOutputValues += $row.$outColumnName\r\n                    break;\r\n                }\r\n            }\r\n           \r\n            \r\n        }   \r\n\r\n    \r\n    Write-Output $(Get-CSVLine($orderedOutputValues))\r\n    $global:statistics.rowsLoaded ++  \r\n    \r\n\r\n    return\r\n\r\n     }\r\n}\r\n\r\n# end of processing\r\nend {\r\n if($global:validHeader -eq $false) {\r\n        break\r\n    }\r\n\r\n$JsonSummary= Get-JsonSummary |ConvertTo-Json -Depth 3\r\n $summary += \"SUMMARY: `\r\n                    Rows Processed: $($global:statistics.rowsProcessed); `\r\n                    Rows Loaded: $($global:statistics.rowsLoaded); `\r\n                    Details: $($JsonSummary)\"\r\n     \r\n     Write-Information \"*******$summary*********\"\r\n\r\n    \r\n}",
+                "requireOdsApiAccess": false,
+                "hasAttribute": false,
+                "executablePath": null,
+                "executableArguments": null
+            },
+            {
+                "name": "TEA HR staffEducationOrganizationAssignmentAssociations Preprocessor",
+                "scriptContent": "[CmdletBinding()]\r\nParam(\r\n    [parameter(Mandatory = $true, ValueFromPipeline = $true)][string]$line\r\n)\r\n\r\n#####################################################\r\n### Ed-Fi ODS v3+\r\n### Assessment: ELPAC \r\n### Script: Custom File Processor\r\n#####################################################\r\n\r\n\r\n# Handle start of processing\r\nbegin {\r\n   \r\n   function IsValidHeaderRow($headers) {        \r\n                if ($headers.Length -le 1) {\r\n                    $global:validHeader = $false\r\n                }\r\n            }\r\n \r\n         function Get-JsonSummary() {\r\n\r\n            # Validate evry field to add the errors to the json Object\r\n           if( $global:BeginDateFailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors.BeginDate = @{\r\n                    ColName = \"BeginDate\"\t\r\n\t                Rows = $global:BeginDateFailedRows\r\n                }\r\n           }\r\n\r\n           if( $global:EndDateFailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors.EndDate = @{\r\n                    ColName = \"EndDate\"\t\r\n\t                Rows = $global:EndDateFailedRows\r\n                }\r\n           }\r\n\r\n            if( $global:StaffClasificationFailedRows.count -gt 0)\r\n           {\r\n                 $global:jsonObject.errors.StaffClasification = @{\r\n                    ColName = \"StaffClasification\"\t\r\n\t                Rows = $global:StaffClasificationFailedRows\r\n                }\r\n           }\r\n\r\n            if( $global:EducationOrganizationFailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors.EducationOrganization = @{\r\n                    ColName = \"EducationOrganization\"\t\r\n\t                Rows = $global:EducationOrganizationFailedRows\r\n                }\r\n           }\r\n            if( $global:StaffFailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors.Staff = @{\r\n                    ColName = \"Staff\"\t\r\n\t                Rows = $global:StaffFailedRows\r\n                }\r\n           }\r\n\r\n            if( $global:StaffService1FailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors.StaffService1 = @{\r\n                    ColName = \"StaffService1\"\t\r\n\t                Rows = $global:StaffService1FailedRows\r\n                }\r\n           }\r\n             if( $global:StaffServiceBeginDate1FailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors.StaffServiceBeginDate1 = @{\r\n                    ColName = \"StaffServiceBeginDate1\"\t\r\n\t                Rows = $global:StaffServiceBeginDate1FailedRows\r\n                }\r\n           }\r\n             if( $global:StaffServiceEndDate1FailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors.StaffServiceEndDate1 =@{\r\n                    ColName = \"StaffServiceEndDate1\"\t\r\n\t                Rows = $global:StaffServiceEndDate1FailedRows\r\n                }\r\n           }\r\n           $global:jsonObject.finished = Get-Date -Format \"HH:mm:ss\"   \r\n        return $global:jsonObject\r\n}\r\n\r\n     # Convert an array list of data into a CSV line for output\r\n    function Get-CSVLine($inputData) {\r\n        $ret = \"\"\r\n        foreach ($cell in $inputData) {\r\n            if ($ret -ne \"\") { $ret += \",\" }\r\n            $ret += ('\"' + $cell + '\"')\r\n        }\r\n        return $ret\r\n    }\r\n\r\n\r\n    function Get-ParsedDate ($date) {             \r\n        <# \r\n            .SYNOPSIS\r\n                Parse a date string and returns it in the correct format (MM/dd/yyyy).\r\n    \r\n            .PARAMETER date (required)\r\n                The date string to parse\r\n    \r\n            .OUTPUTS\r\n    \r\n                If parsing fails for any reason then $null is returned, if not the date is returned in the next forma: MM/dd/yyyy\r\n        #>\r\n    \r\n        try {\r\n            \r\n            if (!$date) {\r\n                return\r\n            }   \r\n            \r\n            return  ([datetime]$date.Trim()).ToString(\"MM/dd/yyyy\")  \r\n        }\r\n        catch {\r\n            return $null\r\n        }\r\n    }\r\n    \r\n    # Set up the statistics\r\n\r\n    $global:statistics = @{\r\n        \"rowsProcessed\" = 0\r\n        \"rowsLoaded\"    = 0\r\n        \"validations\"   = @{}\r\n    }\r\n\r\n    # create ordered dictionary\r\n$global:jsonObject = [ordered]@{\r\n        \"started\"    = Get-Date -Format \"HH:mm:ss\"\r\n        \"finished\"   = \"\"\r\n        \"errors\"  = [ordered]@{}\r\n        }\r\n\t\t\r\n\t$global:beginDateFailedRows=  @()\r\n\t$global:endDateFailedRows=  @()\r\n\t$global:StaffClasificationFailedRows=  @()\r\n\t$global:EducationOrganizationFailedRows=  @()\r\n\t$global:StaffFailedRows=  @()\r\n\t$global:StaffService1FailedRows=  @()\r\n\t$global:StaffServiceBeginDate1FailedRows=  @()\r\n\t$global:StaffServiceEndDate1FailedRows=  @()\r\n    # Prepare some other variables\r\n    $currentLineNumber = 0\r\n    $global:inputHeaders = @()\r\n    $global:headersLookup = @{}\r\n\t$global:validHeader = $true\r\n    ### Helper functions\r\n\r\n    ## ODS functions\r\n    $apiVersion = $DataImport.ApiVersion\r\n}\r\n\r\n\r\n# Process each individual line of incoming data (the pipeline sends this one line at a time)\r\nprocess {\r\n    $currentLineNumber += 1\r\n    $global:statistics.rowsProcessed += 1\r\n\r\n    # Make sure we got something\r\n    if (!$line) { Write-Error \"Line $currentLineNumber does not contain any data\"; return }\r\n\r\n    $line= $line.Replace(\"`t\", \",\") # Convert any TAB delimeter to comma     \r\n    # If the first line pick out all of the headers\r\n    if ($currentLineNumber -eq 1) { \r\n        try\r\n        {        \r\n            $global:inputHeaders = $line.Replace(' ', '').ToUpper().Split(\",\")  -replace '[\\W]', ''\r\n            $(IsValidHeaderRow($global:inputHeaders))\r\n             if($global:validHeader -eq $true) {\r\n                Write-Output $(Get-CSVLine($global:inputHeaders))\r\n                return\r\n            } else {\r\n                Write-Host \"Invalid Header Row. Please check file content.\" -ForegroundColor red -BackgroundColor white\r\n                break\r\n            }\r\n        }\r\n        catch\r\n        {\r\n            Write-Output \"Something threw an exception\"\r\n            Write-Output $_\r\n        }\r\n\r\n    }\r\n\tif($global:validHeader -eq $true) {\r\n    $row = $line | ConvertFrom-Csv -Header $global:inputHeaders.Trim()\r\n    $errorInCurrentRow = $false\r\n    $orderedOutputValues = @()       \r\n\r\n    # Validation will tell whether or not a record has the required values needed to be posted to ODS, if not valid add line number to show in summary\r\n    $passedValidation = $true\r\n    $validationId = $null\r\n    $validationMessage = $null\r\n    \r\n    # Process custom/computed columns\r\n           \r\n        foreach ($outColumnName in $global:inputHeaders) {\r\n         $ValidatedDate= $null\r\n            #Write-Information $outColumnName\r\n            switch -Exact ($outColumnName) {\r\n\r\n               \"BEGINDATE\" {\r\n                 if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $passedValidation = $false\r\n                        $validationId = \"Invalid_beginDate\"\r\n\t\t\t\t\t\t$global:beginDateFailedRows += $currentLineNumber\r\n\t\t\t\t\t\t$ValidatedDate =$row.$outColumnName \r\n                    }else\r\n                    {\r\n                        $ValidatedDate =  Get-ParsedDate $row.$outColumnName                    \r\n                        # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                        if (!$ValidatedDate) {\r\n                            $passedValidation = $false\r\n                            $validationId = \"Invalid_beginDate\"\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t$global:BeginDateFailedRows += $currentLineNumber\r\n\t\t\t\t\t\t\t$ValidatedDate =$row.$outColumnName \r\n                        }\r\n                    }\r\n                    $orderedOutputValues +=$ValidatedDate\r\n                }\r\n\r\n                 \"ENDDATE\" {\r\n                 if (![string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $ValidatedDate =  Get-ParsedDate $row.$outColumnName                    \r\n                        # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                        if (!$ValidatedDate) {\r\n                            $passedValidation = $false\r\n                            $validationId = \"Invalid_EndDate\"\r\n\t\t\t\t\t\t\t$global:EndDateFailedRows += $currentLineNumber\r\n\t\t\t\t\t\t\t$ValidatedDate =$row.$outColumnName \r\n                        }\r\n                    }\r\n\t\t\t\t\t$orderedOutputValues += $ValidatedDate \r\n                }\r\n\r\n                 \r\n                \"STAFFCLASSIFICATION\" {\r\n                 if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $passedValidation = $false\r\n                        $validationId = \"Invalid_Staff_Clasification\"\r\n\t\t\t\t\t\t$global:StaffClasificationFailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName\r\n\r\n                    \r\n                }\r\n                \r\n                 \"EDUCATIONORGANIZATION\" {\r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {  \r\n                        $passedValidation = $false\r\n                        $validationId = \"Invalid_Education_Organization\"\t\t\t\t\t\t\r\n\t\t\t\t\t\t$global:EducationOrganizationFailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues += $row.$outColumnName\r\n                   \r\n                }\r\n\r\n                 \"STAFF\" {\r\n                  if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {  \r\n                        $passedValidation = $false\r\n                        $validationId = \"Invalid_Staff\"\r\n\t\t\t\t\t\t$global:StaffFailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName                   \r\n                }\r\n\r\n                 \"STAFFSERVICE1\" {\r\n                  if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {  \r\n                        $passedValidation = $false\r\n                        $validationId = \"Invalid_StaffService1\"\t\t\t\t\t\t\r\n\t\t\t\t\t\t$global:StaffService1FailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName                   \r\n                }\r\n                 \r\n                \"STAFFSERVICEBEGINDATE1\" {\r\n                 if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $passedValidation = $false\r\n                        $validationId = \"Invalid_StaffServiceBeginDate1\"\r\n\t\t\t\t\t\t$global:StaffServiceBeginDate1FailedRows += $currentLineNumber\r\n\t\t\t\t\t\t$ValidatedDate =  $row.$outColumnName\r\n                    }else\r\n                    {\r\n                        $ValidatedDate =  Get-ParsedDate $row.$outColumnName                    \r\n                        # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                        if (!$ValidatedDate) {\r\n                            $passedValidation = $false\r\n                            $validationId = \"Invalid_StaffServiceBeginDate1\"\r\n\t\t\t\t\t\t\t$global:StaffServiceBeginDate1FailedRows += $currentLineNumber\r\n\t\t\t\t\t\t\t$ValidatedDate =  $row.$outColumnName\r\n                        }\r\n                    }\r\n                    $orderedOutputValues +=$ValidatedDate\r\n                }\r\n\r\n                 \r\n                \"STAFFSERVICEENDDATE1\" {\r\n\t\t\t\t$ValidatedDate =  $row.$outColumnName\r\n                 if (![string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $ValidatedDate =  Get-ParsedDate $row.$outColumnName                    \r\n                        # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                        if (!$ValidatedDate) {\r\n                            $passedValidation = $false\r\n                            $validationId = \"Invalid_StaffServiceEndDate1\"\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t$global:StaffServiceEndDate1FailedRows += $currentLineNumber\r\n\t\t\t\t\t\t\t$ValidatedDate =  $row.$outColumnName\r\n                        }\r\n                    }\r\n                    $orderedOutputValues +=$ValidatedDate                 \r\n                }\r\n                \r\n                Default {\r\n                    # In case of no implementation for custom column add $null output to preserve output format and order\r\n                    #$orderedOutputValues += $null\r\n                    $orderedOutputValues += $row.$outColumnName\r\n                    break;\r\n                }\r\n            }\r\n           \r\n            \r\n        } \r\n    Write-Output $(Get-CSVLine($orderedOutputValues))\r\n    $global:statistics.rowsLoaded ++\r\n    return\r\n\t}\r\n}\r\n\r\n# end of processing\r\nend {\r\n if($global:validHeader -eq $false) {\r\n        break\r\n    }\r\n\r\n$JsonSummary= Get-JsonSummary |ConvertTo-Json -Depth 3\r\n $summary += \"SUMMARY: `\r\n                    Rows Processed: $($global:statistics.rowsProcessed); `\r\n                    Rows Loaded: $($global:statistics.rowsLoaded); `\r\n                    Details: $($JsonSummary)\"\r\n     \r\n     Write-Information \"*******$summary*********\"\r\n\r\n    \r\n}",
+                "requireOdsApiAccess": false,
+                "hasAttribute": false,
+                "executablePath": null,
+                "executableArguments": null
+            },
+            {
+                "name": "TEA HR StaffEducationOrganizationEmploymentAssociation Preprocessor",
+                "scriptContent": "[CmdletBinding()]\r\nParam(\r\n    [parameter(Mandatory = $true, ValueFromPipeline = $true)][string]$line\r\n)\r\n\r\n#####################################################\r\n### Ed-Fi ODS v3+\r\n### Assessment: ELPAC \r\n### Script: Custom File Processor\r\n#####################################################\r\n\r\n\r\n# Handle start of processing\r\nbegin {\r\n   \r\n   function IsValidHeaderRow($headers) {        \r\n                if ($headers.Length -le 1) {\r\n                    $global:validHeader = $false\r\n                }\r\n            }\r\n \r\n         function Get-JsonSummary() {\r\n            # Validate evry field to add the errors to the json Object\r\n           if( $global:EmploymentStatusFailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors.EmploymentStatus = @{\r\n                    ColName = \"EmploymentStatus\"\t\r\n\t                Rows = $global:EmploymentStatusFailedRows\r\n                }\r\n           }\r\n\r\n           if( $global:HireDateFailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors.HireDate = @{\r\n                    ColName = \"HireDate\"\t\r\n\t                Rows = $global:HireDateFailedRows\r\n                }\r\n           }\r\n\r\n            if( $global:EducationOrganizationFailedRows.count -gt 0)\r\n           {\r\n                 $global:jsonObject.errors.EducationOrganization = @{\r\n                    ColName = \"EducationOrganization\"\t\r\n\t                Rows = $global:EducationOrganizationFailedRows\r\n                }\r\n           }\r\n\r\n            if( $global:StaffFailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors.Staff = @{\r\n                    ColName = \"Staff\"\t\r\n\t                Rows = $global:StaffFailedRows\r\n                }\r\n           }\r\n\r\n            if( $global:ExtBeginDate1FailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors.ExtBeginDate1 = @{\r\n                    ColName = \"ExtBeginDate1\"\t\r\n\t                Rows = $global:ExtBeginDate1FailedRows\r\n                }\r\n           }\r\n\r\n            if( $global:ExtEndDate1FailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors.ExtEndDate1 = @{\r\n                    ColName = \"ExtEndDate1\"\t\r\n\t                Rows = $global:ExtEndDate1FailedRows\r\n                }\r\n           }\r\n            \r\n           $global:jsonObject.finished = Get-Date -Format \"HH:mm:ss\"   \r\n        return $global:jsonObject\r\n}\r\n     # Convert an array list of data into a CSV line for output\r\n    function Get-CSVLine($inputData) {\r\n        $ret = \"\"\r\n        foreach ($cell in $inputData) {\r\n            if ($ret -ne \"\") { $ret += \",\" }\r\n            $ret += ('\"' + $cell + '\"')\r\n        }\r\n        return $ret\r\n    }\r\n\r\n\r\n    function Get-ParsedDate ($date) {             \r\n        <# \r\n            .SYNOPSIS\r\n                Parse a date string and returns it in the correct format (MM/dd/yyyy).\r\n    \r\n            .PARAMETER date (required)\r\n                The date string to parse\r\n    \r\n            .OUTPUTS\r\n    \r\n                If parsing fails for any reason then $null is returned, if not the date is returned in the next forma: MM/dd/yyyy\r\n        #>\r\n    \r\n        try {\r\n            \r\n            if (!$date) {\r\n                return\r\n            }   \r\n            \r\n            return  ([datetime]$date.Trim()).ToString(\"MM/dd/yyyy\")  \r\n        }\r\n        catch {\r\n            return $null\r\n        }\r\n    }\r\n    \r\n    # Set up the statistics\r\n\r\n    $global:statistics = @{\r\n        \"rowsProcessed\" = 0\r\n        \"rowsLoaded\"    = 0\r\n        \"validations\"   = @{}\r\n        \"validationMessage\"  = @{}\r\n    }\r\n     # create ordered dictionary\r\n    $global:jsonObject = [ordered]@{\r\n        \"started\"    = Get-Date -Format \"HH:mm:ss\"\r\n        \"finished\"   = \"\"\r\n        \"errors\"  = [ordered]@{}\r\n        }\r\n        $global:EmploymentStatusFailedRows= @()\r\n        $global:HireDateFailedRows= @()\r\n        $global:EducationOrganizationFailedRows= @()\r\n        $global:StaffFailedRows= @()\r\n        $global:ExtBeginDate1FailedRows= @()\r\n        $global:ExtEndDate1FailedRows= @()\r\n    # Prepare some other variables\r\n    $currentLineNumber = 0\r\n    $global:inputHeaders = @()\r\n    $global:headersLookup = @{}\r\n    $global:validHeader = $true\r\n    ### Helper functions\r\n\r\n    ## ODS functions\r\n    $apiVersion = $DataImport.ApiVersion\r\n}\r\n\r\n\r\n# Process each individual line of incoming data (the pipeline sends this one line at a time)\r\nprocess {\r\n    $currentLineNumber += 1\r\n    $global:statistics.rowsProcessed += 1\r\n\r\n    # Make sure we got something\r\n    if (!$line) { Write-Error \"Line $currentLineNumber does not contain any data\"; return }\r\n   $line= $line.Replace(\"`t\", \",\") # Convert any TAB delimeter to comma \r\n    \r\n    # If the first line pick out all of the headers\r\n    if ($currentLineNumber -eq 1) { \r\n        try\r\n        {        \r\n            $global:inputHeaders = $line.Replace(' ', '').ToUpper().Split(\",\")  -replace '[\\W]', ''\r\n            $(IsValidHeaderRow($global:inputHeaders))\r\n             if($global:validHeader -eq $true) {\r\n                Write-Output $(Get-CSVLine($global:inputHeaders))\r\n                return\r\n            } else {\r\n                Write-Host \"Invalid Header Row. Please check file content.\" -ForegroundColor red -BackgroundColor white\r\n                break\r\n            }\r\n        }\r\n        catch\r\n        {\r\n            Write-Output \"Something threw an exception\"\r\n            Write-Output $_\r\n        }\r\n\r\n    }\r\n     if($global:validHeader -eq $true) {\r\n    $row = $line | ConvertFrom-Csv -Header $global:inputHeaders.Trim()\r\n    $errorInCurrentRow = $false\r\n    $orderedOutputValues = @()       \r\n\r\n    # Validation will tell whether or not a record has the required values needed to be posted to ODS, if not valid add line number to show in summary\r\n    $passedValidation = $true\r\n    $validationId = $null\r\n    $validationMessage = $null\r\n    \r\n    # Process custom/computed columns\r\n           \r\n        foreach ($outColumnName in $global:inputHeaders) {\r\n         $ValidatedDate= $null\r\n            #Write-Information $outColumnName\r\n            switch -Exact ($outColumnName) {\r\n\r\n               \r\n                \"EMPLOYMENTSTATUS\" {\r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                        {               \r\n                            $passedValidation = $false\r\n                            $validationId = \"Invalid_EmploymentStatus\"\r\n                            $global:EmploymentStatusFailedRows += $currentLineNumber\r\n                        }\r\n                    $orderedOutputValues +=$row.$outColumnName\r\n                }\r\n                 \r\n                \"HIREDATE\" {\r\n                 if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $passedValidation = $false\r\n                        $validationId = \"Invalid_HireDate\"\r\n                        $global:HireDateFailedRows += $currentLineNumber\r\n                        $ValidatedDate = $row.$outColumnName \r\n                    }else\r\n                    {\r\n                        $ValidatedDate =  Get-ParsedDate $row.$outColumnName                    \r\n                        # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                        if (!$ValidatedDate) {\r\n                            $passedValidation = $false\r\n                            $validationId = \"Invalid_HireDate\"\r\n                            $ValidatedDate = $row.$outColumnName\r\n                            $global:HireDateFailedRows += $currentLineNumber\r\n                        }\r\n                    }\r\n                    $orderedOutputValues +=$ValidatedDate                    \r\n                }\r\n                \r\n                 \"EDUCATIONORGANIZATION\" {\r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {  \r\n                        $passedValidation = $false\r\n                        $validationId = \"Invalid_EducationOrganization\"\r\n                        $global:EducationOrganizationFailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues += $row.$outColumnName\r\n                   \r\n                }\r\n\r\n                 \"STAFF\" {\r\n                  if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {  \r\n                        $passedValidation = $false\r\n                        $validationId = \"Invalid_Staff\"\r\n                        $validationMessage = \"The unique alphanumeric code assigned to a staff is Requiered in the row $currentLineNumber\"              \r\n                        $global:StaffFailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName                   \r\n                }\r\n                \t\r\n\r\n                \"_EXTBEGINDATE1\" {\r\n                 if (![string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {\r\n                        $ValidatedDate =  Get-ParsedDate $row.$outColumnName                    \r\n                        # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                        if (!$ValidatedDate) {\r\n                            $passedValidation = $false\r\n                            $validationId = \"Invalid_extBeginDate1\"\r\n                            $global:ExtBeginDate1FailedRows += $currentLineNumber\r\n                            $ValidatedDate = $row.$outColumnName  \r\n                        }\r\n                    }\r\n                    $orderedOutputValues += $ValidatedDate \r\n                    \r\n                }\r\n\r\n                 \"_EXTENDDATE1\" {\r\n                 if (![string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {\r\n                        $ValidatedDate =  Get-ParsedDate $row.$outColumnName                    \r\n                        # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                        if (!$ValidatedDate) {\r\n                            $passedValidation = $false\r\n                            $validationId = \"Invalid_extEndDate1\"\r\n                            $global:ExtEndDate1FailedRows += $currentLineNumber\r\n                            $ValidatedDate = $row.$outColumnName  \r\n                        }\r\n                    }\r\n                    $orderedOutputValues +=$ValidatedDate\r\n                    \r\n                }\r\n                \r\n                Default {\r\n                    # In case of no implementation for custom column add $null output to preserve output format and order\r\n                    #$orderedOutputValues += $null\r\n                    $orderedOutputValues += $row.$outColumnName\r\n                    break;\r\n                }\r\n            }\r\n           \r\n            \r\n        }   \r\n\r\n       \r\n    Write-Output $(Get-CSVLine($orderedOutputValues))\r\n    $global:statistics.rowsLoaded ++  \r\n    \r\n\r\n    return\r\n}\r\n}\r\n\r\n# end of processing\r\nend {\r\n if($global:validHeader -eq $false) {\r\n        break\r\n    }\r\n\r\n$JsonSummary= Get-JsonSummary |ConvertTo-Json -Depth 3\r\n $summary += \"SUMMARY: `\r\n                    Rows Processed: $($global:statistics.rowsProcessed); `\r\n                    Rows Loaded: $($global:statistics.rowsLoaded); `\r\n                    Details: $($JsonSummary)\"\r\n     \r\n     Write-Information \"*******$summary*********\"\r\n\r\n    \r\n}",
+                "requireOdsApiAccess": false,
+                "hasAttribute": false,
+                "executablePath": null,
+                "executableArguments": null
+            },
+            {
+                "name": "TEA HR StaffSchoolAssociation Preprocessor",
+                "scriptContent": "[CmdletBinding()]\r\nParam(\r\n    [parameter(Mandatory = $true, ValueFromPipeline = $true)][string]$line\r\n)\r\n\r\n#####################################################\r\n### Ed-Fi ODS v3+\r\n### Assessment: ELPAC \r\n### Script: Custom File Processor\r\n#####################################################\r\n\r\n\r\n# Handle start of processing\r\nbegin {\r\n   function IsValidHeaderRow($headers) {        \r\n                if ($headers.Length -le 1) {\r\n                    $global:validHeader = $false\r\n                }\r\n            }\r\n \r\n         function Get-JsonSummary() {\r\n            # Validate evry field to add the errors to the json Object\r\n           if( $global:ProgramAssignmentFailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors.ProgramAssignment = @{\r\n                    ColName = \"ProgramAssignment\"\t\r\n\t                Rows = $global:ProgramAssignmentFailedRows\r\n                }\r\n           }\r\n\r\n           if( $global:SchoolFailedRows.count -gt 0)\r\n           {\r\n                $global:jsonObject.errors.School = @{\r\n                    ColName = \"School\"\t\r\n\t                Rows = $global:SchoolFailedRows\r\n                }\r\n           }\r\n\r\n            if( $global:StaffFailedRows.count -gt 0)\r\n           {\r\n                 $global:jsonObject.errors.Staff = @{\r\n                    ColName = \"Staff\"\t\r\n\t                Rows = $global:StaffFailedRows\r\n                }\r\n           }\r\n           $global:jsonObject.finished = Get-Date -Format \"HH:mm:ss\"   \r\n        return $global:jsonObject\r\n}\r\n     # Convert an array list of data into a CSV line for output\r\n    function Get-CSVLine($inputData) {\r\n        $ret = \"\"\r\n        foreach ($cell in $inputData) {\r\n            if ($ret -ne \"\") { $ret += \",\" }\r\n            $ret += ('\"' + $cell + '\"')\r\n        }\r\n        return $ret\r\n    }\r\n\r\n\r\n    function Get-ParsedDate ($date) {             \r\n        <# \r\n            .SYNOPSIS\r\n                Parse a date string and returns it in the correct format (MM/dd/yyyy).\r\n    \r\n            .PARAMETER date (required)\r\n                The date string to parse\r\n    \r\n            .OUTPUTS\r\n    \r\n                If parsing fails for any reason then $null is returned, if not the date is returned in the next forma: MM/dd/yyyy\r\n        #>\r\n    \r\n        try {\r\n            \r\n            if (!$date) {\r\n                return\r\n            }   \r\n            \r\n            return  ([datetime]$date.Trim()).ToString(\"MM/dd/yyyy\")  \r\n        }\r\n        catch {\r\n            return $null\r\n        }\r\n    }\r\n    \r\n    # Set up the statistics\r\n\r\n    $global:statistics = @{\r\n        \"rowsProcessed\" = 0\r\n        \"rowsLoaded\"    = 0\r\n        \"validations\"   = @{}\r\n        \"validationMessage\"  = @{}\r\n    }\r\n     # create ordered dictionary\r\n    $global:jsonObject = [ordered]@{\r\n        \"started\"    = Get-Date -Format \"HH:mm:ss\"\r\n        \"finished\"   = \"\"\r\n        \"errors\"  = [ordered]@{}\r\n        }\r\n    $global:ProgramAssignmentFailedRows=  @()\r\n    $global:SchoolFailedRows=  @()\r\n    $global:StaffFailedRows=  @()\r\n    # Prepare some other variables\r\n    $currentLineNumber = 0\r\n    $global:inputHeaders = @()\r\n    $global:headersLookup = @{}\r\n    $global:validHeader = $true\r\n    ### Helper functions\r\n\r\n    ## ODS functions\r\n    $apiVersion = $DataImport.ApiVersion\r\n}\r\n\r\n\r\n# Process each individual line of incoming data (the pipeline sends this one line at a time)\r\nprocess {\r\n    $currentLineNumber += 1\r\n    $global:statistics.rowsProcessed += 1\r\n\r\n    # Make sure we got something\r\n    if (!$line) { Write-Error \"Line $currentLineNumber does not contain any data\"; return }\r\n\r\n    $line= $line.Replace(\"`t\", \",\") # Convert any TAB delimeter to comma \r\n    \r\n    # If the first line pick out all of the headers\r\n    if ($currentLineNumber -eq 1) { \r\n        try\r\n        {        \r\n            $global:inputHeaders = $line.Replace(' ', '').ToUpper().Split(\",\")  -replace '[\\W]', ''\r\n            $(IsValidHeaderRow($global:inputHeaders))\r\n             if($global:validHeader -eq $true) {\r\n                Write-Output $(Get-CSVLine($global:inputHeaders))\r\n                return\r\n            } else {\r\n                Write-Host \"Invalid Header Row. Please check file content.\" -ForegroundColor red -BackgroundColor white\r\n                break\r\n            }\r\n        }\r\n        catch\r\n        {\r\n            Write-Output \"Something threw an exception\"\r\n            Write-Output $_\r\n        }\r\n\r\n    }\r\n     if($global:validHeader -eq $true) {\r\n    $row = $line | ConvertFrom-Csv -Header $global:inputHeaders.Trim()\r\n    $errorInCurrentRow = $false\r\n    $orderedOutputValues = @()       \r\n\r\n    # Validation will tell whether or not a record has the required values needed to be posted to ODS, if not valid add line number to show in summary\r\n    $passedValidation = $true\r\n    $validationId = $null\r\n    $validationMessage = $null\r\n    \r\n    # Process custom/computed columns\r\n           \r\n        foreach ($outColumnName in $global:inputHeaders) {\r\n         $ValidatedDate= $null\r\n            #Write-Information $outColumnName\r\n            switch -Exact ($outColumnName) {\r\n\r\n               \r\n                \"PROGRAMASSIGNMENT\" {\r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                        {               \r\n                            $passedValidation = $false\r\n                            $validationId = \"Invalid_ProgramAssignment\"\r\n                            $global:ProgramAssignmentFailedRows += $currentLineNumber\r\n                            break\r\n                        }\r\n                    $orderedOutputValues +=$row.$outColumnName\r\n                }\r\n\r\n                 \"SCHOOL\" {\r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {  \r\n                        $passedValidation = $false\r\n                        $validationId = \"Invalid_School\"\r\n                        $global:SchoolFailedRows += $currentLineNumber             \r\n                        break\r\n                    }\r\n                    $orderedOutputValues += $row.$outColumnName\r\n                   \r\n                }\r\n\r\n                 \"STAFF\" {\r\n                  if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {  \r\n                        $passedValidation = $false\r\n                        $validationId = \"Invalid_Staff\"\r\n                        $global:StaffFailedRows += $currentLineNumber             \r\n                        break\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName\r\n\r\n                   \r\n                }\r\n                \r\n                \r\n                Default {\r\n                    # In case of no implementation for custom column add $null output to preserve output format and order\r\n                    #$orderedOutputValues += $null\r\n                    $orderedOutputValues += $row.$outColumnName\r\n                    break;\r\n                }\r\n            }\r\n           \r\n            \r\n        }   \r\n\r\n    Write-Output $(Get-CSVLine($orderedOutputValues))\r\n    $global:statistics.rowsLoaded ++    \r\n    \r\n\r\n    return\r\n}\r\n}\r\n\r\n\r\n# end of processing\r\nend {\r\n if($global:validHeader -eq $false) {\r\n        break\r\n    }\r\n\r\n$JsonSummary= Get-JsonSummary |ConvertTo-Json -Depth 3\r\n $summary += \"SUMMARY: `\r\n                    Rows Processed: $($global:statistics.rowsProcessed); `\r\n                    Rows Loaded: $($global:statistics.rowsLoaded); `\r\n                    Details: $($JsonSummary)\"\r\n     \r\n     Write-Information \"*******$summary*********\"\r\n\r\n    \r\n}",
+                "requireOdsApiAccess": false,
+                "hasAttribute": false,
+                "executablePath": null,
+                "executableArguments": null
+            }
+        ]
+    }
+}

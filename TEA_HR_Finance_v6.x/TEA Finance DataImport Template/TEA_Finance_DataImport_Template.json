@@ -1,0 +1,2063 @@
+{
+    "title": "TEA Finanace Templates",
+    "description": "TEA Finanace Templates",
+    "apiVersion": "6.1",
+    "template": {
+        "maps": [
+            {
+                "name": "TEA Finance ActualExt",
+                "resourcePath": "/TX/actualExts",
+                "columnHeaders": [
+                    "EDUCATIONORGANIZATION",
+                    "FISCALYEAR",
+                    "ACTUALAMOUNT",
+                    "ACTUALFUND",
+                    "ACTUALFUNCTION",
+                    "ACTUALOBJECT",
+                    "ORGANIZATION",
+                    "ACTUALPROGRAMINTENT",
+                    "BEGINDATE",
+                    "ENDDATE"
+                ],
+                "map": {
+                    "actualFunctionDescriptor": {
+                        "Column": "ACTUALFUNCTION",
+                        "Lookup": "TEA Finance ActualFunctionDescriptor"
+                    },
+                    "actualFundDescriptor": {
+                        "Column": "ACTUALFUND",
+                        "Lookup": "TEA Finance ActualFundDescriptor"
+                    },
+                    "actualObjectDescriptor": {
+                        "Column": "ACTUALOBJECT",
+                        "Lookup": "TEA Finance ActualObjectDescriptor"
+                    },
+                    "actualProgramIntentDescriptor": {
+                        "Column": "ACTUALPROGRAMINTENT",
+                        "Lookup": "TEA Finance ActualProgramIntentDescriptor"
+                    },
+                    "beginDate": {
+                        "Column": "BEGINDATE"
+                    },
+                    "fiscalYear": {
+                        "Column": "FISCALYEAR"
+                    },
+                    "organization": {
+                        "Column": "ORGANIZATION"
+                    },
+                    "educationOrganizationReference": {
+                        "educationOrganizationId": {
+                            "Column": "EDUCATIONORGANIZATION"
+                        }
+                    },
+                    "actualAmount": {
+                        "Column": "ACTUALAMOUNT"
+                    },
+                    "endDate": {
+                        "Column": "ENDDATE"
+                    }
+                },
+                "customFileProcessor": "TEA Finance ActualExt Preprocessor",
+                "attribute": null
+            },
+            {
+                "name": "TEA Finance BudgetExt",
+                "resourcePath": "/TX/budgetExts",
+                "columnHeaders": [
+                    "EDUCATIONORGANIZATION",
+                    "FISCALYEAR",
+                    "BUDGETAMOUNT",
+                    "BUDGETFUND",
+                    "BUDGETFUNCTION",
+                    "BUDGETOBJECT",
+                    "ORGANIZATION",
+                    "BUDGETPROGRAMINTENT",
+                    "BEGINDATE",
+                    "ENDDATE"
+                ],
+                "map": {
+                    "beginDate": {
+                        "Column": "BEGINDATE"
+                    },
+                    "budgetFunctionDescriptor": {
+                        "Column": "BUDGETFUNCTION",
+                        "Lookup": "TEA Finance BudgetFunctionDescriptor"
+                    },
+                    "budgetFundDescriptor": {
+                        "Column": "BUDGETFUND",
+                        "Lookup": "TEA Finance BudgetFundDescriptor"
+                    },
+                    "budgetObjectDescriptor": {
+                        "Column": "BUDGETOBJECT",
+                        "Lookup": "TEA Finance BudgetObjectDescriptor"
+                    },
+                    "budgetProgramIntentDescriptor": {
+                        "Column": "BUDGETPROGRAMINTENT",
+                        "Lookup": "TEA Finance BudgetProgramIntentDescriptor"
+                    },
+                    "fiscalYear": {
+                        "Column": "FISCALYEAR"
+                    },
+                    "organization": {
+                        "Column": "ORGANIZATION"
+                    },
+                    "educationOrganizationReference": {
+                        "educationOrganizationId": {
+                            "Column": "EDUCATIONORGANIZATION"
+                        }
+                    },
+                    "budgetAmount": {
+                        "Column": "BUDGETAMOUNT"
+                    },
+                    "endDate": {
+                        "Column": "ENDDATE"
+                    }
+                },
+                "customFileProcessor": "TEA Finance BudgetExt Preprocessor",
+                "attribute": null
+            },
+            {
+                "name": "TEA Finance ContractedInstructionalStaffFTExt",
+                "resourcePath": "/TX/contractedInstructionalStaffFTEExts",
+                "columnHeaders": [
+                    "EDUCATIONORGANIZATION",
+                    "SCHOOL",
+                    "CISTAFFPROGRAMINTENT",
+                    "TOTALCONTRACTEDINSTRSTAFFFTE"
+                ],
+                "map": {
+                    "ciStaffProgramIntentDescriptor": {
+                        "Column": "CISTAFFPROGRAMINTENT",
+                        "Lookup": "TEA Finance CIStaffProgramIntentDescriptor"
+                    },
+                    "educationOrganizationReference": {
+                        "educationOrganizationId": {
+                            "Column": "EDUCATIONORGANIZATION"
+                        }
+                    },
+                    "schoolReference": {
+                        "schoolId": {
+                            "Column": "SCHOOL"
+                        }
+                    },
+                    "totalContractedInstrStaffFTE": {
+                        "Column": "TOTALCONTRACTEDINSTRSTAFFFTE"
+                    }
+                },
+                "customFileProcessor": "TEA Finance ContractedInstructionalStaffFTExt Preprocessor",
+                "attribute": null
+            },
+            {
+                "name": "TEA Finance PayrollExt",
+                "resourcePath": "/TX/payrollExts",
+                "columnHeaders": [
+                    "EDUCATIONORGANIZATION",
+                    "STAFF",
+                    "FISCALYEAR",
+                    "PAYROLLAMOUNT",
+                    "PAYROLLFUND",
+                    "PAYROLLFUNCTION",
+                    "PAYROLLOBJECT",
+                    "ORGANIZATION",
+                    "PAYROLLPROGRAMINTENT",
+                    "PAYROLLACTIVITY",
+                    "BEGINDATE",
+                    "ENDDATE"
+                ],
+                "map": {
+                    "beginDate": {
+                        "Column": "BEGINDATE"
+                    },
+                    "fiscalYear": {
+                        "Column": "FISCALYEAR"
+                    },
+                    "organization": {
+                        "Column": "ORGANIZATION"
+                    },
+                    "payrollActivityDescriptor": {
+                        "Column": "PAYROLLACTIVITY",
+                        "Lookup": "TEA Finance PayrollActivityDescriptor"
+                    },
+                    "payrollFunctionDescriptor": {
+                        "Column": "PAYROLLFUNCTION",
+                        "Lookup": "TEA Finance PayrollFunctionDescriptor"
+                    },
+                    "payrollFundDescriptor": {
+                        "Column": "PAYROLLFUND",
+                        "Lookup": "TEA Finance PayrollFundDescriptor"
+                    },
+                    "payrollObjectDescriptor": {
+                        "Column": "PAYROLLOBJECT",
+                        "Lookup": "TEA Finance PayrollObjectDescriptor"
+                    },
+                    "payrollProgramIntentDescriptor": {
+                        "Column": "PAYROLLPROGRAMINTENT",
+                        "Lookup": "TEA Finance PayrollProgramIntentDescriptor"
+                    },
+                    "educationOrganizationReference": {
+                        "educationOrganizationId": {
+                            "Column": "EDUCATIONORGANIZATION"
+                        }
+                    },
+                    "staffReference": {
+                        "staffUniqueId": {
+                            "Column": "STAFF"
+                        }
+                    },
+                    "endDate": {
+                        "Column": "ENDDATE"
+                    },
+                    "payrollAmount": {
+                        "Column": "PAYROLLAMOUNT"
+                    }
+                },
+                "customFileProcessor": "TEA Finance PayrollExt Preprocessor",
+                "attribute": null
+            },
+            {
+                "name": "TEA Finance SharedServiceArrangementExt",
+                "resourcePath": "/TX/sharedServiceArrangementExts",
+                "columnHeaders": [
+                    "EDUCATIONORGANIZATION",
+                    "SSAMEMBERDISTRICTID",
+                    "SSATYPE",
+                    "FISCALYEAR",
+                    "ACTUALAMOUNT",
+                    "SSAFUND"
+                ],
+                "map": {
+                    "fiscalYear": {
+                        "Column": "FISCALYEAR"
+                    },
+                    "ssaFundDescriptor": {
+                        "Column": "SSAFUND",
+                        "Lookup": "TEA Finance SSAFundDescriptorDescriptor"
+                    },
+                    "ssaMemberDistrictId": {
+                        "Column": "SSAMEMBERDISTRICTID"
+                    },
+                    "ssaTypeDescriptor": {
+                        "Column": "SSATYPE",
+                        "Lookup": "TEA Finance SSATypeDescriptor"
+                    },
+                    "educationOrganizationReference": {
+                        "educationOrganizationId": {
+                            "Column": "EDUCATIONORGANIZATION"
+                        }
+                    },
+                    "actualAmount": {
+                        "Column": "ACTUALAMOUNT"
+                    }
+                },
+                "customFileProcessor": "TEA Finance SharedServiceArrangementExt Preprocessor",
+                "attribute": null
+            }
+        ],
+        "bootstraps": [],
+        "lookups": [
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "00",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#00"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "11",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#11"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "12",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#12"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "13",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#13"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "21",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#21"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "23",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#23"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "31",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#31"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "32",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#32"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "33",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#33"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "34",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#34"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "35",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#35"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "36",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#36"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "41",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#41"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "51",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#51"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "52",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#52"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "53",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#53"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "61",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#61"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "62",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#62"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "71",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#71"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "81",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#81"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "91",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#91"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "92",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#92"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "93",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#93"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "95",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#95"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "97",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#97"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFunctionDescriptor",
+                "key": "99",
+                "value": "uri://tea.texas.gov/ActualFunctionDescriptor#99"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "101",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#101"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "102",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#102"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "199",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#199"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "203",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#203"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "205",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#205"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "206",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#206"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "209",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#209"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "211",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#211"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "212",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#212"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "218",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#218"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "220",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#220"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "222",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#222"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "223",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#223"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "224",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#224"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "225",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#225"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "226",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#226"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "227",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#227"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "228",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#228"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "229",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#229"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "230",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#230"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "236",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#236"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "238",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#238"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "239",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#239"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "240",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#240"
+            },
+            {
+                "sourceTable": "TEA Finance ActualFundDescriptor",
+                "key": "241",
+                "value": "uri://tea.texas.gov/ActualFundDescriptor#241"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3200",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3200"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3410",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3410"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3415",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3415"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3425",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3425"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3430",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3430"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3445",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3445"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3450",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3450"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3460",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3460"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3470",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3470"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3480",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3480"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3490",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3490"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3510",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3510"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3520",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3520"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3525",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3525"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3530",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3530"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3540",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3540"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3545",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3545"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3550",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3550"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3560",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3560"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3565",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3565"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3570",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3570"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3580",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3580"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3590",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3590"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3600",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3600"
+            },
+            {
+                "sourceTable": "TEA Finance ActualObjectDescriptor",
+                "key": "3800",
+                "value": "uri://tea.texas.gov/ActualObjectDescriptor#3800"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "00",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#00"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "11",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#11"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "21",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#21"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "22",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#22"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "23",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#23"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "24",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#24"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "25",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#25"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "26",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#26"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "28",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#28"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "29",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#29"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "30",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#30"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "33",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#33"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "36",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#36"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "37",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#37"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "38",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#38"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "43",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#43"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "71",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#71"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "72",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#72"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "73",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#73"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "74",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#74"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "75",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#75"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "76",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#76"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "77",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#77"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "78",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#78"
+            },
+            {
+                "sourceTable": "TEA Finance ActualProgramIntentDescriptor",
+                "key": "79",
+                "value": "uri://tea.texas.gov/ActualProgramIntentDescriptor#79"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "00",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#00"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "11",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#11"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "12",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#12"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "13",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#13"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "21",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#21"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "23",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#23"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "31",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#31"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "32",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#32"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "33",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#33"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "34",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#34"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "35",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#35"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "36",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#36"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "41",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#41"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "51",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#51"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "52",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#52"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "53",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#53"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "61",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#61"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "62",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#62"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "71",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#71"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "81",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#81"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "91",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#91"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "92",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#92"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "93",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#93"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "95",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#95"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFunctionDescriptor",
+                "key": "97",
+                "value": "uri://tea.texas.gov/BudgetFunctionDescriptor#97"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFundDescriptor",
+                "key": "101",
+                "value": "uri://tea.texas.gov/BudgetFundDescriptor#101"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFundDescriptor",
+                "key": "102",
+                "value": "uri://tea.texas.gov/BudgetFundDescriptor#102"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFundDescriptor",
+                "key": "199",
+                "value": "uri://tea.texas.gov/BudgetFundDescriptor#199"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFundDescriptor",
+                "key": "240",
+                "value": "uri://tea.texas.gov/BudgetFundDescriptor#240"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFundDescriptor",
+                "key": "420",
+                "value": "uri://tea.texas.gov/BudgetFundDescriptor#420"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFundDescriptor",
+                "key": "599",
+                "value": "uri://tea.texas.gov/BudgetFundDescriptor#599"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetFundDescriptor",
+                "key": "701",
+                "value": "uri://tea.texas.gov/BudgetFundDescriptor#701"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5711",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5711"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5712",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5712"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5719",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5719"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5721",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5721"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5722",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5722"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5723",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5723"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5729",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5729"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5739",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5739"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5741",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5741"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5742",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5742"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5743",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5743"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5744",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5744"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5745",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5745"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5746",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5746"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5749",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5749"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5751",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5751"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5752",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5752"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5753",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5753"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5754",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5754"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5755",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5755"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5759",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5759"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5769",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5769"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5811",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5811"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5812",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5812"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetObjectDescriptor",
+                "key": "5813",
+                "value": "uri://tea.texas.gov/BudgetObjectDescriptor#5813"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "00",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#00"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "11",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#11"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "21",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#21"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "22",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#22"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "23",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#23"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "24",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#24"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "25",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#25"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "26",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#26"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "28",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#28"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "29",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#29"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "30",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#30"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "33",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#33"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "36",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#36"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "37",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#37"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "38",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#38"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "43",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#43"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "71",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#71"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "72",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#72"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "73",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#73"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "74",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#74"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "75",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#75"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "76",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#76"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "77",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#77"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "78",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#78"
+            },
+            {
+                "sourceTable": "TEA Finance BudgetProgramIntentDescriptor",
+                "key": "79",
+                "value": "uri://tea.texas.gov/BudgetProgramIntentDescriptor#79"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "00",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#00"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "11",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#11"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "21",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#21"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "22",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#22"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "23",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#23"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "24",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#24"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "25",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#25"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "26",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#26"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "28",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#28"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "29",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#29"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "30",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#30"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "33",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#33"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "36",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#36"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "37",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#37"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "38",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#38"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "43",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#43"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "71",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#71"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "72",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#72"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "73",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#73"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "74",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#74"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "75",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#75"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "76",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#76"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "77",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#77"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "78",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#78"
+            },
+            {
+                "sourceTable": "TEA Finance CIStaffProgramIntentDescriptor",
+                "key": "79",
+                "value": "uri://tea.texas.gov/CIStaffProgramIntentDescriptor#79"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollActivityDescriptor",
+                "key": "02",
+                "value": "uri://tea.texas.gov/PayrollActivityDescriptor#02"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollActivityDescriptor",
+                "key": "05",
+                "value": "uri://tea.texas.gov/PayrollActivityDescriptor#05"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollActivityDescriptor",
+                "key": "13",
+                "value": "uri://tea.texas.gov/PayrollActivityDescriptor#13"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollActivityDescriptor",
+                "key": "14",
+                "value": "uri://tea.texas.gov/PayrollActivityDescriptor#14"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollActivityDescriptor",
+                "key": "15",
+                "value": "uri://tea.texas.gov/PayrollActivityDescriptor#15"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollActivityDescriptor",
+                "key": "16",
+                "value": "uri://tea.texas.gov/PayrollActivityDescriptor#16"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollActivityDescriptor",
+                "key": "17",
+                "value": "uri://tea.texas.gov/PayrollActivityDescriptor#17"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollActivityDescriptor",
+                "key": "78",
+                "value": "uri://tea.texas.gov/PayrollActivityDescriptor#78"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollActivityDescriptor",
+                "key": "79",
+                "value": "uri://tea.texas.gov/PayrollActivityDescriptor#79"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollActivityDescriptor",
+                "key": "80",
+                "value": "uri://tea.texas.gov/PayrollActivityDescriptor#80"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "00",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#00"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "11",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#11"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "12",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#12"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "13",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#13"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "21",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#21"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "23",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#23"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "31",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#31"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "32",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#32"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "33",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#33"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "34",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#34"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "35",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#35"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "36",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#36"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "41",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#41"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "51",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#51"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "52",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#52"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "53",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#53"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "61",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#61"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "62",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#62"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "71",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#71"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "81",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#81"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "91",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#91"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "92",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#92"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "93",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#93"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "95",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#95"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFunctionDescriptor",
+                "key": "97",
+                "value": "uri://tea.texas.gov/PayrollFunctionDescriptor#97"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "101",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#101"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "102",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#102"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "199",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#199"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "203",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#203"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "205",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#205"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "206",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#206"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "209",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#209"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "211",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#211"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "212",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#212"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "218",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#218"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "220",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#220"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "222",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#222"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "223",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#223"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "224",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#224"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "225",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#225"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "226",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#226"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "227",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#227"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "228",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#228"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "229",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#229"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "230",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#230"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "236",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#236"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "238",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#238"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "239",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#239"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "240",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#240"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollFundDescriptor",
+                "key": "241",
+                "value": "uri://tea.texas.gov/PayrollFundDescriptor#241"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollObjectDescriptor",
+                "key": "6112",
+                "value": "uri://tea.texas.gov/PayrollObjectDescriptor#6112"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollObjectDescriptor",
+                "key": "6119",
+                "value": "uri://tea.texas.gov/PayrollObjectDescriptor#6119"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollObjectDescriptor",
+                "key": "6121",
+                "value": "uri://tea.texas.gov/PayrollObjectDescriptor#6121"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollObjectDescriptor",
+                "key": "6122",
+                "value": "uri://tea.texas.gov/PayrollObjectDescriptor#6122"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollObjectDescriptor",
+                "key": "6129",
+                "value": "uri://tea.texas.gov/PayrollObjectDescriptor#6129"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollObjectDescriptor",
+                "key": "6131",
+                "value": "uri://tea.texas.gov/PayrollObjectDescriptor#6131"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollObjectDescriptor",
+                "key": "6139",
+                "value": "uri://tea.texas.gov/PayrollObjectDescriptor#6139"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollObjectDescriptor",
+                "key": "6147",
+                "value": "uri://tea.texas.gov/PayrollObjectDescriptor#6147"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollObjectDescriptor",
+                "key": "6149",
+                "value": "uri://tea.texas.gov/PayrollObjectDescriptor#6149"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "00",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#00"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "11",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#11"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "21",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#21"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "22",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#22"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "23",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#23"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "24",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#24"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "25",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#25"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "26",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#26"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "28",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#28"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "29",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#29"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "30",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#30"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "33",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#33"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "36",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#36"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "37",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#37"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "38",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#38"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "43",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#43"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "71",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#71"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "72",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#72"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "73",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#73"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "74",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#74"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "75",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#75"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "76",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#76"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "77",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#77"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "78",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#78"
+            },
+            {
+                "sourceTable": "TEA Finance PayrollProgramIntentDescriptor",
+                "key": "79",
+                "value": "uri://tea.texas.gov/PayrollProgramIntentDescriptor#79"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "292",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#292"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "294",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#294"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "298",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#298"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "300",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#300"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "301",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#301"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "307",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#307"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "309",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#309"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "311",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#311"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "312",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#312"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "313",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#313"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "314",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#314"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "315",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#315"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "316",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#316"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "317",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#317"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "319",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#319"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "325",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#325"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "327",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#327"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "328",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#328"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "329",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#329"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "331",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#331"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "332",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#332"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "333",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#333"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "334",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#334"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "335",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#335"
+            },
+            {
+                "sourceTable": "TEA Finance SSAFundDescriptorDescriptor",
+                "key": "337",
+                "value": "uri://tea.texas.gov/SSAFundDescriptor#337"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "01",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#01"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "02",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#02"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "03",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#03"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "04",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#04"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "05",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#05"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "06",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#06"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "07",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#07"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "09",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#09"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "10",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#10"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "11",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#11"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "12",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#12"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "13",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#13"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "14",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#14"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "15",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#15"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "16",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#16"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "17",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#17"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "18",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#18"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "19",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#19"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "20",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#20"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "21",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#21"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "23",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#23"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "24",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#24"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "25",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#25"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "26",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#26"
+            },
+            {
+                "sourceTable": "TEA Finance SSATypeDescriptor",
+                "key": "27",
+                "value": "uri://tea.texas.gov/SSATypeDescriptor#27"
+            }
+        ],
+        "supplementalInformation": null,
+        "preprocessors": [
+            {
+                "name": "TEA Finance ActualExt Preprocessor",
+                "scriptContent": "[CmdletBinding()]\r\nParam(\r\n    [parameter(Mandatory = $true, ValueFromPipeline = $true)][string]$line\r\n)\r\n\r\n#####################################################\r\n### Ed-Fi ODS v3+\r\n### Assessment: ELPAC \r\n### Script: Custom File Processor\r\n#####################################################\r\n\r\n\r\n# Handle start of processing\r\nbegin {\r\n\r\n    function Get-JsonSummary() {\r\n        # Validate evry field to add the errors to the json Object\r\n        if($global:BeginDateFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.BeginDate = @{\r\n                ColName = \"BeginDate\"\r\n                Rows = $global:BeginDateFailedRows\r\n            }\r\n        }\r\n        if($global:EndDateFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.EndDate = @{\r\n                ColName = \"EndDate\"\r\n                Rows = $global:EndDateFailedRows\r\n            }\r\n        }\r\n        if($global:EducationOrganizationFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.EducationOrganization = @{\r\n                ColName = \"EducationOrganization\"\r\n                Rows = $global:EducationOrganizationFailedRows\r\n            }\r\n        }\r\n        if($global:FiscalYearFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.FiscalYear = @{\r\n                ColName = \"FiscalYear\"\r\n                Rows = $global:FiscalYearFailedRows\r\n            }\r\n        }\r\n        if($global:ActualAmountFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.ActualAmount = @{\r\n                ColName = \"ActualAmount\"\r\n                Rows = $global:ActualAmountFailedRows\r\n            }\r\n        }\r\n        if($global:ActualFunctionFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.ActualFunction = @{\r\n                ColName = \"ActualFunction\"\r\n                Rows = $global:ActualFunctionFailedRows\r\n            }\r\n        }\r\n        if($global:ActualObjectFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.ActualObject = @{\r\n                ColName = \"ActualObject\"\r\n                Rows = $global:ActualObjectFailedRows\r\n            }\r\n        }\r\n        if($global:OrganizationFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.Organization = @{\r\n                ColName = \"Organization\"\r\n                Rows = $global:OrganizationFailedRows\r\n            }\r\n        }\r\n        if($global:ActualProgramIntentFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.ActualProgramIntent = @{\r\n                ColName = \"ActualProgramIntent\"\r\n                Rows = $global:ActualProgramIntentFailedRows\r\n            }\r\n        }\r\n        if($global:ActualFundFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.ActualFund = @{\r\n                ColName = \"ActualFund\"\r\n                Rows = $global:ActualFundFailedRows\r\n            }\r\n        }\r\n        \r\n        \r\n        \r\n        $global:jsonObject.finished = Get-Date -Format \"HH:mm:ss\"   \r\n        return $global:jsonObject\r\n    }\r\n   \r\n     # Convert an array list of data into a CSV line for output\r\n    function Get-CSVLine($inputData) {\r\n        $ret = \"\"\r\n        foreach ($cell in $inputData) {\r\n            if ($ret -ne \"\") { $ret += \",\" }\r\n            $ret += ('\"' + $cell + '\"')\r\n        }\r\n        return $ret\r\n    }\r\n\r\n\r\n    function Get-ParsedDate ($date) {             \r\n        <# \r\n            .SYNOPSIS\r\n                Parse a date string and returns it in the correct format (MM/dd/yyyy).\r\n    \r\n            .PARAMETER date (required)\r\n                The date string to parse\r\n    \r\n            .OUTPUTS\r\n    \r\n                If parsing fails for any reason then $null is returned, if not the date is returned in the next forma: MM/dd/yyyy\r\n        #>\r\n    \r\n        try {\r\n            \r\n            if (!$date) {\r\n                return\r\n            }   \r\n            \r\n            return  ([datetime]$date.Trim()).ToString(\"MM/dd/yyyy\")  \r\n        }\r\n        catch {\r\n            return $null\r\n        }\r\n    }\r\n\r\n    function IsValidHeaderRow($headers) {        \r\n        if ($headers.Length -le 1) {\r\n            $global:validHeader = $false\r\n            # throw \"Invalid Header Row. Please check file content.\"\r\n        }\r\n    }\r\n    \r\n    # Set up the statistics\r\n\r\n    $global:statistics = @{\r\n        \"rowsProcessed\" = 0\r\n        \"rowsLoaded\"    = 0\r\n        \"validations\"   = @{}\r\n    }\r\n    # create ordered dictionary\r\n    $global:jsonObject = [ordered]@{\r\n        \"started\"    = Get-Date -Format \"HH:mm:ss\"\r\n        \"finished\"   = \"\"\r\n        \"errors\"  = [ordered]@{}\r\n    }\r\n    \r\n    $global:BeginDateFailedRows = @()\r\n    $global:EndDateFailedRows = @()\r\n    $global:EducationOrganizationFailedRows = @()\r\n    $global:FiscalYearFailedRows = @()\r\n    $global:ActualAmountFailedRows = @()\r\n    $global:ActualFunctionFailedRows = @()\r\n    $global:ActualObjectFailedRows = @()\r\n    $global:OrganizationFailedRows = @()\r\n    $global:ActualProgramIntentFailedRows = @()\r\n    $global:ActualFundFailedRows = @()\r\n\r\n    # Prepare some other variables\r\n    $currentLineNumber = 0\r\n    $global:inputHeaders = @()\r\n    $global:headersLookup = @{}\r\n    $global:validHeader = $true\r\n\r\n\r\n    ## ODS functions\r\n    $apiVersion = $DataImport.ApiVersion\r\n}\r\n\r\n\r\n# Process each individual line of incoming data (the pipeline sends this one line at a time)\r\nprocess {    \r\n    $currentLineNumber += 1\r\n    $global:statistics.rowsProcessed += 1\r\n\r\n    # Make sure we got something         \r\n    if (!$line) { Write-Error \"Line $currentLineNumber does not contain any data\"; return }\r\n    \r\n\r\n   $line= $line.Replace(\"`t\", \",\") # Convert any TAB delimeter to comma \r\n    \r\n    # If the first line pick out all of the headers\r\n    if ($currentLineNumber -eq 1) {\r\n        try {\r\n            $global:inputHeaders =$line.ToUpper().Split(\",\") -replace '[\\W]', ''\r\n            \r\n            $(IsValidHeaderRow($global:inputHeaders))\r\n            if($global:validHeader -eq $true) {\r\n                Write-Output $(Get-CSVLine($global:inputHeaders))\r\n                return\r\n            } else {\r\n                Write-Host \"Invalid Header Row. Please check file content.\" -ForegroundColor red -BackgroundColor white\r\n                break\r\n            }\r\n        }\r\n        catch {\r\n            Write-Output \"Something threw an exception\"\r\n            Write-Output $_\r\n        }\r\n        \r\n    }\r\n    if($global:validHeader -eq $true) {\r\n        $row = $line | ConvertFrom-Csv -Header $global:inputHeaders.Trim()    \r\n        $errorInCurrentRow = $false\r\n        $orderedOutputValues = @()       \r\n\r\n        # Validation will tell whether or not a record has the required values needed to be posted to ODS, if not valid add line number to show in summary\r\n        $passedValidation = $true\r\n        $validationId = $null\r\n        \r\n        # Process custom/computed columns\r\n           \r\n        foreach ($outColumnName in $global:inputHeaders) {\r\n         $ValidatedDate= $null\r\n            #Write-Information $outColumnName\r\n            switch -Exact ($outColumnName) {\r\n               \r\n                \"BeginDate\" {\r\n                    if (![string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {  \r\n                        $ValidatedDate =  Get-ParsedDate $row.$outColumnName                    \r\n                        # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                        if (!$ValidatedDate) {\r\n                            $passedValidation = $false\r\n                            $validationId = \"Invalid_BeginDate\"\r\n                            $global:BeginDateFailedRows += $currentLineNumber\r\n                            $ValidatedDate = $row.$outColumnName   \r\n                        }                                                       \r\n                    }\r\n                    $orderedOutputValues += $ValidatedDate\r\n                }\r\n\r\n                \"EndDate\" {\r\n                    if (![string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {  \r\n                        $ValidatedDate =  Get-ParsedDate $row.$outColumnName                    \r\n                        # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                        if (!$ValidatedDate) {\r\n                            $passedValidation = $false\r\n                            $validationId = \"Invalid_EndDate\"\r\n                            $global:EndDateFailedRows += $currentLineNumber\r\n                            $ValidatedDate = $row.$outColumnName   \r\n                        }                   \r\n                    }\r\n                    $orderedOutputValues += $ValidatedDate \r\n                }\r\n                 \r\n                \"EducationOrganization\" {\r\n                    \r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $passedValidation = $false\r\n                        $validationId = \"EducationOrganization\"\r\n                        $global:EducationOrganizationFailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues += $row.$outColumnName\r\n                }\r\n\r\n                \"FiscalYear\" {\r\n                    \r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $passedValidation = $false\r\n                        $validationId = \"EducationOrganization\"\r\n                        $global:FiscalYearFailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName                       \r\n                }\r\n\r\n                \"ActualAmount\" {\r\n                    \r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $passedValidation = $false\r\n                        $validationId = \"ActualAmount\"\r\n                        $global:ActualAmountFailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName                       \r\n                }\r\n\r\n                \"ActualFunction\" {\r\n                    \r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $passedValidation = $false\r\n                        $validationId = \"ActualFunction\"\r\n                        $global:ActualFunctionFailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName                       \r\n                }\r\n\r\n                \"ActualObject\" {\r\n                    \r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $passedValidation = $false\r\n                        $validationId = \"ActualObject\"\r\n                        $global:ActualObjectFailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName                       \r\n                }\r\n\r\n\r\n                \"Organization\" {\r\n                    \r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $passedValidation = $false\r\n                        $validationId = \"Organization\"\r\n                        $global:OrganizationFailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName                       \r\n                }\r\n\r\n                \"ActualProgramIntent\" {\r\n                    \r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $passedValidation = $false\r\n                        $validationId = \"ActualProgramIntent\"\r\n                        $global:ActualProgramIntentFailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName                       \r\n                }\r\n\r\n                \"ActualFund\" {\r\n                    \r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $passedValidation = $false\r\n                        $validationId = \"ActualFund\"\r\n                        $global:ActualFundFailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName                       \r\n                }\r\n                \r\n                Default {\r\n                    # In case of no implementation for custom column add $null output to preserve output format and order\r\n                    #$orderedOutputValues += $null\r\n                    $orderedOutputValues += $row.$outColumnName\r\n                    break;\r\n                }\r\n            }\r\n           \r\n            \r\n        }   \r\n\r\n        Write-Output $(Get-CSVLine($orderedOutputValues))\r\n        $global:statistics.rowsLoaded ++    \r\n        \r\n        return\r\n    }\r\n        \r\n}\r\n\r\n# end of processing\r\nend {\r\n    if($global:validHeader -eq $false) {\r\n        break\r\n    }\r\n\r\n    $JsonSummary= Get-JsonSummary |ConvertTo-Json -Depth 3\r\n    $summary += \"SUMMARY: `\r\n                    Rows Processed: $($global:statistics.rowsProcessed); `\r\n                    Rows Loaded: $($global:statistics.rowsLoaded); `\r\n                    Details: $($JsonSummary)\"\r\n     \r\n     Write-Information \"*******$summary*********\"\r\n}\r\n",
+                "requireOdsApiAccess": false,
+                "hasAttribute": false,
+                "executablePath": null,
+                "executableArguments": null
+            },
+            {
+                "name": "TEA Finance BudgetExt Preprocessor",
+                "scriptContent": "[CmdletBinding()]\r\nParam(\r\n    [parameter(Mandatory = $true, ValueFromPipeline = $true)][string]$line\r\n)\r\n\r\n#####################################################\r\n### Ed-Fi ODS v3+\r\n### Assessment: ELPAC \r\n### Script: Custom File Processor\r\n#####################################################\r\n\r\n\r\n# Handle start of processing\r\nbegin {\r\n\r\n    function IsValidHeaderRow($headers) {        \r\n        if ($headers.Length -le 1) {\r\n            $global:validHeader = $false\r\n            # throw \"Invalid Header Row. Please check file content.\"\r\n        }\r\n    }\r\n\r\n    function Get-JsonSummary() {\r\n        # Validate evry field to add the errors to the json Object\r\n        if($global:BeginDateFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.BeginDate = @{\r\n                ColName = \"BeginDate\"\r\n                Rows = $global:BeginDateFailedRows\r\n            }\r\n        }\r\n        if($global:EndDateFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.EndDate = @{\r\n                ColName = \"EndDate\"\r\n                Rows = $global:EndDateFailedRows\r\n            }\r\n        }\r\n        if($global:EducationOrganizationFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.EducationOrganization = @{\r\n                ColName = \"EducationOrganization\"\r\n                Rows = $global:EducationOrganizationFailedRows\r\n            }\r\n        }\r\n        if($global:FiscalYearFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.FiscalYear = @{\r\n                ColName = \"FiscalYear\"\r\n                Rows = $global:FiscalYearFailedRows\r\n            }\r\n        }\r\n        if($global:BudgetAmountFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.BudgetAmount = @{\r\n                ColName = \"BudgetAmount\"\r\n                Rows = $global:BudgetAmountFailedRows\r\n            }\r\n        }\r\n        if($global:BudgetFundFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.BudgetFund = @{\r\n                ColName = \"BudgetFund\"\r\n                Rows = $global:BudgetFundFailedRows\r\n            }\r\n        }\r\n        if($global:BudgetFunctionFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.BudgetFunction = @{\r\n                ColName = \"BudgetFunction\"\r\n                Rows = $global:BudgetFunctionFailedRows\r\n            }\r\n        }\r\n        if($global:BudgetObjectFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.BudgetObject = @{\r\n                ColName = \"BudgetObject\"\r\n                Rows = $global:BudgetObjectFailedRows\r\n            }\r\n        }\r\n        if($global:OrganizationFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.Organization = @{\r\n                ColName = \"Organization\"\r\n                Rows = $global:OrganizationFailedRows\r\n            }\r\n        }\r\n        if($global:BudgetProgramIntentFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.BudgetProgramIntent = @{\r\n                ColName = \"BudgetProgramIntent\"\r\n                Rows = $global:BudgetProgramIntentFailedRows\r\n            }\r\n        }\r\n        \r\n        $global:jsonObject.finished = Get-Date -Format \"HH:mm:ss\"   \r\n        return $global:jsonObject\r\n    }\r\n   \r\n     # Convert an array list of data into a CSV line for output\r\n    function Get-CSVLine($inputData) {\r\n        $ret = \"\"\r\n        foreach ($cell in $inputData) {\r\n            if ($ret -ne \"\") { $ret += \",\" }\r\n            $ret += ('\"' + $cell + '\"')\r\n        }\r\n        return $ret\r\n    }\r\n\r\n\r\n    function Get-ParsedDate ($date) {             \r\n        <# \r\n            .SYNOPSIS\r\n                Parse a date string and returns it in the correct format (MM/dd/yyyy).\r\n    \r\n            .PARAMETER date (required)\r\n                The date string to parse\r\n    \r\n            .OUTPUTS\r\n    \r\n                If parsing fails for any reason then $null is returned, if not the date is returned in the next forma: MM/dd/yyyy\r\n        #>\r\n    \r\n        try {\r\n            \r\n            if (!$date) {\r\n                return\r\n            }   \r\n            \r\n            return  ([datetime]$date.Trim()).ToString(\"MM/dd/yyyy\")  \r\n        }\r\n        catch {\r\n            return $null\r\n        }\r\n    }\r\n    \r\n    # Set up the statistics\r\n\r\n    $global:statistics = @{\r\n        \"rowsProcessed\" = 0\r\n        \"rowsLoaded\"    = 0\r\n        \"validations\"   = @{}\r\n    }\r\n\r\n    $global:jsonObject = [ordered]@{\r\n        \"started\"    = Get-Date -Format \"HH:mm:ss\"\r\n        \"finished\"   = \"\"\r\n        \"errors\"  = [ordered]@{}\r\n    }\r\n\r\n    $global:BeginDateFailedRows = @{}\r\n    $global:EndDateFailedRows = @{}\r\n    $global:EducationOrganizationFailedRows = @{}\r\n    $global:FiscalYearFailedRows = @{}\r\n    $global:BudgetAmountFailedRows = @{}\r\n    $global:BudgetFundFailedRows = @{}\r\n    $global:BudgetFunctionFailedRows = @{}\r\n    $global:BudgetObjectFailedRows = @{}\r\n    $global:OrganizationFailedRows = @{}\r\n    $global:BudgetProgramIntentFailedRows = @{}\r\n\r\n    # Prepare some other variables\r\n    $currentLineNumber = 0\r\n    $global:inputHeaders = @()\r\n    $global:headersLookup = @{}\r\n    $global:validHeader = $true\r\n\r\n    ### Helper functions\r\n\r\n    ## ODS functions\r\n    $apiVersion = $DataImport.ApiVersion\r\n}\r\n\r\n\r\n# Process each individual line of incoming data (the pipeline sends this one line at a time)\r\nprocess {\r\n    $currentLineNumber += 1\r\n    $global:statistics.rowsProcessed += 1\r\n\r\n    # Make sure we got something\r\n    if (!$line) { Write-Error \"Line $currentLineNumber does not contain any data\"; return }\r\n\r\n   $line= $line.Replace(\"`t\", \",\") # Convert any TAB delimeter to comma \r\n    \r\n    # If the first line pick out all of the headers\r\n    if ($currentLineNumber -eq 1) {\r\n        try {\r\n            $global:inputHeaders =$line.ToUpper().Split(\",\") -replace '[\\W]', ''\r\n            \r\n            $(IsValidHeaderRow($global:inputHeaders))\r\n            if($global:validHeader -eq $true) {\r\n                Write-Output $(Get-CSVLine($global:inputHeaders))\r\n                return\r\n            } else {\r\n                Write-Host \"Invalid Header Row. Please check file content.\" -ForegroundColor red -BackgroundColor white\r\n                break\r\n            }\r\n        }\r\n        catch {\r\n            Write-Output \"Something threw an exception\"\r\n            Write-Output $_\r\n        }\r\n        \r\n    }\r\n    if($global:validHeader -eq $true) {\r\n        $row = $line | ConvertFrom-Csv -Header $global:inputHeaders.Trim()\r\n        $errorInCurrentRow = $false\r\n        $orderedOutputValues = @()       \r\n\r\n        # Validation will tell whether or not a record has the required values needed to be posted to ODS, if not valid add line number to show in summary\r\n        $passedValidation = $true\r\n        $validationId = $null\r\n    \r\n        # Process custom/computed columns\r\n           \r\n        foreach ($outColumnName in $global:inputHeaders) {\r\n         $ValidatedDate= $null\r\n            #Write-Information $outColumnName\r\n            switch -Exact ($outColumnName) {\r\n               \r\n                \"BeginDate\" {\r\n                if (![string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {  \r\n                        $ValidatedDate =  Get-ParsedDate $row.$outColumnName                    \r\n                        # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                        if (!$ValidatedDate) {\r\n                            $passedValidation = $false\r\n                            $validationId = \"Invalid_BeginDate\"\r\n                            $global:BeginDateFailedRows += $currentLineNumber\r\n                            $ValidatedDate = $row.$outColumnName \r\n                        }                   \r\n                    }\r\n                    $orderedOutputValues += $ValidatedDate                   \r\n                }\r\n\r\n                \"EndDate\" {\r\n                    if (![string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {  \r\n                        $ValidatedDate =  Get-ParsedDate $row.$outColumnName                    \r\n                        # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                        if (!$ValidatedDate) {\r\n                            $passedValidation = $false\r\n                            $validationId = \"Invalid_EndDate\"\r\n                            $global:EndDateFailedRows += $currentLineNumber\r\n                            $ValidatedDate = $row.$outColumnName \r\n                        }                   \r\n                    }\r\n                    $orderedOutputValues += $ValidatedDate                   \r\n                }\r\n                 \r\n                \"EducationOrganization\" {\r\n\r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $passedValidation = $false\r\n                        $validationId = \"EducationOrganization\"\r\n                        $global:EducationOrganizationFailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName                       \r\n                }\r\n                \r\n                \"FiscalYear\" {\r\n                \r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $passedValidation = $false\r\n                        $validationId = \"FiscalYear\"\r\n                        $global:FiscalYearFailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName                       \r\n                }\r\n                \r\n                \"BudgetAmount\" {\r\n                \r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $passedValidation = $false\r\n                        $validationId = \"BudgetAmount\"\r\n                        $global:BudgetAmountFailedRowsledRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName                       \r\n                }\r\n                \r\n                \"BudgetFund\" {\r\n                \r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $passedValidation = $false\r\n                        $validationId = \"BudgetFund\"\r\n                        $global:BudgetFundFailedRowsailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName                       \r\n                }\r\n                \r\n                \"BudgetFunction\" {\r\n                \r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $passedValidation = $false\r\n                        $validationId = \"BudgetFunction\"\r\n                        $global:BudgetFunctionFailedRowsdRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName                       \r\n                }\r\n                \r\n                \"BudgetObject\" {\r\n                \r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $passedValidation = $false\r\n                        $validationId = \"BudgetObject\"\r\n                        $global:BudgetObjectFailedRowsledRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName                       \r\n                }\r\n                \r\n                \r\n                \"Organization\" {\r\n                \r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $passedValidation = $false\r\n                        $validationId = \"Organization\"\r\n                        $global:OrganizationFailedRowsledRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName                       \r\n                }\r\n                \r\n                \"BudgetProgramIntent\" {\r\n                \r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $passedValidation = $false\r\n                        $validationId = \"BudgetProgramIntent\"\r\n                        $global:BudgetProgramIntentFailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName                       \r\n                }\r\n\r\n                \r\n                Default {\r\n                    # In case of no implementation for custom column add $null output to preserve output format and order\r\n                    #$orderedOutputValues += $null\r\n                    $orderedOutputValues += $row.$outColumnName\r\n                    break;\r\n                }\r\n            }                       \r\n        }\r\n        \r\n        Write-Output $(Get-CSVLine($orderedOutputValues))\r\n        $global:statistics.rowsLoaded ++    \r\n        \r\n        return\r\n    }\r\n}\r\n\r\n# end of processing\r\nend {\r\n    if($global:validHeader -eq $false) {\r\n        break\r\n    }\r\n\r\n    $JsonSummary= Get-JsonSummary |ConvertTo-Json -Depth 3\r\n    $summary += \"SUMMARY: `\r\n                    Rows Processed: $($global:statistics.rowsProcessed); `\r\n                    Rows Loaded: $($global:statistics.rowsLoaded); `\r\n                    Details: $($JsonSummary)\"\r\n     \r\n     Write-Information \"*******$summary*********\"\r\n}",
+                "requireOdsApiAccess": false,
+                "hasAttribute": false,
+                "executablePath": null,
+                "executableArguments": null
+            },
+            {
+                "name": "TEA Finance ContractedInstructionalStaffFTExt Preprocessor",
+                "scriptContent": "[CmdletBinding()]\r\nParam(\r\n    [parameter(Mandatory = $true, ValueFromPipeline = $true)][string]$line\r\n)\r\n\r\n#####################################################\r\n### Ed-Fi ODS v3+\r\n### Assessment: ELPAC \r\n### Script: Custom File Processor\r\n#####################################################\r\n\r\n\r\n# Handle start of processing\r\nbegin {\r\n\r\n    function IsValidHeaderRow($headers) {        \r\n        if ($headers.Length -le 1) {\r\n            $global:validHeader = $false\r\n            # throw \"Invalid Header Row. Please check file content.\"\r\n        }\r\n    }\r\n\r\n    function Get-JsonSummary() {\r\n        # Validate evry field to add the errors to the json Object\r\n        if($global:EducationOrganizationFailedRows.count -gt 0){\r\n            $global.jsonObject.errors.EducationOrganization = @{\r\n                ColName = \"EducationOrganization\"\r\n                Rows = $global:EducationOrganizationFailedRows\r\n            }\r\n        }\r\n        if($global:SchoolFailedRows.count -gt 0){\r\n            $global.jsonObject.errors.School = @{\r\n                ColName = \"School\"\r\n                Rows = $global:SchoolFailedRows\r\n            }\r\n        }\r\n        if($global:CIStaffProgramIntentFailedRows.count -gt 0){\r\n            $global.jsonObject.errors.CIStaffProgramIntent = @{\r\n                ColName = \"CIStaffProgramIntent\"\r\n                Rows = $global:CIStaffProgramIntentFailedRows\r\n            }\r\n        }\r\n        if($global:TotalContractedInstrStaffFTEFailedRows.count -gt 0){\r\n            $global.jsonObject.errors.TotalContractedInstrStaffFTE = @{\r\n                ColName = \"TotalContractedInstrStaffFTE\"\r\n                Rows = $global:TotalContractedInstrStaffFTEFailedRows\r\n            }\r\n        }\r\n        \r\n        $global:jsonObject.finished = Get-Date -Format \"HH:mm:ss\"   \r\n        return $global:jsonObject\r\n    }\r\n   \r\n     # Convert an array list of data into a CSV line for output\r\n    function Get-CSVLine($inputData) {\r\n        $ret = \"\"\r\n        foreach ($cell in $inputData) {\r\n            if ($ret -ne \"\") { $ret += \",\" }\r\n            $ret += ('\"' + $cell + '\"')\r\n        }\r\n        return $ret\r\n    }\r\n\r\n\r\n    function Get-ParsedDate ($date) {             \r\n        <# \r\n            .SYNOPSIS\r\n                Parse a date string and returns it in the correct format (MM/dd/yyyy).\r\n    \r\n            .PARAMETER date (required)\r\n                The date string to parse\r\n    \r\n            .OUTPUTS\r\n    \r\n                If parsing fails for any reason then $null is returned, if not the date is returned in the next forma: MM/dd/yyyy\r\n        #>\r\n    \r\n        try {\r\n            \r\n            if (!$date) {\r\n                return\r\n            }   \r\n            \r\n            return  ([datetime]$date.Trim()).ToString(\"MM/dd/yyyy\")  \r\n        }\r\n        catch {\r\n            return $null\r\n        }\r\n    }\r\n    \r\n    # Set up the statistics\r\n\r\n    $global:statistics = @{\r\n        \"rowsProcessed\" = 0\r\n        \"rowsLoaded\"    = 0\r\n        \"validations\"   = @{}\r\n    }\r\n\r\n    $global:jsonObject = [ordered]@{\r\n        \"started\"    = Get-Date -Format \"HH:mm:ss\"\r\n        \"finished\"   = \"\"\r\n        \"errors\"  = [ordered]@{}\r\n    }\r\n\r\n    $global:EducationOrganizationFailedRows = @{}\r\n    $global:SchoolFailedRows = @{}\r\n    $global:CIStaffProgramIntentFailedRows = @{}\r\n    $global:TotalContractedInstrStaffFTEFailedRows = @{}\r\n\r\n    # Prepare some other variables\r\n    $currentLineNumber = 0\r\n    $global:inputHeaders = @()\r\n    $global:headersLookup = @{}\r\n    $global:validHeader = $true\r\n\r\n    ### Helper functions\r\n\r\n    ## ODS functions\r\n    $apiVersion = $DataImport.ApiVersion\r\n}\r\n\r\n\r\n# Process each individual line of incoming data (the pipeline sends this one line at a time)\r\nprocess {\r\n    $currentLineNumber += 1\r\n    $global:statistics.rowsProcessed += 1\r\n\r\n    # Make sure we got something\r\n    if (!$line) { Write-Error \"Line $currentLineNumber does not contain any data\"; return }\r\n\r\n    $line= $line.Replace(\"`t\", \",\") # Convert any TAB delimeter to comma \r\n    \r\n    # If the first line pick out all of the headers\r\n    if ($currentLineNumber -eq 1) {\r\n        try {\r\n            $global:inputHeaders =$line.ToUpper().Split(\",\") -replace '[\\W]', ''\r\n            \r\n            $(IsValidHeaderRow($global:inputHeaders))\r\n            if($global:validHeader -eq $true) {\r\n                Write-Output $(Get-CSVLine($global:inputHeaders))\r\n                return\r\n            } else {\r\n                Write-Host \"Invalid Header Row. Please check file content.\" -ForegroundColor red -BackgroundColor white\r\n                break\r\n            }\r\n        }\r\n        catch {\r\n            Write-Output \"Something threw an exception\"\r\n            Write-Output $_\r\n        }\r\n        \r\n    }\r\n    if($global:validHeader -eq $true) {\r\n        $row = $line | ConvertFrom-Csv -Header $global:inputHeaders.Trim()\r\n    $errorInCurrentRow = $false\r\n    $orderedOutputValues = @()       \r\n\r\n    # Validation will tell whether or not a record has the required values needed to be posted to ODS, if not valid add line number to show in summary\r\n    $passedValidation = $true\r\n    $validationId = $null\r\n    \r\n    # Process custom/computed columns\r\n           \r\n        foreach ($outColumnName in $global:inputHeaders) {\r\n            $ValidatedDate= $null\r\n            #Write-Information $outColumnName\r\n            switch -Exact ($outColumnName) {\r\n               \r\n                \"EducationOrganization\" {\r\n\r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $passedValidation = $false\r\n                        $validationId = \"EducationOrganization\"\r\n                        $global:EducationOrganizationFailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName                       \r\n                }\r\n\r\n                \"School\" {\r\n                    \r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $passedValidation = $false\r\n                        $validationId = \"School\"\r\n                        $global:SchoolFailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName                       \r\n                }\r\n\r\n                \"CIStaffProgramIntent\" {\r\n                    \r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $passedValidation = $false\r\n                        $validationId = \"CIStaffProgramIntent\"\r\n                        $global:CIStaffProgramIntentFailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName                       \r\n                }\r\n\r\n                \"TotalContractedInstrStaffFTE\" {\r\n                    \r\n                    if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                    {               \r\n                        $passedValidation = $false\r\n                        $validationId = \"TotalContractedInstrStaffFTE\"\r\n                        $global:TotalContractedInstrStaffFTEFailedRows += $currentLineNumber\r\n                    }\r\n                    $orderedOutputValues +=$row.$outColumnName                       \r\n                }\r\n\r\n\r\n                Default {\r\n                    # In case of no implementation for custom column add $null output to preserve output format and order\r\n                    #$orderedOutputValues += $null\r\n                    $orderedOutputValues += $row.$outColumnName\r\n                    break;\r\n                }\r\n            }\r\n        }   \r\n\r\n        Write-Output $(Get-CSVLine($orderedOutputValues))\r\n        $global:statistics.rowsLoaded ++    \r\n\r\n        return\r\n    }    \r\n}\r\n\r\n# end of processing\r\nend {\r\n    if($global:validHeader -eq $false) {\r\n        break\r\n    }\r\n\r\n    $JsonSummary= Get-JsonSummary |ConvertTo-Json -Depth 3\r\n    $summary += \"SUMMARY: `\r\n                    Rows Processed: $($global:statistics.rowsProcessed); `\r\n                    Rows Loaded: $($global:statistics.rowsLoaded); `\r\n                    Details: $($JsonSummary)\"\r\n     \r\n     Write-Information \"*******$summary*********\"\r\n}",
+                "requireOdsApiAccess": false,
+                "hasAttribute": false,
+                "executablePath": null,
+                "executableArguments": null
+            },
+            {
+                "name": "TEA Finance PayrollExt Preprocessor",
+                "scriptContent": "[CmdletBinding()]\r\nParam(\r\n    [parameter(Mandatory = $true, ValueFromPipeline = $true)][string]$line\r\n)\r\n\r\n#####################################################\r\n### Ed-Fi ODS v3+\r\n### Assessment: ELPAC \r\n### Script: Custom File Processor\r\n#####################################################\r\n\r\n\r\n# Handle start of processing\r\nbegin {\r\n\r\n    function IsValidHeaderRow($headers) {        \r\n        if ($headers.Length -le 1) {\r\n            $global:validHeader = $false\r\n            # throw \"Invalid Header Row. Please check file content.\"\r\n        }\r\n    }\r\n\r\n    function Get-JsonSummary() {\r\n        # Validate evry field to add the errors to the json Object\r\n        if($global:BeginDateFailedRows.count -gt 0){\r\n            $global:jsonObject.errors.BeginDate = @{\r\n                ColName = \"BeginDate\"\r\n                Rows = $global:BeginDateFailedRows\r\n            }\r\n        }\r\n        if($global:EndDateFailedRows.count -gt 0){\r\n            $global:jsonObject.errors.EndDate = @{\r\n                ColName = \"EndDate\"\r\n                Rows = $global:EndDateFailedRows\r\n            }\r\n        }\r\n        if($global:StaffFailedRows.count -gt 0){\r\n            $global:jsonObject.errors.Staff = @{\r\n                ColName = \"Staff\"\r\n                Rows = $global:StaffFailedRows\r\n            }\r\n        }\r\n        if($global:EducationOrganizationFailedRows.count -gt 0){\r\n            $global:jsonObject.errors.EducationOrganization = @{\r\n                ColName = \"EducationOrganization\"\r\n                Rows = $global:EducationOrganizationFailedRows\r\n            }\r\n        }\r\n        if($global:FiscalYearFailedRows.count -gt 0){\r\n            $global:jsonObject.errors.FiscalYear = @{\r\n                ColName = \"FiscalYear\"\r\n                Rows = $global:FiscalYearFailedRows\r\n            }\r\n        }\r\n        if($global:PayrollAmountFailedRows.count -gt 0){\r\n            $global:jsonObject.errors.PayrollAmount = @{\r\n                ColName = \"PayrollAmount\"\r\n                Rows = $global:PayrollAmountFailedRows\r\n            }\r\n        }\r\n        if($global:PayrollFundFailedRows.count -gt 0){\r\n            $global:jsonObject.errors.PayrollFund = @{\r\n                ColName = \"PayrollFund\"\r\n                Rows = $global:PayrollFundFailedRows\r\n            }\r\n        }\r\n        if($global:PayrollFunctionFailedRows.count -gt 0){\r\n            $global:jsonObject.errors.PayrollFunction = @{\r\n                ColName = \"PayrollFunction\"\r\n                Rows = $global:PayrollFunctionFailedRows\r\n            }\r\n        }\r\n        if($global:PayrollObjectFailedRows.count -gt 0){\r\n            $global:jsonObject.errors.PayrollObject = @{\r\n                ColName = \"PayrollObject\"\r\n                Rows = $global:PayrollObjectFailedRows\r\n            }\r\n        }\r\n        if($global:OrganizationFailedRows.count -gt 0){\r\n            $global:jsonObject.errors.Organization = @{\r\n                ColName = \"Organization\"\r\n                Rows = $global:OrganizationFailedRows\r\n            }\r\n        }\r\n        if($global:PayrollProgramIntentFailedRows.count -gt 0){\r\n            $global:jsonObject.errors.PayrollProgramIntent = @{\r\n                ColName = \"PayrollProgramIntent\"\r\n                Rows = $global:PayrollProgramIntentFailedRows\r\n            }\r\n        }\r\n        if($global:PayrollActivityFailedRows.count -gt 0){\r\n            $global:jsonObject.errors.PayrollActivity = @{\r\n                ColName = \"PayrollActivity\"\r\n                Rows = $global:PayrollActivityFailedRows\r\n            }\r\n        }\r\n        \r\n        $global:jsonObject.finished = Get-Date -Format \"HH:mm:ss\"   \r\n        return $global:jsonObject\r\n    }\r\n   \r\n     # Convert an array list of data into a CSV line for output\r\n    function Get-CSVLine($inputData) {\r\n        $ret = \"\"\r\n        foreach ($cell in $inputData) {\r\n            if ($ret -ne \"\") { $ret += \",\" }\r\n            $ret += ('\"' + $cell + '\"')\r\n        }\r\n        return $ret\r\n    }\r\n\r\n\r\n    function Get-ParsedDate ($date) {             \r\n        <# \r\n            .SYNOPSIS\r\n                Parse a date string and returns it in the correct format (MM/dd/yyyy).\r\n    \r\n            .PARAMETER date (required)\r\n                The date string to parse\r\n    \r\n            .OUTPUTS\r\n    \r\n                If parsing fails for any reason then $null is returned, if not the date is returned in the next forma: MM/dd/yyyy\r\n        #>\r\n    \r\n        try {\r\n            \r\n            if (!$date) {\r\n                return\r\n            }   \r\n            \r\n            return  ([datetime]$date.Trim()).ToString(\"MM/dd/yyyy\")  \r\n        }\r\n        catch {\r\n            return $null\r\n        }\r\n    }\r\n    \r\n    # Set up the statistics\r\n\r\n    $global:statistics = @{\r\n        \"rowsProcessed\" = 0\r\n        \"rowsLoaded\"    = 0\r\n        \"validations\"   = @{}\r\n    }\r\n\r\n    $global:jsonObject = [ordered]@{\r\n        \"started\"    = Get-Date -Format \"HH:mm:ss\"\r\n        \"finished\"   = \"\"\r\n        \"errors\"  = [ordered]@{}\r\n    }\r\n\r\n    $global:BeginDateFailedRows = @{}\r\n    $global:EndDateFailedRows = @{}\r\n    $global:StaffFailedRows = @{}\r\n    $global:EducationOrganizationFailedRows = @{}\r\n    $global:FiscalYearFailedRows = @{}\r\n    $global:PayrollAmountFailedRows = @{}\r\n    $global:PayrollFundFailedRows = @{}\r\n    $global:PayrollFunctionFailedRows = @{}\r\n    $global:PayrollObjectFailedRows = @{}\r\n    $global:OrganizationFailedRows = @{}\r\n    $global:PayrollProgramIntentFailedRows = @{}\r\n    $global:PayrollActivityFailedRows = @{}\r\n\r\n    # Prepare some other variables\r\n    $currentLineNumber = 0\r\n    $global:inputHeaders = @()\r\n    $global:headersLookup = @{}\r\n    $global:validHeader = $true\r\n\r\n    ### Helper functions\r\n\r\n    ## ODS functions\r\n    $apiVersion = $DataImport.ApiVersion\r\n}\r\n\r\n\r\n# Process each individual line of incoming data (the pipeline sends this one line at a time)\r\nprocess {\r\n    $currentLineNumber += 1\r\n    $global:statistics.rowsProcessed += 1\r\n\r\n    # Make sure we got something\r\n    if (!$line) { Write-Error \"Line $currentLineNumber does not contain any data\"; return }\r\n\r\n   $line= $line.Replace(\"`t\", \",\") # Convert any TAB delimeter to comma \r\n    \r\n    # If the first line pick out all of the headers\r\n    if ($currentLineNumber -eq 1) {\r\n        try {\r\n            $global:inputHeaders =$line.ToUpper().Split(\",\") -replace '[\\W]', ''\r\n            \r\n            $(IsValidHeaderRow($global:inputHeaders))\r\n            if($global:validHeader -eq $true) {\r\n                Write-Output $(Get-CSVLine($global:inputHeaders))\r\n                return\r\n            } else {\r\n                Write-Host \"Invalid Header Row. Please check file content.\" -ForegroundColor red -BackgroundColor white\r\n                break\r\n            }\r\n        }\r\n        catch {\r\n            Write-Output \"Something threw an exception\"\r\n            Write-Output $_\r\n        }\r\n        \r\n    }\r\n\r\n    if($global:validHeader -eq $true) {\r\n        $row = $line | ConvertFrom-Csv -Header $global:inputHeaders.Trim()\r\n    $errorInCurrentRow = $false\r\n    $orderedOutputValues = @()       \r\n\r\n    # Validation will tell whether or not a record has the required values needed to be posted to ODS, if not valid add line number to show in summary\r\n    $passedValidation = $true\r\n    $validationId = $null\r\n    \r\n    # Process custom/computed columns\r\n           \r\n    foreach ($outColumnName in $global:inputHeaders) {\r\n        $ValidatedDate= $null\r\n        #Write-Information $outColumnName\r\n        switch -Exact ($outColumnName) {\r\n            \r\n            \"BeginDate\" {\r\n                if (![string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                {  \r\n                    $ValidatedDate =  Get-ParsedDate $row.$outColumnName                    \r\n                    # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                    if (!$ValidatedDate) {\r\n                        $passedValidation = $false\r\n                        $validationId = \"Invalid_BeginDate\"\r\n                        $global:BeginDateFailedRows += $currentLineNumber\r\n                        $ValidatedDate = $row.$outColumnName \r\n                    }                   \r\n                }\r\n                $orderedOutputValues += $ValidatedDate                   \r\n            }\r\n\r\n            \"EndDate\" {\r\n                if (![string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                {  \r\n                    $ValidatedDate =  Get-ParsedDate $row.$outColumnName                    \r\n                    # Validation, this is a required field, if empty will be unable to post to ODS.\r\n                    if (!$ValidatedDate) {\r\n                        $passedValidation = $false\r\n                        $validationId = \"Invalid_EndDate\"\r\n                        $global:EndDateFailedRows += $currentLineNumber\r\n                        $ValidatedDate = $row.$outColumnName \r\n                    }                   \r\n                }\r\n                $orderedOutputValues += $ValidatedDate                   \r\n            }\r\n                \r\n            \"Staff\" {\r\n                \r\n                if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                {               \r\n                    $passedValidation = $false\r\n                    $validationId = \"Staff\"\r\n                    $global:StaffFailedRows += $currentLineNumber\r\n                }\r\n                $orderedOutputValues +=$row.$outColumnName\r\n            }\r\n\r\n            \"EducationOrganization\" {\r\n\r\n                if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                {               \r\n                    $passedValidation = $false\r\n                    $validationId = \"EducationOrganization\"\r\n                    $global:EducationOrganizationFailedRows += $currentLineNumber\r\n                }\r\n                $orderedOutputValues +=$row.$outColumnName                       \r\n            }\r\n\r\n            \"FiscalYear\" {\r\n                \r\n                if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                {               \r\n                    $passedValidation = $false\r\n                    $validationId = \"FiscalYear\"\r\n                    $global:FiscalYearFailedRows += $currentLineNumber\r\n                }\r\n                $orderedOutputValues +=$row.$outColumnName                       \r\n            }\r\n\r\n            \"PayrollAmount\" {\r\n                \r\n                if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                {               \r\n                    $passedValidation = $false\r\n                    $validationId = \"PayrollAmount\"\r\n                    $global:PayrollAmountFailedRows += $currentLineNumber\r\n                }\r\n                $orderedOutputValues +=$row.$outColumnName                       \r\n            }\r\n\r\n            \"PayrollFund\" {\r\n                \r\n                if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                {               \r\n                    $passedValidation = $false\r\n                    $validationId = \"PayrollFund\"\r\n                    $global:PayrollFundFailedRows += $currentLineNumber\r\n                }\r\n                $orderedOutputValues +=$row.$outColumnName                       \r\n            }\r\n\r\n            \"PayrollFunction\" {\r\n                \r\n                if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                {               \r\n                    $passedValidation = $false\r\n                    $validationId = \"PayrollFunction\"\r\n                    $global:PayrollFunctionFailedRows += $currentLineNumber\r\n                }\r\n                $orderedOutputValues +=$row.$outColumnName                       \r\n            }\r\n\r\n            \"PayrollObject\" {\r\n                \r\n                if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                {               \r\n                    $passedValidation = $false\r\n                    $validationId = \"PayrollObject\"\r\n                    $global:PayrollObjectFailedRows += $currentLineNumber\r\n                }\r\n                $orderedOutputValues +=$row.$outColumnName                       \r\n            }\r\n\r\n\r\n            \"Organization\" {\r\n                \r\n                if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                {               \r\n                    $passedValidation = $false\r\n                    $validationId = \"Organization\"\r\n                    $global:OrganizationFailedRows += $currentLineNumber\r\n                }\r\n                $orderedOutputValues +=$row.$outColumnName                       \r\n            }\r\n\r\n            \"PayrollProgramIntent\" {\r\n                \r\n                if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                {               \r\n                    $passedValidation = $false\r\n                    $validationId = \"PayrollProgramIntent\"\r\n                    $global:PayrollProgramIntentFailedRows += $currentLineNumber\r\n                }\r\n                $orderedOutputValues +=$row.$outColumnName                       \r\n            }\r\n\r\n            \"PayrollActivity\" {\r\n                \r\n                if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                {               \r\n                    $passedValidation = $false\r\n                    $validationId = \"PayrollActivity\"\r\n                    $global:PayrollActivityFailedRows += $currentLineNumber\r\n                }\r\n                $orderedOutputValues +=$row.$outColumnName                       \r\n            }\r\n\r\n            Default {\r\n                # In case of no implementation for custom column add $null output to preserve output format and order\r\n                #$orderedOutputValues += $null\r\n                $orderedOutputValues += $row.$outColumnName\r\n                break;\r\n            }\r\n        }\r\n    }   \r\n    \r\n        Write-Output $(Get-CSVLine($orderedOutputValues))\r\n        $global:statistics.rowsLoaded ++    \r\n    \r\n\r\n        return\r\n    }\r\n    \r\n}\r\n\r\n# end of processing\r\nend {\r\n    if($global:validHeader -eq $false) {\r\n        break\r\n    }\r\n\r\n    $JsonSummary= Get-JsonSummary |ConvertTo-Json -Depth 3\r\n    $summary += \"SUMMARY: `\r\n                    Rows Processed: $($global:statistics.rowsProcessed); `\r\n                    Rows Loaded: $($global:statistics.rowsLoaded); `\r\n                    Details: $($JsonSummary)\"\r\n     \r\n     Write-Information \"*******$summary*********\"\r\n}",
+                "requireOdsApiAccess": false,
+                "hasAttribute": false,
+                "executablePath": null,
+                "executableArguments": null
+            },
+            {
+                "name": "TEA Finance SharedServiceArrangementExt Preprocessor",
+                "scriptContent": "[CmdletBinding()]\r\nParam(\r\n    [parameter(Mandatory = $true, ValueFromPipeline = $true)][string]$line\r\n)\r\n\r\n#####################################################\r\n### Ed-Fi ODS v3+\r\n### Assessment: ELPAC \r\n### Script: Custom File Processor\r\n#####################################################\r\n\r\n\r\n# Handle start of processing\r\nbegin {\r\n\r\n    function IsValidHeaderRow($headers) {        \r\n        if ($headers.Length -le 1) {\r\n            $global:validHeader = $false\r\n            # throw \"Invalid Header Row. Please check file content.\"\r\n        }\r\n    }\r\n\r\n    function Get-JsonSummary() {\r\n        # Validate evry field to add the errors to the json Object\r\n        if($global:EducationOrganizationFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.EducationOrganization = @{\r\n                ColName = \"EducationOrganization\"\r\n                Rows = $global:EducationOrganizationFailedRows\r\n            }\r\n        }\r\n        if($global:SSAMemberDistrictIdFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.SSAMemberDistrictId = @{\r\n                ColName = \"SSAMemberDistrictId\"\r\n                Rows = $global:SSAMemberDistrictIdFailedRows\r\n            }\r\n        }\r\n        if($global:SSATypeFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.SSAType = @{\r\n                ColName = \"SSAType\"\r\n                Rows = $global:SSATypeFailedRows\r\n            }\r\n        }\r\n        if($global:FiscalYearFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.FiscalYear = @{\r\n                ColName = \"FiscalYear\"\r\n                Rows = $global:FiscalYearFailedRows\r\n            }\r\n        }\r\n        if($global:ActualAmountFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.ActualAmount = @{\r\n                ColName = \"ActualAmount\"\r\n                Rows = $global:ActualAmountFailedRows\r\n            }\r\n        }\r\n        if($global:SSAFundFailedRows.count -gt 0) {\r\n            $global:jsonObject.errors.SSAFund = @{\r\n                ColName = \"SSAFund\"\r\n                Rows = $global:SSAFundFailedRows\r\n            }\r\n        }\r\n        \r\n        \r\n        $global:jsonObject.finished = Get-Date -Format \"HH:mm:ss\"   \r\n        return $global:jsonObject\r\n    }\r\n   \r\n     # Convert an array list of data into a CSV line for output\r\n    function Get-CSVLine($inputData) {\r\n        $ret = \"\"\r\n        foreach ($cell in $inputData) {\r\n            if ($ret -ne \"\") { $ret += \",\" }\r\n            $ret += ('\"' + $cell + '\"')\r\n        }\r\n        return $ret\r\n    }\r\n\r\n\r\n    function Get-ParsedDate ($date) {             \r\n        <# \r\n            .SYNOPSIS\r\n                Parse a date string and returns it in the correct format (MM/dd/yyyy).\r\n    \r\n            .PARAMETER date (required)\r\n                The date string to parse\r\n    \r\n            .OUTPUTS\r\n    \r\n                If parsing fails for any reason then $null is returned, if not the date is returned in the next forma: MM/dd/yyyy\r\n        #>\r\n    \r\n        try {\r\n            \r\n            if (!$date) {\r\n                return\r\n            }   \r\n            \r\n            return  ([datetime]$date.Trim()).ToString(\"MM/dd/yyyy\")  \r\n        }\r\n        catch {\r\n            return $null\r\n        }\r\n    }\r\n    \r\n    # Set up the statistics\r\n\r\n    $global:statistics = @{\r\n        \"rowsProcessed\" = 0\r\n        \"rowsLoaded\"    = 0\r\n        \"validations\"   = @{}\r\n    }\r\n\r\n    $global:jsonObject = [ordered]@{\r\n        \"started\"    = Get-Date -Format \"HH:mm:ss\"\r\n        \"finished\"   = \"\"\r\n        \"errors\"  = [ordered]@{}\r\n    }\r\n\r\n    $global:EducationOrganizationFailedRows = @{}\r\n    $global:SSAMemberDistrictIdFailedRows = @{}\r\n    $global:SSATypeFailedRows = @{}\r\n    $global:FiscalYearFailedRows = @{}\r\n    $global:ActualAmountFailedRows = @{}\r\n    $global:SSAFundFailedRows = @{}\r\n\r\n    # Prepare some other variables\r\n    $currentLineNumber = 0\r\n    $global:inputHeaders = @()\r\n    $global:headersLookup = @{}\r\n    $global:validHeader = $true\r\n\r\n    ### Helper functions\r\n\r\n    ## ODS functions\r\n    $apiVersion = $DataImport.ApiVersion\r\n}\r\n\r\n\r\n# Process each individual line of incoming data (the pipeline sends this one line at a time)\r\nprocess {\r\n    $currentLineNumber += 1\r\n    $global:statistics.rowsProcessed += 1\r\n\r\n    # Make sure we got something\r\n    if (!$line) { Write-Error \"Line $currentLineNumber does not contain any data\"; return }\r\n\r\n    $line= $line.Replace(\"`t\", \",\") # Convert any TAB delimeter to comma \r\n    \r\n    # If the first line pick out all of the headers\r\n    if ($currentLineNumber -eq 1) {\r\n        try {\r\n            $global:inputHeaders =$line.ToUpper().Split(\",\") -replace '[\\W]', ''\r\n            \r\n            $(IsValidHeaderRow($global:inputHeaders))\r\n            if($global:validHeader -eq $true) {\r\n                Write-Output $(Get-CSVLine($global:inputHeaders))\r\n                return\r\n            } else {\r\n                Write-Host \"Invalid Header Row. Please check file content.\" -ForegroundColor red -BackgroundColor white\r\n                break\r\n            }\r\n        }\r\n        catch {\r\n            Write-Output \"Something threw an exception\"\r\n            Write-Output $_\r\n        }\r\n        \r\n    }\r\n\r\n    if($global:validHeader -eq $true) {\r\n        $row = $line | ConvertFrom-Csv -Header $global:inputHeaders.Trim()\r\n        $errorInCurrentRow = $false\r\n        $orderedOutputValues = @()       \r\n\r\n        # Validation will tell whether or not a record has the required values needed to be posted to ODS, if not valid add line number to show in summary\r\n        $passedValidation = $true\r\n        $validationId = $null\r\n    \r\n        # Process custom/computed columns\r\n\r\n        foreach ($outColumnName in $global:inputHeaders) {\r\n            $ValidatedDate= $null\r\n               #Write-Information $outColumnName\r\n               switch -Exact ($outColumnName) {\r\n                  \r\n                    \"EducationOrganization\" {\r\n\r\n                        if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                        {               \r\n                            $passedValidation = $false\r\n                            $validationId = \"EducationOrganization\"\r\n                            $global:EducationOrganizationFailedRows += $currentLineNumber\r\n                        }\r\n                        $orderedOutputValues +=$row.$outColumnName                       \r\n                    }\r\n   \r\n                   \"SSAMemberDistrictId\" {\r\n                       \r\n                       if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                       {\r\n                            $passedValidation = $false\r\n                            $validationId = \"SSAMemberDistrictId\"\r\n                            $global:SSAMemberDistrictIdFailedRows += $currentLineNumber\r\n                       }\r\n                       $orderedOutputValues +=$row.$outColumnName                       \r\n                   }\r\n   \r\n                   \"SSAType\" {\r\n                       \r\n                       if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                       {               \r\n                            $passedValidation = $false\r\n                            $validationId = \"SSAType\"\r\n                            $global:SSATypeFailedRows += $currentLineNumber\r\n                       }\r\n                       $orderedOutputValues +=$row.$outColumnName                       \r\n                   }\r\n   \r\n                   \"FiscalYear\" {\r\n                       \r\n                       if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                       {               \r\n                            $passedValidation = $false\r\n                            $validationId = \"FiscalYear\"\r\n                            $global:FiscalYearFailedRows += $currentLineNumber\r\n                       }\r\n                       $orderedOutputValues +=$row.$outColumnName                       \r\n                   }\r\n   \r\n                   \"ActualAmount\" {\r\n                       \r\n                       if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                       {               \r\n                            $passedValidation = $false\r\n                            $validationId = \"ActualAmount\"\r\n                            $global:ActualAmountFailedRows += $currentLineNumber\r\n                       }\r\n                       $orderedOutputValues +=$row.$outColumnName                       \r\n                   }\r\n   \r\n                   \"SSAFund\" {\r\n                       \r\n                       if ([string]::IsNullOrWhitespace($row.$outColumnName ))\r\n                       {               \r\n                            $passedValidation = $false\r\n                            $validationId = \"SSAFund\"\r\n                            $global:SSAFundFailedRows += $currentLineNumber\r\n                       }\r\n                       $orderedOutputValues +=$row.$outColumnName                       \r\n                   }\r\n                   \r\n                   \r\n                   Default {\r\n                       # In case of no implementation for custom column add $null output to preserve output format and order\r\n                       #$orderedOutputValues += $null\r\n                       $orderedOutputValues += $row.$outColumnName\r\n                       break;\r\n                   }\r\n               }\r\n           }   \r\n   \r\n            Write-Output $(Get-CSVLine($orderedOutputValues))\r\n            $global:statistics.rowsLoaded ++    \r\n            \r\n        \r\n            return\r\n    }\r\n           \r\n        \r\n}\r\n\r\n# end of processing\r\nend {\r\n    if($global:validHeader -eq $false) {\r\n        break\r\n    }\r\n\r\n    $JsonSummary= Get-JsonSummary |ConvertTo-Json -Depth 3\r\n    $summary += \"SUMMARY: `\r\n                    Rows Processed: $($global:statistics.rowsProcessed); `\r\n                    Rows Loaded: $($global:statistics.rowsLoaded); `\r\n                    Details: $($JsonSummary)\"\r\n     \r\n     Write-Information \"*******$summary*********\"\r\n}",
+                "requireOdsApiAccess": false,
+                "hasAttribute": false,
+                "executablePath": null,
+                "executableArguments": null
+            }
+        ]
+    }
+}

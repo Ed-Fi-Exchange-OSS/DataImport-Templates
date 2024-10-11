@@ -11,7 +11,7 @@ Additional detailed documentation of the Ed-Fi resources and source file being l
 
 ## Important Usage Note
 
-The template is designed to be used with TEA Ed-Fi ODS version 2024.2.1.([TEA resources](https://www.texasstudentdatasystem.org/tsds/about/resources))
+The template is designed to be used with TEA Ed-Fi ODS version 2025.2.0.([TEA resources](https://www.texasstudentdatasystem.org/tsds/about/resources))
 
 ## Contributions
 

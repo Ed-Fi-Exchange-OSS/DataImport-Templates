@@ -251,21 +251,21 @@
                     "ENDDATE",
                     "SHAREDSERVICEARRANGEMENTSTAFF",
                     "STAFFSERVICE1",
-                    "SPEDSTUDENTAGERANGUE1",
+                    "SPEDSTUDENTAGERANGE1",
                     "POPULATIONSERVED1",
                     "MONTHLYMINUTES1",
                     "NUMBEROFSTUDENTSINCLASS1",
                     "STAFFSERVICEBEGINDATE1",
                     "STAFFSERVICEENDDATE1",
                     "STAFFSERVICE2",
-                    "SPEDSTUDENTAGERANGUE2",
+                    "SPEDSTUDENTAGERANGE2",
                     "POPULATIONSERVED2",
                     "MONTHLYMINUTES2",
                     "NUMBEROFSTUDENTSINCLASS2",
                     "STAFFSERVICEBEGINDATE2",
                     "STAFFSERVICEENDDATE2",
                     "STAFFSERVICE3",
-                    "SPEDSTUDENTAGERANGUE3",
+                    "SPEDSTUDENTAGERANGE3",
                     "POPULATIONSERVED3",
                     "MONTHLYMINUTES3",
                     "NUMBEROFSTUDENTSINCLASS3",
@@ -302,7 +302,7 @@
                             "staffServiceSets": [
                                 {
                                     "spedStudentAgeRangeDescriptor": {
-                                        "Column": "SPEDSTUDENTAGERANGUE1",
+                                        "Column": "SPEDSTUDENTAGERANGE1",
                                         "Lookup": "TEA HR SPEDStudentAgeRangeDescriptor"
                                     },
                                     "staffServiceDescriptor": {
@@ -328,7 +328,7 @@
                                 },
                                 {
                                     "spedStudentAgeRangeDescriptor": {
-                                        "Column": "SPEDSTUDENTAGERANGUE2",
+                                        "Column": "SPEDSTUDENTAGERANGE2",
                                         "Lookup": "TEA HR SPEDStudentAgeRangeDescriptor"
                                     },
                                     "staffServiceDescriptor": {
@@ -354,7 +354,7 @@
                                 },
                                 {
                                     "spedStudentAgeRangeDescriptor": {
-                                        "Column": "SPEDSTUDENTAGERANGUE3",
+                                        "Column": "SPEDSTUDENTAGERANGE3",
                                         "Lookup": "TEA HR SPEDStudentAgeRangeDescriptor"
                                     },
                                     "staffServiceDescriptor": {
